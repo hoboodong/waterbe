@@ -1,0 +1,160 @@
+instances:
+  # ── 수산물 ────────────────────────────────────────────────
+  - id: ing_문어
+    class: Ingredient
+    data:
+      name: 문어
+      defaultUnit: g
+
+  - id: ing_낙지
+    class: Ingredient
+    data:
+      name: 낙지
+      defaultUnit: g
+
+  - id: ing_전복
+    class: Ingredient
+    data:
+      name: 전복
+      defaultUnit: 개
+
+  - id: ing_새우
+    class: Ingredient
+    data:
+      name: 흰다리새우
+      defaultUnit: g
+
+  - id: ing_골뱅이
+    class: Ingredient
+    data:
+      name: 골뱅이
+      defaultUnit: g
+
+  - id: ing_명태알
+    class: Ingredient
+    data:
+      name: 명태알
+      defaultUnit: g
+
+  - id: ing_코다리
+    class: Ingredient
+    data:
+      name: 코다리
+      defaultUnit: g
+
+  - id: ing_대구
+    class: Ingredient
+    data:
+      name: 대구
+      defaultUnit: g
+
+  - id: ing_아귀
+    class: Ingredient
+    data:
+      name: 아귀
+      defaultUnit: g
+
+  - id: ing_주꾸미
+    class: Ingredient
+    data:
+      name: 주꾸미
+      defaultUnit: g
+
+  - id: ing_곱창
+    class: Ingredient
+    data:
+      name: 곱창
+      defaultUnit: g
+
+  - id: ing_게
+    class: Ingredient
+    data:
+      name: 꽃게
+      defaultUnit: g
+
+  # ── 채소 ─────────────────────────────────────────────────
+  - id: ing_대파
+    class: Ingredient
+    data:
+      name: 대파
+      defaultUnit: g
+
+  - id: ing_양파
+    class: Ingredient
+    data:
+      name: 양파
+      defaultUnit: g
+
+  - id: ing_애호박
+    class: Ingredient
+    data:
+      name: 애호박
+      defaultUnit: g
+
+  - id: ing_콩나물
+    class: Ingredient
+    data:
+      name: 콩나물
+      defaultUnit: g
+
+  - id: ing_청양고추
+    class: Ingredient
+    data:
+      name: 청양고추
+      defaultUnit: 개
+
+  - id: ing_마늘
+    class: Ingredient
+    data:
+      name: 마늘
+      defaultUnit: g
+
+  # ── 양념 ─────────────────────────────────────────────────
+  - id: ing_고추장
+    class: Ingredient
+    data:
+      name: 고추장
+      defaultUnit: 큰술
+
+  - id: ing_고춧가루
+    class: Ingredient
+    data:
+      name: 고춧가루
+      defaultUnit: 큰술
+
+  - id: ing_간장
+    class: Ingredient
+    data:
+      name: 간장
+      defaultUnit: 큰술
+
+  - id: ing_된장
+    class: Ingredient
+    data:
+      name: 된장
+      defaultUnit: 큰술
+
+  - id: ing_소금
+    class: Ingredient
+    data:
+      name: 소금
+      defaultUnit: 작은술
+
+  - id: ing_참기름
+    class: Ingredient
+    data:
+      name: 참기름
+      defaultUnit: 큰술
+
+  # ── 육수·기타 ─────────────────────────────────────────────
+  - id: ing_육수
+    class: Ingredient
+    data:
+      name: 육수 (멸치·다시마)
+      defaultUnit: ml
+
+  - id: ing_두부
+    class: Ingredient
+    data:
+      name: 두부
+      defaultUnit: g

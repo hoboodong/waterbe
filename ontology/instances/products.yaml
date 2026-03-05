@@ -1,0 +1,289 @@
+instances:
+  # ── 밀키트 (왕십리점) ──────────────────────────────────────
+  - id: prod_mk_001
+    class: Product
+    data:
+      name: 문어전복해물탕
+      unit: 1팩
+      price: 23800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_mk_002
+    class: Product
+    data:
+      name: 낙지전복해물탕
+      unit: 1팩
+      price: 23800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_mk_003
+    class: Product
+    data:
+      name: 알탕
+      unit: 1팩
+      price: 15800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_mk_004
+    class: Product
+    data:
+      name: 코다리알탕
+      unit: 1팩
+      price: 15800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_mk_005
+    class: Product
+    data:
+      name: 시원한 새우탕
+      unit: 1팩
+      price: 13800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_mk_006
+    class: Product
+    data:
+      name: 골뱅이탕
+      unit: 1팩
+      price: 13800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_mk_007
+    class: Product
+    data:
+      name: 대구탕
+      unit: 1팩
+      price: 19800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_mk_008
+    class: Product
+    data:
+      name: 국산문어 해물탕
+      unit: 1팩
+      price: 25800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_mk_009
+    class: Product
+    data:
+      name: 순살 아귀찜
+      unit: 1팩
+      price: 19800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_mk_010
+    class: Product
+    data:
+      name: 프리미엄 낙곱새
+      unit: 1팩
+      price: 25800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_mk_011
+    class: Product
+    data:
+      name: 주꾸미볶음
+      unit: 1팩
+      price: 15800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_mk_012
+    class: Product
+    data:
+      name: 낙지볶음
+      unit: 1팩
+      price: 15800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wangsimni
+
+  # ── 단품 상품 (왕십리점) ──────────────────────────────────
+  - id: prod_sp_001
+    class: Product
+    data:
+      name: 가리비관자
+      unit: 1팩
+      price: 9980
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_sp_002
+    class: Product
+    data:
+      name: 흰다리새우
+      unit: 100g당
+      price: 3480
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_sp_003
+    class: Product
+    data:
+      name: 손질 흰다리새우살(대)
+      unit: 100g당
+      price: 3980
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_sp_004
+    class: Product
+    data:
+      name: 손질 흰다리새우살
+      unit: 100g당
+      price: 3480
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_sp_005
+    class: Product
+    data:
+      name: 활전복
+      unit: 1팩
+      price: 9980
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_sp_006
+    class: Product
+    data:
+      name: 국산홍가리비살
+      unit: 100g당
+      price: 2980
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_sp_007
+    class: Product
+    data:
+      name: 국산흑골뱅이
+      unit: 100g당
+      price: null  # 가격 미기입
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_sp_008
+    class: Product
+    data:
+      name: 백생합
+      unit: 100g당
+      price: 990
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_sp_009
+    class: Product
+    data:
+      name: 손질 갑오징어
+      unit: 100g당
+      price: 3280
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_sp_010
+    class: Product
+    data:
+      name: 손질 낙지
+      unit: 100g당
+      price: 3280
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_sp_011
+    class: Product
+    data:
+      name: 손질 주꾸미
+      unit: 100g당
+      price: 3280
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wangsimni
+
+  # ── 게장류 (왕십리점) ────────────────────────────────────
+  - id: prod_gj_001
+    class: Product
+    data:
+      name: 국산 알베기 간장게장
+      unit: 1팩
+      price: 23800
+    relations:
+      belongsTo: cat_ganjang
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_gj_002
+    class: Product
+    data:
+      name: 간장게장
+      unit: 1팩
+      price: 15800
+    relations:
+      belongsTo: cat_ganjang
+      soldAt:
+        - store_wangsimni
+
+  - id: prod_gj_003
+    class: Product
+    data:
+      name: 간장 새우장
+      unit: 1팩
+      price: 9980
+    relations:
+      belongsTo: cat_ganjang
+      soldAt:
+        - store_wangsimni

@@ -1,0 +1,34 @@
+instances:
+  # 최상위 카테고리
+  - id: cat_seafood
+    class: Category
+    data:
+      name: 수산물
+      displayOrder: 1
+    relations:
+      subClassOf: null
+
+  # 하위 카테고리
+  - id: cat_mealkit
+    class: Category
+    data:
+      name: 밀키트
+      displayOrder: 1
+    relations:
+      subClassOf: cat_seafood
+
+  - id: cat_single
+    class: Category
+    data:
+      name: 단품 상품
+      displayOrder: 2
+    relations:
+      subClassOf: cat_seafood
+
+  - id: cat_ganjang
+    class: Category
+    data:
+      name: 게장류
+      displayOrder: 3
+    relations:
+      subClassOf: cat_seafood
