@@ -6,6 +6,30 @@ instances:
       name: 문어
       defaultUnit: g
 
+  - id: ing_자숙문어
+    class: Ingredient
+    data:
+      name: 자숙문어
+      defaultUnit: g
+
+  - id: ing_솔방울오징어
+    class: Ingredient
+    data:
+      name: 솔방울오징어
+      defaultUnit: g
+
+  - id: ing_백생합
+    class: Ingredient
+    data:
+      name: 백생합
+      defaultUnit: g
+
+  - id: ing_홍합
+    class: Ingredient
+    data:
+      name: 홍합
+      defaultUnit: g
+
   - id: ing_낙지
     class: Ingredient
     data:
@@ -85,6 +109,12 @@ instances:
       defaultUnit: g
 
   # ── 채소 ─────────────────────────────────────────────────
+  - id: ing_무
+    class: Ingredient
+    data:
+      name: 무
+      defaultUnit: g
+
   - id: ing_대파
     class: Ingredient
     data:
@@ -158,7 +188,13 @@ instances:
       name: 참기름
       defaultUnit: 큰술
 
-  # ── 육수·기타 ─────────────────────────────────────────────
+  # ── 소스·기타 ─────────────────────────────────────────────
+  - id: ing_해물탕소스
+    class: Ingredient
+    data:
+      name: 해물탕소스
+      defaultUnit: g
+
   - id: ing_육수
     class: Ingredient
     data:

@@ -8,39 +8,44 @@ instances:
       name: 문어전복해물탕 (왕십리)
       servings: 2
       cookTime: 20
-      steps:
-        - 팩 내용물을 꺼내 흐르는 물에 한 번 헹군다
-        - 냄비에 육수 600ml를 붓고 센 불로 끓인다
-        - 끓으면 문어·전복·채소를 넣고 중불로 줄인다
-        - 10분간 더 끓인 후 소금으로 간을 맞춘다
+      steps: []  # TODO: 조리 단계 입력 필요
     relations:
       forProduct: prod_mk_001
       atStore: store_wangsimni
       uses:
-        - ingredient: ing_문어
-          amount: 200
+        - ingredient: ing_자숙문어
+          amount: null
           unit: g
         - ingredient: ing_전복
-          amount: 3
+          amount: null
           unit: 개
         - ingredient: ing_새우
-          amount: 100
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_백생합
+          amount: null
+          unit: g
+        - ingredient: ing_홍합
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_무
+          amount: null
           unit: g
         - ingredient: ing_대파
-          amount: 30
-          unit: g
-        - ingredient: ing_애호박
-          amount: 50
+          amount: null
           unit: g
         - ingredient: ing_청양고추
-          amount: 1
+          amount: null
           unit: 개
-        - ingredient: ing_육수
-          amount: 600
-          unit: ml
-        - ingredient: ing_소금
-          amount: 1
-          unit: 작은술
+        - ingredient: ing_해물탕소스
+          amount: null
+          unit: g
 
   # ── 마포점 레시피 ──────────────────────────────────────────
   # TODO: 마포점 레시피 데이터 입력 필요
