@@ -1,4 +1,4 @@
-version: "1.1"
+version: "1.2"
 description: 워터비 온톨로지 스키마
 
 classes:
@@ -82,6 +82,21 @@ classes:
         type: string
         required: true
         label: 기본 단위 (g, 개, 큰술 등)
+      ingredientType:
+        type: string
+        required: false
+        label: 재료 분류 (1차수산물, 채소, 소스, 양념 등)
+        nullable: true
+      composition:
+        type: string
+        required: false
+        label: 성분 표기 (예: 주꾸미 100%)
+        nullable: true
+      origin:
+        type: string
+        required: false
+        label: 원산지 (예: 국산, 중국산)
+        nullable: true
 
   Recipe:
     label: 레시피

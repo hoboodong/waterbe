@@ -34,8 +34,13 @@ ontology/
 | Product (밀키트) | `prod_mk_` | `prod_mk_001` |
 | Product (단품) | `prod_sp_` | `prod_sp_001` |
 | Product (게장류) | `prod_gj_` | `prod_gj_001` |
-| Ingredient | `ing_` | `ing_문어` |
+| Ingredient | `ing_` | `ing_낙지_국산`, `ing_흰다리새우살_베트남` |
 | Recipe | `recipe_{매장}_{product_id}` | `recipe_wangsimni_mk001` |
+
+### 원산지 표기
+- 원산지는 한글 그대로 사용 (예: `ing_낙지_국산`, `ing_흰다리새우살_베트남`, `ing_흰다리새우살_중국`)
+- 원산지가 단일하거나 구분 불필요한 재료는 생략 가능 (예: `ing_콩나물`)
+- 같은 재료명·원산지라도 성분(composition)이 다르면 숫자 suffix 추가 (예: `ing_흰다리새우살_베트남_2`)
 
 ### 추가 (Create)
 - 새 인스턴스는 파일 맨 끝에 추가.

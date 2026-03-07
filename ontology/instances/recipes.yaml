@@ -410,8 +410,560 @@ instances:
           amount: null
           unit: g
 
-  # ── 마포점 레시피 ──────────────────────────────────────────
-  # TODO: 마포점 레시피 데이터 입력 필요
+  # ── 왕십리점 단품 레시피 ────────────────────────────────────
+  - id: recipe_wangsimni_sp001
+    class: Recipe
+    data:
+      name: 가리비관자 (왕십리)
+      steps: []
+    relations:
+      forProduct: prod_sp_001
+      atStore: store_wangsimni
+      uses: []  # TODO: 재료 입력 필요
 
-  # ── 월계점 레시피 ──────────────────────────────────────────
-  # TODO: 월계점 레시피 데이터 입력 필요
+  - id: recipe_wangsimni_sp002
+    class: Recipe
+    data:
+      name: 흰다리새우 (왕십리)
+      steps: []
+    relations:
+      forProduct: prod_sp_002
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_새우
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_sp003
+    class: Recipe
+    data:
+      name: 손질 흰다리새우살(대) (왕십리)
+      steps: []
+    relations:
+      forProduct: prod_sp_003
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_흰다리새우살
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_sp004
+    class: Recipe
+    data:
+      name: 손질 흰다리새우살 (왕십리)
+      steps: []
+    relations:
+      forProduct: prod_sp_004
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_흰다리새우살
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_sp005
+    class: Recipe
+    data:
+      name: 활전복 (왕십리)
+      steps: []
+    relations:
+      forProduct: prod_sp_005
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_전복
+          amount: null
+          unit: 개
+
+  - id: recipe_wangsimni_sp006
+    class: Recipe
+    data:
+      name: 국산홍가리비살 (왕십리)
+      steps: []
+    relations:
+      forProduct: prod_sp_006
+      atStore: store_wangsimni
+      uses: []  # TODO: 재료 입력 필요
+
+  - id: recipe_wangsimni_sp007
+    class: Recipe
+    data:
+      name: 국산흑골뱅이 (왕십리)
+      steps: []
+    relations:
+      forProduct: prod_sp_007
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_골뱅이
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_sp008
+    class: Recipe
+    data:
+      name: 백생합 (왕십리)
+      steps: []
+    relations:
+      forProduct: prod_sp_008
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_백생합
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_sp009
+    class: Recipe
+    data:
+      name: 손질 갑오징어 (왕십리)
+      steps: []
+    relations:
+      forProduct: prod_sp_009
+      atStore: store_wangsimni
+      uses: []  # TODO: 재료 입력 필요
+
+  - id: recipe_wangsimni_sp010
+    class: Recipe
+    data:
+      name: 손질 낙지 (왕십리)
+      steps: []
+    relations:
+      forProduct: prod_sp_010
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_sp011
+    class: Recipe
+    data:
+      name: 손질 주꾸미 (왕십리)
+      steps: []
+    relations:
+      forProduct: prod_sp_011
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_주꾸미
+          amount: null
+          unit: g
+
+  # ── 왕십리점 게장류 레시피 ──────────────────────────────────
+  - id: recipe_wangsimni_gj001
+    class: Recipe
+    data:
+      name: 국산 알베기 간장게장 (왕십리)
+      steps: []
+    relations:
+      forProduct: prod_gj_001
+      atStore: store_wangsimni
+      uses: []  # TODO: 재료 입력 필요
+
+  - id: recipe_wangsimni_gj002
+    class: Recipe
+    data:
+      name: 간장게장 (왕십리)
+      steps: []
+    relations:
+      forProduct: prod_gj_002
+      atStore: store_wangsimni
+      uses: []  # TODO: 재료 입력 필요
+
+  - id: recipe_wangsimni_gj003
+    class: Recipe
+    data:
+      name: 간장 새우장 (왕십리)
+      steps: []
+    relations:
+      forProduct: prod_gj_003
+      atStore: store_wangsimni
+      uses: []  # TODO: 재료 입력 필요
+
+  # ── 마포점 밀키트 레시피 ────────────────────────────────────
+  - id: recipe_mapo_mk021
+    class: Recipe
+    data:
+      name: 문어전복해물탕 (마포)
+      servings: 2
+      cookTime: 20
+      steps: []
+    relations:
+      forProduct: prod_mk_021
+      atStore: store_mapo
+      uses:
+        - ingredient: ing_자숙문어
+          amount: null
+          unit: g
+        - ingredient: ing_전복
+          amount: null
+          unit: 개
+        - ingredient: ing_새우
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_백생합
+          amount: null
+          unit: g
+        - ingredient: ing_홍합
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_무
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_홍고추
+          amount: null
+          unit: 개
+        - ingredient: ing_해물탕소스
+          amount: null
+          unit: g
+
+  - id: recipe_mapo_mk022
+    class: Recipe
+    data:
+      name: 낙지전복해물탕 (마포)
+      servings: 2
+      cookTime: 20
+      steps: []
+    relations:
+      forProduct: prod_mk_022
+      atStore: store_mapo
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
+        - ingredient: ing_전복
+          amount: null
+          unit: 개
+        - ingredient: ing_새우
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_백생합
+          amount: null
+          unit: g
+        - ingredient: ing_홍합
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_무
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_홍고추
+          amount: null
+          unit: 개
+        - ingredient: ing_해물탕소스
+          amount: null
+          unit: g
+
+  - id: recipe_mapo_mk025
+    class: Recipe
+    data:
+      name: 낙곱새 (마포)
+      servings: 2
+      cookTime: 20
+      steps: []
+    relations:
+      forProduct: prod_mk_025
+      atStore: store_mapo
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
+        - ingredient: ing_염지소곱창
+          amount: null
+          unit: g
+        - ingredient: ing_흰다리새우살
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_양배추
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_홍고추
+          amount: null
+          unit: 개
+        - ingredient: ing_낙곱새소스
+          amount: null
+          unit: g
+
+  - id: recipe_mapo_mk026
+    class: Recipe
+    data:
+      name: 주꾸미볶음 (마포)
+      servings: 2
+      cookTime: 15
+      steps: []
+    relations:
+      forProduct: prod_mk_026
+      atStore: store_mapo
+      uses:
+        - ingredient: ing_주꾸미
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_양배추
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_홍고추
+          amount: null
+          unit: 개
+        - ingredient: ing_볶음소스
+          amount: null
+          unit: g
+
+  - id: recipe_mapo_mk027
+    class: Recipe
+    data:
+      name: 낙지볶음 (마포)
+      servings: 2
+      cookTime: 15
+      steps: []
+    relations:
+      forProduct: prod_mk_027
+      atStore: store_mapo
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_양배추
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_홍고추
+          amount: null
+          unit: 개
+        - ingredient: ing_볶음소스
+          amount: null
+          unit: g
+
+  # ── 마포점 단품 레시피 ──────────────────────────────────────
+  - id: recipe_mapo_sp019
+    class: Recipe
+    data:
+      name: 흰다리새우 (마포)
+      steps: []
+    relations:
+      forProduct: prod_sp_019
+      atStore: store_mapo
+      uses:
+        - ingredient: ing_새우
+          amount: null
+          unit: g
+
+  - id: recipe_mapo_sp020
+    class: Recipe
+    data:
+      name: 흰다리새우살(꼬리있음) (마포)
+      steps: []
+    relations:
+      forProduct: prod_sp_020
+      atStore: store_mapo
+      uses:
+        - ingredient: ing_흰다리새우살
+          amount: null
+          unit: g
+
+  - id: recipe_mapo_sp021
+    class: Recipe
+    data:
+      name: 흰다리새우살 (마포)
+      steps: []
+    relations:
+      forProduct: prod_sp_021
+      atStore: store_mapo
+      uses:
+        - ingredient: ing_흰다리새우살
+          amount: null
+          unit: g
+
+  - id: recipe_mapo_sp022
+    class: Recipe
+    data:
+      name: 가리비관자 (마포)
+      steps: []
+    relations:
+      forProduct: prod_sp_022
+      atStore: store_mapo
+      uses: []  # TODO: 재료 입력 필요
+
+  - id: recipe_mapo_sp023
+    class: Recipe
+    data:
+      name: 주꾸미 (마포)
+      steps: []
+    relations:
+      forProduct: prod_sp_023
+      atStore: store_mapo
+      uses:
+        - ingredient: ing_주꾸미
+          amount: null
+          unit: g
+
+  - id: recipe_mapo_sp024
+    class: Recipe
+    data:
+      name: 손질낙지 (마포)
+      steps: []
+    relations:
+      forProduct: prod_sp_024
+      atStore: store_mapo
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
+
+  - id: recipe_mapo_sp025
+    class: Recipe
+    data:
+      name: 절단낙지 (마포)
+      steps: []
+    relations:
+      forProduct: prod_sp_025
+      atStore: store_mapo
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
+
+  - id: recipe_mapo_sp026
+    class: Recipe
+    data:
+      name: 알곤이세트 (마포)
+      steps: []
+    relations:
+      forProduct: prod_sp_026
+      atStore: store_mapo
+      uses: []  # TODO: 재료 입력 필요
+
+  # ── 마포점 게장류 레시피 ────────────────────────────────────
+  - id: recipe_mapo_gj004
+    class: Recipe
+    data:
+      name: 간장새우장 (마포)
+      steps: []
+    relations:
+      forProduct: prod_gj_004
+      atStore: store_mapo
+      uses: []  # TODO: 재료 입력 필요
+
+  # ── 월계점 단품 레시피 ──────────────────────────────────────
+  - id: recipe_wolgye_sp012
+    class: Recipe
+    data:
+      name: 흰다리새우 (월계)
+      steps: []
+    relations:
+      forProduct: prod_sp_012
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_새우
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_sp013
+    class: Recipe
+    data:
+      name: 흰다리새우살(대) (월계)
+      steps: []
+    relations:
+      forProduct: prod_sp_013
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_흰다리새우살
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_sp014
+    class: Recipe
+    data:
+      name: 흰다리새우살 (월계)
+      steps: []
+    relations:
+      forProduct: prod_sp_014
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_흰다리새우살
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_sp015
+    class: Recipe
+    data:
+      name: 가리비관자 (월계)
+      steps: []
+    relations:
+      forProduct: prod_sp_015
+      atStore: store_wolgye
+      uses: []  # TODO: 재료 입력 필요
+
+  - id: recipe_wolgye_sp016
+    class: Recipe
+    data:
+      name: 알곤이세트 (월계)
+      steps: []
+    relations:
+      forProduct: prod_sp_016
+      atStore: store_wolgye
+      uses: []  # TODO: 재료 입력 필요
+
+  - id: recipe_wolgye_sp017
+    class: Recipe
+    data:
+      name: 주꾸미 (월계)
+      steps: []
+    relations:
+      forProduct: prod_sp_017
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_주꾸미
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_sp018
+    class: Recipe
+    data:
+      name: 절단낙지 (월계)
+      steps: []
+    relations:
+      forProduct: prod_sp_018
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
