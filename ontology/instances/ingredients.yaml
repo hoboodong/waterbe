@@ -255,6 +255,12 @@ instances:
       name: 낙곱새소스
       defaultUnit: g
 
+  - id: ing_볶음소스
+    class: Ingredient
+    data:
+      name: 볶음소스
+      defaultUnit: g
+
   - id: ing_육수
     class: Ingredient
     data:
