@@ -221,6 +221,51 @@ instances:
           amount: null
           unit: g
 
+  - id: recipe_wangsimni_mk008
+    class: Recipe
+    data:
+      name: 국산문어 해물탕 (왕십리)
+      servings: 2
+      cookTime: 20
+      steps: []  # TODO: 조리 단계 입력 필요
+    relations:
+      forProduct: prod_mk_008
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_자숙문어
+          amount: null
+          unit: g
+        - ingredient: ing_전복
+          amount: null
+          unit: 개
+        - ingredient: ing_새우
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_백생합
+          amount: null
+          unit: g
+        - ingredient: ing_홍합
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_무
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_홍고추
+          amount: null
+          unit: 개
+        - ingredient: ing_해물탕소스
+          amount: null
+          unit: g
+
   # ── 마포점 레시피 ──────────────────────────────────────────
   # TODO: 마포점 레시피 데이터 입력 필요
 
