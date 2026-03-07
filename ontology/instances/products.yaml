@@ -449,7 +449,7 @@ instances:
     data:
       name: 손질낙지
       unit: 100g당
-      price: 3200  # 확인 필요 (입력값 320)
+      price: 3280
     relations:
       belongsTo: cat_single
       soldAt:
@@ -483,7 +483,7 @@ instances:
     data:
       name: 간장새우장
       unit: 1팩
-      price: 9800  # 확인 필요 (입력값 98)
+      price: 9980
     relations:
       belongsTo: cat_ganjang
       soldAt:
