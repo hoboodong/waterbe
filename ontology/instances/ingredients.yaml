@@ -157,6 +157,12 @@ instances:
       name: 청양고추
       defaultUnit: 개
 
+  - id: ing_홍고추
+    class: Ingredient
+    data:
+      name: 홍고추
+      defaultUnit: 개
+
   - id: ing_마늘
     class: Ingredient
     data:
