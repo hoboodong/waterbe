@@ -288,6 +288,106 @@ instances:
       soldAt:
         - store_wangsimni
 
+  # ── 밀키트 (마포점) ──────────────────────────────────────
+  - id: prod_mk_021
+    class: Product
+    data:
+      name: 문어전복해물탕
+      unit: 1팩
+      price: 23800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_mapo
+
+  - id: prod_mk_022
+    class: Product
+    data:
+      name: 낙지전복해물탕
+      unit: 1팩
+      price: 23800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_mapo
+
+  - id: prod_mk_023
+    class: Product
+    data:
+      name: 동태알탕
+      unit: 1팩
+      price: 19800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_mapo
+
+  - id: prod_mk_024
+    class: Product
+    data:
+      name: 푸짐한 알탕
+      unit: 1팩
+      price: 19800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_mapo
+
+  - id: prod_mk_025
+    class: Product
+    data:
+      name: 낙곱새
+      unit: 1팩
+      price: 19800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_mapo
+
+  - id: prod_mk_026
+    class: Product
+    data:
+      name: 주꾸미볶음
+      unit: 1팩
+      price: 15800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_mapo
+
+  - id: prod_mk_027
+    class: Product
+    data:
+      name: 낙지볶음
+      unit: 1팩
+      price: 15800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_mapo
+
+  - id: prod_mk_028
+    class: Product
+    data:
+      name: 갑오징어볶음
+      unit: 1팩
+      price: 15800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_mapo
+
+  - id: prod_mk_029
+    class: Product
+    data:
+      name: 순살아귀찜
+      unit: 1팩
+      price: 19800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_mapo
+
   # ── 밀키트 (월계점) ──────────────────────────────────────
   - id: prod_mk_013
     class: Product
