@@ -90,6 +90,18 @@ instances:
       name: 아귀
       defaultUnit: g
 
+  - id: ing_순살아귀
+    class: Ingredient
+    data:
+      name: 순살아귀
+      defaultUnit: g
+
+  - id: ing_오만둥이
+    class: Ingredient
+    data:
+      name: 오만둥이
+      defaultUnit: g
+
   - id: ing_주꾸미
     class: Ingredient
     data:
@@ -211,6 +223,12 @@ instances:
     class: Ingredient
     data:
       name: 해물탕소스
+      defaultUnit: g
+
+  - id: ing_찜소스
+    class: Ingredient
+    data:
+      name: 찜소스
       defaultUnit: g
 
   - id: ing_육수
