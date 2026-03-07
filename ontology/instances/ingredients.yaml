@@ -72,6 +72,18 @@ instances:
       name: 꽃게
       defaultUnit: g
 
+  - id: ing_볼락
+    class: Ingredient
+    data:
+      name: 볼락
+      defaultUnit: g
+
+  - id: ing_동태
+    class: Ingredient
+    data:
+      name: 동태
+      defaultUnit: g
+
   # ── 채소 ─────────────────────────────────────────────────
   - id: ing_대파
     class: Ingredient

@@ -287,3 +287,170 @@ instances:
       belongsTo: cat_ganjang
       soldAt:
         - store_wangsimni
+
+  # ── 밀키트 (월계점) ──────────────────────────────────────
+  - id: prod_mk_013
+    class: Product
+    data:
+      name: 문어전복해물탕
+      unit: 1팩
+      price: null
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wolgye
+
+  - id: prod_mk_014
+    class: Product
+    data:
+      name: 낙지전복해물탕
+      unit: 1팩
+      price: null
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wolgye
+
+  - id: prod_mk_015
+    class: Product
+    data:
+      name: 동태알탕
+      unit: 1팩
+      price: null
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wolgye
+
+  - id: prod_mk_016
+    class: Product
+    data:
+      name: 볼락 매운탕
+      unit: 1팩
+      price: null
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wolgye
+
+  - id: prod_mk_017
+    class: Product
+    data:
+      name: 꽃게 해물라면
+      unit: 1팩
+      price: null
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wolgye
+
+  - id: prod_mk_018
+    class: Product
+    data:
+      name: 낙곱새
+      unit: 1팩
+      price: null
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wolgye
+
+  - id: prod_mk_019
+    class: Product
+    data:
+      name: 주꾸미볶음
+      unit: 1팩
+      price: null
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wolgye
+
+  - id: prod_mk_020
+    class: Product
+    data:
+      name: 낙지볶음
+      unit: 1팩
+      price: null
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wolgye
+
+  # ── 단품 상품 (월계점) ──────────────────────────────────
+  - id: prod_sp_012
+    class: Product
+    data:
+      name: 흰다리새우
+      unit: 100g당
+      price: null
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wolgye
+
+  - id: prod_sp_013
+    class: Product
+    data:
+      name: 흰다리새우살(대)
+      unit: 100g당
+      price: null
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wolgye
+
+  - id: prod_sp_014
+    class: Product
+    data:
+      name: 흰다리새우살
+      unit: 100g당
+      price: null
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wolgye
+
+  - id: prod_sp_015
+    class: Product
+    data:
+      name: 가리비관자
+      unit: 1팩
+      price: null
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wolgye
+
+  - id: prod_sp_016
+    class: Product
+    data:
+      name: 알곤이세트
+      unit: 1팩
+      price: null
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wolgye
+
+  - id: prod_sp_017
+    class: Product
+    data:
+      name: 주꾸미
+      unit: 100g당
+      price: null
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wolgye
+
+  - id: prod_sp_018
+    class: Product
+    data:
+      name: 절단낙지
+      unit: 100g당
+      price: null
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wolgye
