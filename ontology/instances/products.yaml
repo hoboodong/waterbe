@@ -388,6 +388,107 @@ instances:
       soldAt:
         - store_mapo
 
+  # ── 단품 상품 (마포점) ──────────────────────────────────
+  - id: prod_sp_019
+    class: Product
+    data:
+      name: 흰다리새우
+      unit: 100g당
+      price: 3480
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_mapo
+
+  - id: prod_sp_020
+    class: Product
+    data:
+      name: 흰다리새우살(꼬리있음)
+      unit: 100g당
+      price: 3980
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_mapo
+
+  - id: prod_sp_021
+    class: Product
+    data:
+      name: 흰다리새우살
+      unit: 100g당
+      price: 3480
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_mapo
+
+  - id: prod_sp_022
+    class: Product
+    data:
+      name: 가리비관자
+      unit: 1팩
+      price: 9980
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_mapo
+
+  - id: prod_sp_023
+    class: Product
+    data:
+      name: 주꾸미
+      unit: 100g당
+      price: 3280
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_mapo
+
+  - id: prod_sp_024
+    class: Product
+    data:
+      name: 손질낙지
+      unit: 100g당
+      price: 3200  # 확인 필요 (입력값 320)
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_mapo
+
+  - id: prod_sp_025
+    class: Product
+    data:
+      name: 절단낙지
+      unit: 100g당
+      price: 3280
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_mapo
+
+  - id: prod_sp_026
+    class: Product
+    data:
+      name: 알곤이세트
+      unit: 100g당
+      price: 3280
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_mapo
+
+  # ── 게장류 (마포점) ──────────────────────────────────────
+  - id: prod_gj_004
+    class: Product
+    data:
+      name: 간장새우장
+      unit: 1팩
+      price: 9800  # 확인 필요 (입력값 98)
+    relations:
+      belongsTo: cat_ganjang
+      soldAt:
+        - store_mapo
+
   # ── 밀키트 (월계점) ──────────────────────────────────────
   - id: prod_mk_013
     class: Product
