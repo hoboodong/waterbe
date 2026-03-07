@@ -294,7 +294,7 @@ instances:
     data:
       name: 문어전복해물탕
       unit: 1팩
-      price: null
+      price: 23800
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -305,7 +305,7 @@ instances:
     data:
       name: 낙지전복해물탕
       unit: 1팩
-      price: null
+      price: 23800
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -316,7 +316,7 @@ instances:
     data:
       name: 동태알탕
       unit: 1팩
-      price: null
+      price: 17800
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -327,7 +327,7 @@ instances:
     data:
       name: 볼락 매운탕
       unit: 1팩
-      price: null
+      price: 19800
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -338,7 +338,7 @@ instances:
     data:
       name: 꽃게 해물라면
       unit: 1팩
-      price: null
+      price: 19800
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -349,7 +349,7 @@ instances:
     data:
       name: 낙곱새
       unit: 1팩
-      price: null
+      price: 19800
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -360,7 +360,7 @@ instances:
     data:
       name: 주꾸미볶음
       unit: 1팩
-      price: null
+      price: 15800
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -371,7 +371,7 @@ instances:
     data:
       name: 낙지볶음
       unit: 1팩
-      price: null
+      price: 15800
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -383,7 +383,7 @@ instances:
     data:
       name: 흰다리새우
       unit: 100g당
-      price: null
+      price: 3480
     relations:
       belongsTo: cat_single
       soldAt:
@@ -394,7 +394,7 @@ instances:
     data:
       name: 흰다리새우살(대)
       unit: 100g당
-      price: null
+      price: 3980
     relations:
       belongsTo: cat_single
       soldAt:
@@ -405,7 +405,7 @@ instances:
     data:
       name: 흰다리새우살
       unit: 100g당
-      price: null
+      price: 3480
     relations:
       belongsTo: cat_single
       soldAt:
@@ -416,7 +416,7 @@ instances:
     data:
       name: 가리비관자
       unit: 1팩
-      price: null
+      price: 9900
     relations:
       belongsTo: cat_single
       soldAt:
@@ -426,8 +426,8 @@ instances:
     class: Product
     data:
       name: 알곤이세트
-      unit: 1팩
-      price: null
+      unit: 100g당
+      price: 3280
     relations:
       belongsTo: cat_single
       soldAt:
@@ -438,7 +438,7 @@ instances:
     data:
       name: 주꾸미
       unit: 100g당
-      price: null
+      price: 3280
     relations:
       belongsTo: cat_single
       soldAt:
@@ -449,7 +449,7 @@ instances:
     data:
       name: 절단낙지
       unit: 100g당
-      price: null
+      price: 3280
     relations:
       belongsTo: cat_single
       soldAt:
