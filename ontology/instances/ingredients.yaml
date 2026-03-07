@@ -60,6 +60,18 @@ instances:
       name: 명태알
       defaultUnit: g
 
+  - id: ing_명란
+    class: Ingredient
+    data:
+      name: 명란
+      defaultUnit: g
+
+  - id: ing_대구곤이
+    class: Ingredient
+    data:
+      name: 대구곤이
+      defaultUnit: g
+
   - id: ing_코다리
     class: Ingredient
     data:
