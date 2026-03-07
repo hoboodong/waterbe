@@ -305,6 +305,45 @@ instances:
           amount: null
           unit: g
 
+  - id: recipe_wangsimni_mk010
+    class: Recipe
+    data:
+      name: 프리미엄 낙곱새 (왕십리)
+      servings: 2
+      cookTime: 20
+      steps: []  # TODO: 조리 단계 입력 필요
+    relations:
+      forProduct: prod_mk_010
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
+        - ingredient: ing_염지소곱창
+          amount: null
+          unit: g
+        - ingredient: ing_흰다리새우살
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_양배추
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_홍고추
+          amount: null
+          unit: 개
+        - ingredient: ing_낙곱새소스
+          amount: null
+          unit: g
+
   # ── 마포점 레시피 ──────────────────────────────────────────
   # TODO: 마포점 레시피 데이터 입력 필요
 

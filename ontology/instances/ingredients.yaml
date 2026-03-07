@@ -114,6 +114,18 @@ instances:
       name: 곱창
       defaultUnit: g
 
+  - id: ing_염지소곱창
+    class: Ingredient
+    data:
+      name: 염지소곱창
+      defaultUnit: g
+
+  - id: ing_흰다리새우살
+    class: Ingredient
+    data:
+      name: 흰다리새우살
+      defaultUnit: g
+
   - id: ing_게
     class: Ingredient
     data:
@@ -149,6 +161,12 @@ instances:
     class: Ingredient
     data:
       name: 양파
+      defaultUnit: g
+
+  - id: ing_양배추
+    class: Ingredient
+    data:
+      name: 양배추
       defaultUnit: g
 
   - id: ing_애호박
@@ -229,6 +247,12 @@ instances:
     class: Ingredient
     data:
       name: 찜소스
+      defaultUnit: g
+
+  - id: ing_낙곱새소스
+    class: Ingredient
+    data:
+      name: 낙곱새소스
       defaultUnit: g
 
   - id: ing_육수
