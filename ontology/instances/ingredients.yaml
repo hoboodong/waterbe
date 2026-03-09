@@ -11,6 +11,7 @@ instances:
     data:
       name: 자숙문어
       defaultUnit: g
+      composition: 자숙문어 100%
 
   - id: ing_갑오징어
     class: Ingredient
@@ -29,24 +30,28 @@ instances:
     data:
       name: 백생합
       defaultUnit: g
+      composition: 백생합 100%
 
   - id: ing_홍합
     class: Ingredient
     data:
       name: 홍합
       defaultUnit: g
+      composition: 홍합 100%
 
   - id: ing_낙지
     class: Ingredient
     data:
       name: 낙지
       defaultUnit: g
+      composition: 낙지 100%
 
   - id: ing_전복
     class: Ingredient
     data:
       name: 전복
       defaultUnit: 개
+      composition: 전복 100%
 
   - id: ing_새우
     class: Ingredient
@@ -71,24 +76,28 @@ instances:
     data:
       name: 명란
       defaultUnit: g
+      composition: 명란 100%
 
   - id: ing_대구곤이
     class: Ingredient
     data:
       name: 대구곤이
       defaultUnit: g
+      composition: 대구곤이 100%
 
   - id: ing_코다리
     class: Ingredient
     data:
       name: 코다리
       defaultUnit: g
+      composition: 코다리 100%
 
   - id: ing_대구
     class: Ingredient
     data:
       name: 대구
       defaultUnit: g
+      composition: 대구 100%
 
   - id: ing_아귀
     class: Ingredient
@@ -101,6 +110,7 @@ instances:
     data:
       name: 순살아귀
       defaultUnit: g
+      composition: 순살아귀 100%
 
   - id: ing_오만둥이
     class: Ingredient
@@ -113,6 +123,7 @@ instances:
     data:
       name: 주꾸미
       defaultUnit: g
+      composition: 주꾸미 100%
 
   - id: ing_곱창
     class: Ingredient
@@ -143,12 +154,14 @@ instances:
     data:
       name: 꽃게
       defaultUnit: g
+      composition: 꽃게 100%
 
   - id: ing_볼락
     class: Ingredient
     data:
       name: 볼락
       defaultUnit: g
+      composition: 볼락 100%
 
   - id: ing_동태
     class: Ingredient
@@ -161,6 +174,7 @@ instances:
     data:
       name: 가리비관자
       defaultUnit: g
+      composition: 가리비관자 100%
 
   - id: ing_홍가리비살
     class: Ingredient
@@ -314,18 +328,21 @@ instances:
     data:
       name: 명태곤이
       defaultUnit: g
+      composition: 명태곤이 100%
 
   - id: ing_게_이탈리아
     class: Ingredient
     data:
       name: 꽃게 (이탈리아산)
       defaultUnit: g
+      composition: 꽃게 100%
 
   - id: ing_게_바레인
     class: Ingredient
     data:
       name: 꽃게 (바레인산)
       defaultUnit: g
+      composition: 꽃게 100%
 
   - id: ing_라면
     class: Ingredient
