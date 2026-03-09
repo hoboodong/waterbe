@@ -345,4 +345,22 @@ instances:
       name: 초고추장
       defaultUnit: 큰술
 
+  - id: ing_간장소스
+    class: Ingredient
+    data:
+      name: 간장소스
+      defaultUnit: g
+
+  - id: ing_미림
+    class: Ingredient
+    data:
+      name: 미림
+      defaultUnit: 큰술
+
+  - id: ing_고추
+    class: Ingredient
+    data:
+      name: 고추
+      defaultUnit: 개
+
 
