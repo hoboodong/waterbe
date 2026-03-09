@@ -655,3 +655,14 @@ instances:
       belongsTo: cat_single
       soldAt:
         - store_wolgye
+
+  - id: prod_sp_027
+    class: Product
+    data:
+      name: 문어소라슬라이스
+      unit: 1팩
+      price: 9900
+    relations:
+      belongsTo: cat_single
+      soldAt:
+        - store_wolgye

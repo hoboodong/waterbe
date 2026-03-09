@@ -48,6 +48,12 @@ ontology/
 - `class` 필드는 `schema.yaml`에 정의된 클래스명과 정확히 일치해야 한다.
 - `relations`의 참조 id가 해당 인스턴스 파일에 실제로 존재하는지 확인.
 
+> **⚠️ 온톨로지 데이터 임의 입력 절대 금지**
+> 모든 인스턴스 데이터(`ingredients.yaml`, `products.yaml`, `recipes.yaml`, `stores.yaml`, `categories.yaml`)에 새 데이터를 추가하거나 기존 데이터를 수정할 때는 **반드시 사용자에게 먼저 확인**을 받아야 한다.
+> - 레시피 재료가 없을 경우: 어떤 재료가 필요한지 보고하고 허가를 받은 뒤 추가
+> - 재료 구성이 불명확할 경우: 추측으로 채우지 말고 사용자에게 물어볼 것
+> - 사용자가 명시적으로 지시한 내용만 입력할 것. 합리적으로 보여도 임의 판단으로 넣지 말 것
+
 ### 조회 (Read)
 - 매장별 제품 목록: `products.yaml`에서 `soldAt`에 해당 `store_*` id가 포함된 항목 필터.
 - 카테고리별 제품 목록: `products.yaml`에서 `belongsTo`가 해당 `cat_*` id인 항목 필터.
