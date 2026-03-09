@@ -1,4 +1,4 @@
-version: "1.2"
+version: "1.3"
 description: 워터비 온톨로지 스키마
 
 classes:
@@ -96,6 +96,11 @@ classes:
         type: string
         required: false
         label: 원산지 (예: 국산, 중국산)
+        nullable: true
+      allergen:
+        type: string
+        required: false
+        label: 알레르기 유발물질 (예: 새우, 이산화황 함유)
         nullable: true
 
   Recipe:

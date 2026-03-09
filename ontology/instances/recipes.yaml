@@ -322,7 +322,7 @@ instances:
         - ingredient: ing_염지소곱창
           amount: null
           unit: g
-        - ingredient: ing_흰다리새우살
+        - ingredient: ing_흰다리새우살_S
           amount: null
           unit: g
         - ingredient: ing_솔방울오징어
@@ -455,7 +455,7 @@ instances:
       forProduct: prod_sp_003
       atStore: store_wangsimni
       uses:
-        - ingredient: ing_흰다리새우살
+        - ingredient: ing_흰다리새우살_L
           amount: null
           unit: g
         - ingredient: ing_레몬주스
@@ -471,7 +471,7 @@ instances:
       forProduct: prod_sp_004
       atStore: store_wangsimni
       uses:
-        - ingredient: ing_흰다리새우살
+        - ingredient: ing_흰다리새우살_S
           amount: null
           unit: g
         - ingredient: ing_레몬주스
@@ -599,7 +599,7 @@ instances:
       forProduct: prod_gj_003
       atStore: store_wangsimni
       uses:
-        - ingredient: ing_흰다리새우살
+        - ingredient: ing_흰다리새우살_L
           amount: null
           unit: g
         - ingredient: ing_간장소스
@@ -720,7 +720,7 @@ instances:
         - ingredient: ing_염지소곱창
           amount: null
           unit: g
-        - ingredient: ing_흰다리새우살
+        - ingredient: ing_흰다리새우살_S
           amount: null
           unit: g
         - ingredient: ing_솔방울오징어
@@ -834,7 +834,7 @@ instances:
       forProduct: prod_sp_020
       atStore: store_mapo
       uses:
-        - ingredient: ing_흰다리새우살
+        - ingredient: ing_흰다리새우살_L
           amount: null
           unit: g
         - ingredient: ing_레몬주스
@@ -850,7 +850,7 @@ instances:
       forProduct: prod_sp_021
       atStore: store_mapo
       uses:
-        - ingredient: ing_흰다리새우살
+        - ingredient: ing_흰다리새우살_S
           amount: null
           unit: g
         - ingredient: ing_레몬주스
@@ -1091,7 +1091,7 @@ instances:
       forProduct: prod_gj_004
       atStore: store_mapo
       uses:
-        - ingredient: ing_흰다리새우살
+        - ingredient: ing_흰다리새우살_L
           amount: null
           unit: g
         - ingredient: ing_간장소스
@@ -1338,7 +1338,7 @@ instances:
         - ingredient: ing_염지소대창
           amount: null
           unit: g
-        - ingredient: ing_흰다리새우살
+        - ingredient: ing_흰다리새우살_S
           amount: null
           unit: g
         - ingredient: ing_솔방울오징어
@@ -1449,7 +1449,7 @@ instances:
       forProduct: prod_sp_013
       atStore: store_wolgye
       uses:
-        - ingredient: ing_흰다리새우살
+        - ingredient: ing_흰다리새우살_L
           amount: null
           unit: g
 
@@ -1462,7 +1462,7 @@ instances:
       forProduct: prod_sp_014
       atStore: store_wolgye
       uses:
-        - ingredient: ing_흰다리새우살
+        - ingredient: ing_흰다리새우살_S
           amount: null
           unit: g
 

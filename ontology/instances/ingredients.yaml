@@ -58,6 +58,9 @@ instances:
     data:
       name: 흰다리새우
       defaultUnit: g
+      composition: 흰다리새우 99.99%, 메타중아황산나트륨(산화방지제)
+      allergen: 새우, 이산화황 함유
+      origin: 페루
 
   - id: ing_골뱅이
     class: Ingredient
@@ -143,11 +146,23 @@ instances:
       name: 염지소대창
       defaultUnit: g
 
-  - id: ing_흰다리새우살
+  - id: ing_흰다리새우살_L
+    class: Ingredient
+    data:
+      name: 흰다리새우살 (대)
+      defaultUnit: g
+      composition: 흰다리새우 99.81%, 정제소금, 탄산나트륨, 구연산나트륨, 메타중아황산나트륨(산화방지제)
+      allergen: 새우, 이산화황
+      origin: 페루
+
+  - id: ing_흰다리새우살_S
     class: Ingredient
     data:
       name: 흰다리새우살
       defaultUnit: g
+      composition: 흰다리새우살 99%, 정제염, 폴리인산나트륨
+      allergen: 새우 함유
+      origin: 베트남
 
   - id: ing_게
     class: Ingredient
