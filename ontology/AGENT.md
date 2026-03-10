@@ -102,3 +102,13 @@ ontology/
 ### ingredientType 미입력
 - 모든 재료에 `ingredientType` 필드 미입력 (나중에 일괄 입력 예정)
 - 분류 예시: 1차수산물, 채소, 소스, 양념 등
+
+### vendor (납품업체) 관리 — 미구현
+- 설계 확정: 방법 C 채택
+  - 업체만 다르고 성분·알레르기 동일 → 같은 ID, `vendor` 배열 필드로 관리
+  - 성분·알레르기가 다르면 → ID 분리 (`_2`, `_3` suffix)
+  - 레시피는 성분 기준 ID 참조 → 업체 교체 시 레시피 변동 없음
+- 구현 시 필요한 작업:
+  - schema.yaml에 `vendor: list<string>` 필드 추가 (nullable)
+  - 각 재료에 vendor 입력
+  - AGENT.md 분리 기준 명문화
