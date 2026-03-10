@@ -139,7 +139,7 @@ instances:
       allergen: 쇠고기, 대두, 밀, 우유
       origin: 외국산(우루과이, 아르헨티나, 미국 등)
 
-  - id: ing_흰다리새우살_L
+  - id: ing_흰다리새우살_L_페루
     class: Ingredient
     data:
       name: 흰다리새우살 (대)
@@ -148,7 +148,7 @@ instances:
       allergen: 새우, 이산화황
       origin: 페루
 
-  - id: ing_흰다리새우살_S
+  - id: ing_흰다리새우살_S_베트남
     class: Ingredient
     data:
       name: 흰다리새우살
