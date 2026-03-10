@@ -6,9 +6,6 @@ instances:
     class: Recipe
     data:
       name: 문어전복해물탕 (왕십리)
-      servings: 2
-      cookTime: 20
-      steps: []  # TODO: 조리 단계 입력 필요
     relations:
       forProduct: prod_mk_001
       atStore: store_wangsimni
@@ -51,9 +48,6 @@ instances:
     class: Recipe
     data:
       name: 낙지전복해물탕 (왕십리)
-      servings: 2
-      cookTime: 20
-      steps: []  # TODO: 조리 단계 입력 필요
     relations:
       forProduct: prod_mk_002
       atStore: store_wangsimni
@@ -96,9 +90,6 @@ instances:
     class: Recipe
     data:
       name: 알탕 (왕십리)
-      servings: 2
-      cookTime: 20
-      steps: []  # TODO: 조리 단계 입력 필요
     relations:
       forProduct: prod_mk_003
       atStore: store_wangsimni
@@ -138,9 +129,6 @@ instances:
     class: Recipe
     data:
       name: 코다리알탕 (왕십리)
-      servings: 2
-      cookTime: 20
-      steps: []  # TODO: 조리 단계 입력 필요
     relations:
       forProduct: prod_mk_004
       atStore: store_wangsimni
@@ -180,9 +168,6 @@ instances:
     class: Recipe
     data:
       name: 대구탕 (왕십리)
-      servings: 2
-      cookTime: 20
-      steps: []  # TODO: 조리 단계 입력 필요
     relations:
       forProduct: prod_mk_007
       atStore: store_wangsimni
@@ -225,9 +210,6 @@ instances:
     class: Recipe
     data:
       name: 국산문어 해물탕 (왕십리)
-      servings: 2
-      cookTime: 20
-      steps: []  # TODO: 조리 단계 입력 필요
     relations:
       forProduct: prod_mk_008
       atStore: store_wangsimni
@@ -270,9 +252,6 @@ instances:
     class: Recipe
     data:
       name: 순살 아귀찜 (왕십리)
-      servings: 2
-      cookTime: 20
-      steps: []  # TODO: 조리 단계 입력 필요
     relations:
       forProduct: prod_mk_009
       atStore: store_wangsimni
@@ -309,9 +288,6 @@ instances:
     class: Recipe
     data:
       name: 프리미엄 낙곱새 (왕십리)
-      servings: 2
-      cookTime: 20
-      steps: []  # TODO: 조리 단계 입력 필요
     relations:
       forProduct: prod_mk_010
       atStore: store_wangsimni
@@ -348,9 +324,6 @@ instances:
     class: Recipe
     data:
       name: 주꾸미볶음 (왕십리)
-      servings: 2
-      cookTime: 15
-      steps: []  # TODO: 조리 단계 입력 필요
     relations:
       forProduct: prod_mk_011
       atStore: store_wangsimni
@@ -381,9 +354,6 @@ instances:
     class: Recipe
     data:
       name: 낙지볶음 (왕십리)
-      servings: 2
-      cookTime: 15
-      steps: []  # TODO: 조리 단계 입력 필요
     relations:
       forProduct: prod_mk_012
       atStore: store_wangsimni
@@ -415,7 +385,6 @@ instances:
     class: Recipe
     data:
       name: 가리비관자 (왕십리)
-      steps: []
     relations:
       forProduct: prod_sp_001
       atStore: store_wangsimni
@@ -434,7 +403,6 @@ instances:
     class: Recipe
     data:
       name: 흰다리새우 (왕십리)
-      steps: []
     relations:
       forProduct: prod_sp_002
       atStore: store_wangsimni
@@ -450,7 +418,6 @@ instances:
     class: Recipe
     data:
       name: 손질 흰다리새우살(대) (왕십리)
-      steps: []
     relations:
       forProduct: prod_sp_003
       atStore: store_wangsimni
@@ -466,7 +433,6 @@ instances:
     class: Recipe
     data:
       name: 손질 흰다리새우살 (왕십리)
-      steps: []
     relations:
       forProduct: prod_sp_004
       atStore: store_wangsimni
@@ -482,7 +448,6 @@ instances:
     class: Recipe
     data:
       name: 활전복 (왕십리)
-      steps: []
     relations:
       forProduct: prod_sp_005
       atStore: store_wangsimni
@@ -495,7 +460,6 @@ instances:
     class: Recipe
     data:
       name: 국산홍가리비살 (왕십리)
-      steps: []
     relations:
       forProduct: prod_sp_006
       atStore: store_wangsimni
@@ -508,7 +472,6 @@ instances:
     class: Recipe
     data:
       name: 국산흑골뱅이 (왕십리)
-      steps: []
     relations:
       forProduct: prod_sp_007
       atStore: store_wangsimni
@@ -521,7 +484,6 @@ instances:
     class: Recipe
     data:
       name: 백생합 (왕십리)
-      steps: []
     relations:
       forProduct: prod_sp_008
       atStore: store_wangsimni
@@ -534,7 +496,6 @@ instances:
     class: Recipe
     data:
       name: 손질 갑오징어 (왕십리)
-      steps: []
     relations:
       forProduct: prod_sp_009
       atStore: store_wangsimni
@@ -547,7 +508,6 @@ instances:
     class: Recipe
     data:
       name: 손질 낙지 (왕십리)
-      steps: []
     relations:
       forProduct: prod_sp_010
       atStore: store_wangsimni
@@ -560,7 +520,6 @@ instances:
     class: Recipe
     data:
       name: 손질 주꾸미 (왕십리)
-      steps: []
     relations:
       forProduct: prod_sp_011
       atStore: store_wangsimni
@@ -574,7 +533,6 @@ instances:
     class: Recipe
     data:
       name: 국산 알베기 간장게장 (왕십리)
-      steps: []
     relations:
       forProduct: prod_gj_001
       atStore: store_wangsimni
@@ -584,7 +542,6 @@ instances:
     class: Recipe
     data:
       name: 간장게장 (왕십리)
-      steps: []
     relations:
       forProduct: prod_gj_002
       atStore: store_wangsimni
@@ -594,7 +551,6 @@ instances:
     class: Recipe
     data:
       name: 간장 새우장 (왕십리)
-      steps: []
     relations:
       forProduct: prod_gj_003
       atStore: store_wangsimni
@@ -617,9 +573,6 @@ instances:
     class: Recipe
     data:
       name: 문어전복해물탕 (마포)
-      servings: 2
-      cookTime: 20
-      steps: []
     relations:
       forProduct: prod_mk_021
       atStore: store_mapo
@@ -662,9 +615,6 @@ instances:
     class: Recipe
     data:
       name: 낙지전복해물탕 (마포)
-      servings: 2
-      cookTime: 20
-      steps: []
     relations:
       forProduct: prod_mk_022
       atStore: store_mapo
@@ -707,9 +657,6 @@ instances:
     class: Recipe
     data:
       name: 낙곱새 (마포)
-      servings: 2
-      cookTime: 20
-      steps: []
     relations:
       forProduct: prod_mk_025
       atStore: store_mapo
@@ -746,9 +693,6 @@ instances:
     class: Recipe
     data:
       name: 주꾸미볶음 (마포)
-      servings: 2
-      cookTime: 15
-      steps: []
     relations:
       forProduct: prod_mk_026
       atStore: store_mapo
@@ -779,9 +723,6 @@ instances:
     class: Recipe
     data:
       name: 낙지볶음 (마포)
-      servings: 2
-      cookTime: 15
-      steps: []
     relations:
       forProduct: prod_mk_027
       atStore: store_mapo
@@ -813,7 +754,6 @@ instances:
     class: Recipe
     data:
       name: 흰다리새우 (마포)
-      steps: []
     relations:
       forProduct: prod_sp_019
       atStore: store_mapo
@@ -829,7 +769,6 @@ instances:
     class: Recipe
     data:
       name: 흰다리새우살(꼬리있음) (마포)
-      steps: []
     relations:
       forProduct: prod_sp_020
       atStore: store_mapo
@@ -845,7 +784,6 @@ instances:
     class: Recipe
     data:
       name: 흰다리새우살 (마포)
-      steps: []
     relations:
       forProduct: prod_sp_021
       atStore: store_mapo
@@ -861,7 +799,6 @@ instances:
     class: Recipe
     data:
       name: 가리비관자 (마포)
-      steps: []
     relations:
       forProduct: prod_sp_022
       atStore: store_mapo
@@ -880,7 +817,6 @@ instances:
     class: Recipe
     data:
       name: 주꾸미 (마포)
-      steps: []
     relations:
       forProduct: prod_sp_023
       atStore: store_mapo
@@ -893,7 +829,6 @@ instances:
     class: Recipe
     data:
       name: 손질낙지 (마포)
-      steps: []
     relations:
       forProduct: prod_sp_024
       atStore: store_mapo
@@ -906,7 +841,6 @@ instances:
     class: Recipe
     data:
       name: 절단낙지 (마포)
-      steps: []
     relations:
       forProduct: prod_sp_025
       atStore: store_mapo
@@ -919,7 +853,6 @@ instances:
     class: Recipe
     data:
       name: 알곤이세트 (마포)
-      steps: []
     relations:
       forProduct: prod_sp_026
       atStore: store_mapo
@@ -938,9 +871,6 @@ instances:
     class: Recipe
     data:
       name: 동태알탕 (마포)
-      servings: 2
-      cookTime: 20
-      steps: []
     relations:
       forProduct: prod_mk_023
       atStore: store_mapo
@@ -983,9 +913,6 @@ instances:
     class: Recipe
     data:
       name: 푸짐한 알탕 (마포)
-      servings: 2
-      cookTime: 20
-      steps: []
     relations:
       forProduct: prod_mk_024
       atStore: store_mapo
@@ -1013,9 +940,6 @@ instances:
     class: Recipe
     data:
       name: 갑오징어볶음 (마포)
-      servings: 2
-      cookTime: 15
-      steps: []
     relations:
       forProduct: prod_mk_028
       atStore: store_mapo
@@ -1046,9 +970,6 @@ instances:
     class: Recipe
     data:
       name: 순살아귀찜 (마포)
-      servings: 2
-      cookTime: 20
-      steps: []
     relations:
       forProduct: prod_mk_029
       atStore: store_mapo
@@ -1086,7 +1007,6 @@ instances:
     class: Recipe
     data:
       name: 간장새우장 (마포)
-      steps: []
     relations:
       forProduct: prod_gj_004
       atStore: store_mapo
@@ -1109,9 +1029,6 @@ instances:
     class: Recipe
     data:
       name: 문어전복해물탕 (월계)
-      servings: 2
-      cookTime: 20
-      steps: []
     relations:
       forProduct: prod_mk_013
       atStore: store_wolgye
@@ -1157,9 +1074,6 @@ instances:
     class: Recipe
     data:
       name: 낙지전복해물탕 (월계)
-      servings: 2
-      cookTime: 20
-      steps: []
     relations:
       forProduct: prod_mk_014
       atStore: store_wolgye
@@ -1205,9 +1119,6 @@ instances:
     class: Recipe
     data:
       name: 동태알탕 (월계)
-      servings: 2
-      cookTime: 20
-      steps: []
     relations:
       forProduct: prod_mk_015
       atStore: store_wolgye
@@ -1247,9 +1158,6 @@ instances:
     class: Recipe
     data:
       name: 볼락 매운탕 (월계)
-      servings: 2
-      cookTime: 20
-      steps: []
     relations:
       forProduct: prod_mk_016
       atStore: store_wolgye
@@ -1283,9 +1191,6 @@ instances:
     class: Recipe
     data:
       name: 꽃게 해물라면 (월계)
-      servings: 2
-      cookTime: 15
-      steps: []
     relations:
       forProduct: prod_mk_017
       atStore: store_wolgye
@@ -1325,9 +1230,6 @@ instances:
     class: Recipe
     data:
       name: 낙곱새 (월계)
-      servings: 2
-      cookTime: 20
-      steps: []
     relations:
       forProduct: prod_mk_018
       atStore: store_wolgye
@@ -1364,9 +1266,6 @@ instances:
     class: Recipe
     data:
       name: 주꾸미볶음 (월계)
-      servings: 2
-      cookTime: 15
-      steps: []
     relations:
       forProduct: prod_mk_019
       atStore: store_wolgye
@@ -1397,9 +1296,6 @@ instances:
     class: Recipe
     data:
       name: 낙지볶음 (월계)
-      servings: 2
-      cookTime: 15
-      steps: []
     relations:
       forProduct: prod_mk_020
       atStore: store_wolgye
@@ -1431,7 +1327,6 @@ instances:
     class: Recipe
     data:
       name: 흰다리새우 (월계)
-      steps: []
     relations:
       forProduct: prod_sp_012
       atStore: store_wolgye
@@ -1444,7 +1339,6 @@ instances:
     class: Recipe
     data:
       name: 흰다리새우살(대) (월계)
-      steps: []
     relations:
       forProduct: prod_sp_013
       atStore: store_wolgye
@@ -1457,7 +1351,6 @@ instances:
     class: Recipe
     data:
       name: 흰다리새우살 (월계)
-      steps: []
     relations:
       forProduct: prod_sp_014
       atStore: store_wolgye
@@ -1470,7 +1363,6 @@ instances:
     class: Recipe
     data:
       name: 가리비관자 (월계)
-      steps: []
     relations:
       forProduct: prod_sp_015
       atStore: store_wolgye
@@ -1480,7 +1372,6 @@ instances:
     class: Recipe
     data:
       name: 알곤이세트 (월계)
-      steps: []
     relations:
       forProduct: prod_sp_016
       atStore: store_wolgye
@@ -1499,7 +1390,6 @@ instances:
     class: Recipe
     data:
       name: 주꾸미 (월계)
-      steps: []
     relations:
       forProduct: prod_sp_017
       atStore: store_wolgye
@@ -1512,7 +1402,6 @@ instances:
     class: Recipe
     data:
       name: 절단낙지 (월계)
-      steps: []
     relations:
       forProduct: prod_sp_018
       atStore: store_wolgye
@@ -1525,7 +1414,6 @@ instances:
     class: Recipe
     data:
       name: 문어소라슬라이스 (월계)
-      steps: []
     relations:
       forProduct: prod_sp_027
       atStore: store_wolgye

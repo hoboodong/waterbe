@@ -111,18 +111,7 @@ classes:
         type: string
         required: true
         label: 레시피명
-      servings:
-        type: number
-        required: false
-        label: 인분
-      cookTime:
-        type: number
-        required: false
-        label: 조리시간 (분)
-      steps:
-        type: list<string>
-        required: false
-        label: 조리 순서
+
     relations:
       forProduct:
         target: Product
