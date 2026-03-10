@@ -98,3 +98,7 @@ ontology/
 ### 재료 성분(composition) 미입력
 - 소스류: ing_해물탕소스, ing_찜소스, ing_낙곱새소스, ing_볶음소스, ing_간장소스
 - 기타: ing_오만둥이, ing_순살아귀, ing_주꾸미, ing_홍합, ing_라면, ing_동태 등 일부
+
+### ingredientType 미입력
+- 모든 재료에 `ingredientType` 필드 미입력 (나중에 일괄 입력 예정)
+- 분류 예시: 1차수산물, 채소, 소스, 양념 등
