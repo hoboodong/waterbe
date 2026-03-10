@@ -221,6 +221,11 @@
 - [ ] ingredientType 일괄 입력 (1차수산물·채소·소스·양념 등)
 - [ ] 운영 구조 섹션 채우기 (직원 현황, 매입처/공급망, 수수료율, 매출 현황)
 
+#### Recipe 필드 정리
+- `servings`, `cookTime`, `steps` 필드 전체 삭제
+  - 밀키트 제조·판매 사업 특성상 불필요
+  - recipes.yaml 전체 레시피, schema.yaml Recipe 클래스 동시 반영
+
 #### Ingredient ID 명명 규칙 확정 및 적용
 - 규칙 확정 (방법 B):
   - 기본: `ing_{재료명}`
