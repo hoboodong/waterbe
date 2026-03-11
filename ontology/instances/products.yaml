@@ -539,7 +539,7 @@ instances:
     data:
       name: 꽃게 해물라면
       unit: 1팩
-      price: 19800
+      price: 17800
     relations:
       belongsTo: cat_mealkit
       soldAt:
