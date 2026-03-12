@@ -1,0 +1,568 @@
+instances:
+  # ── 왕십리점 밀키트 레시피 ────────────────────────────────────
+
+  - id: recipe_wangsimni_mk001
+    class: Recipe
+    data:
+      name: 문어전복해물탕 (왕십리)
+    relations:
+      forProduct: prod_mk_001
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_자숙문어
+          amount: null
+          unit: g
+        - ingredient: ing_전복
+          amount: null
+          unit: 개
+        - ingredient: ing_새우
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_백생합
+          amount: null
+          unit: g
+        - ingredient: ing_홍합
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_무
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_해물탕소스
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_mk002
+    class: Recipe
+    data:
+      name: 낙지전복해물탕 (왕십리)
+    relations:
+      forProduct: prod_mk_002
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
+        - ingredient: ing_전복
+          amount: null
+          unit: 개
+        - ingredient: ing_새우
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_백생합
+          amount: null
+          unit: g
+        - ingredient: ing_홍합
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_무
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_해물탕소스
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_mk003
+    class: Recipe
+    data:
+      name: 알탕 (왕십리)
+    relations:
+      forProduct: prod_mk_003
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_명란
+          amount: null
+          unit: g
+        - ingredient: ing_대구곤이
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_백생합
+          amount: null
+          unit: g
+        - ingredient: ing_홍합
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_무
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_해물탕소스
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_mk004
+    class: Recipe
+    data:
+      name: 코다리알탕 (왕십리)
+    relations:
+      forProduct: prod_mk_004
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_코다리
+          amount: null
+          unit: g
+        - ingredient: ing_명란
+          amount: null
+          unit: g
+        - ingredient: ing_대구곤이
+          amount: null
+          unit: g
+        - ingredient: ing_백생합
+          amount: null
+          unit: g
+        - ingredient: ing_홍합
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_무
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_해물탕소스
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_mk007
+    class: Recipe
+    data:
+      name: 대구탕 (왕십리)
+    relations:
+      forProduct: prod_mk_007
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_대구
+          amount: null
+          unit: g
+        - ingredient: ing_명란
+          amount: null
+          unit: g
+        - ingredient: ing_대구곤이
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_백생합
+          amount: null
+          unit: g
+        - ingredient: ing_홍합
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_무
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_해물탕소스
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_mk008
+    class: Recipe
+    data:
+      name: 국산문어 해물탕 (왕십리)
+    relations:
+      forProduct: prod_mk_008
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_자숙문어
+          amount: null
+          unit: g
+        - ingredient: ing_전복
+          amount: null
+          unit: 개
+        - ingredient: ing_새우
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_백생합
+          amount: null
+          unit: g
+        - ingredient: ing_홍합
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_무
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_해물탕소스
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_mk009
+    class: Recipe
+    data:
+      name: 순살 아귀찜 (왕십리)
+    relations:
+      forProduct: prod_mk_009
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_순살아귀
+          amount: null
+          unit: g
+        - ingredient: ing_명란
+          amount: null
+          unit: g
+        - ingredient: ing_대구곤이
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_오만둥이
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_찜소스
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_mk010
+    class: Recipe
+    data:
+      name: 프리미엄 낙곱새 (왕십리)
+    relations:
+      forProduct: prod_mk_010
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
+        - ingredient: ing_염지소곱창
+          amount: null
+          unit: g
+        - ingredient: ing_흰다리새우살_S_베트남
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_양배추
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_낙곱새소스
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_mk011
+    class: Recipe
+    data:
+      name: 주꾸미볶음 (왕십리)
+    relations:
+      forProduct: prod_mk_011
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_주꾸미
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_양배추
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_볶음소스
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_mk012
+    class: Recipe
+    data:
+      name: 낙지볶음 (왕십리)
+    relations:
+      forProduct: prod_mk_012
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_양배추
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_볶음소스
+          amount: null
+          unit: g
+
+  # ── 왕십리점 단품 레시피 ────────────────────────────────────
+  - id: recipe_wangsimni_sp001
+    class: Recipe
+    data:
+      name: 가리비관자 (왕십리)
+    relations:
+      forProduct: prod_sp_001
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_가리비관자
+          amount: null
+          unit: g
+        - ingredient: ing_레몬주스
+          amount: null
+          unit: ml
+        - ingredient: ing_버터
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_sp002
+    class: Recipe
+    data:
+      name: 흰다리새우 (왕십리)
+    relations:
+      forProduct: prod_sp_002
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_새우
+          amount: null
+          unit: g
+        - ingredient: ing_레몬주스
+          amount: null
+          unit: ml
+
+  - id: recipe_wangsimni_sp003
+    class: Recipe
+    data:
+      name: 손질 흰다리새우살(대) (왕십리)
+    relations:
+      forProduct: prod_sp_003
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_흰다리새우살_L_페루
+          amount: null
+          unit: g
+        - ingredient: ing_레몬주스
+          amount: null
+          unit: ml
+
+  - id: recipe_wangsimni_sp004
+    class: Recipe
+    data:
+      name: 손질 흰다리새우살 (왕십리)
+    relations:
+      forProduct: prod_sp_004
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_흰다리새우살_S_베트남
+          amount: null
+          unit: g
+        - ingredient: ing_레몬주스
+          amount: null
+          unit: ml
+
+  - id: recipe_wangsimni_sp005
+    class: Recipe
+    data:
+      name: 활전복 (왕십리)
+    relations:
+      forProduct: prod_sp_005
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_전복
+          amount: null
+          unit: 개
+
+  - id: recipe_wangsimni_sp006
+    class: Recipe
+    data:
+      name: 국산홍가리비살 (왕십리)
+    relations:
+      forProduct: prod_sp_006
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_홍가리비살
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_sp007
+    class: Recipe
+    data:
+      name: 국산흑골뱅이 (왕십리)
+    relations:
+      forProduct: prod_sp_007
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_골뱅이
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_sp008
+    class: Recipe
+    data:
+      name: 백생합 (왕십리)
+    relations:
+      forProduct: prod_sp_008
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_백생합
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_sp009
+    class: Recipe
+    data:
+      name: 손질 갑오징어 (왕십리)
+    relations:
+      forProduct: prod_sp_009
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_갑오징어
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_sp010
+    class: Recipe
+    data:
+      name: 손질 낙지 (왕십리)
+    relations:
+      forProduct: prod_sp_010
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
+
+  - id: recipe_wangsimni_sp011
+    class: Recipe
+    data:
+      name: 손질 주꾸미 (왕십리)
+    relations:
+      forProduct: prod_sp_011
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_주꾸미
+          amount: null
+          unit: g
+
+  # ── 왕십리점 게장류 레시피 ──────────────────────────────────
+  - id: recipe_wangsimni_gj001
+    class: Recipe
+    data:
+      name: 국산 알베기 간장게장 (왕십리)
+    relations:
+      forProduct: prod_gj_001
+      atStore: store_wangsimni
+      uses: []  # TODO: 재료 입력 필요
+
+  - id: recipe_wangsimni_gj002
+    class: Recipe
+    data:
+      name: 간장게장 (왕십리)
+    relations:
+      forProduct: prod_gj_002
+      atStore: store_wangsimni
+      uses: []  # TODO: 재료 입력 필요
+
+  - id: recipe_wangsimni_gj003
+    class: Recipe
+    data:
+      name: 간장 새우장 (왕십리)
+    relations:
+      forProduct: prod_gj_003
+      atStore: store_wangsimni
+      uses:
+        - ingredient: ing_흰다리새우살_L_페루
+          amount: null
+          unit: g
+        - ingredient: ing_간장소스
+          amount: null
+          unit: g
+        - ingredient: ing_미림
+          amount: null
+          unit: 큰술
+        - ingredient: ing_고추
+          amount: null
+          unit: 개

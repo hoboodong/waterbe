@@ -13,7 +13,10 @@ ontology/
 │   ├── products.yaml    # 제품 인스턴스
 │   ├── categories.yaml  # 카테고리 인스턴스
 │   ├── ingredients.yaml # 재료 인스턴스
-│   └── recipes.yaml     # 레시피 인스턴스
+│   └── recipes/         # 레시피 인스턴스 (매장별 분리)
+│       ├── wangsimni.yaml
+│       ├── mapo.yaml
+│       └── wolgye.yaml
 └── AGENT.md             # 이 문서
 ```
 
@@ -79,9 +82,9 @@ ontology/
 
 ### 삭제 (Delete)
 - 인스턴스를 파일에서 제거하기 전에 다른 인스턴스의 `relations`에서 해당 id 참조가 없는지 확인.
-- Store 삭제 시: `products.yaml`의 `soldAt`에서 해당 id 제거, `recipes.yaml`의 `atStore` 참조도 제거.
+- Store 삭제 시: `products.yaml`의 `soldAt`에서 해당 id 제거, `recipes/{store}.yaml`의 `atStore` 참조도 제거.
 - Category 삭제 시: `products.yaml`의 `belongsTo` 참조 제품 처리 후 삭제.
-- Ingredient 삭제 시: `recipes.yaml`의 `uses`에서 해당 id 참조 제거.
+- Ingredient 삭제 시: `recipes/` 하위 모든 파일의 `uses`에서 해당 id 참조 제거.
 - Recipe 삭제 시: 다른 인스턴스에서 참조하지 않으므로 단독 삭제 가능.
 
 ## 검증 체크리스트
@@ -93,7 +96,7 @@ ontology/
 - [ ] 새 Product의 `soldAt`에 최소 하나의 Store id가 있는가?
 - [ ] `price: null`인 항목은 의도된 미기입인가 (임시)? 향후 확정 후 업데이트 필요.
 - [ ] `Category.subClassOf`에 순환 참조가 없는가?
-- [ ] Recipe의 `(forProduct, atStore)` 조합이 `recipes.yaml` 내에서 중복되지 않는가?
+- [ ] Recipe의 `(forProduct, atStore)` 조합이 `recipes/` 전체 파일에서 중복되지 않는가?
 - [ ] Recipe의 `uses`에서 참조하는 모든 ingredient id가 `ingredients.yaml`에 존재하는가?
 
 ## 현재 미완료 데이터

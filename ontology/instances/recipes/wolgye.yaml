@@ -1,0 +1,408 @@
+instances:
+  # ── 월계점 밀키트 레시피 ────────────────────────────────────
+
+  - id: recipe_wolgye_mk013
+    class: Recipe
+    data:
+      name: 문어전복해물탕 (월계)
+    relations:
+      forProduct: prod_mk_013
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_자숙문어
+          amount: null
+          unit: g
+        - ingredient: ing_전복
+          amount: null
+          unit: 개
+        - ingredient: ing_새우
+          amount: null
+          unit: g
+        - ingredient: ing_게
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_백생합
+          amount: null
+          unit: g
+        - ingredient: ing_홍합
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_무
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_해물탕소스
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_mk014
+    class: Recipe
+    data:
+      name: 낙지전복해물탕 (월계)
+    relations:
+      forProduct: prod_mk_014
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
+        - ingredient: ing_전복
+          amount: null
+          unit: 개
+        - ingredient: ing_새우
+          amount: null
+          unit: g
+        - ingredient: ing_게
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_백생합
+          amount: null
+          unit: g
+        - ingredient: ing_홍합
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_무
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_해물탕소스
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_mk015
+    class: Recipe
+    data:
+      name: 동태알탕 (월계)
+    relations:
+      forProduct: prod_mk_015
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_동태
+          amount: null
+          unit: g
+        - ingredient: ing_명란
+          amount: null
+          unit: g
+        - ingredient: ing_명태곤이
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_홍합
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_무
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_해물탕소스
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_mk016
+    class: Recipe
+    data:
+      name: 볼락 매운탕 (월계)
+    relations:
+      forProduct: prod_mk_016
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_볼락
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_홍합
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_무
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_해물탕소스
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_mk017
+    class: Recipe
+    data:
+      name: 꽃게 해물라면 (월계)
+    relations:
+      forProduct: prod_mk_017
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_게_이탈리아
+          amount: null
+          unit: g
+        - ingredient: ing_게_바레인
+          amount: null
+          unit: g
+        - ingredient: ing_가리비관자
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_무
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_라면
+          amount: null
+          unit: 개
+        - ingredient: ing_해물탕소스
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_mk018
+    class: Recipe
+    data:
+      name: 낙곱새 (월계)
+    relations:
+      forProduct: prod_mk_018
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
+        - ingredient: ing_염지소대창
+          amount: null
+          unit: g
+        - ingredient: ing_흰다리새우살_S_베트남
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_양배추
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_낙곱새소스
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_mk019
+    class: Recipe
+    data:
+      name: 주꾸미볶음 (월계)
+    relations:
+      forProduct: prod_mk_019
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_주꾸미
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_양배추
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_볶음소스
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_mk020
+    class: Recipe
+    data:
+      name: 낙지볶음 (월계)
+    relations:
+      forProduct: prod_mk_020
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: null
+          unit: g
+        - ingredient: ing_양배추
+          amount: null
+          unit: g
+        - ingredient: ing_콩나물
+          amount: null
+          unit: g
+        - ingredient: ing_대파
+          amount: null
+          unit: g
+        - ingredient: ing_고추
+          amount: null
+          unit: 개
+        - ingredient: ing_볶음소스
+          amount: null
+          unit: g
+
+  # ── 월계점 단품 레시피 ──────────────────────────────────────
+  - id: recipe_wolgye_sp012
+    class: Recipe
+    data:
+      name: 흰다리새우 (월계)
+    relations:
+      forProduct: prod_sp_012
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_새우
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_sp013
+    class: Recipe
+    data:
+      name: 흰다리새우살(대) (월계)
+    relations:
+      forProduct: prod_sp_013
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_흰다리새우살_L_페루
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_sp014
+    class: Recipe
+    data:
+      name: 흰다리새우살 (월계)
+    relations:
+      forProduct: prod_sp_014
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_흰다리새우살_S_베트남
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_sp015
+    class: Recipe
+    data:
+      name: 가리비관자 (월계)
+    relations:
+      forProduct: prod_sp_015
+      atStore: store_wolgye
+      uses: []  # TODO: 재료 입력 필요
+
+  - id: recipe_wolgye_sp016
+    class: Recipe
+    data:
+      name: 알곤이세트 (월계)
+    relations:
+      forProduct: prod_sp_016
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_명란
+          amount: null
+          unit: g
+        - ingredient: ing_대구곤이
+          amount: null
+          unit: g
+        - ingredient: ing_레몬주스
+          amount: null
+          unit: ml
+
+  - id: recipe_wolgye_sp017
+    class: Recipe
+    data:
+      name: 주꾸미 (월계)
+    relations:
+      forProduct: prod_sp_017
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_주꾸미
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_sp018
+    class: Recipe
+    data:
+      name: 절단낙지 (월계)
+    relations:
+      forProduct: prod_sp_018
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_낙지
+          amount: null
+          unit: g
+
+  - id: recipe_wolgye_sp027
+    class: Recipe
+    data:
+      name: 문어소라슬라이스 (월계)
+    relations:
+      forProduct: prod_sp_027
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_자숙문어
+          amount: null
+          unit: g
+        - ingredient: ing_자숙피뿔고둥살
+          amount: null
+          unit: g
+        - ingredient: ing_레몬주스
+          amount: null
+          unit: ml
+        - ingredient: ing_초고추장
+          amount: null
+          unit: 큰술
