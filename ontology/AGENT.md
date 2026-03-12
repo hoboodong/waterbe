@@ -22,6 +22,66 @@ ontology/
 └── AGENT.md             # 이 문서
 ```
 
+## 클래스 관계도
+
+```
+Store (매장)
+  └─ carries ──→ Product (제품)
+                    └─ forProduct ←── Recipe (레시피)
+                                          └─ uses ──→ Ingredient (재료)
+                                                          └─ forIngredient ←── PurchaseSpec (발주규격)
+                                                                                    └─ forPurchaseSpec ←── PriceHistory (가격이력)
+```
+
+**데이터 흐름 요약**
+- 매장마다 판매하는 **제품**이 있다
+- 제품마다 매장별 **레시피**가 있다 (같은 제품도 매장마다 레시피가 다를 수 있음)
+- 레시피는 **재료**를 사용량(amount)과 함께 참조한다
+- 재료는 **발주규격**으로 시장에서 주문한다 (발주명·발주단위)
+- 발주규격마다 날짜별 **가격이력**이 쌓인다 → 현재 단가 = 가장 최신 레코드
+
+---
+
+## 사용 예시
+
+### 예시 1: 왕십리점 낙곱새 레시피 원가 계산
+```
+1. recipes/wangsimni.yaml → recipe_wangsimni_mk010 조회
+2. uses 목록에서 재료별 (ingredient, amount, unit) 확인
+3. 각 재료 ID → ingredients.yaml → thawLossRate, trimLossRate 확인
+4. 재료 ID → purchase_specs.yaml → forIngredient 역참조로 pspec 찾기
+5. pspec ID → price_history.yaml → 가장 최신 date의 unitPrice 확인
+6. 원가 계산:
+   실수율 = (1 - thawLoss/100) × (1 - trimLoss/100)
+   원가/g = unitPrice ÷ (발주kg × 1000) ÷ 실수율
+   재료 원가 = 원가/g × amount(g)
+7. 전체 재료 합산 = 레시피 1팩 원가
+```
+
+### 예시 2: 특정 재료의 현재 단가 조회
+```
+1. ingredients.yaml → 재료 ID 확인 (예: ing_낙지)
+2. purchase_specs.yaml → forIngredient: ing_낙지 인 pspec 목록 조회
+3. price_history.yaml → 해당 pspec들의 가장 최신 date 레코드 → unitPrice
+4. 단가/g = unitPrice ÷ (발주kg × 1000)
+```
+
+### 예시 3: 매장별 제품 목록 조회
+```
+1. products.yaml → soldAt 배열에 store_wangsimni 포함된 항목 필터
+2. belongsTo로 카테고리 구분 (cat_mealkit / cat_single / cat_ganjang)
+```
+
+### 예시 4: 개수 기준 재료(전복 등) 원가
+```
+1. purchase_specs.yaml → pspec_022 (전복 소) → countPerKg: 25
+2. 1개 평균 무게 = 1000 ÷ 25 = 40g
+3. price_history.yaml → 최신 unitPrice (예: 18,000원/개)
+4. 레시피에 전복 1개 → 원가 18,000원
+```
+
+---
+
 ## 스키마 수정 규칙
 
 1. **하위 호환성 유지**: 기존 속성을 삭제하거나 타입을 변경할 때는 인스턴스 파일 전체를 먼저 점검한다.
