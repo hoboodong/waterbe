@@ -58,12 +58,42 @@ Store (매장)
 7. 전체 재료 합산 = 레시피 1팩 원가
 ```
 
-### 예시 2: 특정 재료의 현재 단가 조회
+### 예시 2: 특정 재료의 현재 단가 조회 (필수 패턴 — 반드시 이 순서로)
+
+> **주의**: 가격 데이터는 price_history.yaml에 있다. "데이터 없음"이라고 판단하기 전에 반드시 아래 4단계를 모두 실행할 것.
+
 ```
-1. ingredients.yaml → 재료 ID 확인 (예: ing_낙지)
-2. purchase_specs.yaml → forIngredient: ing_낙지 인 pspec 목록 조회
-3. price_history.yaml → 해당 pspec + vendor의 가장 최신 date 레코드 → unitPrice
-4. 단가/g = unitPrice ÷ (발주kg × 1000)
+[질문 예시] "자숙문어 200g 얼마야?"
+
+Step 1. 재료 ID 확인
+  → ingredients.yaml 에서 재료명 검색
+  → 예: 자숙문어 관련 ID = ing_자숙문어 (필리핀), ing_비자숙문어 (국산) 등
+  → ID가 여러 개면 사용자에게 어떤 종류인지 먼저 물어볼 것
+
+Step 2. pspec 찾기
+  → purchase_specs.yaml 에서 forIngredient 값이 해당 ID인 항목 전체 조회
+  → 예: ing_자숙문어 → pspec_024 (국산문어 8kg), pspec_026 (냉동자숙문어 필리핀 10kg)
+  → pspec가 여러 개면 전부 나열하고 사용자에게 선택 요청
+
+Step 3. 가격 조회
+  → price_history.yaml 에서 해당 pspec ID를 forPurchaseSpec으로 갖는 레코드 조회
+  → date 기준 최신 레코드의 unitPrice 사용
+  → vendor 필드도 함께 확인 (남선푸드 / 대영상사 등)
+
+Step 4. 단가 계산
+  → 단가/g = unitPrice ÷ (발주kg × 1000)
+  → 요청량 원가 = 단가/g × 요청량(g)
+
+[실제 계산 예시]
+  냉동자숙문어(필리핀) 200g:
+    ph_021 → unitPrice: 153,000원 / 10kg
+    단가/g = 153,000 ÷ 10,000 = 15.3원/g
+    200g 원가 = 15.3 × 200 = 3,060원
+
+  국산문어 200g:
+    ph_019 → unitPrice: 245,000원 / 8kg
+    단가/g = 245,000 ÷ 8,000 = 30.625원/g
+    200g 원가 = 30.625 × 200 = 6,125원
 ```
 
 ### 예시 3: 매장별 제품 목록 조회
