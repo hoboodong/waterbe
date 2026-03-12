@@ -1,0 +1,685 @@
+instances:
+  # 발주규격 (PurchaseSpec)
+  # category: 재료 / 포장재 / 소모품
+
+  # ── 새우류 ────────────────────────────────────────────────
+  - id: pspec_001
+    class: PurchaseSpec
+    data:
+      orderName: PDTO새우살26-30P(페루산)
+      orderUnit: 9kg
+      category: 재료
+    relations:
+      forIngredient: ing_흰다리새우살_L_페루
+      vendor: null
+
+  - id: pspec_002
+    class: PurchaseSpec
+    data:
+      orderName: 냉동새우살71-90P(베트남)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_흰다리새우살_S_베트남
+      vendor: null
+
+  - id: pspec_003
+    class: PurchaseSpec
+    data:
+      orderName: 냉동새우 30/40(페루)
+      orderUnit: 12kg
+      category: 재료
+    relations:
+      forIngredient: ing_새우
+      vendor: null
+
+  - id: pspec_004
+    class: PurchaseSpec
+    data:
+      orderName: 냉동새우 40/50(페루)
+      orderUnit: 12kg
+      category: 재료
+    relations:
+      forIngredient: ing_새우
+      vendor: null
+
+  - id: pspec_005
+    class: PurchaseSpec
+    data:
+      orderName: PDTO새우살30-40P(페루산)
+      orderUnit: 9kg
+      category: 재료
+    relations:
+      forIngredient: ing_흰다리새우살_L_페루
+      vendor: null
+
+  - id: pspec_006
+    class: PurchaseSpec
+    data:
+      orderName: 냉동새우 30/40(사우디)
+      orderUnit: 12kg
+      category: 재료
+    relations:
+      forIngredient: ing_새우_사우디
+      vendor: null
+
+  - id: pspec_007
+    class: PurchaseSpec
+    data:
+      orderName: 냉동새우 41-50P(사우디)
+      orderUnit: 12kg
+      category: 재료
+    relations:
+      forIngredient: ing_새우_사우디
+      vendor: null
+
+  # ── 꽃게·게류 ──────────────────────────────────────────────
+  - id: pspec_008
+    class: PurchaseSpec
+    data:
+      orderName: 절단꽃게L(중국)
+      orderUnit: 5.4kg
+      category: 재료
+    relations:
+      forIngredient: ing_게
+      vendor: null
+
+  - id: pspec_009
+    class: PurchaseSpec
+    data:
+      orderName: 절단꽃게2S(튀니지)
+      orderUnit: 6kg
+      category: 재료
+    relations:
+      forIngredient: ing_게
+      vendor: null
+
+  - id: pspec_010
+    class: PurchaseSpec
+    data:
+      orderName: 절단꽃게M(바레인,튀니지)
+      orderUnit: 6kg
+      category: 재료
+    relations:
+      forIngredient: ing_게_바레인
+      vendor: null
+
+  - id: pspec_011
+    class: PurchaseSpec
+    data:
+      orderName: 국산꽃게(암)5단(국산)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_게
+      vendor: null
+
+  - id: pspec_012
+    class: PurchaseSpec
+    data:
+      orderName: 꽃게탕용 절단꽃게(국산)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_게
+      vendor: null
+
+  - id: pspec_013
+    class: PurchaseSpec
+    data:
+      orderName: 삼점게100/150(암)(파키스탄)
+      orderUnit: 6kg
+      category: 재료
+    relations:
+      forIngredient: ing_게
+      vendor: null
+
+  - id: pspec_014
+    class: PurchaseSpec
+    data:
+      orderName: 절단꽃게3L(중국)
+      orderUnit: 5.4kg
+      category: 재료
+    relations:
+      forIngredient: ing_게
+      vendor: null
+
+  # ── 조개류 ────────────────────────────────────────────────
+  - id: pspec_015
+    class: PurchaseSpec
+    data:
+      orderName: 백생합(중국)(생물)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_백생합
+      vendor: null
+
+  - id: pspec_016
+    class: PurchaseSpec
+    data:
+      orderName: 백생합(중국)(생물)
+      orderUnit: 1kg
+      category: 재료
+    relations:
+      forIngredient: ing_백생합
+      vendor: null
+
+  - id: pspec_017
+    class: PurchaseSpec
+    data:
+      orderName: 냉동홍합(국산)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_홍합
+      vendor: null
+
+  - id: pspec_018
+    class: PurchaseSpec
+    data:
+      orderName: 냉동홍가리비(껍질있음)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_냉동홍가리비
+      vendor: null
+
+  - id: pspec_019
+    class: PurchaseSpec
+    data:
+      orderName: 냉동홍가리비살
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_홍가리비살
+      vendor: null
+
+  - id: pspec_020
+    class: PurchaseSpec
+    data:
+      orderName: 반각가리비7/8미(중국)
+      orderUnit: 1.8kg
+      category: 재료
+    relations:
+      forIngredient: ing_반각가리비
+      vendor: null
+
+  - id: pspec_021
+    class: PurchaseSpec
+    data:
+      orderName: 압축가리비관자(중국)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_가리비관자
+      vendor: null
+
+  # ── 전복 ──────────────────────────────────────────────────
+  - id: pspec_022
+    class: PurchaseSpec
+    data:
+      orderName: 전복(소)(생물)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_전복
+      vendor: null
+
+  - id: pspec_023
+    class: PurchaseSpec
+    data:
+      orderName: 전복(중)(생물)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_전복
+      vendor: null
+
+  # ── 문어류 ────────────────────────────────────────────────
+  - id: pspec_024
+    class: PurchaseSpec
+    data:
+      orderName: 국산문어(국산)
+      orderUnit: 8kg
+      category: 재료
+    relations:
+      forIngredient: ing_자숙문어
+      vendor: null
+
+  - id: pspec_025
+    class: PurchaseSpec
+    data:
+      orderName: 비자숙문어(국산)
+      orderUnit: 8kg
+      category: 재료
+    relations:
+      forIngredient: ing_비자숙문어
+      vendor: null
+
+  - id: pspec_026
+    class: PurchaseSpec
+    data:
+      orderName: 냉동자숙문어(필리핀)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_자숙문어
+      vendor: null
+
+  - id: pspec_027
+    class: PurchaseSpec
+    data:
+      orderName: 문어슬라이스(샐러드컷)(필리핀)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_자숙문어_절단
+      vendor: null
+
+  # ── 낙지·주꾸미·오징어류 ───────────────────────────────────
+  - id: pspec_028
+    class: PurchaseSpec
+    data:
+      orderName: 냉동활낙지8미(중국)
+      orderUnit: 5.1kg
+      category: 재료
+    relations:
+      forIngredient: ing_낙지
+      vendor: null
+
+  - id: pspec_029
+    class: PurchaseSpec
+    data:
+      orderName: 냉동활낙지6미(중국)
+      orderUnit: 5.1kg
+      category: 재료
+    relations:
+      forIngredient: ing_낙지
+      vendor: null
+
+  - id: pspec_030
+    class: PurchaseSpec
+    data:
+      orderName: 절단낙지(말레이시아)
+      orderUnit: 6kg
+      category: 재료
+    relations:
+      forIngredient: ing_낙지
+      vendor: null
+
+  - id: pspec_031
+    class: PurchaseSpec
+    data:
+      orderName: 손질낙지(200/300)(베트남)
+      orderUnit: 6kg
+      category: 재료
+    relations:
+      forIngredient: ing_낙지
+      vendor: null
+
+  - id: pspec_032
+    class: PurchaseSpec
+    data:
+      orderName: 절단주꾸미(베트남)
+      orderUnit: 6kg
+      category: 재료
+    relations:
+      forIngredient: ing_주꾸미
+      vendor: null
+
+  - id: pspec_033
+    class: PurchaseSpec
+    data:
+      orderName: 냉동주꾸미(베트남)
+      orderUnit: 4.8kg
+      category: 재료
+    relations:
+      forIngredient: ing_주꾸미
+      vendor: null
+
+  - id: pspec_034
+    class: PurchaseSpec
+    data:
+      orderName: 솔방울오징어(중국)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_솔방울오징어
+      vendor: null
+
+  # ── 흰살생선류 ────────────────────────────────────────────
+  - id: pspec_035
+    class: PurchaseSpec
+    data:
+      orderName: 절단코다리60/80깔끔이(러시아)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_코다리
+      vendor: null
+
+  - id: pspec_036
+    class: PurchaseSpec
+    data:
+      orderName: 절단동태(러시아)
+      orderUnit: 5kg
+      category: 재료
+    relations:
+      forIngredient: ing_동태
+      vendor: null
+
+  - id: pspec_037
+    class: PurchaseSpec
+    data:
+      orderName: 절단대구(국산)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_대구
+      vendor: null
+
+  - id: pspec_038
+    class: PurchaseSpec
+    data:
+      orderName: 대구곤이(아이슬란드)
+      orderUnit: 6kg
+      category: 재료
+    relations:
+      forIngredient: ing_대구곤이
+      vendor: null
+
+  - id: pspec_039
+    class: PurchaseSpec
+    data:
+      orderName: 명란(러시아)
+      orderUnit: 7.5kg
+      category: 재료
+    relations:
+      forIngredient: ing_명란
+      vendor: null
+
+  - id: pspec_040
+    class: PurchaseSpec
+    data:
+      orderName: 명란PG 원물
+      orderUnit: 22.5kg
+      category: 재료
+    relations:
+      forIngredient: ing_명란
+      vendor: null
+
+  # ── 기타 수산물 ───────────────────────────────────────────
+  - id: pspec_041
+    class: PurchaseSpec
+    data:
+      orderName: 오만둥이(소포장)
+      orderUnit: 1kg
+      category: 재료
+    relations:
+      forIngredient: ing_오만둥이
+      vendor: null
+
+  - id: pspec_042
+    class: PurchaseSpec
+    data:
+      orderName: 참소라살3S(튀르키예)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_자숙피뿔고둥살
+      vendor: null
+
+  # ── 육류 ──────────────────────────────────────────────────
+  - id: pspec_043
+    class: PurchaseSpec
+    data:
+      orderName: 소곱창
+      orderUnit: 15kg
+      category: 재료
+    relations:
+      forIngredient: ing_염지소곱창
+      vendor: null
+
+  - id: pspec_044
+    class: PurchaseSpec
+    data:
+      orderName: 우삼겹(미국)
+      orderUnit: 5kg
+      category: 재료
+    relations:
+      forIngredient: ing_우삼겹
+      vendor: null
+
+  # ── 소스류 ────────────────────────────────────────────────
+  - id: pspec_045
+    class: PurchaseSpec
+    data:
+      orderName: 볶음소스(불맛)
+      orderUnit: 9kg
+      category: 재료
+    relations:
+      forIngredient: ing_볶음소스
+      vendor: null
+
+  - id: pspec_046
+    class: PurchaseSpec
+    data:
+      orderName: 낙곱새소스
+      orderUnit: 9kg
+      category: 재료
+    relations:
+      forIngredient: ing_낙곱새소스
+      vendor: null
+
+  - id: pspec_047
+    class: PurchaseSpec
+    data:
+      orderName: 해물탕소스(100gX150팩)(시니원)
+      orderUnit: 150팩
+      category: 재료
+    relations:
+      forIngredient: ing_해물탕소스
+      vendor: null
+
+  - id: pspec_048
+    class: PurchaseSpec
+    data:
+      orderName: 양념게장소스
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_양념게장소스
+      vendor: null
+
+  - id: pspec_049
+    class: PurchaseSpec
+    data:
+      orderName: 간장게장소스(한국소스)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_간장소스
+      vendor: null
+
+  # ── 포장재 ────────────────────────────────────────────────
+  - id: pspec_050
+    class: PurchaseSpec
+    data:
+      orderName: 볶음용용기 2호
+      orderUnit: 1줄
+      category: 포장재
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_051
+    class: PurchaseSpec
+    data:
+      orderName: 볶음용용기 3호
+      orderUnit: 1줄
+      category: 포장재
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_052
+    class: PurchaseSpec
+    data:
+      orderName: 볶음용용기커버(2호/3호공용)
+      orderUnit: 1줄
+      category: 포장재
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_053
+    class: PurchaseSpec
+    data:
+      orderName: 트레이PLA-66호
+      orderUnit: 1줄
+      category: 포장재
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_054
+    class: PurchaseSpec
+    data:
+      orderName: 트레이 26호
+      orderUnit: 1줄
+      category: 포장재
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_055
+    class: PurchaseSpec
+    data:
+      orderName: 트레이 18호
+      orderUnit: 1줄
+      category: 포장재
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_056
+    class: PurchaseSpec
+    data:
+      orderName: 트레이 66/77공용
+      orderUnit: 1줄
+      category: 포장재
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_057
+    class: PurchaseSpec
+    data:
+      orderName: 밀키트(탕)용기 33245(대)
+      orderUnit: 150세트
+      category: 포장재
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_058
+    class: PurchaseSpec
+    data:
+      orderName: 밀키트(탕)용기 32225(중)
+      orderUnit: 150세트
+      category: 포장재
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_059
+    class: PurchaseSpec
+    data:
+      orderName: 밀키트(탕)용기 27175(소)
+      orderUnit: 160세트
+      category: 포장재
+    relations:
+      forIngredient: null
+      vendor: null
+
+  # ── 소모품 ────────────────────────────────────────────────
+  - id: pspec_060
+    class: PurchaseSpec
+    data:
+      orderName: 스티커(간편해물볶음)
+      orderUnit: 1롤/500장
+      category: 소모품
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_061
+    class: PurchaseSpec
+    data:
+      orderName: 스티커(즉석해물탕)
+      orderUnit: 1롤/500장
+      category: 소모품
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_062
+    class: PurchaseSpec
+    data:
+      orderName: 스티커(인기해산물)
+      orderUnit: 1롤/500장
+      category: 소모품
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_063
+    class: PurchaseSpec
+    data:
+      orderName: 스티커(제철해산물)
+      orderUnit: 1롤/500장
+      category: 소모품
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_064
+    class: PurchaseSpec
+    data:
+      orderName: 일반랩
+      orderUnit: 1롤
+      category: 소모품
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_065
+    class: PurchaseSpec
+    data:
+      orderName: 친환경퓨어랩
+      orderUnit: 1롤
+      category: 소모품
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_066
+    class: PurchaseSpec
+    data:
+      orderName: 저울라벨지
+      orderUnit: 1줄/5개
+      category: 소모품
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_067
+    class: PurchaseSpec
+    data:
+      orderName: 고무장갑
+      orderUnit: 1팩/10개
+      category: 소모품
+    relations:
+      forIngredient: null
+      vendor: null

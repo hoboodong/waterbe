@@ -390,4 +390,74 @@ instances:
       name: 고추
       defaultUnit: 개
 
+  - id: ing_비자숙문어
+    class: Ingredient
+    data:
+      name: 비자숙문어
+      defaultUnit: g
+      ingredientType: null
+      composition: null
+      origin: 국산
+      allergen: null
+
+  - id: ing_자숙문어_절단
+    class: Ingredient
+    data:
+      name: 자숙문어(절단)
+      defaultUnit: g
+      ingredientType: null
+      composition: null
+      origin: null
+      allergen: null
+
+  - id: ing_냉동홍가리비
+    class: Ingredient
+    data:
+      name: 냉동홍가리비(껍질있음)
+      defaultUnit: g
+      ingredientType: null
+      composition: null
+      origin: null
+      allergen: null
+
+  - id: ing_반각가리비
+    class: Ingredient
+    data:
+      name: 반각가리비
+      defaultUnit: g
+      ingredientType: null
+      composition: null
+      origin: null
+      allergen: null
+
+  - id: ing_새우_사우디
+    class: Ingredient
+    data:
+      name: 흰다리새우(사우디)
+      defaultUnit: g
+      ingredientType: null
+      composition: null
+      origin: 사우디아라비아
+      allergen: null
+
+  - id: ing_양념게장소스
+    class: Ingredient
+    data:
+      name: 양념게장소스
+      defaultUnit: g
+      ingredientType: null
+      composition: null
+      origin: null
+      allergen: null
+
+  - id: ing_우삼겹
+    class: Ingredient
+    data:
+      name: 우삼겹
+      defaultUnit: g
+      ingredientType: null
+      composition: null
+      origin: 미국
+      allergen: null
+
 

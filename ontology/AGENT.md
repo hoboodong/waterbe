@@ -9,11 +9,12 @@
 ontology/
 ├── schema.yaml          # 스키마 정의 (클래스·속성·관계)
 ├── instances/
-│   ├── stores.yaml      # 매장 인스턴스
-│   ├── products.yaml    # 제품 인스턴스
-│   ├── categories.yaml  # 카테고리 인스턴스
-│   ├── ingredients.yaml # 재료 인스턴스
-│   └── recipes/         # 레시피 인스턴스 (매장별 분리)
+│   ├── stores.yaml          # 매장 인스턴스
+│   ├── products.yaml        # 제품 인스턴스
+│   ├── categories.yaml      # 카테고리 인스턴스
+│   ├── ingredients.yaml     # 재료 인스턴스
+│   ├── purchase_specs.yaml  # 발주규격 인스턴스
+│   └── recipes/             # 레시피 인스턴스 (매장별 분리)
 │       ├── wangsimni.yaml
 │       ├── mapo.yaml
 │       └── wolgye.yaml
@@ -39,6 +40,7 @@ ontology/
 | Product (게장류) | `prod_gj_` | `prod_gj_001` |
 | Ingredient | `ing_` | `ing_낙지`, `ing_흰다리새우살_L_페루`, `ing_흰다리새우살_S_베트남` |
 | Recipe | `recipe_{매장}_{product_id}` | `recipe_wangsimni_mk001` |
+| PurchaseSpec | `pspec_` + 순번 | `pspec_001`, `pspec_002` |
 
 ### Ingredient ID 분리 기준
 
@@ -118,6 +120,15 @@ ontology/
 ### ingredientType 미입력
 - 모든 재료에 `ingredientType` 필드 미입력 (나중에 일괄 입력 예정)
 - 분류 예시: 1차수산물, 채소, 소스, 양념 등
+
+### 신규 재료 — 데이터 미입력
+- ing_비자숙문어: composition, allergen 미입력
+- ing_자숙문어_절단: composition, allergen, origin 미입력
+- ing_냉동홍가리비: composition, allergen, origin 미입력
+- ing_반각가리비: composition, allergen, origin 미입력
+- ing_새우_사우디: composition, allergen 미입력
+- ing_양념게장소스: composition, allergen, origin 미입력
+- ing_우삼겹: composition, allergen 미입력
 
 ### vendor (납품업체) 관리 — 미구현
 - 설계 확정: 방법 C 채택
