@@ -1,4 +1,4 @@
-version: "1.7"
+version: "1.8"
 description: 워터비 온톨로지 스키마
 
 classes:
@@ -194,6 +194,11 @@ classes:
         type: string
         required: false
         label: 메모 (가격 변동 사유 등)
+        nullable: true
+      vendor:
+        type: string
+        required: false
+        label: 납품업체 (예: 남선푸드, 대영상사)
         nullable: true
     relations:
       forPurchaseSpec:

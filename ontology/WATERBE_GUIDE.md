@@ -38,7 +38,7 @@ Store (매장)
 - 제품마다 매장별 **레시피**가 있다 (같은 제품도 매장마다 레시피가 다를 수 있음)
 - 레시피는 **재료**를 사용량(amount)과 함께 참조한다
 - 재료는 **발주규격**으로 시장에서 주문한다 (발주명·발주단위)
-- 발주규격마다 날짜별 **가격이력**이 쌓인다 → 현재 단가 = 가장 최신 레코드
+- 발주규격마다 날짜별 **가격이력**이 쌓인다 → 현재 단가 = 해당 pspec + vendor의 가장 최신 레코드
 
 ---
 
@@ -62,7 +62,7 @@ Store (매장)
 ```
 1. ingredients.yaml → 재료 ID 확인 (예: ing_낙지)
 2. purchase_specs.yaml → forIngredient: ing_낙지 인 pspec 목록 조회
-3. price_history.yaml → 해당 pspec들의 가장 최신 date 레코드 → unitPrice
+3. price_history.yaml → 해당 pspec + vendor의 가장 최신 date 레코드 → unitPrice
 4. 단가/g = unitPrice ÷ (발주kg × 1000)
 ```
 
@@ -146,7 +146,7 @@ Store (매장)
 
 > **⚠️ PriceHistory 수정 금지**
 > 가격이 변경되면 기존 레코드를 수정하지 말고 **반드시 새 레코드를 추가**할 것.
-> 현재 단가 = 해당 pspec의 가장 최신 date 레코드.
+> 현재 단가 = 해당 pspec + vendor의 가장 최신 date 레코드.
 
 > **⚠️ 온톨로지 데이터 임의 입력 절대 금지**
 > 모든 인스턴스 데이터(`ingredients.yaml`, `products.yaml`, `recipes.yaml`, `stores.yaml`, `categories.yaml`)에 새 데이터를 추가하거나 기존 데이터를 수정할 때는 **반드시 사용자에게 먼저 확인**을 받아야 한다.
