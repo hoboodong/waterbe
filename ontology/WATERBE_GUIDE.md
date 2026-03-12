@@ -19,7 +19,7 @@ ontology/
 │       ├── wangsimni.yaml
 │       ├── mapo.yaml
 │       └── wolgye.yaml
-└── AGENT.md             # 이 문서
+└── WATERBE_GUIDE.md     # 이 문서 (사용설명서)
 ```
 
 ## 클래스 관계도
@@ -218,4 +218,4 @@ Store (매장)
 - 구현 시 필요한 작업:
   - schema.yaml에 `vendor: list<string>` 필드 추가 (nullable)
   - 각 재료에 vendor 입력
-  - AGENT.md 분리 기준 명문화
+  - WATERBE_GUIDE.md 분리 기준 명문화
