@@ -1,4 +1,4 @@
-version: "1.6"
+version: "1.7"
 description: 워터비 온톨로지 스키마
 
 classes:
@@ -102,6 +102,17 @@ classes:
         required: false
         label: 알레르기 유발물질 (예: 새우, 이산화황 함유)
         nullable: true
+      thawLossRate:
+        type: number
+        required: false
+        label: 해동 손실률 (%, 예: 15 → 15% 손실)
+        nullable: true
+      trimLossRate:
+        type: number
+        required: false
+        label: 손질 손실률 (%, 예: 5 → 5% 손실)
+        nullable: true
+      # 실수율(%) = (1 - thawLossRate/100) × (1 - trimLossRate/100) × 100
 
   Recipe:
     label: 레시피
@@ -149,6 +160,12 @@ classes:
         type: string
         required: true
         label: 품목 분류 (재료 / 포장재 / 소모품)
+      countPerKg:
+        type: number
+        required: false
+        label: 미수 (개/kg, 예: 25미 → 25. 개수 기준 규격일 때만 입력)
+        nullable: true
+      # 1개당 평균 무게(g) = 1000 ÷ countPerKg
     relations:
       forIngredient:
         target: Ingredient
@@ -190,6 +207,9 @@ constraints:
   - "Category.relations.subClassOf는 순환 참조를 허용하지 않는다"
   - "Recipe는 (forProduct, atStore) 조합이 유일해야 한다 (같은 매장·상품 중복 불가)"
   - "Recipe.uses의 ingredient는 반드시 Ingredient 인스턴스를 참조해야 한다"
+  - "Ingredient.thawLossRate는 0 이상 100 미만의 숫자여야 한다"
+  - "Ingredient.trimLossRate는 0 이상 100 미만의 숫자여야 한다"
+  - "PurchaseSpec.countPerKg는 양의 숫자여야 한다"
   - "PriceHistory.unitPrice는 양의 정수여야 한다"
   - "PriceHistory.date는 YYYY-MM-DD 형식이어야 한다"
   - "PriceHistory는 덮어쓰지 않고 변경 시 새 레코드를 추가한다"
