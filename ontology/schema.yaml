@@ -1,4 +1,4 @@
-version: "1.5"
+version: "1.6"
 description: 워터비 온톨로지 스키마
 
 classes:
@@ -161,9 +161,35 @@ classes:
         label: 납품업체
         nullable: true  # Vendor 클래스 미구현, 추후 연결
 
+  PriceHistory:
+    label: 가격이력
+    description: 발주규격별 가격 변동 이력. 가격 변경 시 새 레코드 추가 (덮어쓰기 금지)
+    properties:
+      unitPrice:
+        type: number
+        required: true
+        label: 발주단위 기준 총금액 (원, 예: 9kg 한 박스에 45000원)
+      date:
+        type: string
+        required: true
+        label: 가격 기준일자 (YYYY-MM-DD)
+      memo:
+        type: string
+        required: false
+        label: 메모 (가격 변동 사유 등)
+        nullable: true
+    relations:
+      forPurchaseSpec:
+        target: PurchaseSpec
+        cardinality: many-to-one
+        label: 해당 발주규격
+
 constraints:
   - "Product.price는 양의 정수이거나 null이어야 한다"
   - "Product.relations.soldAt은 반드시 하나 이상의 Store를 참조해야 한다"
   - "Category.relations.subClassOf는 순환 참조를 허용하지 않는다"
   - "Recipe는 (forProduct, atStore) 조합이 유일해야 한다 (같은 매장·상품 중복 불가)"
   - "Recipe.uses의 ingredient는 반드시 Ingredient 인스턴스를 참조해야 한다"
+  - "PriceHistory.unitPrice는 양의 정수여야 한다"
+  - "PriceHistory.date는 YYYY-MM-DD 형식이어야 한다"
+  - "PriceHistory는 덮어쓰지 않고 변경 시 새 레코드를 추가한다"

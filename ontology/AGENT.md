@@ -14,6 +14,7 @@ ontology/
 │   ├── categories.yaml      # 카테고리 인스턴스
 │   ├── ingredients.yaml     # 재료 인스턴스
 │   ├── purchase_specs.yaml  # 발주규격 인스턴스
+│   ├── price_history.yaml   # 가격이력 인스턴스
 │   └── recipes/             # 레시피 인스턴스 (매장별 분리)
 │       ├── wangsimni.yaml
 │       ├── mapo.yaml
@@ -41,6 +42,7 @@ ontology/
 | Ingredient | `ing_` | `ing_낙지`, `ing_흰다리새우살_L_페루`, `ing_흰다리새우살_S_베트남` |
 | Recipe | `recipe_{매장}_{product_id}` | `recipe_wangsimni_mk001` |
 | PurchaseSpec | `pspec_` + 순번 | `pspec_001`, `pspec_002` |
+| PriceHistory | `ph_` + 순번 | `ph_001`, `ph_002` |
 
 ### Ingredient ID 분리 기준
 
@@ -67,6 +69,10 @@ ontology/
 - `id`는 해당 접두사의 마지막 번호 + 1.
 - `class` 필드는 `schema.yaml`에 정의된 클래스명과 정확히 일치해야 한다.
 - `relations`의 참조 id가 해당 인스턴스 파일에 실제로 존재하는지 확인.
+
+> **⚠️ PriceHistory 수정 금지**
+> 가격이 변경되면 기존 레코드를 수정하지 말고 **반드시 새 레코드를 추가**할 것.
+> 현재 단가 = 해당 pspec의 가장 최신 date 레코드.
 
 > **⚠️ 온톨로지 데이터 임의 입력 절대 금지**
 > 모든 인스턴스 데이터(`ingredients.yaml`, `products.yaml`, `recipes.yaml`, `stores.yaml`, `categories.yaml`)에 새 데이터를 추가하거나 기존 데이터를 수정할 때는 **반드시 사용자에게 먼저 확인**을 받아야 한다.

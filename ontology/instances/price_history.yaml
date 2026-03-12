@@ -1,0 +1,541 @@
+instances:
+  # 가격이력 (PriceHistory)
+  #
+  # 사용법:
+  #   - 가격 변경 시 기존 레코드는 절대 수정하지 말 것 → 새 레코드 추가
+  #   - 현재 단가 = 해당 pspec의 가장 최신 date 레코드
+  #   - unitPrice: 발주단위 기준 총금액 (원)
+
+  # ── 새우류 ────────────────────────────────────────────────
+  - id: ph_001
+    class: PriceHistory
+    data:
+      unitPrice: 150000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_001  # PDTO새우살26-30P(페루산) 9kg
+
+  - id: ph_002
+    class: PriceHistory
+    data:
+      unitPrice: 135000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_002  # 냉동새우살71-90P(베트남) 10kg
+
+  - id: ph_003
+    class: PriceHistory
+    data:
+      unitPrice: 135000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_005  # PDTO새우살30-40P(페루산) 9kg
+
+  - id: ph_004
+    class: PriceHistory
+    data:
+      unitPrice: 165000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_006  # 냉동새우 30/40(사우디) 12kg
+
+  - id: ph_005
+    class: PriceHistory
+    data:
+      unitPrice: 155000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_007  # 냉동새우 41-50P(사우디) 12kg
+
+  # ── 꽃게·게류 ──────────────────────────────────────────────
+  - id: ph_006
+    class: PriceHistory
+    data:
+      unitPrice: 33000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_008  # 절단꽃게L(중국) 5.4kg
+
+  - id: ph_007
+    class: PriceHistory
+    data:
+      unitPrice: 33000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_009  # 절단꽃게2S(튀니지) 6kg
+
+  - id: ph_008
+    class: PriceHistory
+    data:
+      unitPrice: 58000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_010  # 절단꽃게M(바레인,튀니지) 6kg
+
+  - id: ph_009
+    class: PriceHistory
+    data:
+      unitPrice: 115000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_011  # 국산꽃게(암)5단(국산)
+
+  - id: ph_010
+    class: PriceHistory
+    data:
+      unitPrice: 48000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_012  # 꽃게탕용 절단꽃게(국산) 10kg
+
+  - id: ph_011
+    class: PriceHistory
+    data:
+      unitPrice: 45000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_013  # 삼점게100/150(암)(파키스탄) 6kg
+
+  - id: ph_012
+    class: PriceHistory
+    data:
+      unitPrice: 45000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_014  # 절단꽃게3L(중국) 5.4kg
+
+  # ── 조개류 ────────────────────────────────────────────────
+  - id: ph_013
+    class: PriceHistory
+    data:
+      unitPrice: 2300
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_016  # 백생합(중국)(생물) 1kg
+
+  - id: ph_014
+    class: PriceHistory
+    data:
+      unitPrice: 35000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_017  # 냉동홍합(국산) 10kg
+
+  - id: ph_015
+    class: PriceHistory
+    data:
+      unitPrice: 43000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_018  # 냉동홍가리비(껍질있음) 10kg
+
+  - id: ph_016
+    class: PriceHistory
+    data:
+      unitPrice: 93000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_019  # 냉동홍가리비살 10kg
+
+  - id: ph_017
+    class: PriceHistory
+    data:
+      unitPrice: 17500
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_020  # 반각가리비7/8미(중국) 1.8kg
+
+  - id: ph_018
+    class: PriceHistory
+    data:
+      unitPrice: 139000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_021  # 압축가리비관자(중국) 10kg
+
+  # ── 문어류 ────────────────────────────────────────────────
+  - id: ph_019
+    class: PriceHistory
+    data:
+      unitPrice: 245000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_024  # 국산문어(국산) 8kg
+
+  - id: ph_020
+    class: PriceHistory
+    data:
+      unitPrice: 180000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_025  # 비자숙문어(국산) 8kg
+
+  - id: ph_021
+    class: PriceHistory
+    data:
+      unitPrice: 153000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_026  # 냉동자숙문어(필리핀) 10kg
+
+  # ── 낙지·주꾸미·오징어류 ───────────────────────────────────
+  - id: ph_022
+    class: PriceHistory
+    data:
+      unitPrice: 44000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_028  # 냉동활낙지8미(중국) 5.1kg
+
+  - id: ph_023
+    class: PriceHistory
+    data:
+      unitPrice: 48000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_029  # 냉동활낙지6미(중국) 5.1kg
+
+  - id: ph_024
+    class: PriceHistory
+    data:
+      unitPrice: 63000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_030  # 절단낙지(말레이시아) 6kg
+
+  - id: ph_025
+    class: PriceHistory
+    data:
+      unitPrice: 65000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_031  # 손질낙지(200/300)(베트남) 6kg
+
+  - id: ph_026
+    class: PriceHistory
+    data:
+      unitPrice: 64000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_032  # 절단주꾸미(베트남) 6kg
+
+  - id: ph_027
+    class: PriceHistory
+    data:
+      unitPrice: 49000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_033  # 냉동주꾸미(베트남) 4.8kg
+
+  - id: ph_028
+    class: PriceHistory
+    data:
+      unitPrice: 56000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_034  # 솔방울오징어(중국) 10kg
+
+  # ── 흰살생선류 ────────────────────────────────────────────
+  - id: ph_029
+    class: PriceHistory
+    data:
+      unitPrice: 40000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_035  # 절단코다리60/80깔끔이(러시아) 10kg
+
+  - id: ph_030
+    class: PriceHistory
+    data:
+      unitPrice: 17500
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_036  # 절단동태(러시아) 5kg
+
+  - id: ph_031
+    class: PriceHistory
+    data:
+      unitPrice: 47000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_037  # 절단대구(국산) 10kg
+
+  - id: ph_032
+    class: PriceHistory
+    data:
+      unitPrice: 40000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_038  # 대구곤이(아이슬란드) 6kg
+
+  - id: ph_033
+    class: PriceHistory
+    data:
+      unitPrice: 65000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_039  # 명란(러시아) 7.5kg
+
+  - id: ph_034
+    class: PriceHistory
+    data:
+      unitPrice: 210000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_040  # 명란PG 원물 22.5kg
+
+  # ── 기타 수산물 ───────────────────────────────────────────
+  - id: ph_035
+    class: PriceHistory
+    data:
+      unitPrice: 2700
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_041  # 오만둥이(소포장) 1kg
+
+  # ── 육류 ──────────────────────────────────────────────────
+  - id: ph_036
+    class: PriceHistory
+    data:
+      unitPrice: 340000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_043  # 소곱창 15kg
+
+  - id: ph_037
+    class: PriceHistory
+    data:
+      unitPrice: 145000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_044  # 우삼겹(미국) 5kg
+
+  # ── 소스류 ────────────────────────────────────────────────
+  - id: ph_038
+    class: PriceHistory
+    data:
+      unitPrice: 52500
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_045  # 볶음소스(불맛) 9kg
+
+  - id: ph_039
+    class: PriceHistory
+    data:
+      unitPrice: 50600
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_046  # 낙곱새소스 9kg
+
+  - id: ph_040
+    class: PriceHistory
+    data:
+      unitPrice: 107000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_047  # 해물탕소스(100gX150팩)(시니원)
+
+  - id: ph_041
+    class: PriceHistory
+    data:
+      unitPrice: 33000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_049  # 간장게장소스(한국소스) 10kg
+
+  # ── 포장재 ────────────────────────────────────────────────
+  - id: ph_042
+    class: PriceHistory
+    data:
+      unitPrice: 30800
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_050  # 볶음용용기 2호
+
+  - id: ph_043
+    class: PriceHistory
+    data:
+      unitPrice: 23000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_052  # 볶음용용기커버(2호/3호공용)
+
+  - id: ph_044
+    class: PriceHistory
+    data:
+      unitPrice: 21000
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_053  # 트레이PLA-66호
+
+  - id: ph_045
+    class: PriceHistory
+    data:
+      unitPrice: 4900
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_054  # 트레이 26호
+
+  - id: ph_046
+    class: PriceHistory
+    data:
+      unitPrice: 4700
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_055  # 트레이 18호
+
+  - id: ph_047
+    class: PriceHistory
+    data:
+      unitPrice: 6700
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_056  # 트레이 66/77공용
+
+  - id: ph_048
+    class: PriceHistory
+    data:
+      unitPrice: 76500
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_058  # 밀키트(탕)용기 32225(중) 150세트
+
+  - id: ph_049
+    class: PriceHistory
+    data:
+      unitPrice: 68800
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_059  # 밀키트(탕)용기 27175(소) 160세트
+
+  # ── 소모품 ────────────────────────────────────────────────
+  - id: ph_050
+    class: PriceHistory
+    data:
+      unitPrice: 6800
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_060  # 스티커(간편해물볶음) 1롤/500장
+
+  - id: ph_051
+    class: PriceHistory
+    data:
+      unitPrice: 5500
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_061  # 스티커(즉석해물탕) 1롤/500장
+
+  - id: ph_052
+    class: PriceHistory
+    data:
+      unitPrice: 5500
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_062  # 스티커(인기해산물) 1롤/500장
+
+  - id: ph_053
+    class: PriceHistory
+    data:
+      unitPrice: 5500
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_063  # 스티커(제철해산물) 1롤/500장
+
+  - id: ph_054
+    class: PriceHistory
+    data:
+      unitPrice: 17100
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_065  # 친환경퓨어랩
+
+  - id: ph_055
+    class: PriceHistory
+    data:
+      unitPrice: 12600
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_066  # 저울라벨지
+
+  - id: ph_056
+    class: PriceHistory
+    data:
+      unitPrice: 6700
+      date: "2026-03-12"
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_067  # 고무장갑
+
+  # ── 전복 ──────────────────────────────────────────────────
+  - id: ph_057
+    class: PriceHistory
+    data:
+      unitPrice: 18000
+      date: "2026-03-12"
+      memo: "1개(마리) 기준 가격"
+    relations:
+      forPurchaseSpec: pspec_022  # 전복(소)(생물)
+
+  - id: ph_058
+    class: PriceHistory
+    data:
+      unitPrice: 19000
+      date: "2026-03-12"
+      memo: "1개(마리) 기준 가격"
+    relations:
+      forPurchaseSpec: pspec_023  # 전복(중)(생물)

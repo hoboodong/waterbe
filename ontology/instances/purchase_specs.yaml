@@ -220,7 +220,7 @@ instances:
     class: PurchaseSpec
     data:
       orderName: 전복(소)(생물)
-      orderUnit: 10kg
+      orderUnit: 1개
       category: 재료
     relations:
       forIngredient: ing_전복
@@ -230,7 +230,7 @@ instances:
     class: PurchaseSpec
     data:
       orderName: 전복(중)(생물)
-      orderUnit: 10kg
+      orderUnit: 1개
       category: 재료
     relations:
       forIngredient: ing_전복
