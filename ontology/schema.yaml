@@ -206,6 +206,108 @@ classes:
         cardinality: many-to-one
         label: 해당 발주규격
 
+  InventorySnapshot:
+    label: 재고실사
+    description: 매장별 재료 재고 실사 기록. 실사할 때마다 새 레코드 추가 (덮어쓰기 금지)
+    properties:
+      date:
+        type: string
+        required: true
+        label: 실사일자 (YYYY-MM-DD)
+      quantity:
+        type: number
+        required: true
+        label: 실사 수량
+      unit:
+        type: string
+        required: true
+        label: 단위 (kg, 개 등)
+      memo:
+        type: string
+        required: false
+        label: 메모
+        nullable: true
+    relations:
+      forIngredient:
+        target: Ingredient
+        cardinality: many-to-one
+        label: 해당 재료
+      atStore:
+        target: Store
+        cardinality: many-to-one
+        label: 해당 매장
+
+  ProductionPlan:
+    label: 생산계획
+    description: 매장별 주간 생산 계획. 조정 시 adjustedQty 입력 (plannedQty 덮어쓰기 금지)
+    properties:
+      weekStart:
+        type: string
+        required: true
+        label: 주 시작일 (YYYY-MM-DD, 월요일 기준)
+      plannedQty:
+        type: number
+        required: true
+        label: 계획 생산량 (개)
+      adjustedQty:
+        type: number
+        required: false
+        label: 조정 생산량 (개). null이면 plannedQty 사용
+        nullable: true
+      status:
+        type: string
+        required: true
+        label: 상태 (planned / adjusted / completed)
+      memo:
+        type: string
+        required: false
+        label: 메모 (조정 사유 등)
+        nullable: true
+    relations:
+      forProduct:
+        target: Product
+        cardinality: many-to-one
+        label: 대상 상품
+      atStore:
+        target: Store
+        cardinality: many-to-one
+        label: 해당 매장
+
+  SalesRecord:
+    label: 매출기록
+    description: 매장별 상품 매출 수기 입력. 하루 단위 기록
+    properties:
+      date:
+        type: string
+        required: true
+        label: 판매일자 (YYYY-MM-DD)
+      qty:
+        type: number
+        required: true
+        label: 판매 수량 (개)
+      unitPrice:
+        type: number
+        required: true
+        label: 판매 단가 (원)
+      totalAmount:
+        type: number
+        required: true
+        label: 총 매출액 (원, qty × unitPrice)
+      memo:
+        type: string
+        required: false
+        label: 메모
+        nullable: true
+    relations:
+      forProduct:
+        target: Product
+        cardinality: many-to-one
+        label: 판매 상품
+      atStore:
+        target: Store
+        cardinality: many-to-one
+        label: 해당 매장
+
 constraints:
   - "Product.price는 양의 정수이거나 null이어야 한다"
   - "Product.relations.soldAt은 반드시 하나 이상의 Store를 참조해야 한다"
@@ -218,3 +320,10 @@ constraints:
   - "PriceHistory.unitPrice는 양의 정수여야 한다"
   - "PriceHistory.date는 YYYY-MM-DD 형식이어야 한다"
   - "PriceHistory는 덮어쓰지 않고 변경 시 새 레코드를 추가한다"
+  - "InventorySnapshot은 덮어쓰지 않고 실사할 때마다 새 레코드를 추가한다"
+  - "InventorySnapshot.date는 YYYY-MM-DD 형식이어야 한다"
+  - "ProductionPlan.weekStart는 YYYY-MM-DD 형식의 월요일이어야 한다"
+  - "ProductionPlan.status는 planned / adjusted / completed 중 하나여야 한다"
+  - "ProductionPlan은 (forProduct, atStore, weekStart) 조합이 유일해야 한다"
+  - "SalesRecord.totalAmount는 qty × unitPrice 와 일치해야 한다"
+  - "SalesRecord.date는 YYYY-MM-DD 형식이어야 한다"

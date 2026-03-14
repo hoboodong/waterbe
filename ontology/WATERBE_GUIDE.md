@@ -15,7 +15,19 @@ ontology/
 │   ├── ingredients.yaml     # 재료 인스턴스
 │   ├── purchase_specs.yaml  # 발주규격 인스턴스
 │   ├── price_history.yaml   # 가격이력 인스턴스
-│   └── recipes/             # 레시피 인스턴스 (매장별 분리)
+│   ├── recipes/             # 레시피 인스턴스 (매장별 분리)
+│   │   ├── wangsimni.yaml
+│   │   ├── mapo.yaml
+│   │   └── wolgye.yaml
+│   ├── inventory/           # 재고실사 인스턴스 (매장별 분리)
+│   │   ├── wangsimni.yaml
+│   │   ├── mapo.yaml
+│   │   └── wolgye.yaml
+│   ├── production/          # 생산계획 인스턴스 (매장별 분리)
+│   │   ├── wangsimni.yaml
+│   │   ├── mapo.yaml
+│   │   └── wolgye.yaml
+│   └── sales/               # 매출기록 인스턴스 (매장별 분리)
 │       ├── wangsimni.yaml
 │       ├── mapo.yaml
 │       └── wolgye.yaml
@@ -27,10 +39,15 @@ ontology/
 ```
 Store (매장)
   └─ carries ──→ Product (제품)
-                    └─ forProduct ←── Recipe (레시피)
-                                          └─ uses ──→ Ingredient (재료)
-                                                          └─ forIngredient ←── PurchaseSpec (발주규격)
-                                                                                    └─ forPurchaseSpec ←── PriceHistory (가격이력)
+  │                 └─ forProduct ←── Recipe (레시피)
+  │                 │                     └─ uses ──→ Ingredient (재료)
+  │                 │                                     └─ forIngredient ←── PurchaseSpec (발주규격)
+  │                 │                                                               └─ forPurchaseSpec ←── PriceHistory (가격이력)
+  │                 ├─ forProduct ←── ProductionPlan (생산계획)
+  │                 └─ forProduct ←── SalesRecord (매출기록)
+  ├─ atStore ←── InventorySnapshot (재고실사)
+  ├─ atStore ←── ProductionPlan (생산계획)
+  └─ atStore ←── SalesRecord (매출기록)
 ```
 
 **데이터 흐름 요약**
@@ -39,6 +56,9 @@ Store (매장)
 - 레시피는 **재료**를 사용량(amount)과 함께 참조한다
 - 재료는 **발주규격**으로 시장에서 주문한다 (발주명·발주단위)
 - 발주규격마다 날짜별 **가격이력**이 쌓인다 → 현재 단가 = 해당 pspec + vendor의 가장 최신 레코드
+- 매장별 **재고실사**를 주기적으로 기록한다 (재료 단위)
+- 매주 매장별 **생산계획**을 입력한다 → 레시피 기반 재료 소요량 및 발주 예상 계산
+- 매출은 매장별 **매출기록**에 수기 입력한다
 
 ---
 
@@ -130,6 +150,9 @@ price_history.yaml → 최신 unitPrice
 | Recipe | `recipe_{매장}_{product_id}` | `recipe_wangsimni_mk001` |
 | PurchaseSpec | `pspec_` + 순번 | `pspec_001` |
 | PriceHistory | `ph_` + 순번 | `ph_001` |
+| InventorySnapshot | `snap_{매장약어}_YYYYMMDD_{재료약어}` | `snap_ws_20260315_낙지` |
+| ProductionPlan | `plan_{매장약어}_YYYYMMDD_{prod_id약어}` | `plan_ws_20260317_mk001` |
+| SalesRecord | `sale_{매장약어}_YYYYMMDD_{prod_id약어}` | `sale_ws_20260315_mk001` |
 
 ### Ingredient ID 분리 기준
 
@@ -172,7 +195,8 @@ price_history.yaml → 최신 unitPrice
 
 ### 가격 미확인
 - `prod_sp_007` (국산흑골뱅이, 왕십리): `price: null`
-- pspec 가격 미입력: pspec_003, pspec_004, pspec_015, pspec_042, pspec_048, pspec_051, pspec_057, pspec_064
+- pspec 가격 미입력: pspec_004, pspec_015, pspec_042, pspec_048, pspec_051, pspec_057, pspec_064
+- 대영상사 단가: 전체 미입력 (월계점 기준)
 
 ### pspec 없는 재료 (원가 계산 불가)
 - ing_찜소스, ing_게_이탈리아, ing_볼락, ing_명태곤이, ing_염지소대창
@@ -188,5 +212,11 @@ price_history.yaml → 최신 unitPrice
 - composition/allergen 미입력: ing_비자숙문어, ing_자숙문어_절단, ing_냉동홍가리비, ing_반각가리비, ing_새우_사우디, ing_양념게장소스, ing_우삼겹
 - ingredientType: 전 재료 미입력 (나중에 일괄 입력 예정)
 
+### 운영 데이터 미입력
+- 재고실사: inventory/ 전체 비어있음 (첫 실사 입력 대기)
+- 생산계획: production/ 전체 비어있음
+- 매출기록: sales/ 전체 비어있음
+
 ### 미구현 기능
 - Ingredient.vendor 필드: 납품업체별 재료 관리 (PriceHistory.vendor는 구현 완료)
+- Store.defaultVendor: 매장별 기본 거래처 (왕십리·마포 = 남선푸드, 월계 = 대영상사)

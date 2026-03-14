@@ -1,0 +1,4 @@
+instances:
+  # 매출기록 — 월계점
+  # 하루 단위 수기 입력
+  # ID 형식: sale_wg_YYYYMMDD_{prod_id 약어}

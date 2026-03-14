@@ -1,0 +1,5 @@
+instances:
+  # 생산계획 — 월계점
+  # 매주 월요일 기준으로 새 레코드 추가
+  # 조정 시 adjustedQty 입력 (plannedQty 덮어쓰기 금지)
+  # ID 형식: plan_wg_YYYYMMDD_{prod_id 약어}

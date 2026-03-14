@@ -1,0 +1,4 @@
+instances:
+  # 재고실사 — 마포점
+  # 실사할 때마다 새 레코드 추가 (덮어쓰기 금지)
+  # ID 형식: snap_mp_YYYYMMDD_{재료ID 약어}
