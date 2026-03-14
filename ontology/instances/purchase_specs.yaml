@@ -219,8 +219,8 @@ instances:
   - id: pspec_022
     class: PurchaseSpec
     data:
-      orderName: 전복(소)(생물)
-      orderUnit: 1개
+      orderName: 전복(소) 25미(생물)
+      orderUnit: 1kg
       category: 재료
     relations:
       forIngredient: ing_전복
@@ -229,8 +229,8 @@ instances:
   - id: pspec_023
     class: PurchaseSpec
     data:
-      orderName: 전복(중)(생물)
-      orderUnit: 1개
+      orderName: 전복(중) 22미(생물)
+      orderUnit: 1kg
       category: 재료
     relations:
       forIngredient: ing_전복
@@ -475,8 +475,8 @@ instances:
   - id: pspec_047
     class: PurchaseSpec
     data:
-      orderName: 해물탕소스(100gX150팩)(시니원)
-      orderUnit: 150팩
+      orderName: 맛있는탕소스(75g*150개)
+      orderUnit: 11.25kg
       category: 재료
     relations:
       forIngredient: ing_해물탕소스
@@ -682,4 +682,75 @@ instances:
       category: 소모품
     relations:
       forIngredient: null
+      vendor: null
+
+  # ── 신규 추가 ──────────────────────────────────────────────
+  - id: pspec_068
+    class: PurchaseSpec
+    data:
+      orderName: PDTO새우살26-30P(인도산)
+      orderUnit: 9kg
+      category: 재료
+    relations:
+      forIngredient: ing_흰다리새우살_L_인도
+      vendor: null
+
+  - id: pspec_069
+    class: PurchaseSpec
+    data:
+      orderName: 냉동새우살71-90P(베트남)
+      orderUnit: 9kg
+      category: 재료
+    relations:
+      forIngredient: ing_흰다리새우살_S_베트남
+      vendor: null
+
+  - id: pspec_070
+    class: PurchaseSpec
+    data:
+      orderName: 백새우살51/70(베트남)
+      orderUnit: 4kg(2kg*2)
+      category: 재료
+    relations:
+      forIngredient: ing_백새우살
+      vendor: null
+
+  - id: pspec_071
+    class: PurchaseSpec
+    data:
+      orderName: 절단낙지IQF(중국)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_낙지
+      vendor: null
+
+  - id: pspec_072
+    class: PurchaseSpec
+    data:
+      orderName: 통갑오징어100/200(인도네시아)
+      orderUnit: 5kg
+      category: 재료
+    relations:
+      forIngredient: ing_갑오징어
+      vendor: null
+
+  - id: pspec_073
+    class: PurchaseSpec
+    data:
+      orderName: 순살아귀(중국산)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_순살아귀
+      vendor: null
+
+  - id: pspec_074
+    class: PurchaseSpec
+    data:
+      orderName: 만능찜소스
+      orderUnit: 8kg
+      category: 재료
+    relations:
+      forIngredient: ing_만능찜소스
       vendor: null

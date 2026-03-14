@@ -460,4 +460,24 @@ instances:
       origin: 미국
       allergen: null
 
+  - id: ing_흰다리새우살_L_인도
+    class: Ingredient
+    data:
+      name: 흰다리새우살 (대, 인도산)
+      defaultUnit: g
+      origin: 인도
+
+  - id: ing_백새우살
+    class: Ingredient
+    data:
+      name: 백새우살
+      defaultUnit: g
+      origin: 베트남
+
+  - id: ing_만능찜소스
+    class: Ingredient
+    data:
+      name: 만능찜소스
+      defaultUnit: g
+
 

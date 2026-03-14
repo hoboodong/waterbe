@@ -595,6 +595,208 @@ instances:
       unitPrice: 19000
       date: "2026-03-12"
       vendor: 남선푸드
-      memo: "1개(마리) 기준 가격"
+      memo: "1개(마리) 기준 가격 (구단위)"
     relations:
       forPurchaseSpec: pspec_023  # 전복(중)(생물)
+
+  # ── 2026-03-14 단가표 업데이트 (이마트마포점 기준) ──────────────
+  - id: ph_059
+    class: PriceHistory
+    data:
+      unitPrice: 150000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_003  # 냉동새우 31/40(페루) 12kg
+
+  - id: ph_060
+    class: PriceHistory
+    data:
+      unitPrice: 148000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_007  # 냉동새우 41-50P(사우디) 12kg (155,000→148,000)
+
+  - id: ph_061
+    class: PriceHistory
+    data:
+      unitPrice: 52000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_033  # 냉동주꾸미(베트남) 4.8kg (49,000→52,000)
+
+  - id: ph_062
+    class: PriceHistory
+    data:
+      unitPrice: 163000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_026  # 냉동자숙문어(필리핀) 10kg (153,000→163,000)
+
+  - id: ph_063
+    class: PriceHistory
+    data:
+      unitPrice: 67000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_031  # 손질낙지(200/300)(베트남) 6kg (65,000→67,000)
+
+  - id: ph_064
+    class: PriceHistory
+    data:
+      unitPrice: 51000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_034  # 솔방울오징어(중국) 10kg (56,000→51,000)
+
+  - id: ph_065
+    class: PriceHistory
+    data:
+      unitPrice: 119000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_021  # 압축가리비관자(중국) 10kg (139,000→119,000)
+
+  - id: ph_066
+    class: PriceHistory
+    data:
+      unitPrice: 29000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_017  # 냉동홍합(국산) 10kg (35,000→29,000)
+
+  - id: ph_067
+    class: PriceHistory
+    data:
+      unitPrice: 20000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: "1kg 기준 가격 (25미)"
+    relations:
+      forPurchaseSpec: pspec_022  # 전복(소) 1kg
+
+  - id: ph_068
+    class: PriceHistory
+    data:
+      unitPrice: 20000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: "1kg 기준 가격 (22미)"
+    relations:
+      forPurchaseSpec: pspec_023  # 전복(중) 1kg
+
+  - id: ph_069
+    class: PriceHistory
+    data:
+      unitPrice: 38000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_038  # 대구곤이(아이슬란드) 6kg (40,000→38,000)
+
+  - id: ph_070
+    class: PriceHistory
+    data:
+      unitPrice: 63000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_039  # 명란(러시아) 7.5kg (65,000→63,000)
+
+  - id: ph_071
+    class: PriceHistory
+    data:
+      unitPrice: 44000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_035  # 절단코다리60/80(러시아) 10kg (40,000→44,000)
+
+  # ── 신규 pspec 단가 ────────────────────────────────────────
+  - id: ph_072
+    class: PriceHistory
+    data:
+      unitPrice: 138000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_068  # PDTO새우살26-30P(인도산) 9kg
+
+  - id: ph_073
+    class: PriceHistory
+    data:
+      unitPrice: 122000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_069  # 냉동새우살71-90P(베트남) 9kg
+
+  - id: ph_074
+    class: PriceHistory
+    data:
+      unitPrice: 54000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_070  # 백새우살51/70(베트남) 4kg
+
+  - id: ph_075
+    class: PriceHistory
+    data:
+      unitPrice: 112000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_071  # 절단낙지IQF(중국) 10kg
+
+  - id: ph_076
+    class: PriceHistory
+    data:
+      unitPrice: 66000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_072  # 통갑오징어100/200(인도네시아) 5kg
+
+  - id: ph_077
+    class: PriceHistory
+    data:
+      unitPrice: 62000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_073  # 순살아귀(중국산) 10kg
+
+  - id: ph_078
+    class: PriceHistory
+    data:
+      unitPrice: 52000
+      date: "2026-03-14"
+      vendor: 남선푸드
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_074  # 만능찜소스 8kg
