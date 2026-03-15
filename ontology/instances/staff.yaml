@@ -1,4 +1,21 @@
-instances: []
+instances:
+  - id: staff_001
+    class: Staff
+    data:
+      name: 신띵
+      telegramId: "7621683460"
+      role: 팀장
+    relations:
+      atStore: null
+
+  - id: staff_002
+    class: Staff
+    data:
+      name: 은띵
+      telegramId: "8522555716"
+      role: 팀장
+    relations:
+      atStore: null
 
 # 직원 등록 예시:
 #
