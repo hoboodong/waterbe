@@ -99,7 +99,7 @@ instances:
       forProduct: prod_mk_015
       atStore: store_wolgye
       uses:
-        - ingredient: ing_동태
+        - ingredient: ing_코다리
           amount: null
           unit: g
         - ingredient: ing_명란

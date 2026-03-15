@@ -608,7 +608,7 @@ instances:
       vendor: 남선푸드
       memo: null
     relations:
-      forPurchaseSpec: pspec_003  # 냉동새우 31/40(페루) 12kg
+      forPurchaseSpec: pspec_003  # 냉동새우 30/40(페루) 12kg
 
   - id: ph_060
     class: PriceHistory

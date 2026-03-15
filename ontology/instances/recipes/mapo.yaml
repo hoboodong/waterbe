@@ -312,7 +312,7 @@ instances:
         - ingredient: ing_고추
           amount: null
           unit: 개
-        - ingredient: ing_찜소스
+        - ingredient: ing_만능찜소스
           amount: null
           unit: g
 
