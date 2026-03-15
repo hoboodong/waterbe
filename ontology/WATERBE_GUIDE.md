@@ -10,6 +10,8 @@ ontology/
 ├── schema.yaml          # 스키마 정의 (클래스·속성·관계)
 ├── instances/
 │   ├── stores.yaml          # 매장 인스턴스
+│   ├── staff.yaml           # 직원 인스턴스 (텔레그램 ID·역할·매장)
+│   ├── schedules.yaml       # 일정 인스턴스 (전 매장 통합)
 │   ├── products.yaml        # 제품 인스턴스
 │   ├── categories.yaml      # 카테고리 인스턴스
 │   ├── ingredients.yaml     # 재료 인스턴스
@@ -109,6 +111,59 @@ belongsTo로 카테고리 구분 (cat_mealkit / cat_single / cat_ganjang)
 purchase_specs.yaml → countPerKg 확인 (예: 25미 → 1개 평균 40g)
 price_history.yaml → 최신 unitPrice
 1개 원가 = unitPrice (전복은 orderUnit이 1개 기준)
+```
+
+---
+
+## 일정 관리
+
+### 권한 규칙
+
+```
+메시지를 보낸 사람의 텔레그램 ID → staff.yaml에서 조회
+
+팀장 (role: 팀장):
+  - 전체 매장 일정 조회 가능
+  - 일정 등록·수정·삭제 가능
+
+직원 (role: 직원):
+  - 자신의 소속 매장(atStore) 일정만 조회 가능
+  - 일정 등록·수정·삭제 불가
+
+미등록 사용자:
+  - "등록된 직원이 아닙니다. 팀장님께 등록을 요청해주세요." 안내
+```
+
+### 예시 5: 일정 조회
+
+```
+Step 1. staff.yaml → 발신자 telegramId로 role·atStore 확인
+Step 2. schedules.yaml 읽기
+  - 직원: atStore가 본인 매장인 항목만 필터
+  - 팀장: 전체 항목
+Step 3. 날짜 범위로 필터 (오늘 / 이번주 / 이번달 등)
+Step 4. 매장별·날짜순으로 정리해서 출력
+```
+
+### 예시 6: 일정 등록 (팀장 전용)
+
+```
+Step 1. staff.yaml → 발신자가 팀장인지 확인
+Step 2. 대상 매장, 날짜, 종류, 제목 확인
+Step 3. schedules.yaml에 새 레코드 추가
+  - id: sched_{순번} (마지막 번호 +1)
+  - createdBy: 팀장 이름
+Step 4. 등록 완료 안내
+```
+
+### 예시 7: 직원 등록 (팀장 전용)
+
+```
+Step 1. staff.yaml → 발신자가 팀장인지 확인
+Step 2. 이름, 텔레그램 ID, 역할, 소속 매장 확인
+Step 3. staff.yaml에 새 레코드 추가
+  - id: staff_{순번}
+Step 4. 등록 완료 안내
 ```
 
 ---

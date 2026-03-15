@@ -1,0 +1,21 @@
+instances: []
+
+# 직원 등록 예시:
+#
+# - id: staff_001
+#   class: Staff
+#   data:
+#     name: 홍길동
+#     telegramId: "123456789"
+#     role: 직원
+#   relations:
+#     atStore: store_mapo
+#
+# - id: staff_000
+#   class: Staff
+#   data:
+#     name: 팀장이름
+#     telegramId: "000000000"
+#     role: 팀장
+#   relations:
+#     atStore: null

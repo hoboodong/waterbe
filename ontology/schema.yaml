@@ -1,4 +1,4 @@
-version: "1.8"
+version: "1.9"
 description: 워터비 온톨로지 스키마
 
 classes:
@@ -308,6 +308,71 @@ classes:
         cardinality: many-to-one
         label: 해당 매장
 
+  Staff:
+    label: 직원
+    description: 봇 사용 직원 정보. 텔레그램 ID 기반 권한 관리
+    properties:
+      name:
+        type: string
+        required: true
+        label: 이름
+      telegramId:
+        type: string
+        required: true
+        label: 텔레그램 사용자 ID (숫자 문자열)
+      role:
+        type: string
+        required: true
+        label: 역할 (팀장 / 직원)
+    relations:
+      atStore:
+        target: Store
+        cardinality: many-to-one
+        label: 소속 매장 (직원만 해당, 팀장은 null)
+        nullable: true
+
+  Schedule:
+    label: 일정
+    description: 매장별 일정 관리 (근무/발주/생산/기타). 팀장만 등록·수정·삭제 가능
+    properties:
+      date:
+        type: string
+        required: true
+        label: 일자 (YYYY-MM-DD)
+      endDate:
+        type: string
+        required: false
+        label: 종료일 (YYYY-MM-DD, 하루짜리면 null)
+        nullable: true
+      type:
+        type: string
+        required: true
+        label: 일정 종류 (근무 / 발주 / 생산 / 기타)
+      title:
+        type: string
+        required: true
+        label: 제목
+      description:
+        type: string
+        required: false
+        label: 상세 내용
+        nullable: true
+      assignee:
+        type: string
+        required: false
+        label: 담당자
+        nullable: true
+      createdBy:
+        type: string
+        required: false
+        label: 등록자 (팀장 이름)
+        nullable: true
+    relations:
+      atStore:
+        target: Store
+        cardinality: many-to-one
+        label: 해당 매장
+
 constraints:
   - "Product.price는 양의 정수이거나 null이어야 한다"
   - "Product.relations.soldAt은 반드시 하나 이상의 Store를 참조해야 한다"
@@ -327,3 +392,9 @@ constraints:
   - "ProductionPlan은 (forProduct, atStore, weekStart) 조합이 유일해야 한다"
   - "SalesRecord.totalAmount는 qty × unitPrice 와 일치해야 한다"
   - "SalesRecord.date는 YYYY-MM-DD 형식이어야 한다"
+  - "Staff.telegramId는 유일해야 한다 (중복 등록 불가)"
+  - "Staff.role은 팀장 / 직원 중 하나여야 한다"
+  - "Staff.relations.atStore는 role이 직원일 때 필수, 팀장일 때 null"
+  - "Schedule.type은 근무 / 발주 / 생산 / 기타 중 하나여야 한다"
+  - "Schedule.date는 YYYY-MM-DD 형식이어야 한다"
+  - "Schedule.endDate는 YYYY-MM-DD 형식이며 date 이후여야 한다"
