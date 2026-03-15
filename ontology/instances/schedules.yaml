@@ -1,16 +1,25 @@
-instances: []
-
-# 일정 등록 예시:
-#
-# - id: sched_001
-#   class: Schedule
-#   data:
-#     date: "2026-03-17"
-#     endDate: null
-#     type: 근무
-#     title: 왕십리점 월요일 근무
-#     description: 오전 9시~오후 6시
-#     assignee: 홍길동
-#     createdBy: 팀장
-#   relations:
-#     atStore: store_wangsimni
+instances:
+- id: sched_001
+  class: Schedule
+  data:
+    date: "2026-03-17"
+    endDate: null
+    type: 근무
+    title: 월계점 월요일 근무
+    description: 오전 9시~오후 6시
+    assignee: 신띵
+    createdBy: 팀장
+  relations:
+    atStore: store_wolgye
+- id: sched_002
+  class: Schedule
+  data:
+    date: "2026-03-16"
+    endDate: null
+    type: 근무
+    title: 월계점 근무
+    description: 오전 9시~오후 6시
+    assignee: 신띵
+    createdBy: 팀장
+  relations:
+    atStore: store_wolgye
