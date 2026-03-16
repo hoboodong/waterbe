@@ -29,6 +29,7 @@ instances:
       orderName: 냉동새우 30/40(페루)
       orderUnit: 12kg
       category: 재료
+      countPerKg: 35  # 30/40마리/kg 중간값
     relations:
       forIngredient: ing_새우
       vendor: null
