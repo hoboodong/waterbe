@@ -9,6 +9,7 @@ instances:
       orderName: PDTO새우살26-30P(페루산)
       orderUnit: 9kg
       category: 재료
+      countPerKg: 28  # 26-30마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_L_페루
       vendor: null
@@ -19,6 +20,7 @@ instances:
       orderName: 냉동새우살71-90P(베트남)
       orderUnit: 10kg
       category: 재료
+      countPerKg: 80  # 71-90마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_S_베트남
       vendor: null
@@ -40,6 +42,7 @@ instances:
       orderName: 냉동새우 40/50(페루)
       orderUnit: 12kg
       category: 재료
+      countPerKg: 45  # 40-50마리/kg 중간값
     relations:
       forIngredient: ing_새우
       vendor: null
@@ -50,6 +53,7 @@ instances:
       orderName: PDTO새우살30-40P(페루산)
       orderUnit: 9kg
       category: 재료
+      countPerKg: 35  # 30-40마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_L_페루
       vendor: null
@@ -60,6 +64,7 @@ instances:
       orderName: 냉동새우 30/40(사우디)
       orderUnit: 12kg
       category: 재료
+      countPerKg: 35  # 30-40마리/kg 중간값
     relations:
       forIngredient: ing_새우_사우디
       vendor: null
@@ -70,6 +75,7 @@ instances:
       orderName: 냉동새우 41-50P(사우디)
       orderUnit: 12kg
       category: 재료
+      countPerKg: 45  # 41-50마리/kg 중간값
     relations:
       forIngredient: ing_새우_사우디
       vendor: null
@@ -694,6 +700,7 @@ instances:
       orderName: PDTO새우살26-30P(인도산)
       orderUnit: 9kg
       category: 재료
+      countPerKg: 28  # 26-30마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_L_인도
       vendor: null
@@ -704,6 +711,7 @@ instances:
       orderName: 냉동새우살71-90P(베트남)
       orderUnit: 9kg
       category: 재료
+      countPerKg: 80  # 71-90마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_S_베트남
       vendor: null
@@ -714,6 +722,7 @@ instances:
       orderName: 백새우살51/70(베트남)
       orderUnit: 4kg(2kg*2)
       category: 재료
+      countPerKg: 60  # 51-70마리/kg 중간값
     relations:
       forIngredient: ing_백새우살
       vendor: null
@@ -815,6 +824,7 @@ instances:
       orderName: 칵테일새우살(21/25)
       orderUnit: 9kg
       category: 재료
+      countPerKg: 23  # 21-25마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_L_페루
       vendor: null
