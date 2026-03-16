@@ -64,6 +64,21 @@ Store (매장)
 
 ---
 
+## ID 출력 금지 규칙
+
+> **사용자에게 결과를 출력할 때 내부 ID를 절대 그대로 노출하지 말 것.**
+> 모든 ID는 반드시 사람이 읽을 수 있는 이름으로 변환해서 출력한다.
+
+| ID 종류 | 변환 방법 | 예시 |
+|---------|---------|------|
+| `ing_*` | ingredients.yaml의 `name` 필드 | ing_낙지 → 낙지 |
+| `pspec_*` | purchase_specs.yaml의 `orderName` 필드 | pspec_058 → 밀키트(탕)용기 32225(중) |
+| `ph_*` | 출력 불필요, 단가·날짜·vendor만 표시 | — |
+| `prod_*` | products.yaml의 `name` 필드 | prod_mk_013 → 문어전복해물탕 |
+| `store_*` | stores.yaml의 `name` 필드 | store_wolgye → 월계점 |
+
+---
+
 ## 매장별 납품업체(vendor) 우선순위
 
 > **원가 계산 시 반드시 아래 vendor를 우선 적용할 것.**
