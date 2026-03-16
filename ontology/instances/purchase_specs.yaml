@@ -754,3 +754,114 @@ instances:
     relations:
       forIngredient: ing_만능찜소스
       vendor: null
+
+  # ── 대영상사 신규 품목 (2026-03-16) ───────────────────────────
+  - id: pspec_075
+    class: PurchaseSpec
+    data:
+      orderName: 더맛있는탕소스(100g×150ea)
+      orderUnit: 15kg
+      category: 재료
+    relations:
+      forIngredient: ing_해물탕소스
+      vendor: null
+
+  - id: pspec_076
+    class: PurchaseSpec
+    data:
+      orderName: 성형가리비(10/20)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_가리비관자
+      vendor: null
+
+  - id: pspec_077
+    class: PurchaseSpec
+    data:
+      orderName: 주꾸미(17/22미)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_주꾸미
+      vendor: null
+
+  - id: pspec_078
+    class: PurchaseSpec
+    data:
+      orderName: 절단낙지 L
+      orderUnit: 6kg
+      category: 재료
+    relations:
+      forIngredient: ing_낙지
+      vendor: null
+
+  - id: pspec_079
+    class: PurchaseSpec
+    data:
+      orderName: 절단꽃게 S
+      orderUnit: 5kg
+      category: 재료
+    relations:
+      forIngredient: ing_게
+      vendor: null
+
+  - id: pspec_080
+    class: PurchaseSpec
+    data:
+      orderName: 칵테일새우살(21/25)
+      orderUnit: 9kg
+      category: 재료
+    relations:
+      forIngredient: ing_흰다리새우살_L_페루  # 원산지 미확인 — 확인 후 수정 필요
+      vendor: null
+
+  - id: pspec_081
+    class: PurchaseSpec
+    data:
+      orderName: 명란PG(22.8kg)
+      orderUnit: 22.8kg
+      category: 재료
+    relations:
+      forIngredient: ing_명란
+      vendor: null
+
+  - id: pspec_082
+    class: PurchaseSpec
+    data:
+      orderName: 명태곤이
+      orderUnit: 22.5kg
+      category: 재료
+    relations:
+      forIngredient: ing_명태곤이
+      vendor: null
+
+  - id: pspec_083
+    class: PurchaseSpec
+    data:
+      orderName: 문어슬라이스(대영)
+      orderUnit: 9kg
+      category: 재료
+    relations:
+      forIngredient: ing_자숙문어_절단
+      vendor: null
+
+  - id: pspec_084
+    class: PurchaseSpec
+    data:
+      orderName: 절단코다리(40/60)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_코다리
+      vendor: null
+
+  - id: pspec_085
+    class: PurchaseSpec
+    data:
+      orderName: DR볶음용 3호 검정
+      orderUnit: 400ea
+      category: 포장재
+    relations:
+      forIngredient: null
+      vendor: null

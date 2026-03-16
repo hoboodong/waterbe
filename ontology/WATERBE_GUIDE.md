@@ -66,22 +66,41 @@ Store (매장)
 
 ## 사용 예시
 
+> **⚠️ 단가 vs 판매가격 구분**
+> - "단가", "얼마야", "가격" → 직원이 재료에 대해 물어보는 것 = **매입 단가**
+>   → ingredients.yaml → purchase_specs.yaml → price_history.yaml 순서로 조회
+>   → products.yaml을 절대 보지 말 것
+> - "판매가", "소비자가", "팔 때 얼마" → 제품 판매가격
+>   → products.yaml의 price 필드 조회
+> - 직원이 재료명(문어, 낙지, 새우 등)을 언급하면 무조건 매입 단가 조회로 처리한다
+
 ### 예시 1: 특정 재료의 현재 단가 조회
 
 > **주의**: 가격 데이터는 price_history.yaml에 반드시 있다. 아래 순서를 끝까지 실행하기 전에 "데이터 없음"이라고 판단하지 말 것.
 
 ```
 Step 1. ingredients.yaml → 재료명으로 ID 검색
-        ID가 여러 개면 사용자에게 어떤 종류인지 먼저 물어볼 것
+        - 검색은 부분 일치로 한다 (예: "자숙문어" → ing_자숙문어, ing_자숙문어_절단 모두 검색)
+        - ID가 여러 개 나오면 사용자에게 어떤 종류인지 먼저 물어볼 것
+        - ID가 하나여도 Step 2에서 pspec이 여러 개일 수 있으므로 반드시 계속 진행
 
 Step 2. purchase_specs.yaml → forIngredient 값이 해당 ID인 항목 전체 조회
-        pspec가 여러 개면 전부 나열하고 사용자에게 선택 요청
+        - 반드시 파일 전체를 스캔해서 해당 ID를 참조하는 pspec을 모두 찾을 것
+        - pspec이 여러 개면 발주명·발주단위를 함께 나열하고 사용자에게 선택 요청
+          예) "자숙문어에 발주규격이 2가지 있습니다:
+               1. 국산문어(국산) 8kg
+               2. 냉동자숙문어(필리핀) 10kg
+               어떤 규격 단가가 필요하신가요?"
+        - pspec이 하나뿐이면 바로 Step 3으로
 
-Step 3. price_history.yaml → 해당 pspec ID를 forPurchaseSpec으로 갖는 레코드 조회
-        date 기준 최신 레코드의 unitPrice 사용 (vendor도 함께 확인)
+Step 3. price_history.yaml → 해당 pspec ID를 forPurchaseSpec으로 갖는 레코드 전체 조회
+        - 반드시 파일 전체를 스캔할 것 (순번 순서대로 나열되어 있지 않을 수 있음)
+        - date 기준 가장 최신 레코드의 unitPrice 사용
+        - vendor가 여러 개면 vendor별로 최신 단가를 각각 표시
 
-Step 4. 단가/g = unitPrice ÷ (발주kg × 1000)
+Step 4. 단가/g = unitPrice ÷ (발주단위 kg × 1000)
         요청량 원가 = 단가/g × 요청량(g)
+        결과 출력 시 pspec 발주명·날짜·vendor도 함께 표시
 ```
 
 ### 예시 2: 레시피 원가 계산
@@ -250,12 +269,14 @@ Step 4. 등록 완료 안내
 
 ### 가격 미확인
 - `prod_sp_007` (국산흑골뱅이, 왕십리): `price: null`
-- pspec 가격 미입력: pspec_004, pspec_015, pspec_042, pspec_048, pspec_051, pspec_057, pspec_064
-- 대영상사 단가: 전체 미입력 (월계점 기준)
+- pspec 가격 미입력 (남선푸드): pspec_004, pspec_048, pspec_051, pspec_057, pspec_064
+- ※ pspec_015, pspec_042 → 대영상사 단가 입력 완료
+- 대영상사 단가: 2026-03-16 기준 입력 완료 (ph_079~098) / 최신 pspec: pspec_085
 
 ### pspec 없는 재료 (원가 계산 불가)
-- ing_골뱅이, ing_게_이탈리아, ing_볼락, ing_명태곤이, ing_염지소대창
+- ing_골뱅이, ing_게_이탈리아, ing_볼락, ing_염지소대창
 - ※ ing_찜소스 → 레시피에서 ing_만능찜소스(pspec_074)로 교체 완료
+- ※ ing_명태곤이 → pspec_082(대영상사) 추가 완료
 
 ### 레시피 재료 미입력
 - 왕십리 mk_005 시원한 새우탕: 보류
