@@ -222,6 +222,7 @@ instances:
       orderName: 전복(소) 25미(생물)
       orderUnit: 1kg
       category: 재료
+      countPerKg: 25
     relations:
       forIngredient: ing_전복
       vendor: null
@@ -232,6 +233,7 @@ instances:
       orderName: 전복(중) 22미(생물)
       orderUnit: 1kg
       category: 재료
+      countPerKg: 22
     relations:
       forIngredient: ing_전복
       vendor: null
