@@ -537,7 +537,7 @@ instances:
   - id: prod_mk_017
     class: Product
     data:
-      name: 꽃게 해물라면
+      name: 얼큰한 꽃게탕
       unit: 1팩
       price: 17800
     relations:

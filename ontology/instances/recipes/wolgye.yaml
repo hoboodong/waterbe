@@ -59,41 +59,45 @@ instances:
       atStore: store_wolgye
       uses:
         - ingredient: ing_낙지
-          amount: null
+          amount: 230
           unit: g
         - ingredient: ing_전복
-          amount: null
-          unit: 개
+          amount: 1
+          unit: 마리
         - ingredient: ing_새우
-          amount: null
-          unit: g
+          amount: 2
+          unit: 마리
         - ingredient: ing_게
-          amount: null
+          amount: 50
           unit: g
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_백생합
-          amount: null
+          amount: 130
           unit: g
         - ingredient: ing_홍합
-          amount: null
+          amount: 80
           unit: g
         - ingredient: ing_콩나물
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩
         - ingredient: ing_무
-          amount: null
+          amount: 70
           unit: g
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_고추
-          amount: null
+          amount: 3
           unit: 개
         - ingredient: ing_해물탕소스
-          amount: null
-          unit: g
+          amount: 2
+          unit: 팩
+      packaging:
+        - pspec: pspec_058
+          quantity: 1
+          unit: 세트
 
   - id: recipe_wolgye_mk015
     class: Recipe
@@ -104,35 +108,39 @@ instances:
       atStore: store_wolgye
       uses:
         - ingredient: ing_코다리
-          amount: null
+          amount: 300
           unit: g
         - ingredient: ing_명란
-          amount: null
+          amount: 80
           unit: g
         - ingredient: ing_명태곤이
-          amount: null
+          amount: 80
           unit: g
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 120
           unit: g
         - ingredient: ing_홍합
-          amount: null
+          amount: 80
           unit: g
         - ingredient: ing_콩나물
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩
         - ingredient: ing_무
-          amount: null
+          amount: 70
           unit: g
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_고추
-          amount: null
+          amount: 3
           unit: 개
         - ingredient: ing_해물탕소스
-          amount: null
-          unit: g
+          amount: 2
+          unit: 팩
+      packaging:
+        - pspec: pspec_058
+          quantity: 1
+          unit: 세트
 
   - id: recipe_wolgye_mk016
     class: Recipe
@@ -143,68 +151,73 @@ instances:
       atStore: store_wolgye
       uses:
         - ingredient: ing_볼락
-          amount: null
-          unit: g
+          amount: 2
+          unit: 마리  # 마리당 약 175g, 합계 약 350g
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_홍합
-          amount: null
+          amount: 80
           unit: g
         - ingredient: ing_콩나물
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩
         - ingredient: ing_무
-          amount: null
+          amount: 70
           unit: g
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_고추
-          amount: null
+          amount: 3
           unit: 개
         - ingredient: ing_해물탕소스
-          amount: null
-          unit: g
+          amount: 2
+          unit: 팩
+      packaging:
+        - pspec: pspec_058
+          quantity: 1
+          unit: 세트
 
   - id: recipe_wolgye_mk017
     class: Recipe
     data:
-      name: 꽃게 해물라면 (월계)
+      name: 얼큰한 꽃게탕 (월계)
     relations:
       forProduct: prod_mk_017
       atStore: store_wolgye
       uses:
         - ingredient: ing_게_이탈리아
-          amount: null
+          amount: 170
           unit: g
         - ingredient: ing_게_바레인
-          amount: null
-          unit: g
-        - ingredient: ing_가리비관자
-          amount: null
+          amount: 300
           unit: g
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 150
+          unit: g
+        - ingredient: ing_홍합
+          amount: 80
           unit: g
         - ingredient: ing_콩나물
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩
         - ingredient: ing_무
-          amount: null
+          amount: 70
           unit: g
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_고추
-          amount: null
-          unit: 개
-        - ingredient: ing_라면
-          amount: null
+          amount: 3
           unit: 개
         - ingredient: ing_해물탕소스
-          amount: null
-          unit: g
+          amount: 2
+          unit: 팩
+      packaging:
+        - pspec: pspec_058
+          quantity: 1
+          unit: 세트
 
   - id: recipe_wolgye_mk018
     class: Recipe
@@ -215,32 +228,36 @@ instances:
       atStore: store_wolgye
       uses:
         - ingredient: ing_낙지
-          amount: null
+          amount: 120
           unit: g
         - ingredient: ing_염지소대창
-          amount: null
+          amount: 80
           unit: g
         - ingredient: ing_흰다리새우살_S_베트남
-          amount: null
+          amount: 100
           unit: g
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_양배추
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩  # 양배추콩나물 세트 1팩
         - ingredient: ing_콩나물
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩  # 양배추콩나물 세트 1팩 (양배추와 동일 팩)
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_고추
-          amount: null
+          amount: 3
           unit: 개
         - ingredient: ing_낙곱새소스
-          amount: null
-          unit: g
+          amount: 2
+          unit: 팩
+      packaging:
+        - pspec: pspec_058
+          quantity: 1
+          unit: 세트
 
   - id: recipe_wolgye_mk019
     class: Recipe
@@ -251,26 +268,30 @@ instances:
       atStore: store_wolgye
       uses:
         - ingredient: ing_주꾸미
-          amount: null
+          amount: 230
           unit: g
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_양배추
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩  # 양배추콩나물 세트 1팩
         - ingredient: ing_콩나물
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩  # 양배추콩나물 세트 1팩 (양배추와 동일 팩)
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_고추
-          amount: null
+          amount: 3
           unit: 개
         - ingredient: ing_볶음소스
-          amount: null
-          unit: g
+          amount: 2
+          unit: 팩
+      packaging:
+        - pspec: pspec_058
+          quantity: 1
+          unit: 세트
 
   - id: recipe_wolgye_mk020
     class: Recipe
@@ -281,26 +302,30 @@ instances:
       atStore: store_wolgye
       uses:
         - ingredient: ing_낙지
-          amount: null
+          amount: 230
           unit: g
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_양배추
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩  # 양배추콩나물 세트 1팩
         - ingredient: ing_콩나물
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩  # 양배추콩나물 세트 1팩 (양배추와 동일 팩)
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_고추
-          amount: null
+          amount: 3
           unit: 개
         - ingredient: ing_볶음소스
-          amount: null
-          unit: g
+          amount: 2
+          unit: 팩
+      packaging:
+        - pspec: pspec_058
+          quantity: 1
+          unit: 세트
 
   # ── 월계점 단품 레시피 ──────────────────────────────────────
   - id: recipe_wolgye_sp012
@@ -312,8 +337,12 @@ instances:
       atStore: store_wolgye
       uses:
         - ingredient: ing_새우
-          amount: null
-          unit: g
+          amount: 325
+          unit: g  # 1팩 기준 300~350g
+      packaging:
+        - pspec: pspec_055
+          quantity: 1
+          unit: 개  # 18호 PSP발포용기
 
   - id: recipe_wolgye_sp013
     class: Recipe
@@ -324,8 +353,12 @@ instances:
       atStore: store_wolgye
       uses:
         - ingredient: ing_흰다리새우살_L_페루
-          amount: null
+          amount: 300
           unit: g
+      packaging:
+        - pspec: pspec_051
+          quantity: 1
+          unit: 개  # 볶음용용기 3호
 
   - id: recipe_wolgye_sp014
     class: Recipe
@@ -336,8 +369,8 @@ instances:
       atStore: store_wolgye
       uses:
         - ingredient: ing_흰다리새우살_S_베트남
-          amount: null
-          unit: g
+          amount: 200
+          unit: g  # 약 200g
 
   - id: recipe_wolgye_sp015
     class: Recipe
@@ -346,7 +379,17 @@ instances:
     relations:
       forProduct: prod_sp_015
       atStore: store_wolgye
-      uses: []  # TODO: 재료 입력 필요
+      uses:
+        - ingredient: ing_가리비관자
+          amount: 200
+          unit: g
+        - ingredient: ing_버터
+          amount: 1
+          unit: 후레시
+      packaging:
+        - pspec: pspec_054
+          quantity: 1
+          unit: 개  # 26호 PLA용기
 
   - id: recipe_wolgye_sp016
     class: Recipe
@@ -375,8 +418,12 @@ instances:
       atStore: store_wolgye
       uses:
         - ingredient: ing_주꾸미
-          amount: null
+          amount: 300
           unit: g
+      packaging:
+        - pspec: pspec_055
+          quantity: 1
+          unit: 개  # 18호 PSP발포용기
 
   - id: recipe_wolgye_sp018
     class: Recipe
@@ -387,8 +434,12 @@ instances:
       atStore: store_wolgye
       uses:
         - ingredient: ing_낙지
-          amount: null
+          amount: 300
           unit: g
+      packaging:
+        - pspec: pspec_055
+          quantity: 1
+          unit: 개  # 18호 PSP발포용기
 
   - id: recipe_wolgye_sp027
     class: Recipe
@@ -399,14 +450,18 @@ instances:
       atStore: store_wolgye
       uses:
         - ingredient: ing_자숙문어
-          amount: null
+          amount: 90
           unit: g
         - ingredient: ing_자숙피뿔고둥살
-          amount: null
+          amount: 90
           unit: g
         - ingredient: ing_레몬주스
-          amount: null
-          unit: ml
+          amount: 0.1
+          unit: g
         - ingredient: ing_초고추장
-          amount: null
-          unit: 큰술
+          amount: 1
+          unit: 팩
+      packaging:
+        - pspec: pspec_054
+          quantity: 1
+          unit: 개  # 26호 PLA용기
