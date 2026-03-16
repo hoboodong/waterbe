@@ -106,15 +106,26 @@ Step 4. 단가/g = unitPrice ÷ (발주단위 kg × 1000)
 ### 예시 2: 레시피 원가 계산
 
 ```
-Step 1. recipes/{매장}.yaml → 해당 레시피 조회, uses 목록 확인
+Step 1. recipes/{매장}.yaml → 해당 레시피 조회, uses·packaging 목록 확인
+
+[재료 원가]
 Step 2. 각 재료 ID → ingredients.yaml → thawLossRate, trimLossRate 확인
 Step 3. 재료 ID → purchase_specs.yaml → forIngredient로 pspec 찾기
-Step 4. pspec → price_history.yaml → 최신 unitPrice 확인
+Step 4. pspec → price_history.yaml → 최신 unitPrice 확인 (vendor 구분)
 Step 5. 원가 계산:
           실수율 = (1 - thawLoss/100) × (1 - trimLoss/100)
           원가/g = unitPrice ÷ (발주kg × 1000) ÷ 실수율
           재료 원가 = 원가/g × amount(g)
-Step 6. 전체 재료 합산 = 레시피 1팩 원가
+Step 6. 전체 재료 합산 = 재료비 합계
+
+[포장재 원가]
+Step 7. packaging 목록 → 각 pspec → price_history.yaml → 최신 unitPrice 확인
+Step 8. 포장재 1개 단가 = unitPrice ÷ 발주수량
+        포장재 원가 = 1개 단가 × quantity
+Step 9. 전체 포장재 합산 = 포장재비 합계
+
+[최종]
+Step 10. 레시피 1팩 원가 = 재료비 합계 + 포장재비 합계
 ```
 
 ### 예시 3: 매장별 제품 목록 조회

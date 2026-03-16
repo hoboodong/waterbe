@@ -1,4 +1,4 @@
-version: "1.9"
+version: "2.0"
 description: 워터비 온톨로지 스키마
 
 classes:
@@ -140,6 +140,18 @@ classes:
           amount:
             type: number
             label: 사용량
+          unit:
+            type: string
+            label: 단위
+      packaging:
+        target: PurchaseSpec
+        cardinality: many-to-many
+        label: 사용 포장재 (quantity 포함)
+        nullable: true  # 포장재 없는 단품 레시피는 null 또는 생략
+        with_properties:
+          quantity:
+            type: number
+            label: 수량
           unit:
             type: string
             label: 단위
