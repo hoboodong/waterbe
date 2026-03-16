@@ -813,7 +813,7 @@ instances:
       orderUnit: 9kg
       category: 재료
     relations:
-      forIngredient: ing_흰다리새우살_L_페루  # 원산지 미확인 — 확인 후 수정 필요
+      forIngredient: ing_흰다리새우살_L_페루
       vendor: null
 
   - id: pspec_081
