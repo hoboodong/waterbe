@@ -1,8 +1,100 @@
-# 온톨로지 데이터 관리 에이전트
+# 워터비(WATERBE) 데이터 관리 가이드
+
+> **에이전트에게**: 이 파일 하나만 읽으면 워터비 데이터를 즉시 사용할 수 있습니다.
+> schema.yaml은 읽지 않아도 됩니다. 이 가이드에 필요한 모든 정보가 포함되어 있습니다.
+
+---
+
+## 워터비란?
+이마트 수산물 코너에 입점한 밀키트·단품 판매 사업. 현재 3개 매장 운영.
+- **왕십리점** (store_wangsimni)
+- **마포점** (store_mapo)
+- **월계점** (store_wolgye)
+
+---
+
+## 클래스별 핵심 필드
+
+### Ingredient (재료) — `instances/ingredients.yaml`
+| 필드 | 설명 |
+|------|------|
+| name | 재료명 |
+| defaultUnit | 기본 단위 (g, 개 등) |
+| origin | 원산지 |
+| composition | 성분 표기 |
+| allergen | 알레르기 유발물질 |
+| thawLossRate | 해동 손실률 (%, null=0%) |
+| trimLossRate | 손질 손실률 (%, null=0%) |
+
+### PurchaseSpec (발주규격) — `instances/purchase_specs.yaml`
+| 필드 | 설명 |
+|------|------|
+| orderName | 발주명 (납품업체 기준 상품명) |
+| orderUnit | 발주단위 (예: 9kg, 1박스) |
+| category | 재료 / 포장재 / 소모품 |
+| countPerKg | 미수 (개/kg, 새우·전복 등 개수 기준 재료만) |
+| forIngredient | 연결된 재료 ID |
+
+### PriceHistory (가격이력) — `instances/price_history.yaml`
+| 필드 | 설명 |
+|------|------|
+| unitPrice | 발주단위 기준 총금액 (원) |
+| date | 가격 기준일자 (YYYY-MM-DD) |
+| vendor | 납품업체 (남선푸드 / 대영상사) |
+| forPurchaseSpec | 연결된 발주규격 ID |
+
+> **현재 단가** = 해당 pspec의 price_history 중 가장 최신 date 레코드
+
+### Recipe (레시피) — `instances/recipes/{매장}.yaml`
+| 필드 | 설명 |
+|------|------|
+| forProduct | 대상 상품 ID |
+| atStore | 해당 매장 ID |
+| uses | 재료 목록 (ingredient, amount, unit) |
+| packaging | 포장재 목록 (pspec, quantity, unit) |
+
+### ProductionPlan (생산계획) — `instances/production/{매장}.yaml`
+| 필드 | 설명 |
+|------|------|
+| weekStart | 주 시작일 (YYYY-MM-DD, 월요일) |
+| dailyPlan | 요일별 계획 수량 {mon/tue/wed/thu/fri/sat/sun: n} |
+| dailyAdjusted | 조정 요일만 입력 (나머지는 dailyPlan 사용) |
+| dailyActual | 실제 생산량 (완료 후 입력) |
+| status | planned / in_progress / completed |
+
+### InboundRecord (입고기록) — `instances/inventory/inbound/{매장}.yaml`
+| 필드 | 설명 |
+|------|------|
+| date | 입고일자 (YYYY-MM-DD) |
+| quantity | 입고 수량 (발주단위 기준) |
+| unit | 단위 |
+| forPurchaseSpec | 연결된 발주규격 ID |
+| atStore | 입고 매장 ID |
+
+### InventorySnapshot (재고실사) — `instances/inventory/{매장}.yaml`
+| 필드 | 설명 |
+|------|------|
+| date | 실사일자 (YYYY-MM-DD) |
+| quantity | 실사 수량 |
+| unit | 단위 |
+| forIngredient | 재료 ID |
+| atStore | 매장 ID |
+
+### SalesRecord (매출기록) — `instances/sales/{매장}.yaml`
+| 필드 | 설명 |
+|------|------|
+| date | 판매일자 (YYYY-MM-DD) |
+| qty | 판매 수량 |
+| unitPrice | 판매 단가 (원) |
+| totalAmount | 총 매출액 (qty × unitPrice) |
+| forProduct | 판매 상품 ID |
+| atStore | 매장 ID |
+
+---
 
 ## 역할
-워터비 사업 데이터를 온톨로지 구조로 관리하는 에이전트.
-`schema.yaml`에 정의된 클래스·속성·관계 구조를 기준으로 `instances/` 하위 파일의 실제 데이터를 CRUD한다.
+워터비 사업 데이터를 관리하는 에이전트.
+`instances/` 하위 파일의 실제 데이터를 조회·입력·수정한다.
 
 ## 파일 구조
 ```
