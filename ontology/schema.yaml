@@ -1,4 +1,4 @@
-version: "2.0"
+version: "2.1"
 description: 워터비 온톨로지 스키마
 
 classes:
@@ -251,25 +251,32 @@ classes:
 
   ProductionPlan:
     label: 생산계획
-    description: 매장별 주간 생산 계획. 조정 시 adjustedQty 입력 (plannedQty 덮어쓰기 금지)
+    description: 매장별 주간 생산 계획. 요일별 예상 생산량을 입력. 조정 시 dailyAdjusted 입력 (dailyPlan 덮어쓰기 금지)
     properties:
       weekStart:
         type: string
         required: true
         label: 주 시작일 (YYYY-MM-DD, 월요일 기준)
-      plannedQty:
-        type: number
+      dailyPlan:
+        type: object
         required: true
-        label: 계획 생산량 (개)
-      adjustedQty:
-        type: number
+        label: 요일별 계획 생산량 (개). 키는 mon/tue/wed/thu/fri/sat/sun
+        # 예: {mon: 10, tue: 8, wed: 10, thu: 12, fri: 15, sat: 20, sun: 18}
+      dailyAdjusted:
+        type: object
         required: false
-        label: 조정 생산량 (개). null이면 plannedQty 사용
+        label: 요일별 조정 생산량. 조정된 요일만 입력 (나머지는 dailyPlan 사용)
+        nullable: true
+        # 예: {sat: 25, sun: 22}
+      dailyActual:
+        type: object
+        required: false
+        label: 요일별 실제 생산량. 생산 완료 후 입력
         nullable: true
       status:
         type: string
         required: true
-        label: 상태 (planned / adjusted / completed)
+        label: 상태 (planned / in_progress / completed)
       memo:
         type: string
         required: false
@@ -284,6 +291,37 @@ classes:
         target: Store
         cardinality: many-to-one
         label: 해당 매장
+
+  InboundRecord:
+    label: 입고기록
+    description: 발주 후 실제 입고된 재료 수량 기록. 입고 시마다 새 레코드 추가 (덮어쓰기 금지)
+    properties:
+      date:
+        type: string
+        required: true
+        label: 입고일자 (YYYY-MM-DD)
+      quantity:
+        type: number
+        required: true
+        label: 입고 수량 (발주단위 기준. 예: 9kg 박스 2개 → 2)
+      unit:
+        type: string
+        required: true
+        label: 단위 (발주단위와 동일. 예: 박스, kg)
+      memo:
+        type: string
+        required: false
+        label: 메모 (업체명, 특이사항 등)
+        nullable: true
+    relations:
+      forPurchaseSpec:
+        target: PurchaseSpec
+        cardinality: many-to-one
+        label: 해당 발주규격
+      atStore:
+        target: Store
+        cardinality: many-to-one
+        label: 입고 매장
 
   SalesRecord:
     label: 매출기록
@@ -400,8 +438,12 @@ constraints:
   - "InventorySnapshot은 덮어쓰지 않고 실사할 때마다 새 레코드를 추가한다"
   - "InventorySnapshot.date는 YYYY-MM-DD 형식이어야 한다"
   - "ProductionPlan.weekStart는 YYYY-MM-DD 형식의 월요일이어야 한다"
-  - "ProductionPlan.status는 planned / adjusted / completed 중 하나여야 한다"
+  - "ProductionPlan.status는 planned / in_progress / completed 중 하나여야 한다"
   - "ProductionPlan은 (forProduct, atStore, weekStart) 조합이 유일해야 한다"
+  - "ProductionPlan.dailyPlan의 키는 mon/tue/wed/thu/fri/sat/sun 이어야 한다"
+  - "InboundRecord.date는 YYYY-MM-DD 형식이어야 한다"
+  - "InboundRecord.quantity는 양의 숫자여야 한다"
+  - "InboundRecord는 덮어쓰지 않고 입고 시마다 새 레코드를 추가한다"
   - "SalesRecord.totalAmount는 qty × unitPrice 와 일치해야 한다"
   - "SalesRecord.date는 YYYY-MM-DD 형식이어야 한다"
   - "Staff.telegramId는 유일해야 한다 (중복 등록 불가)"

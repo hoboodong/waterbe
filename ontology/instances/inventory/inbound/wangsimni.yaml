@@ -1,0 +1,3 @@
+instances:
+  # 왕십리점 입고기록
+  # id 형식: inbound_ws_YYYYMMDD_{순번}

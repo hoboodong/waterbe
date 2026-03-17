@@ -1,0 +1,3 @@
+instances:
+  # 월계점 입고기록
+  # id 형식: inbound_wg_YYYYMMDD_{순번}

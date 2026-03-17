@@ -24,7 +24,11 @@ ontology/
 │   ├── inventory/           # 재고실사 인스턴스 (매장별 분리)
 │   │   ├── wangsimni.yaml
 │   │   ├── mapo.yaml
-│   │   └── wolgye.yaml
+│   │   ├── wolgye.yaml
+│   │   └── inbound/         # 입고기록 (매장별 분리)
+│   │       ├── wangsimni.yaml
+│   │       ├── mapo.yaml
+│   │       └── wolgye.yaml
 │   ├── production/          # 생산계획 인스턴스 (매장별 분리)
 │   │   ├── wangsimni.yaml
 │   │   ├── mapo.yaml
@@ -196,6 +200,69 @@ belongsTo로 카테고리 구분 (cat_mealkit / cat_single / cat_ganjang)
 purchase_specs.yaml → countPerKg 확인 (예: 25미 → 1개 평균 40g)
 price_history.yaml → 최신 unitPrice
 1개 원가 = unitPrice (전복은 orderUnit이 1개 기준)
+```
+
+### 예시 8: 생산계획 등록 (일별, 주 단위)
+
+```
+Step 1. 대상 상품·매장·주 시작일(월요일) 확인
+Step 2. 요일별 계획 수량 확인 (0이면 0으로 입력)
+Step 3. production/{매장}.yaml에 새 레코드 추가
+        id: plan_{매장약어}_{weekStart(YYYYMMDD)}_{prod_id약어}
+        dailyPlan: {mon: n, tue: n, wed: n, thu: n, fri: n, sat: n, sun: n}
+        status: planned
+Step 4. 총 계획량 = dailyPlan 합산값 안내
+
+조정 시:
+  - dailyPlan은 수정하지 말 것
+  - dailyAdjusted에 변경된 요일만 추가 (예: {sat: 25})
+  - status: in_progress로 변경
+
+실제 생산 완료 후:
+  - dailyActual 입력
+  - 모든 요일 완료 시 status: completed
+```
+
+### 예시 9: 입고 기록
+
+```
+Step 1. 발주규격(pspec) 확인 — 재료명 또는 발주명으로 검색
+Step 2. 입고일, 수량, 단위 확인
+Step 3. inventory/inbound/{매장}.yaml에 새 레코드 추가
+        id: inbound_{매장약어}_YYYYMMDD_{순번}
+        date: YYYY-MM-DD
+        quantity: 입고 수량 (발주단위 기준)
+        unit: 발주단위와 동일
+Step 4. 입고 완료 안내
+```
+
+### 예시 10: 발주 필요량 계산
+
+```
+Step 1. 대상 매장·주 생산계획 확인 (production/{매장}.yaml)
+        유효 일별 수량 = dailyAdjusted 있으면 해당 요일 override, 없으면 dailyPlan 사용
+        주간 총 생산량 = 유효 일별 수량 합산
+
+Step 2. 레시피별 재료 소요량 계산
+        각 재료:
+          실수율 = (1 - thawLossRate/100) × (1 - trimLossRate/100)  ← null이면 0으로
+          순소요량(g) = 레시피 amount × 총생산량
+          발주소요량(g) = 순소요량 ÷ 실수율
+        동일 재료가 여러 레시피에 쓰이면 합산
+
+Step 3. 현재 이론 재고 계산 (재료별)
+        기준재고 = 해당 매장 최근 InventorySnapshot 수량 (단위 통일)
+        실사 이후 입고 = InboundRecord 중 실사일 이후 입고분 합산 (발주단위 → g 변환)
+        실사 이후 소모 = 실사일 이후 완료(completed) 생산분 × 레시피 재료량 ÷ 실수율
+        이론재고 = 기준재고 + 입고 - 소모
+
+Step 4. 발주 필요량 = 발주소요량 - 이론재고
+        음수(재고 충분)면 "재고 충분" 표시
+        양수면 발주 필요량 안내 (pspec 발주단위로 올림 계산)
+
+Step 5. 결과 출력 예시:
+        재료명 | 소요량 | 현재재고 | 발주필요 | 발주단위
+        낙지   | 3,450g | 2,000g  | 1,450g  | 최소 1박스(5kg) 권장
 ```
 
 ---
