@@ -7,6 +7,7 @@ instances:
       defaultUnit: g
       composition: 자숙문어 100%
       origin: 필리핀
+      thawLossRate: 10
 
   - id: ing_갑오징어
     class: Ingredient
@@ -14,6 +15,7 @@ instances:
       name: 갑오징어
       defaultUnit: g
       origin: 인도네시아
+      thawLossRate: 20
 
   - id: ing_솔방울오징어
     class: Ingredient
@@ -23,6 +25,7 @@ instances:
       composition: 오징어 99.9761%, 폴리인산나트륨 0.0239%
       allergen: 오징어
       origin: 중국
+      thawLossRate: 40
 
   - id: ing_백생합
     class: Ingredient
@@ -39,6 +42,7 @@ instances:
       defaultUnit: g
       composition: 홍합 100%
       origin: 국내산
+      thawLossRate: 20
 
   - id: ing_낙지
     class: Ingredient
@@ -47,6 +51,7 @@ instances:
       defaultUnit: g
       composition: 낙지 100%
       origin: 베트남
+      thawLossRate: 20
 
   - id: ing_전복
     class: Ingredient
@@ -64,12 +69,14 @@ instances:
       composition: 흰다리새우 99.99%, 메타중아황산나트륨(산화방지제)
       allergen: 새우, 이산화황 함유
       origin: 페루
+      thawLossRate: 10
 
   - id: ing_골뱅이
     class: Ingredient
     data:
       name: 골뱅이
       defaultUnit: g
+      thawLossRate: 20
 
   - id: ing_명란
     class: Ingredient
@@ -78,6 +85,7 @@ instances:
       defaultUnit: g
       composition: 명란 100%
       origin: 러시아
+      thawLossRate: 20
 
   - id: ing_대구곤이
     class: Ingredient
@@ -86,6 +94,7 @@ instances:
       defaultUnit: g
       composition: 대구곤이 100%
       origin: 아이슬란드
+      thawLossRate: 20
 
   - id: ing_코다리
     class: Ingredient
@@ -94,6 +103,7 @@ instances:
       defaultUnit: g
       composition: 코다리 100%
       origin: 러시아
+      thawLossRate: 20
 
   - id: ing_대구
     class: Ingredient
@@ -102,6 +112,7 @@ instances:
       defaultUnit: g
       composition: 대구 100%
       origin: 국내산
+      thawLossRate: 20
 
   - id: ing_순살아귀
     class: Ingredient
@@ -109,6 +120,7 @@ instances:
       name: 순살아귀
       defaultUnit: g
       composition: 순살아귀 100%
+      thawLossRate: 20
 
   - id: ing_오만둥이
     class: Ingredient
@@ -116,6 +128,7 @@ instances:
       name: 오만둥이
       defaultUnit: g
       origin: 국내산
+      thawLossRate: 20
 
   - id: ing_주꾸미
     class: Ingredient
@@ -123,12 +136,14 @@ instances:
       name: 주꾸미
       defaultUnit: g
       composition: 주꾸미 100%
+      thawLossRate: 20
 
   - id: ing_염지소곱창
     class: Ingredient
     data:
       name: 염지소곱창
       defaultUnit: g
+      thawLossRate: 20
 
   - id: ing_염지소대창
     class: Ingredient
@@ -138,6 +153,7 @@ instances:
       composition: 소대창[외국산(우루과이,아르헨티나,미국등)] 85%, 정제수, 화미골드다시[정제소금(중국산), 옥수수전분(외국산:헝가리,러시아,세르비아등)], 백설탕, 식염(아르헨티나산), 5'-리보뉴클레오티드이나트륨
       allergen: 쇠고기, 대두, 밀, 우유
       origin: 외국산(우루과이, 아르헨티나, 미국 등)
+      thawLossRate: 20
 
   - id: ing_흰다리새우살_L_페루
     class: Ingredient
@@ -147,6 +163,7 @@ instances:
       composition: 흰다리새우 99.81%, 정제소금, 탄산나트륨, 구연산나트륨, 메타중아황산나트륨(산화방지제)
       allergen: 새우, 이산화황
       origin: 페루
+      thawLossRate: 10
 
   - id: ing_흰다리새우살_S_베트남
     class: Ingredient
@@ -156,6 +173,7 @@ instances:
       composition: 흰다리새우살 99%, 정제염, 폴리인산나트륨
       allergen: 새우 함유
       origin: 베트남
+      thawLossRate: 10
 
   - id: ing_게
     class: Ingredient
@@ -163,6 +181,7 @@ instances:
       name: 꽃게
       defaultUnit: g
       composition: 꽃게 100%
+      thawLossRate: 20
 
   - id: ing_볼락
     class: Ingredient
@@ -170,12 +189,14 @@ instances:
       name: 볼락
       defaultUnit: g
       composition: 볼락 100%
+      thawLossRate: 20
 
   - id: ing_동태
     class: Ingredient
     data:
       name: 동태
       defaultUnit: g
+      thawLossRate: 20
 
   - id: ing_가리비관자
     class: Ingredient
@@ -185,12 +206,14 @@ instances:
       composition: 가리비관자 99%, 트랜스글루타미나아제 1%
       allergen: 조개류(가리비)
       origin: 중국
+      thawLossRate: 20
 
   - id: ing_홍가리비살
     class: Ingredient
     data:
       name: 홍가리비살
       defaultUnit: g
+      thawLossRate: 20
 
   # ── 채소 ─────────────────────────────────────────────────
   - id: ing_무
@@ -339,6 +362,7 @@ instances:
       name: 명태곤이
       defaultUnit: g
       composition: 명태곤이 100%
+      thawLossRate: 20
 
   - id: ing_게_이탈리아
     class: Ingredient
@@ -346,6 +370,7 @@ instances:
       name: 꽃게 (이탈리아산)
       defaultUnit: g
       composition: 꽃게 100%
+      thawLossRate: 20
 
   - id: ing_게_바레인
     class: Ingredient
@@ -353,6 +378,7 @@ instances:
       name: 꽃게 (바레인산)
       defaultUnit: g
       composition: 꽃게 100%
+      thawLossRate: 20
 
   - id: ing_라면
     class: Ingredient
@@ -365,6 +391,7 @@ instances:
     data:
       name: 자숙피뿔고둥살
       defaultUnit: g
+      thawLossRate: 20
 
   - id: ing_초고추장
     class: Ingredient
@@ -399,6 +426,7 @@ instances:
       composition: null
       origin: 국산
       allergen: null
+      thawLossRate: 20
 
   - id: ing_자숙문어_절단
     class: Ingredient
@@ -409,6 +437,7 @@ instances:
       composition: null
       origin: null
       allergen: null
+      thawLossRate: 10
 
   - id: ing_냉동홍가리비
     class: Ingredient
@@ -419,6 +448,7 @@ instances:
       composition: null
       origin: null
       allergen: null
+      thawLossRate: 20
 
   - id: ing_반각가리비
     class: Ingredient
@@ -429,6 +459,7 @@ instances:
       composition: null
       origin: null
       allergen: null
+      thawLossRate: 20
 
   - id: ing_새우_사우디
     class: Ingredient
@@ -439,6 +470,7 @@ instances:
       composition: null
       origin: 사우디아라비아
       allergen: null
+      thawLossRate: 10
 
   - id: ing_양념게장소스
     class: Ingredient
@@ -459,6 +491,7 @@ instances:
       composition: null
       origin: 미국
       allergen: null
+      thawLossRate: 20
 
   - id: ing_흰다리새우살_L_인도
     class: Ingredient
@@ -466,6 +499,7 @@ instances:
       name: 흰다리새우살 (대, 인도산)
       defaultUnit: g
       origin: 인도
+      thawLossRate: 10
 
   - id: ing_백새우살
     class: Ingredient
@@ -473,11 +507,10 @@ instances:
       name: 백새우살
       defaultUnit: g
       origin: 베트남
+      thawLossRate: 10
 
   - id: ing_만능찜소스
     class: Ingredient
     data:
       name: 만능찜소스
       defaultUnit: g
-
-
