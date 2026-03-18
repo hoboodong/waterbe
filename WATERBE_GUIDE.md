@@ -124,8 +124,10 @@
 
 ## 파일 구조
 ```
-ontology/
+waterbe/
 ├── schema.yaml          # 스키마 정의 (클래스·속성·관계)
+├── WATERBE_GUIDE.md     # 이 문서
+├── PERSONNEL_GUIDE.md   # 인사관리 에이전트 가이드
 ├── instances/
 │   ├── stores.yaml          # 매장 인스턴스
 │   ├── staff.yaml           # 직원 인스턴스 (텔레그램 ID·역할·매장)
@@ -155,7 +157,7 @@ ontology/
 │       ├── wangsimni.yaml
 │       ├── mapo.yaml
 │       └── wolgye.yaml
-└── WATERBE_GUIDE.md     # 이 문서 (사용설명서)
+└── CHANGE_REQUESTS.md   # 변경 요청 기록
 ```
 
 ## 클래스 관계도
