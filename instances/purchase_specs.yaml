@@ -883,9 +883,10 @@ instances:
     class: PurchaseSpec
     data:
       orderName: 양배추콩나물세트
-      orderUnit: 1팩  # 양배추+콩나물 혼합 세트
+      orderUnit: 1팩  # 양배추 반 + 콩나물 반, 1팩 = 1,500원
       category: 재료
+      # 레시피에서 ing_양배추 1팩 + ing_콩나물 1팩이 함께 나오면 이 pspec 1팩으로 처리 (중복 계산 금지)
     relations:
-      forIngredient: null  # ing_양배추 + ing_콩나물 콤보
+      forIngredient: null  # ing_양배추 + ing_콩나물 콤보 (단일 재료 ID 없음)
       vendor: null
       vendor: null
