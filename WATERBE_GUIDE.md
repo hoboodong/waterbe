@@ -41,7 +41,7 @@
 
 ## 클래스별 핵심 필드
 
-### Ingredient (재료) — `instances/ingredients.yaml`
+### Ingredient (재료) — `waterbe/instances/ingredients.yaml`
 | 필드 | 설명 |
 |------|------|
 | name | 재료명 |
@@ -52,7 +52,7 @@
 | thawLossRate | 해동 손실률 (%, null=0%) |
 | trimLossRate | 손질 손실률 (%, null=0%) |
 
-### PurchaseSpec (발주규격) — `instances/purchase_specs.yaml`
+### PurchaseSpec (발주규격) — `waterbe/instances/purchase_specs.yaml`
 | 필드 | 설명 |
 |------|------|
 | orderName | 발주명 (납품업체 기준 상품명) |
@@ -61,7 +61,7 @@
 | countPerKg | 미수 (개/kg, 새우·전복 등 개수 기준 재료만) |
 | forIngredient | 연결된 재료 ID |
 
-### PriceHistory (가격이력) — `instances/price_history.yaml`
+### PriceHistory (가격이력) — `waterbe/instances/price_history.yaml`
 | 필드 | 설명 |
 |------|------|
 | unitPrice | 발주단위 기준 총금액 (원) |
@@ -71,7 +71,7 @@
 
 > **현재 단가** = 해당 pspec의 price_history 중 가장 최신 date 레코드
 
-### Recipe (레시피) — `instances/recipes/{매장}.yaml`
+### Recipe (레시피) — `waterbe/instances/recipes/{매장}.yaml`
 | 필드 | 설명 |
 |------|------|
 | forProduct | 대상 상품 ID |
@@ -79,7 +79,7 @@
 | uses | 재료 목록 (ingredient, amount, unit) |
 | packaging | 포장재 목록 (pspec, quantity, unit) |
 
-### ProductionPlan (생산계획) — `instances/production/{매장}.yaml`
+### ProductionPlan (생산계획) — `waterbe/instances/production/{매장}.yaml`
 | 필드 | 설명 |
 |------|------|
 | weekStart | 주 시작일 (YYYY-MM-DD, 월요일) |
@@ -88,7 +88,7 @@
 | dailyActual | 실제 생산량 (완료 후 입력) |
 | status | planned / in_progress / completed |
 
-### InboundRecord (입고기록) — `instances/inventory/inbound/{매장}.yaml`
+### InboundRecord (입고기록) — `waterbe/instances/inventory/inbound/{매장}.yaml`
 | 필드 | 설명 |
 |------|------|
 | date | 입고일자 (YYYY-MM-DD) |
@@ -97,7 +97,7 @@
 | forPurchaseSpec | 연결된 발주규격 ID |
 | atStore | 입고 매장 ID |
 
-### InventorySnapshot (재고실사) — `instances/inventory/{매장}.yaml`
+### InventorySnapshot (재고실사) — `waterbe/instances/inventory/{매장}.yaml`
 | 필드 | 설명 |
 |------|------|
 | date | 실사일자 (YYYY-MM-DD) |
@@ -106,7 +106,7 @@
 | forIngredient | 재료 ID |
 | atStore | 매장 ID |
 
-### SalesRecord (매출기록) — `instances/sales/{매장}.yaml`
+### SalesRecord (매출기록) — `waterbe/instances/sales/{매장}.yaml`
 | 필드 | 설명 |
 |------|------|
 | date | 판매일자 (YYYY-MM-DD) |
@@ -120,7 +120,7 @@
 
 ## 역할
 워터비 사업 데이터를 관리하는 에이전트.
-`instances/` 하위 파일의 실제 데이터를 조회·입력·수정한다.
+`waterbe/instances/` 하위 파일의 실제 데이터를 조회·입력·수정한다.
 
 ## 파일 구조
 ```
@@ -520,7 +520,7 @@ trim = trimLossRate (null이면 0)
 ## 인스턴스 CRUD 규칙
 
 > **⚠️ 데이터 임의 입력 금지**
-> `instances/` 하위 모든 파일에 데이터를 추가하거나 수정할 때는 **반드시 사용자에게 먼저 확인**을 받아야 한다.
+> `waterbe/instances/` 하위 모든 파일에 데이터를 추가하거나 수정할 때는 **반드시 사용자에게 먼저 확인**을 받아야 한다.
 > 재료 구성이 불명확하면 추측으로 채우지 말고 사용자에게 물어볼 것.
 
 > **⚠️ PriceHistory 수정 금지**
