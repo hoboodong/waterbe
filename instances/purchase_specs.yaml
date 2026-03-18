@@ -878,3 +878,14 @@ instances:
     relations:
       forIngredient: null
       vendor: null
+
+  - id: pspec_086
+    class: PurchaseSpec
+    data:
+      orderName: 양배추콩나물세트
+      orderUnit: 1팩  # 양배추+콩나물 혼합 세트
+      category: 재료
+    relations:
+      forIngredient: null  # ing_양배추 + ing_콩나물 콤보
+      vendor: null
+      vendor: null

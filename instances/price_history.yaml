@@ -1004,3 +1004,13 @@ instances:
       memo: null
     relations:
       forPurchaseSpec: pspec_085  # DR볶음용 3호 검정 400ea
+
+  - id: ph_099
+    class: PriceHistory
+    data:
+      unitPrice: 1500
+      date: "2026-03-18"
+      vendor: 다삼인삼
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_086  # 양배추콩나물세트 1팩
