@@ -514,3 +514,10 @@ instances:
     data:
       name: 만능찜소스
       defaultUnit: g
+
+  - id: ing_양배추콩나물세트
+    class: Ingredient
+    data:
+      name: 양배추콩나물 (반반팩)
+      defaultUnit: 팩
+      origin: null

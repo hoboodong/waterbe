@@ -41,7 +41,7 @@ instances:
           unit: g
         - ingredient: ing_고추
           amount: 3
-          unit: 개
+          unit: g
         - ingredient: ing_해물탕소스
           amount: 2
           unit: 팩
@@ -90,7 +90,7 @@ instances:
           unit: g
         - ingredient: ing_고추
           amount: 3
-          unit: 개
+          unit: g
         - ingredient: ing_해물탕소스
           amount: 2
           unit: 팩
@@ -133,7 +133,7 @@ instances:
           unit: g
         - ingredient: ing_고추
           amount: 3
-          unit: 개
+          unit: g
         - ingredient: ing_해물탕소스
           amount: 2
           unit: 팩
@@ -170,7 +170,7 @@ instances:
           unit: g
         - ingredient: ing_고추
           amount: 3
-          unit: 개
+          unit: g
         - ingredient: ing_해물탕소스
           amount: 2
           unit: 팩
@@ -210,7 +210,7 @@ instances:
           unit: g
         - ingredient: ing_고추
           amount: 3
-          unit: 개
+          unit: g
         - ingredient: ing_해물탕소스
           amount: 2
           unit: 팩
@@ -239,18 +239,15 @@ instances:
         - ingredient: ing_솔방울오징어
           amount: 150
           unit: g
-        - ingredient: ing_양배추
+        - ingredient: ing_양배추콩나물세트
           amount: 1
-          unit: 팩  # 양배추콩나물 세트 1팩
-        - ingredient: ing_콩나물
-          amount: 1
-          unit: 팩  # 양배추콩나물 세트 1팩 (양배추와 동일 팩)
+          unit: 팩
         - ingredient: ing_대파
           amount: 30
           unit: g
         - ingredient: ing_고추
           amount: 3
-          unit: 개
+          unit: g
         - ingredient: ing_낙곱새소스
           amount: 2
           unit: 팩
@@ -273,18 +270,15 @@ instances:
         - ingredient: ing_솔방울오징어
           amount: 150
           unit: g
-        - ingredient: ing_양배추
+        - ingredient: ing_양배추콩나물세트
           amount: 1
-          unit: 팩  # 양배추콩나물 세트 1팩
-        - ingredient: ing_콩나물
-          amount: 1
-          unit: 팩  # 양배추콩나물 세트 1팩 (양배추와 동일 팩)
+          unit: 팩
         - ingredient: ing_대파
           amount: 30
           unit: g
         - ingredient: ing_고추
           amount: 3
-          unit: 개
+          unit: g
         - ingredient: ing_볶음소스
           amount: 2
           unit: 팩
@@ -307,18 +301,15 @@ instances:
         - ingredient: ing_솔방울오징어
           amount: 150
           unit: g
-        - ingredient: ing_양배추
+        - ingredient: ing_양배추콩나물세트
           amount: 1
-          unit: 팩  # 양배추콩나물 세트 1팩
-        - ingredient: ing_콩나물
-          amount: 1
-          unit: 팩  # 양배추콩나물 세트 1팩 (양배추와 동일 팩)
+          unit: 팩
         - ingredient: ing_대파
           amount: 30
           unit: g
         - ingredient: ing_고추
           amount: 3
-          unit: 개
+          unit: g
         - ingredient: ing_볶음소스
           amount: 2
           unit: 팩
