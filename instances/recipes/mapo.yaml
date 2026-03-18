@@ -174,12 +174,9 @@ instances:
         - ingredient: ing_솔방울오징어
           amount: null
           unit: g
-        - ingredient: ing_양배추
-          amount: null
-          unit: g
-        - ingredient: ing_콩나물
-          amount: null
-          unit: g
+        - ingredient: ing_양배추콩나물세트
+          amount: 1
+          unit: 팩
         - ingredient: ing_대파
           amount: null
           unit: g
@@ -204,12 +201,9 @@ instances:
         - ingredient: ing_솔방울오징어
           amount: null
           unit: g
-        - ingredient: ing_양배추
-          amount: null
-          unit: g
-        - ingredient: ing_콩나물
-          amount: null
-          unit: g
+        - ingredient: ing_양배추콩나물세트
+          amount: 1
+          unit: 팩
         - ingredient: ing_대파
           amount: null
           unit: g
@@ -234,12 +228,9 @@ instances:
         - ingredient: ing_솔방울오징어
           amount: null
           unit: g
-        - ingredient: ing_양배추
-          amount: null
-          unit: g
-        - ingredient: ing_콩나물
-          amount: null
-          unit: g
+        - ingredient: ing_양배추콩나물세트
+          amount: 1
+          unit: 팩
         - ingredient: ing_대파
           amount: null
           unit: g
@@ -264,12 +255,9 @@ instances:
         - ingredient: ing_솔방울오징어
           amount: null
           unit: g
-        - ingredient: ing_양배추
-          amount: null
-          unit: g
-        - ingredient: ing_콩나물
-          amount: null
-          unit: g
+        - ingredient: ing_양배추콩나물세트
+          amount: 1
+          unit: 팩
         - ingredient: ing_대파
           amount: null
           unit: g
