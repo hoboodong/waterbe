@@ -465,7 +465,9 @@ instances:
     class: PurchaseSpec
     data:
       orderName: 볶음소스(불맛) 90g×100팩
-      orderUnit: 9kg  # 90g×100팩, 1팩=90g
+      orderUnit: 9kg
+      packCount: 100
+      packSize: 90g
       category: 재료
     relations:
       forIngredient: ing_볶음소스
@@ -475,7 +477,9 @@ instances:
     class: PurchaseSpec
     data:
       orderName: 낙곱새소스 90g×100팩
-      orderUnit: 9kg  # 90g×100팩, 1팩=90g
+      orderUnit: 9kg
+      packCount: 100
+      packSize: 90g
       category: 재료
     relations:
       forIngredient: ing_낙곱새소스
@@ -486,6 +490,8 @@ instances:
     data:
       orderName: 맛있는탕소스(75g*150개)
       orderUnit: 11.25kg
+      packCount: 150
+      packSize: 75g
       category: 재료
     relations:
       forIngredient: ing_해물탕소스
