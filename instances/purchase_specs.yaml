@@ -910,3 +910,13 @@ instances:
     relations:
       forIngredient: ing_홍고추
       vendor: null
+
+  - id: pspec_089
+    class: PurchaseSpec
+    data:
+      orderName: 대파 (국내) 2kg
+      orderUnit: 2kg
+      category: 재료
+    relations:
+      forIngredient: ing_대파
+      vendor: null  # 야채 납품업체 (대영상사 아님)
