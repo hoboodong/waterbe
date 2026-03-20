@@ -890,3 +890,13 @@ instances:
       forIngredient: ing_양배추콩나물세트
       vendor: null
       vendor: null
+
+  - id: pspec_087
+    class: PurchaseSpec
+    data:
+      orderName: 통대구 (러시아) 18.5kg
+      orderUnit: 18.5kg
+      category: 재료
+    relations:
+      forIngredient: ing_통대구
+      vendor: null
