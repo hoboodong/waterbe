@@ -529,5 +529,5 @@ instances:
       defaultUnit: g
       origin: 러시아
       allergen: null
-      thawLossRate: null
-      trimLossRate: 33  # 해동+손질 합산 (2026-03-20 측정: 냉동 3600g → 손질 후 2400g)
+      thawLossRate: 5
+      trimLossRate: 35
