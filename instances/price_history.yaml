@@ -1054,3 +1054,13 @@ instances:
       memo: null
     relations:
       forPurchaseSpec: pspec_090
+
+  - id: ph_104
+    class: PriceHistory
+    data:
+      unitPrice: 52800
+      date: "2026-03-20"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_045
