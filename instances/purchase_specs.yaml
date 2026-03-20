@@ -464,8 +464,8 @@ instances:
   - id: pspec_045
     class: PurchaseSpec
     data:
-      orderName: 볶음소스(불맛)
-      orderUnit: 9kg
+      orderName: 볶음소스(불맛) 90g×100팩
+      orderUnit: 9kg  # 90g×100팩, 1팩=90g
       category: 재료
     relations:
       forIngredient: ing_볶음소스
@@ -474,8 +474,8 @@ instances:
   - id: pspec_046
     class: PurchaseSpec
     data:
-      orderName: 낙곱새소스
-      orderUnit: 9kg
+      orderName: 낙곱새소스 90g×100팩
+      orderUnit: 9kg  # 90g×100팩, 1팩=90g
       category: 재료
     relations:
       forIngredient: ing_낙곱새소스
