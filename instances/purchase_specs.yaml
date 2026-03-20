@@ -900,3 +900,13 @@ instances:
     relations:
       forIngredient: ing_통대구
       vendor: null
+
+  - id: pspec_088
+    class: PurchaseSpec
+    data:
+      orderName: 홍고추 (국내) 500g
+      orderUnit: 500g
+      category: 재료
+    relations:
+      forIngredient: ing_홍고추
+      vendor: null

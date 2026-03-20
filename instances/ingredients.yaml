@@ -262,7 +262,9 @@ instances:
     class: Ingredient
     data:
       name: 홍고추
-      defaultUnit: 개
+      defaultUnit: g
+      origin: 국내
+      trimLossRate: 10
 
   - id: ing_마늘
     class: Ingredient
