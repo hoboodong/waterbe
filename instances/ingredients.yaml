@@ -521,3 +521,13 @@ instances:
       name: 양배추콩나물 (반반팩)
       defaultUnit: 팩
       origin: null
+
+  - id: ing_통대구
+    class: Ingredient
+    data:
+      name: 통대구
+      defaultUnit: g
+      origin: 러시아
+      allergen: null
+      thawLossRate: null
+      trimLossRate: 33  # 해동+손질 합산 (2026-03-20 측정: 냉동 3600g → 손질 후 2400g)
