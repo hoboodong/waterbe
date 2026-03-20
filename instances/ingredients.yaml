@@ -221,6 +221,8 @@ instances:
     data:
       name: 무
       defaultUnit: g
+      origin: 국내
+      trimLossRate: 20
 
   - id: ing_대파
     class: Ingredient

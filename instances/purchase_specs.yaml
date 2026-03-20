@@ -920,3 +920,13 @@ instances:
     relations:
       forIngredient: ing_대파
       vendor: null  # 야채 납품업체 (대영상사 아님)
+
+  - id: pspec_090
+    class: PurchaseSpec
+    data:
+      orderName: 무 (국내) 20kg
+      orderUnit: 20kg
+      category: 재료
+    relations:
+      forIngredient: ing_무
+      vendor: null  # 야채 납품업체
