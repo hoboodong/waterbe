@@ -153,7 +153,7 @@ instances:
       composition: 소대창[외국산(우루과이,아르헨티나,미국등)] 85%, 정제수, 화미골드다시[정제소금(중국산), 옥수수전분(외국산:헝가리,러시아,세르비아등)], 백설탕, 식염(아르헨티나산), 5'-리보뉴클레오티드이나트륨
       allergen: 쇠고기, 대두, 밀, 우유
       origin: 외국산(우루과이, 아르헨티나, 미국 등)
-      thawLossRate: 20
+      thawLossRate: 10
 
   - id: ing_흰다리새우살_L_페루
     class: Ingredient

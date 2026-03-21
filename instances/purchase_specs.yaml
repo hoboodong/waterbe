@@ -1019,3 +1019,14 @@ instances:
     relations:
       forIngredient: ing_콩나물
       vendor: null  # 야채 납품업체
+
+  - id: pspec_092
+    class: PurchaseSpec
+    data:
+      orderName: 염지소대창 15kg
+      orderUnit: 15kg
+      unitG: 15000
+      category: 재료
+    relations:
+      forIngredient: ing_염지소대창
+      vendor: null

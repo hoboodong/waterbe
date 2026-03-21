@@ -1119,3 +1119,14 @@ instances:
       memo: null
     relations:
       forPurchaseSpec: pspec_091  # 콩나물 1팩
+
+  - id: ph_108
+    class: PriceHistory
+    data:
+      unitPrice: 297000
+      date: "2026-03-21"
+      vendor: 대영상사
+      deliveryFee: 3000
+      memo: "부가세 27,000 포함"
+    relations:
+      forPurchaseSpec: pspec_092  # 염지소대창 15kg
