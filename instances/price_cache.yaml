@@ -9,7 +9,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_흰다리새우살_S_베트남
   name: 흰다리새우살
@@ -19,7 +18,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_새우
   name: 흰다리새우
@@ -29,7 +27,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
@@ -39,7 +36,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_새우_사우디
   name: 흰다리새우(사우디)
@@ -49,7 +45,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_새우_사우디
   name: 흰다리새우(사우디)
@@ -59,7 +54,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_게
   name: 꽃게
@@ -69,7 +63,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_게
   name: 꽃게
@@ -79,7 +72,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_게_바레인
   name: 꽃게 (바레인산)
@@ -89,7 +81,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_게
   name: 꽃게
@@ -99,7 +90,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_게
   name: 꽃게
@@ -109,7 +99,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_게
   name: 꽃게
@@ -119,7 +108,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_게
   name: 꽃게
@@ -129,7 +117,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_백생합
   name: 백생합
@@ -155,7 +142,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_냉동홍가리비
   name: 냉동홍가리비(껍질있음)
@@ -165,7 +151,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_홍가리비살
   name: 홍가리비살
@@ -175,7 +160,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_반각가리비
   name: 반각가리비
@@ -185,7 +169,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_가리비관자
   name: 가리비관자
@@ -195,7 +178,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_전복
   name: 전복
@@ -221,7 +203,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_비자숙문어
   name: 비자숙문어
@@ -231,7 +212,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_자숙문어
   name: 자숙문어
@@ -241,7 +221,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_낙지
   name: 낙지
@@ -251,7 +230,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_낙지
   name: 낙지
@@ -261,7 +239,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_낙지
   name: 낙지
@@ -271,7 +248,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_낙지
   name: 낙지
@@ -281,7 +257,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_주꾸미
   name: 주꾸미
@@ -291,7 +266,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_주꾸미
   name: 주꾸미
@@ -301,7 +275,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_솔방울오징어
   name: 솔방울오징어
@@ -311,7 +284,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 40
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_코다리
   name: 코다리
@@ -321,7 +293,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_동태
   name: 동태
@@ -331,7 +302,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_대구
   name: 대구
@@ -341,7 +311,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_대구곤이
   name: 대구곤이
@@ -351,7 +320,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_명란
   name: 명란
@@ -361,7 +329,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_명란
   name: 명란
@@ -371,7 +338,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_오만둥이
   name: 오만둥이
@@ -381,7 +347,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_자숙피뿔고둥살
   name: 자숙피뿔고둥살
@@ -391,7 +356,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_염지소곱창
   name: 염지소곱창
@@ -401,7 +365,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_우삼겹
   name: 우삼겹
@@ -411,7 +374,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_볶음소스
   name: 볶음소스
@@ -450,7 +412,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_흰다리새우살_S_베트남
   name: 흰다리새우살
@@ -460,7 +421,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_낙지
   name: 낙지
@@ -470,7 +430,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_갑오징어
   name: 갑오징어
@@ -480,7 +439,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_순살아귀
   name: 순살아귀
@@ -490,7 +448,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_만능찜소스
   name: 만능찜소스
@@ -516,7 +473,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_주꾸미
   name: 주꾸미
@@ -526,7 +482,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_낙지
   name: 낙지
@@ -536,7 +491,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_게
   name: 꽃게
@@ -546,7 +500,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
@@ -556,7 +509,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_명란
   name: 명란
@@ -566,7 +518,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_명태곤이
   name: 명태곤이
@@ -576,7 +527,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_자숙문어_절단
   name: 자숙문어(절단)
@@ -586,7 +536,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_코다리
   name: 코다리
@@ -596,7 +545,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wolgye
   ingredientId: ing_양배추콩나물세트
   name: 양배추콩나물 (반반팩)
@@ -622,7 +570,6 @@ entries:
   per100gActual: 3778
   vendor: 대영상사
   date: '2026-03-20'
-  thawLossRate: 0
   trimLossRate: 10
 - store: wolgye
   ingredientId: ing_대파
@@ -632,7 +579,6 @@ entries:
   per100gActual: 125
   vendor: 야채납품업체
   date: '2026-03-20'
-  thawLossRate: 0
   trimLossRate: 20
 - store: wolgye
   ingredientId: ing_무
@@ -642,8 +588,14 @@ entries:
   per100gActual: 106
   vendor: 야채납품업체
   date: '2026-03-20'
-  thawLossRate: 0
   trimLossRate: 20
+- store: wolgye
+  ingredientId: ing_콩나물
+  name: 콩나물
+  unit: 팩
+  packUnitPrice: 1200
+  vendor: 야채납품업체
+  date: '2026-03-21'
 - store: wolgye
   ingredientId: ing_염지소대창
   name: 염지소대창
@@ -653,7 +605,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-21'
   thawLossRate: 10
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
@@ -663,7 +614,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 10
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_흰다리새우살_S_베트남
   name: 흰다리새우살
@@ -673,7 +623,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 10
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_새우
   name: 흰다리새우
@@ -683,7 +632,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 10
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
@@ -693,7 +641,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 10
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_새우_사우디
   name: 흰다리새우(사우디)
@@ -703,7 +650,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 10
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_새우_사우디
   name: 흰다리새우(사우디)
@@ -713,7 +659,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 10
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_게
   name: 꽃게
@@ -723,7 +668,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_게
   name: 꽃게
@@ -733,7 +677,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_게_바레인
   name: 꽃게 (바레인산)
@@ -743,7 +686,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_게
   name: 꽃게
@@ -753,7 +695,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_게
   name: 꽃게
@@ -763,7 +704,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_게
   name: 꽃게
@@ -773,7 +713,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_게
   name: 꽃게
@@ -783,7 +722,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_백생합
   name: 백생합
@@ -809,7 +747,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_냉동홍가리비
   name: 냉동홍가리비(껍질있음)
@@ -819,7 +756,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_홍가리비살
   name: 홍가리비살
@@ -829,7 +765,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_반각가리비
   name: 반각가리비
@@ -839,7 +774,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_가리비관자
   name: 가리비관자
@@ -849,7 +783,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_전복
   name: 전복
@@ -875,7 +808,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 10
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_비자숙문어
   name: 비자숙문어
@@ -885,7 +817,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_자숙문어
   name: 자숙문어
@@ -895,7 +826,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 10
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_낙지
   name: 낙지
@@ -905,7 +835,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_낙지
   name: 낙지
@@ -915,7 +844,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_낙지
   name: 낙지
@@ -925,7 +853,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_낙지
   name: 낙지
@@ -935,7 +862,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_주꾸미
   name: 주꾸미
@@ -945,7 +871,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_주꾸미
   name: 주꾸미
@@ -955,7 +880,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_솔방울오징어
   name: 솔방울오징어
@@ -965,7 +889,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 40
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_코다리
   name: 코다리
@@ -975,7 +898,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_동태
   name: 동태
@@ -985,7 +907,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_대구
   name: 대구
@@ -995,7 +916,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_대구곤이
   name: 대구곤이
@@ -1005,7 +925,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_명란
   name: 명란
@@ -1015,7 +934,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_명란
   name: 명란
@@ -1025,7 +943,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_오만둥이
   name: 오만둥이
@@ -1035,7 +952,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_자숙피뿔고둥살
   name: 자숙피뿔고둥살
@@ -1045,7 +961,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_염지소곱창
   name: 염지소곱창
@@ -1055,7 +970,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_우삼겹
   name: 우삼겹
@@ -1065,7 +979,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_볶음소스
   name: 볶음소스
@@ -1104,7 +1017,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 10
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_흰다리새우살_S_베트남
   name: 흰다리새우살
@@ -1114,7 +1026,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 10
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_낙지
   name: 낙지
@@ -1124,7 +1035,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_갑오징어
   name: 갑오징어
@@ -1134,7 +1044,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_순살아귀
   name: 순살아귀
@@ -1144,7 +1053,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_만능찜소스
   name: 만능찜소스
@@ -1170,7 +1078,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_주꾸미
   name: 주꾸미
@@ -1180,7 +1087,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_낙지
   name: 낙지
@@ -1190,7 +1096,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_게
   name: 꽃게
@@ -1200,7 +1105,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
@@ -1210,7 +1114,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 10
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_명란
   name: 명란
@@ -1220,7 +1123,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_명태곤이
   name: 명태곤이
@@ -1230,7 +1132,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_자숙문어_절단
   name: 자숙문어(절단)
@@ -1240,7 +1141,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 10
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_코다리
   name: 코다리
@@ -1250,7 +1150,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: mapo
   ingredientId: ing_양배추콩나물세트
   name: 양배추콩나물 (반반팩)
@@ -1276,7 +1175,6 @@ entries:
   per100gActual: 3778
   vendor: 대영상사
   date: '2026-03-20'
-  thawLossRate: 0
   trimLossRate: 10
 - store: mapo
   ingredientId: ing_대파
@@ -1286,7 +1184,6 @@ entries:
   per100gActual: 125
   vendor: 야채납품업체
   date: '2026-03-20'
-  thawLossRate: 0
   trimLossRate: 20
 - store: mapo
   ingredientId: ing_무
@@ -1296,8 +1193,14 @@ entries:
   per100gActual: 106
   vendor: 야채납품업체
   date: '2026-03-20'
-  thawLossRate: 0
   trimLossRate: 20
+- store: mapo
+  ingredientId: ing_콩나물
+  name: 콩나물
+  unit: 팩
+  packUnitPrice: 1200
+  vendor: 야채납품업체
+  date: '2026-03-21'
 - store: mapo
   ingredientId: ing_염지소대창
   name: 염지소대창
@@ -1307,7 +1210,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-21'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
@@ -1317,7 +1219,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_흰다리새우살_S_베트남
   name: 흰다리새우살
@@ -1327,7 +1228,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_새우
   name: 흰다리새우
@@ -1337,7 +1237,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
@@ -1347,7 +1246,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_새우_사우디
   name: 흰다리새우(사우디)
@@ -1357,7 +1255,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_새우_사우디
   name: 흰다리새우(사우디)
@@ -1367,7 +1264,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_게
   name: 꽃게
@@ -1377,7 +1273,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_게
   name: 꽃게
@@ -1387,7 +1282,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_게_바레인
   name: 꽃게 (바레인산)
@@ -1397,7 +1291,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_게
   name: 꽃게
@@ -1407,7 +1300,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_게
   name: 꽃게
@@ -1417,7 +1309,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_게
   name: 꽃게
@@ -1427,7 +1318,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_게
   name: 꽃게
@@ -1437,7 +1327,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_백생합
   name: 백생합
@@ -1463,7 +1352,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_냉동홍가리비
   name: 냉동홍가리비(껍질있음)
@@ -1473,7 +1361,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_홍가리비살
   name: 홍가리비살
@@ -1483,7 +1370,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_반각가리비
   name: 반각가리비
@@ -1493,7 +1379,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_가리비관자
   name: 가리비관자
@@ -1503,7 +1388,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_전복
   name: 전복
@@ -1529,7 +1413,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_비자숙문어
   name: 비자숙문어
@@ -1539,7 +1422,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_자숙문어
   name: 자숙문어
@@ -1549,7 +1431,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_낙지
   name: 낙지
@@ -1559,7 +1440,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_낙지
   name: 낙지
@@ -1569,7 +1449,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_낙지
   name: 낙지
@@ -1579,7 +1458,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_낙지
   name: 낙지
@@ -1589,7 +1467,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_주꾸미
   name: 주꾸미
@@ -1599,7 +1476,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_주꾸미
   name: 주꾸미
@@ -1609,7 +1485,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_솔방울오징어
   name: 솔방울오징어
@@ -1619,7 +1494,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 40
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_코다리
   name: 코다리
@@ -1629,7 +1503,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_동태
   name: 동태
@@ -1639,7 +1512,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_대구
   name: 대구
@@ -1649,7 +1521,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_대구곤이
   name: 대구곤이
@@ -1659,7 +1530,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_명란
   name: 명란
@@ -1669,7 +1539,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_명란
   name: 명란
@@ -1679,7 +1548,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_오만둥이
   name: 오만둥이
@@ -1689,7 +1557,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_자숙피뿔고둥살
   name: 자숙피뿔고둥살
@@ -1699,7 +1566,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_염지소곱창
   name: 염지소곱창
@@ -1709,7 +1575,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_우삼겹
   name: 우삼겹
@@ -1719,7 +1584,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-12'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_볶음소스
   name: 볶음소스
@@ -1758,7 +1622,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_흰다리새우살_S_베트남
   name: 흰다리새우살
@@ -1768,7 +1631,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_낙지
   name: 낙지
@@ -1778,7 +1640,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_갑오징어
   name: 갑오징어
@@ -1788,7 +1649,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_순살아귀
   name: 순살아귀
@@ -1798,7 +1658,6 @@ entries:
   vendor: 남선푸드
   date: '2026-03-14'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_만능찜소스
   name: 만능찜소스
@@ -1824,7 +1683,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_주꾸미
   name: 주꾸미
@@ -1834,7 +1692,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_낙지
   name: 낙지
@@ -1844,7 +1701,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_게
   name: 꽃게
@@ -1854,7 +1710,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
@@ -1864,7 +1719,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_명란
   name: 명란
@@ -1874,7 +1728,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_명태곤이
   name: 명태곤이
@@ -1884,7 +1737,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_자숙문어_절단
   name: 자숙문어(절단)
@@ -1894,7 +1746,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 10
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_코다리
   name: 코다리
@@ -1904,7 +1755,6 @@ entries:
   vendor: 대영상사
   date: '2026-03-16'
   thawLossRate: 20
-  trimLossRate: 0
 - store: wangsimni
   ingredientId: ing_양배추콩나물세트
   name: 양배추콩나물 (반반팩)
@@ -1930,7 +1780,6 @@ entries:
   per100gActual: 3778
   vendor: 대영상사
   date: '2026-03-20'
-  thawLossRate: 0
   trimLossRate: 10
 - store: wangsimni
   ingredientId: ing_대파
@@ -1940,7 +1789,6 @@ entries:
   per100gActual: 125
   vendor: 야채납품업체
   date: '2026-03-20'
-  thawLossRate: 0
   trimLossRate: 20
 - store: wangsimni
   ingredientId: ing_무
@@ -1950,8 +1798,14 @@ entries:
   per100gActual: 106
   vendor: 야채납품업체
   date: '2026-03-20'
-  thawLossRate: 0
   trimLossRate: 20
+- store: wangsimni
+  ingredientId: ing_콩나물
+  name: 콩나물
+  unit: 팩
+  packUnitPrice: 1200
+  vendor: 야채납품업체
+  date: '2026-03-21'
 - store: wangsimni
   ingredientId: ing_염지소대창
   name: 염지소대창
@@ -1961,4 +1815,3 @@ entries:
   vendor: 대영상사
   date: '2026-03-21'
   thawLossRate: 10
-  trimLossRate: 0

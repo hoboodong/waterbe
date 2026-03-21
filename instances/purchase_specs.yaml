@@ -1015,6 +1015,7 @@ instances:
       orderName: 콩나물 (국내) 1팩
       orderUnit: 1팩
       packCount: 1
+      packUnitPrice: 1200
       category: 재료
     relations:
       forIngredient: ing_콩나물
