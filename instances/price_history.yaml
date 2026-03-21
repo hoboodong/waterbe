@@ -1074,3 +1074,13 @@ instances:
       memo: null
     relations:
       forPurchaseSpec: pspec_046
+
+  - id: ph_106
+    class: PriceHistory
+    data:
+      unitPrice: 107000
+      date: "2026-03-20"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_047  # 해물탕소스 75g×150팩

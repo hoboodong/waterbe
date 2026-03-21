@@ -8,6 +8,7 @@ instances:
     data:
       orderName: PDTO새우살26-30P(페루산)
       orderUnit: 9kg
+      unitG: 9000
       category: 재료
       countPerKg: 28  # 26-30마리/kg 중간값
     relations:
@@ -19,6 +20,7 @@ instances:
     data:
       orderName: 냉동새우살71-90P(베트남)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
       countPerKg: 80  # 71-90마리/kg 중간값
     relations:
@@ -30,6 +32,7 @@ instances:
     data:
       orderName: 냉동새우 30/40(페루)
       orderUnit: 12kg
+      unitG: 12000
       category: 재료
       countPerKg: 35  # 30/40마리/kg 중간값
     relations:
@@ -41,6 +44,7 @@ instances:
     data:
       orderName: 냉동새우 40/50(페루)
       orderUnit: 12kg
+      unitG: 12000
       category: 재료
       countPerKg: 45  # 40-50마리/kg 중간값
     relations:
@@ -52,6 +56,7 @@ instances:
     data:
       orderName: PDTO새우살30-40P(페루산)
       orderUnit: 9kg
+      unitG: 9000
       category: 재료
       countPerKg: 35  # 30-40마리/kg 중간값
     relations:
@@ -63,6 +68,7 @@ instances:
     data:
       orderName: 냉동새우 30/40(사우디)
       orderUnit: 12kg
+      unitG: 12000
       category: 재료
       countPerKg: 35  # 30-40마리/kg 중간값
     relations:
@@ -74,6 +80,7 @@ instances:
     data:
       orderName: 냉동새우 41-50P(사우디)
       orderUnit: 12kg
+      unitG: 12000
       category: 재료
       countPerKg: 45  # 41-50마리/kg 중간값
     relations:
@@ -86,6 +93,7 @@ instances:
     data:
       orderName: 절단꽃게L(중국)
       orderUnit: 5.4kg
+      unitG: 5400
       category: 재료
     relations:
       forIngredient: ing_게
@@ -96,6 +104,7 @@ instances:
     data:
       orderName: 절단꽃게2S(튀니지)
       orderUnit: 6kg
+      unitG: 6000
       category: 재료
     relations:
       forIngredient: ing_게
@@ -106,6 +115,7 @@ instances:
     data:
       orderName: 절단꽃게M(바레인,튀니지)
       orderUnit: 6kg
+      unitG: 6000
       category: 재료
     relations:
       forIngredient: ing_게_바레인
@@ -116,6 +126,7 @@ instances:
     data:
       orderName: 국산꽃게(암)5단(국산)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_게
@@ -126,6 +137,7 @@ instances:
     data:
       orderName: 꽃게탕용 절단꽃게(국산)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_게
@@ -136,6 +148,7 @@ instances:
     data:
       orderName: 삼점게100/150(암)(파키스탄)
       orderUnit: 6kg
+      unitG: 6000
       category: 재료
     relations:
       forIngredient: ing_게
@@ -146,6 +159,7 @@ instances:
     data:
       orderName: 절단꽃게3L(중국)
       orderUnit: 5.4kg
+      unitG: 5400
       category: 재료
     relations:
       forIngredient: ing_게
@@ -157,6 +171,7 @@ instances:
     data:
       orderName: 백생합(중국)(생물)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_백생합
@@ -167,6 +182,7 @@ instances:
     data:
       orderName: 백생합(중국)(생물)
       orderUnit: 1kg
+      unitG: 1000
       category: 재료
     relations:
       forIngredient: ing_백생합
@@ -177,6 +193,7 @@ instances:
     data:
       orderName: 냉동홍합(국산)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_홍합
@@ -187,6 +204,7 @@ instances:
     data:
       orderName: 냉동홍가리비(껍질있음)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_냉동홍가리비
@@ -197,6 +215,7 @@ instances:
     data:
       orderName: 냉동홍가리비살
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_홍가리비살
@@ -207,6 +226,7 @@ instances:
     data:
       orderName: 반각가리비7/8미(중국)
       orderUnit: 1.8kg
+      unitG: 1800
       category: 재료
     relations:
       forIngredient: ing_반각가리비
@@ -217,6 +237,7 @@ instances:
     data:
       orderName: 압축가리비관자(중국)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_가리비관자
@@ -228,6 +249,7 @@ instances:
     data:
       orderName: 전복(소) 25미(생물)
       orderUnit: 1kg
+      unitG: 1000
       category: 재료
       countPerKg: 25
     relations:
@@ -239,6 +261,7 @@ instances:
     data:
       orderName: 전복(중) 22미(생물)
       orderUnit: 1kg
+      unitG: 1000
       category: 재료
       countPerKg: 22
     relations:
@@ -251,6 +274,7 @@ instances:
     data:
       orderName: 국산문어(국산)
       orderUnit: 8kg
+      unitG: 8000
       category: 재료
     relations:
       forIngredient: ing_자숙문어
@@ -261,6 +285,7 @@ instances:
     data:
       orderName: 비자숙문어(국산)
       orderUnit: 8kg
+      unitG: 8000
       category: 재료
     relations:
       forIngredient: ing_비자숙문어
@@ -271,6 +296,7 @@ instances:
     data:
       orderName: 냉동자숙문어(필리핀)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_자숙문어
@@ -281,6 +307,7 @@ instances:
     data:
       orderName: 문어슬라이스(샐러드컷)(필리핀)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_자숙문어_절단
@@ -292,6 +319,7 @@ instances:
     data:
       orderName: 냉동활낙지8미(중국)
       orderUnit: 5.1kg
+      unitG: 5100
       category: 재료
     relations:
       forIngredient: ing_낙지
@@ -302,6 +330,7 @@ instances:
     data:
       orderName: 냉동활낙지6미(중국)
       orderUnit: 5.1kg
+      unitG: 5100
       category: 재료
     relations:
       forIngredient: ing_낙지
@@ -312,6 +341,7 @@ instances:
     data:
       orderName: 절단낙지(말레이시아)
       orderUnit: 6kg
+      unitG: 6000
       category: 재료
     relations:
       forIngredient: ing_낙지
@@ -322,6 +352,7 @@ instances:
     data:
       orderName: 손질낙지(200/300)(베트남)
       orderUnit: 6kg
+      unitG: 6000
       category: 재료
     relations:
       forIngredient: ing_낙지
@@ -332,6 +363,7 @@ instances:
     data:
       orderName: 절단주꾸미(베트남)
       orderUnit: 6kg
+      unitG: 6000
       category: 재료
     relations:
       forIngredient: ing_주꾸미
@@ -342,6 +374,7 @@ instances:
     data:
       orderName: 냉동주꾸미(베트남)
       orderUnit: 4.8kg
+      unitG: 4800
       category: 재료
     relations:
       forIngredient: ing_주꾸미
@@ -352,6 +385,7 @@ instances:
     data:
       orderName: 솔방울오징어(중국)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_솔방울오징어
@@ -363,6 +397,7 @@ instances:
     data:
       orderName: 절단코다리60/80깔끔이(러시아)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_코다리
@@ -373,6 +408,7 @@ instances:
     data:
       orderName: 절단동태(러시아)
       orderUnit: 5kg
+      unitG: 5000
       category: 재료
     relations:
       forIngredient: ing_동태
@@ -383,6 +419,7 @@ instances:
     data:
       orderName: 절단대구(국산)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_대구
@@ -393,6 +430,7 @@ instances:
     data:
       orderName: 대구곤이(아이슬란드)
       orderUnit: 6kg
+      unitG: 6000
       category: 재료
     relations:
       forIngredient: ing_대구곤이
@@ -403,6 +441,7 @@ instances:
     data:
       orderName: 명란(러시아)
       orderUnit: 7.5kg
+      unitG: 7500
       category: 재료
     relations:
       forIngredient: ing_명란
@@ -413,6 +452,7 @@ instances:
     data:
       orderName: 명란PG 원물
       orderUnit: 22.5kg
+      unitG: 22500
       category: 재료
     relations:
       forIngredient: ing_명란
@@ -424,6 +464,7 @@ instances:
     data:
       orderName: 오만둥이(소포장)
       orderUnit: 1kg
+      unitG: 1000
       category: 재료
     relations:
       forIngredient: ing_오만둥이
@@ -434,6 +475,7 @@ instances:
     data:
       orderName: 참소라살3S(튀르키예)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_자숙피뿔고둥살
@@ -445,6 +487,7 @@ instances:
     data:
       orderName: 소곱창
       orderUnit: 15kg
+      unitG: 15000
       category: 재료
     relations:
       forIngredient: ing_염지소곱창
@@ -455,6 +498,7 @@ instances:
     data:
       orderName: 우삼겹(미국)
       orderUnit: 5kg
+      unitG: 5000
       category: 재료
     relations:
       forIngredient: ing_우삼겹
@@ -466,6 +510,7 @@ instances:
     data:
       orderName: 볶음소스(불맛) 90g×100팩
       orderUnit: 9kg
+      unitG: 9000
       packCount: 100
       packSize: 90g
       category: 재료
@@ -478,6 +523,7 @@ instances:
     data:
       orderName: 낙곱새소스 90g×100팩
       orderUnit: 9kg
+      unitG: 9000
       packCount: 100
       packSize: 90g
       category: 재료
@@ -490,6 +536,7 @@ instances:
     data:
       orderName: 맛있는탕소스(75g*150개)
       orderUnit: 11.25kg
+      unitG: 11250
       packCount: 150
       packSize: 75g
       category: 재료
@@ -502,6 +549,7 @@ instances:
     data:
       orderName: 양념게장소스
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_양념게장소스
@@ -512,6 +560,7 @@ instances:
     data:
       orderName: 간장게장소스(한국소스)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_간장소스
@@ -705,6 +754,7 @@ instances:
     data:
       orderName: PDTO새우살26-30P(인도산)
       orderUnit: 9kg
+      unitG: 9000
       category: 재료
       countPerKg: 28  # 26-30마리/kg 중간값
     relations:
@@ -716,6 +766,7 @@ instances:
     data:
       orderName: 냉동새우살71-90P(베트남)
       orderUnit: 9kg
+      unitG: 9000
       category: 재료
       countPerKg: 80  # 71-90마리/kg 중간값
     relations:
@@ -738,6 +789,7 @@ instances:
     data:
       orderName: 절단낙지IQF(중국)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_낙지
@@ -748,6 +800,7 @@ instances:
     data:
       orderName: 통갑오징어100/200(인도네시아)
       orderUnit: 5kg
+      unitG: 5000
       category: 재료
     relations:
       forIngredient: ing_갑오징어
@@ -758,6 +811,7 @@ instances:
     data:
       orderName: 순살아귀(중국산)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_순살아귀
@@ -768,6 +822,7 @@ instances:
     data:
       orderName: 만능찜소스
       orderUnit: 8kg
+      unitG: 8000
       category: 재료
     relations:
       forIngredient: ing_만능찜소스
@@ -779,6 +834,7 @@ instances:
     data:
       orderName: 더맛있는탕소스(100g×150ea)
       orderUnit: 15kg
+      unitG: 15000
       category: 재료
     relations:
       forIngredient: ing_해물탕소스
@@ -789,6 +845,7 @@ instances:
     data:
       orderName: 성형가리비(10/20)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_가리비관자
@@ -799,6 +856,7 @@ instances:
     data:
       orderName: 주꾸미(17/22미)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_주꾸미
@@ -809,6 +867,7 @@ instances:
     data:
       orderName: 절단낙지 L
       orderUnit: 6kg
+      unitG: 6000
       category: 재료
     relations:
       forIngredient: ing_낙지
@@ -819,6 +878,7 @@ instances:
     data:
       orderName: 절단꽃게 S
       orderUnit: 5kg
+      unitG: 5000
       category: 재료
     relations:
       forIngredient: ing_게
@@ -829,6 +889,7 @@ instances:
     data:
       orderName: 칵테일새우살(21/25)
       orderUnit: 9kg
+      unitG: 9000
       category: 재료
       countPerKg: 23  # 21-25마리/kg 중간값
     relations:
@@ -840,6 +901,7 @@ instances:
     data:
       orderName: 명란PG(22.8kg)
       orderUnit: 22.8kg
+      unitG: 22800
       category: 재료
     relations:
       forIngredient: ing_명란
@@ -850,6 +912,7 @@ instances:
     data:
       orderName: 명태곤이
       orderUnit: 22.5kg
+      unitG: 22500
       category: 재료
     relations:
       forIngredient: ing_명태곤이
@@ -860,6 +923,7 @@ instances:
     data:
       orderName: 문어슬라이스(대영)
       orderUnit: 9kg
+      unitG: 9000
       category: 재료
     relations:
       forIngredient: ing_자숙문어_절단
@@ -870,6 +934,7 @@ instances:
     data:
       orderName: 절단코다리(40/60)
       orderUnit: 10kg
+      unitG: 10000
       category: 재료
     relations:
       forIngredient: ing_코다리
@@ -895,13 +960,13 @@ instances:
     relations:
       forIngredient: ing_양배추콩나물세트
       vendor: null
-      vendor: null
 
   - id: pspec_087
     class: PurchaseSpec
     data:
       orderName: 통대구 (러시아) 18.5kg
       orderUnit: 18.5kg
+      unitG: 18500
       category: 재료
     relations:
       forIngredient: ing_통대구
@@ -912,6 +977,7 @@ instances:
     data:
       orderName: 홍고추 (국내) 500g
       orderUnit: 500g
+      unitG: 500
       category: 재료
     relations:
       forIngredient: ing_홍고추
@@ -922,6 +988,7 @@ instances:
     data:
       orderName: 대파 (국내) 2kg
       orderUnit: 2kg
+      unitG: 2000
       category: 재료
     relations:
       forIngredient: ing_대파
@@ -932,6 +999,7 @@ instances:
     data:
       orderName: 무 (국내) 20kg
       orderUnit: 20kg
+      unitG: 20000
       category: 재료
     relations:
       forIngredient: ing_무
