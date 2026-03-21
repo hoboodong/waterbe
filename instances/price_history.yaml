@@ -810,6 +810,7 @@ instances:
       unitPrice: 18000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_022  # 전복(소) 25미 1kg
@@ -820,6 +821,7 @@ instances:
       unitPrice: 26000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_015  # 백생합(중국)(생물) 10kg
@@ -830,6 +832,7 @@ instances:
       unitPrice: 48000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_045  # 볶음소스(불맛) 9kg
@@ -840,6 +843,7 @@ instances:
       unitPrice: 45000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_034  # 솔방울오징어(중국) 10kg
@@ -850,6 +854,7 @@ instances:
       unitPrice: 142000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_002  # 냉동새우살71-90P(베트남) 10kg
@@ -860,6 +865,7 @@ instances:
       unitPrice: 159000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_003  # 냉동새우 30/40(페루) 12kg
@@ -870,6 +876,7 @@ instances:
       unitPrice: 185000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_026  # 냉동자숙문어(필리핀) 10kg
@@ -880,6 +887,7 @@ instances:
       unitPrice: 210000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_042  # 참소라살3S(튀르키예) 10kg
@@ -890,6 +898,7 @@ instances:
       unitPrice: 67500
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_058  # 밀키트(탕)용기 32225(중) 150세트
@@ -901,6 +910,7 @@ instances:
       unitPrice: 103500
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_075  # 더맛있는탕소스(100g×150ea) 15kg
@@ -911,6 +921,7 @@ instances:
       unitPrice: 130000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_076  # 성형가리비(10/20) 10kg
@@ -921,6 +932,7 @@ instances:
       unitPrice: 118000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_077  # 주꾸미(17/22미) 10kg
@@ -931,6 +943,7 @@ instances:
       unitPrice: 73000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_078  # 절단낙지 L 6kg
@@ -941,6 +954,7 @@ instances:
       unitPrice: 53000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_079  # 절단꽃게 S 5kg
@@ -951,6 +965,7 @@ instances:
       unitPrice: 172000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_080  # 칵테일새우살(21/25) 9kg
@@ -961,6 +976,7 @@ instances:
       unitPrice: 218000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_081  # 명란PG 22.8kg
@@ -971,6 +987,7 @@ instances:
       unitPrice: 98000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_082  # 명태곤이 22.5kg
@@ -981,6 +998,7 @@ instances:
       unitPrice: 167400
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_083  # 문어슬라이스(대영) 9kg
@@ -991,6 +1009,7 @@ instances:
       unitPrice: 48000
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_084  # 절단코다리(40/60) 10kg
@@ -1001,6 +1020,7 @@ instances:
       unitPrice: 94800
       date: "2026-03-16"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_085  # DR볶음용 3호 검정 400ea
@@ -1021,6 +1041,7 @@ instances:
       unitPrice: 107000
       date: "2026-03-20"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_087
@@ -1031,6 +1052,7 @@ instances:
       unitPrice: 14000
       date: "2026-03-20"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_088
@@ -1061,6 +1083,7 @@ instances:
       unitPrice: 52800
       date: "2026-03-20"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_045
@@ -1071,6 +1094,7 @@ instances:
       unitPrice: 48000
       date: "2026-03-20"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_046
@@ -1081,6 +1105,7 @@ instances:
       unitPrice: 107000
       date: "2026-03-20"
       vendor: 대영상사
+      deliveryFee: 3000
       memo: null
     relations:
       forPurchaseSpec: pspec_047  # 해물탕소스 75g×150팩
