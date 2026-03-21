@@ -1084,3 +1084,13 @@ instances:
       memo: null
     relations:
       forPurchaseSpec: pspec_047  # 해물탕소스 75g×150팩
+
+  - id: ph_107
+    class: PriceHistory
+    data:
+      unitPrice: 1200
+      date: "2026-03-21"
+      vendor: 야채납품업체
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_091  # 콩나물 1팩

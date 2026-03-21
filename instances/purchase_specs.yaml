@@ -1004,3 +1004,14 @@ instances:
     relations:
       forIngredient: ing_무
       vendor: null  # 야채 납품업체
+
+  - id: pspec_091
+    class: PurchaseSpec
+    data:
+      orderName: 콩나물 (국내) 1팩
+      orderUnit: 1팩
+      packCount: 1
+      category: 재료
+    relations:
+      forIngredient: ing_콩나물
+      vendor: null  # 야채 납품업체
