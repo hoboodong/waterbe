@@ -39,7 +39,7 @@ instances:
         - ingredient: ing_대파
           amount: 30
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: 3
           unit: g
         - ingredient: ing_해물탕소스
@@ -88,7 +88,7 @@ instances:
         - ingredient: ing_대파
           amount: 30
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: 3
           unit: g
         - ingredient: ing_해물탕소스
@@ -131,7 +131,7 @@ instances:
         - ingredient: ing_대파
           amount: 30
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: 3
           unit: g
         - ingredient: ing_해물탕소스
@@ -168,7 +168,7 @@ instances:
         - ingredient: ing_대파
           amount: 30
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: 3
           unit: g
         - ingredient: ing_해물탕소스
@@ -208,7 +208,7 @@ instances:
         - ingredient: ing_대파
           amount: 30
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: 3
           unit: g
         - ingredient: ing_해물탕소스
@@ -245,7 +245,7 @@ instances:
         - ingredient: ing_대파
           amount: 30
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: 3
           unit: g
         - ingredient: ing_낙곱새소스
@@ -276,7 +276,7 @@ instances:
         - ingredient: ing_대파
           amount: 30
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: 3
           unit: g
         - ingredient: ing_볶음소스
@@ -307,7 +307,7 @@ instances:
         - ingredient: ing_대파
           amount: 30
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: 3
           unit: g
         - ingredient: ing_볶음소스

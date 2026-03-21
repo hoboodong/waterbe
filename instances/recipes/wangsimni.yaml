@@ -36,7 +36,7 @@ instances:
         - ingredient: ing_대파
           amount: null
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: null
           unit: 개
         - ingredient: ing_해물탕소스
@@ -78,7 +78,7 @@ instances:
         - ingredient: ing_대파
           amount: null
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: null
           unit: 개
         - ingredient: ing_해물탕소스
@@ -117,7 +117,7 @@ instances:
         - ingredient: ing_무
           amount: null
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: null
           unit: 개
         - ingredient: ing_해물탕소스
@@ -156,7 +156,7 @@ instances:
         - ingredient: ing_무
           amount: null
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: null
           unit: 개
         - ingredient: ing_해물탕소스
@@ -198,7 +198,7 @@ instances:
         - ingredient: ing_무
           amount: null
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: null
           unit: 개
         - ingredient: ing_해물탕소스
@@ -240,7 +240,7 @@ instances:
         - ingredient: ing_대파
           amount: null
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: null
           unit: 개
         - ingredient: ing_해물탕소스
@@ -276,7 +276,7 @@ instances:
         - ingredient: ing_대파
           amount: null
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: null
           unit: 개
         - ingredient: ing_만능찜소스
@@ -309,7 +309,7 @@ instances:
         - ingredient: ing_대파
           amount: null
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: null
           unit: 개
         - ingredient: ing_낙곱새소스
@@ -336,7 +336,7 @@ instances:
         - ingredient: ing_대파
           amount: null
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: null
           unit: 개
         - ingredient: ing_볶음소스
@@ -363,7 +363,7 @@ instances:
         - ingredient: ing_대파
           amount: null
           unit: g
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: null
           unit: 개
         - ingredient: ing_볶음소스
@@ -554,6 +554,6 @@ instances:
         - ingredient: ing_미림
           amount: null
           unit: 큰술
-        - ingredient: ing_고추
+        - ingredient: ing_홍고추
           amount: null
           unit: 개
