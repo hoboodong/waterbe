@@ -1130,3 +1130,4 @@ instances:
       memo: "부가세 27,000 포함"
     relations:
       forPurchaseSpec: pspec_092  # 염지소대창 15kg
+  # test
