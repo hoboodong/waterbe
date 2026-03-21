@@ -513,6 +513,7 @@ instances:
       unitG: 9000
       packCount: 100
       packSize: 90g
+      packUnitPrice: 528  # 52,800 ÷ 100
       category: 재료
     relations:
       forIngredient: ing_볶음소스
@@ -526,6 +527,7 @@ instances:
       unitG: 9000
       packCount: 100
       packSize: 90g
+      packUnitPrice: 480  # 48,000 ÷ 100
       category: 재료
     relations:
       forIngredient: ing_낙곱새소스
@@ -539,6 +541,7 @@ instances:
       unitG: 11250
       packCount: 150
       packSize: 75g
+      packUnitPrice: 713  # 107,000 ÷ 150
       category: 재료
     relations:
       forIngredient: ing_해물탕소스
