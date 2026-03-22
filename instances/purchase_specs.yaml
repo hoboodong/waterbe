@@ -1031,3 +1031,14 @@ instances:
     relations:
       forIngredient: ing_염지소대창
       vendor: null
+
+  - id: pspec_093
+    class: PurchaseSpec
+    data:
+      orderName: 손질적어(150/200) 포루투갈
+      orderUnit: 4kg
+      unitG: 4000
+      category: 재료
+    relations:
+      forIngredient: ing_볼락
+      vendor: null

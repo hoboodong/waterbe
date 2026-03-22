@@ -151,8 +151,8 @@ instances:
       atStore: store_wolgye
       uses:
         - ingredient: ing_볼락
-          amount: 2
-          unit: 마리  # 마리당 약 175g, 합계 약 350g
+          amount: 350
+          unit: g  # 2마리 기준 (150/200사이즈, 마리당 175g)
         - ingredient: ing_솔방울오징어
           amount: 150
           unit: g

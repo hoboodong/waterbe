@@ -1130,3 +1130,14 @@ instances:
       memo: "부가세 27,000 포함"
     relations:
       forPurchaseSpec: pspec_092  # 염지소대창 15kg
+
+  - id: ph_109
+    class: PriceHistory
+    data:
+      unitPrice: 34000
+      date: "2026-03-22"
+      vendor: 대영상사
+      deliveryFee: 3000
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_093  # 손질적어(150/200) 포루투갈 4kg

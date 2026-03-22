@@ -1,4 +1,4 @@
-generatedAt: '2026-03-21'
+generatedAt: '2026-03-22'
 entries:
 - store: wolgye
   ingredientId: ing_흰다리새우살_L_페루
@@ -605,6 +605,15 @@ entries:
   vendor: 대영상사
   date: '2026-03-21'
   thawLossRate: 10
+- store: wolgye
+  ingredientId: ing_볼락
+  name: 볼락
+  unit: g
+  per100g: 925
+  per100gActual: 1156
+  vendor: 대영상사
+  date: '2026-03-22'
+  thawLossRate: 20
 - store: mapo
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
@@ -1210,6 +1219,15 @@ entries:
   vendor: 대영상사
   date: '2026-03-21'
   thawLossRate: 10
+- store: mapo
+  ingredientId: ing_볼락
+  name: 볼락
+  unit: g
+  per100g: 925
+  per100gActual: 1156
+  vendor: 대영상사
+  date: '2026-03-22'
+  thawLossRate: 20
 - store: wangsimni
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
@@ -1815,3 +1833,12 @@ entries:
   vendor: 대영상사
   date: '2026-03-21'
   thawLossRate: 10
+- store: wangsimni
+  ingredientId: ing_볼락
+  name: 볼락
+  unit: g
+  per100g: 925
+  per100gActual: 1156
+  vendor: 대영상사
+  date: '2026-03-22'
+  thawLossRate: 20

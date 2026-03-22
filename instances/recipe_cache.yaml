@@ -1,4 +1,4 @@
-generatedAt: '2026-03-21'
+generatedAt: '2026-03-22'
 recipes:
 - store: wolgye
   storeName: 월계
@@ -200,12 +200,13 @@ recipes:
   storeName: 월계
   name: 볼락 매운탕
   vendor: 대영상사
-  date: '2026-03-21'
+  date: '2026-03-22'
   items:
   - name: 볼락
-    amount: 2
-    unit: 마리
-    cost: null
+    amount: 350
+    unit: g
+    cost: 4046
+    note: (해동 20%)
   - name: 솔방울오징어
     amount: 150
     unit: g
@@ -244,9 +245,7 @@ recipes:
     amount: 1
     unit: 개
     cost: 470
-  total: 4851
-  missing:
-  - 볼락
+  total: 8897
 - store: wolgye
   storeName: 월계
   name: 얼큰한 꽃게탕
