@@ -4,6 +4,9 @@ entries:
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
   unit: g
+  orderName: PDTO새우살26-30P(페루산)
+  orderUnit: 9kg
+  unitPrice: 150000
   per100g: 1667
   per100gActual: 1852
   vendor: 남선푸드
@@ -14,6 +17,9 @@ entries:
   ingredientId: ing_흰다리새우살_S_베트남
   name: 흰다리새우살
   unit: g
+  orderName: 냉동새우살71-90P(베트남)
+  orderUnit: 10kg
+  unitPrice: 142000
   per100g: 1450
   per100gActual: 1611
   vendor: 대영상사
@@ -24,6 +30,9 @@ entries:
   ingredientId: ing_새우
   name: 흰다리새우
   unit: g
+  orderName: 냉동새우 30/40(페루)
+  orderUnit: 12kg
+  unitPrice: 159000
   per100g: 1350
   per100gActual: 1500
   vendor: 대영상사
@@ -34,6 +43,9 @@ entries:
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
   unit: g
+  orderName: PDTO새우살30-40P(페루산)
+  orderUnit: 9kg
+  unitPrice: 135000
   per100g: 1500
   per100gActual: 1667
   vendor: 남선푸드
@@ -44,6 +56,9 @@ entries:
   ingredientId: ing_새우_사우디
   name: 흰다리새우(사우디)
   unit: g
+  orderName: 냉동새우 30/40(사우디)
+  orderUnit: 12kg
+  unitPrice: 165000
   per100g: 1375
   per100gActual: 1528
   vendor: 남선푸드
@@ -54,6 +69,9 @@ entries:
   ingredientId: ing_새우_사우디
   name: 흰다리새우(사우디)
   unit: g
+  orderName: 냉동새우 41-50P(사우디)
+  orderUnit: 12kg
+  unitPrice: 148000
   per100g: 1233
   per100gActual: 1370
   vendor: 남선푸드
@@ -64,6 +82,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 절단꽃게L(중국)
+  orderUnit: 5.4kg
+  unitPrice: 33000
   per100g: 611
   per100gActual: 764
   vendor: 남선푸드
@@ -73,6 +94,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 절단꽃게2S(튀니지)
+  orderUnit: 6kg
+  unitPrice: 33000
   per100g: 550
   per100gActual: 688
   vendor: 남선푸드
@@ -82,6 +106,9 @@ entries:
   ingredientId: ing_게_바레인
   name: 꽃게 (바레인산)
   unit: g
+  orderName: 절단꽃게M(바레인,튀니지)
+  orderUnit: 6kg
+  unitPrice: 58000
   per100g: 967
   per100gActual: 1208
   vendor: 남선푸드
@@ -91,6 +118,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 국산꽃게(암)5단(국산)
+  orderUnit: 10kg
+  unitPrice: 115000
   per100g: 1150
   per100gActual: 1438
   vendor: 남선푸드
@@ -100,6 +130,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 꽃게탕용 절단꽃게(국산)
+  orderUnit: 10kg
+  unitPrice: 48000
   per100g: 480
   per100gActual: 600
   vendor: 남선푸드
@@ -109,6 +142,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 삼점게100/150(암)(파키스탄)
+  orderUnit: 6kg
+  unitPrice: 45000
   per100g: 750
   per100gActual: 938
   vendor: 남선푸드
@@ -118,6 +154,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 절단꽃게3L(중국)
+  orderUnit: 5.4kg
+  unitPrice: 45000
   per100g: 833
   per100gActual: 1042
   vendor: 남선푸드
@@ -127,6 +166,9 @@ entries:
   ingredientId: ing_백생합
   name: 백생합
   unit: g
+  orderName: 백생합(중국)(생물)
+  orderUnit: 10kg
+  unitPrice: 26000
   per100g: 290
   per100gActual: 290
   vendor: 대영상사
@@ -135,6 +177,9 @@ entries:
   ingredientId: ing_백생합
   name: 백생합
   unit: g
+  orderName: 백생합(중국)(생물)
+  orderUnit: 1kg
+  unitPrice: 2300
   per100g: 230
   per100gActual: 230
   vendor: 남선푸드
@@ -143,6 +188,9 @@ entries:
   ingredientId: ing_홍합
   name: 홍합
   unit: g
+  orderName: 냉동홍합(국산)
+  orderUnit: 10kg
+  unitPrice: 29000
   per100g: 290
   per100gActual: 362
   vendor: 남선푸드
@@ -152,6 +200,9 @@ entries:
   ingredientId: ing_냉동홍가리비
   name: 냉동홍가리비(껍질있음)
   unit: g
+  orderName: 냉동홍가리비(껍질있음)
+  orderUnit: 10kg
+  unitPrice: 43000
   per100g: 430
   per100gActual: 538
   vendor: 남선푸드
@@ -161,6 +212,9 @@ entries:
   ingredientId: ing_홍가리비살
   name: 홍가리비살
   unit: g
+  orderName: 냉동홍가리비살
+  orderUnit: 10kg
+  unitPrice: 93000
   per100g: 930
   per100gActual: 1162
   vendor: 남선푸드
@@ -170,6 +224,9 @@ entries:
   ingredientId: ing_반각가리비
   name: 반각가리비
   unit: g
+  orderName: 반각가리비7/8미(중국)
+  orderUnit: 1.8kg
+  unitPrice: 17500
   per100g: 972
   per100gActual: 1215
   vendor: 남선푸드
@@ -179,6 +236,9 @@ entries:
   ingredientId: ing_가리비관자
   name: 가리비관자
   unit: g
+  orderName: 압축가리비관자(중국)
+  orderUnit: 10kg
+  unitPrice: 119000
   per100g: 1190
   per100gActual: 1488
   vendor: 남선푸드
@@ -188,6 +248,9 @@ entries:
   ingredientId: ing_전복
   name: 전복
   unit: g
+  orderName: 전복(소) 25미(생물)
+  orderUnit: 1kg
+  unitPrice: 18000
   per100g: 2100
   per100gActual: 2100
   vendor: 대영상사
@@ -197,6 +260,9 @@ entries:
   ingredientId: ing_전복
   name: 전복
   unit: g
+  orderName: 전복(중) 22미(생물)
+  orderUnit: 1kg
+  unitPrice: 20000
   per100g: 2000
   per100gActual: 2000
   vendor: 남선푸드
@@ -206,6 +272,9 @@ entries:
   ingredientId: ing_자숙문어
   name: 자숙문어
   unit: g
+  orderName: 국산문어(국산)
+  orderUnit: 8kg
+  unitPrice: 245000
   per100g: 3062
   per100gActual: 3403
   vendor: 남선푸드
@@ -215,6 +284,9 @@ entries:
   ingredientId: ing_비자숙문어
   name: 비자숙문어
   unit: g
+  orderName: 비자숙문어(국산)
+  orderUnit: 8kg
+  unitPrice: 180000
   per100g: 2250
   per100gActual: 2812
   vendor: 남선푸드
@@ -224,6 +296,9 @@ entries:
   ingredientId: ing_자숙문어
   name: 자숙문어
   unit: g
+  orderName: 냉동자숙문어(필리핀)
+  orderUnit: 10kg
+  unitPrice: 185000
   per100g: 1880
   per100gActual: 2089
   vendor: 대영상사
@@ -233,6 +308,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 냉동활낙지8미(중국)
+  orderUnit: 5.1kg
+  unitPrice: 44000
   per100g: 863
   per100gActual: 1078
   vendor: 남선푸드
@@ -242,6 +320,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 냉동활낙지6미(중국)
+  orderUnit: 5.1kg
+  unitPrice: 48000
   per100g: 941
   per100gActual: 1176
   vendor: 남선푸드
@@ -251,6 +332,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 절단낙지(말레이시아)
+  orderUnit: 6kg
+  unitPrice: 63000
   per100g: 1050
   per100gActual: 1312
   vendor: 남선푸드
@@ -260,6 +344,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 손질낙지(200/300)(베트남)
+  orderUnit: 6kg
+  unitPrice: 67000
   per100g: 1117
   per100gActual: 1396
   vendor: 남선푸드
@@ -269,6 +356,9 @@ entries:
   ingredientId: ing_주꾸미
   name: 주꾸미
   unit: g
+  orderName: 절단주꾸미(베트남)
+  orderUnit: 6kg
+  unitPrice: 64000
   per100g: 1067
   per100gActual: 1333
   vendor: 남선푸드
@@ -278,6 +368,9 @@ entries:
   ingredientId: ing_주꾸미
   name: 주꾸미
   unit: g
+  orderName: 냉동주꾸미(베트남)
+  orderUnit: 4.8kg
+  unitPrice: 52000
   per100g: 1083
   per100gActual: 1354
   vendor: 남선푸드
@@ -287,6 +380,9 @@ entries:
   ingredientId: ing_솔방울오징어
   name: 솔방울오징어
   unit: g
+  orderName: 솔방울오징어(중국)
+  orderUnit: 10kg
+  unitPrice: 45000
   per100g: 480
   per100gActual: 800
   vendor: 대영상사
@@ -296,6 +392,9 @@ entries:
   ingredientId: ing_코다리
   name: 코다리
   unit: g
+  orderName: 절단코다리60/80깔끔이(러시아)
+  orderUnit: 10kg
+  unitPrice: 44000
   per100g: 440
   per100gActual: 550
   vendor: 남선푸드
@@ -305,6 +404,9 @@ entries:
   ingredientId: ing_동태
   name: 동태
   unit: g
+  orderName: 절단동태(러시아)
+  orderUnit: 5kg
+  unitPrice: 17500
   per100g: 350
   per100gActual: 438
   vendor: 남선푸드
@@ -314,6 +416,9 @@ entries:
   ingredientId: ing_대구
   name: 대구
   unit: g
+  orderName: 절단대구(국산)
+  orderUnit: 10kg
+  unitPrice: 47000
   per100g: 470
   per100gActual: 588
   vendor: 남선푸드
@@ -323,6 +428,9 @@ entries:
   ingredientId: ing_대구곤이
   name: 대구곤이
   unit: g
+  orderName: 대구곤이(아이슬란드)
+  orderUnit: 6kg
+  unitPrice: 38000
   per100g: 633
   per100gActual: 792
   vendor: 남선푸드
@@ -332,6 +440,9 @@ entries:
   ingredientId: ing_명란
   name: 명란
   unit: g
+  orderName: 명란(러시아)
+  orderUnit: 7.5kg
+  unitPrice: 63000
   per100g: 840
   per100gActual: 1050
   vendor: 남선푸드
@@ -341,6 +452,9 @@ entries:
   ingredientId: ing_명란
   name: 명란
   unit: g
+  orderName: 명란PG 원물
+  orderUnit: 22.5kg
+  unitPrice: 210000
   per100g: 933
   per100gActual: 1167
   vendor: 남선푸드
@@ -350,6 +464,9 @@ entries:
   ingredientId: ing_오만둥이
   name: 오만둥이
   unit: g
+  orderName: 오만둥이(소포장)
+  orderUnit: 1kg
+  unitPrice: 2700
   per100g: 270
   per100gActual: 338
   vendor: 남선푸드
@@ -359,6 +476,9 @@ entries:
   ingredientId: ing_자숙피뿔고둥살
   name: 자숙피뿔고둥살
   unit: g
+  orderName: 참소라살3S(튀르키예)
+  orderUnit: 10kg
+  unitPrice: 210000
   per100g: 2130
   per100gActual: 2662
   vendor: 대영상사
@@ -368,6 +488,9 @@ entries:
   ingredientId: ing_염지소곱창
   name: 염지소곱창
   unit: g
+  orderName: 소곱창
+  orderUnit: 15kg
+  unitPrice: 340000
   per100g: 2267
   per100gActual: 2833
   vendor: 남선푸드
@@ -377,6 +500,9 @@ entries:
   ingredientId: ing_우삼겹
   name: 우삼겹
   unit: g
+  orderName: 우삼겹(미국)
+  orderUnit: 5kg
+  unitPrice: 145000
   per100g: 2900
   per100gActual: 3625
   vendor: 남선푸드
@@ -407,6 +533,9 @@ entries:
   ingredientId: ing_간장소스
   name: 간장소스
   unit: g
+  orderName: 간장게장소스(한국소스)
+  orderUnit: 10kg
+  unitPrice: 33000
   per100g: 330
   per100gActual: 330
   vendor: 남선푸드
@@ -415,6 +544,9 @@ entries:
   ingredientId: ing_흰다리새우살_L_인도
   name: 흰다리새우살 (대, 인도산)
   unit: g
+  orderName: PDTO새우살26-30P(인도산)
+  orderUnit: 9kg
+  unitPrice: 138000
   per100g: 1533
   per100gActual: 1704
   vendor: 남선푸드
@@ -425,6 +557,9 @@ entries:
   ingredientId: ing_흰다리새우살_S_베트남
   name: 흰다리새우살
   unit: g
+  orderName: 냉동새우살71-90P(베트남)
+  orderUnit: 9kg
+  unitPrice: 122000
   per100g: 1356
   per100gActual: 1506
   vendor: 남선푸드
@@ -435,6 +570,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 절단낙지IQF(중국)
+  orderUnit: 10kg
+  unitPrice: 112000
   per100g: 1120
   per100gActual: 1400
   vendor: 남선푸드
@@ -444,6 +582,9 @@ entries:
   ingredientId: ing_갑오징어
   name: 갑오징어
   unit: g
+  orderName: 통갑오징어100/200(인도네시아)
+  orderUnit: 5kg
+  unitPrice: 66000
   per100g: 1320
   per100gActual: 1650
   vendor: 남선푸드
@@ -453,6 +594,9 @@ entries:
   ingredientId: ing_순살아귀
   name: 순살아귀
   unit: g
+  orderName: 순살아귀(중국산)
+  orderUnit: 10kg
+  unitPrice: 62000
   per100g: 620
   per100gActual: 775
   vendor: 남선푸드
@@ -469,6 +613,9 @@ entries:
   ingredientId: ing_해물탕소스
   name: 해물탕소스
   unit: g
+  orderName: 더맛있는탕소스(100g×150ea)
+  orderUnit: 15kg
+  unitPrice: 103500
   per100g: 710
   per100gActual: 710
   vendor: 대영상사
@@ -477,6 +624,9 @@ entries:
   ingredientId: ing_가리비관자
   name: 가리비관자
   unit: g
+  orderName: 성형가리비(10/20)
+  orderUnit: 10kg
+  unitPrice: 130000
   per100g: 1330
   per100gActual: 1662
   vendor: 대영상사
@@ -486,6 +636,9 @@ entries:
   ingredientId: ing_주꾸미
   name: 주꾸미
   unit: g
+  orderName: 주꾸미(17/22미)
+  orderUnit: 10kg
+  unitPrice: 118000
   per100g: 1210
   per100gActual: 1512
   vendor: 대영상사
@@ -495,6 +648,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 절단낙지 L
+  orderUnit: 6kg
+  unitPrice: 73000
   per100g: 1267
   per100gActual: 1583
   vendor: 대영상사
@@ -504,6 +660,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 절단꽃게 S
+  orderUnit: 5kg
+  unitPrice: 53000
   per100g: 1120
   per100gActual: 1400
   vendor: 대영상사
@@ -513,6 +672,9 @@ entries:
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
   unit: g
+  orderName: 칵테일새우살(21/25)
+  orderUnit: 9kg
+  unitPrice: 172000
   per100g: 1944
   per100gActual: 2160
   vendor: 대영상사
@@ -523,6 +685,9 @@ entries:
   ingredientId: ing_명란
   name: 명란
   unit: g
+  orderName: 명란PG(22.8kg)
+  orderUnit: 22.8kg
+  unitPrice: 218000
   per100g: 969
   per100gActual: 1212
   vendor: 대영상사
@@ -532,6 +697,9 @@ entries:
   ingredientId: ing_명태곤이
   name: 명태곤이
   unit: g
+  orderName: 명태곤이
+  orderUnit: 22.5kg
+  unitPrice: 98000
   per100g: 449
   per100gActual: 561
   vendor: 대영상사
@@ -541,6 +709,9 @@ entries:
   ingredientId: ing_자숙문어_절단
   name: 자숙문어(절단)
   unit: g
+  orderName: 문어슬라이스(대영)
+  orderUnit: 9kg
+  unitPrice: 167400
   per100g: 1893
   per100gActual: 2104
   vendor: 대영상사
@@ -550,6 +721,9 @@ entries:
   ingredientId: ing_코다리
   name: 코다리
   unit: g
+  orderName: 절단코다리(40/60)
+  orderUnit: 10kg
+  unitPrice: 48000
   per100g: 510
   per100gActual: 637
   vendor: 대영상사
@@ -566,6 +740,9 @@ entries:
   ingredientId: ing_통대구
   name: 통대구
   unit: g
+  orderName: 통대구 (러시아) 18.5kg
+  orderUnit: 18.5kg
+  unitPrice: 107000
   per100g: 595
   per100gActual: 963
   vendor: 대영상사
@@ -576,6 +753,9 @@ entries:
   ingredientId: ing_홍고추
   name: 홍고추
   unit: g
+  orderName: 홍고추 (국내) 500g
+  orderUnit: 500g
+  unitPrice: 14000
   per100g: 3400
   per100gActual: 3778
   vendor: 대영상사
@@ -585,6 +765,9 @@ entries:
   ingredientId: ing_대파
   name: 대파
   unit: g
+  orderName: 대파 (국내) 2kg
+  orderUnit: 2kg
+  unitPrice: 2000
   per100g: 100
   per100gActual: 125
   vendor: 야채납품업체
@@ -594,6 +777,9 @@ entries:
   ingredientId: ing_무
   name: 무
   unit: g
+  orderName: 무 (국내) 20kg
+  orderUnit: 20kg
+  unitPrice: 17000
   per100g: 85
   per100gActual: 106
   vendor: 야채납품업체
@@ -610,6 +796,9 @@ entries:
   ingredientId: ing_염지소대창
   name: 염지소대창
   unit: g
+  orderName: 염지소대창 15kg
+  orderUnit: 15kg
+  unitPrice: 297000
   per100g: 2000
   per100gActual: 2222
   vendor: 대영상사
@@ -619,6 +808,9 @@ entries:
   ingredientId: ing_볼락
   name: 볼락
   unit: g
+  orderName: 손질적어(150/200) 포루투갈
+  orderUnit: 4kg
+  unitPrice: 34000
   per100g: 925
   per100gActual: 925
   vendor: 대영상사
@@ -627,6 +819,9 @@ entries:
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
   unit: g
+  orderName: PDTO새우살26-30P(페루산)
+  orderUnit: 9kg
+  unitPrice: 150000
   per100g: 1667
   per100gActual: 1852
   vendor: 남선푸드
@@ -637,6 +832,9 @@ entries:
   ingredientId: ing_흰다리새우살_S_베트남
   name: 흰다리새우살
   unit: g
+  orderName: 냉동새우살71-90P(베트남)
+  orderUnit: 10kg
+  unitPrice: 135000
   per100g: 1350
   per100gActual: 1500
   vendor: 남선푸드
@@ -647,6 +845,9 @@ entries:
   ingredientId: ing_새우
   name: 흰다리새우
   unit: g
+  orderName: 냉동새우 30/40(페루)
+  orderUnit: 12kg
+  unitPrice: 150000
   per100g: 1250
   per100gActual: 1389
   vendor: 남선푸드
@@ -657,6 +858,9 @@ entries:
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
   unit: g
+  orderName: PDTO새우살30-40P(페루산)
+  orderUnit: 9kg
+  unitPrice: 135000
   per100g: 1500
   per100gActual: 1667
   vendor: 남선푸드
@@ -667,6 +871,9 @@ entries:
   ingredientId: ing_새우_사우디
   name: 흰다리새우(사우디)
   unit: g
+  orderName: 냉동새우 30/40(사우디)
+  orderUnit: 12kg
+  unitPrice: 165000
   per100g: 1375
   per100gActual: 1528
   vendor: 남선푸드
@@ -677,6 +884,9 @@ entries:
   ingredientId: ing_새우_사우디
   name: 흰다리새우(사우디)
   unit: g
+  orderName: 냉동새우 41-50P(사우디)
+  orderUnit: 12kg
+  unitPrice: 148000
   per100g: 1233
   per100gActual: 1370
   vendor: 남선푸드
@@ -687,6 +897,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 절단꽃게L(중국)
+  orderUnit: 5.4kg
+  unitPrice: 33000
   per100g: 611
   per100gActual: 764
   vendor: 남선푸드
@@ -696,6 +909,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 절단꽃게2S(튀니지)
+  orderUnit: 6kg
+  unitPrice: 33000
   per100g: 550
   per100gActual: 688
   vendor: 남선푸드
@@ -705,6 +921,9 @@ entries:
   ingredientId: ing_게_바레인
   name: 꽃게 (바레인산)
   unit: g
+  orderName: 절단꽃게M(바레인,튀니지)
+  orderUnit: 6kg
+  unitPrice: 58000
   per100g: 967
   per100gActual: 1208
   vendor: 남선푸드
@@ -714,6 +933,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 국산꽃게(암)5단(국산)
+  orderUnit: 10kg
+  unitPrice: 115000
   per100g: 1150
   per100gActual: 1438
   vendor: 남선푸드
@@ -723,6 +945,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 꽃게탕용 절단꽃게(국산)
+  orderUnit: 10kg
+  unitPrice: 48000
   per100g: 480
   per100gActual: 600
   vendor: 남선푸드
@@ -732,6 +957,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 삼점게100/150(암)(파키스탄)
+  orderUnit: 6kg
+  unitPrice: 45000
   per100g: 750
   per100gActual: 938
   vendor: 남선푸드
@@ -741,6 +969,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 절단꽃게3L(중국)
+  orderUnit: 5.4kg
+  unitPrice: 45000
   per100g: 833
   per100gActual: 1042
   vendor: 남선푸드
@@ -750,6 +981,9 @@ entries:
   ingredientId: ing_백생합
   name: 백생합
   unit: g
+  orderName: 백생합(중국)(생물)
+  orderUnit: 10kg
+  unitPrice: 26000
   per100g: 290
   per100gActual: 290
   vendor: 대영상사
@@ -758,6 +992,9 @@ entries:
   ingredientId: ing_백생합
   name: 백생합
   unit: g
+  orderName: 백생합(중국)(생물)
+  orderUnit: 1kg
+  unitPrice: 2300
   per100g: 230
   per100gActual: 230
   vendor: 남선푸드
@@ -766,6 +1003,9 @@ entries:
   ingredientId: ing_홍합
   name: 홍합
   unit: g
+  orderName: 냉동홍합(국산)
+  orderUnit: 10kg
+  unitPrice: 29000
   per100g: 290
   per100gActual: 362
   vendor: 남선푸드
@@ -775,6 +1015,9 @@ entries:
   ingredientId: ing_냉동홍가리비
   name: 냉동홍가리비(껍질있음)
   unit: g
+  orderName: 냉동홍가리비(껍질있음)
+  orderUnit: 10kg
+  unitPrice: 43000
   per100g: 430
   per100gActual: 538
   vendor: 남선푸드
@@ -784,6 +1027,9 @@ entries:
   ingredientId: ing_홍가리비살
   name: 홍가리비살
   unit: g
+  orderName: 냉동홍가리비살
+  orderUnit: 10kg
+  unitPrice: 93000
   per100g: 930
   per100gActual: 1162
   vendor: 남선푸드
@@ -793,6 +1039,9 @@ entries:
   ingredientId: ing_반각가리비
   name: 반각가리비
   unit: g
+  orderName: 반각가리비7/8미(중국)
+  orderUnit: 1.8kg
+  unitPrice: 17500
   per100g: 972
   per100gActual: 1215
   vendor: 남선푸드
@@ -802,6 +1051,9 @@ entries:
   ingredientId: ing_가리비관자
   name: 가리비관자
   unit: g
+  orderName: 압축가리비관자(중국)
+  orderUnit: 10kg
+  unitPrice: 119000
   per100g: 1190
   per100gActual: 1488
   vendor: 남선푸드
@@ -811,6 +1063,9 @@ entries:
   ingredientId: ing_전복
   name: 전복
   unit: g
+  orderName: 전복(소) 25미(생물)
+  orderUnit: 1kg
+  unitPrice: 20000
   per100g: 2000
   per100gActual: 2000
   vendor: 남선푸드
@@ -820,6 +1075,9 @@ entries:
   ingredientId: ing_전복
   name: 전복
   unit: g
+  orderName: 전복(중) 22미(생물)
+  orderUnit: 1kg
+  unitPrice: 20000
   per100g: 2000
   per100gActual: 2000
   vendor: 남선푸드
@@ -829,6 +1087,9 @@ entries:
   ingredientId: ing_자숙문어
   name: 자숙문어
   unit: g
+  orderName: 국산문어(국산)
+  orderUnit: 8kg
+  unitPrice: 245000
   per100g: 3062
   per100gActual: 3403
   vendor: 남선푸드
@@ -838,6 +1099,9 @@ entries:
   ingredientId: ing_비자숙문어
   name: 비자숙문어
   unit: g
+  orderName: 비자숙문어(국산)
+  orderUnit: 8kg
+  unitPrice: 180000
   per100g: 2250
   per100gActual: 2812
   vendor: 남선푸드
@@ -847,6 +1111,9 @@ entries:
   ingredientId: ing_자숙문어
   name: 자숙문어
   unit: g
+  orderName: 냉동자숙문어(필리핀)
+  orderUnit: 10kg
+  unitPrice: 163000
   per100g: 1630
   per100gActual: 1811
   vendor: 남선푸드
@@ -856,6 +1123,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 냉동활낙지8미(중국)
+  orderUnit: 5.1kg
+  unitPrice: 44000
   per100g: 863
   per100gActual: 1078
   vendor: 남선푸드
@@ -865,6 +1135,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 냉동활낙지6미(중국)
+  orderUnit: 5.1kg
+  unitPrice: 48000
   per100g: 941
   per100gActual: 1176
   vendor: 남선푸드
@@ -874,6 +1147,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 절단낙지(말레이시아)
+  orderUnit: 6kg
+  unitPrice: 63000
   per100g: 1050
   per100gActual: 1312
   vendor: 남선푸드
@@ -883,6 +1159,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 손질낙지(200/300)(베트남)
+  orderUnit: 6kg
+  unitPrice: 67000
   per100g: 1117
   per100gActual: 1396
   vendor: 남선푸드
@@ -892,6 +1171,9 @@ entries:
   ingredientId: ing_주꾸미
   name: 주꾸미
   unit: g
+  orderName: 절단주꾸미(베트남)
+  orderUnit: 6kg
+  unitPrice: 64000
   per100g: 1067
   per100gActual: 1333
   vendor: 남선푸드
@@ -901,6 +1183,9 @@ entries:
   ingredientId: ing_주꾸미
   name: 주꾸미
   unit: g
+  orderName: 냉동주꾸미(베트남)
+  orderUnit: 4.8kg
+  unitPrice: 52000
   per100g: 1083
   per100gActual: 1354
   vendor: 남선푸드
@@ -910,6 +1195,9 @@ entries:
   ingredientId: ing_솔방울오징어
   name: 솔방울오징어
   unit: g
+  orderName: 솔방울오징어(중국)
+  orderUnit: 10kg
+  unitPrice: 51000
   per100g: 510
   per100gActual: 850
   vendor: 남선푸드
@@ -919,6 +1207,9 @@ entries:
   ingredientId: ing_코다리
   name: 코다리
   unit: g
+  orderName: 절단코다리60/80깔끔이(러시아)
+  orderUnit: 10kg
+  unitPrice: 44000
   per100g: 440
   per100gActual: 550
   vendor: 남선푸드
@@ -928,6 +1219,9 @@ entries:
   ingredientId: ing_동태
   name: 동태
   unit: g
+  orderName: 절단동태(러시아)
+  orderUnit: 5kg
+  unitPrice: 17500
   per100g: 350
   per100gActual: 438
   vendor: 남선푸드
@@ -937,6 +1231,9 @@ entries:
   ingredientId: ing_대구
   name: 대구
   unit: g
+  orderName: 절단대구(국산)
+  orderUnit: 10kg
+  unitPrice: 47000
   per100g: 470
   per100gActual: 588
   vendor: 남선푸드
@@ -946,6 +1243,9 @@ entries:
   ingredientId: ing_대구곤이
   name: 대구곤이
   unit: g
+  orderName: 대구곤이(아이슬란드)
+  orderUnit: 6kg
+  unitPrice: 38000
   per100g: 633
   per100gActual: 792
   vendor: 남선푸드
@@ -955,6 +1255,9 @@ entries:
   ingredientId: ing_명란
   name: 명란
   unit: g
+  orderName: 명란(러시아)
+  orderUnit: 7.5kg
+  unitPrice: 63000
   per100g: 840
   per100gActual: 1050
   vendor: 남선푸드
@@ -964,6 +1267,9 @@ entries:
   ingredientId: ing_명란
   name: 명란
   unit: g
+  orderName: 명란PG 원물
+  orderUnit: 22.5kg
+  unitPrice: 210000
   per100g: 933
   per100gActual: 1167
   vendor: 남선푸드
@@ -973,6 +1279,9 @@ entries:
   ingredientId: ing_오만둥이
   name: 오만둥이
   unit: g
+  orderName: 오만둥이(소포장)
+  orderUnit: 1kg
+  unitPrice: 2700
   per100g: 270
   per100gActual: 338
   vendor: 남선푸드
@@ -982,6 +1291,9 @@ entries:
   ingredientId: ing_자숙피뿔고둥살
   name: 자숙피뿔고둥살
   unit: g
+  orderName: 참소라살3S(튀르키예)
+  orderUnit: 10kg
+  unitPrice: 210000
   per100g: 2130
   per100gActual: 2662
   vendor: 대영상사
@@ -991,6 +1303,9 @@ entries:
   ingredientId: ing_염지소곱창
   name: 염지소곱창
   unit: g
+  orderName: 소곱창
+  orderUnit: 15kg
+  unitPrice: 340000
   per100g: 2267
   per100gActual: 2833
   vendor: 남선푸드
@@ -1000,6 +1315,9 @@ entries:
   ingredientId: ing_우삼겹
   name: 우삼겹
   unit: g
+  orderName: 우삼겹(미국)
+  orderUnit: 5kg
+  unitPrice: 145000
   per100g: 2900
   per100gActual: 3625
   vendor: 남선푸드
@@ -1030,6 +1348,9 @@ entries:
   ingredientId: ing_간장소스
   name: 간장소스
   unit: g
+  orderName: 간장게장소스(한국소스)
+  orderUnit: 10kg
+  unitPrice: 33000
   per100g: 330
   per100gActual: 330
   vendor: 남선푸드
@@ -1038,6 +1359,9 @@ entries:
   ingredientId: ing_흰다리새우살_L_인도
   name: 흰다리새우살 (대, 인도산)
   unit: g
+  orderName: PDTO새우살26-30P(인도산)
+  orderUnit: 9kg
+  unitPrice: 138000
   per100g: 1533
   per100gActual: 1704
   vendor: 남선푸드
@@ -1048,6 +1372,9 @@ entries:
   ingredientId: ing_흰다리새우살_S_베트남
   name: 흰다리새우살
   unit: g
+  orderName: 냉동새우살71-90P(베트남)
+  orderUnit: 9kg
+  unitPrice: 122000
   per100g: 1356
   per100gActual: 1506
   vendor: 남선푸드
@@ -1058,6 +1385,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 절단낙지IQF(중국)
+  orderUnit: 10kg
+  unitPrice: 112000
   per100g: 1120
   per100gActual: 1400
   vendor: 남선푸드
@@ -1067,6 +1397,9 @@ entries:
   ingredientId: ing_갑오징어
   name: 갑오징어
   unit: g
+  orderName: 통갑오징어100/200(인도네시아)
+  orderUnit: 5kg
+  unitPrice: 66000
   per100g: 1320
   per100gActual: 1650
   vendor: 남선푸드
@@ -1076,6 +1409,9 @@ entries:
   ingredientId: ing_순살아귀
   name: 순살아귀
   unit: g
+  orderName: 순살아귀(중국산)
+  orderUnit: 10kg
+  unitPrice: 62000
   per100g: 620
   per100gActual: 775
   vendor: 남선푸드
@@ -1092,6 +1428,9 @@ entries:
   ingredientId: ing_해물탕소스
   name: 해물탕소스
   unit: g
+  orderName: 더맛있는탕소스(100g×150ea)
+  orderUnit: 15kg
+  unitPrice: 103500
   per100g: 710
   per100gActual: 710
   vendor: 대영상사
@@ -1100,6 +1439,9 @@ entries:
   ingredientId: ing_가리비관자
   name: 가리비관자
   unit: g
+  orderName: 성형가리비(10/20)
+  orderUnit: 10kg
+  unitPrice: 130000
   per100g: 1330
   per100gActual: 1662
   vendor: 대영상사
@@ -1109,6 +1451,9 @@ entries:
   ingredientId: ing_주꾸미
   name: 주꾸미
   unit: g
+  orderName: 주꾸미(17/22미)
+  orderUnit: 10kg
+  unitPrice: 118000
   per100g: 1210
   per100gActual: 1512
   vendor: 대영상사
@@ -1118,6 +1463,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 절단낙지 L
+  orderUnit: 6kg
+  unitPrice: 73000
   per100g: 1267
   per100gActual: 1583
   vendor: 대영상사
@@ -1127,6 +1475,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 절단꽃게 S
+  orderUnit: 5kg
+  unitPrice: 53000
   per100g: 1120
   per100gActual: 1400
   vendor: 대영상사
@@ -1136,6 +1487,9 @@ entries:
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
   unit: g
+  orderName: 칵테일새우살(21/25)
+  orderUnit: 9kg
+  unitPrice: 172000
   per100g: 1944
   per100gActual: 2160
   vendor: 대영상사
@@ -1146,6 +1500,9 @@ entries:
   ingredientId: ing_명란
   name: 명란
   unit: g
+  orderName: 명란PG(22.8kg)
+  orderUnit: 22.8kg
+  unitPrice: 218000
   per100g: 969
   per100gActual: 1212
   vendor: 대영상사
@@ -1155,6 +1512,9 @@ entries:
   ingredientId: ing_명태곤이
   name: 명태곤이
   unit: g
+  orderName: 명태곤이
+  orderUnit: 22.5kg
+  unitPrice: 98000
   per100g: 449
   per100gActual: 561
   vendor: 대영상사
@@ -1164,6 +1524,9 @@ entries:
   ingredientId: ing_자숙문어_절단
   name: 자숙문어(절단)
   unit: g
+  orderName: 문어슬라이스(대영)
+  orderUnit: 9kg
+  unitPrice: 167400
   per100g: 1893
   per100gActual: 2104
   vendor: 대영상사
@@ -1173,6 +1536,9 @@ entries:
   ingredientId: ing_코다리
   name: 코다리
   unit: g
+  orderName: 절단코다리(40/60)
+  orderUnit: 10kg
+  unitPrice: 48000
   per100g: 510
   per100gActual: 637
   vendor: 대영상사
@@ -1189,6 +1555,9 @@ entries:
   ingredientId: ing_통대구
   name: 통대구
   unit: g
+  orderName: 통대구 (러시아) 18.5kg
+  orderUnit: 18.5kg
+  unitPrice: 107000
   per100g: 595
   per100gActual: 963
   vendor: 대영상사
@@ -1199,6 +1568,9 @@ entries:
   ingredientId: ing_홍고추
   name: 홍고추
   unit: g
+  orderName: 홍고추 (국내) 500g
+  orderUnit: 500g
+  unitPrice: 14000
   per100g: 3400
   per100gActual: 3778
   vendor: 대영상사
@@ -1208,6 +1580,9 @@ entries:
   ingredientId: ing_대파
   name: 대파
   unit: g
+  orderName: 대파 (국내) 2kg
+  orderUnit: 2kg
+  unitPrice: 2000
   per100g: 100
   per100gActual: 125
   vendor: 야채납품업체
@@ -1217,6 +1592,9 @@ entries:
   ingredientId: ing_무
   name: 무
   unit: g
+  orderName: 무 (국내) 20kg
+  orderUnit: 20kg
+  unitPrice: 17000
   per100g: 85
   per100gActual: 106
   vendor: 야채납품업체
@@ -1233,6 +1611,9 @@ entries:
   ingredientId: ing_염지소대창
   name: 염지소대창
   unit: g
+  orderName: 염지소대창 15kg
+  orderUnit: 15kg
+  unitPrice: 297000
   per100g: 2000
   per100gActual: 2222
   vendor: 대영상사
@@ -1242,6 +1623,9 @@ entries:
   ingredientId: ing_볼락
   name: 볼락
   unit: g
+  orderName: 손질적어(150/200) 포루투갈
+  orderUnit: 4kg
+  unitPrice: 34000
   per100g: 925
   per100gActual: 925
   vendor: 대영상사
@@ -1250,6 +1634,9 @@ entries:
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
   unit: g
+  orderName: PDTO새우살26-30P(페루산)
+  orderUnit: 9kg
+  unitPrice: 150000
   per100g: 1667
   per100gActual: 1852
   vendor: 남선푸드
@@ -1260,6 +1647,9 @@ entries:
   ingredientId: ing_흰다리새우살_S_베트남
   name: 흰다리새우살
   unit: g
+  orderName: 냉동새우살71-90P(베트남)
+  orderUnit: 10kg
+  unitPrice: 135000
   per100g: 1350
   per100gActual: 1500
   vendor: 남선푸드
@@ -1270,6 +1660,9 @@ entries:
   ingredientId: ing_새우
   name: 흰다리새우
   unit: g
+  orderName: 냉동새우 30/40(페루)
+  orderUnit: 12kg
+  unitPrice: 150000
   per100g: 1250
   per100gActual: 1389
   vendor: 남선푸드
@@ -1280,6 +1673,9 @@ entries:
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
   unit: g
+  orderName: PDTO새우살30-40P(페루산)
+  orderUnit: 9kg
+  unitPrice: 135000
   per100g: 1500
   per100gActual: 1667
   vendor: 남선푸드
@@ -1290,6 +1686,9 @@ entries:
   ingredientId: ing_새우_사우디
   name: 흰다리새우(사우디)
   unit: g
+  orderName: 냉동새우 30/40(사우디)
+  orderUnit: 12kg
+  unitPrice: 165000
   per100g: 1375
   per100gActual: 1528
   vendor: 남선푸드
@@ -1300,6 +1699,9 @@ entries:
   ingredientId: ing_새우_사우디
   name: 흰다리새우(사우디)
   unit: g
+  orderName: 냉동새우 41-50P(사우디)
+  orderUnit: 12kg
+  unitPrice: 148000
   per100g: 1233
   per100gActual: 1370
   vendor: 남선푸드
@@ -1310,6 +1712,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 절단꽃게L(중국)
+  orderUnit: 5.4kg
+  unitPrice: 33000
   per100g: 611
   per100gActual: 764
   vendor: 남선푸드
@@ -1319,6 +1724,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 절단꽃게2S(튀니지)
+  orderUnit: 6kg
+  unitPrice: 33000
   per100g: 550
   per100gActual: 688
   vendor: 남선푸드
@@ -1328,6 +1736,9 @@ entries:
   ingredientId: ing_게_바레인
   name: 꽃게 (바레인산)
   unit: g
+  orderName: 절단꽃게M(바레인,튀니지)
+  orderUnit: 6kg
+  unitPrice: 58000
   per100g: 967
   per100gActual: 1208
   vendor: 남선푸드
@@ -1337,6 +1748,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 국산꽃게(암)5단(국산)
+  orderUnit: 10kg
+  unitPrice: 115000
   per100g: 1150
   per100gActual: 1438
   vendor: 남선푸드
@@ -1346,6 +1760,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 꽃게탕용 절단꽃게(국산)
+  orderUnit: 10kg
+  unitPrice: 48000
   per100g: 480
   per100gActual: 600
   vendor: 남선푸드
@@ -1355,6 +1772,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 삼점게100/150(암)(파키스탄)
+  orderUnit: 6kg
+  unitPrice: 45000
   per100g: 750
   per100gActual: 938
   vendor: 남선푸드
@@ -1364,6 +1784,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 절단꽃게3L(중국)
+  orderUnit: 5.4kg
+  unitPrice: 45000
   per100g: 833
   per100gActual: 1042
   vendor: 남선푸드
@@ -1373,6 +1796,9 @@ entries:
   ingredientId: ing_백생합
   name: 백생합
   unit: g
+  orderName: 백생합(중국)(생물)
+  orderUnit: 10kg
+  unitPrice: 26000
   per100g: 290
   per100gActual: 290
   vendor: 대영상사
@@ -1381,6 +1807,9 @@ entries:
   ingredientId: ing_백생합
   name: 백생합
   unit: g
+  orderName: 백생합(중국)(생물)
+  orderUnit: 1kg
+  unitPrice: 2300
   per100g: 230
   per100gActual: 230
   vendor: 남선푸드
@@ -1389,6 +1818,9 @@ entries:
   ingredientId: ing_홍합
   name: 홍합
   unit: g
+  orderName: 냉동홍합(국산)
+  orderUnit: 10kg
+  unitPrice: 29000
   per100g: 290
   per100gActual: 362
   vendor: 남선푸드
@@ -1398,6 +1830,9 @@ entries:
   ingredientId: ing_냉동홍가리비
   name: 냉동홍가리비(껍질있음)
   unit: g
+  orderName: 냉동홍가리비(껍질있음)
+  orderUnit: 10kg
+  unitPrice: 43000
   per100g: 430
   per100gActual: 538
   vendor: 남선푸드
@@ -1407,6 +1842,9 @@ entries:
   ingredientId: ing_홍가리비살
   name: 홍가리비살
   unit: g
+  orderName: 냉동홍가리비살
+  orderUnit: 10kg
+  unitPrice: 93000
   per100g: 930
   per100gActual: 1162
   vendor: 남선푸드
@@ -1416,6 +1854,9 @@ entries:
   ingredientId: ing_반각가리비
   name: 반각가리비
   unit: g
+  orderName: 반각가리비7/8미(중국)
+  orderUnit: 1.8kg
+  unitPrice: 17500
   per100g: 972
   per100gActual: 1215
   vendor: 남선푸드
@@ -1425,6 +1866,9 @@ entries:
   ingredientId: ing_가리비관자
   name: 가리비관자
   unit: g
+  orderName: 압축가리비관자(중국)
+  orderUnit: 10kg
+  unitPrice: 119000
   per100g: 1190
   per100gActual: 1488
   vendor: 남선푸드
@@ -1434,6 +1878,9 @@ entries:
   ingredientId: ing_전복
   name: 전복
   unit: g
+  orderName: 전복(소) 25미(생물)
+  orderUnit: 1kg
+  unitPrice: 20000
   per100g: 2000
   per100gActual: 2000
   vendor: 남선푸드
@@ -1443,6 +1890,9 @@ entries:
   ingredientId: ing_전복
   name: 전복
   unit: g
+  orderName: 전복(중) 22미(생물)
+  orderUnit: 1kg
+  unitPrice: 20000
   per100g: 2000
   per100gActual: 2000
   vendor: 남선푸드
@@ -1452,6 +1902,9 @@ entries:
   ingredientId: ing_자숙문어
   name: 자숙문어
   unit: g
+  orderName: 국산문어(국산)
+  orderUnit: 8kg
+  unitPrice: 245000
   per100g: 3062
   per100gActual: 3403
   vendor: 남선푸드
@@ -1461,6 +1914,9 @@ entries:
   ingredientId: ing_비자숙문어
   name: 비자숙문어
   unit: g
+  orderName: 비자숙문어(국산)
+  orderUnit: 8kg
+  unitPrice: 180000
   per100g: 2250
   per100gActual: 2812
   vendor: 남선푸드
@@ -1470,6 +1926,9 @@ entries:
   ingredientId: ing_자숙문어
   name: 자숙문어
   unit: g
+  orderName: 냉동자숙문어(필리핀)
+  orderUnit: 10kg
+  unitPrice: 163000
   per100g: 1630
   per100gActual: 1811
   vendor: 남선푸드
@@ -1479,6 +1938,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 냉동활낙지8미(중국)
+  orderUnit: 5.1kg
+  unitPrice: 44000
   per100g: 863
   per100gActual: 1078
   vendor: 남선푸드
@@ -1488,6 +1950,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 냉동활낙지6미(중국)
+  orderUnit: 5.1kg
+  unitPrice: 48000
   per100g: 941
   per100gActual: 1176
   vendor: 남선푸드
@@ -1497,6 +1962,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 절단낙지(말레이시아)
+  orderUnit: 6kg
+  unitPrice: 63000
   per100g: 1050
   per100gActual: 1312
   vendor: 남선푸드
@@ -1506,6 +1974,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 손질낙지(200/300)(베트남)
+  orderUnit: 6kg
+  unitPrice: 67000
   per100g: 1117
   per100gActual: 1396
   vendor: 남선푸드
@@ -1515,6 +1986,9 @@ entries:
   ingredientId: ing_주꾸미
   name: 주꾸미
   unit: g
+  orderName: 절단주꾸미(베트남)
+  orderUnit: 6kg
+  unitPrice: 64000
   per100g: 1067
   per100gActual: 1333
   vendor: 남선푸드
@@ -1524,6 +1998,9 @@ entries:
   ingredientId: ing_주꾸미
   name: 주꾸미
   unit: g
+  orderName: 냉동주꾸미(베트남)
+  orderUnit: 4.8kg
+  unitPrice: 52000
   per100g: 1083
   per100gActual: 1354
   vendor: 남선푸드
@@ -1533,6 +2010,9 @@ entries:
   ingredientId: ing_솔방울오징어
   name: 솔방울오징어
   unit: g
+  orderName: 솔방울오징어(중국)
+  orderUnit: 10kg
+  unitPrice: 51000
   per100g: 510
   per100gActual: 850
   vendor: 남선푸드
@@ -1542,6 +2022,9 @@ entries:
   ingredientId: ing_코다리
   name: 코다리
   unit: g
+  orderName: 절단코다리60/80깔끔이(러시아)
+  orderUnit: 10kg
+  unitPrice: 44000
   per100g: 440
   per100gActual: 550
   vendor: 남선푸드
@@ -1551,6 +2034,9 @@ entries:
   ingredientId: ing_동태
   name: 동태
   unit: g
+  orderName: 절단동태(러시아)
+  orderUnit: 5kg
+  unitPrice: 17500
   per100g: 350
   per100gActual: 438
   vendor: 남선푸드
@@ -1560,6 +2046,9 @@ entries:
   ingredientId: ing_대구
   name: 대구
   unit: g
+  orderName: 절단대구(국산)
+  orderUnit: 10kg
+  unitPrice: 47000
   per100g: 470
   per100gActual: 588
   vendor: 남선푸드
@@ -1569,6 +2058,9 @@ entries:
   ingredientId: ing_대구곤이
   name: 대구곤이
   unit: g
+  orderName: 대구곤이(아이슬란드)
+  orderUnit: 6kg
+  unitPrice: 38000
   per100g: 633
   per100gActual: 792
   vendor: 남선푸드
@@ -1578,6 +2070,9 @@ entries:
   ingredientId: ing_명란
   name: 명란
   unit: g
+  orderName: 명란(러시아)
+  orderUnit: 7.5kg
+  unitPrice: 63000
   per100g: 840
   per100gActual: 1050
   vendor: 남선푸드
@@ -1587,6 +2082,9 @@ entries:
   ingredientId: ing_명란
   name: 명란
   unit: g
+  orderName: 명란PG 원물
+  orderUnit: 22.5kg
+  unitPrice: 210000
   per100g: 933
   per100gActual: 1167
   vendor: 남선푸드
@@ -1596,6 +2094,9 @@ entries:
   ingredientId: ing_오만둥이
   name: 오만둥이
   unit: g
+  orderName: 오만둥이(소포장)
+  orderUnit: 1kg
+  unitPrice: 2700
   per100g: 270
   per100gActual: 338
   vendor: 남선푸드
@@ -1605,6 +2106,9 @@ entries:
   ingredientId: ing_자숙피뿔고둥살
   name: 자숙피뿔고둥살
   unit: g
+  orderName: 참소라살3S(튀르키예)
+  orderUnit: 10kg
+  unitPrice: 210000
   per100g: 2130
   per100gActual: 2662
   vendor: 대영상사
@@ -1614,6 +2118,9 @@ entries:
   ingredientId: ing_염지소곱창
   name: 염지소곱창
   unit: g
+  orderName: 소곱창
+  orderUnit: 15kg
+  unitPrice: 340000
   per100g: 2267
   per100gActual: 2833
   vendor: 남선푸드
@@ -1623,6 +2130,9 @@ entries:
   ingredientId: ing_우삼겹
   name: 우삼겹
   unit: g
+  orderName: 우삼겹(미국)
+  orderUnit: 5kg
+  unitPrice: 145000
   per100g: 2900
   per100gActual: 3625
   vendor: 남선푸드
@@ -1653,6 +2163,9 @@ entries:
   ingredientId: ing_간장소스
   name: 간장소스
   unit: g
+  orderName: 간장게장소스(한국소스)
+  orderUnit: 10kg
+  unitPrice: 33000
   per100g: 330
   per100gActual: 330
   vendor: 남선푸드
@@ -1661,6 +2174,9 @@ entries:
   ingredientId: ing_흰다리새우살_L_인도
   name: 흰다리새우살 (대, 인도산)
   unit: g
+  orderName: PDTO새우살26-30P(인도산)
+  orderUnit: 9kg
+  unitPrice: 138000
   per100g: 1533
   per100gActual: 1704
   vendor: 남선푸드
@@ -1671,6 +2187,9 @@ entries:
   ingredientId: ing_흰다리새우살_S_베트남
   name: 흰다리새우살
   unit: g
+  orderName: 냉동새우살71-90P(베트남)
+  orderUnit: 9kg
+  unitPrice: 122000
   per100g: 1356
   per100gActual: 1506
   vendor: 남선푸드
@@ -1681,6 +2200,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 절단낙지IQF(중국)
+  orderUnit: 10kg
+  unitPrice: 112000
   per100g: 1120
   per100gActual: 1400
   vendor: 남선푸드
@@ -1690,6 +2212,9 @@ entries:
   ingredientId: ing_갑오징어
   name: 갑오징어
   unit: g
+  orderName: 통갑오징어100/200(인도네시아)
+  orderUnit: 5kg
+  unitPrice: 66000
   per100g: 1320
   per100gActual: 1650
   vendor: 남선푸드
@@ -1699,6 +2224,9 @@ entries:
   ingredientId: ing_순살아귀
   name: 순살아귀
   unit: g
+  orderName: 순살아귀(중국산)
+  orderUnit: 10kg
+  unitPrice: 62000
   per100g: 620
   per100gActual: 775
   vendor: 남선푸드
@@ -1715,6 +2243,9 @@ entries:
   ingredientId: ing_해물탕소스
   name: 해물탕소스
   unit: g
+  orderName: 더맛있는탕소스(100g×150ea)
+  orderUnit: 15kg
+  unitPrice: 103500
   per100g: 710
   per100gActual: 710
   vendor: 대영상사
@@ -1723,6 +2254,9 @@ entries:
   ingredientId: ing_가리비관자
   name: 가리비관자
   unit: g
+  orderName: 성형가리비(10/20)
+  orderUnit: 10kg
+  unitPrice: 130000
   per100g: 1330
   per100gActual: 1662
   vendor: 대영상사
@@ -1732,6 +2266,9 @@ entries:
   ingredientId: ing_주꾸미
   name: 주꾸미
   unit: g
+  orderName: 주꾸미(17/22미)
+  orderUnit: 10kg
+  unitPrice: 118000
   per100g: 1210
   per100gActual: 1512
   vendor: 대영상사
@@ -1741,6 +2278,9 @@ entries:
   ingredientId: ing_낙지
   name: 낙지
   unit: g
+  orderName: 절단낙지 L
+  orderUnit: 6kg
+  unitPrice: 73000
   per100g: 1267
   per100gActual: 1583
   vendor: 대영상사
@@ -1750,6 +2290,9 @@ entries:
   ingredientId: ing_게
   name: 꽃게
   unit: g
+  orderName: 절단꽃게 S
+  orderUnit: 5kg
+  unitPrice: 53000
   per100g: 1120
   per100gActual: 1400
   vendor: 대영상사
@@ -1759,6 +2302,9 @@ entries:
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
   unit: g
+  orderName: 칵테일새우살(21/25)
+  orderUnit: 9kg
+  unitPrice: 172000
   per100g: 1944
   per100gActual: 2160
   vendor: 대영상사
@@ -1769,6 +2315,9 @@ entries:
   ingredientId: ing_명란
   name: 명란
   unit: g
+  orderName: 명란PG(22.8kg)
+  orderUnit: 22.8kg
+  unitPrice: 218000
   per100g: 969
   per100gActual: 1212
   vendor: 대영상사
@@ -1778,6 +2327,9 @@ entries:
   ingredientId: ing_명태곤이
   name: 명태곤이
   unit: g
+  orderName: 명태곤이
+  orderUnit: 22.5kg
+  unitPrice: 98000
   per100g: 449
   per100gActual: 561
   vendor: 대영상사
@@ -1787,6 +2339,9 @@ entries:
   ingredientId: ing_자숙문어_절단
   name: 자숙문어(절단)
   unit: g
+  orderName: 문어슬라이스(대영)
+  orderUnit: 9kg
+  unitPrice: 167400
   per100g: 1893
   per100gActual: 2104
   vendor: 대영상사
@@ -1796,6 +2351,9 @@ entries:
   ingredientId: ing_코다리
   name: 코다리
   unit: g
+  orderName: 절단코다리(40/60)
+  orderUnit: 10kg
+  unitPrice: 48000
   per100g: 510
   per100gActual: 637
   vendor: 대영상사
@@ -1812,6 +2370,9 @@ entries:
   ingredientId: ing_통대구
   name: 통대구
   unit: g
+  orderName: 통대구 (러시아) 18.5kg
+  orderUnit: 18.5kg
+  unitPrice: 107000
   per100g: 595
   per100gActual: 963
   vendor: 대영상사
@@ -1822,6 +2383,9 @@ entries:
   ingredientId: ing_홍고추
   name: 홍고추
   unit: g
+  orderName: 홍고추 (국내) 500g
+  orderUnit: 500g
+  unitPrice: 14000
   per100g: 3400
   per100gActual: 3778
   vendor: 대영상사
@@ -1831,6 +2395,9 @@ entries:
   ingredientId: ing_대파
   name: 대파
   unit: g
+  orderName: 대파 (국내) 2kg
+  orderUnit: 2kg
+  unitPrice: 2000
   per100g: 100
   per100gActual: 125
   vendor: 야채납품업체
@@ -1840,6 +2407,9 @@ entries:
   ingredientId: ing_무
   name: 무
   unit: g
+  orderName: 무 (국내) 20kg
+  orderUnit: 20kg
+  unitPrice: 17000
   per100g: 85
   per100gActual: 106
   vendor: 야채납품업체
@@ -1856,6 +2426,9 @@ entries:
   ingredientId: ing_염지소대창
   name: 염지소대창
   unit: g
+  orderName: 염지소대창 15kg
+  orderUnit: 15kg
+  unitPrice: 297000
   per100g: 2000
   per100gActual: 2222
   vendor: 대영상사
@@ -1865,6 +2438,9 @@ entries:
   ingredientId: ing_볼락
   name: 볼락
   unit: g
+  orderName: 손질적어(150/200) 포루투갈
+  orderUnit: 4kg
+  unitPrice: 34000
   per100g: 925
   per100gActual: 925
   vendor: 대영상사
