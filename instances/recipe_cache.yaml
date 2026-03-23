@@ -14,11 +14,11 @@ recipes:
   - name: 전복
     amount: 1
     unit: 마리
-    cost: 21
+    cost: 840
   - name: 흰다리새우
     amount: 2
     unit: 마리
-    cost: 30
+    cost: 858
     note: (해동 10%)
   - name: 꽃게
     amount: 50
@@ -67,7 +67,7 @@ recipes:
     amount: 1
     unit: 개
     cost: 470
-  total: 12467
+  total: 14114
 - store: wolgye
   storeName: 월계
   name: 낙지전복해물탕
@@ -82,11 +82,11 @@ recipes:
   - name: 전복
     amount: 1
     unit: 마리
-    cost: 21
+    cost: 840
   - name: 흰다리새우
     amount: 2
     unit: 마리
-    cost: 30
+    cost: 858
     note: (해동 10%)
   - name: 꽃게
     amount: 50
@@ -135,7 +135,7 @@ recipes:
     amount: 1
     unit: 개
     cost: 470
-  total: 8140
+  total: 9787
 - store: wolgye
   storeName: 월계
   name: 동태알탕
