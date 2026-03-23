@@ -1169,544 +1169,508 @@ recipes:
   storeName: 왕십리
   name: 문어전복해물탕
   vendor: 남선푸드
-  date: ''
+  date: '2026-03-21'
   items:
   - name: 자숙문어
-    amount: '?'
+    amount: 230
     unit: g
-    cost: null
+    cost: 7827
+    note: (해동 10%)
   - name: 전복
-    amount: '?'
-    unit: 개
-    cost: null
+    amount: 1
+    unit: 마리
+    cost: 800
   - name: 흰다리새우
-    amount: '?'
-    unit: g
-    cost: null
+    amount: 2
+    unit: 마리
+    cost: 795
+    note: (해동 10%)
   - name: 솔방울오징어
-    amount: '?'
+    amount: 150
     unit: g
-    cost: null
+    cost: 1275
+    note: (해동 40%)
   - name: 백생합
-    amount: '?'
+    amount: 130
     unit: g
-    cost: null
+    cost: 377
   - name: 홍합
-    amount: '?'
+    amount: 80
     unit: g
-    cost: null
+    cost: 290
+    note: (해동 20%)
   - name: 콩나물
-    amount: '?'
-    unit: g
-    cost: null
+    amount: 1
+    unit: 팩
+    cost: 1200
   - name: 무
-    amount: '?'
+    amount: 70
     unit: g
-    cost: null
+    cost: 74
+    note: (손질 20%)
   - name: 대파
-    amount: '?'
+    amount: 30
     unit: g
-    cost: null
+    cost: 38
+    note: (손질 20%)
   - name: 홍고추
-    amount: '?'
-    unit: 개
-    cost: null
-  - name: 해물탕소스
-    amount: '?'
+    amount: 3
     unit: g
-    cost: null
-  total: 0
-  missing:
-  - 자숙문어
-  - 전복
-  - 흰다리새우
-  - 솔방울오징어
-  - 백생합
-  - 홍합
-  - 콩나물
-  - 무
-  - 대파
-  - 홍고추
-  - 해물탕소스
+    cost: 113
+    note: (손질 10%)
+  - name: 해물탕소스
+    amount: 2
+    unit: 팩
+    cost: 1466
+  total: 14255
 - store: wangsimni
   storeName: 왕십리
   name: 낙지전복해물탕
   vendor: 남선푸드
-  date: ''
+  date: '2026-03-21'
   items:
   - name: 낙지
-    amount: '?'
+    amount: 230
     unit: g
-    cost: null
+    cost: 2479
+    note: (해동 20%)
   - name: 전복
-    amount: '?'
-    unit: 개
-    cost: null
+    amount: 1
+    unit: 마리
+    cost: 800
   - name: 흰다리새우
-    amount: '?'
-    unit: g
-    cost: null
+    amount: 2
+    unit: 마리
+    cost: 795
+    note: (해동 10%)
   - name: 솔방울오징어
-    amount: '?'
+    amount: 150
     unit: g
-    cost: null
+    cost: 1275
+    note: (해동 40%)
   - name: 백생합
-    amount: '?'
+    amount: 130
     unit: g
-    cost: null
+    cost: 377
   - name: 홍합
-    amount: '?'
+    amount: 80
     unit: g
-    cost: null
+    cost: 290
+    note: (해동 20%)
   - name: 콩나물
-    amount: '?'
-    unit: g
-    cost: null
+    amount: 1
+    unit: 팩
+    cost: 1200
   - name: 무
-    amount: '?'
+    amount: 70
     unit: g
-    cost: null
+    cost: 74
+    note: (손질 20%)
   - name: 대파
-    amount: '?'
+    amount: 30
     unit: g
-    cost: null
+    cost: 38
+    note: (손질 20%)
   - name: 홍고추
-    amount: '?'
-    unit: 개
-    cost: null
-  - name: 해물탕소스
-    amount: '?'
+    amount: 3
     unit: g
-    cost: null
-  total: 0
-  missing:
-  - 낙지
-  - 전복
-  - 흰다리새우
-  - 솔방울오징어
-  - 백생합
-  - 홍합
-  - 콩나물
-  - 무
-  - 대파
-  - 홍고추
-  - 해물탕소스
+    cost: 113
+    note: (손질 10%)
+  - name: 해물탕소스
+    amount: 2
+    unit: 팩
+    cost: 1466
+  total: 8907
 - store: wangsimni
   storeName: 왕십리
   name: 알탕
   vendor: 남선푸드
-  date: ''
+  date: '2026-03-21'
   items:
   - name: 명란
-    amount: '?'
+    amount: 100
     unit: g
-    cost: null
+    cost: 1050
+    note: (해동 20%)
   - name: 대구곤이
-    amount: '?'
+    amount: 150
     unit: g
-    cost: null
+    cost: 1188
+    note: (해동 20%)
   - name: 솔방울오징어
-    amount: '?'
+    amount: 150
     unit: g
-    cost: null
+    cost: 1275
+    note: (해동 40%)
   - name: 백생합
-    amount: '?'
+    amount: 130
     unit: g
-    cost: null
+    cost: 377
   - name: 홍합
-    amount: '?'
+    amount: 80
     unit: g
-    cost: null
+    cost: 290
+    note: (해동 20%)
   - name: 콩나물
-    amount: '?'
-    unit: g
-    cost: null
+    amount: 1
+    unit: 팩
+    cost: 1200
   - name: 대파
-    amount: '?'
+    amount: 30
     unit: g
-    cost: null
+    cost: 38
+    note: (손질 20%)
   - name: 무
-    amount: '?'
+    amount: 70
     unit: g
-    cost: null
+    cost: 74
+    note: (손질 20%)
   - name: 홍고추
-    amount: '?'
-    unit: 개
-    cost: null
-  - name: 해물탕소스
-    amount: '?'
+    amount: 3
     unit: g
-    cost: null
-  total: 0
-  missing:
-  - 명란
-  - 대구곤이
-  - 솔방울오징어
-  - 백생합
-  - 홍합
-  - 콩나물
-  - 대파
-  - 무
-  - 홍고추
-  - 해물탕소스
+    cost: 113
+    note: (손질 10%)
+  - name: 해물탕소스
+    amount: 2
+    unit: 팩
+    cost: 1466
+  total: 7071
 - store: wangsimni
   storeName: 왕십리
   name: 코다리알탕
   vendor: 남선푸드
-  date: ''
+  date: '2026-03-21'
   items:
   - name: 코다리
-    amount: '?'
+    amount: 350
     unit: g
-    cost: null
+    cost: 1925
+    note: (해동 20%)
   - name: 명란
-    amount: '?'
+    amount: 100
     unit: g
-    cost: null
+    cost: 1050
+    note: (해동 20%)
   - name: 대구곤이
-    amount: '?'
+    amount: 150
     unit: g
-    cost: null
+    cost: 1188
+    note: (해동 20%)
   - name: 백생합
-    amount: '?'
+    amount: 130
     unit: g
-    cost: null
+    cost: 377
   - name: 홍합
-    amount: '?'
+    amount: 80
     unit: g
-    cost: null
+    cost: 290
+    note: (해동 20%)
   - name: 콩나물
-    amount: '?'
-    unit: g
-    cost: null
+    amount: 1
+    unit: 팩
+    cost: 1200
   - name: 대파
-    amount: '?'
+    amount: 30
     unit: g
-    cost: null
+    cost: 38
+    note: (손질 20%)
   - name: 무
-    amount: '?'
+    amount: 70
     unit: g
-    cost: null
+    cost: 74
+    note: (손질 20%)
   - name: 홍고추
-    amount: '?'
-    unit: 개
-    cost: null
-  - name: 해물탕소스
-    amount: '?'
+    amount: 3
     unit: g
-    cost: null
-  total: 0
-  missing:
-  - 코다리
-  - 명란
-  - 대구곤이
-  - 백생합
-  - 홍합
-  - 콩나물
-  - 대파
-  - 무
-  - 홍고추
-  - 해물탕소스
+    cost: 113
+    note: (손질 10%)
+  - name: 해물탕소스
+    amount: 2
+    unit: 팩
+    cost: 1466
+  total: 7721
 - store: wangsimni
   storeName: 왕십리
   name: 대구탕
   vendor: 남선푸드
-  date: ''
+  date: '2026-03-21'
   items:
   - name: 대구
-    amount: '?'
+    amount: 400
     unit: g
-    cost: null
+    cost: 2352
+    note: (해동 20%)
   - name: 명란
-    amount: '?'
+    amount: 100
     unit: g
-    cost: null
+    cost: 1050
+    note: (해동 20%)
   - name: 대구곤이
-    amount: '?'
+    amount: 150
     unit: g
-    cost: null
+    cost: 1188
+    note: (해동 20%)
   - name: 솔방울오징어
-    amount: '?'
+    amount: 150
     unit: g
-    cost: null
+    cost: 1275
+    note: (해동 40%)
   - name: 백생합
-    amount: '?'
+    amount: 130
     unit: g
-    cost: null
+    cost: 377
   - name: 홍합
-    amount: '?'
+    amount: 80
     unit: g
-    cost: null
+    cost: 290
+    note: (해동 20%)
   - name: 콩나물
-    amount: '?'
-    unit: g
-    cost: null
+    amount: 1
+    unit: 팩
+    cost: 1200
   - name: 대파
-    amount: '?'
+    amount: 30
     unit: g
-    cost: null
+    cost: 38
+    note: (손질 20%)
   - name: 무
-    amount: '?'
+    amount: 70
     unit: g
-    cost: null
+    cost: 74
+    note: (손질 20%)
   - name: 홍고추
-    amount: '?'
-    unit: 개
-    cost: null
-  - name: 해물탕소스
-    amount: '?'
+    amount: 3
     unit: g
-    cost: null
-  total: 0
-  missing:
-  - 대구
-  - 명란
-  - 대구곤이
-  - 솔방울오징어
-  - 백생합
-  - 홍합
-  - 콩나물
-  - 대파
-  - 무
-  - 홍고추
-  - 해물탕소스
+    cost: 113
+    note: (손질 10%)
+  - name: 해물탕소스
+    amount: 2
+    unit: 팩
+    cost: 1466
+  total: 9423
 - store: wangsimni
   storeName: 왕십리
   name: 국산문어 해물탕
   vendor: 남선푸드
-  date: ''
+  date: '2026-03-21'
   items:
   - name: 자숙문어
-    amount: '?'
+    amount: 230
     unit: g
-    cost: null
+    cost: 7827
+    note: (해동 10%)
   - name: 전복
-    amount: '?'
-    unit: 개
-    cost: null
+    amount: 1
+    unit: 마리
+    cost: 800
   - name: 흰다리새우
-    amount: '?'
-    unit: g
-    cost: null
+    amount: 2
+    unit: 마리
+    cost: 795
+    note: (해동 10%)
   - name: 솔방울오징어
-    amount: '?'
+    amount: 150
     unit: g
-    cost: null
+    cost: 1275
+    note: (해동 40%)
   - name: 백생합
-    amount: '?'
+    amount: 130
     unit: g
-    cost: null
+    cost: 377
   - name: 홍합
-    amount: '?'
+    amount: 80
     unit: g
-    cost: null
+    cost: 290
+    note: (해동 20%)
   - name: 콩나물
-    amount: '?'
-    unit: g
-    cost: null
+    amount: 1
+    unit: 팩
+    cost: 1200
   - name: 무
-    amount: '?'
+    amount: 70
     unit: g
-    cost: null
+    cost: 74
+    note: (손질 20%)
   - name: 대파
-    amount: '?'
+    amount: 30
     unit: g
-    cost: null
+    cost: 38
+    note: (손질 20%)
   - name: 홍고추
-    amount: '?'
-    unit: 개
-    cost: null
-  - name: 해물탕소스
-    amount: '?'
+    amount: 3
     unit: g
-    cost: null
-  total: 0
-  missing:
-  - 자숙문어
-  - 전복
-  - 흰다리새우
-  - 솔방울오징어
-  - 백생합
-  - 홍합
-  - 콩나물
-  - 무
-  - 대파
-  - 홍고추
-  - 해물탕소스
+    cost: 113
+    note: (손질 10%)
+  - name: 해물탕소스
+    amount: 2
+    unit: 팩
+    cost: 1466
+  total: 14255
 - store: wangsimni
   storeName: 왕십리
   name: 순살 아귀찜
   vendor: 남선푸드
-  date: ''
+  date: '2026-03-21'
   items:
   - name: 순살아귀
-    amount: '?'
+    amount: 350
     unit: g
-    cost: null
+    cost: 2712
+    note: (해동 20%)
   - name: 명란
-    amount: '?'
+    amount: 50
     unit: g
-    cost: null
+    cost: 525
+    note: (해동 20%)
   - name: 대구곤이
-    amount: '?'
+    amount: 50
     unit: g
-    cost: null
+    cost: 396
+    note: (해동 20%)
   - name: 솔방울오징어
-    amount: '?'
+    amount: 100
     unit: g
-    cost: null
+    cost: 850
+    note: (해동 40%)
   - name: 오만둥이
-    amount: '?'
+    amount: 30
     unit: g
-    cost: null
+    cost: 101
+    note: (해동 20%)
   - name: 콩나물
-    amount: '?'
-    unit: g
-    cost: null
+    amount: 1
+    unit: 팩
+    cost: 1200
   - name: 대파
-    amount: '?'
+    amount: 30
     unit: g
-    cost: null
+    cost: 38
+    note: (손질 20%)
   - name: 홍고추
-    amount: '?'
-    unit: 개
-    cost: null
-  - name: 만능찜소스
-    amount: '?'
+    amount: 3
     unit: g
-    cost: null
-  total: 0
-  missing:
-  - 순살아귀
-  - 명란
-  - 대구곤이
-  - 솔방울오징어
-  - 오만둥이
-  - 콩나물
-  - 대파
-  - 홍고추
-  - 만능찜소스
+    cost: 113
+    note: (손질 10%)
+  - name: 만능찜소스
+    amount: 2
+    unit: 팩
+    cost: 1300
+  total: 7235
 - store: wangsimni
   storeName: 왕십리
   name: 프리미엄 낙곱새
   vendor: 남선푸드
-  date: '2026-03-18'
+  date: '2026-03-20'
   items:
   - name: 낙지
-    amount: '?'
+    amount: 130
     unit: g
-    cost: null
+    cost: 1401
+    note: (해동 20%)
   - name: 염지소곱창
-    amount: '?'
+    amount: 80
     unit: g
-    cost: null
+    cost: 2266
+    note: (해동 20%)
   - name: 흰다리새우살
-    amount: '?'
+    amount: 100
     unit: g
-    cost: null
+    cost: 1500
+    note: (해동 10%)
   - name: 솔방울오징어
-    amount: '?'
+    amount: 150
     unit: g
-    cost: null
+    cost: 1275
+    note: (해동 40%)
   - name: 양배추콩나물 (반반팩)
     amount: 1
     unit: 팩
     cost: 1500
   - name: 대파
-    amount: '?'
+    amount: 30
     unit: g
-    cost: null
+    cost: 38
+    note: (손질 20%)
   - name: 홍고추
-    amount: '?'
-    unit: 개
-    cost: null
-  - name: 낙곱새소스
-    amount: '?'
+    amount: 3
     unit: g
-    cost: null
-  total: 1500
-  missing:
-  - 낙지
-  - 염지소곱창
-  - 흰다리새우살
-  - 솔방울오징어
-  - 대파
-  - 홍고추
-  - 낙곱새소스
+    cost: 113
+    note: (손질 10%)
+  - name: 낙곱새소스
+    amount: 2
+    unit: 팩
+    cost: 1020
+  total: 9113
 - store: wangsimni
   storeName: 왕십리
   name: 주꾸미볶음
   vendor: 남선푸드
-  date: '2026-03-18'
+  date: '2026-03-20'
   items:
   - name: 주꾸미
-    amount: '?'
+    amount: 230
     unit: g
-    cost: null
+    cost: 3066
+    note: (해동 20%)
   - name: 솔방울오징어
-    amount: '?'
+    amount: 150
     unit: g
-    cost: null
+    cost: 1275
+    note: (해동 40%)
   - name: 양배추콩나물 (반반팩)
     amount: 1
     unit: 팩
     cost: 1500
   - name: 대파
-    amount: '?'
+    amount: 30
     unit: g
-    cost: null
+    cost: 38
+    note: (손질 20%)
   - name: 홍고추
-    amount: '?'
-    unit: 개
-    cost: null
-  - name: 볶음소스
-    amount: '?'
+    amount: 3
     unit: g
-    cost: null
-  total: 1500
-  missing:
-  - 주꾸미
-  - 솔방울오징어
-  - 대파
-  - 홍고추
-  - 볶음소스
+    cost: 113
+    note: (손질 10%)
+  - name: 볶음소스
+    amount: 2
+    unit: 팩
+    cost: 1116
+  total: 7108
 - store: wangsimni
   storeName: 왕십리
   name: 낙지볶음
   vendor: 남선푸드
-  date: '2026-03-18'
+  date: '2026-03-20'
   items:
   - name: 낙지
-    amount: '?'
+    amount: 230
     unit: g
-    cost: null
+    cost: 2479
+    note: (해동 20%)
   - name: 솔방울오징어
-    amount: '?'
+    amount: 150
     unit: g
-    cost: null
+    cost: 1275
+    note: (해동 40%)
   - name: 양배추콩나물 (반반팩)
     amount: 1
     unit: 팩
     cost: 1500
   - name: 대파
-    amount: '?'
+    amount: 30
     unit: g
-    cost: null
+    cost: 38
+    note: (손질 20%)
   - name: 홍고추
-    amount: '?'
-    unit: 개
-    cost: null
-  - name: 볶음소스
-    amount: '?'
+    amount: 3
     unit: g
-    cost: null
-  total: 1500
-  missing:
-  - 낙지
-  - 솔방울오징어
-  - 대파
-  - 홍고추
-  - 볶음소스
+    cost: 113
+    note: (손질 10%)
+  - name: 볶음소스
+    amount: 2
+    unit: 팩
+    cost: 1116
+  total: 6521
 - store: wangsimni
   storeName: 왕십리
   name: 가리비관자

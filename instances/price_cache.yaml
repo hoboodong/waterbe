@@ -461,9 +461,8 @@ entries:
 - store: wolgye
   ingredientId: ing_만능찜소스
   name: 만능찜소스
-  unit: g
-  per100g: 650
-  per100gActual: 650
+  unit: 팩
+  packUnitPrice: 650
   vendor: 남선푸드
   date: '2026-03-14'
 - store: wolgye
@@ -1085,9 +1084,8 @@ entries:
 - store: mapo
   ingredientId: ing_만능찜소스
   name: 만능찜소스
-  unit: g
-  per100g: 650
-  per100gActual: 650
+  unit: 팩
+  packUnitPrice: 650
   vendor: 남선푸드
   date: '2026-03-14'
 - store: mapo
@@ -1709,9 +1707,8 @@ entries:
 - store: wangsimni
   ingredientId: ing_만능찜소스
   name: 만능찜소스
-  unit: g
-  per100g: 650
-  per100gActual: 650
+  unit: 팩
+  packUnitPrice: 650
   vendor: 남선푸드
   date: '2026-03-14'
 - store: wangsimni

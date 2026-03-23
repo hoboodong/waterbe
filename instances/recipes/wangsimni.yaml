@@ -10,38 +10,38 @@ instances:
       atStore: store_wangsimni
       uses:
         - ingredient: ing_자숙문어
-          amount: null
+          amount: 230
           unit: g
         - ingredient: ing_전복
-          amount: null
-          unit: 개
+          amount: 1
+          unit: 마리
         - ingredient: ing_새우
-          amount: null
-          unit: g
+          amount: 2
+          unit: 마리
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_백생합
-          amount: null
+          amount: 130
           unit: g
         - ingredient: ing_홍합
-          amount: null
+          amount: 80
           unit: g
         - ingredient: ing_콩나물
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩
         - ingredient: ing_무
-          amount: null
+          amount: 70
           unit: g
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_홍고추
-          amount: null
-          unit: 개
-        - ingredient: ing_해물탕소스
-          amount: null
+          amount: 3
           unit: g
+        - ingredient: ing_해물탕소스
+          amount: 2
+          unit: 팩
 
   - id: recipe_wangsimni_mk002
     class: Recipe
@@ -52,38 +52,38 @@ instances:
       atStore: store_wangsimni
       uses:
         - ingredient: ing_낙지
-          amount: null
+          amount: 230
           unit: g
         - ingredient: ing_전복
-          amount: null
-          unit: 개
+          amount: 1
+          unit: 마리
         - ingredient: ing_새우
-          amount: null
-          unit: g
+          amount: 2
+          unit: 마리
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_백생합
-          amount: null
+          amount: 130
           unit: g
         - ingredient: ing_홍합
-          amount: null
+          amount: 80
           unit: g
         - ingredient: ing_콩나물
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩
         - ingredient: ing_무
-          amount: null
+          amount: 70
           unit: g
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_홍고추
-          amount: null
-          unit: 개
-        - ingredient: ing_해물탕소스
-          amount: null
+          amount: 3
           unit: g
+        - ingredient: ing_해물탕소스
+          amount: 2
+          unit: 팩
 
   - id: recipe_wangsimni_mk003
     class: Recipe
@@ -94,35 +94,35 @@ instances:
       atStore: store_wangsimni
       uses:
         - ingredient: ing_명란
-          amount: null
+          amount: 100
           unit: g
         - ingredient: ing_대구곤이
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_백생합
-          amount: null
+          amount: 130
           unit: g
         - ingredient: ing_홍합
-          amount: null
+          amount: 80
           unit: g
         - ingredient: ing_콩나물
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_무
-          amount: null
+          amount: 70
           unit: g
         - ingredient: ing_홍고추
-          amount: null
-          unit: 개
-        - ingredient: ing_해물탕소스
-          amount: null
+          amount: 3
           unit: g
+        - ingredient: ing_해물탕소스
+          amount: 2
+          unit: 팩
 
   - id: recipe_wangsimni_mk004
     class: Recipe
@@ -133,35 +133,35 @@ instances:
       atStore: store_wangsimni
       uses:
         - ingredient: ing_코다리
-          amount: null
+          amount: 350
           unit: g
         - ingredient: ing_명란
-          amount: null
+          amount: 100
           unit: g
         - ingredient: ing_대구곤이
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_백생합
-          amount: null
+          amount: 130
           unit: g
         - ingredient: ing_홍합
-          amount: null
+          amount: 80
           unit: g
         - ingredient: ing_콩나물
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_무
-          amount: null
+          amount: 70
           unit: g
         - ingredient: ing_홍고추
-          amount: null
-          unit: 개
-        - ingredient: ing_해물탕소스
-          amount: null
+          amount: 3
           unit: g
+        - ingredient: ing_해물탕소스
+          amount: 2
+          unit: 팩
 
   - id: recipe_wangsimni_mk007
     class: Recipe
@@ -172,38 +172,38 @@ instances:
       atStore: store_wangsimni
       uses:
         - ingredient: ing_대구
-          amount: null
+          amount: 400
           unit: g
         - ingredient: ing_명란
-          amount: null
+          amount: 100
           unit: g
         - ingredient: ing_대구곤이
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_백생합
-          amount: null
+          amount: 130
           unit: g
         - ingredient: ing_홍합
-          amount: null
+          amount: 80
           unit: g
         - ingredient: ing_콩나물
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_무
-          amount: null
+          amount: 70
           unit: g
         - ingredient: ing_홍고추
-          amount: null
-          unit: 개
-        - ingredient: ing_해물탕소스
-          amount: null
+          amount: 3
           unit: g
+        - ingredient: ing_해물탕소스
+          amount: 2
+          unit: 팩
 
   - id: recipe_wangsimni_mk008
     class: Recipe
@@ -214,38 +214,38 @@ instances:
       atStore: store_wangsimni
       uses:
         - ingredient: ing_자숙문어
-          amount: null
+          amount: 230
           unit: g
         - ingredient: ing_전복
-          amount: null
-          unit: 개
+          amount: 1
+          unit: 마리
         - ingredient: ing_새우
-          amount: null
-          unit: g
+          amount: 2
+          unit: 마리
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_백생합
-          amount: null
+          amount: 130
           unit: g
         - ingredient: ing_홍합
-          amount: null
+          amount: 80
           unit: g
         - ingredient: ing_콩나물
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩
         - ingredient: ing_무
-          amount: null
+          amount: 70
           unit: g
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_홍고추
-          amount: null
-          unit: 개
-        - ingredient: ing_해물탕소스
-          amount: null
+          amount: 3
           unit: g
+        - ingredient: ing_해물탕소스
+          amount: 2
+          unit: 팩
 
   - id: recipe_wangsimni_mk009
     class: Recipe
@@ -256,32 +256,32 @@ instances:
       atStore: store_wangsimni
       uses:
         - ingredient: ing_순살아귀
-          amount: null
+          amount: 350
           unit: g
         - ingredient: ing_명란
-          amount: null
+          amount: 50
           unit: g
         - ingredient: ing_대구곤이
-          amount: null
+          amount: 50
           unit: g
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 100
           unit: g
         - ingredient: ing_오만둥이
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_콩나물
-          amount: null
-          unit: g
+          amount: 1
+          unit: 팩
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_홍고추
-          amount: null
-          unit: 개
-        - ingredient: ing_만능찜소스
-          amount: null
+          amount: 3
           unit: g
+        - ingredient: ing_만능찜소스
+          amount: 2
+          unit: 팩
 
   - id: recipe_wangsimni_mk010
     class: Recipe
@@ -292,29 +292,29 @@ instances:
       atStore: store_wangsimni
       uses:
         - ingredient: ing_낙지
-          amount: null
+          amount: 130
           unit: g
         - ingredient: ing_염지소곱창
-          amount: null
+          amount: 80
           unit: g
         - ingredient: ing_흰다리새우살_S_베트남
-          amount: null
+          amount: 100
           unit: g
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_양배추콩나물세트
           amount: 1
           unit: 팩
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_홍고추
-          amount: null
-          unit: 개
-        - ingredient: ing_낙곱새소스
-          amount: null
+          amount: 3
           unit: g
+        - ingredient: ing_낙곱새소스
+          amount: 2
+          unit: 팩
 
   - id: recipe_wangsimni_mk011
     class: Recipe
@@ -325,23 +325,23 @@ instances:
       atStore: store_wangsimni
       uses:
         - ingredient: ing_주꾸미
-          amount: null
+          amount: 230
           unit: g
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_양배추콩나물세트
           amount: 1
           unit: 팩
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_홍고추
-          amount: null
-          unit: 개
-        - ingredient: ing_볶음소스
-          amount: null
+          amount: 3
           unit: g
+        - ingredient: ing_볶음소스
+          amount: 2
+          unit: 팩
 
   - id: recipe_wangsimni_mk012
     class: Recipe
@@ -352,23 +352,23 @@ instances:
       atStore: store_wangsimni
       uses:
         - ingredient: ing_낙지
-          amount: null
+          amount: 230
           unit: g
         - ingredient: ing_솔방울오징어
-          amount: null
+          amount: 150
           unit: g
         - ingredient: ing_양배추콩나물세트
           amount: 1
           unit: 팩
         - ingredient: ing_대파
-          amount: null
+          amount: 30
           unit: g
         - ingredient: ing_홍고추
-          amount: null
-          unit: 개
-        - ingredient: ing_볶음소스
-          amount: null
+          amount: 3
           unit: g
+        - ingredient: ing_볶음소스
+          amount: 2
+          unit: 팩
 
   # ── 왕십리점 단품 레시피 ────────────────────────────────────
   - id: recipe_wangsimni_sp001

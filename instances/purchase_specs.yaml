@@ -826,6 +826,7 @@ instances:
       orderName: 만능찜소스
       orderUnit: 8kg
       unitG: 8000
+      packUnitPrice: 650  # 100g × 80팩, 52,000원
       category: 재료
     relations:
       forIngredient: ing_만능찜소스
