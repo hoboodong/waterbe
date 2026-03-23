@@ -189,7 +189,6 @@ instances:
       name: 볼락
       defaultUnit: g
       composition: 볼락 100%
-      thawLossRate: 20
 
   - id: ing_동태
     class: Ingredient
