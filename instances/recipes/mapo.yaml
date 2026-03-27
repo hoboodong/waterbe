@@ -304,6 +304,48 @@ instances:
           amount: null
           unit: g
 
+  - id: recipe_mapo_mk030
+    class: Recipe
+    data:
+      name: 대구탕 (마포)
+    relations:
+      forProduct: prod_mk_030
+      atStore: store_mapo
+      uses:
+        - ingredient: ing_대구
+          amount: 400
+          unit: g
+        - ingredient: ing_명란
+          amount: 100
+          unit: g
+        - ingredient: ing_대구곤이
+          amount: 150
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: 150
+          unit: g
+        - ingredient: ing_백생합
+          amount: 130
+          unit: g
+        - ingredient: ing_홍합
+          amount: 80
+          unit: g
+        - ingredient: ing_콩나물
+          amount: 1
+          unit: 팩
+        - ingredient: ing_대파
+          amount: 30
+          unit: g
+        - ingredient: ing_무
+          amount: 70
+          unit: g
+        - ingredient: ing_홍고추
+          amount: 3
+          unit: g
+        - ingredient: ing_해물탕소스
+          amount: 2
+          unit: 팩
+
   # ── 마포점 단품 레시피 ──────────────────────────────────────
   - id: recipe_mapo_sp019
     class: Recipe

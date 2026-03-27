@@ -388,6 +388,17 @@ instances:
       soldAt:
         - store_mapo
 
+  - id: prod_mk_030
+    class: Product
+    data:
+      name: 대구탕
+      unit: 1팩
+      price: 19800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_mapo
+
   # ── 단품 상품 (마포점) ──────────────────────────────────
   - id: prod_sp_019
     class: Product
@@ -573,6 +584,17 @@ instances:
       name: 낙지볶음
       unit: 1팩
       price: 15800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wolgye
+
+  - id: prod_mk_031
+    class: Product
+    data:
+      name: 대구탕
+      unit: 1팩
+      price: 19800
     relations:
       belongsTo: cat_mealkit
       soldAt:
