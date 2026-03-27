@@ -1043,3 +1043,14 @@ instances:
     relations:
       forIngredient: ing_볼락
       vendor: null
+
+  - id: pspec_094
+    class: PurchaseSpec
+    data:
+      orderName: 절단꽃게2S(바레인)
+      orderUnit: 6kg
+      unitG: 6000
+      category: 재료
+    relations:
+      forIngredient: ing_게_바레인
+      vendor: null

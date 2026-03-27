@@ -1141,3 +1141,12 @@ instances:
       memo: null
     relations:
       forPurchaseSpec: pspec_093  # 손질적어(150/200) 포루투갈 4kg
+
+  - id: ph_110
+    class: PriceHistory
+    data:
+      unitPrice: 62000
+      date: '2026-03-27'
+      vendor: 대영상사
+    relations:
+      forPurchaseSpec: pspec_094

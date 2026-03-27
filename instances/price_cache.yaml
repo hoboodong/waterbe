@@ -1,4 +1,4 @@
-generatedAt: '2026-03-23'
+generatedAt: '2026-03-27'
 entries:
 - store: wolgye
   ingredientId: ing_흰다리새우살_L_페루
@@ -815,6 +815,18 @@ entries:
   per100gActual: 925
   vendor: 대영상사
   date: '2026-03-22'
+- store: wolgye
+  ingredientId: ing_게_바레인
+  name: 꽃게 (바레인산)
+  unit: g
+  orderName: 절단꽃게2S(바레인)
+  orderUnit: 6kg
+  unitPrice: 62000
+  per100g: 1033
+  per100gActual: 1292
+  vendor: 대영상사
+  date: '2026-03-27'
+  thawLossRate: 20
 - store: mapo
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
@@ -1630,6 +1642,18 @@ entries:
   per100gActual: 925
   vendor: 대영상사
   date: '2026-03-22'
+- store: mapo
+  ingredientId: ing_게_바레인
+  name: 꽃게 (바레인산)
+  unit: g
+  orderName: 절단꽃게2S(바레인)
+  orderUnit: 6kg
+  unitPrice: 62000
+  per100g: 1033
+  per100gActual: 1292
+  vendor: 대영상사
+  date: '2026-03-27'
+  thawLossRate: 20
 - store: wangsimni
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
@@ -2445,3 +2469,15 @@ entries:
   per100gActual: 925
   vendor: 대영상사
   date: '2026-03-22'
+- store: wangsimni
+  ingredientId: ing_게_바레인
+  name: 꽃게 (바레인산)
+  unit: g
+  orderName: 절단꽃게2S(바레인)
+  orderUnit: 6kg
+  unitPrice: 62000
+  per100g: 1033
+  per100gActual: 1292
+  vendor: 대영상사
+  date: '2026-03-27'
+  thawLossRate: 20
