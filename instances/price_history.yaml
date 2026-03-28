@@ -1150,3 +1150,12 @@ instances:
       vendor: 대영상사
     relations:
       forPurchaseSpec: pspec_094
+
+  - id: ph_111
+    class: PriceHistory
+    data:
+      unitPrice: 118000
+      date: '2026-03-28'
+      vendor: 대영상사
+    relations:
+      forPurchaseSpec: pspec_095

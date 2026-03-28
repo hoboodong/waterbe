@@ -1054,3 +1054,14 @@ instances:
     relations:
       forIngredient: ing_게_바레인
       vendor: null
+
+  - id: pspec_095
+    class: PurchaseSpec
+    data:
+      orderName: 알베기통꽃게(이탈리아)
+      orderUnit: 10kg
+      unitG: 10000
+      category: 재료
+    relations:
+      forIngredient: ing_게_이탈리아
+      vendor: null

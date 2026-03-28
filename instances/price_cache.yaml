@@ -827,6 +827,18 @@ entries:
   vendor: 대영상사
   date: '2026-03-27'
   thawLossRate: 20
+- store: wolgye
+  ingredientId: ing_게_이탈리아
+  name: 꽃게 (이탈리아산)
+  unit: g
+  orderName: 알베기통꽃게(이탈리아)
+  orderUnit: 10kg
+  unitPrice: 118000
+  per100g: 1180
+  per100gActual: 1475
+  vendor: 대영상사
+  date: '2026-03-28'
+  thawLossRate: 20
 - store: mapo
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
@@ -1654,6 +1666,18 @@ entries:
   vendor: 대영상사
   date: '2026-03-27'
   thawLossRate: 20
+- store: mapo
+  ingredientId: ing_게_이탈리아
+  name: 꽃게 (이탈리아산)
+  unit: g
+  orderName: 알베기통꽃게(이탈리아)
+  orderUnit: 10kg
+  unitPrice: 118000
+  per100g: 1180
+  per100gActual: 1475
+  vendor: 대영상사
+  date: '2026-03-28'
+  thawLossRate: 20
 - store: wangsimni
   ingredientId: ing_흰다리새우살_L_페루
   name: 흰다리새우살 (대)
@@ -2480,4 +2504,16 @@ entries:
   per100gActual: 1292
   vendor: 대영상사
   date: '2026-03-27'
+  thawLossRate: 20
+- store: wangsimni
+  ingredientId: ing_게_이탈리아
+  name: 꽃게 (이탈리아산)
+  unit: g
+  orderName: 알베기통꽃게(이탈리아)
+  orderUnit: 10kg
+  unitPrice: 118000
+  per100g: 1180
+  per100gActual: 1475
+  vendor: 대영상사
+  date: '2026-03-28'
   thawLossRate: 20

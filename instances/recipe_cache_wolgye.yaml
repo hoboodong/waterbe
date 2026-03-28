@@ -251,12 +251,13 @@ recipes:
   storeName: 월계
   name: 얼큰한 꽃게탕
   vendor: 대영상사
-  date: '2026-03-21'
+  date: '2026-03-28'
   items:
   - name: 꽃게 (이탈리아산)
     amount: 170
     unit: g
-    cost: null
+    cost: 2508
+    note: (해동 20%)
   - name: 꽃게 (바레인산)
     amount: 300
     unit: g
@@ -300,9 +301,7 @@ recipes:
     amount: 1
     unit: 개
     cost: 470
-  total: 8475
-  missing:
-  - 꽃게 (이탈리아산)
+  total: 10983
 - store: wolgye
   storeName: 월계
   name: 낙곱새
