@@ -1,4 +1,4 @@
-generatedAt: '2026-03-27'
+generatedAt: '2026-03-28'
 store: wangsimni
 storeName: 왕십리
 recipes:
@@ -59,7 +59,12 @@ recipes:
     amount: 2
     unit: 팩
     cost: 1466
-  total: 14255
+  - name: 용기
+    displayName: 밀키트(탕)용기 (중)
+    amount: 1
+    unit: 개
+    cost: 510
+  total: 14765
 - store: wangsimni
   storeName: 왕십리
   name: 낙지전복해물탕
@@ -117,7 +122,12 @@ recipes:
     amount: 2
     unit: 팩
     cost: 1466
-  total: 8907
+  - name: 용기
+    displayName: 밀키트(탕)용기 (중)
+    amount: 1
+    unit: 개
+    cost: 510
+  total: 9417
 - store: wangsimni
   storeName: 왕십리
   name: 알탕
@@ -171,7 +181,12 @@ recipes:
     amount: 2
     unit: 팩
     cost: 1466
-  total: 7071
+  - name: 용기
+    displayName: 밀키트(탕)용기 (중)
+    amount: 1
+    unit: 개
+    cost: 510
+  total: 7581
 - store: wangsimni
   storeName: 왕십리
   name: 코다리알탕
@@ -225,7 +240,12 @@ recipes:
     amount: 2
     unit: 팩
     cost: 1466
-  total: 7721
+  - name: 용기
+    displayName: 밀키트(탕)용기 (중)
+    amount: 1
+    unit: 개
+    cost: 510
+  total: 8231
 - store: wangsimni
   storeName: 왕십리
   name: 대구탕
@@ -284,7 +304,12 @@ recipes:
     amount: 2
     unit: 팩
     cost: 1466
-  total: 9423
+  - name: 용기
+    displayName: 밀키트(탕)용기 (중)
+    amount: 1
+    unit: 개
+    cost: 510
+  total: 9933
 - store: wangsimni
   storeName: 왕십리
   name: 국산문어 해물탕
@@ -342,7 +367,12 @@ recipes:
     amount: 2
     unit: 팩
     cost: 1466
-  total: 14255
+  - name: 용기
+    displayName: 밀키트(탕)용기 (중)
+    amount: 1
+    unit: 개
+    cost: 510
+  total: 14765
 - store: wangsimni
   storeName: 왕십리
   name: 순살 아귀찜
@@ -392,7 +422,12 @@ recipes:
     amount: 2
     unit: 팩
     cost: 1300
-  total: 7235
+  - name: 용기
+    displayName: 밀키트(탕)용기 (중)
+    amount: 1
+    unit: 개
+    cost: 510
+  total: 7745
 - store: wangsimni
   storeName: 왕십리
   name: 프리미엄 낙곱새
@@ -437,7 +472,12 @@ recipes:
     amount: 2
     unit: 팩
     cost: 1020
-  total: 9113
+  - name: 용기
+    displayName: 밀키트(탕)용기 (중)
+    amount: 1
+    unit: 개
+    cost: 510
+  total: 9623
 - store: wangsimni
   storeName: 왕십리
   name: 주꾸미볶음
@@ -472,7 +512,12 @@ recipes:
     amount: 2
     unit: 팩
     cost: 1116
-  total: 7108
+  - name: 용기
+    displayName: 밀키트(탕)용기 (중)
+    amount: 1
+    unit: 개
+    cost: 510
+  total: 7618
 - store: wangsimni
   storeName: 왕십리
   name: 낙지볶음
@@ -507,7 +552,12 @@ recipes:
     amount: 2
     unit: 팩
     cost: 1116
-  total: 6521
+  - name: 용기
+    displayName: 밀키트(탕)용기 (중)
+    amount: 1
+    unit: 개
+    cost: 510
+  total: 7031
 - store: wangsimni
   storeName: 왕십리
   name: 가리비관자
