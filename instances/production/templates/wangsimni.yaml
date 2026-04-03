@@ -1,0 +1,16 @@
+instances:
+  # 생산기본계획 — 왕십리점
+  # 요일별 기본 생산량 템플릿. 한번 설정 후 시즌/메뉴 변경 시에만 수정.
+  # 매주 생산계획(ProductionPlan) 생성 시 이 값을 기준으로 사용.
+  # ID 형식: tmpl_ws_{prod_id 약어}
+
+  # ── 밀키트 ──────────────────────────────────────────────────
+  # - id: tmpl_ws_mk001
+  #   class: ProductionTemplate
+  #   data:
+  #     dailyQty: {mon: 0, tue: 0, wed: 0, thu: 0, fri: 0, sat: 0, sun: 0}
+  #     effectiveFrom: null
+  #     memo: null
+  #   relations:
+  #     forProduct: prod_mk_001  # 문어전복해물탕
+  #     atStore: store_wangsimni

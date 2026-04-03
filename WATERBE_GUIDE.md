@@ -61,7 +61,7 @@
 
 ## 클래스별 핵심 필드
 
-### Ingredient (재료) — `waterbe/instances/ingredients.yaml`
+### Ingredient (재료) — `waterbe/instances/master/ingredients.yaml`
 | 필드 | 설명 |
 |------|------|
 | name | 재료명 |
@@ -72,7 +72,7 @@
 | thawLossRate | 해동 손실률 (%, null=0%) |
 | trimLossRate | 손질 손실률 (%, null=0%) |
 
-### PurchaseSpec (발주규격) — `waterbe/instances/purchase_specs.yaml`
+### PurchaseSpec (발주규격) — `waterbe/instances/master/purchase_specs.yaml`
 | 필드 | 설명 |
 |------|------|
 | orderName | 발주명 (납품업체 기준 상품명) |
@@ -81,7 +81,7 @@
 | countPerKg | 미수 (개/kg, 새우·전복 등 개수 기준 재료만) |
 | forIngredient | 연결된 재료 ID |
 
-### PriceHistory (가격이력) — `waterbe/instances/price_history.yaml`
+### PriceHistory (가격이력) — `waterbe/instances/master/price_history.yaml`
 | 필드 | 설명 |
 |------|------|
 | unitPrice | 발주단위 기준 총금액 (원) |
@@ -91,7 +91,7 @@
 
 > **현재 단가** = 해당 pspec의 price_history 중 가장 최신 date 레코드
 
-### Recipe (레시피) — `waterbe/instances/recipes/{매장}.yaml`
+### Recipe (레시피) — `waterbe/instances/master/recipes/{매장}.yaml`
 | 필드 | 설명 |
 |------|------|
 | forProduct | 대상 상품 ID |
@@ -99,14 +99,63 @@
 | uses | 재료 목록 (ingredient, amount, unit) |
 | packaging | 포장재 목록 (pspec, quantity, unit) |
 
+### ProductionTemplate (생산기본계획) — `waterbe/instances/production/templates/{매장}.yaml`
+| 필드 | 설명 |
+|------|------|
+| dailyQty | 요일별 기본 생산량 {mon/tue/wed/thu/fri/sat/sun: n} (미생산 요일은 0) |
+| unit | 생산량 단위 (개 / kg) |
+| effectiveFrom | 적용 시작일 (YYYY-MM-DD) |
+| effectiveTo | 적용 종료일 (YYYY-MM-DD). **null = 현재 적용 중** |
+| memo | 메모 |
+
+> 매장×상품별 요일 기본 생산량. 변경 시 덮어쓰지 않고 새 레코드 추가 (이력 보존).
+> 현재 적용 중인 템플릿 = effectiveTo가 null인 레코드.
+> 주간 생산계획 생성 시 이 값을 dailyPlan으로 복사.
+
+**쓰기 규칙 (기본생산수량 변경 시)**
+```
+변경 시:
+  1. 기존 effectiveTo null 레코드 → effectiveTo: 오늘 전날 (YYYY-MM-DD) 로 업데이트
+  2. 새 레코드 추가:
+       effectiveFrom: 오늘
+       effectiveTo: null
+       dailyQty: 입력값 (미입력 요일은 0)
+       unit: 개 (기본값)
+
+ID 형식: tmpl_{ws/mp/wg}_{prod_id 약어}_{YYYYMMDD}
+예) tmpl_ws_mk001_20260402
+```
+
 ### ProductionPlan (생산계획) — `waterbe/instances/production/{매장}.yaml`
 | 필드 | 설명 |
 |------|------|
 | weekStart | 주 시작일 (YYYY-MM-DD, 월요일) |
-| dailyPlan | 요일별 계획 수량 {mon/tue/wed/thu/fri/sat/sun: n} |
+| dailyPlan | 요일별 계획 수량 {mon/tue/wed/thu/fri/sat/sun: n} (템플릿 dailyQty 복사) |
 | dailyAdjusted | 조정 요일만 입력 (나머지는 dailyPlan 사용) |
 | dailyActual | 실제 생산량 (완료 후 입력) |
 | status | planned / in_progress / completed |
+
+**쓰기 규칙**
+```
+생성:
+  - weekStart = 해당 주 월요일 (YYYY-MM-DD)
+  - dailyPlan = templates의 현재 dailyQty 그대로 복사
+  - status: planned
+  - ID 형식: plan_{ws/mp/wg}_YYYYMMDD_{prod_id 약어}
+    예) plan_ws_20260407_mk001
+
+조정 (dailyAdjusted):
+  - dailyPlan 수정 금지
+  - dailyAdjusted에 변경된 요일만 입력·업데이트
+
+실적 입력 (dailyActual):
+  - 날짜 → 요일 변환 후 해당 키에 입력
+  - 모든 요일 입력 완료 시 status → completed
+
+유효 생산량 계산 (dailyAdjusted 반영):
+  for each day in [mon..sun]:
+    qty = dailyAdjusted[day] if exists else dailyPlan[day]
+```
 
 ### InboundRecord (입고기록) — `waterbe/instances/inventory/inbound/{매장}.yaml`
 | 필드 | 설명 |
@@ -145,39 +194,46 @@
 ## 파일 구조
 ```
 waterbe/
-├── schema.yaml          # 스키마 정의 (클래스·속성·관계)
-├── WATERBE_GUIDE.md     # 이 문서
-├── PERSONNEL_GUIDE.md   # 인사관리 에이전트 가이드
-├── instances/
-│   ├── stores.yaml          # 매장 인스턴스
-│   ├── staff.yaml           # 직원 인스턴스 (텔레그램 ID·역할·매장)
-│   ├── schedules.yaml       # 일정 인스턴스 (전 매장 통합)
-│   ├── products.yaml        # 제품 인스턴스
-│   ├── categories.yaml      # 카테고리 인스턴스
-│   ├── ingredients.yaml     # 재료 인스턴스
-│   ├── purchase_specs.yaml  # 발주규격 인스턴스
-│   ├── price_history.yaml   # 가격이력 인스턴스
-│   ├── recipes/             # 레시피 인스턴스 (매장별 분리)
-│   │   ├── wangsimni.yaml
-│   │   ├── mapo.yaml
-│   │   └── wolgye.yaml
-│   ├── inventory/           # 재고실사 인스턴스 (매장별 분리)
-│   │   ├── wangsimni.yaml
-│   │   ├── mapo.yaml
-│   │   ├── wolgye.yaml
-│   │   └── inbound/         # 입고기록 (매장별 분리)
-│   │       ├── wangsimni.yaml
-│   │       ├── mapo.yaml
-│   │       └── wolgye.yaml
-│   ├── production/          # 생산계획 인스턴스 (매장별 분리)
-│   │   ├── wangsimni.yaml
-│   │   ├── mapo.yaml
-│   │   └── wolgye.yaml
-│   └── sales/               # 매출기록 인스턴스 (매장별 분리)
-│       ├── wangsimni.yaml
-│       ├── mapo.yaml
-│       └── wolgye.yaml
-└── CHANGE_REQUESTS.md   # 변경 요청 기록
+├── schema.yaml              # 스키마 정의 (클래스·속성·관계)
+├── WATERBE_GUIDE.md         # 이 문서
+├── PERSONNEL_GUIDE.md       # 인사관리 에이전트 가이드
+├── CHANGE_REQUESTS.md       # 변경 요청 기록
+└── instances/
+    ├── master/              # ★ 읽기 전용 기준 데이터 (봇 수정 금지)
+    │   ├── stores.yaml          # 매장
+    │   ├── categories.yaml      # 카테고리
+    │   ├── products.yaml        # 상품·판매가
+    │   ├── ingredients.yaml     # 재료 (원산지·성분·손실률)
+    │   ├── purchase_specs.yaml  # 발주규격
+    │   ├── price_history.yaml   # 가격이력
+    │   └── recipes/             # 레시피 (매장별)
+    │       ├── wangsimni.yaml
+    │       ├── mapo.yaml
+    │       └── wolgye.yaml
+    │
+    ├── staff.yaml           # 직원 (팀장만 편집)
+    ├── schedules.yaml       # 일정 (팀장만 편집)
+    │
+    ├── inventory/           # 재고실사 (팀장·직원 편집)
+    │   ├── wangsimni.yaml
+    │   ├── mapo.yaml
+    │   ├── wolgye.yaml
+    │   └── inbound/         # 입고기록 (팀장·직원 편집)
+    │       ├── wangsimni.yaml
+    │       ├── mapo.yaml
+    │       └── wolgye.yaml
+    ├── production/          # 생산계획 (팀장만 편집)
+    │   ├── wangsimni.yaml
+    │   ├── mapo.yaml
+    │   ├── wolgye.yaml
+    │   └── templates/       # 기본생산수량 (팀장만 편집)
+    │       ├── wangsimni.yaml
+    │       ├── mapo.yaml
+    │       └── wolgye.yaml
+    └── sales/               # 매출기록 (팀장·직원 편집)
+        ├── wangsimni.yaml
+        ├── mapo.yaml
+        └── wolgye.yaml
 ```
 
 ## 클래스 관계도
@@ -434,14 +490,41 @@ price_history.yaml → 최신 unitPrice
 1개 원가 = unitPrice (전복은 orderUnit이 1개 기준)
 ```
 
-### 예시 6: 생산계획 등록 (일별, 주 단위)
+### 예시 6a: 생산기본계획(템플릿) 등록·수정
 
 ```
-Step 1. 대상 상품·매장·주 시작일(월요일) 확인
-Step 2. 요일별 계획 수량 확인 (0이면 0으로 입력)
-Step 3. production/{매장}.yaml에 새 레코드 추가
+[최초 등록]
+Step 1. 대상 상품·매장 확인
+Step 2. 요일별 기본 생산량 확인 (0이면 미생산)
+Step 3. production/templates/{매장}.yaml에 레코드 추가
+        id: tmpl_{매장약어}_{prod_id약어}  (최초는 버전 suffix 없이)
+        dailyQty: {mon: n, tue: n, wed: n, thu: n, fri: n, sat: n, sun: n}
+        effectiveFrom: YYYY-MM-DD  (오늘 날짜 또는 적용일)
+        effectiveTo: null           (현재 적용 중)
+Step 4. 주간 합계 = dailyQty 값 합산해서 안내
+
+[기본값 변경 — "앞으로도 이렇게"]
+  덮어쓰기 금지. 반드시 아래 순서로:
+  Step 1. 기존 레코드의 effectiveTo = 변경일 전날 (YYYY-MM-DD)
+  Step 2. 새 레코드 추가
+          id: 기존 id + "_v2" (이후 변경마다 _v3, _v4 ...)
+          dailyQty: 새 수량
+          effectiveFrom: 변경일
+          effectiveTo: null
+          memo: 변경 사유
+
+[현재 적용 중인 템플릿 조회]
+  → effectiveTo가 null인 레코드 사용
+```
+
+### 예시 6b: 주간 생산계획(ProductionPlan) 등록
+
+```
+Step 1. 대상 매장·주 시작일(월요일) 확인
+Step 2. production/templates/{매장}.yaml → 해당 매장의 템플릿 전체 확인
+Step 3. 각 상품별로 production/{매장}.yaml에 새 레코드 추가
         id: plan_{매장약어}_{weekStart(YYYYMMDD)}_{prod_id약어}
-        dailyPlan: {mon: n, tue: n, wed: n, thu: n, fri: n, sat: n, sun: n}
+        dailyPlan: 템플릿의 dailyQty 그대로 복사
         status: planned
 Step 4. 총 계획량 = dailyPlan 합산값 안내
 
@@ -574,6 +657,7 @@ trim = trimLossRate (null이면 0)
 | PurchaseSpec | `pspec_` + 순번 | `pspec_001` |
 | PriceHistory | `ph_` + 순번 | `ph_001` |
 | InventorySnapshot | `snap_{매장약어}_YYYYMMDD_{재료약어}` | `snap_ws_20260315_낙지` |
+| ProductionTemplate | `tmpl_{매장약어}_{prod_id약어}` | `tmpl_ws_mk001` |
 | ProductionPlan | `plan_{매장약어}_YYYYMMDD_{prod_id약어}` | `plan_ws_20260317_mk001` |
 | SalesRecord | `sale_{매장약어}_YYYYMMDD_{prod_id약어}` | `sale_ws_20260315_mk001` |
 
@@ -640,7 +724,8 @@ trim = trimLossRate (null이면 0)
 
 ### 운영 데이터 미입력
 - 재고실사: inventory/ 전체 비어있음 (첫 실사 입력 대기)
-- 생산계획: production/ 전체 비어있음
+- 생산기본계획: production/templates/ 전체 비어있음 (요일별 기본량 입력 대기)
+- 생산계획: production/ 전체 비어있음 (템플릿 입력 후 주간 계획 생성 가능)
 - 매출기록: sales/ 전체 비어있음
 
 ### 미구현 기능

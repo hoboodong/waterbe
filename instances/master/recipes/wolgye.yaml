@@ -318,6 +318,49 @@ instances:
           quantity: 1
           unit: 세트
 
+  - id: recipe_wolgye_mk030
+    class: Recipe
+    data:
+      name: 대구매운탕 (월계)
+    relations:
+      forProduct: prod_mk_030
+      atStore: store_wolgye
+      uses:
+        - ingredient: ing_통대구
+          amount: 300
+          unit: g
+        - ingredient: ing_명란
+          amount: 80
+          unit: g
+        - ingredient: ing_명태곤이
+          amount: 80
+          unit: g
+        - ingredient: ing_솔방울오징어
+          amount: 120
+          unit: g
+        - ingredient: ing_홍합
+          amount: 80
+          unit: g
+        - ingredient: ing_콩나물
+          amount: 1
+          unit: 팩
+        - ingredient: ing_무
+          amount: 70
+          unit: g
+        - ingredient: ing_대파
+          amount: 30
+          unit: g
+        - ingredient: ing_홍고추
+          amount: 3
+          unit: g
+        - ingredient: ing_해물탕소스
+          amount: 2
+          unit: 팩
+      packaging:
+        - pspec: pspec_058
+          quantity: 1
+          unit: 세트
+
   # ── 월계점 단품 레시피 ──────────────────────────────────────
   - id: recipe_wolgye_sp012
     class: Recipe

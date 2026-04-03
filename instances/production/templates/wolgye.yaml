@@ -1,0 +1,167 @@
+instances:
+  # 생산기본계획 — 월계점
+  # 요일별 기본 생산량 템플릿. 한번 설정 후 시즌/메뉴 변경 시에만 수정.
+  # 매주 생산계획(ProductionPlan) 생성 시 이 값을 dailyPlan으로 복사.
+  # ID 형식: tmpl_wg_{prod_id 약어}
+
+  # ── 밀키트 ──────────────────────────────────────────────────
+
+  - id: tmpl_wg_mk013
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 2, tue: 2, wed: 2, thu: 2, fri: 4, sat: 4, sun: 4}
+      unit: 개
+      effectiveFrom: "2026-04-01"
+      effectiveTo: null
+      memo: null
+    relations:
+      forProduct: prod_mk_013  # 문어전복해물탕
+      atStore: store_wolgye
+
+  - id: tmpl_wg_mk014
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 2, tue: 2, wed: 2, thu: 2, fri: 4, sat: 4, sun: 4}
+      unit: 개
+      effectiveFrom: "2026-04-01"
+      effectiveTo: null
+      memo: null
+    relations:
+      forProduct: prod_mk_014  # 낙지전복해물탕
+      atStore: store_wolgye
+
+  - id: tmpl_wg_mk015
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 8, sun: 6}
+      unit: 개
+      effectiveFrom: "2026-04-01"
+      effectiveTo: null
+      memo: null
+    relations:
+      forProduct: prod_mk_015  # 동태알탕
+      atStore: store_wolgye
+
+  - id: tmpl_wg_mk016
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 6, sun: 6}
+      unit: 개
+      effectiveFrom: "2026-04-01"
+      effectiveTo: null
+      memo: null
+    relations:
+      forProduct: prod_mk_016  # 볼락 매운탕
+      atStore: store_wolgye
+
+  - id: tmpl_wg_mk018
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 2, tue: 2, wed: 2, thu: 2, fri: 4, sat: 4, sun: 4}
+      unit: 개
+      effectiveFrom: "2026-04-01"
+      effectiveTo: null
+      memo: null
+    relations:
+      forProduct: prod_mk_018  # 낙곱새
+      atStore: store_wolgye
+
+  - id: tmpl_wg_mk019
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 6, sun: 6}
+      unit: 개
+      effectiveFrom: "2026-04-01"
+      effectiveTo: null
+      memo: null
+    relations:
+      forProduct: prod_mk_019  # 주꾸미볶음
+      atStore: store_wolgye
+
+  - id: tmpl_wg_mk020
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 6, sun: 6}
+      unit: 개
+      effectiveFrom: "2026-04-01"
+      effectiveTo: null
+      memo: null
+    relations:
+      forProduct: prod_mk_020  # 낙지볶음
+      atStore: store_wolgye
+
+  - id: tmpl_wg_mk030
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 6, sat: 6, sun: 6}
+      unit: 개
+      effectiveFrom: "2026-04-01"
+      effectiveTo: null
+      memo: null
+    relations:
+      forProduct: prod_mk_030  # 대구매운탕
+      atStore: store_wolgye
+
+  # ── 단품 (팩) ────────────────────────────────────────────────
+
+  - id: tmpl_wg_sp015
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 10, tue: 10, wed: 10, thu: 10, fri: 20, sat: 30, sun: 20}
+      unit: 개
+      effectiveFrom: "2026-04-01"
+      effectiveTo: null
+      memo: null
+    relations:
+      forProduct: prod_sp_015  # 가리비관자
+      atStore: store_wolgye
+
+  - id: tmpl_wg_sp027
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 10, tue: 10, wed: 10, thu: 10, fri: 15, sat: 20, sun: 15}
+      unit: 개
+      effectiveFrom: "2026-04-01"
+      effectiveTo: null
+      memo: null
+    relations:
+      forProduct: prod_sp_027  # 문어소라슬라이스
+      atStore: store_wolgye
+
+  # ── 단품 (중량) — 단위: kg ────────────────────────────────────
+
+  - id: tmpl_wg_sp012
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 6, sat: 6, sun: 6}
+      unit: kg
+      effectiveFrom: "2026-04-01"
+      effectiveTo: null
+      memo: null
+    relations:
+      forProduct: prod_sp_012  # 흰다리새우
+      atStore: store_wolgye
+
+  - id: tmpl_wg_sp013
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 8, sat: 10, sun: 8}
+      unit: kg
+      effectiveFrom: "2026-04-01"
+      effectiveTo: null
+      memo: null
+    relations:
+      forProduct: prod_sp_013  # 흰다리새우살(대)
+      atStore: store_wolgye
+
+  - id: tmpl_wg_sp014
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 5, sat: 5, sun: 5}
+      unit: kg
+      effectiveFrom: "2026-04-01"
+      effectiveTo: null
+      memo: null
+    relations:
+      forProduct: prod_sp_014  # 흰다리새우살(소)
+      atStore: store_wolgye

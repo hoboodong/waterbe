@@ -376,7 +376,6 @@ instances:
       defaultUnit: g
       composition: 꽃게 100%
       thawLossRate: 20
-      thawLossRate: 20
 
   - id: ing_게_바레인
     class: Ingredient

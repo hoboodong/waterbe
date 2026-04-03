@@ -1,4 +1,4 @@
-version: "2.1"
+version: "2.2"
 description: 워터비 온톨로지 스키마
 
 classes:
@@ -249,6 +249,46 @@ classes:
         cardinality: many-to-one
         label: 해당 매장
 
+  ProductionTemplate:
+    label: 생산기본계획
+    description: 매장별 상품 요일 기본 생산량 템플릿. 주간 생산계획(ProductionPlan) 생성 시 기준으로 사용. (forProduct, atStore) 조합은 유일 — 변경 시 기존 레코드 수정
+    properties:
+      dailyQty:
+        type: object
+        required: true
+        label: 요일별 기본 생산량. 키는 mon/tue/wed/thu/fri/sat/sun. 미생산 요일은 0. 단위는 unit 필드 참고
+        # 예: {mon: 10, tue: 10, wed: 10, thu: 10, fri: 12, sat: 18, sun: 15}
+      unit:
+        type: string
+        required: false
+        label: 생산량 단위 (기본값 개. 중량 단위 상품은 kg)
+        nullable: true
+        # 예: 개, kg
+      effectiveFrom:
+        type: string
+        required: true
+        label: 적용 시작일 (YYYY-MM-DD)
+      effectiveTo:
+        type: string
+        required: false
+        label: 적용 종료일 (YYYY-MM-DD). null이면 현재 적용 중
+        nullable: true
+        # 변경 시 기존 레코드의 effectiveTo를 전날로 채우고 새 레코드 추가 (덮어쓰기 금지)
+      memo:
+        type: string
+        required: false
+        label: 메모 (변경 사유 등)
+        nullable: true
+    relations:
+      forProduct:
+        target: Product
+        cardinality: many-to-one
+        label: 대상 상품
+      atStore:
+        target: Store
+        cardinality: many-to-one
+        label: 해당 매장
+
   ProductionPlan:
     label: 생산계획
     description: 매장별 주간 생산 계획. 요일별 예상 생산량을 입력. 조정 시 dailyAdjusted 입력 (dailyPlan 덮어쓰기 금지)
@@ -437,6 +477,11 @@ constraints:
   - "PriceHistory는 덮어쓰지 않고 변경 시 새 레코드를 추가한다"
   - "InventorySnapshot은 덮어쓰지 않고 실사할 때마다 새 레코드를 추가한다"
   - "InventorySnapshot.date는 YYYY-MM-DD 형식이어야 한다"
+  - "ProductionTemplate.dailyQty의 키는 mon/tue/wed/thu/fri/sat/sun 이어야 한다"
+  - "ProductionTemplate.dailyQty의 값은 0 이상의 정수여야 한다"
+  - "ProductionTemplate.effectiveTo는 effectiveFrom 이후여야 한다"
+  - "ProductionTemplate은 같은 (forProduct, atStore) 조합에서 effectiveTo가 null인 레코드가 최대 1개여야 한다 (현재 적용 중인 템플릿은 하나)"
+  - "ProductionTemplate 변경 시 기존 레코드의 effectiveTo를 전날로 채우고 새 레코드를 추가한다 (덮어쓰기 금지)"
   - "ProductionPlan.weekStart는 YYYY-MM-DD 형식의 월요일이어야 한다"
   - "ProductionPlan.status는 planned / in_progress / completed 중 하나여야 한다"
   - "ProductionPlan은 (forProduct, atStore, weekStart) 조합이 유일해야 한다"

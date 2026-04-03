@@ -666,3 +666,15 @@ instances:
       belongsTo: cat_single
       soldAt:
         - store_wolgye
+
+  # ── 밀키트 (월계점 추가) ───────────────────────────────────
+  - id: prod_mk_030
+    class: Product
+    data:
+      name: 대구매운탕
+      unit: 1팩
+      price: 19800
+    relations:
+      belongsTo: cat_mealkit
+      soldAt:
+        - store_wolgye
