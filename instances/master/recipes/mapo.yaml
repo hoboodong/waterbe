@@ -5,6 +5,9 @@ instances:
     class: Recipe
     data:
       name: 문어전복해물탕 (마포)
+    price: 23800
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
     relations:
       forProduct: prod_mk_021
       atStore: store_mapo

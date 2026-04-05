@@ -5,7 +5,7 @@ instances:
     data:
       name: 문어전복해물탕
       unit: 1팩
-      price: 23800
+      # price: 23800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -16,7 +16,7 @@ instances:
     data:
       name: 낙지전복해물탕
       unit: 1팩
-      price: 23800
+      # price: 23800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -27,7 +27,7 @@ instances:
     data:
       name: 알탕
       unit: 1팩
-      price: 15800
+      # price: 15800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -38,7 +38,7 @@ instances:
     data:
       name: 코다리알탕
       unit: 1팩
-      price: 15800
+      # price: 15800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -49,7 +49,7 @@ instances:
     data:
       name: 시원한 새우탕
       unit: 1팩
-      price: 13800
+      # price: 13800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -60,7 +60,7 @@ instances:
     data:
       name: 골뱅이탕
       unit: 1팩
-      price: 13800
+      # price: 13800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -71,7 +71,7 @@ instances:
     data:
       name: 대구탕
       unit: 1팩
-      price: 19800
+      # price: 19800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -82,7 +82,7 @@ instances:
     data:
       name: 국산문어 해물탕
       unit: 1팩
-      price: 25800
+      # price: 25800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -93,7 +93,7 @@ instances:
     data:
       name: 순살 아귀찜
       unit: 1팩
-      price: 19800
+      # price: 19800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -104,7 +104,7 @@ instances:
     data:
       name: 프리미엄 낙곱새
       unit: 1팩
-      price: 25800
+      # price: 25800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -115,7 +115,7 @@ instances:
     data:
       name: 주꾸미볶음
       unit: 1팩
-      price: 15800
+      # price: 15800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -126,7 +126,7 @@ instances:
     data:
       name: 낙지볶음
       unit: 1팩
-      price: 15800
+      # price: 15800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -138,7 +138,7 @@ instances:
     data:
       name: 가리비관자
       unit: 1팩
-      price: 9980
+      # price: 9980  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -149,7 +149,7 @@ instances:
     data:
       name: 흰다리새우
       unit: 100g당
-      price: 3480
+      # price: 3480  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -160,7 +160,7 @@ instances:
     data:
       name: 손질 흰다리새우살(대)
       unit: 100g당
-      price: 3980
+      # price: 3980  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -171,7 +171,7 @@ instances:
     data:
       name: 손질 흰다리새우살
       unit: 100g당
-      price: 3480
+      # price: 3480  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -182,7 +182,7 @@ instances:
     data:
       name: 활전복
       unit: 1팩
-      price: 9980
+      # price: 9980  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -193,7 +193,7 @@ instances:
     data:
       name: 국산홍가리비살
       unit: 100g당
-      price: 2980
+      # price: 2980  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -204,7 +204,7 @@ instances:
     data:
       name: 국산흑골뱅이
       unit: 100g당
-      price: null  # 가격 미기입
+      # price: null  # 가격 미기입  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -215,7 +215,7 @@ instances:
     data:
       name: 백생합
       unit: 100g당
-      price: 990
+      # price: 990  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -226,7 +226,7 @@ instances:
     data:
       name: 손질 갑오징어
       unit: 100g당
-      price: 3280
+      # price: 3280  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -237,7 +237,7 @@ instances:
     data:
       name: 손질 낙지
       unit: 100g당
-      price: 3280
+      # price: 3280  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -248,7 +248,7 @@ instances:
     data:
       name: 손질 주꾸미
       unit: 100g당
-      price: 3280
+      # price: 3280  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -260,7 +260,7 @@ instances:
     data:
       name: 국산 알베기 간장게장
       unit: 1팩
-      price: 23800
+      # price: 23800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_ganjang
       soldAt:
@@ -271,7 +271,7 @@ instances:
     data:
       name: 간장게장
       unit: 1팩
-      price: 15800
+      # price: 15800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_ganjang
       soldAt:
@@ -282,7 +282,7 @@ instances:
     data:
       name: 간장 새우장
       unit: 1팩
-      price: 9980
+      # price: 9980  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_ganjang
       soldAt:
@@ -294,7 +294,7 @@ instances:
     data:
       name: 문어전복해물탕
       unit: 1팩
-      price: 23800
+      # price: 23800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -305,7 +305,7 @@ instances:
     data:
       name: 낙지전복해물탕
       unit: 1팩
-      price: 23800
+      # price: 23800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -316,7 +316,7 @@ instances:
     data:
       name: 동태알탕
       unit: 1팩
-      price: 19800
+      # price: 19800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -327,7 +327,7 @@ instances:
     data:
       name: 푸짐한 알탕
       unit: 1팩
-      price: 19800
+      # price: 19800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -338,7 +338,7 @@ instances:
     data:
       name: 낙곱새
       unit: 1팩
-      price: 19800
+      # price: 19800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -349,7 +349,7 @@ instances:
     data:
       name: 주꾸미볶음
       unit: 1팩
-      price: 15800
+      # price: 15800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -360,7 +360,7 @@ instances:
     data:
       name: 낙지볶음
       unit: 1팩
-      price: 15800
+      # price: 15800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -371,7 +371,7 @@ instances:
     data:
       name: 갑오징어볶음
       unit: 1팩
-      price: 15800
+      # price: 15800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -382,7 +382,7 @@ instances:
     data:
       name: 순살아귀찜
       unit: 1팩
-      price: 19800
+      # price: 19800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -394,7 +394,7 @@ instances:
     data:
       name: 흰다리새우
       unit: 100g당
-      price: 3480
+      # price: 3480  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -405,7 +405,7 @@ instances:
     data:
       name: 흰다리새우살(꼬리있음)
       unit: 100g당
-      price: 3980
+      # price: 3980  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -416,7 +416,7 @@ instances:
     data:
       name: 흰다리새우살
       unit: 100g당
-      price: 3480
+      # price: 3480  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -427,7 +427,7 @@ instances:
     data:
       name: 가리비관자
       unit: 1팩
-      price: 9980
+      # price: 9980  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -438,7 +438,7 @@ instances:
     data:
       name: 주꾸미
       unit: 100g당
-      price: 3280
+      # price: 3280  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -449,7 +449,7 @@ instances:
     data:
       name: 손질낙지
       unit: 100g당
-      price: 3280
+      # price: 3280  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -460,7 +460,7 @@ instances:
     data:
       name: 절단낙지
       unit: 100g당
-      price: 3280
+      # price: 3280  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -471,7 +471,7 @@ instances:
     data:
       name: 알곤이세트
       unit: 100g당
-      price: 3280
+      # price: 3280  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -483,7 +483,7 @@ instances:
     data:
       name: 간장새우장
       unit: 1팩
-      price: 9980
+      # price: 9980  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_ganjang
       soldAt:
@@ -495,7 +495,7 @@ instances:
     data:
       name: 문어전복해물탕
       unit: 1팩
-      price: 23800
+      # price: 23800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -506,7 +506,7 @@ instances:
     data:
       name: 낙지전복해물탕
       unit: 1팩
-      price: 23800
+      # price: 23800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -517,7 +517,7 @@ instances:
     data:
       name: 동태알탕
       unit: 1팩
-      price: 17800
+      # price: 17800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -528,7 +528,7 @@ instances:
     data:
       name: 볼락 매운탕
       unit: 1팩
-      price: 19800
+      # price: 19800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -539,7 +539,7 @@ instances:
     data:
       name: 얼큰한 꽃게탕
       unit: 1팩
-      price: 17800
+      # price: 17800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -550,7 +550,7 @@ instances:
     data:
       name: 낙곱새
       unit: 1팩
-      price: 19800
+      # price: 19800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -561,7 +561,7 @@ instances:
     data:
       name: 주꾸미볶음
       unit: 1팩
-      price: 15800
+      # price: 15800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -572,7 +572,7 @@ instances:
     data:
       name: 낙지볶음
       unit: 1팩
-      price: 15800
+      # price: 15800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:
@@ -584,7 +584,7 @@ instances:
     data:
       name: 흰다리새우
       unit: 100g당
-      price: 3480
+      # price: 3480  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -595,7 +595,7 @@ instances:
     data:
       name: 흰다리새우살(대)
       unit: 100g당
-      price: 3980
+      # price: 3980  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -606,7 +606,7 @@ instances:
     data:
       name: 흰다리새우살
       unit: 100g당
-      price: 3480
+      # price: 3480  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -617,7 +617,7 @@ instances:
     data:
       name: 가리비관자
       unit: 1팩
-      price: 9900
+      # price: 9900  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -628,7 +628,7 @@ instances:
     data:
       name: 알곤이세트
       unit: 100g당
-      price: 3280
+      # price: 3280  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -639,7 +639,7 @@ instances:
     data:
       name: 주꾸미
       unit: 100g당
-      price: 3280
+      # price: 3280  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -650,7 +650,7 @@ instances:
     data:
       name: 절단낙지
       unit: 100g당
-      price: 3280
+      # price: 3280  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -661,7 +661,7 @@ instances:
     data:
       name: 문어소라슬라이스
       unit: 1팩
-      price: 9900
+      # price: 9900  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_single
       soldAt:
@@ -673,7 +673,7 @@ instances:
     data:
       name: 대구매운탕
       unit: 1팩
-      price: 19800
+      # price: 19800  # 가격은 Recipe.price로 관리
     relations:
       belongsTo: cat_mealkit
       soldAt:

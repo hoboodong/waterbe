@@ -3,6 +3,9 @@ instances:
   class: Recipe
   data:
     name: 문어전복해물탕 (왕십리)
+    price: 23800
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_mk_001
     atStore: store_wangsimni
@@ -48,6 +51,9 @@ instances:
   class: Recipe
   data:
     name: 낙지전복해물탕 (왕십리)
+    price: 23800
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_mk_002
     atStore: store_wangsimni
@@ -93,6 +99,9 @@ instances:
   class: Recipe
   data:
     name: 알탕 (왕십리)
+    price: 15800
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_mk_003
     atStore: store_wangsimni
@@ -135,6 +144,9 @@ instances:
   class: Recipe
   data:
     name: 코다리알탕 (왕십리)
+    price: 15800
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_mk_004
     atStore: store_wangsimni
@@ -177,6 +189,9 @@ instances:
   class: Recipe
   data:
     name: 대구탕 (왕십리)
+    price: 19800
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_mk_007
     atStore: store_wangsimni
@@ -222,6 +237,9 @@ instances:
   class: Recipe
   data:
     name: 국산문어 해물탕 (왕십리)
+    price: 25800
+    effectiveFrom: "2026-01-01"
+    effectiveTo: "2026-04-04"
   relations:
     forProduct: prod_mk_008
     atStore: store_wangsimni
@@ -263,10 +281,61 @@ instances:
     - pspec: pspec_058
       quantity: 1
       unit: 세트
+- id: recipe_wangsimni_mk008_v2
+  class: Recipe
+  data:
+    name: 국산문어 해물탕 (왕십리)
+    price: 23800
+    effectiveFrom: "2026-04-05"
+    effectiveTo: null
+  relations:
+    forProduct: prod_mk_008
+    atStore: store_wangsimni
+    uses:
+    - ingredient: ing_자숙문어
+      amount: 200
+      unit: g
+    - ingredient: ing_전복
+      amount: 1
+      unit: 마리
+    - ingredient: ing_새우
+      amount: 2
+      unit: 마리
+    - ingredient: ing_솔방울오징어
+      amount: 150
+      unit: g
+    - ingredient: ing_백생합
+      amount: 130
+      unit: g
+    - ingredient: ing_홍합
+      amount: 80
+      unit: g
+    - ingredient: ing_콩나물
+      amount: 1
+      unit: 팩
+    - ingredient: ing_무
+      amount: 70
+      unit: g
+    - ingredient: ing_대파
+      amount: 30
+      unit: g
+    - ingredient: ing_홍고추
+      amount: 3
+      unit: g
+    - ingredient: ing_해물탕소스
+      amount: 2
+      unit: 팩
+    packaging:
+    - pspec: pspec_058
+      quantity: 1
+      unit: 세트
 - id: recipe_wangsimni_mk009
   class: Recipe
   data:
     name: 순살 아귀찜 (왕십리)
+    price: 19800
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_mk_009
     atStore: store_wangsimni
@@ -306,6 +375,9 @@ instances:
   class: Recipe
   data:
     name: 프리미엄 낙곱새 (왕십리)
+    price: 25800
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_mk_010
     atStore: store_wangsimni
@@ -342,6 +414,9 @@ instances:
   class: Recipe
   data:
     name: 주꾸미볶음 (왕십리)
+    price: 15800
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_mk_011
     atStore: store_wangsimni
@@ -372,6 +447,9 @@ instances:
   class: Recipe
   data:
     name: 낙지볶음 (왕십리)
+    price: 15800
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_mk_012
     atStore: store_wangsimni
@@ -402,6 +480,9 @@ instances:
   class: Recipe
   data:
     name: 가리비관자 (왕십리)
+    price: 9980
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_sp_001
     atStore: store_wangsimni
@@ -423,6 +504,9 @@ instances:
   class: Recipe
   data:
     name: 흰다리새우 (왕십리)
+    price: 3480
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_sp_002
     atStore: store_wangsimni
@@ -441,6 +525,9 @@ instances:
   class: Recipe
   data:
     name: 손질 흰다리새우살(대) (왕십리)
+    price: 3980
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_sp_003
     atStore: store_wangsimni
@@ -459,6 +546,9 @@ instances:
   class: Recipe
   data:
     name: 손질 흰다리새우살 (왕십리)
+    price: 3480
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_sp_004
     atStore: store_wangsimni
@@ -473,6 +563,9 @@ instances:
   class: Recipe
   data:
     name: 활전복 (왕십리)
+    price: 9980
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_sp_005
     atStore: store_wangsimni
@@ -484,6 +577,9 @@ instances:
   class: Recipe
   data:
     name: 국산홍가리비살 (왕십리)
+    price: 2980
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_sp_006
     atStore: store_wangsimni
@@ -495,6 +591,9 @@ instances:
   class: Recipe
   data:
     name: 국산흑골뱅이 (왕십리)
+    price: null
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_sp_007
     atStore: store_wangsimni
@@ -506,6 +605,9 @@ instances:
   class: Recipe
   data:
     name: 백생합 (왕십리)
+    price: 990
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_sp_008
     atStore: store_wangsimni
@@ -517,6 +619,9 @@ instances:
   class: Recipe
   data:
     name: 손질 갑오징어 (왕십리)
+    price: 3280
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_sp_009
     atStore: store_wangsimni
@@ -528,6 +633,9 @@ instances:
   class: Recipe
   data:
     name: 손질 낙지 (왕십리)
+    price: 3280
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_sp_010
     atStore: store_wangsimni
@@ -543,6 +651,9 @@ instances:
   class: Recipe
   data:
     name: 손질 주꾸미 (왕십리)
+    price: 3280
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_sp_011
     atStore: store_wangsimni
@@ -558,6 +669,9 @@ instances:
   class: Recipe
   data:
     name: 국산 알베기 간장게장 (왕십리)
+    price: 23800
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_gj_001
     atStore: store_wangsimni
@@ -566,6 +680,9 @@ instances:
   class: Recipe
   data:
     name: 간장게장 (왕십리)
+    price: 15800
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_gj_002
     atStore: store_wangsimni
@@ -574,6 +691,9 @@ instances:
   class: Recipe
   data:
     name: 간장 새우장 (왕십리)
+    price: 9980
+    effectiveFrom: "2026-01-01"
+    effectiveTo: null
   relations:
     forProduct: prod_gj_003
     atStore: store_wangsimni

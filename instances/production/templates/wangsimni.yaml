@@ -14,3 +14,25 @@ instances:
   #   relations:
   #     forProduct: prod_mk_001  # 문어전복해물탕
   #     atStore: store_wangsimni
+
+  - id: tmpl_ws_mk001
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 10, sun: 6}
+      effectiveFrom: "2026-04-04"
+      effectiveTo: null
+      memo: null
+    relations:
+      forProduct: prod_mk_001
+      atStore: store_wangsimni
+
+  - id: tmpl_ws_mk002
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 10, sun: 6}
+      effectiveFrom: "2026-04-04"
+      effectiveTo: null
+      memo: null
+    relations:
+      forProduct: prod_mk_002
+      atStore: store_wangsimni
