@@ -5,9 +5,9 @@ instances:
     class: Recipe
     data:
       name: 문어전복해물탕 (마포)
-    price: 23800
-    effectiveFrom: "2026-01-01"
-    effectiveTo: null
+      price: 23800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_021
       atStore: store_mapo
@@ -50,6 +50,9 @@ instances:
     class: Recipe
     data:
       name: 낙지전복해물탕 (마포)
+      price: 23800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_022
       atStore: store_mapo
@@ -92,6 +95,9 @@ instances:
     class: Recipe
     data:
       name: 동태알탕 (마포)
+      price: 19800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_023
       atStore: store_mapo
@@ -134,6 +140,9 @@ instances:
     class: Recipe
     data:
       name: 푸짐한 알탕 (마포)
+      price: 19800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_024
       atStore: store_mapo
@@ -161,6 +170,9 @@ instances:
     class: Recipe
     data:
       name: 낙곱새 (마포)
+      price: 19800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_025
       atStore: store_mapo
@@ -194,6 +206,9 @@ instances:
     class: Recipe
     data:
       name: 주꾸미볶음 (마포)
+      price: 15800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_026
       atStore: store_mapo
@@ -221,6 +236,9 @@ instances:
     class: Recipe
     data:
       name: 낙지볶음 (마포)
+      price: 15800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_027
       atStore: store_mapo
@@ -248,6 +266,9 @@ instances:
     class: Recipe
     data:
       name: 갑오징어볶음 (마포)
+      price: 15800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_028
       atStore: store_mapo
@@ -275,6 +296,9 @@ instances:
     class: Recipe
     data:
       name: 순살아귀찜 (마포)
+      price: 19800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_029
       atStore: store_mapo
@@ -312,6 +336,9 @@ instances:
     class: Recipe
     data:
       name: 흰다리새우 (마포)
+      price: 3480
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_019
       atStore: store_mapo
@@ -327,6 +354,9 @@ instances:
     class: Recipe
     data:
       name: 흰다리새우살(꼬리있음) (마포)
+      price: 3980
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_020
       atStore: store_mapo
@@ -342,6 +372,9 @@ instances:
     class: Recipe
     data:
       name: 흰다리새우살 (마포)
+      price: 3480
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_021
       atStore: store_mapo
@@ -357,6 +390,9 @@ instances:
     class: Recipe
     data:
       name: 가리비관자 (마포)
+      price: 9980
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_022
       atStore: store_mapo
@@ -375,6 +411,9 @@ instances:
     class: Recipe
     data:
       name: 주꾸미 (마포)
+      price: 3280
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_023
       atStore: store_mapo
@@ -387,6 +426,9 @@ instances:
     class: Recipe
     data:
       name: 손질낙지 (마포)
+      price: 3280
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_024
       atStore: store_mapo
@@ -399,6 +441,9 @@ instances:
     class: Recipe
     data:
       name: 절단낙지 (마포)
+      price: 3280
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_025
       atStore: store_mapo
@@ -411,6 +456,9 @@ instances:
     class: Recipe
     data:
       name: 알곤이세트 (마포)
+      price: 3280
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_026
       atStore: store_mapo
@@ -430,6 +478,9 @@ instances:
     class: Recipe
     data:
       name: 간장새우장 (마포)
+      price: 9980
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_gj_004
       atStore: store_mapo

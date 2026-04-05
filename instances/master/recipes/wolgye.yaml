@@ -5,9 +5,9 @@ instances:
     class: Recipe
     data:
       name: 문어전복해물탕 (월계)
-    price: 23800
-    effectiveFrom: "2026-01-01"
-    effectiveTo: null
+      price: 23800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_013
       atStore: store_wolgye
@@ -57,6 +57,9 @@ instances:
     class: Recipe
     data:
       name: 낙지전복해물탕 (월계)
+      price: 23800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_014
       atStore: store_wolgye
@@ -106,6 +109,9 @@ instances:
     class: Recipe
     data:
       name: 동태알탕 (월계)
+      price: 17800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_015
       atStore: store_wolgye
@@ -149,6 +155,9 @@ instances:
     class: Recipe
     data:
       name: 볼락 매운탕 (월계)
+      price: 19800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_016
       atStore: store_wolgye
@@ -186,6 +195,9 @@ instances:
     class: Recipe
     data:
       name: 얼큰한 꽃게탕 (월계)
+      price: 17800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_017
       atStore: store_wolgye
@@ -226,6 +238,9 @@ instances:
     class: Recipe
     data:
       name: 낙곱새 (월계)
+      price: 19800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_018
       atStore: store_wolgye
@@ -263,6 +278,9 @@ instances:
     class: Recipe
     data:
       name: 주꾸미볶음 (월계)
+      price: 15800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_019
       atStore: store_wolgye
@@ -294,6 +312,9 @@ instances:
     class: Recipe
     data:
       name: 낙지볶음 (월계)
+      price: 15800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_020
       atStore: store_wolgye
@@ -325,6 +346,9 @@ instances:
     class: Recipe
     data:
       name: 대구매운탕 (월계)
+      price: 19800
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_mk_030
       atStore: store_wolgye
@@ -369,6 +393,9 @@ instances:
     class: Recipe
     data:
       name: 흰다리새우 (월계)
+      price: 3480
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_012
       atStore: store_wolgye
@@ -385,6 +412,9 @@ instances:
     class: Recipe
     data:
       name: 흰다리새우살(대) (월계)
+      price: 3980
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_013
       atStore: store_wolgye
@@ -401,6 +431,9 @@ instances:
     class: Recipe
     data:
       name: 흰다리새우살 (월계)
+      price: 3480
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_014
       atStore: store_wolgye
@@ -413,6 +446,9 @@ instances:
     class: Recipe
     data:
       name: 가리비관자 (월계)
+      price: 9900
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_015
       atStore: store_wolgye
@@ -432,6 +468,9 @@ instances:
     class: Recipe
     data:
       name: 알곤이세트 (월계)
+      price: 3280
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_016
       atStore: store_wolgye
@@ -450,6 +489,9 @@ instances:
     class: Recipe
     data:
       name: 주꾸미 (월계)
+      price: 3280
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_017
       atStore: store_wolgye
@@ -466,6 +508,9 @@ instances:
     class: Recipe
     data:
       name: 절단낙지 (월계)
+      price: 3280
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_018
       atStore: store_wolgye
@@ -482,6 +527,9 @@ instances:
     class: Recipe
     data:
       name: 문어소라슬라이스 (월계)
+      price: 9900
+      effectiveFrom: "2026-01-01"
+      effectiveTo: null
     relations:
       forProduct: prod_sp_027
       atStore: store_wolgye
