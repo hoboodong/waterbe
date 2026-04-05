@@ -229,21 +229,36 @@ classes:
       quantity:
         type: number
         required: true
-        label: 실사 수량
+        label: 총 수량 (계산용. 벌크=kg, 소분포장=개)
       unit:
         type: string
         required: true
-        label: 단위 (kg, 개 등)
+        label: 단위 (kg 또는 개)
+      boxes:
+        type: number
+        required: false
+        label: 미개봉 박스 수
+        nullable: true
+      openRemainder:
+        type: number
+        required: false
+        label: 개봉 박스 잔량 (벌크=kg, 소분포장=개)
+        nullable: true
       memo:
         type: string
         required: false
-        label: 메모
+        label: 사람이 읽기 쉬운 수량 표기 (예: "2박스 + 5kg", "1박스 40팩")
         nullable: true
     relations:
       forIngredient:
         target: Ingredient
         cardinality: many-to-one
         label: 해당 재료
+      forPurchaseSpec:
+        target: PurchaseSpec
+        cardinality: many-to-one
+        label: 기준 발주규격 (박스 크기 참조용)
+        nullable: true
       atStore:
         target: Store
         cardinality: many-to-one
