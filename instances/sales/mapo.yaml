@@ -1,4 +1,4 @@
-instances:
-  # 매출기록 — 마포점
-  # 하루 단위 수기 입력
-  # ID 형식: sale_mp_YYYYMMDD_{prod_id 약어}
+# 매출기록 — 마포점
+# 하루 단위 수기 입력
+# ID 형식: sale_mp_YYYYMMDD_{prod_id 약어}
+instances: []

@@ -35,7 +35,7 @@ classes:
       unit:
         type: string
         required: true
-        label: 판매 단위 (예: 1팩, 100g당)
+        label: "판매 단위 (예: 1팩, 100g당)"
       price:
         type: number
         required: false
@@ -90,27 +90,27 @@ classes:
       composition:
         type: string
         required: false
-        label: 성분 표기 (예: 주꾸미 100%)
+        label: "성분 표기 (예: 주꾸미 100%)"
         nullable: true
       origin:
         type: string
         required: false
-        label: 원산지 (예: 국산, 중국산)
+        label: "원산지 (예: 국산, 중국산)"
         nullable: true
       allergen:
         type: string
         required: false
-        label: 알레르기 유발물질 (예: 새우, 이산화황 함유)
+        label: "알레르기 유발물질 (예: 새우, 이산화황 함유)"
         nullable: true
       thawLossRate:
         type: number
         required: false
-        label: 해동 손실률 (%, 예: 15 → 15% 손실)
+        label: "해동 손실률 (%, 예: 15 → 15% 손실)"
         nullable: true
       trimLossRate:
         type: number
         required: false
-        label: 손질 손실률 (%, 예: 5 → 5% 손실)
+        label: "손질 손실률 (%, 예: 5 → 5% 손실)"
         nullable: true
       # 실수율(%) = (1 - thawLossRate/100) × (1 - trimLossRate/100) × 100
 
@@ -178,19 +178,24 @@ classes:
       orderName:
         type: string
         required: true
-        label: 발주명 (납품업체/시장 기준 상품명, 예: PDTO새우살26-30p(페루산))
+        label: "발주명 (납품업체/시장 기준 상품명, 예: PDTO새우살26-30p(페루산))"
       orderUnit:
         type: string
         required: true
-        label: 발주 단위 (예: 9kg, 1박스, 1줄)
+        label: "발주 단위 (예: 9kg, 1박스, 1줄)"
       category:
         type: string
         required: true
         label: 품목 분류 (재료 / 포장재 / 소모품)
+      packCount:
+        type: number
+        required: false
+        label: "포장 수량 (예: 1박스 40팩이면 40)"
+        nullable: true
       countPerKg:
         type: number
         required: false
-        label: 미수 (개/kg, 예: 25미 → 25. 개수 기준 규격일 때만 입력)
+        label: "미수 (개/kg, 예: 25미 → 25. 개수 기준 규격일 때만 입력)"
         nullable: true
       # 1개당 평균 무게(g) = 1000 ÷ countPerKg
     relations:
@@ -212,7 +217,12 @@ classes:
       unitPrice:
         type: number
         required: true
-        label: 발주단위 기준 총금액 (원, 예: 9kg 한 박스에 45000원)
+        label: "발주단위 기준 총금액 (원, 예: 9kg 한 박스에 45000원)"
+      deliveryFee:
+        type: number
+        required: false
+        label: 배송비 (원)
+        nullable: true
       date:
         type: string
         required: true
@@ -225,7 +235,7 @@ classes:
       vendor:
         type: string
         required: false
-        label: 납품업체 (예: 남선푸드, 대영상사)
+        label: "납품업체 (예: 남선푸드, 대영상사)"
         nullable: true
     relations:
       forPurchaseSpec:
@@ -262,7 +272,7 @@ classes:
       memo:
         type: string
         required: false
-        label: 사람이 읽기 쉬운 수량 표기 (예: "2박스 + 5kg", "1박스 40팩")
+        label: "사람이 읽기 쉬운 수량 표기 (예: \"2박스 + 5kg\", \"1박스 40팩\")"
         nullable: true
     relations:
       forIngredient:
@@ -373,11 +383,11 @@ classes:
       quantity:
         type: number
         required: true
-        label: 입고 수량 (발주단위 기준. 예: 9kg 박스 2개 → 2)
+        label: "입고 수량 (발주단위 기준. 예: 9kg 박스 2개 → 2)"
       unit:
         type: string
         required: true
-        label: 단위 (발주단위와 동일. 예: 박스, kg)
+        label: "단위 (발주단위와 동일. 예: 박스, kg)"
       memo:
         type: string
         required: false

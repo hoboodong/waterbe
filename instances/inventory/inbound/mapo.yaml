@@ -1,3 +1,3 @@
-instances:
-  # 마포점 입고기록
-  # id 형식: inbound_mp_YYYYMMDD_{순번}
+# 마포점 입고기록
+# id 형식: inbound_mp_YYYYMMDD_{순번}
+instances: []

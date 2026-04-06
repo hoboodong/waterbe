@@ -1,7 +1,7 @@
-instances:
-  # 주간 생산계획 — 마포점
-  # 매주 월요일 기준으로 새 레코드 추가 (덮어쓰기 금지)
-  # 조정 시 dailyAdjusted에 변경된 요일만 입력 (dailyPlan 수정 금지)
-  # 완료 후 dailyActual 입력 → status: completed
-  # ID 형식: plan_mp_YYYYMMDD_{prod_id 약어}
-  # 기본값은 production/templates/mapo.yaml의 dailyQty 참조
+# 주간 생산계획 — 마포점
+# 매주 월요일 기준으로 새 레코드 추가 (덮어쓰기 금지)
+# 조정 시 dailyAdjusted에 변경된 요일만 입력 (dailyPlan 수정 금지)
+# 완료 후 dailyActual 입력 → status: completed
+# ID 형식: plan_mp_YYYYMMDD_{prod_id 약어}
+# 기본값은 production/templates/mapo.yaml의 dailyQty 참조
+instances: []
