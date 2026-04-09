@@ -15,36 +15,47 @@ instances:
         - ingredient: ing_자숙문어
           amount: null
           unit: g
+          pspec: pspec_024
         - ingredient: ing_전복
           amount: null
           unit: 개
+          pspec: pspec_023
         - ingredient: ing_새우
           amount: null
           unit: g
+          pspec: pspec_004
         - ingredient: ing_솔방울오징어
           amount: null
           unit: g
+          pspec: pspec_034
         - ingredient: ing_백생합
           amount: null
           unit: g
+          pspec: pspec_016
         - ingredient: ing_홍합
           amount: null
           unit: g
+          pspec: pspec_017
         - ingredient: ing_콩나물
           amount: null
           unit: g
+          pspec: pspec_091
         - ingredient: ing_무
           amount: null
           unit: g
+          pspec: pspec_090
         - ingredient: ing_대파
           amount: null
           unit: g
+          pspec: pspec_089
         - ingredient: ing_홍고추
           amount: null
           unit: 개
+          pspec: pspec_088
         - ingredient: ing_해물탕소스
           amount: null
           unit: g
+          pspec: pspec_047
 
   - id: recipe_mapo_mk022
     class: Recipe
@@ -60,36 +71,47 @@ instances:
         - ingredient: ing_낙지
           amount: null
           unit: g
+          pspec: pspec_071
         - ingredient: ing_전복
           amount: null
           unit: 개
+          pspec: pspec_023
         - ingredient: ing_새우
           amount: null
           unit: g
+          pspec: pspec_004
         - ingredient: ing_솔방울오징어
           amount: null
           unit: g
+          pspec: pspec_034
         - ingredient: ing_백생합
           amount: null
           unit: g
+          pspec: pspec_016
         - ingredient: ing_홍합
           amount: null
           unit: g
+          pspec: pspec_017
         - ingredient: ing_콩나물
           amount: null
           unit: g
+          pspec: pspec_091
         - ingredient: ing_무
           amount: null
           unit: g
+          pspec: pspec_090
         - ingredient: ing_대파
           amount: null
           unit: g
+          pspec: pspec_089
         - ingredient: ing_홍고추
           amount: null
           unit: 개
+          pspec: pspec_088
         - ingredient: ing_해물탕소스
           amount: null
           unit: g
+          pspec: pspec_047
 
   - id: recipe_mapo_mk023
     class: Recipe
@@ -105,36 +127,47 @@ instances:
         - ingredient: ing_코다리
           amount: null
           unit: g
+          pspec: pspec_035
         - ingredient: ing_명란
           amount: null
           unit: g
+          pspec: pspec_039
         - ingredient: ing_대구곤이
           amount: null
           unit: g
+          pspec: pspec_038
         - ingredient: ing_솔방울오징어
           amount: null
           unit: g
+          pspec: pspec_034
         - ingredient: ing_백생합
           amount: null
           unit: g
+          pspec: pspec_016
         - ingredient: ing_홍합
           amount: null
           unit: g
+          pspec: pspec_017
         - ingredient: ing_콩나물
           amount: null
           unit: g
+          pspec: pspec_091
         - ingredient: ing_무
           amount: null
           unit: g
+          pspec: pspec_090
         - ingredient: ing_대파
           amount: null
           unit: g
+          pspec: pspec_089
         - ingredient: ing_홍고추
           amount: null
           unit: 개
+          pspec: pspec_088
         - ingredient: ing_해물탕소스
           amount: null
           unit: g
+          pspec: pspec_047
 
   - id: recipe_mapo_mk024
     class: Recipe
@@ -150,21 +183,27 @@ instances:
         - ingredient: ing_명란
           amount: null
           unit: g
+          pspec: pspec_039
         - ingredient: ing_대구곤이
           amount: null
           unit: g
+          pspec: pspec_038
         - ingredient: ing_콩나물
           amount: null
           unit: g
+          pspec: pspec_091
         - ingredient: ing_무
           amount: null
           unit: g
+          pspec: pspec_090
         - ingredient: ing_홍고추
           amount: null
           unit: 개
+          pspec: pspec_088
         - ingredient: ing_해물탕소스
           amount: null
           unit: g
+          pspec: pspec_047
 
   - id: recipe_mapo_mk025
     class: Recipe
@@ -180,27 +219,35 @@ instances:
         - ingredient: ing_낙지
           amount: null
           unit: g
+          pspec: pspec_071
         - ingredient: ing_염지소곱창
           amount: null
           unit: g
+          pspec: pspec_043
         - ingredient: ing_흰다리새우살_S_베트남
           amount: null
           unit: g
+          pspec: pspec_069
         - ingredient: ing_솔방울오징어
           amount: null
           unit: g
+          pspec: pspec_034
         - ingredient: ing_양배추콩나물세트
           amount: 1
           unit: 팩
+          pspec: pspec_086
         - ingredient: ing_대파
           amount: null
           unit: g
+          pspec: pspec_089
         - ingredient: ing_홍고추
           amount: null
           unit: 개
+          pspec: pspec_088
         - ingredient: ing_낙곱새소스
           amount: null
           unit: g
+          pspec: pspec_046
 
   - id: recipe_mapo_mk026
     class: Recipe
@@ -216,21 +263,27 @@ instances:
         - ingredient: ing_주꾸미
           amount: null
           unit: g
+          pspec: pspec_033
         - ingredient: ing_솔방울오징어
           amount: null
           unit: g
+          pspec: pspec_034
         - ingredient: ing_양배추콩나물세트
           amount: 1
           unit: 팩
+          pspec: pspec_086
         - ingredient: ing_대파
           amount: null
           unit: g
+          pspec: pspec_089
         - ingredient: ing_홍고추
           amount: null
           unit: 개
+          pspec: pspec_088
         - ingredient: ing_볶음소스
           amount: null
           unit: g
+          pspec: pspec_045
 
   - id: recipe_mapo_mk027
     class: Recipe
@@ -246,21 +299,27 @@ instances:
         - ingredient: ing_낙지
           amount: null
           unit: g
+          pspec: pspec_071
         - ingredient: ing_솔방울오징어
           amount: null
           unit: g
+          pspec: pspec_034
         - ingredient: ing_양배추콩나물세트
           amount: 1
           unit: 팩
+          pspec: pspec_086
         - ingredient: ing_대파
           amount: null
           unit: g
+          pspec: pspec_089
         - ingredient: ing_홍고추
           amount: null
           unit: 개
+          pspec: pspec_088
         - ingredient: ing_볶음소스
           amount: null
           unit: g
+          pspec: pspec_045
 
   - id: recipe_mapo_mk028
     class: Recipe
@@ -279,18 +338,23 @@ instances:
         - ingredient: ing_솔방울오징어
           amount: null
           unit: g
+          pspec: pspec_034
         - ingredient: ing_양배추콩나물세트
           amount: 1
           unit: 팩
+          pspec: pspec_086
         - ingredient: ing_대파
           amount: null
           unit: g
+          pspec: pspec_089
         - ingredient: ing_홍고추
           amount: null
           unit: 개
+          pspec: pspec_088
         - ingredient: ing_볶음소스
           amount: null
           unit: g
+          pspec: pspec_045
 
   - id: recipe_mapo_mk029
     class: Recipe
@@ -306,30 +370,39 @@ instances:
         - ingredient: ing_순살아귀
           amount: null
           unit: g
+          pspec: pspec_073
         - ingredient: ing_명란
           amount: null
           unit: g
+          pspec: pspec_039
         - ingredient: ing_대구곤이
           amount: null
           unit: g
+          pspec: pspec_038
         - ingredient: ing_솔방울오징어
           amount: null
           unit: g
+          pspec: pspec_034
         - ingredient: ing_오만둥이
           amount: null
           unit: g
+          pspec: pspec_041
         - ingredient: ing_콩나물
           amount: null
           unit: g
+          pspec: pspec_091
         - ingredient: ing_대파
           amount: null
           unit: g
+          pspec: pspec_089
         - ingredient: ing_홍고추
           amount: null
           unit: 개
+          pspec: pspec_088
         - ingredient: ing_만능찜소스
           amount: null
           unit: g
+          pspec: pspec_074
 
   # ── 마포점 단품 레시피 ──────────────────────────────────────
   - id: recipe_mapo_sp019
@@ -346,6 +419,7 @@ instances:
         - ingredient: ing_새우
           amount: null
           unit: g
+          pspec: pspec_004
         - ingredient: ing_레몬주스
           amount: null
           unit: ml
@@ -364,6 +438,7 @@ instances:
         - ingredient: ing_흰다리새우살_L_페루
           amount: null
           unit: g
+          pspec: pspec_005
         - ingredient: ing_레몬주스
           amount: null
           unit: ml
@@ -382,6 +457,7 @@ instances:
         - ingredient: ing_흰다리새우살_S_베트남
           amount: null
           unit: g
+          pspec: pspec_069
         - ingredient: ing_레몬주스
           amount: null
           unit: ml
@@ -400,6 +476,7 @@ instances:
         - ingredient: ing_가리비관자
           amount: null
           unit: g
+          pspec: pspec_021
         - ingredient: ing_레몬주스
           amount: null
           unit: ml
@@ -421,6 +498,7 @@ instances:
         - ingredient: ing_주꾸미
           amount: null
           unit: g
+          pspec: pspec_033
 
   - id: recipe_mapo_sp024
     class: Recipe
@@ -436,6 +514,7 @@ instances:
         - ingredient: ing_낙지
           amount: null
           unit: g
+          pspec: pspec_071
 
   - id: recipe_mapo_sp025
     class: Recipe
@@ -451,6 +530,7 @@ instances:
         - ingredient: ing_낙지
           amount: null
           unit: g
+          pspec: pspec_071
 
   - id: recipe_mapo_sp026
     class: Recipe
@@ -466,9 +546,11 @@ instances:
         - ingredient: ing_명란
           amount: null
           unit: g
+          pspec: pspec_039
         - ingredient: ing_대구곤이
           amount: null
           unit: g
+          pspec: pspec_038
         - ingredient: ing_레몬주스
           amount: null
           unit: ml
@@ -488,12 +570,15 @@ instances:
         - ingredient: ing_흰다리새우살_L_페루
           amount: null
           unit: g
+          pspec: pspec_005
         - ingredient: ing_간장소스
           amount: null
           unit: g
+          pspec: pspec_049
         - ingredient: ing_미림
           amount: null
           unit: 큰술
         - ingredient: ing_홍고추
           amount: null
           unit: 개
+          pspec: pspec_088
