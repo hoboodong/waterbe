@@ -983,3 +983,74 @@ instances:
     relations:
       forIngredient: ing_게_이탈리아
       vendor: null
+
+  # ── 대영상사 신규 품목 (2026-04-14) ───────────────────────────
+  - id: pspec_096
+    class: PurchaseSpec
+    data:
+      orderName: 손질통주꾸미(베트남)
+      orderUnit: 12kg
+      category: 재료
+    relations:
+      forIngredient: ing_주꾸미
+      vendor: null
+
+  - id: pspec_097
+    class: PurchaseSpec
+    data:
+      orderName: 문어슬라이스(인도네시아)
+      orderUnit: 10kg
+      category: 재료
+    relations:
+      forIngredient: ing_자숙문어_절단
+      vendor: null
+
+  - id: pspec_098
+    class: PurchaseSpec
+    data:
+      orderName: 손질적어(스페인)
+      orderUnit: 8kg
+      category: 재료
+    relations:
+      forIngredient: ing_볼락
+      vendor: null
+
+  - id: pspec_099
+    class: PurchaseSpec
+    data:
+      orderName: 무침회양념
+      orderUnit: null
+      category: 재료
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_100
+    class: PurchaseSpec
+    data:
+      orderName: 운임(3000)
+      orderUnit: 1BOX
+      category: 소모품
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_101
+    class: PurchaseSpec
+    data:
+      orderName: 운임(2000)
+      orderUnit: 1BOX
+      category: 소모품
+    relations:
+      forIngredient: null
+      vendor: null
+
+  - id: pspec_102
+    class: PurchaseSpec
+    data:
+      orderName: 전복운임
+      orderUnit: 1BOX
+      category: 소모품
+    relations:
+      forIngredient: null
+      vendor: null

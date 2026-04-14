@@ -1159,3 +1159,284 @@ instances:
       vendor: 대영상사
     relations:
       forPurchaseSpec: pspec_095
+
+  # ── 대영상사 가격 업데이트 (2026-04-14) ──────────────────────
+  - id: ph_112
+    class: PriceHistory
+    data:
+      unitPrice: 48000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_084  # 절단코다리(40/60) 10kg 러시아
+
+  - id: ph_113
+    class: PriceHistory
+    data:
+      unitPrice: 38500
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: "~40,000"
+    relations:
+      forPurchaseSpec: pspec_034  # 솔방울오징어(중국) 10kg
+
+  - id: ph_114
+    class: PriceHistory
+    data:
+      unitPrice: 109000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_096  # 손질통주꾸미(베트남) 12kg
+
+  - id: ph_115
+    class: PriceHistory
+    data:
+      unitPrice: 75000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_078  # 절단낙지 L 6kg 베트남
+
+  - id: ph_116
+    class: PriceHistory
+    data:
+      unitPrice: 80000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_031  # 손질낙지(200/300)(베트남) 6kg
+
+  - id: ph_117
+    class: PriceHistory
+    data:
+      unitPrice: 130000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_076  # 성형가리비(10/20) 10kg 중국
+
+  - id: ph_118
+    class: PriceHistory
+    data:
+      unitPrice: 167400
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_083  # 문어슬라이스(대영/필리핀) 9kg
+
+  - id: ph_119
+    class: PriceHistory
+    data:
+      unitPrice: 187000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_097  # 문어슬라이스(인도네시아) 10kg
+
+  - id: ph_120
+    class: PriceHistory
+    data:
+      unitPrice: 188000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_026  # 냉동자숙문어(필리핀) 10kg
+
+  - id: ph_121
+    class: PriceHistory
+    data:
+      unitPrice: 159000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_003  # 냉동새우 30/40(페루) 12kg
+
+  - id: ph_122
+    class: PriceHistory
+    data:
+      unitPrice: 172000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_080  # 칵테일새우살(21/25) 9kg 페루
+
+  - id: ph_123
+    class: PriceHistory
+    data:
+      unitPrice: 128000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: "~142,000, 9~10kg"
+    relations:
+      forPurchaseSpec: pspec_069  # 냉동새우살71-90P(베트남) 9kg
+
+  - id: ph_124
+    class: PriceHistory
+    data:
+      unitPrice: 68000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_098  # 손질적어(스페인) 8kg
+
+  - id: ph_125
+    class: PriceHistory
+    data:
+      unitPrice: 26000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_015  # 백생합(중국)(생물) 10kg
+
+  - id: ph_126
+    class: PriceHistory
+    data:
+      unitPrice: 34000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_017  # 냉동홍합(국산) 10kg
+
+  - id: ph_127
+    class: PriceHistory
+    data:
+      unitPrice: 107000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_087  # 통대구(러시아) 18.5kg
+
+  - id: ph_128
+    class: PriceHistory
+    data:
+      unitPrice: 17000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_022  # 전복(소) 25미(생물) 1kg
+
+  - id: ph_129
+    class: PriceHistory
+    data:
+      unitPrice: 221000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_040  # 명란PG 원물 22.5kg 러시아
+
+  - id: ph_130
+    class: PriceHistory
+    data:
+      unitPrice: 98000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: "~106,000"
+    relations:
+      forPurchaseSpec: pspec_082  # 명태곤이 22.5kg 러시아
+
+  - id: ph_131
+    class: PriceHistory
+    data:
+      unitPrice: 210000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_042  # 참소라살3S(튀르키예) 10kg
+
+  - id: ph_132
+    class: PriceHistory
+    data:
+      unitPrice: 48400
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: "부가세 포함 (기준단가 44,000)"
+    relations:
+      forPurchaseSpec: pspec_046  # 낙곱새소스 9kg
+
+  - id: ph_133
+    class: PriceHistory
+    data:
+      unitPrice: 113850
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: "부가세 포함 (기준단가 103,500)"
+    relations:
+      forPurchaseSpec: pspec_047  # 탕용소스 11.25kg
+
+  - id: ph_134
+    class: PriceHistory
+    data:
+      unitPrice: 69300
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: "부가세 포함 (기준단가 63,000)"
+    relations:
+      forPurchaseSpec: pspec_099  # 무침회양념
+
+  - id: ph_135
+    class: PriceHistory
+    data:
+      unitPrice: 67500
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_058  # 밀키트(탕)용기 32225(중) 150세트
+
+  - id: ph_136
+    class: PriceHistory
+    data:
+      unitPrice: 94800
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_085  # DR볶음용 3호 검정 400ea
+
+  - id: ph_137
+    class: PriceHistory
+    data:
+      unitPrice: 3000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_100  # 운임(3000) BOX
+
+  - id: ph_138
+    class: PriceHistory
+    data:
+      unitPrice: 2000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_101  # 운임(2000) BOX
+
+  - id: ph_139
+    class: PriceHistory
+    data:
+      unitPrice: 5000
+      date: "2026-04-14"
+      vendor: 대영상사
+      memo: null
+    relations:
+      forPurchaseSpec: pspec_102  # 전복운임 BOX
