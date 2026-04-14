@@ -12,6 +12,18 @@ instances:
       dailyQty: {mon: 2, tue: 2, wed: 2, thu: 2, fri: 4, sat: 4, sun: 4}
       unit: 개
       effectiveFrom: "2026-04-01"
+      effectiveTo: "2026-04-13"
+      memo: null
+    relations:
+      forProduct: prod_mk_013  # 문어전복해물탕
+      atStore: store_wolgye
+
+  - id: tmpl_wg_mk013_2
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 2, tue: 2, wed: 2, thu: 2, fri: 4, sat: 6, sun: 4}
+      unit: 개
+      effectiveFrom: "2026-04-14"
       effectiveTo: null
       memo: null
     relations:
@@ -24,6 +36,18 @@ instances:
       dailyQty: {mon: 2, tue: 2, wed: 2, thu: 2, fri: 4, sat: 4, sun: 4}
       unit: 개
       effectiveFrom: "2026-04-01"
+      effectiveTo: "2026-04-13"
+      memo: null
+    relations:
+      forProduct: prod_mk_014  # 낙지전복해물탕
+      atStore: store_wolgye
+
+  - id: tmpl_wg_mk014_2
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 2, tue: 2, wed: 2, thu: 2, fri: 4, sat: 6, sun: 4}
+      unit: 개
+      effectiveFrom: "2026-04-14"
       effectiveTo: null
       memo: null
     relations:
@@ -36,6 +60,18 @@ instances:
       dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 8, sun: 6}
       unit: 개
       effectiveFrom: "2026-04-01"
+      effectiveTo: "2026-04-13"
+      memo: null
+    relations:
+      forProduct: prod_mk_015  # 동태알탕
+      atStore: store_wolgye
+
+  - id: tmpl_wg_mk015_2
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 6, sat: 8, sun: 6}
+      unit: 개
+      effectiveFrom: "2026-04-14"
       effectiveTo: null
       memo: null
     relations:
@@ -48,6 +84,18 @@ instances:
       dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 6, sun: 6}
       unit: 개
       effectiveFrom: "2026-04-01"
+      effectiveTo: "2026-04-13"
+      memo: null
+    relations:
+      forProduct: prod_mk_016  # 볼락 매운탕
+      atStore: store_wolgye
+
+  - id: tmpl_wg_mk016_2
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 6, sat: 8, sun: 6}
+      unit: 개
+      effectiveFrom: "2026-04-14"
       effectiveTo: null
       memo: null
     relations:
@@ -96,6 +144,18 @@ instances:
       dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 6, sat: 6, sun: 6}
       unit: 개
       effectiveFrom: "2026-04-01"
+      effectiveTo: "2026-04-13"
+      memo: null
+    relations:
+      forProduct: prod_mk_030  # 대구매운탕
+      atStore: store_wolgye
+
+  - id: tmpl_wg_mk030_2
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 6, sat: 8, sun: 6}
+      unit: 개
+      effectiveFrom: "2026-04-14"
       effectiveTo: null
       memo: null
     relations:
@@ -136,6 +196,18 @@ instances:
       dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 6, sat: 6, sun: 6}
       unit: kg
       effectiveFrom: "2026-04-01"
+      effectiveTo: "2026-04-13"
+      memo: null
+    relations:
+      forProduct: prod_sp_012  # 흰다리새우
+      atStore: store_wolgye
+
+  - id: tmpl_wg_sp012_2
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 1, tue: 1, wed: 1, thu: 1, fri: 2, sat: 3, sun: 2}
+      unit: 팩
+      effectiveFrom: "2026-04-14"
       effectiveTo: null
       memo: null
     relations:
@@ -148,8 +220,20 @@ instances:
       dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 8, sat: 10, sun: 8}
       unit: kg
       effectiveFrom: "2026-04-01"
-      effectiveTo: null
+      effectiveTo: "2026-04-13"
       memo: null
+    relations:
+      forProduct: prod_sp_013  # 흰다리새우살(대)
+      atStore: store_wolgye
+
+  - id: tmpl_wg_sp013_2
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 8, sat: 10, sun: 8}
+      unit: 팩
+      effectiveFrom: "2026-04-14"
+      effectiveTo: null
+      memo: "토 10팩 = 1박스"
     relations:
       forProduct: prod_sp_013  # 흰다리새우살(대)
       atStore: store_wolgye
@@ -160,8 +244,20 @@ instances:
       dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 5, sat: 5, sun: 5}
       unit: kg
       effectiveFrom: "2026-04-01"
-      effectiveTo: null
+      effectiveTo: "2026-04-13"
       memo: null
+    relations:
+      forProduct: prod_sp_014  # 흰다리새우살(소)
+      atStore: store_wolgye
+
+  - id: tmpl_wg_sp014_2
+    class: ProductionTemplate
+    data:
+      dailyQty: {mon: 0.33, tue: 0.33, wed: 0.33, thu: 0.33, fri: 0.5, sat: 1, sun: 0.5}
+      unit: 팩
+      effectiveFrom: "2026-04-14"
+      effectiveTo: null
+      memo: "월~목 1/3팩, 금/일 반팩, 토 1팩"
     relations:
       forProduct: prod_sp_014  # 흰다리새우살(소)
       atStore: store_wolgye
