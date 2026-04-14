@@ -622,10 +622,10 @@ instances:
       forProduct: prod_sp_027
       atStore: store_wolgye
       uses:
-        - ingredient: ing_자숙문어
+        - ingredient: ing_자숙문어_절단
           amount: 90
           unit: g
-          pspec: pspec_026
+          pspec: pspec_097
         - ingredient: ing_자숙피뿔고둥살
           amount: 90
           unit: g
