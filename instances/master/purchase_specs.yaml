@@ -9,6 +9,7 @@ instances:
       orderName: PDTO새우살26-30P(페루산)
       orderUnit: 9kg
       category: 재료
+      packCount: 10
       countPerKg: 28  # 26-30마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_L_페루
@@ -20,6 +21,7 @@ instances:
       orderName: 냉동새우살71-90P(베트남)
       orderUnit: 10kg
       category: 재료
+      packCount: 2
       countPerKg: 80  # 71-90마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_S_베트남
@@ -31,6 +33,7 @@ instances:
       orderName: 냉동새우 30/40(페루)
       orderUnit: 12kg
       category: 재료
+      packCount: 6
       countPerKg: 35  # 30/40마리/kg 중간값
     relations:
       forIngredient: ing_새우
@@ -178,6 +181,7 @@ instances:
       orderName: 냉동홍합(국산)
       orderUnit: 10kg
       category: 재료
+      packCount: 10
     relations:
       forIngredient: ing_홍합
       vendor: null
@@ -272,6 +276,7 @@ instances:
       orderName: 냉동자숙문어(필리핀)
       orderUnit: 10kg
       category: 재료
+      packCount: 16
     relations:
       forIngredient: ing_자숙문어
       vendor: null
@@ -414,6 +419,7 @@ instances:
       orderName: 명란PG 원물
       orderUnit: 22.5kg
       category: 재료
+      packCount: 3
     relations:
       forIngredient: ing_명란
       vendor: null
@@ -714,6 +720,7 @@ instances:
       orderName: 냉동새우살71-90P(베트남)
       orderUnit: 9kg
       category: 재료
+      packCount: 2
       countPerKg: 80  # 71-90마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_S_베트남
@@ -787,6 +794,7 @@ instances:
       orderName: 성형가리비(10/20)
       orderUnit: 10kg
       category: 재료
+      packCount: 10
     relations:
       forIngredient: ing_가리비관자
       vendor: null
@@ -797,6 +805,7 @@ instances:
       orderName: 주꾸미(17/22미)
       orderUnit: 10kg
       category: 재료
+      packCount: 40
     relations:
       forIngredient: ing_주꾸미
       vendor: null
@@ -807,6 +816,7 @@ instances:
       orderName: 절단낙지 L
       orderUnit: 6kg
       category: 재료
+      packCount: 6
     relations:
       forIngredient: ing_낙지
       vendor: null
@@ -827,6 +837,7 @@ instances:
       orderName: 칵테일새우살(21/25)
       orderUnit: 9kg
       category: 재료
+      packCount: 10
       countPerKg: 23  # 21-25마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_L_페루
@@ -838,6 +849,7 @@ instances:
       orderName: 명란PG(22.8kg)
       orderUnit: 22.8kg
       category: 재료
+      packCount: 3
     relations:
       forIngredient: ing_명란
       vendor: null
@@ -848,6 +860,7 @@ instances:
       orderName: 명태곤이
       orderUnit: 22.5kg
       category: 재료
+      packCount: 3
     relations:
       forIngredient: ing_명태곤이
       vendor: null
@@ -950,6 +963,7 @@ instances:
       orderName: 염지소대창 15kg
       orderUnit: 15kg
       category: 재료
+      packCount: 15
     relations:
       forIngredient: ing_염지소대창
       vendor: null
@@ -960,6 +974,7 @@ instances:
       orderName: 손질적어(150/200) 포루투갈
       orderUnit: 4kg
       category: 재료
+      packCount: 2
     relations:
       forIngredient: ing_볼락
       vendor: null
@@ -970,6 +985,7 @@ instances:
       orderName: 절단꽃게2S(바레인)
       orderUnit: 6kg
       category: 재료
+      packCount: 12
     relations:
       forIngredient: ing_게_바레인
       vendor: null

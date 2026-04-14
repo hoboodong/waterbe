@@ -520,6 +520,7 @@ constraints:
   - "Category.relations.subClassOf는 순환 참조를 허용하지 않는다"
   - "Recipe는 같은 (forProduct, atStore) 조합에서 effectiveTo가 null인 레코드가 최대 1개여야 한다 (현재 적용 중인 레시피는 하나)"
   - "Recipe 변경 시 기존 레코드의 effectiveTo를 전날로 채우고 새 레코드를 추가한다 (덮어쓰기 금지)"
+  - "Recipe에서 ingredient 또는 pspec이 변경될 경우, 변경된 재료의 최신 InventorySnapshot을 확인하여 재고가 0이면 발주 필요 여부를 즉시 알린다"
   - "Recipe.uses의 ingredient는 반드시 Ingredient 인스턴스를 참조해야 한다"
   - "Ingredient.thawLossRate는 0 이상 100 미만의 숫자여야 한다"
   - "Ingredient.trimLossRate는 0 이상 100 미만의 숫자여야 한다"

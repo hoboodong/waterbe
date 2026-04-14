@@ -23,3 +23,21 @@ instances:
     createdBy: 팀장
   relations:
     atStore: store_wolgye
+
+# ── 발주 주기 설정 ──────────────────────────────────────────────
+- id: sched_order_wolgye
+  class: Schedule
+  data:
+    date: "2026-04-14"
+    endDate: null
+    type: 발주
+    title: 월계점 주간 발주
+    description: |
+      매주 화요일 발주. 기준일 다음날(수요일)부터 7일치(수~다음주 화) 계산.
+      실행: python3 ~/.openclaw/shared/waterbe/scripts/calc_order.py wolgye
+      발주처: 대영상사 (수산물·소스), 야채납품업체 (채소)
+    recurrence: weekly  # 매주 화요일
+    assignee: 신띵
+    createdBy: 팀장
+  relations:
+    atStore: store_wolgye
