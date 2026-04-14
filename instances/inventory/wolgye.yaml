@@ -1,4 +1,350 @@
 # 재고실사 — 월계점
 # 실사할 때마다 새 레코드 추가 (덮어쓰기 금지)
 # ID 형식: snap_wg_YYYYMMDD_{재료ID 약어}
-instances: []
+instances:
+
+  # ── 2026-04-14 실사 ──────────────────────────────────────────
+
+  # ── 수산물 (냉동) ─────────────────────────────────────────────
+
+  - id: snap_wg_20260414_자숙문어
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 9
+      unit: 개
+      boxes: null
+      openRemainder: 9
+      memo: "박스당 16마리 / 9마리"
+    relations:
+      forIngredient: ing_자숙문어
+      forPurchaseSpec: pspec_026
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_솔방울오징어
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 30
+      unit: kg
+      boxes: 3
+      openRemainder: null
+      memo: "3박스 (10kg/박스)"
+    relations:
+      forIngredient: ing_솔방울오징어
+      forPurchaseSpec: pspec_034
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_홍합
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 7
+      unit: 개
+      boxes: null
+      openRemainder: 7
+      memo: "박스당 10팩 / 7팩"
+    relations:
+      forIngredient: ing_홍합
+      forPurchaseSpec: pspec_017
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_낙지
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 12
+      unit: 개
+      boxes: 2
+      openRemainder: null
+      memo: "2박스 (박스당 6팩) = 12팩"
+    relations:
+      forIngredient: ing_낙지
+      forPurchaseSpec: pspec_078
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_새우_페루
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 10
+      unit: 개
+      boxes: 1
+      openRemainder: 4
+      memo: "1박스 + 4팩 = 10팩 (박스당 6팩)"
+    relations:
+      forIngredient: ing_새우
+      forPurchaseSpec: pspec_003
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_새우살L_페루
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 38
+      unit: 개
+      boxes: 3
+      openRemainder: 8
+      memo: "3박스 + 8팩 = 38팩 (박스당 10팩)"
+    relations:
+      forIngredient: ing_흰다리새우살_L_페루
+      forPurchaseSpec: pspec_001
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_새우살S_베트남
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 3
+      unit: 개
+      boxes: 1
+      openRemainder: 1
+      memo: "1박스 + 1팩 = 3팩 (박스당 2팩)"
+    relations:
+      forIngredient: ing_흰다리새우살_S_베트남
+      forPurchaseSpec: pspec_002
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_게_이탈리아
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 0
+      unit: 개
+      boxes: null
+      openRemainder: null
+      memo: "없음"
+    relations:
+      forIngredient: ing_게_이탈리아
+      forPurchaseSpec: pspec_095
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_게_바레인
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 11
+      unit: 개
+      boxes: null
+      openRemainder: 11
+      memo: "박스당 12팩 / 11팩"
+    relations:
+      forIngredient: ing_게_바레인
+      forPurchaseSpec: pspec_094
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_게
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 0
+      unit: 개
+      boxes: null
+      openRemainder: null
+      memo: "없음"
+    relations:
+      forIngredient: ing_게
+      forPurchaseSpec: null
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_볼락
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 2
+      unit: 개
+      boxes: 1
+      openRemainder: null
+      memo: "1박스 (박스당 2묶음)"
+    relations:
+      forIngredient: ing_볼락
+      forPurchaseSpec: pspec_093
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_코다리
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 10
+      unit: kg
+      boxes: 1
+      openRemainder: null
+      memo: "1박스 (벌크, 10kg/박스)"
+    relations:
+      forIngredient: ing_코다리
+      forPurchaseSpec: pspec_084
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_명란
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 0.5
+      unit: 개
+      boxes: null
+      openRemainder: 0.5
+      memo: "박스당 3조각 / 반조각"
+    relations:
+      forIngredient: ing_명란
+      forPurchaseSpec: pspec_040
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_명태곤이
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 5
+      unit: 개
+      boxes: 1
+      openRemainder: 2
+      memo: "1박스 + 2조각 = 5조각 (박스당 3조각)"
+    relations:
+      forIngredient: ing_명태곤이
+      forPurchaseSpec: pspec_082
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_통대구
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 18.5
+      unit: kg
+      boxes: 1
+      openRemainder: null
+      memo: "1박스 (벌크, 18.5kg/박스)"
+    relations:
+      forIngredient: ing_통대구
+      forPurchaseSpec: pspec_087
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_주꾸미
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 7
+      unit: 개
+      boxes: null
+      openRemainder: 7
+      memo: "박스당 40팩 / 7팩"
+    relations:
+      forIngredient: ing_주꾸미
+      forPurchaseSpec: pspec_077
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_가리비관자
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 20
+      unit: 개
+      boxes: 2
+      openRemainder: null
+      memo: "2박스 = 20팩 (박스당 10팩)"
+    relations:
+      forIngredient: ing_가리비관자
+      forPurchaseSpec: pspec_076
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_피뿔고둥살
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 0
+      unit: kg
+      boxes: null
+      openRemainder: null
+      memo: "없음"
+    relations:
+      forIngredient: ing_자숙피뿔고둥살
+      forPurchaseSpec: pspec_042
+      atStore: store_wolgye
+
+  # ── 수산물 (생물) ─────────────────────────────────────────────
+
+  - id: snap_wg_20260414_전복
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 5
+      unit: kg
+      boxes: null
+      openRemainder: null
+      memo: "5kg"
+    relations:
+      forIngredient: ing_전복
+      forPurchaseSpec: pspec_022
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_백생합
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 10
+      unit: kg
+      boxes: null
+      openRemainder: null
+      memo: "10kg"
+    relations:
+      forIngredient: ing_백생합
+      forPurchaseSpec: pspec_015
+      atStore: store_wolgye
+
+  # ── 육류 ─────────────────────────────────────────────────────
+
+  - id: snap_wg_20260414_소대창
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 6
+      unit: 개
+      boxes: null
+      openRemainder: 6
+      memo: "박스당 15팩 / 6팩"
+    relations:
+      forIngredient: ing_염지소대창
+      forPurchaseSpec: pspec_092
+      atStore: store_wolgye
+
+  # ── 소스·기타 ─────────────────────────────────────────────────
+
+  - id: snap_wg_20260414_탕소스
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 150
+      unit: 개
+      boxes: 1
+      openRemainder: null
+      memo: "1박스 (150팩/박스)"
+    relations:
+      forIngredient: ing_해물탕소스
+      forPurchaseSpec: pspec_047
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_낙곱새소스
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 50
+      unit: 개
+      boxes: null
+      openRemainder: 50
+      memo: "반박스 (~50팩)"
+    relations:
+      forIngredient: ing_낙곱새소스
+      forPurchaseSpec: pspec_046
+      atStore: store_wolgye
+
+  - id: snap_wg_20260414_볶음소스
+    class: InventorySnapshot
+    data:
+      date: "2026-04-14"
+      quantity: 50
+      unit: 개
+      boxes: null
+      openRemainder: 50
+      memo: "반박스 (~50팩)"
+    relations:
+      forIngredient: ing_볶음소스
+      forPurchaseSpec: pspec_045
+      atStore: store_wolgye
