@@ -4,8 +4,9 @@ instances:
   data:
     name: 문어전복해물탕 (왕십리)
     price: 23800
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '117630'
   relations:
     forProduct: prod_mk_001
     atStore: store_wangsimni
@@ -63,8 +64,9 @@ instances:
   data:
     name: 낙지전복해물탕 (왕십리)
     price: 23800
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '235905'
   relations:
     forProduct: prod_mk_002
     atStore: store_wangsimni
@@ -122,8 +124,9 @@ instances:
   data:
     name: 알탕 (왕십리)
     price: 15800
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '235930'
   relations:
     forProduct: prod_mk_003
     atStore: store_wangsimni
@@ -177,8 +180,9 @@ instances:
   data:
     name: 코다리알탕 (왕십리)
     price: 15800
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '235930'
   relations:
     forProduct: prod_mk_004
     atStore: store_wangsimni
@@ -232,8 +236,9 @@ instances:
   data:
     name: 대구탕 (왕십리)
     price: 19800
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '117700'
   relations:
     forProduct: prod_mk_007
     atStore: store_wangsimni
@@ -291,8 +296,9 @@ instances:
   data:
     name: 국산문어 해물탕 (왕십리)
     price: 25800
-    effectiveFrom: "2026-01-01"
-    effectiveTo: "2026-04-04"
+    effectiveFrom: '2026-01-01'
+    effectiveTo: '2026-04-04'
+    martCode: '117701'
   relations:
     forProduct: prod_mk_008
     atStore: store_wangsimni
@@ -350,8 +356,9 @@ instances:
   data:
     name: 국산문어 해물탕 (왕십리)
     price: 23800
-    effectiveFrom: "2026-04-05"
+    effectiveFrom: '2026-04-05'
     effectiveTo: null
+    martCode: '117702'
   relations:
     forProduct: prod_mk_008
     atStore: store_wangsimni
@@ -409,8 +416,9 @@ instances:
   data:
     name: 순살 아귀찜 (왕십리)
     price: 19800
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '117703'
   relations:
     forProduct: prod_mk_009
     atStore: store_wangsimni
@@ -460,8 +468,9 @@ instances:
   data:
     name: 프리미엄 낙곱새 (왕십리)
     price: 25800
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '117704'
   relations:
     forProduct: prod_mk_010
     atStore: store_wangsimni
@@ -507,8 +516,9 @@ instances:
   data:
     name: 주꾸미볶음 (왕십리)
     price: 15800
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '234464'
   relations:
     forProduct: prod_mk_011
     atStore: store_wangsimni
@@ -546,8 +556,9 @@ instances:
   data:
     name: 낙지볶음 (왕십리)
     price: 15800
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '115237'
   relations:
     forProduct: prod_mk_012
     atStore: store_wangsimni
@@ -585,8 +596,9 @@ instances:
   data:
     name: 가리비관자 (왕십리)
     price: 9980
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '117449'
   relations:
     forProduct: prod_sp_001
     atStore: store_wangsimni
@@ -610,8 +622,9 @@ instances:
   data:
     name: 흰다리새우 (왕십리)
     price: 3480
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '236143'
   relations:
     forProduct: prod_sp_002
     atStore: store_wangsimni
@@ -632,8 +645,9 @@ instances:
   data:
     name: 손질 흰다리새우살(대) (왕십리)
     price: 3980
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '236143'
   relations:
     forProduct: prod_sp_003
     atStore: store_wangsimni
@@ -654,8 +668,9 @@ instances:
   data:
     name: 손질 흰다리새우살 (왕십리)
     price: 3480
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '236157'
   relations:
     forProduct: prod_sp_004
     atStore: store_wangsimni
@@ -672,8 +687,9 @@ instances:
   data:
     name: 활전복 (왕십리)
     price: 9980
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '118648'
   relations:
     forProduct: prod_sp_005
     atStore: store_wangsimni
@@ -687,8 +703,9 @@ instances:
   data:
     name: 국산홍가리비살 (왕십리)
     price: 2980
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '117705'
   relations:
     forProduct: prod_sp_006
     atStore: store_wangsimni
@@ -701,8 +718,9 @@ instances:
   data:
     name: 국산흑골뱅이 (왕십리)
     price: null
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '117706'
   relations:
     forProduct: prod_sp_007
     atStore: store_wangsimni
@@ -715,8 +733,9 @@ instances:
   data:
     name: 백생합 (왕십리)
     price: 990
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '117707'
   relations:
     forProduct: prod_sp_008
     atStore: store_wangsimni
@@ -730,8 +749,9 @@ instances:
   data:
     name: 손질 갑오징어 (왕십리)
     price: 3280
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '117708'
   relations:
     forProduct: prod_sp_009
     atStore: store_wangsimni
@@ -744,8 +764,9 @@ instances:
   data:
     name: 손질 낙지 (왕십리)
     price: 3280
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '117709'
   relations:
     forProduct: prod_sp_010
     atStore: store_wangsimni
@@ -763,8 +784,9 @@ instances:
   data:
     name: 손질 주꾸미 (왕십리)
     price: 3280
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '117710'
   relations:
     forProduct: prod_sp_011
     atStore: store_wangsimni
@@ -782,8 +804,9 @@ instances:
   data:
     name: 국산 알베기 간장게장 (왕십리)
     price: 23800
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '117711'
   relations:
     forProduct: prod_gj_001
     atStore: store_wangsimni
@@ -793,8 +816,9 @@ instances:
   data:
     name: 간장게장 (왕십리)
     price: 15800
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '117712'
   relations:
     forProduct: prod_gj_002
     atStore: store_wangsimni
@@ -804,8 +828,9 @@ instances:
   data:
     name: 간장 새우장 (왕십리)
     price: 9980
-    effectiveFrom: "2026-01-01"
+    effectiveFrom: '2026-01-01'
     effectiveTo: null
+    martCode: '236067'
   relations:
     forProduct: prod_gj_003
     atStore: store_wangsimni
