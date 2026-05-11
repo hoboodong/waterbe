@@ -29,22 +29,22 @@ instances:
   class: Ingredient
   data:
     name: 두부
-- id: ing_마늘
-  class: Ingredient
-  data:
-    name: 마늘
 - id: ing_골뱅이
   class: Ingredient
   data:
     name: 골뱅이
-- id: ing_소금
+- id: ing_반각가리비
   class: Ingredient
   data:
-    name: 소금
+    name: 반각가리비
 - id: ing_고춧가루
   class: Ingredient
   data:
     name: 고춧가루
+- id: ing_자숙문어_절단
+  class: Ingredient
+  data:
+    name: 자숙문어(절단)
 - id: ing_양념게장소스
   class: Ingredient
   data:
@@ -63,6 +63,10 @@ instances:
   data:
     name: 코다리
     origin: 러시아
+- id: ing_게_이탈리아
+  class: Ingredient
+  data:
+    name: 꽃게 (이탈리아산)
 - id: ing_흰다리새우살_L_페루
   class: Ingredient
   data:
@@ -76,6 +80,10 @@ instances:
   class: Ingredient
   data:
     name: 콩나물
+- id: ing_소금
+  class: Ingredient
+  data:
+    name: 소금
 - id: ing_우삼겹
   class: Ingredient
   data:
@@ -121,10 +129,19 @@ instances:
   data:
     name: 낙지
     origin: 베트남
+- id: ing_새우
+  class: Ingredient
+  data:
+    name: 흰다리새우
+    origin: 페루
 - id: ing_고추장
   class: Ingredient
   data:
     name: 고추장
+- id: ing_육수
+  class: Ingredient
+  data:
+    name: 육수 (멸치·다시마)
 - id: ing_만능찜소스
   class: Ingredient
   data:
@@ -137,24 +154,19 @@ instances:
   class: Ingredient
   data:
     name: 양배추
-- id: ing_새우
+- id: ing_오만둥이
   class: Ingredient
   data:
-    name: 흰다리새우
-    origin: 페루
+    name: 오만둥이
+    origin: 국내산
 - id: ing_주꾸미
   class: Ingredient
   data:
     name: 주꾸미
-- id: ing_육수
+- id: ing_마늘
   class: Ingredient
   data:
-    name: 육수 (멸치·다시마)
-- id: ing_대구곤이
-  class: Ingredient
-  data:
-    name: 대구곤이
-    origin: 아이슬란드
+    name: 마늘
 - id: ing_통대구
   class: Ingredient
   data:
@@ -165,10 +177,6 @@ instances:
   data:
     name: 무
     origin: 국내
-- id: ing_반각가리비
-  class: Ingredient
-  data:
-    name: 반각가리비
 - id: ing_흰다리새우살_L_인도
   class: Ingredient
   data:
@@ -178,11 +186,6 @@ instances:
   class: Ingredient
   data:
     name: 고추
-- id: ing_오만둥이
-  class: Ingredient
-  data:
-    name: 오만둥이
-    origin: 국내산
 - id: ing_동태
   class: Ingredient
   data:
@@ -231,6 +234,10 @@ instances:
   class: Ingredient
   data:
     name: 초고추장
+- id: ing_청양고추
+  class: Ingredient
+  data:
+    name: 청양고추
 - id: ing_순살아귀
   class: Ingredient
   data:
@@ -254,18 +261,11 @@ instances:
   data:
     name: 명란
     origin: 러시아
-- id: ing_청양고추
+- id: ing_대구곤이
   class: Ingredient
   data:
-    name: 청양고추
-- id: ing_자숙문어_절단
-  class: Ingredient
-  data:
-    name: 자숙문어(절단)
-- id: ing_게_이탈리아
-  class: Ingredient
-  data:
-    name: 꽃게 (이탈리아산)
+    name: 대구곤이
+    origin: 아이슬란드
 - id: ing_전복
   class: Ingredient
   data:
