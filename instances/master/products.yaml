@@ -11,10 +11,6 @@ instances:
   class: Product
   data:
     name: 국산문어 해물탕
-- id: prod_sp_006
-  class: Product
-  data:
-    name: 국산홍가리비살
 - id: prod_sp_023
   class: Product
   data:
@@ -23,10 +19,6 @@ instances:
   class: Product
   data:
     name: 낙지볶음
-- id: prod_mk_003
-  class: Product
-  data:
-    name: 알탕
 - id: prod_mk_009
   class: Product
   data:
@@ -35,26 +27,14 @@ instances:
   class: Product
   data:
     name: 주꾸미
-- id: prod_sp_007
-  class: Product
-  data:
-    name: 국산흑골뱅이
 - id: prod_sp_025
   class: Product
   data:
     name: 절단낙지
-- id: prod_mk_024
-  class: Product
-  data:
-    name: 푸짐한 알탕
 - id: prod_gj_003
   class: Product
   data:
     name: 간장 새우장
-- id: prod_gj_001
-  class: Product
-  data:
-    name: 국산 알베기 간장게장
 - id: prod_sp_019
   class: Product
   data:
@@ -167,10 +147,42 @@ instances:
   class: Product
   data:
     name: 주꾸미볶음
+- id: prod_mk_022
+  class: Product
+  data:
+    name: 낙지전복해물탕
+- id: prod_mk_023
+  class: Product
+  data:
+    name: 동태알탕
+- id: prod_sp_006
+  class: Product
+  data:
+    name: 국산홍가리비살
 - id: prod_mk_020
   class: Product
   data:
     name: 낙지볶음
+- id: prod_mk_013
+  class: Product
+  data:
+    name: 문어전복해물탕
+- id: prod_mk_003
+  class: Product
+  data:
+    name: 알탕
+- id: prod_sp_007
+  class: Product
+  data:
+    name: 국산흑골뱅이
+- id: prod_mk_024
+  class: Product
+  data:
+    name: 푸짐한 알탕
+- id: prod_gj_001
+  class: Product
+  data:
+    name: 국산 알베기 간장게장
 - id: prod_sp_012
   class: Product
   data:
@@ -187,18 +199,10 @@ instances:
   class: Product
   data:
     name: 손질낙지
-- id: prod_mk_022
-  class: Product
-  data:
-    name: 낙지전복해물탕
 - id: prod_sp_013
   class: Product
   data:
     name: 흰다리새우살(대)
-- id: prod_mk_013
-  class: Product
-  data:
-    name: 문어전복해물탕
 - id: prod_sp_014
   class: Product
   data:
@@ -223,10 +227,6 @@ instances:
   class: Product
   data:
     name: 알곤이세트
-- id: prod_mk_023
-  class: Product
-  data:
-    name: 동태알탕
 - id: prod_mk_030
   class: Product
   data:
