@@ -1,196 +1,34 @@
 instances:
-- id: recipe_wangsimni_mk001
+- id: recipe_wangsimni_mk009
   class: Recipe
   data:
-    name: 문어전복해물탕 (왕십리)
-    price: 23800
+    name: 순살 아귀찜 (왕십리)
+    price: 19800
     effectiveFrom: '2026-01-01'
-    martCode: '117630'
+    martCode: '117703'
   relations:
-    forProduct: prod_mk_001
-    atStore: store_wangsimni
+    forProduct: prod_mk_009
     uses:
-    - ingredient: ing_자숙문어
-      amount: 230.0
-      unit: g
-      pspec: pspec_024
-    - ingredient: ing_전복
-      amount: 1.0
-      unit: 마리
-      pspec: pspec_023
-    - ingredient: ing_새우
-      amount: 2.0
-      unit: 마리
-      pspec: pspec_004
-    - ingredient: ing_솔방울오징어
-      amount: 150.0
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_백생합
-      amount: 130.0
-      unit: g
-      pspec: pspec_016
-    - ingredient: ing_홍합
-      amount: 80.0
-      unit: g
-      pspec: pspec_017
-    - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_091
-    - ingredient: ing_무
-      amount: 70.0
-      unit: g
-      pspec: pspec_090
-    - ingredient: ing_대파
-      amount: 30.0
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      amount: 3.0
-      unit: g
-      pspec: pspec_088
-    - ingredient: ing_해물탕소스
-      amount: 2.0
-      unit: 팩
-      pspec: pspec_047
-- id: recipe_wangsimni_mk002
-  class: Recipe
-  data:
-    name: 낙지전복해물탕 (왕십리)
-    price: 23800
-    effectiveFrom: '2026-01-01'
-    martCode: '235905'
-  relations:
-    forProduct: prod_mk_002
-    atStore: store_wangsimni
-    uses:
-    - ingredient: ing_낙지
-      amount: 230.0
-      unit: g
-      pspec: pspec_071
-    - ingredient: ing_전복
-      amount: 1.0
-      unit: 마리
-      pspec: pspec_023
-    - ingredient: ing_새우
-      amount: 2.0
-      unit: 마리
-      pspec: pspec_004
-    - ingredient: ing_솔방울오징어
-      amount: 150.0
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_백생합
-      amount: 130.0
-      unit: g
-      pspec: pspec_016
-    - ingredient: ing_홍합
-      amount: 80.0
-      unit: g
-      pspec: pspec_017
-    - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_091
-    - ingredient: ing_무
-      amount: 70.0
-      unit: g
-      pspec: pspec_090
-    - ingredient: ing_대파
-      amount: 30.0
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      amount: 3.0
-      unit: g
-      pspec: pspec_088
-    - ingredient: ing_해물탕소스
-      amount: 2.0
-      unit: 팩
-      pspec: pspec_047
-- id: recipe_wangsimni_mk003
-  class: Recipe
-  data:
-    name: 알탕 (왕십리)
-    price: 15800
-    effectiveFrom: '2026-01-01'
-    martCode: '235930'
-  relations:
-    forProduct: prod_mk_003
-    atStore: store_wangsimni
-    uses:
-    - ingredient: ing_명란
-      amount: 100.0
-      unit: g
-      pspec: pspec_039
-    - ingredient: ing_대구곤이
-      amount: 150.0
-      unit: g
-      pspec: pspec_038
-    - ingredient: ing_솔방울오징어
-      amount: 150.0
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_백생합
-      amount: 130.0
-      unit: g
-      pspec: pspec_016
-    - ingredient: ing_홍합
-      amount: 80.0
-      unit: g
-      pspec: pspec_017
-    - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_091
-    - ingredient: ing_대파
-      amount: 30.0
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_무
-      amount: 70.0
-      unit: g
-      pspec: pspec_090
-    - ingredient: ing_홍고추
-      amount: 3.0
-      unit: g
-      pspec: pspec_088
-    - ingredient: ing_해물탕소스
-      amount: 2.0
-      unit: 팩
-      pspec: pspec_047
-- id: recipe_wangsimni_mk004
-  class: Recipe
-  data:
-    name: 코다리알탕 (왕십리)
-    price: 15800
-    effectiveFrom: '2026-01-01'
-    martCode: '235930'
-  relations:
-    forProduct: prod_mk_004
-    atStore: store_wangsimni
-    uses:
-    - ingredient: ing_코다리
+    - ingredient: ing_순살아귀
       amount: 350.0
       unit: g
-      pspec: pspec_035
+      pspec: pspec_073
     - ingredient: ing_명란
-      amount: 100.0
+      amount: 50.0
       unit: g
       pspec: pspec_039
     - ingredient: ing_대구곤이
-      amount: 150.0
+      amount: 50.0
       unit: g
       pspec: pspec_038
-    - ingredient: ing_백생합
-      amount: 130.0
+    - ingredient: ing_솔방울오징어
+      amount: 100.0
       unit: g
-      pspec: pspec_016
-    - ingredient: ing_홍합
-      amount: 80.0
+      pspec: pspec_034
+    - ingredient: ing_오만둥이
+      amount: 30.0
       unit: g
-      pspec: pspec_017
+      pspec: pspec_041
     - ingredient: ing_콩나물
       amount: 1.0
       unit: 팩
@@ -199,18 +37,122 @@ instances:
       amount: 30.0
       unit: g
       pspec: pspec_089
-    - ingredient: ing_무
-      amount: 70.0
-      unit: g
-      pspec: pspec_090
     - ingredient: ing_홍고추
       amount: 3.0
       unit: g
       pspec: pspec_088
-    - ingredient: ing_해물탕소스
+    - ingredient: ing_만능찜소스
       amount: 2.0
       unit: 팩
-      pspec: pspec_047
+      pspec: pspec_074
+- id: recipe_wangsimni_sp007
+  class: Recipe
+  data:
+    name: 국산흑골뱅이 (왕십리)
+    effectiveFrom: '2026-01-01'
+    martCode: '117706'
+  relations:
+    forProduct: prod_sp_007
+    uses:
+    - ingredient: ing_골뱅이
+      unit: g
+- id: recipe_wangsimni_sp001
+  class: Recipe
+  data:
+    name: 가리비관자 (왕십리)
+    price: 9980
+    effectiveFrom: '2026-01-01'
+    martCode: '117449'
+  relations:
+    forProduct: prod_sp_001
+    uses:
+    - ingredient: ing_가리비관자
+      unit: g
+      pspec: pspec_021
+    - ingredient: ing_레몬주스
+      unit: ml
+    - ingredient: ing_버터
+      unit: g
+- id: recipe_wangsimni_mk011
+  class: Recipe
+  data:
+    name: 주꾸미볶음 (왕십리)
+    price: 15800
+    effectiveFrom: '2026-01-01'
+    martCode: '234464'
+  relations:
+    forProduct: prod_mk_011
+    uses:
+    - ingredient: ing_주꾸미
+      amount: 230.0
+      unit: g
+      pspec: pspec_033
+    - ingredient: ing_솔방울오징어
+      amount: 150.0
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_양배추콩나물세트
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_086
+    - ingredient: ing_대파
+      amount: 30.0
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_홍고추
+      amount: 3.0
+      unit: g
+      pspec: pspec_088
+    - ingredient: ing_볶음소스
+      amount: 2.0
+      unit: 팩
+      pspec: pspec_045
+- id: recipe_wangsimni_gj003
+  class: Recipe
+  data:
+    name: 간장 새우장 (왕십리)
+    price: 9980
+    effectiveFrom: '2026-01-01'
+    martCode: '236067'
+  relations:
+    forProduct: prod_gj_003
+    uses:
+    - ingredient: ing_흰다리새우살_L_페루
+      unit: g
+      pspec: pspec_005
+    - ingredient: ing_간장소스
+      unit: g
+      pspec: pspec_049
+    - ingredient: ing_미림
+      unit: 큰술
+    - ingredient: ing_홍고추
+      unit: 개
+      pspec: pspec_088
+- id: recipe_wangsimni_sp010
+  class: Recipe
+  data:
+    name: 손질 낙지 (왕십리)
+    price: 3280
+    effectiveFrom: '2026-01-01'
+    martCode: '117709'
+  relations:
+    forProduct: prod_sp_010
+    uses:
+    - ingredient: ing_낙지
+      unit: g
+      pspec: pspec_071
+- id: recipe_wangsimni_sp009
+  class: Recipe
+  data:
+    name: 손질 갑오징어 (왕십리)
+    price: 3280
+    effectiveFrom: '2026-01-01'
+    martCode: '117708'
+  relations:
+    forProduct: prod_sp_009
+    uses:
+    - ingredient: ing_갑오징어
+      unit: g
 - id: recipe_wangsimni_mk007
   class: Recipe
   data:
@@ -220,7 +162,6 @@ instances:
     martCode: '117700'
   relations:
     forProduct: prod_mk_007
-    atStore: store_wangsimni
     uses:
     - ingredient: ing_대구
       amount: 400.0
@@ -266,6 +207,173 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
+- id: recipe_wangsimni_gj002
+  class: Recipe
+  data:
+    name: 간장게장 (왕십리)
+    price: 15800
+    effectiveFrom: '2026-01-01'
+    martCode: '117712'
+  relations:
+    forProduct: prod_gj_002
+- id: recipe_wangsimni_mk012
+  class: Recipe
+  data:
+    name: 낙지볶음 (왕십리)
+    price: 15800
+    effectiveFrom: '2026-01-01'
+    martCode: '115237'
+  relations:
+    forProduct: prod_mk_012
+    uses:
+    - ingredient: ing_낙지
+      amount: 230.0
+      unit: g
+      pspec: pspec_071
+    - ingredient: ing_솔방울오징어
+      amount: 150.0
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_양배추콩나물세트
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_086
+    - ingredient: ing_대파
+      amount: 30.0
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_홍고추
+      amount: 3.0
+      unit: g
+      pspec: pspec_088
+    - ingredient: ing_볶음소스
+      amount: 2.0
+      unit: 팩
+      pspec: pspec_045
+- id: recipe_wangsimni_mk004
+  class: Recipe
+  data:
+    name: 코다리알탕 (왕십리)
+    price: 15800
+    effectiveFrom: '2026-01-01'
+    martCode: '235930'
+  relations:
+    forProduct: prod_mk_004
+    uses:
+    - ingredient: ing_코다리
+      amount: 350.0
+      unit: g
+      pspec: pspec_035
+    - ingredient: ing_명란
+      amount: 100.0
+      unit: g
+      pspec: pspec_039
+    - ingredient: ing_대구곤이
+      amount: 150.0
+      unit: g
+      pspec: pspec_038
+    - ingredient: ing_백생합
+      amount: 130.0
+      unit: g
+      pspec: pspec_016
+    - ingredient: ing_홍합
+      amount: 80.0
+      unit: g
+      pspec: pspec_017
+    - ingredient: ing_콩나물
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_091
+    - ingredient: ing_대파
+      amount: 30.0
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_무
+      amount: 70.0
+      unit: g
+      pspec: pspec_090
+    - ingredient: ing_홍고추
+      amount: 3.0
+      unit: g
+      pspec: pspec_088
+    - ingredient: ing_해물탕소스
+      amount: 2.0
+      unit: 팩
+      pspec: pspec_047
+- id: recipe_wangsimni_mk003
+  class: Recipe
+  data:
+    name: 알탕 (왕십리)
+    price: 15800
+    effectiveFrom: '2026-01-01'
+    martCode: '235930'
+  relations:
+    forProduct: prod_mk_003
+    uses:
+    - ingredient: ing_명란
+      amount: 100.0
+      unit: g
+      pspec: pspec_039
+    - ingredient: ing_대구곤이
+      amount: 150.0
+      unit: g
+      pspec: pspec_038
+    - ingredient: ing_솔방울오징어
+      amount: 150.0
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_백생합
+      amount: 130.0
+      unit: g
+      pspec: pspec_016
+    - ingredient: ing_홍합
+      amount: 80.0
+      unit: g
+      pspec: pspec_017
+    - ingredient: ing_콩나물
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_091
+    - ingredient: ing_대파
+      amount: 30.0
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_무
+      amount: 70.0
+      unit: g
+      pspec: pspec_090
+    - ingredient: ing_홍고추
+      amount: 3.0
+      unit: g
+      pspec: pspec_088
+    - ingredient: ing_해물탕소스
+      amount: 2.0
+      unit: 팩
+      pspec: pspec_047
+- id: recipe_wangsimni_sp002
+  class: Recipe
+  data:
+    name: 흰다리새우 (왕십리)
+    price: 3480
+    effectiveFrom: '2026-01-01'
+    martCode: '236143'
+  relations:
+    forProduct: prod_sp_002
+    uses:
+    - ingredient: ing_새우
+      unit: g
+      pspec: pspec_004
+    - ingredient: ing_레몬주스
+      unit: ml
+- id: recipe_wangsimni_gj001
+  class: Recipe
+  data:
+    name: 국산 알베기 간장게장 (왕십리)
+    price: 23800
+    effectiveFrom: '2026-01-01'
+    martCode: '117711'
+  relations:
+    forProduct: prod_gj_001
 - id: recipe_wangsimni_mk008
   class: Recipe
   data:
@@ -276,7 +384,6 @@ instances:
     martCode: '117701'
   relations:
     forProduct: prod_mk_008
-    atStore: store_wangsimni
     uses:
     - ingredient: ing_자숙문어
       amount: 230.0
@@ -331,7 +438,6 @@ instances:
     martCode: '117702'
   relations:
     forProduct: prod_mk_008
-    atStore: store_wangsimni
     uses:
     - ingredient: ing_자숙문어
       amount: 200.0
@@ -377,53 +483,6 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wangsimni_mk009
-  class: Recipe
-  data:
-    name: 순살 아귀찜 (왕십리)
-    price: 19800
-    effectiveFrom: '2026-01-01'
-    martCode: '117703'
-  relations:
-    forProduct: prod_mk_009
-    atStore: store_wangsimni
-    uses:
-    - ingredient: ing_순살아귀
-      amount: 350.0
-      unit: g
-      pspec: pspec_073
-    - ingredient: ing_명란
-      amount: 50.0
-      unit: g
-      pspec: pspec_039
-    - ingredient: ing_대구곤이
-      amount: 50.0
-      unit: g
-      pspec: pspec_038
-    - ingredient: ing_솔방울오징어
-      amount: 100.0
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_오만둥이
-      amount: 30.0
-      unit: g
-      pspec: pspec_041
-    - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_091
-    - ingredient: ing_대파
-      amount: 30.0
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      amount: 3.0
-      unit: g
-      pspec: pspec_088
-    - ingredient: ing_만능찜소스
-      amount: 2.0
-      unit: 팩
-      pspec: pspec_074
 - id: recipe_wangsimni_mk010
   class: Recipe
   data:
@@ -433,7 +492,6 @@ instances:
     martCode: '117704'
   relations:
     forProduct: prod_mk_010
-    atStore: store_wangsimni
     uses:
     - ingredient: ing_낙지
       amount: 130.0
@@ -467,126 +525,6 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_046
-- id: recipe_wangsimni_mk011
-  class: Recipe
-  data:
-    name: 주꾸미볶음 (왕십리)
-    price: 15800
-    effectiveFrom: '2026-01-01'
-    martCode: '234464'
-  relations:
-    forProduct: prod_mk_011
-    atStore: store_wangsimni
-    uses:
-    - ingredient: ing_주꾸미
-      amount: 230.0
-      unit: g
-      pspec: pspec_033
-    - ingredient: ing_솔방울오징어
-      amount: 150.0
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_양배추콩나물세트
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_086
-    - ingredient: ing_대파
-      amount: 30.0
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      amount: 3.0
-      unit: g
-      pspec: pspec_088
-    - ingredient: ing_볶음소스
-      amount: 2.0
-      unit: 팩
-      pspec: pspec_045
-- id: recipe_wangsimni_mk012
-  class: Recipe
-  data:
-    name: 낙지볶음 (왕십리)
-    price: 15800
-    effectiveFrom: '2026-01-01'
-    martCode: '115237'
-  relations:
-    forProduct: prod_mk_012
-    atStore: store_wangsimni
-    uses:
-    - ingredient: ing_낙지
-      amount: 230.0
-      unit: g
-      pspec: pspec_071
-    - ingredient: ing_솔방울오징어
-      amount: 150.0
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_양배추콩나물세트
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_086
-    - ingredient: ing_대파
-      amount: 30.0
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      amount: 3.0
-      unit: g
-      pspec: pspec_088
-    - ingredient: ing_볶음소스
-      amount: 2.0
-      unit: 팩
-      pspec: pspec_045
-- id: recipe_wangsimni_sp001
-  class: Recipe
-  data:
-    name: 가리비관자 (왕십리)
-    price: 9980
-    effectiveFrom: '2026-01-01'
-    martCode: '117449'
-  relations:
-    forProduct: prod_sp_001
-    atStore: store_wangsimni
-    uses:
-    - ingredient: ing_가리비관자
-      unit: g
-      pspec: pspec_021
-    - ingredient: ing_레몬주스
-      unit: ml
-    - ingredient: ing_버터
-      unit: g
-- id: recipe_wangsimni_sp002
-  class: Recipe
-  data:
-    name: 흰다리새우 (왕십리)
-    price: 3480
-    effectiveFrom: '2026-01-01'
-    martCode: '236143'
-  relations:
-    forProduct: prod_sp_002
-    atStore: store_wangsimni
-    uses:
-    - ingredient: ing_새우
-      unit: g
-      pspec: pspec_004
-    - ingredient: ing_레몬주스
-      unit: ml
-- id: recipe_wangsimni_sp003
-  class: Recipe
-  data:
-    name: 손질 흰다리새우살(대) (왕십리)
-    price: 3980
-    effectiveFrom: '2026-01-01'
-    martCode: '236143'
-  relations:
-    forProduct: prod_sp_003
-    atStore: store_wangsimni
-    uses:
-    - ingredient: ing_흰다리새우살_L_페루
-      unit: g
-      pspec: pspec_005
-    - ingredient: ing_레몬주스
-      unit: ml
 - id: recipe_wangsimni_sp004
   class: Recipe
   data:
@@ -596,7 +534,6 @@ instances:
     martCode: '236157'
   relations:
     forProduct: prod_sp_004
-    atStore: store_wangsimni
     uses:
     - ingredient: ing_흰다리새우살_S_베트남
       unit: g
@@ -612,36 +549,10 @@ instances:
     martCode: '118648'
   relations:
     forProduct: prod_sp_005
-    atStore: store_wangsimni
     uses:
     - ingredient: ing_전복
       unit: 개
       pspec: pspec_023
-- id: recipe_wangsimni_sp006
-  class: Recipe
-  data:
-    name: 국산홍가리비살 (왕십리)
-    price: 2980
-    effectiveFrom: '2026-01-01'
-    martCode: '117705'
-  relations:
-    forProduct: prod_sp_006
-    atStore: store_wangsimni
-    uses:
-    - ingredient: ing_홍가리비살
-      unit: g
-- id: recipe_wangsimni_sp007
-  class: Recipe
-  data:
-    name: 국산흑골뱅이 (왕십리)
-    effectiveFrom: '2026-01-01'
-    martCode: '117706'
-  relations:
-    forProduct: prod_sp_007
-    atStore: store_wangsimni
-    uses:
-    - ingredient: ing_골뱅이
-      unit: g
 - id: recipe_wangsimni_sp008
   class: Recipe
   data:
@@ -651,38 +562,22 @@ instances:
     martCode: '117707'
   relations:
     forProduct: prod_sp_008
-    atStore: store_wangsimni
     uses:
     - ingredient: ing_백생합
       unit: g
       pspec: pspec_016
-- id: recipe_wangsimni_sp009
+- id: recipe_wangsimni_sp006
   class: Recipe
   data:
-    name: 손질 갑오징어 (왕십리)
-    price: 3280
+    name: 국산홍가리비살 (왕십리)
+    price: 2980
     effectiveFrom: '2026-01-01'
-    martCode: '117708'
+    martCode: '117705'
   relations:
-    forProduct: prod_sp_009
-    atStore: store_wangsimni
+    forProduct: prod_sp_006
     uses:
-    - ingredient: ing_갑오징어
+    - ingredient: ing_홍가리비살
       unit: g
-- id: recipe_wangsimni_sp010
-  class: Recipe
-  data:
-    name: 손질 낙지 (왕십리)
-    price: 3280
-    effectiveFrom: '2026-01-01'
-    martCode: '117709'
-  relations:
-    forProduct: prod_sp_010
-    atStore: store_wangsimni
-    uses:
-    - ingredient: ing_낙지
-      unit: g
-      pspec: pspec_071
 - id: recipe_wangsimni_sp011
   class: Recipe
   data:
@@ -692,50 +587,130 @@ instances:
     martCode: '117710'
   relations:
     forProduct: prod_sp_011
-    atStore: store_wangsimni
     uses:
     - ingredient: ing_주꾸미
       unit: g
       pspec: pspec_033
-- id: recipe_wangsimni_gj001
+- id: recipe_wangsimni_mk001
   class: Recipe
   data:
-    name: 국산 알베기 간장게장 (왕십리)
+    name: 문어전복해물탕 (왕십리)
     price: 23800
     effectiveFrom: '2026-01-01'
-    martCode: '117711'
+    martCode: '117630'
   relations:
-    forProduct: prod_gj_001
-    atStore: store_wangsimni
-- id: recipe_wangsimni_gj002
+    forProduct: prod_mk_001
+    uses:
+    - ingredient: ing_자숙문어
+      amount: 230.0
+      unit: g
+      pspec: pspec_024
+    - ingredient: ing_전복
+      amount: 1.0
+      unit: 마리
+      pspec: pspec_023
+    - ingredient: ing_새우
+      amount: 2.0
+      unit: 마리
+      pspec: pspec_004
+    - ingredient: ing_솔방울오징어
+      amount: 150.0
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_백생합
+      amount: 130.0
+      unit: g
+      pspec: pspec_016
+    - ingredient: ing_홍합
+      amount: 80.0
+      unit: g
+      pspec: pspec_017
+    - ingredient: ing_콩나물
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_091
+    - ingredient: ing_무
+      amount: 70.0
+      unit: g
+      pspec: pspec_090
+    - ingredient: ing_대파
+      amount: 30.0
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_홍고추
+      amount: 3.0
+      unit: g
+      pspec: pspec_088
+    - ingredient: ing_해물탕소스
+      amount: 2.0
+      unit: 팩
+      pspec: pspec_047
+- id: recipe_wangsimni_mk002
   class: Recipe
   data:
-    name: 간장게장 (왕십리)
-    price: 15800
+    name: 낙지전복해물탕 (왕십리)
+    price: 23800
     effectiveFrom: '2026-01-01'
-    martCode: '117712'
+    martCode: '235905'
   relations:
-    forProduct: prod_gj_002
-    atStore: store_wangsimni
-- id: recipe_wangsimni_gj003
+    forProduct: prod_mk_002
+    uses:
+    - ingredient: ing_낙지
+      amount: 230.0
+      unit: g
+      pspec: pspec_071
+    - ingredient: ing_전복
+      amount: 1.0
+      unit: 마리
+      pspec: pspec_023
+    - ingredient: ing_새우
+      amount: 2.0
+      unit: 마리
+      pspec: pspec_004
+    - ingredient: ing_솔방울오징어
+      amount: 150.0
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_백생합
+      amount: 130.0
+      unit: g
+      pspec: pspec_016
+    - ingredient: ing_홍합
+      amount: 80.0
+      unit: g
+      pspec: pspec_017
+    - ingredient: ing_콩나물
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_091
+    - ingredient: ing_무
+      amount: 70.0
+      unit: g
+      pspec: pspec_090
+    - ingredient: ing_대파
+      amount: 30.0
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_홍고추
+      amount: 3.0
+      unit: g
+      pspec: pspec_088
+    - ingredient: ing_해물탕소스
+      amount: 2.0
+      unit: 팩
+      pspec: pspec_047
+- id: recipe_wangsimni_sp003
   class: Recipe
   data:
-    name: 간장 새우장 (왕십리)
-    price: 9980
+    name: 손질 흰다리새우살(대) (왕십리)
+    price: 3980
     effectiveFrom: '2026-01-01'
-    martCode: '236067'
+    martCode: '236143'
   relations:
-    forProduct: prod_gj_003
-    atStore: store_wangsimni
+    forProduct: prod_sp_003
     uses:
     - ingredient: ing_흰다리새우살_L_페루
       unit: g
       pspec: pspec_005
-    - ingredient: ing_간장소스
-      unit: g
-      pspec: pspec_049
-    - ingredient: ing_미림
-      unit: 큰술
-    - ingredient: ing_홍고추
-      unit: 개
-      pspec: pspec_088
+    - ingredient: ing_레몬주스
+      unit: ml
