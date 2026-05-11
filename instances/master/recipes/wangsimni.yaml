@@ -1,94 +1,4 @@
 instances:
-- id: recipe_wangsimni_gj003
-  class: Recipe
-  data:
-    name: 간장 새우장 (왕십리)
-    price: 9980
-    effectiveFrom: '2026-01-01'
-    martCode: '236067'
-  relations:
-    forProduct: prod_gj_003
-    uses:
-    - ingredient: ing_흰다리새우살_L_페루
-      unit: g
-      pspec: pspec_005
-    - ingredient: ing_간장소스
-      unit: g
-      pspec: pspec_049
-    - ingredient: ing_미림
-      unit: 큰술
-    - ingredient: ing_홍고추
-      unit: 개
-      pspec: pspec_088
-- id: recipe_wangsimni_sp010
-  class: Recipe
-  data:
-    name: 손질 낙지 (왕십리)
-    price: 3280
-    effectiveFrom: '2026-01-01'
-    martCode: '117709'
-  relations:
-    forProduct: prod_sp_010
-    uses:
-    - ingredient: ing_낙지
-      unit: g
-      pspec: pspec_071
-- id: recipe_wangsimni_sp009
-  class: Recipe
-  data:
-    name: 손질 갑오징어 (왕십리)
-    price: 3280
-    effectiveFrom: '2026-01-01'
-    martCode: '117708'
-  relations:
-    forProduct: prod_sp_009
-    uses:
-    - ingredient: ing_갑오징어
-      unit: g
-- id: recipe_wangsimni_gj002
-  class: Recipe
-  data:
-    name: 간장게장 (왕십리)
-    price: 15800
-    effectiveFrom: '2026-01-01'
-    martCode: '117712'
-  relations:
-    forProduct: prod_gj_002
-- id: recipe_wangsimni_gj001
-  class: Recipe
-  data:
-    name: 국산 알베기 간장게장 (왕십리)
-    price: 23800
-    effectiveFrom: '2026-01-01'
-    martCode: '117711'
-  relations:
-    forProduct: prod_gj_001
-- id: recipe_wangsimni_sp008
-  class: Recipe
-  data:
-    name: 백생합 (왕십리)
-    price: 990
-    effectiveFrom: '2026-01-01'
-    martCode: '117707'
-  relations:
-    forProduct: prod_sp_008
-    uses:
-    - ingredient: ing_백생합
-      unit: g
-      pspec: pspec_016
-- id: recipe_wangsimni_sp011
-  class: Recipe
-  data:
-    name: 손질 주꾸미 (왕십리)
-    price: 3280
-    effectiveFrom: '2026-01-01'
-    martCode: '117710'
-  relations:
-    forProduct: prod_sp_011
-    uses:
-    - ingredient: ing_주꾸미
-      unit: g
-      pspec: pspec_033
 - id: recipe_wangsimni_mk001
   class: Recipe
   data:
@@ -714,3 +624,93 @@ instances:
     uses:
     - ingredient: ing_골뱅이
       unit: g
+- id: recipe_wangsimni_sp008
+  class: Recipe
+  data:
+    name: 백생합 (왕십리)
+    price: 990
+    effectiveFrom: '2026-01-01'
+    martCode: '117707'
+  relations:
+    forProduct: prod_sp_008
+    uses:
+    - ingredient: ing_백생합
+      unit: g
+      pspec: pspec_016
+- id: recipe_wangsimni_sp009
+  class: Recipe
+  data:
+    name: 손질 갑오징어 (왕십리)
+    price: 3280
+    effectiveFrom: '2026-01-01'
+    martCode: '117708'
+  relations:
+    forProduct: prod_sp_009
+    uses:
+    - ingredient: ing_갑오징어
+      unit: g
+- id: recipe_wangsimni_sp010
+  class: Recipe
+  data:
+    name: 손질 낙지 (왕십리)
+    price: 3280
+    effectiveFrom: '2026-01-01'
+    martCode: '117709'
+  relations:
+    forProduct: prod_sp_010
+    uses:
+    - ingredient: ing_낙지
+      unit: g
+      pspec: pspec_071
+- id: recipe_wangsimni_sp011
+  class: Recipe
+  data:
+    name: 손질 주꾸미 (왕십리)
+    price: 3280
+    effectiveFrom: '2026-01-01'
+    martCode: '117710'
+  relations:
+    forProduct: prod_sp_011
+    uses:
+    - ingredient: ing_주꾸미
+      unit: g
+      pspec: pspec_033
+- id: recipe_wangsimni_gj001
+  class: Recipe
+  data:
+    name: 국산 알베기 간장게장 (왕십리)
+    price: 23800
+    effectiveFrom: '2026-01-01'
+    martCode: '117711'
+  relations:
+    forProduct: prod_gj_001
+- id: recipe_wangsimni_gj002
+  class: Recipe
+  data:
+    name: 간장게장 (왕십리)
+    price: 15800
+    effectiveFrom: '2026-01-01'
+    martCode: '117712'
+  relations:
+    forProduct: prod_gj_002
+- id: recipe_wangsimni_gj003
+  class: Recipe
+  data:
+    name: 간장 새우장 (왕십리)
+    price: 9980
+    effectiveFrom: '2026-01-01'
+    martCode: '236067'
+  relations:
+    forProduct: prod_gj_003
+    uses:
+    - ingredient: ing_흰다리새우살_L_페루
+      unit: g
+      pspec: pspec_005
+    - ingredient: ing_간장소스
+      unit: g
+      pspec: pspec_049
+    - ingredient: ing_미림
+      unit: 큰술
+    - ingredient: ing_홍고추
+      unit: 개
+      pspec: pspec_088
