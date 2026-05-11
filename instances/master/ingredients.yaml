@@ -62,6 +62,10 @@ instances:
   data:
     name: 비자숙문어
     origin: 국산
+- id: ing_참기름
+  class: Ingredient
+  data:
+    name: 참기름
 - id: ing_미림
   class: Ingredient
   data:
@@ -76,6 +80,10 @@ instances:
   data:
     name: 통대구
     origin: 러시아
+- id: ing_된장
+  class: Ingredient
+  data:
+    name: 된장
 - id: ing_홍가리비살
   class: Ingredient
   data:
@@ -88,10 +96,6 @@ instances:
   class: Ingredient
   data:
     name: 자숙피뿔고둥살
-- id: ing_된장
-  class: Ingredient
-  data:
-    name: 된장
 - id: ing_대구곤이
   class: Ingredient
   data:
@@ -101,6 +105,10 @@ instances:
   class: Ingredient
   data:
     name: 라면
+- id: ing_양배추
+  class: Ingredient
+  data:
+    name: 양배추
 - id: ing_게
   class: Ingredient
   data:
@@ -132,10 +140,19 @@ instances:
   class: Ingredient
   data:
     name: 애호박
-- id: ing_참기름
+- id: ing_흰다리새우살_L_페루
   class: Ingredient
   data:
-    name: 참기름
+    name: 흰다리새우살 (대)
+    origin: 페루
+- id: ing_게_바레인
+  class: Ingredient
+  data:
+    name: 꽃게 (바레인산)
+- id: ing_만능찜소스
+  class: Ingredient
+  data:
+    name: 만능찜소스
 - id: ing_명란
   class: Ingredient
   data:
@@ -154,11 +171,6 @@ instances:
   class: Ingredient
   data:
     name: 볶음소스
-- id: ing_홍합
-  class: Ingredient
-  data:
-    name: 홍합
-    origin: 국내산
 - id: ing_대파
   class: Ingredient
   data:
@@ -184,11 +196,6 @@ instances:
   class: Ingredient
   data:
     name: 간장소스
-- id: ing_흰다리새우살_L_페루
-  class: Ingredient
-  data:
-    name: 흰다리새우살 (대)
-    origin: 페루
 - id: ing_대구
   class: Ingredient
   data:
@@ -230,19 +237,11 @@ instances:
   data:
     name: 전복
     origin: 국내산
-- id: ing_양배추
-  class: Ingredient
-  data:
-    name: 양배추
 - id: ing_백생합
   class: Ingredient
   data:
     name: 백생합
     origin: 중국
-- id: ing_게_바레인
-  class: Ingredient
-  data:
-    name: 꽃게 (바레인산)
 - id: ing_고추장
   class: Ingredient
   data:
@@ -266,10 +265,6 @@ instances:
   data:
     name: 가리비관자
     origin: 중국
-- id: ing_만능찜소스
-  class: Ingredient
-  data:
-    name: 만능찜소스
 - id: ing_볼락
   class: Ingredient
   data:
@@ -296,6 +291,11 @@ instances:
   data:
     name: 흰다리새우(사우디)
     origin: 사우디아라비아
+- id: ing_홍합
+  class: Ingredient
+  data:
+    name: 홍합
+    origin: 국내산
 - id: ing_코다리
   class: Ingredient
   data:
