@@ -7,10 +7,11 @@ instances:
   class: Ingredient
   data:
     name: 낙곱새소스
-- id: ing_미림
+- id: ing_백생합
   class: Ingredient
   data:
-    name: 미림
+    name: 백생합
+    origin: 중국
 - id: ing_된장
   class: Ingredient
   data:
@@ -24,28 +25,22 @@ instances:
   data:
     name: 흰다리새우살
     origin: 베트남
-- id: ing_통대구
+- id: ing_두부
   class: Ingredient
   data:
-    name: 통대구
-    origin: 러시아
+    name: 두부
 - id: ing_마늘
   class: Ingredient
   data:
     name: 마늘
-- id: ing_고춧가루
-  class: Ingredient
-  data:
-    name: 고춧가루
 - id: ing_소금
   class: Ingredient
   data:
     name: 소금
-- id: ing_갑오징어
+- id: ing_고춧가루
   class: Ingredient
   data:
-    name: 갑오징어
-    origin: 인도네시아
+    name: 고춧가루
 - id: ing_염지소대창
   class: Ingredient
   data:
@@ -60,6 +55,10 @@ instances:
   data:
     name: 백새우살
     origin: 베트남
+- id: ing_미림
+  class: Ingredient
+  data:
+    name: 미림
 - id: ing_코다리
   class: Ingredient
   data:
@@ -135,20 +134,10 @@ instances:
   class: Ingredient
   data:
     name: 만능찜소스
-- id: ing_새우_사우디
-  class: Ingredient
-  data:
-    name: 흰다리새우(사우디)
-    origin: 사우디아라비아
 - id: ing_양파
   class: Ingredient
   data:
     name: 양파
-- id: ing_백생합
-  class: Ingredient
-  data:
-    name: 백생합
-    origin: 중국
 - id: ing_냉동홍가리비
   class: Ingredient
   data:
@@ -175,6 +164,11 @@ instances:
   data:
     name: 대구곤이
     origin: 아이슬란드
+- id: ing_통대구
+  class: Ingredient
+  data:
+    name: 통대구
+    origin: 러시아
 - id: ing_무
   class: Ingredient
   data:
@@ -202,6 +196,11 @@ instances:
   class: Ingredient
   data:
     name: 동태
+- id: ing_갑오징어
+  class: Ingredient
+  data:
+    name: 갑오징어
+    origin: 인도네시아
 - id: ing_양배추콩나물세트
   class: Ingredient
   data:
@@ -232,14 +231,15 @@ instances:
   class: Ingredient
   data:
     name: 초고추장
-- id: ing_두부
-  class: Ingredient
-  data:
-    name: 두부
 - id: ing_순살아귀
   class: Ingredient
   data:
     name: 순살아귀
+- id: ing_새우_사우디
+  class: Ingredient
+  data:
+    name: 흰다리새우(사우디)
+    origin: 사우디아라비아
 - id: ing_홍가리비살
   class: Ingredient
   data:
