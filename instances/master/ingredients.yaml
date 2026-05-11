@@ -109,10 +109,6 @@ instances:
   class: Ingredient
   data:
     name: 라면
-- id: ing_버터
-  class: Ingredient
-  data:
-    name: 버터
 - id: ing_자숙피뿔고둥살
   class: Ingredient
   data:
@@ -122,10 +118,6 @@ instances:
   data:
     name: 명란
     origin: 러시아
-- id: ing_간장소스
-  class: Ingredient
-  data:
-    name: 간장소스
 - id: ing_백생합
   class: Ingredient
   data:
@@ -140,6 +132,10 @@ instances:
   class: Ingredient
   data:
     name: 미림
+- id: ing_버터
+  class: Ingredient
+  data:
+    name: 버터
 - id: ing_초고추장
   class: Ingredient
   data:
@@ -238,6 +234,10 @@ instances:
   class: Ingredient
   data:
     name: 만능찜소스
+- id: ing_간장소스
+  class: Ingredient
+  data:
+    name: 간장소스
 - id: ing_대구곤이
   class: Ingredient
   data:
