@@ -118,8 +118,9 @@ def export_recipes(store_id: str) -> Dict:
         # Relations
         if recipe.get('product_id'):
             instance['relations']['forProduct'] = recipe['product_id']
-        if recipe.get('store_id'):
-            instance['relations']['atStore'] = f"store_{recipe['store_id']}"
+
+        # store_id는 테이블 이름에 포함되어 있으므로 파라미터 사용
+        instance['relations']['atStore'] = f"store_{store_id}"
 
         # 재료
         if ingredients:
