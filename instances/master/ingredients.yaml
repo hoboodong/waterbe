@@ -4,10 +4,6 @@ instances:
   data:
     name: 자숙문어
     origin: 필리핀
-- id: ing_낙곱새소스
-  class: Ingredient
-  data:
-    name: 낙곱새소스
 - id: ing_백생합
   class: Ingredient
   data:
@@ -17,6 +13,11 @@ instances:
   class: Ingredient
   data:
     name: 된장
+- id: ing_흰다리새우살_L_인도
+  class: Ingredient
+  data:
+    name: 흰다리새우살 (대, 인도산)
+    origin: 인도
 - id: ing_콩나물
   class: Ingredient
   data:
@@ -76,27 +77,26 @@ instances:
   data:
     name: 홍합
     origin: 국내산
+- id: ing_고추
+  class: Ingredient
+  data:
+    name: 고추
 - id: ing_소금
   class: Ingredient
   data:
     name: 소금
-- id: ing_간장
+- id: ing_동태
   class: Ingredient
   data:
-    name: 간장
-- id: ing_염지소곱창
+    name: 동태
+- id: ing_애호박
   class: Ingredient
   data:
-    name: 염지소곱창
+    name: 애호박
 - id: ing_양파
   class: Ingredient
   data:
     name: 양파
-- id: ing_대구
-  class: Ingredient
-  data:
-    name: 대구
-    origin: 국내산
 - id: ing_염지소대창
   class: Ingredient
   data:
@@ -107,10 +107,6 @@ instances:
   data:
     name: 우삼겹
     origin: 미국
-- id: ing_간장소스
-  class: Ingredient
-  data:
-    name: 간장소스
 - id: ing_낙지
   class: Ingredient
   data:
@@ -174,23 +170,22 @@ instances:
   data:
     name: 흰다리새우살 (대)
     origin: 페루
-- id: ing_흰다리새우살_L_인도
+- id: ing_낙곱새소스
   class: Ingredient
   data:
-    name: 흰다리새우살 (대, 인도산)
-    origin: 인도
-- id: ing_고추
+    name: 낙곱새소스
+- id: ing_간장
   class: Ingredient
   data:
-    name: 고추
+    name: 간장
 - id: ing_주꾸미
   class: Ingredient
   data:
     name: 주꾸미
-- id: ing_동태
+- id: ing_염지소곱창
   class: Ingredient
   data:
-    name: 동태
+    name: 염지소곱창
 - id: ing_갑오징어
   class: Ingredient
   data:
@@ -201,19 +196,19 @@ instances:
   data:
     name: 무
     origin: 국내
-- id: ing_애호박
+- id: ing_대구
   class: Ingredient
   data:
-    name: 애호박
+    name: 대구
+    origin: 국내산
 - id: ing_레몬주스
   class: Ingredient
   data:
     name: 레몬주스
-- id: ing_가리비관자
+- id: ing_간장소스
   class: Ingredient
   data:
-    name: 가리비관자
-    origin: 중국
+    name: 간장소스
 - id: ing_솔방울오징어
   class: Ingredient
   data:
@@ -258,6 +253,11 @@ instances:
   data:
     name: 대파
     origin: 국내
+- id: ing_가리비관자
+  class: Ingredient
+  data:
+    name: 가리비관자
+    origin: 중국
 - id: ing_대구곤이
   class: Ingredient
   data:
