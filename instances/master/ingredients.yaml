@@ -38,10 +38,6 @@ instances:
   class: Ingredient
   data:
     name: 낙곱새소스
-- id: ing_레몬주스
-  class: Ingredient
-  data:
-    name: 레몬주스
 - id: ing_주꾸미
   class: Ingredient
   data:
@@ -67,6 +63,10 @@ instances:
   class: Ingredient
   data:
     name: 초고추장
+- id: ing_레몬주스
+  class: Ingredient
+  data:
+    name: 레몬주스
 - id: ing_새우
   class: Ingredient
   data:
@@ -115,11 +115,6 @@ instances:
   class: Ingredient
   data:
     name: 버터
-- id: ing_대파
-  class: Ingredient
-  data:
-    name: 대파
-    origin: 국내
 - id: ing_비자숙문어
   class: Ingredient
   data:
@@ -134,6 +129,11 @@ instances:
   data:
     name: 백생합
     origin: 중국
+- id: ing_대파
+  class: Ingredient
+  data:
+    name: 대파
+    origin: 국내
 - id: ing_미림
   class: Ingredient
   data:
@@ -151,18 +151,24 @@ instances:
   class: Ingredient
   data:
     name: 홍가리비살
-- id: ing_육수
-  class: Ingredient
-  data:
-    name: 육수 (멸치·다시마)
 - id: ing_고추장
   class: Ingredient
   data:
     name: 고추장
-- id: ing_순살아귀
+- id: ing_육수
   class: Ingredient
   data:
-    name: 순살아귀
+    name: 육수 (멸치·다시마)
+- id: ing_전복
+  class: Ingredient
+  data:
+    name: 전복
+    origin: 국내산
+- id: ing_자숙문어
+  class: Ingredient
+  data:
+    name: 자숙문어
+    origin: 필리핀
 - id: ing_우삼겹
   class: Ingredient
   data:
@@ -173,34 +179,28 @@ instances:
   data:
     name: 대구곤이
     origin: 아이슬란드
-- id: ing_콩나물
+- id: ing_코다리
   class: Ingredient
   data:
-    name: 콩나물
+    name: 코다리
+    origin: 러시아
 - id: ing_흰다리새우살_L_인도
   class: Ingredient
   data:
     name: 흰다리새우살 (대, 인도산)
     origin: 인도
-- id: ing_통대구
+- id: ing_순살아귀
   class: Ingredient
   data:
-    name: 통대구
-    origin: 러시아
-- id: ing_전복
+    name: 순살아귀
+- id: ing_골뱅이
   class: Ingredient
   data:
-    name: 전복
-    origin: 국내산
+    name: 골뱅이
 - id: ing_라면
   class: Ingredient
   data:
     name: 라면
-- id: ing_자숙문어
-  class: Ingredient
-  data:
-    name: 자숙문어
-    origin: 필리핀
 - id: ing_만능찜소스
   class: Ingredient
   data:
@@ -217,11 +217,6 @@ instances:
   class: Ingredient
   data:
     name: 해물탕소스
-- id: ing_코다리
-  class: Ingredient
-  data:
-    name: 코다리
-    origin: 러시아
 - id: ing_낙지
   class: Ingredient
   data:
@@ -252,6 +247,10 @@ instances:
   class: Ingredient
   data:
     name: 꽃게 (이탈리아산)
+- id: ing_콩나물
+  class: Ingredient
+  data:
+    name: 콩나물
 - id: ing_오만둥이
   class: Ingredient
   data:
@@ -262,6 +261,11 @@ instances:
   data:
     name: 갑오징어
     origin: 인도네시아
+- id: ing_통대구
+  class: Ingredient
+  data:
+    name: 통대구
+    origin: 러시아
 - id: ing_가리비관자
   class: Ingredient
   data:
@@ -275,10 +279,6 @@ instances:
   class: Ingredient
   data:
     name: 동태
-- id: ing_골뱅이
-  class: Ingredient
-  data:
-    name: 골뱅이
 - id: ing_볼락
   class: Ingredient
   data:
