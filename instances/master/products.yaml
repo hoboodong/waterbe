@@ -151,18 +151,14 @@ instances:
   class: Product
   data:
     name: 가리비관자
-- id: prod_mk_025
-  class: Product
-  data:
-    name: 낙곱새
-- id: prod_sp_023
-  class: Product
-  data:
-    name: 주꾸미
 - id: prod_sp_014
   class: Product
   data:
     name: 흰다리새우살
+- id: prod_mk_025
+  class: Product
+  data:
+    name: 낙곱새
 - id: prod_sp_015
   class: Product
   data:
@@ -175,6 +171,10 @@ instances:
   class: Product
   data:
     name: 손질 낙지
+- id: prod_sp_023
+  class: Product
+  data:
+    name: 주꾸미
 - id: prod_sp_017
   class: Product
   data:
@@ -187,14 +187,14 @@ instances:
   class: Product
   data:
     name: 손질 주꾸미
-- id: prod_mk_015
-  class: Product
-  data:
-    name: 동태알탕
 - id: prod_sp_018
   class: Product
   data:
     name: 절단낙지
+- id: prod_mk_015
+  class: Product
+  data:
+    name: 동태알탕
 - id: prod_sp_002
   class: Product
   data:
