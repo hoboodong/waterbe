@@ -3,18 +3,18 @@ instances:
   class: Product
   data:
     name: 손질 낙지
-- id: prod_mk_005
-  class: Product
-  data:
-    name: 시원한 새우탕
-- id: prod_mk_008
-  class: Product
-  data:
-    name: 국산문어 해물탕
 - id: prod_sp_023
   class: Product
   data:
     name: 주꾸미
+- id: prod_mk_008
+  class: Product
+  data:
+    name: 국산문어 해물탕
+- id: prod_mk_006
+  class: Product
+  data:
+    name: 골뱅이탕
 - id: prod_mk_012
   class: Product
   data:
@@ -39,18 +39,10 @@ instances:
   class: Product
   data:
     name: 흰다리새우
-- id: prod_mk_014
-  class: Product
-  data:
-    name: 낙지전복해물탕
 - id: prod_mk_021
   class: Product
   data:
     name: 문어전복해물탕
-- id: prod_mk_004
-  class: Product
-  data:
-    name: 코다리알탕
 - id: prod_sp_001
   class: Product
   data:
@@ -59,10 +51,6 @@ instances:
   class: Product
   data:
     name: 손질 주꾸미
-- id: prod_mk_006
-  class: Product
-  data:
-    name: 골뱅이탕
 - id: prod_sp_018
   class: Product
   data:
@@ -75,18 +63,10 @@ instances:
   class: Product
   data:
     name: 프리미엄 낙곱새
-- id: prod_sp_008
-  class: Product
-  data:
-    name: 백생합
 - id: prod_sp_026
   class: Product
   data:
     name: 알곤이세트
-- id: prod_sp_009
-  class: Product
-  data:
-    name: 손질 갑오징어
 - id: prod_sp_021
   class: Product
   data:
@@ -99,10 +79,6 @@ instances:
   class: Product
   data:
     name: 간장새우장
-- id: prod_mk_025
-  class: Product
-  data:
-    name: 낙곱새
 - id: prod_sp_020
   class: Product
   data:
@@ -111,14 +87,6 @@ instances:
   class: Product
   data:
     name: 가리비관자
-- id: prod_mk_015
-  class: Product
-  data:
-    name: 동태알탕
-- id: prod_mk_026
-  class: Product
-  data:
-    name: 주꾸미볶음
 - id: prod_mk_019
   class: Product
   data:
@@ -183,14 +151,42 @@ instances:
   class: Product
   data:
     name: 국산 알베기 간장게장
+- id: prod_mk_014
+  class: Product
+  data:
+    name: 낙지전복해물탕
+- id: prod_sp_004
+  class: Product
+  data:
+    name: 손질 흰다리새우살
 - id: prod_sp_012
   class: Product
   data:
     name: 흰다리새우
+- id: prod_mk_004
+  class: Product
+  data:
+    name: 코다리알탕
 - id: prod_mk_027
   class: Product
   data:
     name: 낙지볶음
+- id: prod_sp_008
+  class: Product
+  data:
+    name: 백생합
+- id: prod_sp_009
+  class: Product
+  data:
+    name: 손질 갑오징어
+- id: prod_mk_025
+  class: Product
+  data:
+    name: 낙곱새
+- id: prod_mk_015
+  class: Product
+  data:
+    name: 동태알탕
 - id: prod_mk_017
   class: Product
   data:
@@ -199,6 +195,14 @@ instances:
   class: Product
   data:
     name: 손질낙지
+- id: prod_mk_026
+  class: Product
+  data:
+    name: 주꾸미볶음
+- id: prod_mk_016
+  class: Product
+  data:
+    name: 볼락 매운탕
 - id: prod_sp_013
   class: Product
   data:
@@ -215,10 +219,10 @@ instances:
   class: Product
   data:
     name: 가리비관자
-- id: prod_sp_004
+- id: prod_mk_005
   class: Product
   data:
-    name: 손질 흰다리새우살
+    name: 시원한 새우탕
 - id: prod_gj_002
   class: Product
   data:
@@ -231,10 +235,6 @@ instances:
   class: Product
   data:
     name: 대구매운탕
-- id: prod_mk_016
-  class: Product
-  data:
-    name: 볼락 매운탕
 - id: prod_mk_001
   class: Product
   data:
