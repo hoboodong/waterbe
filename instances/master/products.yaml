@@ -1,4 +1,8 @@
 instances:
+- id: prod_mk_027
+  class: Product
+  data:
+    name: 낙지볶음
 - id: prod_mk_017
   class: Product
   data:
@@ -27,10 +31,6 @@ instances:
   class: Product
   data:
     name: 순살아귀찜
-- id: prod_sp_008
-  class: Product
-  data:
-    name: 백생합
 - id: prod_mk_020
   class: Product
   data:
@@ -59,10 +59,6 @@ instances:
   class: Product
   data:
     name: 손질낙지
-- id: prod_sp_009
-  class: Product
-  data:
-    name: 손질 갑오징어
 - id: prod_gj_002
   class: Product
   data:
@@ -111,14 +107,6 @@ instances:
   class: Product
   data:
     name: 흰다리새우
-- id: prod_sp_006
-  class: Product
-  data:
-    name: 국산홍가리비살
-- id: prod_mk_024
-  class: Product
-  data:
-    name: 푸짐한 알탕
 - id: prod_sp_003
   class: Product
   data:
@@ -131,10 +119,6 @@ instances:
   class: Product
   data:
     name: 문어전복해물탕
-- id: prod_mk_014
-  class: Product
-  data:
-    name: 낙지전복해물탕
 - id: prod_sp_004
   class: Product
   data:
@@ -159,18 +143,26 @@ instances:
   class: Product
   data:
     name: 동태알탕
+- id: prod_sp_006
+  class: Product
+  data:
+    name: 국산홍가리비살
 - id: prod_sp_017
   class: Product
   data:
     name: 주꾸미
-- id: prod_mk_025
+- id: prod_sp_007
   class: Product
   data:
-    name: 낙곱새
-- id: prod_mk_015
+    name: 국산흑골뱅이
+- id: prod_mk_024
   class: Product
   data:
-    name: 동태알탕
+    name: 푸짐한 알탕
+- id: prod_mk_014
+  class: Product
+  data:
+    name: 낙지전복해물탕
 - id: prod_mk_012
   class: Product
   data:
@@ -183,10 +175,10 @@ instances:
   class: Product
   data:
     name: 손질 주꾸미
-- id: prod_mk_026
+- id: prod_sp_008
   class: Product
   data:
-    name: 주꾸미볶음
+    name: 백생합
 - id: prod_sp_018
   class: Product
   data:
@@ -199,10 +191,18 @@ instances:
   class: Product
   data:
     name: 흰다리새우살(꼬리있음)
-- id: prod_mk_016
+- id: prod_sp_009
   class: Product
   data:
-    name: 볼락 매운탕
+    name: 손질 갑오징어
+- id: prod_mk_025
+  class: Product
+  data:
+    name: 낙곱새
+- id: prod_mk_015
+  class: Product
+  data:
+    name: 동태알탕
 - id: prod_sp_027
   class: Product
   data:
@@ -215,14 +215,14 @@ instances:
   class: Product
   data:
     name: 시원한 새우탕
-- id: prod_mk_027
-  class: Product
-  data:
-    name: 낙지볶음
 - id: prod_sp_021
   class: Product
   data:
     name: 흰다리새우살
+- id: prod_mk_026
+  class: Product
+  data:
+    name: 주꾸미볶음
 - id: prod_sp_022
   class: Product
   data:
@@ -231,14 +231,14 @@ instances:
   class: Product
   data:
     name: 알탕
+- id: prod_mk_016
+  class: Product
+  data:
+    name: 볼락 매운탕
 - id: prod_mk_009
   class: Product
   data:
     name: 순살 아귀찜
-- id: prod_sp_007
-  class: Product
-  data:
-    name: 국산흑골뱅이
 - id: prod_gj_001
   class: Product
   data:
