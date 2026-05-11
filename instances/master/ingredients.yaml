@@ -17,10 +17,6 @@ instances:
   class: Ingredient
   data:
     name: 된장
-- id: ing_게
-  class: Ingredient
-  data:
-    name: 꽃게
 - id: ing_콩나물
   class: Ingredient
   data:
@@ -168,6 +164,11 @@ instances:
   data:
     name: 통대구
     origin: 러시아
+- id: ing_명란
+  class: Ingredient
+  data:
+    name: 명란
+    origin: 러시아
 - id: ing_흰다리새우살_L_페루
   class: Ingredient
   data:
@@ -239,21 +240,24 @@ instances:
   class: Ingredient
   data:
     name: 청양고추
+- id: ing_찜소스
+  class: Ingredient
+  data:
+    name: 찜소스
 - id: ing_새우_사우디
   class: Ingredient
   data:
     name: 흰다리새우(사우디)
     origin: 사우디아라비아
+- id: ing_해물탕소스
+  class: Ingredient
+  data:
+    name: 해물탕소스
 - id: ing_대파
   class: Ingredient
   data:
     name: 대파
     origin: 국내
-- id: ing_명란
-  class: Ingredient
-  data:
-    name: 명란
-    origin: 러시아
 - id: ing_대구곤이
   class: Ingredient
   data:
@@ -276,10 +280,6 @@ instances:
   class: Ingredient
   data:
     name: 초고추장
-- id: ing_찜소스
-  class: Ingredient
-  data:
-    name: 찜소스
 - id: ing_볶음소스
   class: Ingredient
   data:
@@ -297,7 +297,7 @@ instances:
   class: Ingredient
   data:
     name: 양념게장소스
-- id: ing_해물탕소스
+- id: ing_게
   class: Ingredient
   data:
-    name: 해물탕소스
+    name: 꽃게
