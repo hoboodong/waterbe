@@ -40,10 +40,6 @@ instances:
   data:
     name: 통대구
     origin: 러시아
-- id: ing_참기름
-  class: Ingredient
-  data:
-    name: 참기름
 - id: ing_대파
   class: Ingredient
   data:
@@ -68,10 +64,10 @@ instances:
   data:
     name: 우삼겹
     origin: 미국
-- id: ing_양배추
+- id: ing_양파
   class: Ingredient
   data:
-    name: 양배추
+    name: 양파
 - id: ing_자숙피뿔고둥살
   class: Ingredient
   data:
@@ -88,6 +84,10 @@ instances:
   class: Ingredient
   data:
     name: 양배추콩나물 (반반팩)
+- id: ing_게_이탈리아
+  class: Ingredient
+  data:
+    name: 꽃게 (이탈리아산)
 - id: ing_찜소스
   class: Ingredient
   data:
@@ -112,23 +112,35 @@ instances:
   data:
     name: 흰다리새우살 (대, 인도산)
     origin: 인도
-- id: ing_양파
+- id: ing_오만둥이
   class: Ingredient
   data:
-    name: 양파
-- id: ing_게_이탈리아
+    name: 오만둥이
+    origin: 국내산
+- id: ing_마늘
   class: Ingredient
   data:
-    name: 꽃게 (이탈리아산)
+    name: 마늘
+- id: ing_참기름
+  class: Ingredient
+  data:
+    name: 참기름
+- id: ing_양배추
+  class: Ingredient
+  data:
+    name: 양배추
+- id: ing_게_바레인
+  class: Ingredient
+  data:
+    name: 꽃게 (바레인산)
 - id: ing_만능찜소스
   class: Ingredient
   data:
     name: 만능찜소스
-- id: ing_흰다리새우살_S_베트남
+- id: ing_볼락
   class: Ingredient
   data:
-    name: 흰다리새우살
-    origin: 베트남
+    name: 볼락
 - id: ing_골뱅이
   class: Ingredient
   data:
@@ -191,23 +203,20 @@ instances:
   data:
     name: 비자숙문어
     origin: 국산
-- id: ing_오만둥이
+- id: ing_흰다리새우살_S_베트남
   class: Ingredient
   data:
-    name: 오만둥이
-    origin: 국내산
+    name: 흰다리새우살
+    origin: 베트남
 - id: ing_애호박
   class: Ingredient
   data:
     name: 애호박
-- id: ing_게_바레인
+- id: ing_명란
   class: Ingredient
   data:
-    name: 꽃게 (바레인산)
-- id: ing_볼락
-  class: Ingredient
-  data:
-    name: 볼락
+    name: 명란
+    origin: 러시아
 - id: ing_자숙문어_절단
   class: Ingredient
   data:
@@ -216,10 +225,6 @@ instances:
   class: Ingredient
   data:
     name: 명태곤이
-- id: ing_마늘
-  class: Ingredient
-  data:
-    name: 마늘
 - id: ing_버터
   class: Ingredient
   data:
@@ -254,11 +259,6 @@ instances:
   data:
     name: 무
     origin: 국내
-- id: ing_명란
-  class: Ingredient
-  data:
-    name: 명란
-    origin: 러시아
 - id: ing_동태
   class: Ingredient
   data:
