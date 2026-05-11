@@ -46,10 +46,11 @@ instances:
   data:
     name: 대파
     origin: 국내
-- id: ing_순살아귀
+- id: ing_비자숙문어
   class: Ingredient
   data:
-    name: 순살아귀
+    name: 비자숙문어
+    origin: 국산
 - id: ing_주꾸미
   class: Ingredient
   data:
@@ -58,10 +59,6 @@ instances:
   class: Ingredient
   data:
     name: 소금
-- id: ing_게
-  class: Ingredient
-  data:
-    name: 꽃게
 - id: ing_오만둥이
   class: Ingredient
   data:
@@ -85,6 +82,10 @@ instances:
   data:
     name: 대구
     origin: 국내산
+- id: ing_게_바레인
+  class: Ingredient
+  data:
+    name: 꽃게 (바레인산)
 - id: ing_새우
   class: Ingredient
   data:
@@ -145,14 +146,10 @@ instances:
   class: Ingredient
   data:
     name: 해물탕소스
-- id: ing_애호박
+- id: ing_고추
   class: Ingredient
   data:
-    name: 애호박
-- id: ing_청양고추
-  class: Ingredient
-  data:
-    name: 청양고추
+    name: 고추
 - id: ing_두부
   class: Ingredient
   data:
@@ -161,6 +158,10 @@ instances:
   class: Ingredient
   data:
     name: 홍가리비살
+- id: ing_순살아귀
+  class: Ingredient
+  data:
+    name: 순살아귀
 - id: ing_전복
   class: Ingredient
   data:
@@ -175,6 +176,10 @@ instances:
   data:
     name: 무
     origin: 국내
+- id: ing_게
+  class: Ingredient
+  data:
+    name: 꽃게
 - id: ing_버터
   class: Ingredient
   data:
@@ -192,6 +197,10 @@ instances:
   class: Ingredient
   data:
     name: 콩나물
+- id: ing_애호박
+  class: Ingredient
+  data:
+    name: 애호박
 - id: ing_동태
   class: Ingredient
   data:
@@ -228,6 +237,10 @@ instances:
   data:
     name: 백생합
     origin: 중국
+- id: ing_청양고추
+  class: Ingredient
+  data:
+    name: 청양고추
 - id: ing_흰다리새우살_L_페루
   class: Ingredient
   data:
@@ -238,14 +251,6 @@ instances:
   data:
     name: 대구곤이
     origin: 아이슬란드
-- id: ing_게_바레인
-  class: Ingredient
-  data:
-    name: 꽃게 (바레인산)
-- id: ing_고추
-  class: Ingredient
-  data:
-    name: 고추
 - id: ing_미림
   class: Ingredient
   data:
@@ -288,11 +293,6 @@ instances:
   class: Ingredient
   data:
     name: 된장
-- id: ing_비자숙문어
-  class: Ingredient
-  data:
-    name: 비자숙문어
-    origin: 국산
 - id: ing_마늘
   class: Ingredient
   data:
