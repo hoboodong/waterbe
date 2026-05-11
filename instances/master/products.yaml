@@ -3,6 +3,10 @@ instances:
   class: Product
   data:
     name: 흰다리새우살(꼬리있음)
+- id: prod_mk_007
+  class: Product
+  data:
+    name: 대구탕
 - id: prod_sp_027
   class: Product
   data:
@@ -35,10 +39,6 @@ instances:
   class: Product
   data:
     name: 흰다리새우살
-- id: prod_mk_007
-  class: Product
-  data:
-    name: 대구탕
 - id: prod_sp_022
   class: Product
   data:
