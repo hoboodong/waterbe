@@ -99,10 +99,22 @@ instances:
   class: Product
   data:
     name: 주꾸미볶음
+- id: prod_mk_007
+  class: Product
+  data:
+    name: 대구탕
+- id: prod_sp_005
+  class: Product
+  data:
+    name: 활전복
 - id: prod_mk_004
   class: Product
   data:
     name: 코다리알탕
+- id: prod_mk_022
+  class: Product
+  data:
+    name: 낙지전복해물탕
 - id: prod_sp_013
   class: Product
   data:
@@ -131,18 +143,6 @@ instances:
   class: Product
   data:
     name: 주꾸미
-- id: prod_mk_007
-  class: Product
-  data:
-    name: 대구탕
-- id: prod_sp_005
-  class: Product
-  data:
-    name: 활전복
-- id: prod_mk_022
-  class: Product
-  data:
-    name: 낙지전복해물탕
 - id: prod_mk_012
   class: Product
   data:
@@ -151,14 +151,14 @@ instances:
   class: Product
   data:
     name: 문어전복해물탕
-- id: prod_mk_023
-  class: Product
-  data:
-    name: 동태알탕
 - id: prod_sp_019
   class: Product
   data:
     name: 흰다리새우
+- id: prod_mk_023
+  class: Product
+  data:
+    name: 동태알탕
 - id: prod_mk_001
   class: Product
   data:
