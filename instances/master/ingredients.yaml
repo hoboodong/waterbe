@@ -4,14 +4,18 @@ instances:
   data:
     name: 대구곤이
     origin: 아이슬란드
+- id: ing_자숙피뿔고둥살
+  class: Ingredient
+  data:
+    name: 자숙피뿔고둥살
 - id: ing_게
   class: Ingredient
   data:
     name: 꽃게
-- id: ing_두부
+- id: ing_고춧가루
   class: Ingredient
   data:
-    name: 두부
+    name: 고춧가루
 - id: ing_간장
   class: Ingredient
   data:
@@ -21,6 +25,11 @@ instances:
   data:
     name: 무
     origin: 국내
+- id: ing_비자숙문어
+  class: Ingredient
+  data:
+    name: 비자숙문어
+    origin: 국산
 - id: ing_코다리
   class: Ingredient
   data:
@@ -74,14 +83,24 @@ instances:
   data:
     name: 백새우살
     origin: 베트남
-- id: ing_자숙피뿔고둥살
+- id: ing_염지소대창
   class: Ingredient
   data:
-    name: 자숙피뿔고둥살
+    name: 염지소대창
+    origin: 외국산(우루과이, 아르헨티나, 미국 등)
 - id: ing_미림
   class: Ingredient
   data:
     name: 미림
+- id: ing_통대구
+  class: Ingredient
+  data:
+    name: 통대구
+    origin: 러시아
+- id: ing_된장
+  class: Ingredient
+  data:
+    name: 된장
 - id: ing_초고추장
   class: Ingredient
   data:
@@ -154,10 +173,6 @@ instances:
   data:
     name: 백생합
     origin: 중국
-- id: ing_고춧가루
-  class: Ingredient
-  data:
-    name: 고춧가루
 - id: ing_새우
   class: Ingredient
   data:
@@ -167,6 +182,10 @@ instances:
   class: Ingredient
   data:
     name: 버터
+- id: ing_냉동홍가리비
+  class: Ingredient
+  data:
+    name: 냉동홍가리비(껍질있음)
 - id: ing_흰다리새우살_L_페루
   class: Ingredient
   data:
@@ -176,6 +195,10 @@ instances:
   class: Ingredient
   data:
     name: 명태곤이
+- id: ing_두부
+  class: Ingredient
+  data:
+    name: 두부
 - id: ing_고추
   class: Ingredient
   data:
@@ -185,11 +208,10 @@ instances:
   data:
     name: 갑오징어
     origin: 인도네시아
-- id: ing_통대구
+- id: ing_양념게장소스
   class: Ingredient
   data:
-    name: 통대구
-    origin: 러시아
+    name: 양념게장소스
 - id: ing_반각가리비
   class: Ingredient
   data:
@@ -211,34 +233,21 @@ instances:
   data:
     name: 가리비관자
     origin: 중국
-- id: ing_비자숙문어
-  class: Ingredient
-  data:
-    name: 비자숙문어
-    origin: 국산
 - id: ing_자숙문어
   class: Ingredient
   data:
     name: 자숙문어
     origin: 필리핀
-- id: ing_된장
+- id: ing_우삼겹
   class: Ingredient
   data:
-    name: 된장
+    name: 우삼겹
+    origin: 미국
 - id: ing_명란
   class: Ingredient
   data:
     name: 명란
     origin: 러시아
-- id: ing_냉동홍가리비
-  class: Ingredient
-  data:
-    name: 냉동홍가리비(껍질있음)
-- id: ing_염지소대창
-  class: Ingredient
-  data:
-    name: 염지소대창
-    origin: 외국산(우루과이, 아르헨티나, 미국 등)
 - id: ing_라면
   class: Ingredient
   data:
@@ -252,20 +261,11 @@ instances:
   class: Ingredient
   data:
     name: 순살아귀
-- id: ing_양념게장소스
-  class: Ingredient
-  data:
-    name: 양념게장소스
 - id: ing_흰다리새우살_S_베트남
   class: Ingredient
   data:
     name: 흰다리새우살
     origin: 베트남
-- id: ing_우삼겹
-  class: Ingredient
-  data:
-    name: 우삼겹
-    origin: 미국
 - id: ing_오만둥이
   class: Ingredient
   data:
