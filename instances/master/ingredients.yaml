@@ -15,11 +15,11 @@ instances:
   class: Ingredient
   data:
     name: 볶음소스
-- id: ing_흰다리새우살_S_베트남
+- id: ing_우삼겹
   class: Ingredient
   data:
-    name: 흰다리새우살
-    origin: 베트남
+    name: 우삼겹
+    origin: 미국
 - id: ing_냉동홍가리비
   class: Ingredient
   data:
@@ -80,28 +80,32 @@ instances:
   class: Ingredient
   data:
     name: 반각가리비
+- id: ing_무
+  class: Ingredient
+  data:
+    name: 무
+    origin: 국내
 - id: ing_레몬주스
   class: Ingredient
   data:
     name: 레몬주스
+- id: ing_순살아귀
+  class: Ingredient
+  data:
+    name: 순살아귀
+- id: ing_홍가리비살
+  class: Ingredient
+  data:
+    name: 홍가리비살
 - id: ing_게
   class: Ingredient
   data:
     name: 꽃게
-- id: ing_우삼겹
-  class: Ingredient
-  data:
-    name: 우삼겹
-    origin: 미국
 - id: ing_새우_사우디
   class: Ingredient
   data:
     name: 흰다리새우(사우디)
     origin: 사우디아라비아
-- id: ing_라면
-  class: Ingredient
-  data:
-    name: 라면
 - id: ing_백생합
   class: Ingredient
   data:
@@ -111,11 +115,6 @@ instances:
   class: Ingredient
   data:
     name: 명태곤이
-- id: ing_명란
-  class: Ingredient
-  data:
-    name: 명란
-    origin: 러시아
 - id: ing_두부
   class: Ingredient
   data:
@@ -179,15 +178,15 @@ instances:
   class: Ingredient
   data:
     name: 자숙문어(절단)
-- id: ing_무
+- id: ing_라면
   class: Ingredient
   data:
-    name: 무
-    origin: 국내
-- id: ing_순살아귀
+    name: 라면
+- id: ing_명란
   class: Ingredient
   data:
-    name: 순살아귀
+    name: 명란
+    origin: 러시아
 - id: ing_게_이탈리아
   class: Ingredient
   data:
@@ -200,14 +199,15 @@ instances:
   class: Ingredient
   data:
     name: 마늘
+- id: ing_흰다리새우살_S_베트남
+  class: Ingredient
+  data:
+    name: 흰다리새우살
+    origin: 베트남
 - id: ing_간장
   class: Ingredient
   data:
     name: 간장
-- id: ing_홍가리비살
-  class: Ingredient
-  data:
-    name: 홍가리비살
 - id: ing_동태
   class: Ingredient
   data:
@@ -246,10 +246,6 @@ instances:
   class: Ingredient
   data:
     name: 주꾸미
-- id: ing_콩나물
-  class: Ingredient
-  data:
-    name: 콩나물
 - id: ing_양념게장소스
   class: Ingredient
   data:
@@ -283,6 +279,10 @@ instances:
   data:
     name: 비자숙문어
     origin: 국산
+- id: ing_콩나물
+  class: Ingredient
+  data:
+    name: 콩나물
 - id: ing_대구
   class: Ingredient
   data:
