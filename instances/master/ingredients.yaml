@@ -30,16 +30,16 @@ instances:
   data:
     name: 대구곤이
     origin: 아이슬란드
-- id: ing_새우_사우디
-  class: Ingredient
-  data:
-    name: 흰다리새우(사우디)
-    origin: 사우디아라비아
 - id: ing_코다리
   class: Ingredient
   data:
     name: 코다리
     origin: 러시아
+- id: ing_새우_사우디
+  class: Ingredient
+  data:
+    name: 흰다리새우(사우디)
+    origin: 사우디아라비아
 - id: ing_염지소곱창
   class: Ingredient
   data:
@@ -65,11 +65,11 @@ instances:
   class: Ingredient
   data:
     name: 참기름
-- id: ing_갑오징어
+- id: ing_홍고추
   class: Ingredient
   data:
-    name: 갑오징어
-    origin: 인도네시아
+    name: 홍고추
+    origin: 국내
 - id: ing_레몬주스
   class: Ingredient
   data:
@@ -100,11 +100,6 @@ instances:
   class: Ingredient
   data:
     name: 초고추장
-- id: ing_홍고추
-  class: Ingredient
-  data:
-    name: 홍고추
-    origin: 국내
 - id: ing_양배추
   class: Ingredient
   data:
@@ -137,6 +132,10 @@ instances:
   class: Ingredient
   data:
     name: 꽃게 (바레인산)
+- id: ing_간장소스
+  class: Ingredient
+  data:
+    name: 간장소스
 - id: ing_게_이탈리아
   class: Ingredient
   data:
@@ -201,6 +200,11 @@ instances:
   class: Ingredient
   data:
     name: 골뱅이
+- id: ing_갑오징어
+  class: Ingredient
+  data:
+    name: 갑오징어
+    origin: 인도네시아
 - id: ing_통대구
   class: Ingredient
   data:
@@ -223,6 +227,11 @@ instances:
   data:
     name: 비자숙문어
     origin: 국산
+- id: ing_자숙문어
+  class: Ingredient
+  data:
+    name: 자숙문어
+    origin: 필리핀
 - id: ing_된장
   class: Ingredient
   data:
@@ -257,10 +266,6 @@ instances:
   class: Ingredient
   data:
     name: 양념게장소스
-- id: ing_간장소스
-  class: Ingredient
-  data:
-    name: 간장소스
 - id: ing_우삼겹
   class: Ingredient
   data:
@@ -270,11 +275,6 @@ instances:
   class: Ingredient
   data:
     name: 볶음소스
-- id: ing_자숙문어
-  class: Ingredient
-  data:
-    name: 자숙문어
-    origin: 필리핀
 - id: ing_흰다리새우살_L_인도
   class: Ingredient
   data:
