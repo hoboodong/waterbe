@@ -1,112 +1,4 @@
 instances:
-- id: recipe_mapo_mk027
-  class: Recipe
-  data:
-    name: 낙지볶음 (마포)
-    price: 15800
-    effectiveFrom: '2026-01-01'
-    martCode: '115237'
-  relations:
-    forProduct: prod_mk_027
-    uses:
-    - ingredient: ing_낙지
-      unit: g
-      pspec: pspec_071
-    - ingredient: ing_솔방울오징어
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_양배추콩나물세트
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_086
-    - ingredient: ing_대파
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      unit: 개
-      pspec: pspec_088
-    - ingredient: ing_볶음소스
-      unit: g
-      pspec: pspec_045
-- id: recipe_mapo_sp026
-  class: Recipe
-  data:
-    name: 알곤이세트 (마포)
-    price: 3280
-    effectiveFrom: '2026-01-01'
-    martCode: '117718'
-  relations:
-    forProduct: prod_sp_026
-    uses:
-    - ingredient: ing_명란
-      unit: g
-      pspec: pspec_039
-    - ingredient: ing_대구곤이
-      unit: g
-      pspec: pspec_038
-    - ingredient: ing_레몬주스
-      unit: ml
-- id: recipe_mapo_sp025
-  class: Recipe
-  data:
-    name: 절단낙지 (마포)
-    price: 3280
-    effectiveFrom: '2026-01-01'
-    martCode: '117717'
-  relations:
-    forProduct: prod_sp_025
-    uses:
-    - ingredient: ing_낙지
-      unit: g
-      pspec: pspec_071
-    - ingredient: ing_낙지
-      unit: g
-      pspec: pspec_071
-- id: recipe_mapo_mk026
-  class: Recipe
-  data:
-    name: 주꾸미볶음 (마포)
-    price: 15800
-    effectiveFrom: '2026-01-01'
-    martCode: '234464'
-  relations:
-    forProduct: prod_mk_026
-    uses:
-    - ingredient: ing_주꾸미
-      unit: g
-      pspec: pspec_033
-    - ingredient: ing_솔방울오징어
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_양배추콩나물세트
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_086
-    - ingredient: ing_대파
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      unit: 개
-      pspec: pspec_088
-    - ingredient: ing_볶음소스
-      unit: g
-      pspec: pspec_045
-- id: recipe_mapo_sp024
-  class: Recipe
-  data:
-    name: 손질낙지 (마포)
-    price: 3280
-    effectiveFrom: '2026-01-01'
-    martCode: '117716'
-  relations:
-    forProduct: prod_sp_024
-    uses:
-    - ingredient: ing_낙지
-      unit: g
-      pspec: pspec_071
-    - ingredient: ing_낙지
-      unit: g
-      pspec: pspec_071
 - id: recipe_mapo_mk021
   class: Recipe
   data:
@@ -150,110 +42,6 @@ instances:
     - ingredient: ing_해물탕소스
       unit: g
       pspec: pspec_047
-- id: recipe_mapo_sp019
-  class: Recipe
-  data:
-    name: 흰다리새우 (마포)
-    price: 3480
-    effectiveFrom: '2026-01-01'
-    martCode: '236143'
-  relations:
-    forProduct: prod_sp_019
-    uses:
-    - ingredient: ing_새우
-      unit: g
-      pspec: pspec_004
-    - ingredient: ing_레몬주스
-      unit: ml
-- id: recipe_mapo_mk029
-  class: Recipe
-  data:
-    name: 순살아귀찜 (마포)
-    price: 19800
-    effectiveFrom: '2026-01-01'
-    martCode: '117715'
-  relations:
-    forProduct: prod_mk_029
-    uses:
-    - ingredient: ing_순살아귀
-      unit: g
-      pspec: pspec_073
-    - ingredient: ing_명란
-      unit: g
-      pspec: pspec_039
-    - ingredient: ing_대구곤이
-      unit: g
-      pspec: pspec_038
-    - ingredient: ing_솔방울오징어
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_오만둥이
-      unit: g
-      pspec: pspec_041
-    - ingredient: ing_콩나물
-      unit: g
-      pspec: pspec_091
-    - ingredient: ing_대파
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      unit: 개
-      pspec: pspec_088
-    - ingredient: ing_만능찜소스
-      unit: g
-      pspec: pspec_074
-- id: recipe_mapo_sp022
-  class: Recipe
-  data:
-    name: 가리비관자 (마포)
-    price: 9980
-    effectiveFrom: '2026-01-01'
-    martCode: '117449'
-  relations:
-    forProduct: prod_sp_022
-    uses:
-    - ingredient: ing_가리비관자
-      unit: g
-      pspec: pspec_021
-    - ingredient: ing_가리비관자
-      unit: g
-      pspec: pspec_021
-    - ingredient: ing_레몬주스
-      unit: ml
-    - ingredient: ing_레몬주스
-      unit: ml
-    - ingredient: ing_버터
-      unit: g
-    - ingredient: ing_버터
-      unit: g
-- id: recipe_mapo_mk028
-  class: Recipe
-  data:
-    name: 갑오징어볶음 (마포)
-    price: 15800
-    effectiveFrom: '2026-01-01'
-    martCode: '117714'
-  relations:
-    forProduct: prod_mk_028
-    uses:
-    - ingredient: ing_갑오징어
-      unit: g
-    - ingredient: ing_솔방울오징어
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_양배추콩나물세트
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_086
-    - ingredient: ing_대파
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      unit: 개
-      pspec: pspec_088
-    - ingredient: ing_볶음소스
-      unit: g
-      pspec: pspec_045
 - id: recipe_mapo_mk022
   class: Recipe
   data:
@@ -297,73 +85,6 @@ instances:
     - ingredient: ing_해물탕소스
       unit: g
       pspec: pspec_047
-- id: recipe_mapo_gj004
-  class: Recipe
-  data:
-    name: 간장새우장 (마포)
-    price: 9980
-    effectiveFrom: '2026-01-01'
-    martCode: '236067'
-  relations:
-    forProduct: prod_gj_004
-    uses:
-    - ingredient: ing_흰다리새우살_L_페루
-      unit: g
-      pspec: pspec_005
-    - ingredient: ing_간장소스
-      unit: g
-      pspec: pspec_049
-    - ingredient: ing_미림
-      unit: 큰술
-    - ingredient: ing_홍고추
-      unit: 개
-      pspec: pspec_088
-- id: recipe_mapo_sp023
-  class: Recipe
-  data:
-    name: 주꾸미 (마포)
-    price: 3280
-    effectiveFrom: '2026-01-01'
-    martCode: '234464'
-  relations:
-    forProduct: prod_sp_023
-    uses:
-    - ingredient: ing_주꾸미
-      unit: g
-      pspec: pspec_033
-    - ingredient: ing_주꾸미
-      unit: g
-      pspec: pspec_033
-- id: recipe_mapo_sp021
-  class: Recipe
-  data:
-    name: 흰다리새우살 (마포)
-    price: 3480
-    effectiveFrom: '2026-01-01'
-    martCode: '236143'
-  relations:
-    forProduct: prod_sp_021
-    uses:
-    - ingredient: ing_흰다리새우살_S_베트남
-      unit: g
-      pspec: pspec_069
-    - ingredient: ing_레몬주스
-      unit: ml
-- id: recipe_mapo_sp020
-  class: Recipe
-  data:
-    name: 흰다리새우살(꼬리있음) (마포)
-    price: 3980
-    effectiveFrom: '2026-01-01'
-    martCode: '236143'
-  relations:
-    forProduct: prod_sp_020
-    uses:
-    - ingredient: ing_흰다리새우살_L_페루
-      unit: g
-      pspec: pspec_005
-    - ingredient: ing_레몬주스
-      unit: ml
 - id: recipe_mapo_mk023
   class: Recipe
   data:
@@ -416,6 +137,25 @@ instances:
     martCode: '235930'
   relations:
     forProduct: prod_mk_024
+    uses:
+    - ingredient: ing_명란
+      unit: g
+      pspec: pspec_039
+    - ingredient: ing_대구곤이
+      unit: g
+      pspec: pspec_038
+    - ingredient: ing_콩나물
+      unit: g
+      pspec: pspec_091
+    - ingredient: ing_무
+      unit: g
+      pspec: pspec_090
+    - ingredient: ing_홍고추
+      unit: 개
+      pspec: pspec_088
+    - ingredient: ing_해물탕소스
+      unit: g
+      pspec: pspec_047
 - id: recipe_mapo_mk025
   class: Recipe
   data:
@@ -451,3 +191,266 @@ instances:
     - ingredient: ing_낙곱새소스
       unit: g
       pspec: pspec_046
+- id: recipe_mapo_mk026
+  class: Recipe
+  data:
+    name: 주꾸미볶음 (마포)
+    price: 15800
+    effectiveFrom: '2026-01-01'
+    martCode: '234464'
+  relations:
+    forProduct: prod_mk_026
+    uses:
+    - ingredient: ing_주꾸미
+      unit: g
+      pspec: pspec_033
+    - ingredient: ing_솔방울오징어
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_양배추콩나물세트
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_086
+    - ingredient: ing_대파
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_홍고추
+      unit: 개
+      pspec: pspec_088
+    - ingredient: ing_볶음소스
+      unit: g
+      pspec: pspec_045
+- id: recipe_mapo_mk027
+  class: Recipe
+  data:
+    name: 낙지볶음 (마포)
+    price: 15800
+    effectiveFrom: '2026-01-01'
+    martCode: '115237'
+  relations:
+    forProduct: prod_mk_027
+    uses:
+    - ingredient: ing_낙지
+      unit: g
+      pspec: pspec_071
+    - ingredient: ing_솔방울오징어
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_양배추콩나물세트
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_086
+    - ingredient: ing_대파
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_홍고추
+      unit: 개
+      pspec: pspec_088
+    - ingredient: ing_볶음소스
+      unit: g
+      pspec: pspec_045
+- id: recipe_mapo_mk028
+  class: Recipe
+  data:
+    name: 갑오징어볶음 (마포)
+    price: 15800
+    effectiveFrom: '2026-01-01'
+    martCode: '117714'
+  relations:
+    forProduct: prod_mk_028
+    uses:
+    - ingredient: ing_갑오징어
+      unit: g
+    - ingredient: ing_솔방울오징어
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_양배추콩나물세트
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_086
+    - ingredient: ing_대파
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_홍고추
+      unit: 개
+      pspec: pspec_088
+    - ingredient: ing_볶음소스
+      unit: g
+      pspec: pspec_045
+- id: recipe_mapo_mk029
+  class: Recipe
+  data:
+    name: 순살아귀찜 (마포)
+    price: 19800
+    effectiveFrom: '2026-01-01'
+    martCode: '117715'
+  relations:
+    forProduct: prod_mk_029
+    uses:
+    - ingredient: ing_순살아귀
+      unit: g
+      pspec: pspec_073
+    - ingredient: ing_명란
+      unit: g
+      pspec: pspec_039
+    - ingredient: ing_대구곤이
+      unit: g
+      pspec: pspec_038
+    - ingredient: ing_솔방울오징어
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_오만둥이
+      unit: g
+      pspec: pspec_041
+    - ingredient: ing_콩나물
+      unit: g
+      pspec: pspec_091
+    - ingredient: ing_대파
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_홍고추
+      unit: 개
+      pspec: pspec_088
+    - ingredient: ing_만능찜소스
+      unit: g
+      pspec: pspec_074
+- id: recipe_mapo_sp019
+  class: Recipe
+  data:
+    name: 흰다리새우 (마포)
+    price: 3480
+    effectiveFrom: '2026-01-01'
+    martCode: '236143'
+  relations:
+    forProduct: prod_sp_019
+    uses:
+    - ingredient: ing_새우
+      unit: g
+      pspec: pspec_004
+    - ingredient: ing_레몬주스
+      unit: ml
+- id: recipe_mapo_sp020
+  class: Recipe
+  data:
+    name: 흰다리새우살(꼬리있음) (마포)
+    price: 3980
+    effectiveFrom: '2026-01-01'
+    martCode: '236143'
+  relations:
+    forProduct: prod_sp_020
+    uses:
+    - ingredient: ing_흰다리새우살_L_페루
+      unit: g
+      pspec: pspec_005
+    - ingredient: ing_레몬주스
+      unit: ml
+- id: recipe_mapo_sp021
+  class: Recipe
+  data:
+    name: 흰다리새우살 (마포)
+    price: 3480
+    effectiveFrom: '2026-01-01'
+    martCode: '236143'
+  relations:
+    forProduct: prod_sp_021
+    uses:
+    - ingredient: ing_흰다리새우살_S_베트남
+      unit: g
+      pspec: pspec_069
+    - ingredient: ing_레몬주스
+      unit: ml
+- id: recipe_mapo_sp022
+  class: Recipe
+  data:
+    name: 가리비관자 (마포)
+    price: 9980
+    effectiveFrom: '2026-01-01'
+    martCode: '117449'
+  relations:
+    forProduct: prod_sp_022
+    uses:
+    - ingredient: ing_가리비관자
+      unit: g
+      pspec: pspec_021
+    - ingredient: ing_레몬주스
+      unit: ml
+    - ingredient: ing_버터
+      unit: g
+- id: recipe_mapo_sp023
+  class: Recipe
+  data:
+    name: 주꾸미 (마포)
+    price: 3280
+    effectiveFrom: '2026-01-01'
+    martCode: '234464'
+  relations:
+    forProduct: prod_sp_023
+    uses:
+    - ingredient: ing_주꾸미
+      unit: g
+      pspec: pspec_033
+- id: recipe_mapo_sp024
+  class: Recipe
+  data:
+    name: 손질낙지 (마포)
+    price: 3280
+    effectiveFrom: '2026-01-01'
+    martCode: '117716'
+  relations:
+    forProduct: prod_sp_024
+    uses:
+    - ingredient: ing_낙지
+      unit: g
+      pspec: pspec_071
+- id: recipe_mapo_sp025
+  class: Recipe
+  data:
+    name: 절단낙지 (마포)
+    price: 3280
+    effectiveFrom: '2026-01-01'
+    martCode: '117717'
+  relations:
+    forProduct: prod_sp_025
+    uses:
+    - ingredient: ing_낙지
+      unit: g
+      pspec: pspec_071
+- id: recipe_mapo_sp026
+  class: Recipe
+  data:
+    name: 알곤이세트 (마포)
+    price: 3280
+    effectiveFrom: '2026-01-01'
+    martCode: '117718'
+  relations:
+    forProduct: prod_sp_026
+    uses:
+    - ingredient: ing_명란
+      unit: g
+      pspec: pspec_039
+    - ingredient: ing_대구곤이
+      unit: g
+      pspec: pspec_038
+    - ingredient: ing_레몬주스
+      unit: ml
+- id: recipe_mapo_gj004
+  class: Recipe
+  data:
+    name: 간장새우장 (마포)
+    price: 9980
+    effectiveFrom: '2026-01-01'
+    martCode: '236067'
+  relations:
+    forProduct: prod_gj_004
+    uses:
+    - ingredient: ing_흰다리새우살_L_페루
+      unit: g
+      pspec: pspec_005
+    - ingredient: ing_간장소스
+      unit: g
+      pspec: pspec_049
+    - ingredient: ing_미림
+      unit: 큰술
+    - ingredient: ing_홍고추
+      unit: 개
+      pspec: pspec_088
