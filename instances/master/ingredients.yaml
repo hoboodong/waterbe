@@ -70,6 +70,11 @@ instances:
   class: Ingredient
   data:
     name: 라면
+- id: ing_갑오징어
+  class: Ingredient
+  data:
+    name: 갑오징어
+    origin: 인도네시아
 - id: ing_명태곤이
   class: Ingredient
   data:
@@ -91,6 +96,11 @@ instances:
   class: Ingredient
   data:
     name: 초고추장
+- id: ing_가리비관자
+  class: Ingredient
+  data:
+    name: 가리비관자
+    origin: 중국
 - id: ing_두부
   class: Ingredient
   data:
@@ -223,11 +233,6 @@ instances:
   class: Ingredient
   data:
     name: 볼락
-- id: ing_갑오징어
-  class: Ingredient
-  data:
-    name: 갑오징어
-    origin: 인도네시아
 - id: ing_자숙문어
   class: Ingredient
   data:
@@ -266,11 +271,6 @@ instances:
   class: Ingredient
   data:
     name: 백생합
-    origin: 중국
-- id: ing_가리비관자
-  class: Ingredient
-  data:
-    name: 가리비관자
     origin: 중국
 - id: ing_미림
   class: Ingredient
