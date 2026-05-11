@@ -33,6 +33,10 @@ instances:
   class: Ingredient
   data:
     name: 마늘
+- id: ing_골뱅이
+  class: Ingredient
+  data:
+    name: 골뱅이
 - id: ing_소금
   class: Ingredient
   data:
@@ -82,10 +86,6 @@ instances:
   class: Ingredient
   data:
     name: 콩나물
-- id: ing_골뱅이
-  class: Ingredient
-  data:
-    name: 골뱅이
 - id: ing_우삼겹
   class: Ingredient
   data:
@@ -103,19 +103,11 @@ instances:
   class: Ingredient
   data:
     name: 염지소곱창
-- id: ing_고추장
-  class: Ingredient
-  data:
-    name: 고추장
 - id: ing_대구
   class: Ingredient
   data:
     name: 대구
     origin: 국내산
-- id: ing_레몬주스
-  class: Ingredient
-  data:
-    name: 레몬주스
 - id: ing_비자숙문어
   class: Ingredient
   data:
@@ -125,15 +117,14 @@ instances:
   class: Ingredient
   data:
     name: 간장소스
-- id: ing_솔방울오징어
-  class: Ingredient
-  data:
-    name: 솔방울오징어
-    origin: 중국
 - id: ing_만능찜소스
   class: Ingredient
   data:
     name: 만능찜소스
+- id: ing_고추장
+  class: Ingredient
+  data:
+    name: 고추장
 - id: ing_양파
   class: Ingredient
   data:
@@ -209,10 +200,19 @@ instances:
   class: Ingredient
   data:
     name: 애호박
+- id: ing_레몬주스
+  class: Ingredient
+  data:
+    name: 레몬주스
 - id: ing_가리비관자
   class: Ingredient
   data:
     name: 가리비관자
+    origin: 중국
+- id: ing_솔방울오징어
+  class: Ingredient
+  data:
+    name: 솔방울오징어
     origin: 중국
 - id: ing_명태곤이
   class: Ingredient
