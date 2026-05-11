@@ -1,8 +1,8 @@
 instances:
-- id: ing_초고추장
+- id: ing_자숙피뿔고둥살
   class: Ingredient
   data:
-    name: 초고추장
+    name: 자숙피뿔고둥살
 - id: ing_고추
   class: Ingredient
   data:
@@ -74,10 +74,11 @@ instances:
   data:
     name: 낙지
     origin: 베트남
-- id: ing_볼락
+- id: ing_흰다리새우살_L_페루
   class: Ingredient
   data:
-    name: 볼락
+    name: 흰다리새우살 (대)
+    origin: 페루
 - id: ing_참기름
   class: Ingredient
   data:
@@ -165,11 +166,10 @@ instances:
   data:
     name: 흰다리새우
     origin: 페루
-- id: ing_홍합
+- id: ing_주꾸미
   class: Ingredient
   data:
-    name: 홍합
-    origin: 국내산
+    name: 주꾸미
 - id: ing_육수
   class: Ingredient
   data:
@@ -183,10 +183,6 @@ instances:
   class: Ingredient
   data:
     name: 낙곱새소스
-- id: ing_자숙피뿔고둥살
-  class: Ingredient
-  data:
-    name: 자숙피뿔고둥살
 - id: ing_반각가리비
   class: Ingredient
   data:
@@ -235,23 +231,18 @@ instances:
   class: Ingredient
   data:
     name: 꽃게 (바레인산)
+- id: ing_초고추장
+  class: Ingredient
+  data:
+    name: 초고추장
 - id: ing_두부
   class: Ingredient
   data:
     name: 두부
-- id: ing_흰다리새우살_L_페루
-  class: Ingredient
-  data:
-    name: 흰다리새우살 (대)
-    origin: 페루
 - id: ing_간장
   class: Ingredient
   data:
     name: 간장
-- id: ing_주꾸미
-  class: Ingredient
-  data:
-    name: 주꾸미
 - id: ing_게
   class: Ingredient
   data:
@@ -301,3 +292,12 @@ instances:
   data:
     name: 자숙문어
     origin: 필리핀
+- id: ing_볼락
+  class: Ingredient
+  data:
+    name: 볼락
+- id: ing_홍합
+  class: Ingredient
+  data:
+    name: 홍합
+    origin: 국내산
