@@ -416,25 +416,6 @@ instances:
     martCode: '235930'
   relations:
     forProduct: prod_mk_024
-    uses:
-    - ingredient: ing_명란
-      unit: g
-      pspec: pspec_039
-    - ingredient: ing_대구곤이
-      unit: g
-      pspec: pspec_038
-    - ingredient: ing_콩나물
-      unit: g
-      pspec: pspec_091
-    - ingredient: ing_무
-      unit: g
-      pspec: pspec_090
-    - ingredient: ing_홍고추
-      unit: 개
-      pspec: pspec_088
-    - ingredient: ing_해물탕소스
-      unit: g
-      pspec: pspec_047
 - id: recipe_mapo_mk025
   class: Recipe
   data:
