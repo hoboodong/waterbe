@@ -155,6 +155,10 @@ instances:
   class: Product
   data:
     name: 알곤이세트
+- id: prod_sp_008
+  class: Product
+  data:
+    name: 백생합
 - id: prod_mk_019
   class: Product
   data:
@@ -175,14 +179,14 @@ instances:
   class: Product
   data:
     name: 문어소라슬라이스
-- id: prod_sp_008
-  class: Product
-  data:
-    name: 백생합
 - id: prod_mk_020
   class: Product
   data:
     name: 낙지볶음
+- id: prod_sp_009
+  class: Product
+  data:
+    name: 손질 갑오징어
 - id: prod_mk_030
   class: Product
   data:
@@ -191,22 +195,6 @@ instances:
   class: Product
   data:
     name: 흰다리새우
-- id: prod_sp_013
-  class: Product
-  data:
-    name: 흰다리새우살(대)
-- id: prod_mk_001
-  class: Product
-  data:
-    name: 문어전복해물탕
-- id: prod_sp_001
-  class: Product
-  data:
-    name: 가리비관자
-- id: prod_sp_009
-  class: Product
-  data:
-    name: 손질 갑오징어
 - id: prod_mk_025
   class: Product
   data:
@@ -215,6 +203,14 @@ instances:
   class: Product
   data:
     name: 동태알탕
+- id: prod_sp_013
+  class: Product
+  data:
+    name: 흰다리새우살(대)
+- id: prod_mk_001
+  class: Product
+  data:
+    name: 문어전복해물탕
 - id: prod_sp_014
   class: Product
   data:
@@ -223,6 +219,10 @@ instances:
   class: Product
   data:
     name: 주꾸미볶음
+- id: prod_sp_001
+  class: Product
+  data:
+    name: 가리비관자
 - id: prod_mk_005
   class: Product
   data:
