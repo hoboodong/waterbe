@@ -19,30 +19,10 @@ instances:
   class: Product
   data:
     name: 낙지전복해물탕
-- id: prod_sp_021
-  class: Product
-  data:
-    name: 흰다리새우살
-- id: prod_sp_004
-  class: Product
-  data:
-    name: 손질 흰다리새우살
-- id: prod_sp_005
-  class: Product
-  data:
-    name: 활전복
-- id: prod_sp_022
-  class: Product
-  data:
-    name: 가리비관자
 - id: prod_sp_024
   class: Product
   data:
     name: 손질낙지
-- id: prod_mk_023
-  class: Product
-  data:
-    name: 동태알탕
 - id: prod_gj_002
   class: Product
   data:
@@ -51,6 +31,10 @@ instances:
   class: Product
   data:
     name: 알탕
+- id: prod_sp_021
+  class: Product
+  data:
+    name: 흰다리새우살
 - id: prod_mk_012
   class: Product
   data:
@@ -111,6 +95,10 @@ instances:
   class: Product
   data:
     name: 낙곱새
+- id: prod_sp_004
+  class: Product
+  data:
+    name: 손질 흰다리새우살
 - id: prod_mk_024
   class: Product
   data:
@@ -155,10 +143,22 @@ instances:
   class: Product
   data:
     name: 흰다리새우살
+- id: prod_sp_005
+  class: Product
+  data:
+    name: 활전복
+- id: prod_sp_022
+  class: Product
+  data:
+    name: 가리비관자
 - id: prod_mk_025
   class: Product
   data:
     name: 낙곱새
+- id: prod_mk_023
+  class: Product
+  data:
+    name: 동태알탕
 - id: prod_sp_015
   class: Product
   data:
@@ -211,14 +211,14 @@ instances:
   class: Product
   data:
     name: 손질 흰다리새우살(대)
-- id: prod_mk_022
-  class: Product
-  data:
-    name: 낙지전복해물탕
 - id: prod_mk_007
   class: Product
   data:
     name: 대구탕
+- id: prod_mk_022
+  class: Product
+  data:
+    name: 낙지전복해물탕
 - id: prod_sp_020
   class: Product
   data:
