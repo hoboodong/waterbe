@@ -11,6 +11,10 @@ instances:
   class: Ingredient
   data:
     name: 된장
+- id: ing_볶음소스
+  class: Ingredient
+  data:
+    name: 볶음소스
 - id: ing_흰다리새우살_S_베트남
   class: Ingredient
   data:
@@ -21,14 +25,14 @@ instances:
   data:
     name: 홍고추
     origin: 국내
+- id: ing_염지소곱창
+  class: Ingredient
+  data:
+    name: 염지소곱창
 - id: ing_소금
   class: Ingredient
   data:
     name: 소금
-- id: ing_낙곱새소스
-  class: Ingredient
-  data:
-    name: 낙곱새소스
 - id: ing_염지소대창
   class: Ingredient
   data:
@@ -53,10 +57,10 @@ instances:
   class: Ingredient
   data:
     name: 애호박
-- id: ing_볶음소스
+- id: ing_낙곱새소스
   class: Ingredient
   data:
-    name: 볶음소스
+    name: 낙곱새소스
 - id: ing_새우_사우디
   class: Ingredient
   data:
@@ -79,10 +83,10 @@ instances:
   class: Ingredient
   data:
     name: 명태곤이
-- id: ing_염지소곱창
+- id: ing_고춧가루
   class: Ingredient
   data:
-    name: 염지소곱창
+    name: 고춧가루
 - id: ing_비자숙문어
   class: Ingredient
   data:
@@ -101,10 +105,6 @@ instances:
   data:
     name: 우삼겹
     origin: 미국
-- id: ing_고춧가루
-  class: Ingredient
-  data:
-    name: 고춧가루
 - id: ing_라면
   class: Ingredient
   data:
@@ -140,11 +140,6 @@ instances:
   class: Ingredient
   data:
     name: 미림
-- id: ing_무
-  class: Ingredient
-  data:
-    name: 무
-    origin: 국내
 - id: ing_초고추장
   class: Ingredient
   data:
@@ -185,6 +180,11 @@ instances:
   data:
     name: 코다리
     origin: 러시아
+- id: ing_무
+  class: Ingredient
+  data:
+    name: 무
+    origin: 국내
 - id: ing_순살아귀
   class: Ingredient
   data:
@@ -209,10 +209,18 @@ instances:
   class: Ingredient
   data:
     name: 양배추콩나물 (반반팩)
+- id: ing_간장
+  class: Ingredient
+  data:
+    name: 간장
 - id: ing_홍가리비살
   class: Ingredient
   data:
     name: 홍가리비살
+- id: ing_동태
+  class: Ingredient
+  data:
+    name: 동태
 - id: ing_게_이탈리아
   class: Ingredient
   data:
@@ -230,10 +238,6 @@ instances:
   class: Ingredient
   data:
     name: 만능찜소스
-- id: ing_간장
-  class: Ingredient
-  data:
-    name: 간장
 - id: ing_대구곤이
   class: Ingredient
   data:
@@ -265,15 +269,15 @@ instances:
   data:
     name: 통대구
     origin: 러시아
+- id: ing_두부
+  class: Ingredient
+  data:
+    name: 두부
 - id: ing_가리비관자
   class: Ingredient
   data:
     name: 가리비관자
     origin: 중국
-- id: ing_동태
-  class: Ingredient
-  data:
-    name: 동태
 - id: ing_오만둥이
   class: Ingredient
   data:
@@ -288,16 +292,12 @@ instances:
   data:
     name: 홍합
     origin: 국내산
-- id: ing_양파
-  class: Ingredient
-  data:
-    name: 양파
-- id: ing_두부
-  class: Ingredient
-  data:
-    name: 두부
 - id: ing_대구
   class: Ingredient
   data:
     name: 대구
     origin: 국내산
+- id: ing_양파
+  class: Ingredient
+  data:
+    name: 양파
