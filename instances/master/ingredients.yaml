@@ -51,10 +51,6 @@ instances:
   class: Ingredient
   data:
     name: 낙곱새소스
-- id: ing_버터
-  class: Ingredient
-  data:
-    name: 버터
 - id: ing_양파
   class: Ingredient
   data:
@@ -67,10 +63,6 @@ instances:
   class: Ingredient
   data:
     name: 참기름
-- id: ing_미림
-  class: Ingredient
-  data:
-    name: 미림
 - id: ing_염지소대창
   class: Ingredient
   data:
@@ -133,10 +125,10 @@ instances:
   class: Ingredient
   data:
     name: 자숙문어(절단)
-- id: ing_주꾸미
+- id: ing_고춧가루
   class: Ingredient
   data:
-    name: 주꾸미
+    name: 고춧가루
 - id: ing_명태곤이
   class: Ingredient
   data:
@@ -163,6 +155,14 @@ instances:
   class: Ingredient
   data:
     name: 레몬주스
+- id: ing_버터
+  class: Ingredient
+  data:
+    name: 버터
+- id: ing_미림
+  class: Ingredient
+  data:
+    name: 미림
 - id: ing_초고추장
   class: Ingredient
   data:
@@ -172,6 +172,10 @@ instances:
   data:
     name: 대파
     origin: 국내
+- id: ing_주꾸미
+  class: Ingredient
+  data:
+    name: 주꾸미
 - id: ing_홍가리비살
   class: Ingredient
   data:
@@ -283,10 +287,6 @@ instances:
   data:
     name: 흰다리새우살 (대, 인도산)
     origin: 인도
-- id: ing_고춧가루
-  class: Ingredient
-  data:
-    name: 고춧가루
 - id: ing_두부
   class: Ingredient
   data:
