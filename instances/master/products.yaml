@@ -1,20 +1,12 @@
 instances:
-- id: prod_mk_009
-  class: Product
-  data:
-    name: 순살 아귀찜
-- id: prod_sp_020
-  class: Product
-  data:
-    name: 흰다리새우살(꼬리있음)
-- id: prod_mk_010
-  class: Product
-  data:
-    name: 프리미엄 낙곱새
 - id: prod_mk_011
   class: Product
   data:
     name: 주꾸미볶음
+- id: prod_sp_020
+  class: Product
+  data:
+    name: 흰다리새우살(꼬리있음)
 - id: prod_sp_024
   class: Product
   data:
@@ -23,15 +15,11 @@ instances:
   class: Product
   data:
     name: 간장게장
-- id: prod_mk_012
+- id: prod_mk_027
   class: Product
   data:
     name: 낙지볶음
-- id: prod_sp_025
-  class: Product
-  data:
-    name: 절단낙지
-- id: prod_mk_027
+- id: prod_mk_012
   class: Product
   data:
     name: 낙지볶음
@@ -39,6 +27,10 @@ instances:
   class: Product
   data:
     name: 얼큰한 꽃게탕
+- id: prod_sp_025
+  class: Product
+  data:
+    name: 절단낙지
 - id: prod_gj_003
   class: Product
   data:
@@ -223,6 +215,14 @@ instances:
   class: Product
   data:
     name: 흰다리새우
+- id: prod_mk_009
+  class: Product
+  data:
+    name: 순살 아귀찜
+- id: prod_mk_010
+  class: Product
+  data:
+    name: 프리미엄 낙곱새
 - id: prod_sp_011
   class: Product
   data:
