@@ -3,10 +3,6 @@ instances:
   class: Ingredient
   data:
     name: 라면
-- id: ing_주꾸미
-  class: Ingredient
-  data:
-    name: 주꾸미
 - id: ing_게_바레인
   class: Ingredient
   data:
@@ -36,24 +32,25 @@ instances:
   data:
     name: 흰다리새우(사우디)
     origin: 사우디아라비아
-- id: ing_낙곱새소스
+- id: ing_고춧가루
   class: Ingredient
   data:
-    name: 낙곱새소스
+    name: 고춧가루
 - id: ing_대파
   class: Ingredient
   data:
     name: 대파
     origin: 국내
+- id: ing_대구곤이
+  class: Ingredient
+  data:
+    name: 대구곤이
+    origin: 아이슬란드
 - id: ing_가리비관자
   class: Ingredient
   data:
     name: 가리비관자
     origin: 중국
-- id: ing_미림
-  class: Ingredient
-  data:
-    name: 미림
 - id: ing_고추
   class: Ingredient
   data:
@@ -71,24 +68,21 @@ instances:
   data:
     name: 솔방울오징어
     origin: 중국
+- id: ing_염지소대창
+  class: Ingredient
+  data:
+    name: 염지소대창
+    origin: 외국산(우루과이, 아르헨티나, 미국 등)
 - id: ing_코다리
   class: Ingredient
   data:
     name: 코다리
     origin: 러시아
-- id: ing_고춧가루
-  class: Ingredient
-  data:
-    name: 고춧가루
 - id: ing_새우
   class: Ingredient
   data:
     name: 흰다리새우
     origin: 페루
-- id: ing_간장소스
-  class: Ingredient
-  data:
-    name: 간장소스
 - id: ing_전복
   class: Ingredient
   data:
@@ -169,6 +163,14 @@ instances:
   class: Ingredient
   data:
     name: 소금
+- id: ing_미림
+  class: Ingredient
+  data:
+    name: 미림
+- id: ing_주꾸미
+  class: Ingredient
+  data:
+    name: 주꾸미
 - id: ing_백새우살
   class: Ingredient
   data:
@@ -211,11 +213,6 @@ instances:
   data:
     name: 대구
     origin: 국내산
-- id: ing_대구곤이
-  class: Ingredient
-  data:
-    name: 대구곤이
-    origin: 아이슬란드
 - id: ing_흰다리새우살_L_페루
   class: Ingredient
   data:
@@ -225,11 +222,6 @@ instances:
   class: Ingredient
   data:
     name: 명태곤이
-- id: ing_염지소대창
-  class: Ingredient
-  data:
-    name: 염지소대창
-    origin: 외국산(우루과이, 아르헨티나, 미국 등)
 - id: ing_동태
   class: Ingredient
   data:
@@ -259,6 +251,10 @@ instances:
   class: Ingredient
   data:
     name: 고추장
+- id: ing_간장소스
+  class: Ingredient
+  data:
+    name: 간장소스
 - id: ing_게_이탈리아
   class: Ingredient
   data:
@@ -272,6 +268,10 @@ instances:
   data:
     name: 자숙문어
     origin: 필리핀
+- id: ing_낙곱새소스
+  class: Ingredient
+  data:
+    name: 낙곱새소스
 - id: ing_초고추장
   class: Ingredient
   data:
