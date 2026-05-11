@@ -17,6 +17,10 @@ instances:
   class: Ingredient
   data:
     name: 애호박
+- id: ing_주꾸미
+  class: Ingredient
+  data:
+    name: 주꾸미
 - id: ing_만능찜소스
   class: Ingredient
   data:
@@ -42,6 +46,10 @@ instances:
   class: Ingredient
   data:
     name: 참기름
+- id: ing_간장소스
+  class: Ingredient
+  data:
+    name: 간장소스
 - id: ing_새우
   class: Ingredient
   data:
@@ -164,10 +172,6 @@ instances:
   data:
     name: 염지소대창
     origin: 외국산(우루과이, 아르헨티나, 미국 등)
-- id: ing_주꾸미
-  class: Ingredient
-  data:
-    name: 주꾸미
 - id: ing_라면
   class: Ingredient
   data:
@@ -176,10 +180,6 @@ instances:
   class: Ingredient
   data:
     name: 고춧가루
-- id: ing_간장소스
-  class: Ingredient
-  data:
-    name: 간장소스
 - id: ing_솔방울오징어
   class: Ingredient
   data:
