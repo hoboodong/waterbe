@@ -1,17 +1,13 @@
 instances:
-- id: ing_라면
+- id: ing_양배추콩나물세트
   class: Ingredient
   data:
-    name: 라면
+    name: 양배추콩나물 (반반팩)
 - id: ing_새우
   class: Ingredient
   data:
     name: 흰다리새우
     origin: 페루
-- id: ing_게_바레인
-  class: Ingredient
-  data:
-    name: 꽃게 (바레인산)
 - id: ing_만능찜소스
   class: Ingredient
   data:
@@ -41,6 +37,11 @@ instances:
   class: Ingredient
   data:
     name: 고춧가루
+- id: ing_우삼겹
+  class: Ingredient
+  data:
+    name: 우삼겹
+    origin: 미국
 - id: ing_대구곤이
   class: Ingredient
   data:
@@ -60,10 +61,11 @@ instances:
   class: Ingredient
   data:
     name: 고추
-- id: ing_양배추콩나물세트
+- id: ing_흰다리새우살_L_인도
   class: Ingredient
   data:
-    name: 양배추콩나물 (반반팩)
+    name: 흰다리새우살 (대, 인도산)
+    origin: 인도
 - id: ing_볶음소스
   class: Ingredient
   data:
@@ -77,11 +79,10 @@ instances:
   data:
     name: 염지소대창
     origin: 외국산(우루과이, 아르헨티나, 미국 등)
-- id: ing_코다리
+- id: ing_게_이탈리아
   class: Ingredient
   data:
-    name: 코다리
-    origin: 러시아
+    name: 꽃게 (이탈리아산)
 - id: ing_간장
   class: Ingredient
   data:
@@ -96,10 +97,10 @@ instances:
   data:
     name: 솔방울오징어
     origin: 중국
-- id: ing_전복
+- id: ing_오만둥이
   class: Ingredient
   data:
-    name: 전복
+    name: 오만둥이
     origin: 국내산
 - id: ing_대파
   class: Ingredient
@@ -125,10 +126,10 @@ instances:
   data:
     name: 무
     origin: 국내
-- id: ing_찜소스
+- id: ing_마늘
   class: Ingredient
   data:
-    name: 찜소스
+    name: 마늘
 - id: ing_볼락
   class: Ingredient
   data:
@@ -146,6 +147,14 @@ instances:
   class: Ingredient
   data:
     name: 골뱅이
+- id: ing_찜소스
+  class: Ingredient
+  data:
+    name: 찜소스
+- id: ing_양파
+  class: Ingredient
+  data:
+    name: 양파
 - id: ing_자숙피뿔고둥살
   class: Ingredient
   data:
@@ -154,11 +163,6 @@ instances:
   class: Ingredient
   data:
     name: 청양고추
-- id: ing_흰다리새우살_L_인도
-  class: Ingredient
-  data:
-    name: 흰다리새우살 (대, 인도산)
-    origin: 인도
 - id: ing_비자숙문어
   class: Ingredient
   data:
@@ -181,11 +185,6 @@ instances:
   data:
     name: 백새우살
     origin: 베트남
-- id: ing_오만둥이
-  class: Ingredient
-  data:
-    name: 오만둥이
-    origin: 국내산
 - id: ing_백생합
   class: Ingredient
   data:
@@ -199,26 +198,33 @@ instances:
   class: Ingredient
   data:
     name: 육수 (멸치·다시마)
+- id: ing_코다리
+  class: Ingredient
+  data:
+    name: 코다리
+    origin: 러시아
+- id: ing_냉동홍가리비
+  class: Ingredient
+  data:
+    name: 냉동홍가리비(껍질있음)
 - id: ing_명란
   class: Ingredient
   data:
     name: 명란
     origin: 러시아
-- id: ing_대구
+- id: ing_참기름
   class: Ingredient
   data:
-    name: 대구
-    origin: 국내산
+    name: 참기름
 - id: ing_홍합
   class: Ingredient
   data:
     name: 홍합
     origin: 국내산
-- id: ing_흰다리새우살_L_페루
+- id: ing_양배추
   class: Ingredient
   data:
-    name: 흰다리새우살 (대)
-    origin: 페루
+    name: 양배추
 - id: ing_명태곤이
   class: Ingredient
   data:
@@ -235,35 +241,41 @@ instances:
   class: Ingredient
   data:
     name: 양념게장소스
-- id: ing_우삼겹
+- id: ing_흰다리새우살_L_페루
   class: Ingredient
   data:
-    name: 우삼겹
-    origin: 미국
+    name: 흰다리새우살 (대)
+    origin: 페루
 - id: ing_두부
   class: Ingredient
   data:
     name: 두부
-- id: ing_양파
+- id: ing_전복
   class: Ingredient
   data:
-    name: 양파
+    name: 전복
+    origin: 국내산
 - id: ing_레몬주스
   class: Ingredient
   data:
     name: 레몬주스
+- id: ing_라면
+  class: Ingredient
+  data:
+    name: 라면
 - id: ing_간장소스
   class: Ingredient
   data:
     name: 간장소스
-- id: ing_게_이탈리아
+- id: ing_게_바레인
   class: Ingredient
   data:
-    name: 꽃게 (이탈리아산)
-- id: ing_참기름
+    name: 꽃게 (바레인산)
+- id: ing_대구
   class: Ingredient
   data:
-    name: 참기름
+    name: 대구
+    origin: 국내산
 - id: ing_낙곱새소스
   class: Ingredient
   data:
@@ -280,23 +292,11 @@ instances:
   class: Ingredient
   data:
     name: 애호박
-- id: ing_마늘
-  class: Ingredient
-  data:
-    name: 마늘
 - id: ing_홍고추
   class: Ingredient
   data:
     name: 홍고추
     origin: 국내
-- id: ing_냉동홍가리비
-  class: Ingredient
-  data:
-    name: 냉동홍가리비(껍질있음)
-- id: ing_양배추
-  class: Ingredient
-  data:
-    name: 양배추
 - id: ing_버터
   class: Ingredient
   data:
