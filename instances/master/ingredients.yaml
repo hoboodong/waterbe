@@ -41,11 +41,6 @@ instances:
   class: Ingredient
   data:
     name: 고춧가루
-- id: ing_대파
-  class: Ingredient
-  data:
-    name: 대파
-    origin: 국내
 - id: ing_대구곤이
   class: Ingredient
   data:
@@ -56,6 +51,11 @@ instances:
   data:
     name: 가리비관자
     origin: 중국
+- id: ing_낙지
+  class: Ingredient
+  data:
+    name: 낙지
+    origin: 베트남
 - id: ing_고추
   class: Ingredient
   data:
@@ -68,11 +68,10 @@ instances:
   class: Ingredient
   data:
     name: 볶음소스
-- id: ing_솔방울오징어
+- id: ing_콩나물
   class: Ingredient
   data:
-    name: 솔방울오징어
-    origin: 중국
+    name: 콩나물
 - id: ing_염지소대창
   class: Ingredient
   data:
@@ -83,25 +82,39 @@ instances:
   data:
     name: 코다리
     origin: 러시아
+- id: ing_간장
+  class: Ingredient
+  data:
+    name: 간장
+- id: ing_통대구
+  class: Ingredient
+  data:
+    name: 통대구
+    origin: 러시아
+- id: ing_솔방울오징어
+  class: Ingredient
+  data:
+    name: 솔방울오징어
+    origin: 중국
 - id: ing_전복
   class: Ingredient
   data:
     name: 전복
     origin: 국내산
-- id: ing_낙지
+- id: ing_대파
   class: Ingredient
   data:
-    name: 낙지
-    origin: 베트남
-- id: ing_순살아귀
+    name: 대파
+    origin: 국내
+- id: ing_홍가리비살
   class: Ingredient
   data:
-    name: 순살아귀
-- id: ing_홍합
+    name: 홍가리비살
+- id: ing_자숙문어
   class: Ingredient
   data:
-    name: 홍합
-    origin: 국내산
+    name: 자숙문어
+    origin: 필리핀
 - id: ing_흰다리새우살_S_베트남
   class: Ingredient
   data:
@@ -137,14 +150,6 @@ instances:
   class: Ingredient
   data:
     name: 자숙피뿔고둥살
-- id: ing_콩나물
-  class: Ingredient
-  data:
-    name: 콩나물
-- id: ing_홍가리비살
-  class: Ingredient
-  data:
-    name: 홍가리비살
 - id: ing_청양고추
   class: Ingredient
   data:
@@ -194,15 +199,6 @@ instances:
   class: Ingredient
   data:
     name: 육수 (멸치·다시마)
-- id: ing_간장
-  class: Ingredient
-  data:
-    name: 간장
-- id: ing_통대구
-  class: Ingredient
-  data:
-    name: 통대구
-    origin: 러시아
 - id: ing_명란
   class: Ingredient
   data:
@@ -213,6 +209,11 @@ instances:
   data:
     name: 대구
     origin: 국내산
+- id: ing_홍합
+  class: Ingredient
+  data:
+    name: 홍합
+    origin: 국내산
 - id: ing_흰다리새우살_L_페루
   class: Ingredient
   data:
@@ -222,6 +223,10 @@ instances:
   class: Ingredient
   data:
     name: 명태곤이
+- id: ing_고추장
+  class: Ingredient
+  data:
+    name: 고추장
 - id: ing_동태
   class: Ingredient
   data:
@@ -247,10 +252,6 @@ instances:
   class: Ingredient
   data:
     name: 레몬주스
-- id: ing_고추장
-  class: Ingredient
-  data:
-    name: 고추장
 - id: ing_간장소스
   class: Ingredient
   data:
@@ -263,15 +264,14 @@ instances:
   class: Ingredient
   data:
     name: 참기름
-- id: ing_자숙문어
-  class: Ingredient
-  data:
-    name: 자숙문어
-    origin: 필리핀
 - id: ing_낙곱새소스
   class: Ingredient
   data:
     name: 낙곱새소스
+- id: ing_순살아귀
+  class: Ingredient
+  data:
+    name: 순살아귀
 - id: ing_초고추장
   class: Ingredient
   data:
