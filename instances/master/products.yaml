@@ -7,10 +7,6 @@ instances:
   class: Product
   data:
     name: 낙지전복해물탕
-- id: prod_mk_016
-  class: Product
-  data:
-    name: 볼락 매운탕
 - id: prod_mk_007
   class: Product
   data:
@@ -243,3 +239,7 @@ instances:
   class: Product
   data:
     name: 가리비관자
+- id: prod_mk_016
+  class: Product
+  data:
+    name: 볼락 매운탕
