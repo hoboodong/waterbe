@@ -55,6 +55,10 @@ instances:
   class: Product
   data:
     name: 활전복
+- id: prod_mk_009
+  class: Product
+  data:
+    name: 순살 아귀찜
 - id: prod_sp_022
   class: Product
   data:
@@ -223,10 +227,6 @@ instances:
   class: Product
   data:
     name: 절단낙지
-- id: prod_mk_009
-  class: Product
-  data:
-    name: 순살 아귀찜
 - id: prod_sp_002
   class: Product
   data:
