@@ -99,10 +99,6 @@ instances:
   class: Product
   data:
     name: 낙지볶음
-- id: prod_sp_014
-  class: Product
-  data:
-    name: 흰다리새우살
 - id: prod_sp_012
   class: Product
   data:
@@ -111,14 +107,6 @@ instances:
   class: Product
   data:
     name: 주꾸미볶음
-- id: prod_sp_015
-  class: Product
-  data:
-    name: 가리비관자
-- id: prod_sp_016
-  class: Product
-  data:
-    name: 알곤이세트
 - id: prod_mk_004
   class: Product
   data:
@@ -131,6 +119,18 @@ instances:
   class: Product
   data:
     name: 손질 갑오징어
+- id: prod_sp_014
+  class: Product
+  data:
+    name: 흰다리새우살
+- id: prod_sp_015
+  class: Product
+  data:
+    name: 가리비관자
+- id: prod_sp_016
+  class: Product
+  data:
+    name: 알곤이세트
 - id: prod_sp_010
   class: Product
   data:
@@ -139,22 +139,22 @@ instances:
   class: Product
   data:
     name: 주꾸미
-- id: prod_mk_012
-  class: Product
-  data:
-    name: 낙지볶음
 - id: prod_mk_013
   class: Product
   data:
     name: 문어전복해물탕
-- id: prod_sp_019
-  class: Product
-  data:
-    name: 흰다리새우
 - id: prod_mk_023
   class: Product
   data:
     name: 동태알탕
+- id: prod_mk_012
+  class: Product
+  data:
+    name: 낙지볶음
+- id: prod_sp_019
+  class: Product
+  data:
+    name: 흰다리새우
 - id: prod_mk_001
   class: Product
   data:
