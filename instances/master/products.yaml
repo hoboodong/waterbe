@@ -23,14 +23,14 @@ instances:
   class: Product
   data:
     name: 주꾸미볶음
-- id: prod_mk_010
-  class: Product
-  data:
-    name: 프리미엄 낙곱새
 - id: prod_mk_029
   class: Product
   data:
     name: 순살아귀찜
+- id: prod_mk_010
+  class: Product
+  data:
+    name: 프리미엄 낙곱새
 - id: prod_mk_020
   class: Product
   data:
@@ -39,6 +39,10 @@ instances:
   class: Product
   data:
     name: 흰다리새우
+- id: prod_sp_013
+  class: Product
+  data:
+    name: 흰다리새우살(대)
 - id: prod_mk_011
   class: Product
   data:
@@ -51,10 +55,6 @@ instances:
   class: Product
   data:
     name: 코다리알탕
-- id: prod_sp_013
-  class: Product
-  data:
-    name: 흰다리새우살(대)
 - id: prod_sp_024
   class: Product
   data:
