@@ -181,11 +181,6 @@ instances:
   class: Ingredient
   data:
     name: 레몬주스
-- id: ing_비자숙문어
-  class: Ingredient
-  data:
-    name: 비자숙문어
-    origin: 국산
 - id: ing_흰다리새우살_S_베트남
   class: Ingredient
   data:
@@ -293,6 +288,11 @@ instances:
   class: Ingredient
   data:
     name: 염지소곱창
+- id: ing_비자숙문어
+  class: Ingredient
+  data:
+    name: 비자숙문어
+    origin: 국산
 - id: ing_고춧가루
   class: Ingredient
   data:
