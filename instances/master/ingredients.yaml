@@ -45,11 +45,6 @@ instances:
   class: Ingredient
   data:
     name: 고춧가루
-- id: ing_염지소대창
-  class: Ingredient
-  data:
-    name: 염지소대창
-    origin: 외국산(우루과이, 아르헨티나, 미국 등)
 - id: ing_양념게장소스
   class: Ingredient
   data:
@@ -68,11 +63,6 @@ instances:
   data:
     name: 코다리
     origin: 러시아
-- id: ing_낙지
-  class: Ingredient
-  data:
-    name: 낙지
-    origin: 베트남
 - id: ing_흰다리새우살_L_페루
   class: Ingredient
   data:
@@ -103,11 +93,20 @@ instances:
   class: Ingredient
   data:
     name: 염지소곱창
+- id: ing_양파
+  class: Ingredient
+  data:
+    name: 양파
 - id: ing_대구
   class: Ingredient
   data:
     name: 대구
     origin: 국내산
+- id: ing_염지소대창
+  class: Ingredient
+  data:
+    name: 염지소대창
+    origin: 외국산(우루과이, 아르헨티나, 미국 등)
 - id: ing_비자숙문어
   class: Ingredient
   data:
@@ -117,18 +116,19 @@ instances:
   class: Ingredient
   data:
     name: 간장소스
-- id: ing_만능찜소스
+- id: ing_낙지
   class: Ingredient
   data:
-    name: 만능찜소스
+    name: 낙지
+    origin: 베트남
 - id: ing_고추장
   class: Ingredient
   data:
     name: 고추장
-- id: ing_양파
+- id: ing_만능찜소스
   class: Ingredient
   data:
-    name: 양파
+    name: 만능찜소스
 - id: ing_냉동홍가리비
   class: Ingredient
   data:
