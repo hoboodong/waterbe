@@ -3,18 +3,10 @@ instances:
   class: Product
   data:
     name: 흰다리새우살(꼬리있음)
-- id: prod_sp_023
-  class: Product
-  data:
-    name: 주꾸미
 - id: prod_sp_027
   class: Product
   data:
     name: 문어소라슬라이스
-- id: prod_mk_006
-  class: Product
-  data:
-    name: 골뱅이탕
 - id: prod_mk_030
   class: Product
   data:
@@ -227,10 +219,18 @@ instances:
   class: Product
   data:
     name: 문어전복해물탕
+- id: prod_sp_023
+  class: Product
+  data:
+    name: 주꾸미
 - id: prod_sp_011
   class: Product
   data:
     name: 손질 주꾸미
+- id: prod_mk_006
+  class: Product
+  data:
+    name: 골뱅이탕
 - id: prod_sp_018
   class: Product
   data:
