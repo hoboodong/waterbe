@@ -211,18 +211,14 @@ instances:
   class: Product
   data:
     name: 국산문어 해물탕
-- id: prod_mk_009
-  class: Product
-  data:
-    name: 순살 아귀찜
-- id: prod_mk_010
-  class: Product
-  data:
-    name: 프리미엄 낙곱새
 - id: prod_sp_011
   class: Product
   data:
     name: 손질 주꾸미
+- id: prod_mk_009
+  class: Product
+  data:
+    name: 순살 아귀찜
 - id: prod_sp_018
   class: Product
   data:
@@ -243,3 +239,7 @@ instances:
   class: Product
   data:
     name: 흰다리새우살(꼬리있음)
+- id: prod_mk_010
+  class: Product
+  data:
+    name: 프리미엄 낙곱새
