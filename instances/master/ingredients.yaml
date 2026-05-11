@@ -55,6 +55,11 @@ instances:
   class: Ingredient
   data:
     name: 양념게장소스
+- id: ing_백새우살
+  class: Ingredient
+  data:
+    name: 백새우살
+    origin: 베트남
 - id: ing_코다리
   class: Ingredient
   data:
@@ -261,11 +266,6 @@ instances:
   class: Ingredient
   data:
     name: 꽃게 (이탈리아산)
-- id: ing_백새우살
-  class: Ingredient
-  data:
-    name: 백새우살
-    origin: 베트남
 - id: ing_전복
   class: Ingredient
   data:
