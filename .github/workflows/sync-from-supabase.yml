@@ -2,8 +2,9 @@ name: Sync from Supabase
 
 on:
   workflow_dispatch:
-  repository_dispatch:
-    types: [supabase-update]
+  # repository_dispatch 비활성화: Supabase webhook이 계속 트리거되어 실패 메일 발생
+  # repository_dispatch:
+  #   types: [supabase-update]
 
 jobs:
   export:
