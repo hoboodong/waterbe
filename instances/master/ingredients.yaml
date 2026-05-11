@@ -38,6 +38,10 @@ instances:
   class: Ingredient
   data:
     name: 해물탕소스
+- id: ing_순살아귀
+  class: Ingredient
+  data:
+    name: 순살아귀
 - id: ing_찜소스
   class: Ingredient
   data:
@@ -193,10 +197,20 @@ instances:
   class: Ingredient
   data:
     name: 간장소스
+- id: ing_솔방울오징어
+  class: Ingredient
+  data:
+    name: 솔방울오징어
+    origin: 중국
 - id: ing_소금
   class: Ingredient
   data:
     name: 소금
+- id: ing_백생합
+  class: Ingredient
+  data:
+    name: 백생합
+    origin: 중국
 - id: ing_냉동홍가리비
   class: Ingredient
   data:
@@ -219,11 +233,6 @@ instances:
   class: Ingredient
   data:
     name: 꽃게
-- id: ing_솔방울오징어
-  class: Ingredient
-  data:
-    name: 솔방울오징어
-    origin: 중국
 - id: ing_전복
   class: Ingredient
   data:
@@ -233,19 +242,10 @@ instances:
   class: Ingredient
   data:
     name: 반각가리비
-- id: ing_백생합
-  class: Ingredient
-  data:
-    name: 백생합
-    origin: 중국
 - id: ing_양념게장소스
   class: Ingredient
   data:
     name: 양념게장소스
-- id: ing_고추장
-  class: Ingredient
-  data:
-    name: 고추장
 - id: ing_동태
   class: Ingredient
   data:
@@ -278,10 +278,10 @@ instances:
   data:
     name: 백새우살
     origin: 베트남
-- id: ing_순살아귀
+- id: ing_고추장
   class: Ingredient
   data:
-    name: 순살아귀
+    name: 고추장
 - id: ing_흰다리새우살_L_인도
   class: Ingredient
   data:
