@@ -16,6 +16,11 @@ instances:
   data:
     name: 흰다리새우(사우디)
     origin: 사우디아라비아
+- id: ing_대구
+  class: Ingredient
+  data:
+    name: 대구
+    origin: 국내산
 - id: ing_마늘
   class: Ingredient
   data:
@@ -42,6 +47,10 @@ instances:
   class: Ingredient
   data:
     name: 찜소스
+- id: ing_낙곱새소스
+  class: Ingredient
+  data:
+    name: 낙곱새소스
 - id: ing_버터
   class: Ingredient
   data:
@@ -171,10 +180,6 @@ instances:
   class: Ingredient
   data:
     name: 간장
-- id: ing_두부
-  class: Ingredient
-  data:
-    name: 두부
 - id: ing_간장소스
   class: Ingredient
   data:
@@ -183,11 +188,6 @@ instances:
   class: Ingredient
   data:
     name: 소금
-- id: ing_대구
-  class: Ingredient
-  data:
-    name: 대구
-    origin: 국내산
 - id: ing_냉동홍가리비
   class: Ingredient
   data:
@@ -274,10 +274,6 @@ instances:
   data:
     name: 백새우살
     origin: 베트남
-- id: ing_낙곱새소스
-  class: Ingredient
-  data:
-    name: 낙곱새소스
 - id: ing_순살아귀
   class: Ingredient
   data:
@@ -291,6 +287,10 @@ instances:
   class: Ingredient
   data:
     name: 고춧가루
+- id: ing_두부
+  class: Ingredient
+  data:
+    name: 두부
 - id: ing_홍합
   class: Ingredient
   data:
