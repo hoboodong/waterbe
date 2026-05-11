@@ -1,4 +1,305 @@
 instances:
+- id: recipe_wolgye_sp015
+  class: Recipe
+  data:
+    name: 가리비관자 (월계)
+    price: 9900
+    effectiveFrom: '2026-01-01'
+    martCode: '117449'
+  relations:
+    forProduct: prod_sp_015
+    uses:
+    - ingredient: ing_가리비관자
+      amount: 200.0
+      unit: g
+      pspec: pspec_076
+    - ingredient: ing_버터
+      amount: 1.0
+      unit: 후레시
+- id: recipe_wolgye_sp012
+  class: Recipe
+  data:
+    name: 흰다리새우 (월계)
+    price: 3480
+    effectiveFrom: '2026-01-01'
+    martCode: '236143'
+  relations:
+    forProduct: prod_sp_012
+    uses:
+    - ingredient: ing_새우
+      amount: 325.0
+      unit: g
+      pspec: pspec_003
+- id: recipe_wolgye_mk015
+  class: Recipe
+  data:
+    name: 동태알탕 (월계)
+    price: 17800
+    effectiveFrom: '2026-01-01'
+    martCode: '235921'
+  relations:
+    forProduct: prod_mk_015
+    uses:
+    - ingredient: ing_코다리
+      amount: 300.0
+      unit: g
+      pspec: pspec_084
+    - ingredient: ing_명란
+      amount: 80.0
+      unit: g
+      pspec: pspec_081
+    - ingredient: ing_명태곤이
+      amount: 80.0
+      unit: g
+      pspec: pspec_082
+    - ingredient: ing_솔방울오징어
+      amount: 120.0
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_홍합
+      amount: 80.0
+      unit: g
+      pspec: pspec_017
+    - ingredient: ing_콩나물
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_091
+    - ingredient: ing_무
+      amount: 70.0
+      unit: g
+      pspec: pspec_090
+    - ingredient: ing_대파
+      amount: 30.0
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_홍고추
+      amount: 3.0
+      unit: g
+      pspec: pspec_088
+    - ingredient: ing_해물탕소스
+      amount: 2.0
+      unit: 팩
+      pspec: pspec_047
+- id: recipe_wolgye_mk019
+  class: Recipe
+  data:
+    name: 주꾸미볶음 (월계)
+    price: 15800
+    effectiveFrom: '2026-01-01'
+    martCode: '234464'
+  relations:
+    forProduct: prod_mk_019
+    uses:
+    - ingredient: ing_주꾸미
+      amount: 230.0
+      unit: g
+      pspec: pspec_077
+    - ingredient: ing_솔방울오징어
+      amount: 150.0
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_양배추콩나물세트
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_086
+    - ingredient: ing_대파
+      amount: 30.0
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_홍고추
+      amount: 3.0
+      unit: g
+      pspec: pspec_088
+    - ingredient: ing_볶음소스
+      amount: 2.0
+      unit: 팩
+      pspec: pspec_045
+- id: recipe_wolgye_mk017
+  class: Recipe
+  data:
+    name: 얼큰한 꽃게탕 (월계)
+    price: 17800
+    effectiveFrom: '2026-01-01'
+    martCode: '117720'
+  relations:
+    forProduct: prod_mk_017
+    uses:
+    - ingredient: ing_게_이탈리아
+      amount: 170.0
+      unit: g
+      pspec: pspec_095
+    - ingredient: ing_게_바레인
+      amount: 300.0
+      unit: g
+      pspec: pspec_094
+    - ingredient: ing_솔방울오징어
+      amount: 150.0
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_홍합
+      amount: 80.0
+      unit: g
+      pspec: pspec_017
+    - ingredient: ing_콩나물
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_091
+    - ingredient: ing_무
+      amount: 70.0
+      unit: g
+      pspec: pspec_090
+    - ingredient: ing_대파
+      amount: 30.0
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_홍고추
+      amount: 3.0
+      unit: g
+      pspec: pspec_088
+    - ingredient: ing_해물탕소스
+      amount: 2.0
+      unit: 팩
+      pspec: pspec_047
+- id: recipe_wolgye_mk020
+  class: Recipe
+  data:
+    name: 낙지볶음 (월계)
+    price: 15800
+    effectiveFrom: '2026-01-01'
+    martCode: '115237'
+  relations:
+    forProduct: prod_mk_020
+    uses:
+    - ingredient: ing_낙지
+      amount: 230.0
+      unit: g
+      pspec: pspec_078
+    - ingredient: ing_솔방울오징어
+      amount: 150.0
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_양배추콩나물세트
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_086
+    - ingredient: ing_대파
+      amount: 30.0
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_홍고추
+      amount: 3.0
+      unit: g
+      pspec: pspec_088
+    - ingredient: ing_볶음소스
+      amount: 2.0
+      unit: 팩
+      pspec: pspec_045
+- id: recipe_wolgye_sp014
+  class: Recipe
+  data:
+    name: 흰다리새우살 (월계)
+    price: 3480
+    effectiveFrom: '2026-01-01'
+    martCode: '236143'
+  relations:
+    forProduct: prod_sp_014
+    uses:
+    - ingredient: ing_흰다리새우살_S_베트남
+      amount: 200.0
+      unit: g
+      pspec: pspec_002
+- id: recipe_wolgye_mk030
+  class: Recipe
+  data:
+    name: 대구매운탕 (월계)
+    price: 19800
+    effectiveFrom: '2026-01-01'
+    martCode: '117722'
+  relations:
+    forProduct: prod_mk_030
+    uses:
+    - ingredient: ing_통대구
+      amount: 300.0
+      unit: g
+      pspec: pspec_087
+    - ingredient: ing_명란
+      amount: 80.0
+      unit: g
+      pspec: pspec_081
+    - ingredient: ing_명태곤이
+      amount: 80.0
+      unit: g
+      pspec: pspec_082
+    - ingredient: ing_솔방울오징어
+      amount: 120.0
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_홍합
+      amount: 80.0
+      unit: g
+      pspec: pspec_017
+    - ingredient: ing_콩나물
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_091
+    - ingredient: ing_무
+      amount: 70.0
+      unit: g
+      pspec: pspec_090
+    - ingredient: ing_대파
+      amount: 30.0
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_홍고추
+      amount: 3.0
+      unit: g
+      pspec: pspec_088
+    - ingredient: ing_해물탕소스
+      amount: 2.0
+      unit: 팩
+      pspec: pspec_047
+- id: recipe_wolgye_mk018
+  class: Recipe
+  data:
+    name: 낙곱새 (월계)
+    price: 19800
+    effectiveFrom: '2026-01-01'
+    martCode: '117721'
+  relations:
+    forProduct: prod_mk_018
+    uses:
+    - ingredient: ing_낙지
+      amount: 120.0
+      unit: g
+      pspec: pspec_078
+    - ingredient: ing_염지소대창
+      amount: 80.0
+      unit: g
+      pspec: pspec_092
+    - ingredient: ing_흰다리새우살_S_베트남
+      amount: 100.0
+      unit: g
+      pspec: pspec_002
+    - ingredient: ing_솔방울오징어
+      amount: 150.0
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_양배추콩나물세트
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_086
+    - ingredient: ing_대파
+      amount: 30.0
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_홍고추
+      amount: 3.0
+      unit: g
+      pspec: pspec_088
+    - ingredient: ing_낙곱새소스
+      amount: 2.0
+      unit: 팩
+      pspec: pspec_046
 - id: recipe_wolgye_mk013
   class: Recipe
   data:
@@ -8,7 +309,6 @@ instances:
     martCode: '117630'
   relations:
     forProduct: prod_mk_013
-    atStore: store_wolgye
     uses:
     - ingredient: ing_자숙문어
       amount: 200.0
@@ -58,6 +358,93 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
+- id: recipe_wolgye_sp016
+  class: Recipe
+  data:
+    name: 알곤이세트 (월계)
+    price: 3280
+    effectiveFrom: '2026-01-01'
+    martCode: '117723'
+  relations:
+    forProduct: prod_sp_016
+    uses:
+    - ingredient: ing_명란
+      unit: g
+      pspec: pspec_081
+    - ingredient: ing_대구곤이
+      unit: g
+    - ingredient: ing_레몬주스
+      unit: ml
+- id: recipe_wolgye_sp017
+  class: Recipe
+  data:
+    name: 주꾸미 (월계)
+    price: 3280
+    effectiveFrom: '2026-01-01'
+    martCode: '234464'
+  relations:
+    forProduct: prod_sp_017
+    uses:
+    - ingredient: ing_주꾸미
+      amount: 300.0
+      unit: g
+      pspec: pspec_077
+- id: recipe_wolgye_mk016
+  class: Recipe
+  data:
+    name: 볼락 매운탕 (월계)
+    price: 19800
+    effectiveFrom: '2026-01-01'
+    martCode: '117719'
+  relations:
+    forProduct: prod_mk_016
+    uses:
+    - ingredient: ing_볼락
+      amount: 350.0
+      unit: g
+      pspec: pspec_093
+    - ingredient: ing_솔방울오징어
+      amount: 150.0
+      unit: g
+      pspec: pspec_034
+    - ingredient: ing_홍합
+      amount: 80.0
+      unit: g
+      pspec: pspec_017
+    - ingredient: ing_콩나물
+      amount: 1.0
+      unit: 팩
+      pspec: pspec_091
+    - ingredient: ing_무
+      amount: 70.0
+      unit: g
+      pspec: pspec_090
+    - ingredient: ing_대파
+      amount: 30.0
+      unit: g
+      pspec: pspec_089
+    - ingredient: ing_홍고추
+      amount: 3.0
+      unit: g
+      pspec: pspec_088
+    - ingredient: ing_해물탕소스
+      amount: 2.0
+      unit: 팩
+      pspec: pspec_047
+- id: recipe_wolgye_sp013
+  class: Recipe
+  data:
+    name: 흰다리새우살(대) (월계)
+    price: 3980
+    effectiveFrom: '2026-01-01'
+    martCode: '236143'
+  relations:
+    forProduct: prod_sp_013
+    uses:
+    - ingredient: ing_흰다리새우살_L_페루
+      amount: 300.0
+      unit: g
+      pspec: pspec_080
 - id: recipe_wolgye_mk014
   class: Recipe
   data:
@@ -67,7 +454,6 @@ instances:
     martCode: '235905'
   relations:
     forProduct: prod_mk_014
-    atStore: store_wolgye
     uses:
     - ingredient: ing_낙지
       amount: 230.0
@@ -117,407 +503,6 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wolgye_mk015
-  class: Recipe
-  data:
-    name: 동태알탕 (월계)
-    price: 17800
-    effectiveFrom: '2026-01-01'
-    martCode: '235921'
-  relations:
-    forProduct: prod_mk_015
-    atStore: store_wolgye
-    uses:
-    - ingredient: ing_코다리
-      amount: 300.0
-      unit: g
-      pspec: pspec_084
-    - ingredient: ing_명란
-      amount: 80.0
-      unit: g
-      pspec: pspec_081
-    - ingredient: ing_명태곤이
-      amount: 80.0
-      unit: g
-      pspec: pspec_082
-    - ingredient: ing_솔방울오징어
-      amount: 120.0
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_홍합
-      amount: 80.0
-      unit: g
-      pspec: pspec_017
-    - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_091
-    - ingredient: ing_무
-      amount: 70.0
-      unit: g
-      pspec: pspec_090
-    - ingredient: ing_대파
-      amount: 30.0
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      amount: 3.0
-      unit: g
-      pspec: pspec_088
-    - ingredient: ing_해물탕소스
-      amount: 2.0
-      unit: 팩
-      pspec: pspec_047
-- id: recipe_wolgye_mk016
-  class: Recipe
-  data:
-    name: 볼락 매운탕 (월계)
-    price: 19800
-    effectiveFrom: '2026-01-01'
-    martCode: '117719'
-  relations:
-    forProduct: prod_mk_016
-    atStore: store_wolgye
-    uses:
-    - ingredient: ing_볼락
-      amount: 350.0
-      unit: g
-      pspec: pspec_093
-    - ingredient: ing_솔방울오징어
-      amount: 150.0
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_홍합
-      amount: 80.0
-      unit: g
-      pspec: pspec_017
-    - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_091
-    - ingredient: ing_무
-      amount: 70.0
-      unit: g
-      pspec: pspec_090
-    - ingredient: ing_대파
-      amount: 30.0
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      amount: 3.0
-      unit: g
-      pspec: pspec_088
-    - ingredient: ing_해물탕소스
-      amount: 2.0
-      unit: 팩
-      pspec: pspec_047
-- id: recipe_wolgye_mk017
-  class: Recipe
-  data:
-    name: 얼큰한 꽃게탕 (월계)
-    price: 17800
-    effectiveFrom: '2026-01-01'
-    martCode: '117720'
-  relations:
-    forProduct: prod_mk_017
-    atStore: store_wolgye
-    uses:
-    - ingredient: ing_게_이탈리아
-      amount: 170.0
-      unit: g
-      pspec: pspec_095
-    - ingredient: ing_게_바레인
-      amount: 300.0
-      unit: g
-      pspec: pspec_094
-    - ingredient: ing_솔방울오징어
-      amount: 150.0
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_홍합
-      amount: 80.0
-      unit: g
-      pspec: pspec_017
-    - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_091
-    - ingredient: ing_무
-      amount: 70.0
-      unit: g
-      pspec: pspec_090
-    - ingredient: ing_대파
-      amount: 30.0
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      amount: 3.0
-      unit: g
-      pspec: pspec_088
-    - ingredient: ing_해물탕소스
-      amount: 2.0
-      unit: 팩
-      pspec: pspec_047
-- id: recipe_wolgye_mk018
-  class: Recipe
-  data:
-    name: 낙곱새 (월계)
-    price: 19800
-    effectiveFrom: '2026-01-01'
-    martCode: '117721'
-  relations:
-    forProduct: prod_mk_018
-    atStore: store_wolgye
-    uses:
-    - ingredient: ing_낙지
-      amount: 120.0
-      unit: g
-      pspec: pspec_078
-    - ingredient: ing_염지소대창
-      amount: 80.0
-      unit: g
-      pspec: pspec_092
-    - ingredient: ing_흰다리새우살_S_베트남
-      amount: 100.0
-      unit: g
-      pspec: pspec_002
-    - ingredient: ing_솔방울오징어
-      amount: 150.0
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_양배추콩나물세트
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_086
-    - ingredient: ing_대파
-      amount: 30.0
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      amount: 3.0
-      unit: g
-      pspec: pspec_088
-    - ingredient: ing_낙곱새소스
-      amount: 2.0
-      unit: 팩
-      pspec: pspec_046
-- id: recipe_wolgye_mk019
-  class: Recipe
-  data:
-    name: 주꾸미볶음 (월계)
-    price: 15800
-    effectiveFrom: '2026-01-01'
-    martCode: '234464'
-  relations:
-    forProduct: prod_mk_019
-    atStore: store_wolgye
-    uses:
-    - ingredient: ing_주꾸미
-      amount: 230.0
-      unit: g
-      pspec: pspec_077
-    - ingredient: ing_솔방울오징어
-      amount: 150.0
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_양배추콩나물세트
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_086
-    - ingredient: ing_대파
-      amount: 30.0
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      amount: 3.0
-      unit: g
-      pspec: pspec_088
-    - ingredient: ing_볶음소스
-      amount: 2.0
-      unit: 팩
-      pspec: pspec_045
-- id: recipe_wolgye_mk020
-  class: Recipe
-  data:
-    name: 낙지볶음 (월계)
-    price: 15800
-    effectiveFrom: '2026-01-01'
-    martCode: '115237'
-  relations:
-    forProduct: prod_mk_020
-    atStore: store_wolgye
-    uses:
-    - ingredient: ing_낙지
-      amount: 230.0
-      unit: g
-      pspec: pspec_078
-    - ingredient: ing_솔방울오징어
-      amount: 150.0
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_양배추콩나물세트
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_086
-    - ingredient: ing_대파
-      amount: 30.0
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      amount: 3.0
-      unit: g
-      pspec: pspec_088
-    - ingredient: ing_볶음소스
-      amount: 2.0
-      unit: 팩
-      pspec: pspec_045
-- id: recipe_wolgye_mk030
-  class: Recipe
-  data:
-    name: 대구매운탕 (월계)
-    price: 19800
-    effectiveFrom: '2026-01-01'
-    martCode: '117722'
-  relations:
-    forProduct: prod_mk_030
-    atStore: store_wolgye
-    uses:
-    - ingredient: ing_통대구
-      amount: 300.0
-      unit: g
-      pspec: pspec_087
-    - ingredient: ing_명란
-      amount: 80.0
-      unit: g
-      pspec: pspec_081
-    - ingredient: ing_명태곤이
-      amount: 80.0
-      unit: g
-      pspec: pspec_082
-    - ingredient: ing_솔방울오징어
-      amount: 120.0
-      unit: g
-      pspec: pspec_034
-    - ingredient: ing_홍합
-      amount: 80.0
-      unit: g
-      pspec: pspec_017
-    - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_091
-    - ingredient: ing_무
-      amount: 70.0
-      unit: g
-      pspec: pspec_090
-    - ingredient: ing_대파
-      amount: 30.0
-      unit: g
-      pspec: pspec_089
-    - ingredient: ing_홍고추
-      amount: 3.0
-      unit: g
-      pspec: pspec_088
-    - ingredient: ing_해물탕소스
-      amount: 2.0
-      unit: 팩
-      pspec: pspec_047
-- id: recipe_wolgye_sp012
-  class: Recipe
-  data:
-    name: 흰다리새우 (월계)
-    price: 3480
-    effectiveFrom: '2026-01-01'
-    martCode: '236143'
-  relations:
-    forProduct: prod_sp_012
-    atStore: store_wolgye
-    uses:
-    - ingredient: ing_새우
-      amount: 325.0
-      unit: g
-      pspec: pspec_003
-- id: recipe_wolgye_sp013
-  class: Recipe
-  data:
-    name: 흰다리새우살(대) (월계)
-    price: 3980
-    effectiveFrom: '2026-01-01'
-    martCode: '236143'
-  relations:
-    forProduct: prod_sp_013
-    atStore: store_wolgye
-    uses:
-    - ingredient: ing_흰다리새우살_L_페루
-      amount: 300.0
-      unit: g
-      pspec: pspec_080
-- id: recipe_wolgye_sp014
-  class: Recipe
-  data:
-    name: 흰다리새우살 (월계)
-    price: 3480
-    effectiveFrom: '2026-01-01'
-    martCode: '236143'
-  relations:
-    forProduct: prod_sp_014
-    atStore: store_wolgye
-    uses:
-    - ingredient: ing_흰다리새우살_S_베트남
-      amount: 200.0
-      unit: g
-      pspec: pspec_002
-- id: recipe_wolgye_sp015
-  class: Recipe
-  data:
-    name: 가리비관자 (월계)
-    price: 9900
-    effectiveFrom: '2026-01-01'
-    martCode: '117449'
-  relations:
-    forProduct: prod_sp_015
-    atStore: store_wolgye
-    uses:
-    - ingredient: ing_가리비관자
-      amount: 200.0
-      unit: g
-      pspec: pspec_076
-    - ingredient: ing_버터
-      amount: 1.0
-      unit: 후레시
-- id: recipe_wolgye_sp016
-  class: Recipe
-  data:
-    name: 알곤이세트 (월계)
-    price: 3280
-    effectiveFrom: '2026-01-01'
-    martCode: '117723'
-  relations:
-    forProduct: prod_sp_016
-    atStore: store_wolgye
-    uses:
-    - ingredient: ing_명란
-      unit: g
-      pspec: pspec_081
-    - ingredient: ing_대구곤이
-      unit: g
-    - ingredient: ing_레몬주스
-      unit: ml
-- id: recipe_wolgye_sp017
-  class: Recipe
-  data:
-    name: 주꾸미 (월계)
-    price: 3280
-    effectiveFrom: '2026-01-01'
-    martCode: '234464'
-  relations:
-    forProduct: prod_sp_017
-    atStore: store_wolgye
-    uses:
-    - ingredient: ing_주꾸미
-      amount: 300.0
-      unit: g
-      pspec: pspec_077
 - id: recipe_wolgye_sp018
   class: Recipe
   data:
@@ -527,7 +512,6 @@ instances:
     martCode: '117724'
   relations:
     forProduct: prod_sp_018
-    atStore: store_wolgye
     uses:
     - ingredient: ing_낙지
       amount: 300.0
@@ -542,7 +526,6 @@ instances:
     martCode: '117725'
   relations:
     forProduct: prod_sp_027
-    atStore: store_wolgye
     uses:
     - ingredient: ing_자숙문어_절단
       amount: 90.0
