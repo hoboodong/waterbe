@@ -91,10 +91,6 @@ instances:
   class: Product
   data:
     name: 얼큰한 꽃게탕
-- id: prod_sp_008
-  class: Product
-  data:
-    name: 백생합
 - id: prod_mk_028
   class: Product
   data:
@@ -115,10 +111,6 @@ instances:
   class: Product
   data:
     name: 흰다리새우살
-- id: prod_sp_009
-  class: Product
-  data:
-    name: 손질 갑오징어
 - id: prod_sp_004
   class: Product
   data:
@@ -167,10 +159,6 @@ instances:
   class: Product
   data:
     name: 코다리알탕
-- id: prod_mk_025
-  class: Product
-  data:
-    name: 낙곱새
 - id: prod_sp_013
   class: Product
   data:
@@ -187,6 +175,10 @@ instances:
   class: Product
   data:
     name: 낙지전복해물탕
+- id: prod_sp_008
+  class: Product
+  data:
+    name: 백생합
 - id: prod_sp_001
   class: Product
   data:
@@ -195,22 +187,26 @@ instances:
   class: Product
   data:
     name: 흰다리새우살
-- id: prod_sp_015
+- id: prod_sp_009
   class: Product
   data:
-    name: 가리비관자
+    name: 손질 갑오징어
+- id: prod_mk_025
+  class: Product
+  data:
+    name: 낙곱새
 - id: prod_sp_023
   class: Product
   data:
     name: 주꾸미
-- id: prod_sp_016
-  class: Product
-  data:
-    name: 알곤이세트
 - id: prod_mk_015
   class: Product
   data:
     name: 동태알탕
+- id: prod_sp_015
+  class: Product
+  data:
+    name: 가리비관자
 - id: prod_mk_026
   class: Product
   data:
@@ -219,6 +215,10 @@ instances:
   class: Product
   data:
     name: 골뱅이탕
+- id: prod_sp_016
+  class: Product
+  data:
+    name: 알곤이세트
 - id: prod_sp_010
   class: Product
   data:
