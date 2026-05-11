@@ -128,10 +128,6 @@ instances:
   data:
     name: 대파
     origin: 국내
-- id: ing_미림
-  class: Ingredient
-  data:
-    name: 미림
 - id: ing_버터
   class: Ingredient
   data:
@@ -278,6 +274,10 @@ instances:
   data:
     name: 가리비관자
     origin: 중국
+- id: ing_미림
+  class: Ingredient
+  data:
+    name: 미림
 - id: ing_오만둥이
   class: Ingredient
   data:
