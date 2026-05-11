@@ -27,22 +27,30 @@ instances:
   class: Product
   data:
     name: 절단낙지
-- id: prod_mk_027
-  class: Product
-  data:
-    name: 낙지볶음
-- id: prod_mk_017
-  class: Product
-  data:
-    name: 얼큰한 꽃게탕
 - id: prod_gj_003
   class: Product
   data:
     name: 간장 새우장
+- id: prod_mk_027
+  class: Product
+  data:
+    name: 낙지볶음
 - id: prod_mk_021
   class: Product
   data:
     name: 문어전복해물탕
+- id: prod_sp_026
+  class: Product
+  data:
+    name: 알곤이세트
+- id: prod_gj_004
+  class: Product
+  data:
+    name: 간장새우장
+- id: prod_mk_017
+  class: Product
+  data:
+    name: 얼큰한 꽃게탕
 - id: prod_mk_028
   class: Product
   data:
@@ -51,10 +59,6 @@ instances:
   class: Product
   data:
     name: 낙곱새
-- id: prod_sp_026
-  class: Product
-  data:
-    name: 알곤이세트
 - id: prod_mk_019
   class: Product
   data:
@@ -63,10 +67,6 @@ instances:
   class: Product
   data:
     name: 순살아귀찜
-- id: prod_gj_004
-  class: Product
-  data:
-    name: 간장새우장
 - id: prod_mk_020
   class: Product
   data:
