@@ -34,10 +34,10 @@ instances:
   data:
     name: 흰다리새우살 (대)
     origin: 페루
-- id: ing_동태
+- id: ing_낙곱새소스
   class: Ingredient
   data:
-    name: 동태
+    name: 낙곱새소스
 - id: ing_레몬주스
   class: Ingredient
   data:
@@ -46,10 +46,6 @@ instances:
   class: Ingredient
   data:
     name: 주꾸미
-- id: ing_간장소스
-  class: Ingredient
-  data:
-    name: 간장소스
 - id: ing_참기름
   class: Ingredient
   data:
@@ -106,20 +102,19 @@ instances:
   data:
     name: 백새우살
     origin: 베트남
-- id: ing_두부
+- id: ing_고춧가루
   class: Ingredient
   data:
-    name: 두부
+    name: 고춧가루
 - id: ing_새우_사우디
   class: Ingredient
   data:
     name: 흰다리새우(사우디)
     origin: 사우디아라비아
-- id: ing_대구
+- id: ing_버터
   class: Ingredient
   data:
-    name: 대구
-    origin: 국내산
+    name: 버터
 - id: ing_대파
   class: Ingredient
   data:
@@ -130,6 +125,10 @@ instances:
   data:
     name: 비자숙문어
     origin: 국산
+- id: ing_간장소스
+  class: Ingredient
+  data:
+    name: 간장소스
 - id: ing_미림
   class: Ingredient
   data:
@@ -152,10 +151,6 @@ instances:
   class: Ingredient
   data:
     name: 홍가리비살
-- id: ing_낙곱새소스
-  class: Ingredient
-  data:
-    name: 낙곱새소스
 - id: ing_육수
   class: Ingredient
   data:
@@ -187,10 +182,6 @@ instances:
   data:
     name: 흰다리새우살 (대, 인도산)
     origin: 인도
-- id: ing_고춧가루
-  class: Ingredient
-  data:
-    name: 고춧가루
 - id: ing_통대구
   class: Ingredient
   data:
@@ -239,6 +230,10 @@ instances:
   class: Ingredient
   data:
     name: 반각가리비
+- id: ing_간장
+  class: Ingredient
+  data:
+    name: 간장
 - id: ing_청양고추
   class: Ingredient
   data:
@@ -262,14 +257,6 @@ instances:
   data:
     name: 오만둥이
     origin: 국내산
-- id: ing_간장
-  class: Ingredient
-  data:
-    name: 간장
-- id: ing_버터
-  class: Ingredient
-  data:
-    name: 버터
 - id: ing_가리비관자
   class: Ingredient
   data:
@@ -279,6 +266,10 @@ instances:
   class: Ingredient
   data:
     name: 자숙문어(절단)
+- id: ing_동태
+  class: Ingredient
+  data:
+    name: 동태
 - id: ing_골뱅이
   class: Ingredient
   data:
@@ -301,3 +292,12 @@ instances:
   data:
     name: 갑오징어
     origin: 인도네시아
+- id: ing_두부
+  class: Ingredient
+  data:
+    name: 두부
+- id: ing_대구
+  class: Ingredient
+  data:
+    name: 대구
+    origin: 국내산
