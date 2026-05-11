@@ -49,16 +49,6 @@ instances:
   data:
     name: 전복
     origin: 국내산
-- id: ing_자숙문어
-  class: Ingredient
-  data:
-    name: 자숙문어
-    origin: 필리핀
-- id: ing_코다리
-  class: Ingredient
-  data:
-    name: 코다리
-    origin: 러시아
 - id: ing_골뱅이
   class: Ingredient
   data:
@@ -162,10 +152,20 @@ instances:
   class: Ingredient
   data:
     name: 주꾸미
+- id: ing_자숙문어
+  class: Ingredient
+  data:
+    name: 자숙문어
+    origin: 필리핀
 - id: ing_양배추콩나물세트
   class: Ingredient
   data:
     name: 양배추콩나물 (반반팩)
+- id: ing_코다리
+  class: Ingredient
+  data:
+    name: 코다리
+    origin: 러시아
 - id: ing_명태곤이
   class: Ingredient
   data:
