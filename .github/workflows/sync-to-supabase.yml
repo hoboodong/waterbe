@@ -1,11 +1,13 @@
 name: Sync to Supabase
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'instances/master/**/*.yaml'
+  workflow_dispatch:
+  # push 자동 트리거 비활성화: sync-from-supabase와 무한 루프 발생
+  # push:
+  #   branches:
+  #     - main
+  #   paths:
+  #     - 'instances/master/**/*.yaml'
 
 jobs:
   sync:
