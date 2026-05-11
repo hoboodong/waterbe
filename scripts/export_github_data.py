@@ -82,15 +82,17 @@ def export_products() -> Dict:
 
 def export_recipes(store_id: str) -> Dict:
     """레시피 데이터 export (매장별)"""
-    # 레시피 읽기
-    recipes = supabase_get('github_recipes', params={'store_id': f'eq.{store_id}'})
+    # 레시피 읽기 (매장별 테이블)
+    table_name = f'github_recipes_{store_id}'
+    recipes = supabase_get(table_name)
 
     instances = []
     for recipe in recipes:
         recipe_id = recipe['id']
 
-        # 레시피 재료 읽기
-        ingredients = supabase_get('github_recipe_ingredients',
+        # 레시피 재료 읽기 (매장별 테이블)
+        ingredients_table = f'github_recipe_ingredients_{store_id}'
+        ingredients = supabase_get(ingredients_table,
                                   params={'recipe_id': f'eq.{recipe_id}',
                                          'order': 'sequence.asc'})
 

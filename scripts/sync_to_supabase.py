@@ -183,11 +183,13 @@ def import_recipes(store_key: str = None):
             }
 
             try:
-                # Recipe INSERT (UPSERT)
-                supabase_request('POST', 'github_recipes', data=recipe_row)
+                # Recipe INSERT (UPSERT) - 매장별 테이블
+                recipes_table = f'github_recipes_{store_id}'
+                supabase_request('POST', recipes_table, data=recipe_row)
 
                 # 기존 재료 삭제
-                supabase_request('DELETE', 'github_recipe_ingredients',
+                ingredients_table = f'github_recipe_ingredients_{store_id}'
+                supabase_request('DELETE', ingredients_table,
                                params={'recipe_id': f'eq.{recipe_id}'})
 
                 # Recipe ingredients INSERT
@@ -208,7 +210,7 @@ def import_recipes(store_key: str = None):
                     })
 
                 if ingredient_rows:
-                    supabase_request('POST', 'github_recipe_ingredients', data=ingredient_rows)
+                    supabase_request('POST', ingredients_table, data=ingredient_rows)
 
                 print(f"  ✅ {recipe_row['name']} ({len(uses)} ingredients)")
                 success_count += 1
