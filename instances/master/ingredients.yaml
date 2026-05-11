@@ -1,4 +1,8 @@
 instances:
+- id: ing_라면
+  class: Ingredient
+  data:
+    name: 라면
 - id: ing_대구곤이
   class: Ingredient
   data:
@@ -17,6 +21,10 @@ instances:
   class: Ingredient
   data:
     name: 애호박
+- id: ing_자숙문어_절단
+  class: Ingredient
+  data:
+    name: 자숙문어(절단)
 - id: ing_만능찜소스
   class: Ingredient
   data:
@@ -57,6 +65,14 @@ instances:
   class: Ingredient
   data:
     name: 두부
+- id: ing_양배추콩나물세트
+  class: Ingredient
+  data:
+    name: 양배추콩나물 (반반팩)
+- id: ing_게_바레인
+  class: Ingredient
+  data:
+    name: 꽃게 (바레인산)
 - id: ing_솔방울오징어
   class: Ingredient
   data:
@@ -85,10 +101,6 @@ instances:
   class: Ingredient
   data:
     name: 미림
-- id: ing_게_바레인
-  class: Ingredient
-  data:
-    name: 꽃게 (바레인산)
 - id: ing_낙지
   class: Ingredient
   data:
@@ -111,6 +123,10 @@ instances:
   class: Ingredient
   data:
     name: 해물탕소스
+- id: ing_찜소스
+  class: Ingredient
+  data:
+    name: 찜소스
 - id: ing_주꾸미
   class: Ingredient
   data:
@@ -119,6 +135,10 @@ instances:
   class: Ingredient
   data:
     name: 청양고추
+- id: ing_볼락
+  class: Ingredient
+  data:
+    name: 볼락
 - id: ing_양파
   class: Ingredient
   data:
@@ -139,10 +159,6 @@ instances:
   class: Ingredient
   data:
     name: 볶음소스
-- id: ing_자숙문어_절단
-  class: Ingredient
-  data:
-    name: 자숙문어(절단)
 - id: ing_소금
   class: Ingredient
   data:
@@ -178,10 +194,6 @@ instances:
   class: Ingredient
   data:
     name: 간장소스
-- id: ing_라면
-  class: Ingredient
-  data:
-    name: 라면
 - id: ing_간장
   class: Ingredient
   data:
@@ -195,14 +207,15 @@ instances:
   class: Ingredient
   data:
     name: 꽃게 (이탈리아산)
-- id: ing_양배추콩나물세트
-  class: Ingredient
-  data:
-    name: 양배추콩나물 (반반팩)
 - id: ing_초고추장
   class: Ingredient
   data:
     name: 초고추장
+- id: ing_흰다리새우살_L_페루
+  class: Ingredient
+  data:
+    name: 흰다리새우살 (대)
+    origin: 페루
 - id: ing_비자숙문어
   class: Ingredient
   data:
@@ -213,10 +226,6 @@ instances:
   data:
     name: 홍고추
     origin: 국내
-- id: ing_찜소스
-  class: Ingredient
-  data:
-    name: 찜소스
 - id: ing_무
   class: Ingredient
   data:
@@ -227,11 +236,6 @@ instances:
   data:
     name: 우삼겹
     origin: 미국
-- id: ing_흰다리새우살_L_페루
-  class: Ingredient
-  data:
-    name: 흰다리새우살 (대)
-    origin: 페루
 - id: ing_명태곤이
   class: Ingredient
   data:
@@ -244,10 +248,6 @@ instances:
   class: Ingredient
   data:
     name: 육수 (멸치·다시마)
-- id: ing_볼락
-  class: Ingredient
-  data:
-    name: 볼락
 - id: ing_참기름
   class: Ingredient
   data:
