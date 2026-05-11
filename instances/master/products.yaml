@@ -75,10 +75,6 @@ instances:
   class: Product
   data:
     name: 국산홍가리비살
-- id: prod_mk_027
-  class: Product
-  data:
-    name: 낙지볶음
 - id: prod_sp_007
   class: Product
   data:
@@ -91,6 +87,10 @@ instances:
   class: Product
   data:
     name: 코다리알탕
+- id: prod_mk_027
+  class: Product
+  data:
+    name: 낙지볶음
 - id: prod_mk_005
   class: Product
   data:
@@ -115,22 +115,18 @@ instances:
   class: Product
   data:
     name: 알곤이세트
-- id: prod_gj_004
-  class: Product
-  data:
-    name: 간장새우장
 - id: prod_sp_009
   class: Product
   data:
     name: 손질 갑오징어
+- id: prod_gj_004
+  class: Product
+  data:
+    name: 간장새우장
 - id: prod_mk_008
   class: Product
   data:
     name: 국산문어 해물탕
-- id: prod_mk_025
-  class: Product
-  data:
-    name: 낙곱새
 - id: prod_sp_003
   class: Product
   data:
@@ -155,18 +151,14 @@ instances:
   class: Product
   data:
     name: 주꾸미볶음
-- id: prod_sp_023
-  class: Product
-  data:
-    name: 주꾸미
 - id: prod_mk_029
   class: Product
   data:
     name: 순살아귀찜
-- id: prod_mk_015
+- id: prod_mk_025
   class: Product
   data:
-    name: 동태알탕
+    name: 낙곱새
 - id: prod_mk_020
   class: Product
   data:
@@ -183,14 +175,6 @@ instances:
   class: Product
   data:
     name: 가리비관자
-- id: prod_mk_026
-  class: Product
-  data:
-    name: 주꾸미볶음
-- id: prod_mk_006
-  class: Product
-  data:
-    name: 골뱅이탕
 - id: prod_sp_014
   class: Product
   data:
@@ -207,10 +191,10 @@ instances:
   class: Product
   data:
     name: 손질 낙지
-- id: prod_mk_007
+- id: prod_sp_023
   class: Product
   data:
-    name: 대구탕
+    name: 주꾸미
 - id: prod_sp_017
   class: Product
   data:
@@ -219,10 +203,18 @@ instances:
   class: Product
   data:
     name: 흰다리새우
-- id: prod_mk_016
+- id: prod_mk_015
   class: Product
   data:
-    name: 볼락 매운탕
+    name: 동태알탕
+- id: prod_mk_026
+  class: Product
+  data:
+    name: 주꾸미볶음
+- id: prod_mk_006
+  class: Product
+  data:
+    name: 골뱅이탕
 - id: prod_sp_011
   class: Product
   data:
@@ -239,6 +231,14 @@ instances:
   class: Product
   data:
     name: 흰다리새우
+- id: prod_mk_007
+  class: Product
+  data:
+    name: 대구탕
+- id: prod_mk_016
+  class: Product
+  data:
+    name: 볼락 매운탕
 - id: prod_mk_010
   class: Product
   data:
