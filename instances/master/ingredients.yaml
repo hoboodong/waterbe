@@ -3,6 +3,11 @@ instances:
   class: Ingredient
   data:
     name: 라면
+- id: ing_새우
+  class: Ingredient
+  data:
+    name: 흰다리새우
+    origin: 페루
 - id: ing_게_바레인
   class: Ingredient
   data:
@@ -78,11 +83,6 @@ instances:
   data:
     name: 코다리
     origin: 러시아
-- id: ing_새우
-  class: Ingredient
-  data:
-    name: 흰다리새우
-    origin: 페루
 - id: ing_전복
   class: Ingredient
   data:
