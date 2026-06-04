@@ -6,7 +6,8 @@
   python3 scripts/namseon_sales.py init-db
   python3 scripts/namseon_sales.py import-csv /path/to/export.csv --date 2026-05-31 --source-file-id <drive-id>
   python3 scripts/namseon_sales.py month-total --store mapo --month 2026-05
-  python3 scripts/namseon_sales.py month-total --store wangsimni --month 2026-05 --exclude 갑오징어볶음 --exclude 낙지볶음
+  python3 scripts/namseon_sales.py month-total --store wangsimni --month 2026-05
+  python3 scripts/namseon_sales.py month-total --store wangsimni --month 2026-05 --exclude 추가행사팀품목
 """
 
 from __future__ import annotations
@@ -34,6 +35,13 @@ STORE_ALIASES = {
     "월계": "EM월계점",
     "월계점": "EM월계점",
 }
+
+EVENT_TEAM_PRODUCT_KEYWORDS = [
+    "통낙지볶음",
+    "갑오징어무침",
+    "데친문어",
+    "불맛주꾸미볶음",
+]
 
 
 SCHEMA = """
@@ -293,8 +301,9 @@ def next_month(month: str) -> str:
     return f"{year:04d}-{mon + 1:02d}-01"
 
 
-def month_total(db_path: Path, store_key: str, month: str, excludes: list[str]) -> None:
+def month_total(db_path: Path, store_key: str, month: str, extra_event_keywords: list[str]) -> None:
     store = canonical_store(store_key)
+    event_keywords = EVENT_TEAM_PRODUCT_KEYWORDS + extra_event_keywords
     with connect(db_path) as conn:
         sale_date = latest_sale_date_for_month(conn, month)
         if not sale_date:
@@ -312,32 +321,39 @@ def month_total(db_path: Path, store_key: str, month: str, excludes: list[str]) 
             raise SystemExit(f"no store total for {store} on {sale_date}")
 
         total = int(total_row[0])
-        excluded_rows = []
-        for keyword in excludes:
-            matches = conn.execute(
-                """
-                SELECT product, month_sales
-                FROM sales_rows
-                WHERE sale_date = ?
-                  AND store = ?
-                  AND is_store_total = 0
-                  AND product LIKE ?
-                ORDER BY product
-                """,
-                (sale_date, store, f"%{keyword}%"),
-            ).fetchall()
-            excluded_rows.extend(matches)
+        product_rows = conn.execute(
+            """
+            SELECT product, month_sales
+            FROM sales_rows
+            WHERE sale_date = ?
+              AND store = ?
+              AND is_store_total = 0
+              AND product IS NOT NULL
+            ORDER BY product
+            """,
+            (sale_date, store),
+        ).fetchall()
 
-        excluded_sum = sum(int(row[1]) for row in excluded_rows)
-        net = total - excluded_sum
+        event_rows = [
+            (product, int(amount))
+            for product, amount in product_rows
+            if any(keyword in product for keyword in event_keywords)
+        ]
+
+        event_sum = sum(amount for _, amount in event_rows)
+        waterbe_sales = total - event_sum
 
     print(f"store={store}")
     print(f"month={month}")
     print(f"basis_date={sale_date}")
-    print(f"month_sales={total:,}")
-    for product, amount in excluded_rows:
-        print(f"exclude {product}: {amount:,}")
-    print(f"net_sales={net:,}")
+    print(f"total_sales={total:,}")
+    print(f"event_team_default_keywords={', '.join(EVENT_TEAM_PRODUCT_KEYWORDS)}")
+    if extra_event_keywords:
+        print(f"event_team_extra_keywords={', '.join(extra_event_keywords)}")
+    for product, amount in event_rows:
+        print(f"event_team {product}: {amount:,}")
+    print(f"event_team_sales={event_sum:,}")
+    print(f"waterbe_sales={waterbe_sales:,}")
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -357,7 +373,13 @@ def build_parser() -> argparse.ArgumentParser:
     total_parser = sub.add_parser("month-total")
     total_parser.add_argument("--store", required=True)
     total_parser.add_argument("--month", required=True, help="YYYY-MM")
-    total_parser.add_argument("--exclude", action="append", default=[])
+    total_parser.add_argument(
+        "--exclude",
+        action="append",
+        default=[],
+        dest="extra_event_keywords",
+        help="기본 행사팀 품목 외에 추가로 행사팀 매출로 분류할 상품명 키워드",
+    )
 
     return parser
 
@@ -377,7 +399,7 @@ def main() -> None:
             args.modified_time,
         )
     elif args.command == "month-total":
-        month_total(args.db, args.store, args.month, args.exclude)
+        month_total(args.db, args.store, args.month, args.extra_event_keywords)
 
 
 if __name__ == "__main__":

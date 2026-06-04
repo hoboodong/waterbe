@@ -29,11 +29,12 @@ python3 scripts/namseon_sales.py import-csv /path/to/sales.csv \
 
 ```bash
 python3 scripts/namseon_sales.py month-total --store mapo --month 2026-05
+python3 scripts/namseon_sales.py month-total --store wangsimni --month 2026-05
 python3 scripts/namseon_sales.py month-total --store wangsimni --month 2026-05 \
-  --exclude 갑오징어볶음 --exclude 낙지볶음
+  --exclude 추가행사팀품목
 ```
 
-월 매출은 해당 월에 import된 가장 늦은 `sale_date` 파일의 `월누계금액`을 기준으로 계산한다.
+월 매출은 해당 월에 import된 가장 늦은 `sale_date` 파일의 `월누계금액`을 기준으로 계산한다. `통낙지볶음`, `갑오징어무침`, `데친문어`, `불맛주꾸미볶음`이 상품명에 포함되면 기본 행사팀 매출로 자동 분류하고, 워터비매출은 `총매출 - 행사팀매출`로 계산한다. `--exclude`는 기본 4개 품목 외에 추가 행사팀 품목이 있을 때만 사용한다.
 
 ## Google Drive 전체 동기화
 
