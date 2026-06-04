@@ -42,3 +42,17 @@ python3 scripts/namseon_drive_sync.py --trash-duplicates
 기본 Drive 폴더는 `남선매출`이다. 월별 하위 폴더와 루트 파일을 훑어서 파일명에서 날짜를 읽고, 같은 날짜 파일이 여러 개 있으면 Google Sheets 파일과 최신 수정 시간을 우선해서 하나만 DB에 넣는다. `--trash-duplicates`를 붙이면 선택되지 않은 중복 파일은 Drive 휴지통으로 보낸다.
 
 일부 2026년 1월 이후 파일은 매장명 대신 점포코드 형식이다. 이 경우 `sales_rows.store`에는 `STORE_CODE:<점포코드>` 형식으로 저장된다.
+
+## 새 파일만 빠르게 동기화
+
+```bash
+python3 scripts/namseon_drive_sync.py --incremental --trash-duplicates --upload-db
+```
+
+`--incremental`은 로컬 DB에 들어있는 마지막 `sale_date`의 다음날부터만 가져온다. `--upload-db`는 동기화가 끝난 뒤 Google Drive에 올려둔 `namseon_sales.db` 파일을 새 DB로 교체한다.
+
+수동으로 시작 날짜를 지정하려면:
+
+```bash
+python3 scripts/namseon_drive_sync.py --from-date 2026-06-04 --trash-duplicates --upload-db
+```

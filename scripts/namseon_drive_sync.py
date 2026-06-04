@@ -16,17 +16,20 @@ import argparse
 import json
 import re
 import shutil
+import sqlite3
 import subprocess
 import sys
 import tempfile
 import unicodedata
 from dataclasses import dataclass
+from datetime import date, timedelta
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 SALES_SCRIPT = ROOT / "scripts" / "namseon_sales.py"
 DEFAULT_FOLDER_ID = "1MQkVkt795mKLqCi8zFbJS3mqJ3k9FO2i"
+DEFAULT_DB_DRIVE_FILE_ID = "10lBIcYzcqktWEdF9xYfnM82S-mFGzG-m"
 GOOGLE_SHEET_MIME = "application/vnd.google-apps.spreadsheet"
 
 
@@ -221,6 +224,36 @@ def trash_file(file: DriveFile) -> None:
     run(["gog", "drive", "delete", file.id, "--force", "--no-input"])
 
 
+def next_date(value: str) -> str:
+    parsed = date.fromisoformat(value)
+    return (parsed + timedelta(days=1)).isoformat()
+
+
+def next_unimported_date(db: Path) -> str | None:
+    if not db.exists():
+        return None
+    with sqlite3.connect(db) as conn:
+        row = conn.execute("SELECT MAX(sale_date) FROM source_files").fetchone()
+    if not row or not row[0]:
+        return None
+    return next_date(row[0])
+
+
+def upload_db(db: Path, drive_file_id: str) -> None:
+    run(
+        [
+            "gog",
+            "drive",
+            "upload",
+            str(db),
+            "--replace",
+            drive_file_id,
+            "--json",
+            "--no-input",
+        ]
+    )
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="남선매출 Drive 전체 동기화")
     parser.add_argument("--folder-id", default=DEFAULT_FOLDER_ID)
@@ -232,12 +265,38 @@ def main() -> None:
     parser.add_argument("--trash-duplicates", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--from-date", help="Only import selected files on or after YYYY-MM-DD")
+    parser.add_argument(
+        "--incremental",
+        action="store_true",
+        help="Start from the day after the latest sale_date already in the DB",
+    )
+    parser.add_argument(
+        "--upload-db",
+        action="store_true",
+        help="Replace the Drive DB file after sync",
+    )
+    parser.add_argument(
+        "--db-drive-file-id",
+        default=DEFAULT_DB_DRIVE_FILE_ID,
+        help="Drive file ID to replace when --upload-db is used",
+    )
     args = parser.parse_args()
+
+    if args.incremental and args.from_date:
+        raise SystemExit("--incremental and --from-date cannot be used together")
+
+    from_date = args.from_date
+    if args.incremental:
+        from_date = next_unimported_date(args.db)
+        if not from_date:
+            print("incremental_from=<none>; DB is empty or missing, syncing all files")
+        else:
+            print(f"incremental_from={from_date}")
 
     files, skipped = discover(args.folder_id)
     chosen, duplicates = choose_latest(files)
-    if args.from_date:
-        chosen = [file for file in chosen if file.sale_date >= args.from_date]
+    if from_date:
+        chosen = [file for file in chosen if file.sale_date >= from_date]
 
     print(f"discovered={len(files)}")
     print(f"selected={len(chosen)}")
@@ -267,6 +326,10 @@ def main() -> None:
                 trash_file(file)
     finally:
         shutil.rmtree(tmp_dir, ignore_errors=True)
+
+    if args.upload_db:
+        print(f"upload-db replace {args.db_drive_file_id}")
+        upload_db(args.db, args.db_drive_file_id)
 
 
 if __name__ == "__main__":
