@@ -1,0 +1,44 @@
+# 남선매출 통합 DB
+
+남선매출 Google Drive 일별 스프레드시트를 SQLite로 누적해서 빠르게 조회하기 위한 작업 공간이다.
+
+## 파일
+
+- `namseon_sales.db`: 생성되는 SQLite DB. git에는 포함하지 않는다.
+- `scripts/namseon_sales.py`: DB 초기화, CSV import, 월 매출 조회 CLI.
+- `scripts/namseon_drive_sync.py`: Google Drive `남선매출` 폴더 전체 동기화 CLI.
+
+## 기본 사용
+
+```bash
+python3 scripts/namseon_sales.py init-db
+```
+
+Google Sheets 일별 파일을 CSV로 내보낸 뒤 import:
+
+```bash
+python3 scripts/namseon_sales.py import-csv /path/to/sales.csv \
+  --date 2026-05-31 \
+  --source-file-id 1-bix-maMyX89IsryrBDYPaquSdPpX3dMXVL9t_RakBE \
+  --source-file-name "이마트매장 05월31일 매출현황"
+```
+
+월 매출 조회:
+
+```bash
+python3 scripts/namseon_sales.py month-total --store mapo --month 2026-05
+python3 scripts/namseon_sales.py month-total --store wangsimni --month 2026-05 \
+  --exclude 갑오징어볶음 --exclude 낙지볶음
+```
+
+월 매출은 해당 월에 import된 가장 늦은 `sale_date` 파일의 `월누계금액`을 기준으로 계산한다.
+
+## Google Drive 전체 동기화
+
+```bash
+python3 scripts/namseon_drive_sync.py --trash-duplicates
+```
+
+기본 Drive 폴더는 `남선매출`이다. 월별 하위 폴더와 루트 파일을 훑어서 파일명에서 날짜를 읽고, 같은 날짜 파일이 여러 개 있으면 Google Sheets 파일과 최신 수정 시간을 우선해서 하나만 DB에 넣는다. `--trash-duplicates`를 붙이면 선택되지 않은 중복 파일은 Drive 휴지통으로 보낸다.
+
+일부 2026년 1월 이후 파일은 매장명 대신 점포코드 형식이다. 이 경우 `sales_rows.store`에는 `STORE_CODE:<점포코드>` 형식으로 저장된다.
