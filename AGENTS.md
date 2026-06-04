@@ -20,7 +20,7 @@ The source of truth is the YAML data under `instances/`, with the ontology and f
 - `instances/schedules.yaml`: work and operational schedules.
 - `instances/inventory/`: store inventory snapshots and inbound records.
 - `instances/production/`: production plans and production templates.
-- `instances/sales/`: manual sales records and the Namseon sales SQLite workspace.
+- `instances/sales/`: sales-only workspace. Read `instances/sales/README.md` before answering sales questions.
 - `scripts/`: operational import, export, sync, and calculation scripts.
 
 ## Data Editing Rules
@@ -58,6 +58,20 @@ Common store abbreviations in existing files:
 - `scripts/sync_to_supabase.py` requires `SUPABASE_URL` and `SUPABASE_KEY`.
 - `scripts/export_github_data.py` can update GitHub when `GITHUB_TOKEN` is set.
 - Some scripts default to `~/.openclaw/shared/waterbe` for local operational data. When working in this repository, verify whether the user intends repo-local files or that shared path.
+
+## Sales Query Rules
+
+- For sales questions, start from `instances/sales/README.md`.
+- For Namseon/Google Drive/monthly store sales questions, query `instances/sales/namseon/namseon_sales.db` through `scripts/namseon_sales.py` instead of scanning Drive repeatedly.
+- If the user says new Drive files were added, run the incremental sync first:
+
+```bash
+python3 scripts/namseon_drive_sync.py --incremental --trash-duplicates --upload-db
+```
+
+- For duplicate dates, keep only the selected latest Google Sheets source chosen by `scripts/namseon_drive_sync.py`.
+- When the user asks to exclude products, pass each keyword with `--exclude`.
+- If a value is net of a 20% commission and the user asks for the gross amount, calculate `net / 0.8`.
 
 ## Validation
 

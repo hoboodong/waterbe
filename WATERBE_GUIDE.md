@@ -58,7 +58,10 @@ waterbe/
     └── sales/
         ├── wangsimni.yaml
         ├── mapo.yaml
-        └── wolgye.yaml
+        ├── wolgye.yaml
+        └── namseon/
+            ├── README.md
+            └── namseon_sales.db  # 로컬/Drive 산출물, git 제외
 ```
 
 ---
@@ -205,6 +208,15 @@ waterbe/
 | totalAmount | number | 총 매출액 (qty × unitPrice) |
 | forProduct | → Product | 판매 상품 |
 | atStore | → Store | 해당 매장 |
+
+### NamseonSales Workspace — `sales/namseon/`
+
+남선매출 Google Drive 일별 파일을 SQLite로 누적해 매장별/월별 매출을 빠르게 조회하는 작업 공간이다.
+
+- 상세 규칙은 `instances/sales/README.md`와 `instances/sales/namseon/README.md`를 우선한다.
+- 월 매출, 매장별 매출, 상품 제외 매출 질문은 `scripts/namseon_sales.py`로 조회한다.
+- Drive에 새 파일이 추가되면 `scripts/namseon_drive_sync.py --incremental --trash-duplicates --upload-db`로 먼저 동기화한다.
+- `namseon_sales.db`는 git에 올리지 않는 로컬/Drive 산출물이다.
 
 ### Staff (직원) — `staff.yaml`
 | 필드 | 타입 | 설명 |

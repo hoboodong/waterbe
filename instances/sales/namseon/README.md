@@ -2,6 +2,8 @@
 
 남선매출 Google Drive 일별 스프레드시트를 SQLite로 누적해서 빠르게 조회하기 위한 작업 공간이다.
 
+매출 질문을 처리할 때는 먼저 상위 문서 `instances/sales/README.md`의 공통 규칙을 따른다.
+
 ## 파일
 
 - `namseon_sales.db`: 생성되는 SQLite DB. git에는 포함하지 않는다.
