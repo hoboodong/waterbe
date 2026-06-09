@@ -34,8 +34,8 @@ instances:
       unit: g
       pspec: pspec_017
     - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
+      amount: 350.0
+      unit: g
       pspec: pspec_091
     - ingredient: ing_무
       amount: 70.0
@@ -88,8 +88,8 @@ instances:
       unit: g
       pspec: pspec_017
     - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
+      amount: 350.0
+      unit: g
       pspec: pspec_091
     - ingredient: ing_무
       amount: 70.0
@@ -138,8 +138,8 @@ instances:
       unit: g
       pspec: pspec_017
     - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
+      amount: 350.0
+      unit: g
       pspec: pspec_091
     - ingredient: ing_대파
       amount: 30.0
@@ -188,8 +188,8 @@ instances:
       unit: g
       pspec: pspec_017
     - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
+      amount: 350.0
+      unit: g
       pspec: pspec_091
     - ingredient: ing_대파
       amount: 30.0
@@ -242,8 +242,8 @@ instances:
       unit: g
       pspec: pspec_017
     - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
+      amount: 350.0
+      unit: g
       pspec: pspec_091
     - ingredient: ing_대파
       amount: 30.0
@@ -297,8 +297,8 @@ instances:
       unit: g
       pspec: pspec_017
     - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
+      amount: 350.0
+      unit: g
       pspec: pspec_091
     - ingredient: ing_무
       amount: 70.0
@@ -351,8 +351,8 @@ instances:
       unit: g
       pspec: pspec_017
     - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
+      amount: 350.0
+      unit: g
       pspec: pspec_091
     - ingredient: ing_무
       amount: 70.0
@@ -401,8 +401,8 @@ instances:
       unit: g
       pspec: pspec_041
     - ingredient: ing_콩나물
-      amount: 1.0
-      unit: 팩
+      amount: 350.0
+      unit: g
       pspec: pspec_091
     - ingredient: ing_대파
       amount: 30.0
@@ -442,10 +442,12 @@ instances:
       amount: 150.0
       unit: g
       pspec: pspec_034
-    - ingredient: ing_양배추콩나물세트
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_086
+    - ingredient: ing_양배추_국내산
+      amount: 180.0
+      unit: g
+    - ingredient: ing_콩나물_중국산
+      amount: 170.0
+      unit: g
     - ingredient: ing_대파
       amount: 30.0
       unit: g
@@ -476,10 +478,12 @@ instances:
       amount: 150.0
       unit: g
       pspec: pspec_034
-    - ingredient: ing_양배추콩나물세트
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_086
+    - ingredient: ing_양배추_국내산
+      amount: 180.0
+      unit: g
+    - ingredient: ing_콩나물_중국산
+      amount: 170.0
+      unit: g
     - ingredient: ing_대파
       amount: 30.0
       unit: g
@@ -510,10 +514,12 @@ instances:
       amount: 150.0
       unit: g
       pspec: pspec_034
-    - ingredient: ing_양배추콩나물세트
-      amount: 1.0
-      unit: 팩
-      pspec: pspec_086
+    - ingredient: ing_양배추_국내산
+      amount: 180.0
+      unit: g
+    - ingredient: ing_콩나물_중국산
+      amount: 170.0
+      unit: g
     - ingredient: ing_대파
       amount: 30.0
       unit: g

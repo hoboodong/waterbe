@@ -93,6 +93,11 @@ instances:
   class: Ingredient
   data:
     name: 양배추
+- id: ing_양배추_국내산
+  class: Ingredient
+  data:
+    name: 양배추
+    origin: 국내산
 - id: ing_흰다리새우살_L_인도
   class: Ingredient
   data:
@@ -247,6 +252,11 @@ instances:
   class: Ingredient
   data:
     name: 콩나물
+- id: ing_콩나물_중국산
+  class: Ingredient
+  data:
+    name: 콩나물
+    origin: 중국산
 - id: ing_홍고추
   class: Ingredient
   data:
