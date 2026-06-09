@@ -75,12 +75,14 @@ def import_ingredients():
             'id': ing_id,
             'name': data.get('name'),
             'origin': data.get('origin'),
-            'allergens': data.get('allergens', []),
-            'ratio': data.get('ratio'),
+            'composition': data.get('composition'),
+            'allergens': data.get('allergens', []) or [],
+            'tags': data.get('tags', []) or [],
+            'source': 'waterbe',
         }
 
         try:
-            supabase_request('POST', 'github_ingredients', data=row)
+            supabase_request('POST', 'ingredients_waterbe', data=row)
             print(f"✅ {row['name']}")
             success_count += 1
         except Exception as e:
