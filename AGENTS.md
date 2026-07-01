@@ -10,7 +10,7 @@ Waterbe is a YAML-first operations data repository for a seafood meal-kit and re
 | `store_mapo` | 마포점 |
 | `store_wolgye` | 월계점 |
 
-The source of truth is the YAML data under `instances/`, with the ontology and field definitions in `schema.yaml`.
+The source of truth is the YAML data under `instances/`. Field and relation definitions live only in `schema.yaml`; the guide documents (`WATERBE_GUIDE.md`, `PERSONNEL_GUIDE.md`) cover business rules and do not redefine fields.
 
 Before changing data:
 
@@ -83,9 +83,9 @@ For product, ingredient, purchase spec, recipe, template, and price history IDs,
 
 | Abbreviation | Store |
 | --- | --- |
+| `ws` | 왕십리점 |
+| `mp` | 마포점 |
 | `wg` | 월계점 |
-
-Use the established abbreviation already present in the target file for other stores.
 
 ## Script Notes
 
@@ -126,21 +126,16 @@ scripts/namseon_sync_now.sh
 
 ## Validation
 
-Run lightweight validation after edits:
+Run the validator after every data or schema edit:
 
 ```bash
-python3 - <<'PY'
-from pathlib import Path
-import yaml
-
-for path in sorted(Path('.').glob('**/*.yaml')):
-    if '.git' in path.parts:
-        continue
-    with path.open(encoding='utf-8') as f:
-        yaml.safe_load(f)
-    print(path)
-PY
+python3 scripts/validate.py
 ```
+
+It checks YAML parsing, record shape, global ID uniqueness, relation
+reference integrity, required fields, date formats, and the business
+constraints listed in `schema.yaml`. Errors must be fixed before commit;
+warnings are informational.
 
 For Namseon sales changes, also run the relevant CLI command, for example:
 

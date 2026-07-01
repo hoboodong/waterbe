@@ -21,30 +21,14 @@
 
 ---
 
-## 클래스별 핵심 필드
+## 클래스 정의
 
-### Staff (직원)
-| 필드 | 설명 |
-|------|------|
-| name | 이름 |
-| telegramId | 텔레그램 사용자 ID (숫자 문자열, 유일) |
-| role | 팀장 / 직원 |
-| atStore | 소속 매장 ID (직원만, 팀장은 null) |
+`Staff`·`Schedule`의 필드·관계 정의는 **`schema.yaml`이 단일 소스**다. 핵심만 요약:
 
-### Schedule (일정)
-| 필드 | 설명 |
-|------|------|
-| date | 일자 (YYYY-MM-DD) |
-| endDate | 종료일 (하루짜리면 null) |
-| type | 근무 / 기타 |
-| title | 제목 |
-| description | 상세 내용 (nullable) |
-| assignee | 담당자 이름 (nullable) |
-| createdBy | 등록한 팀장 이름 |
-| atStore | 해당 매장 ID |
+- **Staff**: `telegramId`(유일) 기반 권한 관리. `role: 팀장`이면 `atStore: null`, `role: 직원`이면 소속 매장 필수.
+- **Schedule**: `type`은 근무 / 발주 / 생산 / 기타. 반복 일정은 `recurrence`(예: weekly) 사용.
 
-> **발주·생산 일정은 이 가이드 범위 밖.**
-> 발주 → `InboundRecord`, 생산 → `ProductionPlan` (WATERBE_GUIDE.md 참조)
+> 발주·생산 **기록**은 이 가이드 범위 밖 — 입고 → `InboundRecord`, 생산 → `ProductionPlan` (WATERBE_GUIDE.md 참조)
 
 ---
 
@@ -95,7 +79,7 @@ Step 4. 매장별·날짜순으로 정리해서 출력
 
 ```
 Step 1. 발신자가 팀장인지 확인
-Step 2. 대상 매장, 날짜, 종류(근무/기타), 제목, 담당자 확인
+Step 2. 대상 매장, 날짜, 종류(근무/발주/생산/기타), 제목, 담당자 확인
 Step 3. schedules.yaml에 새 레코드 추가
         id: sched_{마지막 번호 + 1}
         createdBy: 팀장 이름
@@ -145,9 +129,5 @@ Step 3. 매장별로 묶어서 출력
 
 ## 제약 사항
 
-- `Staff.telegramId`는 유일해야 한다 (중복 등록 불가)
-- `Staff.role`은 팀장 / 직원 중 하나
-- `Staff.atStore`는 role이 직원일 때 필수, 팀장일 때 null
-- `Schedule.type`은 근무 / 기타 중 하나
-- `Schedule.date`는 YYYY-MM-DD 형식
-- `Schedule.endDate`는 date 이후여야 한다
+전체 제약조건은 `schema.yaml`의 `constraints:` 절 참조.
+수정 후 `python3 scripts/validate.py`로 검증한다 (telegramId 유일성, role 규칙, 날짜 형식 등 자동 검사).

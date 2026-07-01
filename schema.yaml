@@ -1,5 +1,8 @@
-version: "2.2"
+version: "2.3"
 description: 워터비 온톨로지 스키마
+# 필드·관계 정의의 단일 소스(single source of truth).
+# WATERBE_GUIDE.md는 비즈니스 규칙만 다루고 필드 정의는 이 파일을 따른다.
+# 데이터 검증: python3 scripts/validate.py
 
 classes:
   Store:
@@ -18,11 +21,8 @@ classes:
         type: string
         required: false
         label: 지점명 (이마트 지점)
-    relations:
-      carries:
-        target: Product
-        cardinality: one-to-many
-        label: 판매 상품
+    # 매장별 취급 상품은 별도 관계로 관리하지 않는다.
+    # master/recipes/{매장}.yaml에 레시피가 존재하면 해당 매장 취급 상품이다.
 
   Product:
     label: 상품
@@ -34,22 +34,22 @@ classes:
         label: 상품명
       unit:
         type: string
-        required: true
+        required: false
         label: "판매 단위 (예: 1팩, 100g당)"
+        nullable: true
       price:
         type: number
         required: false
-        label: 판매가격 (원)
+        label: 판매가격 (원). 매장별 실판매가는 Recipe.price가 우선
         nullable: true  # 가격 미정인 경우 null 허용
     relations:
       belongsTo:
         target: Category
         cardinality: many-to-one
         label: 카테고리
-      soldAt:
-        target: Store
-        cardinality: many-to-many
-        label: 판매 매장
+        nullable: true
+    # 판매 매장(soldAt)은 별도로 기록하지 않는다.
+    # master/recipes/{매장}.yaml에 해당 상품 레시피가 있으면 그 매장에서 판매한다.
 
   Category:
     label: 카테고리
@@ -80,18 +80,8 @@ classes:
         label: 재료명
       defaultUnit:
         type: string
-        required: true
+        required: false
         label: 기본 단위 (g, 개, 큰술 등)
-      tags:
-        type: list
-        required: false
-        label: "태그 목록. 첫 번째 태그가 대분류 (예: 수산물, 육류, 채소, 소스, 양념, 기타)"
-        nullable: true
-        # 예: [수산물, 냉동], [채소, 신선], [소스]
-      ingredientType:
-        type: string
-        required: false
-        label: 재료 분류 (deprecated — tags로 대체)
         nullable: true
       composition:
         type: string
@@ -122,7 +112,7 @@ classes:
 
   Recipe:
     label: 레시피
-    description: 매장별 상품 조리법. 가격·재료 변경 시 기존 레코드 effectiveTo를 채우고 새 레코드 추가 (덮어쓰기 금지)
+    description: 매장별 상품 조리법. 매장은 파일 위치(master/recipes/{매장}.yaml)가 결정한다. 가격·재료 변경 시 기존 레코드 effectiveTo를 채우고 새 레코드 추가 (덮어쓰기 금지)
     properties:
       name:
         type: string
@@ -132,6 +122,11 @@ classes:
         type: number
         required: false
         label: 해당 기간 판매가격 (원)
+        nullable: true
+      martCode:
+        type: string
+        required: false
+        label: 이마트 상품코드
         nullable: true
       effectiveFrom:
         type: string
@@ -149,10 +144,6 @@ classes:
         target: Product
         cardinality: many-to-one
         label: 대상 상품
-      atStore:
-        target: Store
-        cardinality: many-to-one
-        label: 해당 매장
       uses:
         target: Ingredient
         cardinality: many-to-many
@@ -160,7 +151,9 @@ classes:
         with_properties:
           amount:
             type: number
-            label: 사용량
+            required: false
+            label: 사용량. 미계량 레시피(단품 등)는 생략 가능
+            nullable: true
           unit:
             type: string
             label: 단위
@@ -192,8 +185,9 @@ classes:
         label: "발주명 (납품업체/시장 기준 상품명, 예: PDTO새우살26-30p(페루산))"
       orderUnit:
         type: string
-        required: true
-        label: "발주 단위 (예: 9kg, 1박스, 1줄)"
+        required: false
+        label: "발주 단위 (예: 9kg, 1박스, 1줄). 미정이면 null"
+        nullable: true
       category:
         type: string
         required: true
@@ -215,11 +209,7 @@ classes:
         cardinality: many-to-one
         label: 해당 재료
         nullable: true  # 포장재·소모품은 null
-      vendor:
-        target: Vendor
-        cardinality: many-to-one
-        label: 납품업체
-        nullable: true  # Vendor 클래스 미구현, 추후 연결
+    # 납품업체는 별도 클래스 없이 PriceHistory.vendor(문자열)로 관리한다.
 
   PriceHistory:
     label: 가격이력
@@ -498,6 +488,11 @@ classes:
         required: false
         label: 상세 내용
         nullable: true
+      recurrence:
+        type: string
+        required: false
+        label: "반복 주기 (예: weekly). 일회성 일정은 생략"
+        nullable: true
       assignee:
         type: string
         required: false
@@ -515,10 +510,11 @@ classes:
         label: 해당 매장
 
 constraints:
+  - "모든 relations의 참조 ID는 instances/ 안에 실제 존재하는 레코드여야 한다"
+  - "레코드 ID는 전체 데이터에서 유일해야 한다"
   - "Product.price는 양의 정수이거나 null이어야 한다"
-  - "Product.relations.soldAt은 반드시 하나 이상의 Store를 참조해야 한다"
   - "Category.relations.subClassOf는 순환 참조를 허용하지 않는다"
-  - "Recipe는 같은 (forProduct, atStore) 조합에서 effectiveTo가 null인 레코드가 최대 1개여야 한다 (현재 적용 중인 레시피는 하나)"
+  - "Recipe는 같은 (forProduct, 파일 매장) 조합에서 effectiveTo가 null인 레코드가 최대 1개여야 한다 (현재 적용 중인 레시피는 하나)"
   - "Recipe 변경 시 기존 레코드의 effectiveTo를 전날로 채우고 새 레코드를 추가한다 (덮어쓰기 금지)"
   - "Recipe에서 ingredient 또는 pspec이 변경될 경우, 변경된 재료의 최신 InventorySnapshot을 확인하여 재고가 0이면 발주 필요 여부를 즉시 알린다"
   - "Recipe.uses의 ingredient는 반드시 Ingredient 인스턴스를 참조해야 한다"

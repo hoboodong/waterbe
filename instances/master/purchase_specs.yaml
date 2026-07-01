@@ -13,7 +13,6 @@ instances:
       countPerKg: 28  # 26-30마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_L_페루
-      vendor: null
 
   - id: pspec_002
     class: PurchaseSpec
@@ -25,7 +24,6 @@ instances:
       countPerKg: 80  # 71-90마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_S_베트남
-      vendor: null
 
   - id: pspec_003
     class: PurchaseSpec
@@ -37,7 +35,6 @@ instances:
       countPerKg: 35  # 30/40마리/kg 중간값
     relations:
       forIngredient: ing_새우
-      vendor: null
 
   - id: pspec_004
     class: PurchaseSpec
@@ -48,7 +45,6 @@ instances:
       countPerKg: 45  # 40-50마리/kg 중간값
     relations:
       forIngredient: ing_새우
-      vendor: null
 
   - id: pspec_005
     class: PurchaseSpec
@@ -59,7 +55,6 @@ instances:
       countPerKg: 35  # 30-40마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_L_페루
-      vendor: null
 
   - id: pspec_006
     class: PurchaseSpec
@@ -70,7 +65,6 @@ instances:
       countPerKg: 35  # 30-40마리/kg 중간값
     relations:
       forIngredient: ing_새우_사우디
-      vendor: null
 
   - id: pspec_007
     class: PurchaseSpec
@@ -81,7 +75,6 @@ instances:
       countPerKg: 45  # 41-50마리/kg 중간값
     relations:
       forIngredient: ing_새우_사우디
-      vendor: null
 
   # ── 꽃게·게류 ──────────────────────────────────────────────
   - id: pspec_008
@@ -92,7 +85,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_게
-      vendor: null
 
   - id: pspec_009
     class: PurchaseSpec
@@ -102,7 +94,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_게
-      vendor: null
 
   - id: pspec_010
     class: PurchaseSpec
@@ -112,7 +103,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_게_바레인
-      vendor: null
 
   - id: pspec_011
     class: PurchaseSpec
@@ -122,7 +112,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_게
-      vendor: null
 
   - id: pspec_012
     class: PurchaseSpec
@@ -132,7 +121,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_게
-      vendor: null
 
   - id: pspec_013
     class: PurchaseSpec
@@ -142,7 +130,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_게
-      vendor: null
 
   - id: pspec_014
     class: PurchaseSpec
@@ -152,7 +139,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_게
-      vendor: null
 
   # ── 조개류 ────────────────────────────────────────────────
   - id: pspec_015
@@ -163,7 +149,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_백생합
-      vendor: null
 
   - id: pspec_016
     class: PurchaseSpec
@@ -173,7 +158,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_백생합
-      vendor: null
 
   - id: pspec_017
     class: PurchaseSpec
@@ -184,7 +168,6 @@ instances:
       packCount: 10
     relations:
       forIngredient: ing_홍합
-      vendor: null
 
   - id: pspec_018
     class: PurchaseSpec
@@ -194,7 +177,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_냉동홍가리비
-      vendor: null
 
   - id: pspec_019
     class: PurchaseSpec
@@ -204,7 +186,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_홍가리비살
-      vendor: null
 
   - id: pspec_020
     class: PurchaseSpec
@@ -214,7 +195,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_반각가리비
-      vendor: null
 
   - id: pspec_021
     class: PurchaseSpec
@@ -224,7 +204,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_가리비관자
-      vendor: null
 
   # ── 전복 ──────────────────────────────────────────────────
   - id: pspec_022
@@ -236,7 +215,6 @@ instances:
       countPerKg: 25
     relations:
       forIngredient: ing_전복
-      vendor: null
 
   - id: pspec_023
     class: PurchaseSpec
@@ -247,7 +225,6 @@ instances:
       countPerKg: 22
     relations:
       forIngredient: ing_전복
-      vendor: null
 
   # ── 문어류 ────────────────────────────────────────────────
   - id: pspec_024
@@ -258,7 +235,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_자숙문어
-      vendor: null
 
   - id: pspec_025
     class: PurchaseSpec
@@ -268,7 +244,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_비자숙문어
-      vendor: null
 
   - id: pspec_026
     class: PurchaseSpec
@@ -279,7 +254,6 @@ instances:
       packCount: 16
     relations:
       forIngredient: ing_자숙문어
-      vendor: null
 
   - id: pspec_027
     class: PurchaseSpec
@@ -289,7 +263,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_자숙문어_절단
-      vendor: null
 
   # ── 낙지·주꾸미·오징어류 ───────────────────────────────────
   - id: pspec_028
@@ -300,7 +273,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_낙지
-      vendor: null
 
   - id: pspec_029
     class: PurchaseSpec
@@ -310,7 +282,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_낙지
-      vendor: null
 
   - id: pspec_030
     class: PurchaseSpec
@@ -320,7 +291,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_낙지
-      vendor: null
 
   - id: pspec_031
     class: PurchaseSpec
@@ -330,7 +300,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_낙지
-      vendor: null
 
   - id: pspec_032
     class: PurchaseSpec
@@ -340,7 +309,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_주꾸미
-      vendor: null
 
   - id: pspec_033
     class: PurchaseSpec
@@ -350,7 +318,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_주꾸미
-      vendor: null
 
   - id: pspec_034
     class: PurchaseSpec
@@ -360,7 +327,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_솔방울오징어
-      vendor: null
 
   # ── 흰살생선류 ────────────────────────────────────────────
   - id: pspec_035
@@ -371,7 +337,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_코다리
-      vendor: null
 
   - id: pspec_036
     class: PurchaseSpec
@@ -381,7 +346,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_동태
-      vendor: null
 
   - id: pspec_037
     class: PurchaseSpec
@@ -391,7 +355,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_대구
-      vendor: null
 
   - id: pspec_038
     class: PurchaseSpec
@@ -401,7 +364,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_대구곤이
-      vendor: null
 
   - id: pspec_039
     class: PurchaseSpec
@@ -411,7 +373,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_명란
-      vendor: null
 
   - id: pspec_040
     class: PurchaseSpec
@@ -422,7 +383,6 @@ instances:
       packCount: 3
     relations:
       forIngredient: ing_명란
-      vendor: null
 
   # ── 기타 수산물 ───────────────────────────────────────────
   - id: pspec_041
@@ -433,7 +393,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_오만둥이
-      vendor: null
 
   - id: pspec_042
     class: PurchaseSpec
@@ -443,7 +402,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_자숙피뿔고둥살
-      vendor: null
 
   # ── 육류 ──────────────────────────────────────────────────
   - id: pspec_043
@@ -454,7 +412,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_염지소곱창
-      vendor: null
 
   - id: pspec_044
     class: PurchaseSpec
@@ -464,7 +421,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_우삼겹
-      vendor: null
 
   # ── 소스류 ────────────────────────────────────────────────
   - id: pspec_045
@@ -476,7 +432,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_볶음소스
-      vendor: null
 
   - id: pspec_046
     class: PurchaseSpec
@@ -487,7 +442,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_낙곱새소스
-      vendor: null
 
   - id: pspec_047
     class: PurchaseSpec
@@ -498,7 +452,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_해물탕소스
-      vendor: null
 
   - id: pspec_048
     class: PurchaseSpec
@@ -508,7 +461,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_양념게장소스
-      vendor: null
 
   - id: pspec_049
     class: PurchaseSpec
@@ -518,7 +470,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_간장소스
-      vendor: null
 
   # ── 포장재 ────────────────────────────────────────────────
   - id: pspec_050
@@ -529,7 +480,6 @@ instances:
       category: 포장재
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_051
     class: PurchaseSpec
@@ -539,7 +489,6 @@ instances:
       category: 포장재
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_052
     class: PurchaseSpec
@@ -549,7 +498,6 @@ instances:
       category: 포장재
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_053
     class: PurchaseSpec
@@ -559,7 +507,6 @@ instances:
       category: 포장재
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_054
     class: PurchaseSpec
@@ -569,7 +516,6 @@ instances:
       category: 포장재
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_055
     class: PurchaseSpec
@@ -579,7 +525,6 @@ instances:
       category: 포장재
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_056
     class: PurchaseSpec
@@ -589,7 +534,6 @@ instances:
       category: 포장재
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_057
     class: PurchaseSpec
@@ -599,7 +543,6 @@ instances:
       category: 포장재
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_058
     class: PurchaseSpec
@@ -609,7 +552,6 @@ instances:
       category: 포장재
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_059
     class: PurchaseSpec
@@ -619,7 +561,6 @@ instances:
       category: 포장재
     relations:
       forIngredient: null
-      vendor: null
 
   # ── 소모품 ────────────────────────────────────────────────
   - id: pspec_060
@@ -630,7 +571,6 @@ instances:
       category: 소모품
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_061
     class: PurchaseSpec
@@ -640,7 +580,6 @@ instances:
       category: 소모품
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_062
     class: PurchaseSpec
@@ -650,7 +589,6 @@ instances:
       category: 소모품
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_063
     class: PurchaseSpec
@@ -660,7 +598,6 @@ instances:
       category: 소모품
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_064
     class: PurchaseSpec
@@ -670,7 +607,6 @@ instances:
       category: 소모품
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_065
     class: PurchaseSpec
@@ -680,7 +616,6 @@ instances:
       category: 소모품
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_066
     class: PurchaseSpec
@@ -690,7 +625,6 @@ instances:
       category: 소모품
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_067
     class: PurchaseSpec
@@ -700,7 +634,6 @@ instances:
       category: 소모품
     relations:
       forIngredient: null
-      vendor: null
 
   # ── 신규 추가 ──────────────────────────────────────────────
   - id: pspec_068
@@ -712,7 +645,6 @@ instances:
       countPerKg: 28  # 26-30마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_L_인도
-      vendor: null
 
   - id: pspec_069
     class: PurchaseSpec
@@ -724,7 +656,6 @@ instances:
       countPerKg: 80  # 71-90마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_S_베트남
-      vendor: null
 
   - id: pspec_070
     class: PurchaseSpec
@@ -735,7 +666,6 @@ instances:
       countPerKg: 60  # 51-70마리/kg 중간값
     relations:
       forIngredient: ing_백새우살
-      vendor: null
 
   - id: pspec_071
     class: PurchaseSpec
@@ -745,7 +675,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_낙지
-      vendor: null
 
   - id: pspec_072
     class: PurchaseSpec
@@ -755,7 +684,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_갑오징어
-      vendor: null
 
   - id: pspec_073
     class: PurchaseSpec
@@ -765,7 +693,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_순살아귀
-      vendor: null
 
   - id: pspec_074
     class: PurchaseSpec
@@ -775,7 +702,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_만능찜소스
-      vendor: null
 
   # ── 대영상사 신규 품목 (2026-03-16) ───────────────────────────
   - id: pspec_075
@@ -786,7 +712,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_해물탕소스
-      vendor: null
 
   - id: pspec_076
     class: PurchaseSpec
@@ -797,7 +722,6 @@ instances:
       packCount: 10
     relations:
       forIngredient: ing_가리비관자
-      vendor: null
 
   - id: pspec_077
     class: PurchaseSpec
@@ -808,7 +732,6 @@ instances:
       packCount: 40
     relations:
       forIngredient: ing_주꾸미
-      vendor: null
 
   - id: pspec_078
     class: PurchaseSpec
@@ -819,7 +742,6 @@ instances:
       packCount: 6
     relations:
       forIngredient: ing_낙지
-      vendor: null
 
   - id: pspec_079
     class: PurchaseSpec
@@ -829,7 +751,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_게
-      vendor: null
 
   - id: pspec_080
     class: PurchaseSpec
@@ -841,7 +762,6 @@ instances:
       countPerKg: 23  # 21-25마리/kg 중간값
     relations:
       forIngredient: ing_흰다리새우살_L_페루
-      vendor: null
 
   - id: pspec_081
     class: PurchaseSpec
@@ -852,7 +772,6 @@ instances:
       packCount: 3
     relations:
       forIngredient: ing_명란
-      vendor: null
 
   - id: pspec_082
     class: PurchaseSpec
@@ -863,7 +782,6 @@ instances:
       packCount: 3
     relations:
       forIngredient: ing_명태곤이
-      vendor: null
 
   - id: pspec_083
     class: PurchaseSpec
@@ -873,7 +791,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_자숙문어_절단
-      vendor: null
 
   - id: pspec_084
     class: PurchaseSpec
@@ -883,7 +800,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_코다리
-      vendor: null
 
   - id: pspec_085
     class: PurchaseSpec
@@ -893,7 +809,6 @@ instances:
       category: 포장재
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_086
     class: PurchaseSpec
@@ -904,7 +819,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_양배추콩나물세트
-      vendor: null
 
   - id: pspec_087
     class: PurchaseSpec
@@ -914,7 +828,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_통대구
-      vendor: null
 
   - id: pspec_088
     class: PurchaseSpec
@@ -924,7 +837,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_홍고추
-      vendor: null
 
   - id: pspec_089
     class: PurchaseSpec
@@ -933,8 +845,7 @@ instances:
       orderUnit: 2kg
       category: 재료
     relations:
-      forIngredient: ing_대파
-      vendor: null  # 야채 납품업체 (대영상사 아님)
+      forIngredient: ing_대파  # 야채 납품업체 (대영상사 아님)
 
   - id: pspec_090
     class: PurchaseSpec
@@ -943,8 +854,7 @@ instances:
       orderUnit: 20kg
       category: 재료
     relations:
-      forIngredient: ing_무
-      vendor: null  # 야채 납품업체
+      forIngredient: ing_무  # 야채 납품업체
 
   - id: pspec_091
     class: PurchaseSpec
@@ -954,8 +864,7 @@ instances:
       packCount: 1
       category: 재료
     relations:
-      forIngredient: ing_콩나물
-      vendor: null  # 야채 납품업체
+      forIngredient: ing_콩나물  # 야채 납품업체
 
   - id: pspec_092
     class: PurchaseSpec
@@ -966,7 +875,6 @@ instances:
       packCount: 15
     relations:
       forIngredient: ing_염지소대창
-      vendor: null
 
   - id: pspec_093
     class: PurchaseSpec
@@ -977,7 +885,6 @@ instances:
       packCount: 2
     relations:
       forIngredient: ing_볼락
-      vendor: null
 
   - id: pspec_094
     class: PurchaseSpec
@@ -988,7 +895,6 @@ instances:
       packCount: 12
     relations:
       forIngredient: ing_게_바레인
-      vendor: null
 
   - id: pspec_095
     class: PurchaseSpec
@@ -998,7 +904,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_게_이탈리아
-      vendor: null
 
   # ── 대영상사 신규 품목 (2026-04-14) ───────────────────────────
   - id: pspec_096
@@ -1009,7 +914,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_주꾸미
-      vendor: null
 
   - id: pspec_097
     class: PurchaseSpec
@@ -1019,7 +923,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_자숙문어_절단
-      vendor: null
 
   - id: pspec_098
     class: PurchaseSpec
@@ -1029,7 +932,6 @@ instances:
       category: 재료
     relations:
       forIngredient: ing_볼락
-      vendor: null
 
   - id: pspec_099
     class: PurchaseSpec
@@ -1039,7 +941,6 @@ instances:
       category: 재료
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_100
     class: PurchaseSpec
@@ -1049,7 +950,6 @@ instances:
       category: 소모품
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_101
     class: PurchaseSpec
@@ -1059,7 +959,6 @@ instances:
       category: 소모품
     relations:
       forIngredient: null
-      vendor: null
 
   - id: pspec_102
     class: PurchaseSpec
@@ -1069,4 +968,3 @@ instances:
       category: 소모품
     relations:
       forIngredient: null
-      vendor: null
