@@ -100,15 +100,29 @@ Use the established abbreviation already present in the target file for other st
 
 - For sales questions, start from `instances/sales/README.md`.
 - For Namseon, Google Drive, or monthly store sales questions, query `instances/sales/namseon/namseon_sales.db` through `scripts/namseon_sales.py` instead of scanning Drive repeatedly.
-- If the user says new Drive files were added, run the incremental sync first:
+- If the user says new Drive files were added or asks to sync sales, run the sync wrapper first. It scans both Google Drive root and the Namseon sales folder, imports new files, moves root-level source sales files into the matching monthly folder, and uploads the DB:
 
 ```bash
-python3 scripts/namseon_drive_sync.py --incremental --trash-duplicates --upload-db
+scripts/namseon_sync_now.sh
 ```
 
 - For duplicate dates, keep only the selected latest Google Sheets source chosen by `scripts/namseon_drive_sync.py`.
 - When the user asks to exclude products, pass each keyword with `--exclude`.
 - If a value is net of a 20% commission and the user asks for the gross amount, calculate `net / 0.8`.
+- When answering sales summaries that may be pasted into Telegram, avoid wide Markdown tables. Use compact text blocks that stay readable on mobile:
+
+```text
+2025 추석 전후 매출 비교
+행사매출 제외 / 10월 9일 데이터 없음
+
+[합계 순위]
+1위 왕십리점 16,644,428원
+2위 미아점 9,977,145원
+
+[구간별 매출]
+왕십리점
+전 3일 11,762,690원 / 당일 2,005,848원 / 후 2일 2,875,890원
+```
 
 ## Validation
 

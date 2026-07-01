@@ -49,13 +49,33 @@ python3 scripts/namseon_drive_sync.py --trash-duplicates
 ## 새 파일만 빠르게 동기화
 
 ```bash
-python3 scripts/namseon_drive_sync.py --incremental --trash-duplicates --upload-db
+scripts/namseon_sync_now.sh
 ```
 
-`--incremental`은 로컬 DB에 들어있는 마지막 `sale_date`의 다음날부터만 가져온다. `--upload-db`는 동기화가 끝난 뒤 Google Drive에 올려둔 `namseon_sales.db` 파일을 새 DB로 교체한다.
+요청용 스크립트는 로컬 DB에 들어있는 마지막 `sale_date`의 다음날부터만 가져온다. Google Drive 최상위 루트와 남선매출 폴더를 함께 확인하고, 루트에 올라온 매출 원본 파일은 import 후 해당 월 폴더로 옮긴다. 동기화가 끝나면 Google Drive에 올려둔 `namseon_sales.db` 파일을 새 DB로 교체한다.
 
 수동으로 시작 날짜를 지정하려면:
 
 ```bash
-python3 scripts/namseon_drive_sync.py --from-date 2026-06-04 --trash-duplicates --upload-db
+python3 scripts/namseon_drive_sync.py --from-date 2026-06-04 --include-drive-root --organize-root-files --trash-duplicates --upload-db
+```
+
+## 요청 시 동기화
+
+사용자가 "매출 반영해줘", "남선매출 동기화해줘", "Drive에 올라온 매출파일 반영해줘"처럼 요청하면 아래 스크립트를 실행한다.
+
+```bash
+/home/sdg/waterbe/scripts/namseon_sync_now.sh
+```
+
+실행 내용은 아래와 같다.
+
+```bash
+python3 scripts/namseon_drive_sync.py --incremental --include-drive-root --organize-root-files --trash-duplicates --upload-db
+```
+
+실행 후 확인:
+
+```bash
+python3 scripts/namseon_drive_sync.py --incremental --include-drive-root --organize-root-files --dry-run
 ```

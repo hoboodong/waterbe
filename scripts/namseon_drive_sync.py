@@ -31,6 +31,8 @@ SALES_SCRIPT = ROOT / "scripts" / "namseon_sales.py"
 DEFAULT_FOLDER_ID = "1MQkVkt795mKLqCi8zFbJS3mqJ3k9FO2i"
 DEFAULT_DB_DRIVE_FILE_ID = "10lBIcYzcqktWEdF9xYfnM82S-mFGzG-m"
 GOOGLE_SHEET_MIME = "application/vnd.google-apps.spreadsheet"
+FOLDER_MIME = "application/vnd.google-apps.folder"
+DRIVE_ROOT_NAME = "Google Drive root"
 
 
 @dataclass(frozen=True)
@@ -39,8 +41,10 @@ class DriveFile:
     name: str
     mime_type: str
     modified_time: str
+    parent_id: str
     parent_name: str
     sale_date: str
+    from_drive_root: bool = False
 
 
 def run_json(args: list[str]) -> dict:
@@ -52,7 +56,7 @@ def run(args: list[str]) -> None:
     subprocess.run(args, check=True)
 
 
-def drive_ls(parent_id: str) -> list[dict]:
+def drive_ls(parent_id: str | None = None) -> list[dict]:
     files: list[dict] = []
     page = ""
     while True:
@@ -60,13 +64,13 @@ def drive_ls(parent_id: str) -> list[dict]:
             "gog",
             "drive",
             "ls",
-            "--parent",
-            parent_id,
             "--max",
             "100",
             "--json",
             "--no-input",
         ]
+        if parent_id:
+            args.extend(["--parent", parent_id])
         if page:
             args.extend(["--page", page])
         data = run_json(args)
@@ -83,7 +87,9 @@ def folder_year_month(name: str) -> tuple[int, int] | None:
     return int(match.group(1)), int(match.group(2))
 
 
-def infer_sale_date(file_name: str, parent_name: str) -> str | None:
+def infer_sale_date(
+    file_name: str, parent_name: str, modified_time: str = ""
+) -> str | None:
     name = unicodedata.normalize("NFKC", file_name).replace("\u00a0", " ")
     parent_ym = folder_year_month(parent_name)
 
@@ -111,37 +117,56 @@ def infer_sale_date(file_name: str, parent_name: str) -> str | None:
             month = parent_ym[1]
     else:
         year_match = re.search(r"(20\d{2})", name)
-        if not year_match:
+        if year_match:
+            year = int(year_match.group(1))
+        elif re.match(r"20\d{2}-", modified_time):
+            year = int(modified_time[:4])
+        else:
             return None
-        year = int(year_match.group(1))
 
     if not 1 <= month <= 12 or not 1 <= day <= 31:
         return None
     return f"{year:04d}-{month:02d}-{day:02d}"
 
 
-def discover(root_folder_id: str) -> tuple[list[DriveFile], list[str]]:
+def discover(
+    root_folder_id: str, include_drive_root: bool = False
+) -> tuple[list[DriveFile], list[str], dict[tuple[int, int], str]]:
     root_files = drive_ls(root_folder_id)
     folders = [
-        f for f in root_files if f.get("mimeType") == "application/vnd.google-apps.folder"
+        f for f in root_files if f.get("mimeType") == FOLDER_MIME
     ]
+    month_folders = {
+        ym: f["id"]
+        for f in folders
+        if (ym := folder_year_month(f.get("name", ""))) is not None
+    }
     containers = [(root_folder_id, "남선매출")]
     containers.extend((f["id"], f["name"]) for f in folders)
+    if include_drive_root:
+        containers.append(("", DRIVE_ROOT_NAME))
 
     discovered: list[DriveFile] = []
     skipped: list[str] = []
     for folder_id, folder_name in containers:
-        entries = root_files if folder_id == root_folder_id else drive_ls(folder_id)
+        if folder_id == root_folder_id:
+            entries = root_files
+        elif folder_id:
+            entries = drive_ls(folder_id)
+        else:
+            entries = drive_ls()
         for item in entries:
             mime_type = item.get("mimeType", "")
-            if mime_type == "application/vnd.google-apps.folder":
+            if mime_type == FOLDER_MIME:
                 continue
             if not (
                 mime_type == GOOGLE_SHEET_MIME
                 or item.get("name", "").lower().endswith((".xlsx", ".xls", ".csv"))
             ):
                 continue
-            sale_date = infer_sale_date(item.get("name", ""), folder_name)
+            sale_date = infer_sale_date(
+                item.get("name", ""), folder_name, item.get("modifiedTime", "")
+            )
             if not sale_date:
                 skipped.append(f"{folder_name}/{item.get('name', '')}")
                 continue
@@ -151,11 +176,13 @@ def discover(root_folder_id: str) -> tuple[list[DriveFile], list[str]]:
                     name=item.get("name", ""),
                     mime_type=mime_type,
                     modified_time=item.get("modifiedTime", ""),
+                    parent_id=folder_id,
                     parent_name=folder_name,
                     sale_date=sale_date,
+                    from_drive_root=folder_name == DRIVE_ROOT_NAME,
                 )
             )
-    return discovered, skipped
+    return discovered, skipped, month_folders
 
 
 def choose_latest(files: list[DriveFile]) -> tuple[list[DriveFile], list[DriveFile]]:
@@ -254,6 +281,42 @@ def upload_db(db: Path, drive_file_id: str) -> None:
     )
 
 
+def ensure_month_folder(
+    sale_date: str, root_folder_id: str, month_folders: dict[tuple[int, int], str]
+) -> str:
+    parsed = date.fromisoformat(sale_date)
+    key = (parsed.year, parsed.month)
+    if key in month_folders:
+        return month_folders[key]
+
+    folder_name = f"{parsed.year:04d}년 {parsed.month:02d}월"
+    data = run_json(
+        [
+            "gog",
+            "drive",
+            "mkdir",
+            folder_name,
+            "--parent",
+            root_folder_id,
+            "--json",
+            "--no-input",
+        ]
+    )
+    folder = data.get("file") or data
+    folder_id = folder.get("id")
+    if not folder_id:
+        raise RuntimeError(f"created folder id not found for {folder_name}")
+    month_folders[key] = folder_id
+    return folder_id
+
+
+def move_to_month_folder(
+    file: DriveFile, root_folder_id: str, month_folders: dict[tuple[int, int], str]
+) -> None:
+    folder_id = ensure_month_folder(file.sale_date, root_folder_id, month_folders)
+    run(["gog", "drive", "move", file.id, "--parent", folder_id, "--no-input"])
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="남선매출 Drive 전체 동기화")
     parser.add_argument("--folder-id", default=DEFAULT_FOLDER_ID)
@@ -280,6 +343,16 @@ def main() -> None:
         default=DEFAULT_DB_DRIVE_FILE_ID,
         help="Drive file ID to replace when --upload-db is used",
     )
+    parser.add_argument(
+        "--include-drive-root",
+        action="store_true",
+        help="Also scan Google Drive root for newly uploaded sales sheets",
+    )
+    parser.add_argument(
+        "--organize-root-files",
+        action="store_true",
+        help="Move imported Drive root sales sheets into the matching monthly folder",
+    )
     args = parser.parse_args()
 
     if args.incremental and args.from_date:
@@ -293,7 +366,7 @@ def main() -> None:
         else:
             print(f"incremental_from={from_date}")
 
-    files, skipped = discover(args.folder_id)
+    files, skipped, month_folders = discover(args.folder_id, args.include_drive_root)
     chosen, duplicates = choose_latest(files)
     if from_date:
         chosen = [file for file in chosen if file.sale_date >= from_date]
@@ -309,6 +382,12 @@ def main() -> None:
     if args.dry_run:
         for file in chosen:
             print(f"select {file.sale_date} {file.id} {file.name}")
+            if args.organize_root_files and file.from_drive_root:
+                parsed = date.fromisoformat(file.sale_date)
+                print(
+                    f"move {file.sale_date} {file.id} -> "
+                    f"{parsed.year:04d}년 {parsed.month:02d}월"
+                )
         for file in duplicates:
             print(f"duplicate {file.sale_date} {file.id} {file.name}")
         return
@@ -319,6 +398,9 @@ def main() -> None:
             print(f"[{index}/{len(chosen)}] import {file.sale_date} {file.name}")
             csv_path = export_csv(file, tmp_dir)
             import_file(args.db, file, csv_path)
+            if args.organize_root_files and file.from_drive_root:
+                print(f"[{index}/{len(chosen)}] move {file.sale_date} {file.name}")
+                move_to_month_folder(file, args.folder_id, month_folders)
 
         if args.trash_duplicates:
             for index, file in enumerate(duplicates, start=1):
