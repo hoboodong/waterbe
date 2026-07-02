@@ -1,5 +1,5 @@
 instances:
-- id: recipe_mapo_mk001
+- id: recipe_mapo_mk021
   class: Recipe
   data:
     name: 문어전복해물탕 (마포)
@@ -7,7 +7,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117630'
   relations:
-    forProduct: prod_mk_001
+    forProduct: prod_mk_021
     uses:
     - ingredient: ing_자숙문어
       unit: g
@@ -43,7 +43,7 @@ instances:
     - ingredient: ing_해물탕소스
       unit: g
       pspec: pspec_047
-- id: recipe_mapo_mk002
+- id: recipe_mapo_mk022
   class: Recipe
   data:
     name: 낙지전복해물탕 (마포)
@@ -51,7 +51,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '235905'
   relations:
-    forProduct: prod_mk_002
+    forProduct: prod_mk_022
     uses:
     - ingredient: ing_낙지
       unit: g
@@ -87,7 +87,7 @@ instances:
     - ingredient: ing_해물탕소스
       unit: g
       pspec: pspec_047
-- id: recipe_mapo_mk015
+- id: recipe_mapo_mk023
   class: Recipe
   data:
     name: 동태알탕 (마포)
@@ -95,7 +95,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '235921'
   relations:
-    forProduct: prod_mk_015
+    forProduct: prod_mk_023
     uses:
     - ingredient: ing_코다리
       unit: g
@@ -160,7 +160,7 @@ instances:
     - ingredient: ing_해물탕소스
       unit: g
       pspec: pspec_047
-- id: recipe_mapo_mk018
+- id: recipe_mapo_mk025
   class: Recipe
   data:
     name: 낙곱새 (마포)
@@ -168,7 +168,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117713'
   relations:
-    forProduct: prod_mk_018
+    forProduct: prod_mk_025
     uses:
     - ingredient: ing_낙지
       unit: g
@@ -197,7 +197,7 @@ instances:
     - ingredient: ing_낙곱새소스
       unit: g
       pspec: pspec_046
-- id: recipe_mapo_mk011
+- id: recipe_mapo_mk026
   class: Recipe
   data:
     name: 주꾸미볶음 (마포)
@@ -205,7 +205,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '234464'
   relations:
-    forProduct: prod_mk_011
+    forProduct: prod_mk_026
     uses:
     - ingredient: ing_주꾸미
       unit: g
@@ -228,7 +228,7 @@ instances:
     - ingredient: ing_볶음소스
       unit: g
       pspec: pspec_045
-- id: recipe_mapo_mk012
+- id: recipe_mapo_mk027
   class: Recipe
   data:
     name: 낙지볶음 (마포)
@@ -236,7 +236,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '115237'
   relations:
-    forProduct: prod_mk_012
+    forProduct: prod_mk_027
     uses:
     - ingredient: ing_낙지
       unit: g
@@ -327,7 +327,7 @@ instances:
     - ingredient: ing_만능찜소스
       unit: g
       pspec: pspec_074
-- id: recipe_mapo_sp002
+- id: recipe_mapo_sp019
   class: Recipe
   data:
     name: 흰다리새우 (마포)
@@ -335,7 +335,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '236143'
   relations:
-    forProduct: prod_sp_002
+    forProduct: prod_sp_019
     uses:
     - ingredient: ing_새우
       unit: g
@@ -357,7 +357,7 @@ instances:
       pspec: pspec_005
     - ingredient: ing_레몬주스
       unit: ml
-- id: recipe_mapo_sp014
+- id: recipe_mapo_sp021
   class: Recipe
   data:
     name: 흰다리새우살 (마포)
@@ -365,14 +365,14 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '236143'
   relations:
-    forProduct: prod_sp_014
+    forProduct: prod_sp_021
     uses:
     - ingredient: ing_흰다리새우살_S_베트남
       unit: g
       pspec: pspec_069
     - ingredient: ing_레몬주스
       unit: ml
-- id: recipe_mapo_sp001
+- id: recipe_mapo_sp022
   class: Recipe
   data:
     name: 가리비관자 (마포)
@@ -380,7 +380,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117449'
   relations:
-    forProduct: prod_sp_001
+    forProduct: prod_sp_022
     uses:
     - ingredient: ing_가리비관자
       unit: g
@@ -389,7 +389,7 @@ instances:
       unit: ml
     - ingredient: ing_버터
       unit: g
-- id: recipe_mapo_sp017
+- id: recipe_mapo_sp023
   class: Recipe
   data:
     name: 주꾸미 (마포)
@@ -397,7 +397,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '234464'
   relations:
-    forProduct: prod_sp_017
+    forProduct: prod_sp_023
     uses:
     - ingredient: ing_주꾸미
       unit: g
@@ -415,7 +415,7 @@ instances:
     - ingredient: ing_낙지
       unit: g
       pspec: pspec_071
-- id: recipe_mapo_sp018
+- id: recipe_mapo_sp025
   class: Recipe
   data:
     name: 절단낙지 (마포)
@@ -423,12 +423,12 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117717'
   relations:
-    forProduct: prod_sp_018
+    forProduct: prod_sp_025
     uses:
     - ingredient: ing_낙지
       unit: g
       pspec: pspec_071
-- id: recipe_mapo_sp016
+- id: recipe_mapo_sp026
   class: Recipe
   data:
     name: 알곤이세트 (마포)
@@ -436,7 +436,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117718'
   relations:
-    forProduct: prod_sp_016
+    forProduct: prod_sp_026
     uses:
     - ingredient: ing_명란
       unit: g
