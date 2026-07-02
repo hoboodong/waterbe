@@ -101,8 +101,9 @@ Store (매장)
 
 **상품약어 규칙**
 - 로마자(ASCII) 소문자로 짧게 짓는다 (예: 문어전복해물탕→muneotang, 낙곱새→nakgopsae, 알탕→altang)
-- 이름이 겹칠 때만 구분 접미사를 붙인다: `_L`(대) `_son`(손질) `_kr`(국산) `_p`(프리미엄) `_kkori`(꼬리있음) 등
-  (예: 흰다리새우살(대)→saeusal_L, 손질 흰다리새우살→saeusal_son, 프리미엄 낙곱새→nakgopsae_p)
+- 프리미엄·푸짐한·얼큰한 같은 수식어는 약어에 넣지 않는다 (프리미엄 낙곱새→nakgopsae)
+- 같은 매장 안에서 이름이 겹칠 때만 구분 접미사를 붙인다: `_L`(대) `_son`(손질) `_kr`(국산) `_kkori`(꼬리있음) 등
+  (예: 흰다리새우살(대)→saeusal_L, 손질 흰다리새우살→saeusal_son)
 - 공식 약어표 = `master/products.yaml`의 id ↔ name. 새 상품 등록 시 같은 매장 안에서 약어가 겹치지 않게 정하면 되고, ID 중복은 validate.py가 잡는다
 - 밀키트/단품/게장 구분은 ID가 아니라 Category로 관리한다
 | Staff | `staff_` + 순번 | `staff_001` |

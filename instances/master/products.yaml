@@ -75,7 +75,7 @@ instances:
   class: Product
   data:
     name: 낙곱새
-- id: prod_ws_nakgopsae_p
+- id: prod_ws_nakgopsae
   class: Product
   data:
     name: 프리미엄 낙곱새
@@ -231,7 +231,7 @@ instances:
   class: Product
   data:
     name: 흰다리새우살
-- id: prod_mp_altang_pujim
+- id: prod_mp_altang
   class: Product
   data:
     name: 푸짐한 알탕

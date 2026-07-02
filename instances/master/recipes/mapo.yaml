@@ -131,7 +131,7 @@ instances:
     - ingredient: ing_해물탕소스
       unit: g
       pspec: pspec_047
-- id: recipe_mp_altang_pujim
+- id: recipe_mp_altang
   class: Recipe
   data:
     name: 푸짐한 알탕 (마포)
@@ -139,7 +139,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '235930'
   relations:
-    forProduct: prod_mp_altang_pujim
+    forProduct: prod_mp_altang
     uses:
     - ingredient: ing_명란
       unit: g

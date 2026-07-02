@@ -416,7 +416,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_074
-- id: recipe_ws_nakgopsae_p
+- id: recipe_ws_nakgopsae
   class: Recipe
   data:
     name: 프리미엄 낙곱새 (왕십리)
@@ -424,7 +424,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117704'
   relations:
-    forProduct: prod_ws_nakgopsae_p
+    forProduct: prod_ws_nakgopsae
     uses:
     - ingredient: ing_낙지
       amount: 130.0
