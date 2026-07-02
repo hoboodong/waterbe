@@ -88,18 +88,19 @@ Store (매장)
 |--------|--------|------|
 | Store | `store_` | `store_wangsimni` |
 | Category | `cat_` | `cat_mealkit` |
-| Product (밀키트) | `prod_mk_` + 순번 | `prod_mk_001` |
-| Product (단품) | `prod_sp_` + 순번 | `prod_sp_001` |
-| Product (게장류) | `prod_gj_` + 순번 | `prod_gj_001` |
+| Product | `prod_{매장약어}_{상품명}` | `prod_ws_문어전복해물탕` |
 | Ingredient | `ing_` + 재료명 | `ing_낙지`, `ing_흰다리새우살_L_페루` |
-| Recipe | `recipe_{매장}_{prod_id}` | `recipe_wangsimni_mk001` |
+| Recipe | `recipe_{매장약어}_{상품명}` (개정판은 `_2`, `_3` …) | `recipe_ws_문어전복해물탕` |
 | PurchaseSpec | `pspec_` + 순번 | `pspec_001` |
 | PriceHistory | `ph_` + 순번 | `ph_001` |
-| ProductionTemplate | `tmpl_{매장약어}_{prod_id약어}` | `tmpl_wg_mk013` |
-| ProductionPlan | `plan_{매장약어}_{YYYYMMDD}_{prod_id약어}` | `plan_ws_20260407_mk001` |
+| ProductionTemplate | `tmpl_{매장약어}_{상품명}` (개정판은 `_2` …) | `tmpl_wg_문어전복해물탕` |
+| ProductionPlan | `plan_{매장약어}_{YYYYMMDD}_{상품명}` | `plan_ws_20260407_문어전복해물탕` |
 | InventorySnapshot | `snap_{매장약어}_{YYYYMMDD}_{재료약어}` | `snap_wg_20260414_낙지` |
 | InboundRecord | `inbound_{매장약어}_{YYYYMMDD}_{순번}` | `inbound_ws_20260407_1` |
-| SalesRecord | `sale_{매장약어}_{YYYYMMDD}_{prod_id약어}` | `sale_ws_20260315_mk001` |
+| SalesRecord | `sale_{매장약어}_{YYYYMMDD}_{상품명}` | `sale_ws_20260315_문어전복해물탕` |
+
+**상품명 표기 규칙**: 상품 이름에서 공백을 제거하고, 괄호는 `_`로 바꾼다.
+예: `손질 흰다리새우살(대)` → `손질흰다리새우살_대`. 밀키트/단품/게장 구분은 ID가 아니라 Category로 관리한다.
 | Staff | `staff_` + 순번 | `staff_001` |
 | Schedule | `sched_` + 이름 | `sched_order_wolgye` |
 

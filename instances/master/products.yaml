@@ -1,245 +1,237 @@
 instances:
-- id: prod_mk_027
+- id: prod_mp_낙지볶음
   class: Product
   data:
     name: 낙지볶음
-- id: prod_sp_009
+- id: prod_ws_손질갑오징어
   class: Product
   data:
     name: 손질 갑오징어
-- id: prod_mk_021
+- id: prod_mp_문어전복해물탕
   class: Product
   data:
     name: 문어전복해물탕
-- id: prod_sp_005
+- id: prod_ws_활전복
   class: Product
   data:
     name: 활전복
-- id: prod_mk_017
+- id: prod_wg_얼큰한꽃게탕
   class: Product
   data:
     name: 얼큰한 꽃게탕
-- id: prod_mk_023
+- id: prod_mp_동태알탕
   class: Product
   data:
     name: 동태알탕
-- id: prod_sp_026
+- id: prod_mp_알곤이세트
   class: Product
   data:
     name: 알곤이세트
-- id: prod_mk_004
+- id: prod_ws_코다리알탕
   class: Product
   data:
     name: 코다리알탕
-- id: prod_sp_017
+- id: prod_wg_주꾸미
   class: Product
   data:
     name: 주꾸미
-- id: prod_gj_004
+- id: prod_mp_간장새우장
   class: Product
   data:
     name: 간장새우장
-- id: prod_mk_008
+- id: prod_ws_국산문어해물탕
   class: Product
   data:
     name: 국산문어 해물탕
-- id: prod_mk_005
-  class: Product
-  data:
-    name: 시원한 새우탕
-- id: prod_sp_019
+- id: prod_mp_흰다리새우
   class: Product
   data:
     name: 흰다리새우
-- id: prod_mk_009
+- id: prod_ws_순살아귀찜
   class: Product
   data:
     name: 순살 아귀찜
-- id: prod_sp_020
+- id: prod_mp_흰다리새우살_꼬리있음
   class: Product
   data:
     name: 흰다리새우살(꼬리있음)
-- id: prod_sp_006
+- id: prod_ws_국산홍가리비살
   class: Product
   data:
     name: 국산홍가리비살
-- id: prod_sp_001
+- id: prod_ws_가리비관자
   class: Product
   data:
     name: 가리비관자
-- id: prod_mk_014
+- id: prod_wg_낙지전복해물탕
   class: Product
   data:
     name: 낙지전복해물탕
-- id: prod_sp_018
+- id: prod_wg_절단낙지
   class: Product
   data:
     name: 절단낙지
-- id: prod_mk_025
+- id: prod_mp_낙곱새
   class: Product
   data:
     name: 낙곱새
-- id: prod_mk_010
+- id: prod_ws_프리미엄낙곱새
   class: Product
   data:
     name: 프리미엄 낙곱새
-- id: prod_sp_023
+- id: prod_mp_주꾸미
   class: Product
   data:
     name: 주꾸미
-- id: prod_mk_018
+- id: prod_wg_낙곱새
   class: Product
   data:
     name: 낙곱새
-- id: prod_mk_026
+- id: prod_mp_주꾸미볶음
   class: Product
   data:
     name: 주꾸미볶음
-- id: prod_mk_003
+- id: prod_ws_알탕
   class: Product
   data:
     name: 알탕
-- id: prod_mk_006
-  class: Product
-  data:
-    name: 골뱅이탕
-- id: prod_sp_002
+- id: prod_ws_흰다리새우
   class: Product
   data:
     name: 흰다리새우
-- id: prod_mk_019
+- id: prod_wg_주꾸미볶음
   class: Product
   data:
     name: 주꾸미볶음
-- id: prod_sp_011
+- id: prod_ws_손질주꾸미
   class: Product
   data:
     name: 손질 주꾸미
-- id: prod_mk_029
+- id: prod_mp_순살아귀찜
   class: Product
   data:
     name: 순살아귀찜
-- id: prod_mk_007
+- id: prod_ws_대구탕
   class: Product
   data:
     name: 대구탕
-- id: prod_sp_007
+- id: prod_ws_국산흑골뱅이
   class: Product
   data:
     name: 국산흑골뱅이
-- id: prod_gj_001
+- id: prod_ws_국산알베기간장게장
   class: Product
   data:
     name: 국산 알베기 간장게장
-- id: prod_sp_027
+- id: prod_wg_문어소라슬라이스
   class: Product
   data:
     name: 문어소라슬라이스
-- id: prod_mk_011
+- id: prod_ws_주꾸미볶음
   class: Product
   data:
     name: 주꾸미볶음
-- id: prod_mk_016
+- id: prod_wg_볼락매운탕
   class: Product
   data:
     name: 볼락 매운탕
-- id: prod_sp_021
+- id: prod_mp_흰다리새우살
   class: Product
   data:
     name: 흰다리새우살
-- id: prod_gj_002
+- id: prod_ws_간장게장
   class: Product
   data:
     name: 간장게장
-- id: prod_mk_020
+- id: prod_wg_낙지볶음
   class: Product
   data:
     name: 낙지볶음
-- id: prod_mk_015
+- id: prod_wg_동태알탕
   class: Product
   data:
     name: 동태알탕
-- id: prod_sp_003
+- id: prod_ws_손질흰다리새우살_대
   class: Product
   data:
     name: 손질 흰다리새우살(대)
-- id: prod_sp_015
+- id: prod_wg_가리비관자
   class: Product
   data:
     name: 가리비관자
-- id: prod_mk_030
+- id: prod_wg_대구매운탕
   class: Product
   data:
     name: 대구매운탕
-- id: prod_mk_022
+- id: prod_mp_낙지전복해물탕
   class: Product
   data:
     name: 낙지전복해물탕
-- id: prod_mk_001
+- id: prod_ws_문어전복해물탕
   class: Product
   data:
     name: 문어전복해물탕
-- id: prod_mk_013
+- id: prod_wg_문어전복해물탕
   class: Product
   data:
     name: 문어전복해물탕
-- id: prod_sp_010
+- id: prod_ws_손질낙지
   class: Product
   data:
     name: 손질 낙지
-- id: prod_sp_022
+- id: prod_mp_가리비관자
   class: Product
   data:
     name: 가리비관자
-- id: prod_sp_016
+- id: prod_wg_알곤이세트
   class: Product
   data:
     name: 알곤이세트
-- id: prod_mk_012
+- id: prod_ws_낙지볶음
   class: Product
   data:
     name: 낙지볶음
-- id: prod_mk_002
+- id: prod_ws_낙지전복해물탕
   class: Product
   data:
     name: 낙지전복해물탕
-- id: prod_sp_004
+- id: prod_ws_손질흰다리새우살
   class: Product
   data:
     name: 손질 흰다리새우살
-- id: prod_sp_012
+- id: prod_wg_흰다리새우
   class: Product
   data:
     name: 흰다리새우
-- id: prod_sp_025
+- id: prod_mp_절단낙지
   class: Product
   data:
     name: 절단낙지
-- id: prod_sp_024
+- id: prod_mp_손질낙지
   class: Product
   data:
     name: 손질낙지
-- id: prod_mk_028
+- id: prod_mp_갑오징어볶음
   class: Product
   data:
     name: 갑오징어볶음
-- id: prod_sp_008
+- id: prod_ws_백생합
   class: Product
   data:
     name: 백생합
-- id: prod_gj_003
+- id: prod_ws_간장새우장
   class: Product
   data:
     name: 간장 새우장
-- id: prod_sp_013
+- id: prod_wg_흰다리새우살_대
   class: Product
   data:
     name: 흰다리새우살(대)
-- id: prod_sp_014
+- id: prod_wg_흰다리새우살
   class: Product
   data:
     name: 흰다리새우살
-- id: prod_mk_024
+- id: prod_mp_푸짐한알탕
   class: Product
   data:
     name: 푸짐한 알탕

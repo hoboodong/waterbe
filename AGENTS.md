@@ -73,11 +73,14 @@ Before changing data:
 | --- | --- |
 | Staff | `staff_001`, `staff_002`, ... |
 | Schedule | `sched_001`, `sched_002`, ... |
-| Production plan | `plan_{store-abbrev}_YYYYMMDD_{product-abbrev}` |
+| Product | `prod_{store-abbrev}_{product-name}` (spaces removed, parentheses → `_`) |
+| Recipe | `recipe_{store-abbrev}_{product-name}` (revisions append `_2`, `_3`, …) |
+| Production template | `tmpl_{store-abbrev}_{product-name}` |
+| Production plan | `plan_{store-abbrev}_YYYYMMDD_{product-name}` |
 | Inventory snapshot | `snap_{store-abbrev}_YYYYMMDD_{ingredient-abbrev}` |
 | Inbound record | `inbound_{store-abbrev}_YYYYMMDD_{sequence}` |
 
-For product, ingredient, purchase spec, recipe, template, and price history IDs, follow the existing per-file conventions.
+For ingredient, purchase spec, and price history IDs, follow the existing per-file conventions.
 
 ### Store Abbreviations
 

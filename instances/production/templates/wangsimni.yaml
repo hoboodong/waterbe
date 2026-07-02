@@ -2,20 +2,20 @@ instances:
   # 생산기본계획 — 왕십리점
   # 요일별 기본 생산량 템플릿. 한번 설정 후 시즌/메뉴 변경 시에만 수정.
   # 매주 생산계획(ProductionPlan) 생성 시 이 값을 기준으로 사용.
-  # ID 형식: tmpl_ws_{prod_id 약어}
+  # ID 형식: tmpl_ws_{상품명}
 
   # ── 밀키트 ──────────────────────────────────────────────────
-  # - id: tmpl_ws_mk001
+  # - id: tmpl_ws_문어전복해물탕
   #   class: ProductionTemplate
   #   data:
   #     dailyQty: {mon: 0, tue: 0, wed: 0, thu: 0, fri: 0, sat: 0, sun: 0}
   #     effectiveFrom: null
   #     memo: null
   #   relations:
-  #     forProduct: prod_mk_001  # 문어전복해물탕
+  #     forProduct: prod_ws_문어전복해물탕  # 문어전복해물탕
   #     atStore: store_wangsimni
 
-  - id: tmpl_ws_mk001
+  - id: tmpl_ws_문어전복해물탕
     class: ProductionTemplate
     data:
       dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 10, sun: 6}
@@ -23,10 +23,10 @@ instances:
       effectiveTo: null
       memo: null
     relations:
-      forProduct: prod_mk_001
+      forProduct: prod_ws_문어전복해물탕
       atStore: store_wangsimni
 
-  - id: tmpl_ws_mk002
+  - id: tmpl_ws_낙지전복해물탕
     class: ProductionTemplate
     data:
       dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 10, sun: 6}
@@ -34,5 +34,5 @@ instances:
       effectiveTo: null
       memo: null
     relations:
-      forProduct: prod_mk_002
+      forProduct: prod_ws_낙지전복해물탕
       atStore: store_wangsimni

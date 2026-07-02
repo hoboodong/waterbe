@@ -1,5 +1,5 @@
 instances:
-- id: recipe_wangsimni_mk001
+- id: recipe_ws_문어전복해물탕
   class: Recipe
   data:
     name: 문어전복해물탕 (왕십리)
@@ -7,7 +7,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117630'
   relations:
-    forProduct: prod_mk_001
+    forProduct: prod_ws_문어전복해물탕
     uses:
     - ingredient: ing_자숙문어
       amount: 230.0
@@ -53,7 +53,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wangsimni_mk002
+- id: recipe_ws_낙지전복해물탕
   class: Recipe
   data:
     name: 낙지전복해물탕 (왕십리)
@@ -61,7 +61,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '235905'
   relations:
-    forProduct: prod_mk_002
+    forProduct: prod_ws_낙지전복해물탕
     uses:
     - ingredient: ing_낙지
       amount: 230.0
@@ -107,7 +107,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wangsimni_mk003
+- id: recipe_ws_알탕
   class: Recipe
   data:
     name: 알탕 (왕십리)
@@ -115,7 +115,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '235930'
   relations:
-    forProduct: prod_mk_003
+    forProduct: prod_ws_알탕
     uses:
     - ingredient: ing_명란
       amount: 100.0
@@ -157,7 +157,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wangsimni_mk004
+- id: recipe_ws_코다리알탕
   class: Recipe
   data:
     name: 코다리알탕 (왕십리)
@@ -165,7 +165,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '235930'
   relations:
-    forProduct: prod_mk_004
+    forProduct: prod_ws_코다리알탕
     uses:
     - ingredient: ing_코다리
       amount: 350.0
@@ -207,7 +207,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wangsimni_mk007
+- id: recipe_ws_대구탕
   class: Recipe
   data:
     name: 대구탕 (왕십리)
@@ -215,7 +215,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117700'
   relations:
-    forProduct: prod_mk_007
+    forProduct: prod_ws_대구탕
     uses:
     - ingredient: ing_대구
       amount: 400.0
@@ -261,7 +261,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wangsimni_mk008
+- id: recipe_ws_국산문어해물탕
   class: Recipe
   data:
     name: 국산문어 해물탕 (왕십리)
@@ -270,7 +270,7 @@ instances:
     effectiveTo: '2026-04-04'
     martCode: '117701'
   relations:
-    forProduct: prod_mk_008
+    forProduct: prod_ws_국산문어해물탕
     uses:
     - ingredient: ing_자숙문어
       amount: 230.0
@@ -316,7 +316,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wangsimni_mk008_v2
+- id: recipe_ws_국산문어해물탕_v2
   class: Recipe
   data:
     name: 국산문어 해물탕 (왕십리)
@@ -324,7 +324,7 @@ instances:
     effectiveFrom: '2026-04-05'
     martCode: '117702'
   relations:
-    forProduct: prod_mk_008
+    forProduct: prod_ws_국산문어해물탕
     uses:
     - ingredient: ing_자숙문어
       amount: 200.0
@@ -370,7 +370,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wangsimni_mk009
+- id: recipe_ws_순살아귀찜
   class: Recipe
   data:
     name: 순살 아귀찜 (왕십리)
@@ -378,7 +378,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117703'
   relations:
-    forProduct: prod_mk_009
+    forProduct: prod_ws_순살아귀찜
     uses:
     - ingredient: ing_순살아귀
       amount: 350.0
@@ -416,7 +416,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_074
-- id: recipe_wangsimni_mk010
+- id: recipe_ws_프리미엄낙곱새
   class: Recipe
   data:
     name: 프리미엄 낙곱새 (왕십리)
@@ -424,7 +424,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117704'
   relations:
-    forProduct: prod_mk_010
+    forProduct: prod_ws_프리미엄낙곱새
     uses:
     - ingredient: ing_낙지
       amount: 130.0
@@ -460,7 +460,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_046
-- id: recipe_wangsimni_mk011
+- id: recipe_ws_주꾸미볶음
   class: Recipe
   data:
     name: 주꾸미볶음 (왕십리)
@@ -468,7 +468,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '234464'
   relations:
-    forProduct: prod_mk_011
+    forProduct: prod_ws_주꾸미볶음
     uses:
     - ingredient: ing_주꾸미
       amount: 230.0
@@ -496,7 +496,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_045
-- id: recipe_wangsimni_mk012
+- id: recipe_ws_낙지볶음
   class: Recipe
   data:
     name: 낙지볶음 (왕십리)
@@ -504,7 +504,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '115237'
   relations:
-    forProduct: prod_mk_012
+    forProduct: prod_ws_낙지볶음
     uses:
     - ingredient: ing_낙지
       amount: 230.0
@@ -532,7 +532,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_045
-- id: recipe_wangsimni_sp001
+- id: recipe_ws_가리비관자
   class: Recipe
   data:
     name: 가리비관자 (왕십리)
@@ -540,7 +540,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117449'
   relations:
-    forProduct: prod_sp_001
+    forProduct: prod_ws_가리비관자
     uses:
     - ingredient: ing_가리비관자
       unit: g
@@ -549,7 +549,7 @@ instances:
       unit: ml
     - ingredient: ing_버터
       unit: g
-- id: recipe_wangsimni_sp002
+- id: recipe_ws_흰다리새우
   class: Recipe
   data:
     name: 흰다리새우 (왕십리)
@@ -557,14 +557,14 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '236143'
   relations:
-    forProduct: prod_sp_002
+    forProduct: prod_ws_흰다리새우
     uses:
     - ingredient: ing_새우
       unit: g
       pspec: pspec_004
     - ingredient: ing_레몬주스
       unit: ml
-- id: recipe_wangsimni_sp003
+- id: recipe_ws_손질흰다리새우살_대
   class: Recipe
   data:
     name: 손질 흰다리새우살(대) (왕십리)
@@ -572,14 +572,14 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '236143'
   relations:
-    forProduct: prod_sp_003
+    forProduct: prod_ws_손질흰다리새우살_대
     uses:
     - ingredient: ing_흰다리새우살_L_페루
       unit: g
       pspec: pspec_005
     - ingredient: ing_레몬주스
       unit: ml
-- id: recipe_wangsimni_sp004
+- id: recipe_ws_손질흰다리새우살
   class: Recipe
   data:
     name: 손질 흰다리새우살 (왕십리)
@@ -587,14 +587,14 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '236157'
   relations:
-    forProduct: prod_sp_004
+    forProduct: prod_ws_손질흰다리새우살
     uses:
     - ingredient: ing_흰다리새우살_S_베트남
       unit: g
       pspec: pspec_069
     - ingredient: ing_레몬주스
       unit: ml
-- id: recipe_wangsimni_sp005
+- id: recipe_ws_활전복
   class: Recipe
   data:
     name: 활전복 (왕십리)
@@ -602,12 +602,12 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '118648'
   relations:
-    forProduct: prod_sp_005
+    forProduct: prod_ws_활전복
     uses:
     - ingredient: ing_전복
       unit: 개
       pspec: pspec_023
-- id: recipe_wangsimni_sp006
+- id: recipe_ws_국산홍가리비살
   class: Recipe
   data:
     name: 국산홍가리비살 (왕십리)
@@ -615,22 +615,22 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117705'
   relations:
-    forProduct: prod_sp_006
+    forProduct: prod_ws_국산홍가리비살
     uses:
     - ingredient: ing_홍가리비살
       unit: g
-- id: recipe_wangsimni_sp007
+- id: recipe_ws_국산흑골뱅이
   class: Recipe
   data:
     name: 국산흑골뱅이 (왕십리)
     effectiveFrom: '2026-01-01'
     martCode: '117706'
   relations:
-    forProduct: prod_sp_007
+    forProduct: prod_ws_국산흑골뱅이
     uses:
     - ingredient: ing_골뱅이
       unit: g
-- id: recipe_wangsimni_sp008
+- id: recipe_ws_백생합
   class: Recipe
   data:
     name: 백생합 (왕십리)
@@ -638,12 +638,12 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117707'
   relations:
-    forProduct: prod_sp_008
+    forProduct: prod_ws_백생합
     uses:
     - ingredient: ing_백생합
       unit: g
       pspec: pspec_016
-- id: recipe_wangsimni_sp009
+- id: recipe_ws_손질갑오징어
   class: Recipe
   data:
     name: 손질 갑오징어 (왕십리)
@@ -651,11 +651,11 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117708'
   relations:
-    forProduct: prod_sp_009
+    forProduct: prod_ws_손질갑오징어
     uses:
     - ingredient: ing_갑오징어
       unit: g
-- id: recipe_wangsimni_sp010
+- id: recipe_ws_손질낙지
   class: Recipe
   data:
     name: 손질 낙지 (왕십리)
@@ -663,12 +663,12 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117709'
   relations:
-    forProduct: prod_sp_010
+    forProduct: prod_ws_손질낙지
     uses:
     - ingredient: ing_낙지
       unit: g
       pspec: pspec_071
-- id: recipe_wangsimni_sp011
+- id: recipe_ws_손질주꾸미
   class: Recipe
   data:
     name: 손질 주꾸미 (왕십리)
@@ -676,12 +676,12 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117710'
   relations:
-    forProduct: prod_sp_011
+    forProduct: prod_ws_손질주꾸미
     uses:
     - ingredient: ing_주꾸미
       unit: g
       pspec: pspec_033
-- id: recipe_wangsimni_gj001
+- id: recipe_ws_국산알베기간장게장
   class: Recipe
   data:
     name: 국산 알베기 간장게장 (왕십리)
@@ -689,8 +689,8 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117711'
   relations:
-    forProduct: prod_gj_001
-- id: recipe_wangsimni_gj002
+    forProduct: prod_ws_국산알베기간장게장
+- id: recipe_ws_간장게장
   class: Recipe
   data:
     name: 간장게장 (왕십리)
@@ -698,8 +698,8 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117712'
   relations:
-    forProduct: prod_gj_002
-- id: recipe_wangsimni_gj003
+    forProduct: prod_ws_간장게장
+- id: recipe_ws_간장새우장
   class: Recipe
   data:
     name: 간장 새우장 (왕십리)
@@ -707,7 +707,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '236067'
   relations:
-    forProduct: prod_gj_003
+    forProduct: prod_ws_간장새우장
     uses:
     - ingredient: ing_흰다리새우살_L_페루
       unit: g

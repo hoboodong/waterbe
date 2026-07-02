@@ -1,5 +1,5 @@
 instances:
-- id: recipe_wolgye_mk013
+- id: recipe_wg_문어전복해물탕
   class: Recipe
   data:
     name: 문어전복해물탕 (월계)
@@ -7,7 +7,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117630'
   relations:
-    forProduct: prod_mk_013
+    forProduct: prod_wg_문어전복해물탕
     uses:
     - ingredient: ing_자숙문어
       amount: 200.0
@@ -57,7 +57,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wolgye_mk014
+- id: recipe_wg_낙지전복해물탕
   class: Recipe
   data:
     name: 낙지전복해물탕 (월계)
@@ -65,7 +65,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '235905'
   relations:
-    forProduct: prod_mk_014
+    forProduct: prod_wg_낙지전복해물탕
     uses:
     - ingredient: ing_낙지
       amount: 230.0
@@ -115,7 +115,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wolgye_mk015
+- id: recipe_wg_동태알탕
   class: Recipe
   data:
     name: 동태알탕 (월계)
@@ -123,7 +123,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '235921'
   relations:
-    forProduct: prod_mk_015
+    forProduct: prod_wg_동태알탕
     uses:
     - ingredient: ing_코다리
       amount: 300.0
@@ -165,7 +165,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wolgye_mk016
+- id: recipe_wg_볼락매운탕
   class: Recipe
   data:
     name: 볼락 매운탕 (월계)
@@ -173,7 +173,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117719'
   relations:
-    forProduct: prod_mk_016
+    forProduct: prod_wg_볼락매운탕
     uses:
     - ingredient: ing_볼락
       amount: 350.0
@@ -207,7 +207,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wolgye_mk017
+- id: recipe_wg_얼큰한꽃게탕
   class: Recipe
   data:
     name: 얼큰한 꽃게탕 (월계)
@@ -215,7 +215,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117720'
   relations:
-    forProduct: prod_mk_017
+    forProduct: prod_wg_얼큰한꽃게탕
     uses:
     - ingredient: ing_게_이탈리아
       amount: 170.0
@@ -253,7 +253,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wolgye_mk018
+- id: recipe_wg_낙곱새
   class: Recipe
   data:
     name: 낙곱새 (월계)
@@ -261,7 +261,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117721'
   relations:
-    forProduct: prod_mk_018
+    forProduct: prod_wg_낙곱새
     uses:
     - ingredient: ing_낙지
       amount: 120.0
@@ -297,7 +297,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_046
-- id: recipe_wolgye_mk019
+- id: recipe_wg_주꾸미볶음
   class: Recipe
   data:
     name: 주꾸미볶음 (월계)
@@ -305,7 +305,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '234464'
   relations:
-    forProduct: prod_mk_019
+    forProduct: prod_wg_주꾸미볶음
     uses:
     - ingredient: ing_주꾸미
       amount: 230.0
@@ -333,7 +333,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_045
-- id: recipe_wolgye_mk020
+- id: recipe_wg_낙지볶음
   class: Recipe
   data:
     name: 낙지볶음 (월계)
@@ -341,7 +341,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '115237'
   relations:
-    forProduct: prod_mk_020
+    forProduct: prod_wg_낙지볶음
     uses:
     - ingredient: ing_낙지
       amount: 230.0
@@ -369,7 +369,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_045
-- id: recipe_wolgye_mk030
+- id: recipe_wg_대구매운탕
   class: Recipe
   data:
     name: 대구매운탕 (월계)
@@ -377,7 +377,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117722'
   relations:
-    forProduct: prod_mk_030
+    forProduct: prod_wg_대구매운탕
     uses:
     - ingredient: ing_통대구
       amount: 300.0
@@ -419,7 +419,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wolgye_sp012
+- id: recipe_wg_흰다리새우
   class: Recipe
   data:
     name: 흰다리새우 (월계)
@@ -427,13 +427,13 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '236143'
   relations:
-    forProduct: prod_sp_012
+    forProduct: prod_wg_흰다리새우
     uses:
     - ingredient: ing_새우
       amount: 325.0
       unit: g
       pspec: pspec_003
-- id: recipe_wolgye_sp013
+- id: recipe_wg_흰다리새우살_대
   class: Recipe
   data:
     name: 흰다리새우살(대) (월계)
@@ -441,13 +441,13 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '236143'
   relations:
-    forProduct: prod_sp_013
+    forProduct: prod_wg_흰다리새우살_대
     uses:
     - ingredient: ing_흰다리새우살_L_페루
       amount: 300.0
       unit: g
       pspec: pspec_080
-- id: recipe_wolgye_sp014
+- id: recipe_wg_흰다리새우살
   class: Recipe
   data:
     name: 흰다리새우살 (월계)
@@ -455,13 +455,13 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '236143'
   relations:
-    forProduct: prod_sp_014
+    forProduct: prod_wg_흰다리새우살
     uses:
     - ingredient: ing_흰다리새우살_S_베트남
       amount: 200.0
       unit: g
       pspec: pspec_002
-- id: recipe_wolgye_sp015
+- id: recipe_wg_가리비관자
   class: Recipe
   data:
     name: 가리비관자 (월계)
@@ -469,7 +469,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117449'
   relations:
-    forProduct: prod_sp_015
+    forProduct: prod_wg_가리비관자
     uses:
     - ingredient: ing_가리비관자
       amount: 200.0
@@ -478,7 +478,7 @@ instances:
     - ingredient: ing_버터
       amount: 1.0
       unit: 후레시
-- id: recipe_wolgye_sp016
+- id: recipe_wg_알곤이세트
   class: Recipe
   data:
     name: 알곤이세트 (월계)
@@ -486,7 +486,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117723'
   relations:
-    forProduct: prod_sp_016
+    forProduct: prod_wg_알곤이세트
     uses:
     - ingredient: ing_명란
       unit: g
@@ -495,7 +495,7 @@ instances:
       unit: g
     - ingredient: ing_레몬주스
       unit: ml
-- id: recipe_wolgye_sp017
+- id: recipe_wg_주꾸미
   class: Recipe
   data:
     name: 주꾸미 (월계)
@@ -503,13 +503,13 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '234464'
   relations:
-    forProduct: prod_sp_017
+    forProduct: prod_wg_주꾸미
     uses:
     - ingredient: ing_주꾸미
       amount: 300.0
       unit: g
       pspec: pspec_077
-- id: recipe_wolgye_sp018
+- id: recipe_wg_절단낙지
   class: Recipe
   data:
     name: 절단낙지 (월계)
@@ -517,13 +517,13 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117724'
   relations:
-    forProduct: prod_sp_018
+    forProduct: prod_wg_절단낙지
     uses:
     - ingredient: ing_낙지
       amount: 300.0
       unit: g
       pspec: pspec_078
-- id: recipe_wolgye_sp027
+- id: recipe_wg_문어소라슬라이스
   class: Recipe
   data:
     name: 문어소라슬라이스 (월계)
@@ -531,7 +531,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117725'
   relations:
-    forProduct: prod_sp_027
+    forProduct: prod_wg_문어소라슬라이스
     uses:
     - ingredient: ing_자숙문어_절단
       amount: 90.0
