@@ -2,11 +2,11 @@ instances:
   # 생산기본계획 — 월계점
   # 요일별 기본 생산량 템플릿. 한번 설정 후 시즌/메뉴 변경 시에만 수정.
   # 매주 생산계획(ProductionPlan) 생성 시 이 값을 dailyPlan으로 복사.
-  # ID 형식: tmpl_wg_{상품명}
+  # ID 형식: tmpl_wg_{상품약어}
 
   # ── 밀키트 ──────────────────────────────────────────────────
 
-  - id: tmpl_wg_문어탕
+  - id: tmpl_wg_muneotang
     class: ProductionTemplate
     data:
       dailyQty: {mon: 2, tue: 2, wed: 2, thu: 2, fri: 4, sat: 4, sun: 4}
@@ -15,10 +15,10 @@ instances:
       effectiveTo: "2026-04-13"
       memo: null
     relations:
-      forProduct: prod_wg_문어탕  # 문어전복해물탕
+      forProduct: prod_wg_muneotang  # 문어전복해물탕
       atStore: store_wolgye
 
-  - id: tmpl_wg_문어전복해물탕_2
+  - id: tmpl_wg_muneotang_2
     class: ProductionTemplate
     data:
       dailyQty: {mon: 2, tue: 2, wed: 2, thu: 2, fri: 4, sat: 6, sun: 4}
@@ -27,10 +27,10 @@ instances:
       effectiveTo: null
       memo: null
     relations:
-      forProduct: prod_wg_문어탕  # 문어전복해물탕
+      forProduct: prod_wg_muneotang  # 문어전복해물탕
       atStore: store_wolgye
 
-  - id: tmpl_wg_낙지탕
+  - id: tmpl_wg_nakjitang
     class: ProductionTemplate
     data:
       dailyQty: {mon: 2, tue: 2, wed: 2, thu: 2, fri: 4, sat: 4, sun: 4}
@@ -39,10 +39,10 @@ instances:
       effectiveTo: "2026-04-13"
       memo: null
     relations:
-      forProduct: prod_wg_낙지탕  # 낙지전복해물탕
+      forProduct: prod_wg_nakjitang  # 낙지전복해물탕
       atStore: store_wolgye
 
-  - id: tmpl_wg_낙지전복해물탕_2
+  - id: tmpl_wg_nakjitang_2
     class: ProductionTemplate
     data:
       dailyQty: {mon: 2, tue: 2, wed: 2, thu: 2, fri: 4, sat: 6, sun: 4}
@@ -51,10 +51,10 @@ instances:
       effectiveTo: null
       memo: null
     relations:
-      forProduct: prod_wg_낙지탕  # 낙지전복해물탕
+      forProduct: prod_wg_nakjitang  # 낙지전복해물탕
       atStore: store_wolgye
 
-  - id: tmpl_wg_동태알탕
+  - id: tmpl_wg_dongtae
     class: ProductionTemplate
     data:
       dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 8, sun: 6}
@@ -63,10 +63,10 @@ instances:
       effectiveTo: "2026-04-13"
       memo: null
     relations:
-      forProduct: prod_wg_동태알탕  # 동태알탕
+      forProduct: prod_wg_dongtae  # 동태알탕
       atStore: store_wolgye
 
-  - id: tmpl_wg_동태알탕_2
+  - id: tmpl_wg_dongtae_2
     class: ProductionTemplate
     data:
       dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 6, sat: 8, sun: 6}
@@ -75,10 +75,10 @@ instances:
       effectiveTo: null
       memo: null
     relations:
-      forProduct: prod_wg_동태알탕  # 동태알탕
+      forProduct: prod_wg_dongtae  # 동태알탕
       atStore: store_wolgye
 
-  - id: tmpl_wg_볼락매운탕
+  - id: tmpl_wg_bollak
     class: ProductionTemplate
     data:
       dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 6, sun: 6}
@@ -87,10 +87,10 @@ instances:
       effectiveTo: "2026-04-13"
       memo: null
     relations:
-      forProduct: prod_wg_볼락매운탕  # 볼락 매운탕
+      forProduct: prod_wg_bollak  # 볼락 매운탕
       atStore: store_wolgye
 
-  - id: tmpl_wg_볼락매운탕_2
+  - id: tmpl_wg_bollak_2
     class: ProductionTemplate
     data:
       dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 6, sat: 8, sun: 6}
@@ -99,10 +99,10 @@ instances:
       effectiveTo: null
       memo: null
     relations:
-      forProduct: prod_wg_볼락매운탕  # 볼락 매운탕
+      forProduct: prod_wg_bollak  # 볼락 매운탕
       atStore: store_wolgye
 
-  - id: tmpl_wg_낙곱새
+  - id: tmpl_wg_nakgopsae
     class: ProductionTemplate
     data:
       dailyQty: {mon: 2, tue: 2, wed: 2, thu: 2, fri: 4, sat: 4, sun: 4}
@@ -111,10 +111,10 @@ instances:
       effectiveTo: null
       memo: null
     relations:
-      forProduct: prod_wg_낙곱새  # 낙곱새
+      forProduct: prod_wg_nakgopsae  # 낙곱새
       atStore: store_wolgye
 
-  - id: tmpl_wg_주꾸미볶음
+  - id: tmpl_wg_jukkumi_bokkeum
     class: ProductionTemplate
     data:
       dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 6, sun: 6}
@@ -123,10 +123,10 @@ instances:
       effectiveTo: null
       memo: null
     relations:
-      forProduct: prod_wg_주꾸미볶음  # 주꾸미볶음
+      forProduct: prod_wg_jukkumi_bokkeum  # 주꾸미볶음
       atStore: store_wolgye
 
-  - id: tmpl_wg_낙지볶음
+  - id: tmpl_wg_nakji_bokkeum
     class: ProductionTemplate
     data:
       dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 6, sun: 6}
@@ -135,10 +135,10 @@ instances:
       effectiveTo: null
       memo: null
     relations:
-      forProduct: prod_wg_낙지볶음  # 낙지볶음
+      forProduct: prod_wg_nakji_bokkeum  # 낙지볶음
       atStore: store_wolgye
 
-  - id: tmpl_wg_대구매운탕
+  - id: tmpl_wg_daegu_maeun
     class: ProductionTemplate
     data:
       dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 6, sat: 6, sun: 6}
@@ -147,10 +147,10 @@ instances:
       effectiveTo: "2026-04-13"
       memo: null
     relations:
-      forProduct: prod_wg_대구매운탕  # 대구매운탕
+      forProduct: prod_wg_daegu_maeun  # 대구매운탕
       atStore: store_wolgye
 
-  - id: tmpl_wg_대구매운탕_2
+  - id: tmpl_wg_daegu_maeun_2
     class: ProductionTemplate
     data:
       dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 6, sat: 8, sun: 6}
@@ -159,12 +159,12 @@ instances:
       effectiveTo: null
       memo: null
     relations:
-      forProduct: prod_wg_대구매운탕  # 대구매운탕
+      forProduct: prod_wg_daegu_maeun  # 대구매운탕
       atStore: store_wolgye
 
   # ── 단품 (팩) ────────────────────────────────────────────────
 
-  - id: tmpl_wg_가리비관자
+  - id: tmpl_wg_gwanja
     class: ProductionTemplate
     data:
       dailyQty: {mon: 10, tue: 10, wed: 10, thu: 10, fri: 20, sat: 30, sun: 20}
@@ -173,10 +173,10 @@ instances:
       effectiveTo: null
       memo: null
     relations:
-      forProduct: prod_wg_가리비관자  # 가리비관자
+      forProduct: prod_wg_gwanja  # 가리비관자
       atStore: store_wolgye
 
-  - id: tmpl_wg_문어소라
+  - id: tmpl_wg_muneosora
     class: ProductionTemplate
     data:
       dailyQty: {mon: 10, tue: 10, wed: 10, thu: 10, fri: 15, sat: 20, sun: 15}
@@ -185,12 +185,12 @@ instances:
       effectiveTo: null
       memo: null
     relations:
-      forProduct: prod_wg_문어소라  # 문어소라슬라이스
+      forProduct: prod_wg_muneosora  # 문어소라슬라이스
       atStore: store_wolgye
 
   # ── 단품 (중량) — 단위: kg ────────────────────────────────────
 
-  - id: tmpl_wg_흰다리새우
+  - id: tmpl_wg_saeu
     class: ProductionTemplate
     data:
       dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 6, sat: 6, sun: 6}
@@ -199,10 +199,10 @@ instances:
       effectiveTo: "2026-04-13"
       memo: null
     relations:
-      forProduct: prod_wg_흰다리새우  # 흰다리새우
+      forProduct: prod_wg_saeu  # 흰다리새우
       atStore: store_wolgye
 
-  - id: tmpl_wg_흰다리새우_2
+  - id: tmpl_wg_saeu_2
     class: ProductionTemplate
     data:
       dailyQty: {mon: 1, tue: 1, wed: 1, thu: 1, fri: 2, sat: 3, sun: 2}
@@ -211,10 +211,10 @@ instances:
       effectiveTo: null
       memo: null
     relations:
-      forProduct: prod_wg_흰다리새우  # 흰다리새우
+      forProduct: prod_wg_saeu  # 흰다리새우
       atStore: store_wolgye
 
-  - id: tmpl_wg_새우살대
+  - id: tmpl_wg_saeusal_L
     class: ProductionTemplate
     data:
       dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 8, sat: 10, sun: 8}
@@ -223,10 +223,10 @@ instances:
       effectiveTo: "2026-04-13"
       memo: null
     relations:
-      forProduct: prod_wg_새우살대  # 흰다리새우살(대)
+      forProduct: prod_wg_saeusal_L  # 흰다리새우살(대)
       atStore: store_wolgye
 
-  - id: tmpl_wg_흰다리새우살_대_2
+  - id: tmpl_wg_saeusal_L_2
     class: ProductionTemplate
     data:
       dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 8, sat: 10, sun: 8}
@@ -235,10 +235,10 @@ instances:
       effectiveTo: null
       memo: "토 10팩 = 1박스"
     relations:
-      forProduct: prod_wg_새우살대  # 흰다리새우살(대)
+      forProduct: prod_wg_saeusal_L  # 흰다리새우살(대)
       atStore: store_wolgye
 
-  - id: tmpl_wg_새우살
+  - id: tmpl_wg_saeusal
     class: ProductionTemplate
     data:
       dailyQty: {mon: 3, tue: 3, wed: 3, thu: 3, fri: 5, sat: 5, sun: 5}
@@ -247,10 +247,10 @@ instances:
       effectiveTo: "2026-04-13"
       memo: null
     relations:
-      forProduct: prod_wg_새우살  # 흰다리새우살(소)
+      forProduct: prod_wg_saeusal  # 흰다리새우살(소)
       atStore: store_wolgye
 
-  - id: tmpl_wg_흰다리새우살_2
+  - id: tmpl_wg_saeusal_2
     class: ProductionTemplate
     data:
       dailyQty: {mon: 0.33, tue: 0.33, wed: 0.33, thu: 0.33, fri: 0.5, sat: 1, sun: 0.5}
@@ -259,5 +259,5 @@ instances:
       effectiveTo: null
       memo: "월~목 1/3팩, 금/일 반팩, 토 1팩"
     relations:
-      forProduct: prod_wg_새우살  # 흰다리새우살(소)
+      forProduct: prod_wg_saeusal  # 흰다리새우살(소)
       atStore: store_wolgye

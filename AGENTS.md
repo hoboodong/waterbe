@@ -78,9 +78,11 @@ Before changing data:
 | Production template | `tmpl_{store-abbrev}_{product-alias}` |
 | Production plan | `plan_{store-abbrev}_YYYYMMDD_{product-alias}` |
 
-Product alias: the cleaned product name if it is 5 characters or fewer,
-otherwise a short alias. The authoritative alias table is the id ↔ name
-mapping in `instances/master/products.yaml`.
+Product alias: a short lowercase romanized (ASCII) alias of the product
+name (e.g. 문어전복해물탕 → `muneotang`). When names would collide, add a
+qualifier suffix such as `_L` (대), `_son` (손질), `_kr` (국산), `_p`
+(프리미엄). The authoritative alias table is the id ↔ name mapping in
+`instances/master/products.yaml`.
 | Inventory snapshot | `snap_{store-abbrev}_YYYYMMDD_{ingredient-abbrev}` |
 | Inbound record | `inbound_{store-abbrev}_YYYYMMDD_{sequence}` |
 
