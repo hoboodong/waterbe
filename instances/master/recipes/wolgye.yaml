@@ -1,5 +1,5 @@
 instances:
-- id: recipe_wolgye_mk013
+- id: recipe_wolgye_mk001
   class: Recipe
   data:
     name: 문어전복해물탕 (월계)
@@ -7,7 +7,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117630'
   relations:
-    forProduct: prod_mk_013
+    forProduct: prod_mk_001
     uses:
     - ingredient: ing_자숙문어
       amount: 200.0
@@ -57,7 +57,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wolgye_mk014
+- id: recipe_wolgye_mk002
   class: Recipe
   data:
     name: 낙지전복해물탕 (월계)
@@ -65,7 +65,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '235905'
   relations:
-    forProduct: prod_mk_014
+    forProduct: prod_mk_002
     uses:
     - ingredient: ing_낙지
       amount: 230.0
@@ -297,7 +297,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_046
-- id: recipe_wolgye_mk019
+- id: recipe_wolgye_mk011
   class: Recipe
   data:
     name: 주꾸미볶음 (월계)
@@ -305,7 +305,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '234464'
   relations:
-    forProduct: prod_mk_019
+    forProduct: prod_mk_011
     uses:
     - ingredient: ing_주꾸미
       amount: 230.0
@@ -333,7 +333,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_045
-- id: recipe_wolgye_mk020
+- id: recipe_wolgye_mk012
   class: Recipe
   data:
     name: 낙지볶음 (월계)
@@ -341,7 +341,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '115237'
   relations:
-    forProduct: prod_mk_020
+    forProduct: prod_mk_012
     uses:
     - ingredient: ing_낙지
       amount: 230.0
@@ -419,7 +419,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wolgye_sp012
+- id: recipe_wolgye_sp002
   class: Recipe
   data:
     name: 흰다리새우 (월계)
@@ -427,7 +427,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '236143'
   relations:
-    forProduct: prod_sp_012
+    forProduct: prod_sp_002
     uses:
     - ingredient: ing_새우
       amount: 325.0
@@ -461,7 +461,7 @@ instances:
       amount: 200.0
       unit: g
       pspec: pspec_002
-- id: recipe_wolgye_sp015
+- id: recipe_wolgye_sp001
   class: Recipe
   data:
     name: 가리비관자 (월계)
@@ -469,7 +469,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117449'
   relations:
-    forProduct: prod_sp_015
+    forProduct: prod_sp_001
     uses:
     - ingredient: ing_가리비관자
       amount: 200.0

@@ -197,6 +197,7 @@ def check_relations(records, schema, all_ids):
 
 def check_business_rules(records):
     telegram_ids = {}
+    product_names = {}
     active_recipes = {}   # (store, product) → rec_id (effectiveTo null)
     active_templates = {}  # (store, product) → rec_id
     plan_keys = {}        # (store, product, weekStart) → rec_id
@@ -208,7 +209,14 @@ def check_business_rules(records):
         relations = rec.get("relations") or {}
         file_store = store_from_path(path)
 
-        if cls == "SalesRecord":
+        if cls == "Product":
+            name = data.get("name")
+            if name in product_names:
+                err(rel, rec_id, f"Product 이름 중복: {product_names[name]} (같은 상품은 하나의 ID로)")
+            else:
+                product_names[name] = rec_id
+
+        elif cls == "SalesRecord":
             qty, price, total = data.get("qty"), data.get("unitPrice"), data.get("totalAmount")
             if None not in (qty, price, total) and qty * price != total:
                 err(rel, rec_id, f"totalAmount({total}) ≠ qty×unitPrice({qty * price})")
