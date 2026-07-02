@@ -88,19 +88,22 @@ Store (매장)
 |--------|--------|------|
 | Store | `store_` | `store_wangsimni` |
 | Category | `cat_` | `cat_mealkit` |
-| Product | `prod_{매장약어}_{상품명}` | `prod_ws_문어전복해물탕` |
+| Product | `prod_{매장약어}_{상품약어}` | `prod_ws_문어탕` |
 | Ingredient | `ing_` + 재료명 | `ing_낙지`, `ing_흰다리새우살_L_페루` |
-| Recipe | `recipe_{매장약어}_{상품명}` (개정판은 `_2`, `_3` …) | `recipe_ws_문어전복해물탕` |
+| Recipe | `recipe_{매장약어}_{상품약어}` (개정판은 `_2`, `_3` …) | `recipe_ws_문어탕` |
 | PurchaseSpec | `pspec_` + 순번 | `pspec_001` |
 | PriceHistory | `ph_` + 순번 | `ph_001` |
-| ProductionTemplate | `tmpl_{매장약어}_{상품명}` (개정판은 `_2` …) | `tmpl_wg_문어전복해물탕` |
-| ProductionPlan | `plan_{매장약어}_{YYYYMMDD}_{상품명}` | `plan_ws_20260407_문어전복해물탕` |
+| ProductionTemplate | `tmpl_{매장약어}_{상품약어}` (개정판은 `_2` …) | `tmpl_wg_문어탕` |
+| ProductionPlan | `plan_{매장약어}_{YYYYMMDD}_{상품약어}` | `plan_ws_20260407_문어탕` |
 | InventorySnapshot | `snap_{매장약어}_{YYYYMMDD}_{재료약어}` | `snap_wg_20260414_낙지` |
 | InboundRecord | `inbound_{매장약어}_{YYYYMMDD}_{순번}` | `inbound_ws_20260407_1` |
-| SalesRecord | `sale_{매장약어}_{YYYYMMDD}_{상품명}` | `sale_ws_20260315_문어전복해물탕` |
+| SalesRecord | `sale_{매장약어}_{YYYYMMDD}_{상품약어}` | `sale_ws_20260315_문어탕` |
 
-**상품명 표기 규칙**: 상품 이름에서 공백을 제거하고, 괄호는 `_`로 바꾼다.
-예: `손질 흰다리새우살(대)` → `손질흰다리새우살_대`. 밀키트/단품/게장 구분은 ID가 아니라 Category로 관리한다.
+**상품약어 규칙**
+- 상품명에서 공백을 빼고 5자 이하면 그대로 쓴다 (예: 낙곱새, 동태알탕, 코다리알탕)
+- 6자 이상이면 짧은 약어를 정한다 (예: 문어전복해물탕→문어탕, 흰다리새우살(대)→새우살대)
+- 공식 약어표 = `master/products.yaml`의 id ↔ name. 새 상품 등록 시 같은 매장 안에서 약어가 겹치지 않게 정하면 되고, ID 중복은 validate.py가 잡는다
+- 밀키트/단품/게장 구분은 ID가 아니라 Category로 관리한다
 | Staff | `staff_` + 순번 | `staff_001` |
 | Schedule | `sched_` + 이름 | `sched_order_wolgye` |
 

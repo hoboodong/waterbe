@@ -73,10 +73,14 @@ Before changing data:
 | --- | --- |
 | Staff | `staff_001`, `staff_002`, ... |
 | Schedule | `sched_001`, `sched_002`, ... |
-| Product | `prod_{store-abbrev}_{product-name}` (spaces removed, parentheses → `_`) |
-| Recipe | `recipe_{store-abbrev}_{product-name}` (revisions append `_2`, `_3`, …) |
-| Production template | `tmpl_{store-abbrev}_{product-name}` |
-| Production plan | `plan_{store-abbrev}_YYYYMMDD_{product-name}` |
+| Product | `prod_{store-abbrev}_{product-alias}` |
+| Recipe | `recipe_{store-abbrev}_{product-alias}` (revisions append `_2`, `_3`, …) |
+| Production template | `tmpl_{store-abbrev}_{product-alias}` |
+| Production plan | `plan_{store-abbrev}_YYYYMMDD_{product-alias}` |
+
+Product alias: the cleaned product name if it is 5 characters or fewer,
+otherwise a short alias. The authoritative alias table is the id ↔ name
+mapping in `instances/master/products.yaml`.
 | Inventory snapshot | `snap_{store-abbrev}_YYYYMMDD_{ingredient-abbrev}` |
 | Inbound record | `inbound_{store-abbrev}_YYYYMMDD_{sequence}` |
 

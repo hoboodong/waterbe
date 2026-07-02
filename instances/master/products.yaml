@@ -3,11 +3,11 @@ instances:
   class: Product
   data:
     name: 낙지볶음
-- id: prod_ws_손질갑오징어
+- id: prod_ws_갑오징어
   class: Product
   data:
     name: 손질 갑오징어
-- id: prod_mp_문어전복해물탕
+- id: prod_mp_문어탕
   class: Product
   data:
     name: 문어전복해물탕
@@ -15,7 +15,7 @@ instances:
   class: Product
   data:
     name: 활전복
-- id: prod_wg_얼큰한꽃게탕
+- id: prod_wg_꽃게탕
   class: Product
   data:
     name: 얼큰한 꽃게탕
@@ -39,7 +39,7 @@ instances:
   class: Product
   data:
     name: 간장새우장
-- id: prod_ws_국산문어해물탕
+- id: prod_ws_국산문어탕
   class: Product
   data:
     name: 국산문어 해물탕
@@ -51,11 +51,11 @@ instances:
   class: Product
   data:
     name: 순살 아귀찜
-- id: prod_mp_흰다리새우살_꼬리있음
+- id: prod_mp_새우살꼬리
   class: Product
   data:
     name: 흰다리새우살(꼬리있음)
-- id: prod_ws_국산홍가리비살
+- id: prod_ws_홍가리비
   class: Product
   data:
     name: 국산홍가리비살
@@ -63,7 +63,7 @@ instances:
   class: Product
   data:
     name: 가리비관자
-- id: prod_wg_낙지전복해물탕
+- id: prod_wg_낙지탕
   class: Product
   data:
     name: 낙지전복해물탕
@@ -75,7 +75,7 @@ instances:
   class: Product
   data:
     name: 낙곱새
-- id: prod_ws_프리미엄낙곱새
+- id: prod_ws_프낙곱새
   class: Product
   data:
     name: 프리미엄 낙곱새
@@ -115,15 +115,15 @@ instances:
   class: Product
   data:
     name: 대구탕
-- id: prod_ws_국산흑골뱅이
+- id: prod_ws_흑골뱅이
   class: Product
   data:
     name: 국산흑골뱅이
-- id: prod_ws_국산알베기간장게장
+- id: prod_ws_알베기게장
   class: Product
   data:
     name: 국산 알베기 간장게장
-- id: prod_wg_문어소라슬라이스
+- id: prod_wg_문어소라
   class: Product
   data:
     name: 문어소라슬라이스
@@ -135,7 +135,7 @@ instances:
   class: Product
   data:
     name: 볼락 매운탕
-- id: prod_mp_흰다리새우살
+- id: prod_mp_새우살
   class: Product
   data:
     name: 흰다리새우살
@@ -151,7 +151,7 @@ instances:
   class: Product
   data:
     name: 동태알탕
-- id: prod_ws_손질흰다리새우살_대
+- id: prod_ws_손질새우살대
   class: Product
   data:
     name: 손질 흰다리새우살(대)
@@ -163,15 +163,15 @@ instances:
   class: Product
   data:
     name: 대구매운탕
-- id: prod_mp_낙지전복해물탕
+- id: prod_mp_낙지탕
   class: Product
   data:
     name: 낙지전복해물탕
-- id: prod_ws_문어전복해물탕
+- id: prod_ws_문어탕
   class: Product
   data:
     name: 문어전복해물탕
-- id: prod_wg_문어전복해물탕
+- id: prod_wg_문어탕
   class: Product
   data:
     name: 문어전복해물탕
@@ -191,11 +191,11 @@ instances:
   class: Product
   data:
     name: 낙지볶음
-- id: prod_ws_낙지전복해물탕
+- id: prod_ws_낙지탕
   class: Product
   data:
     name: 낙지전복해물탕
-- id: prod_ws_손질흰다리새우살
+- id: prod_ws_손질새우살
   class: Product
   data:
     name: 손질 흰다리새우살
@@ -211,7 +211,7 @@ instances:
   class: Product
   data:
     name: 손질낙지
-- id: prod_mp_갑오징어볶음
+- id: prod_mp_갑오볶음
   class: Product
   data:
     name: 갑오징어볶음
@@ -223,11 +223,11 @@ instances:
   class: Product
   data:
     name: 간장 새우장
-- id: prod_wg_흰다리새우살_대
+- id: prod_wg_새우살대
   class: Product
   data:
     name: 흰다리새우살(대)
-- id: prod_wg_흰다리새우살
+- id: prod_wg_새우살
   class: Product
   data:
     name: 흰다리새우살

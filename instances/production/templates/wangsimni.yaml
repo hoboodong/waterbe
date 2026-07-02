@@ -5,17 +5,17 @@ instances:
   # ID 형식: tmpl_ws_{상품명}
 
   # ── 밀키트 ──────────────────────────────────────────────────
-  # - id: tmpl_ws_문어전복해물탕
+  # - id: tmpl_ws_문어탕
   #   class: ProductionTemplate
   #   data:
   #     dailyQty: {mon: 0, tue: 0, wed: 0, thu: 0, fri: 0, sat: 0, sun: 0}
   #     effectiveFrom: null
   #     memo: null
   #   relations:
-  #     forProduct: prod_ws_문어전복해물탕  # 문어전복해물탕
+  #     forProduct: prod_ws_문어탕  # 문어전복해물탕
   #     atStore: store_wangsimni
 
-  - id: tmpl_ws_문어전복해물탕
+  - id: tmpl_ws_문어탕
     class: ProductionTemplate
     data:
       dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 10, sun: 6}
@@ -23,10 +23,10 @@ instances:
       effectiveTo: null
       memo: null
     relations:
-      forProduct: prod_ws_문어전복해물탕
+      forProduct: prod_ws_문어탕
       atStore: store_wangsimni
 
-  - id: tmpl_ws_낙지전복해물탕
+  - id: tmpl_ws_낙지탕
     class: ProductionTemplate
     data:
       dailyQty: {mon: 4, tue: 4, wed: 4, thu: 4, fri: 6, sat: 10, sun: 6}
@@ -34,5 +34,5 @@ instances:
       effectiveTo: null
       memo: null
     relations:
-      forProduct: prod_ws_낙지전복해물탕
+      forProduct: prod_ws_낙지탕
       atStore: store_wangsimni

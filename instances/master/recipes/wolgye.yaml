@@ -1,5 +1,5 @@
 instances:
-- id: recipe_wg_문어전복해물탕
+- id: recipe_wg_문어탕
   class: Recipe
   data:
     name: 문어전복해물탕 (월계)
@@ -7,7 +7,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117630'
   relations:
-    forProduct: prod_wg_문어전복해물탕
+    forProduct: prod_wg_문어탕
     uses:
     - ingredient: ing_자숙문어
       amount: 200.0
@@ -57,7 +57,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wg_낙지전복해물탕
+- id: recipe_wg_낙지탕
   class: Recipe
   data:
     name: 낙지전복해물탕 (월계)
@@ -65,7 +65,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '235905'
   relations:
-    forProduct: prod_wg_낙지전복해물탕
+    forProduct: prod_wg_낙지탕
     uses:
     - ingredient: ing_낙지
       amount: 230.0
@@ -207,7 +207,7 @@ instances:
       amount: 2.0
       unit: 팩
       pspec: pspec_047
-- id: recipe_wg_얼큰한꽃게탕
+- id: recipe_wg_꽃게탕
   class: Recipe
   data:
     name: 얼큰한 꽃게탕 (월계)
@@ -215,7 +215,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117720'
   relations:
-    forProduct: prod_wg_얼큰한꽃게탕
+    forProduct: prod_wg_꽃게탕
     uses:
     - ingredient: ing_게_이탈리아
       amount: 170.0
@@ -433,7 +433,7 @@ instances:
       amount: 325.0
       unit: g
       pspec: pspec_003
-- id: recipe_wg_흰다리새우살_대
+- id: recipe_wg_새우살대
   class: Recipe
   data:
     name: 흰다리새우살(대) (월계)
@@ -441,13 +441,13 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '236143'
   relations:
-    forProduct: prod_wg_흰다리새우살_대
+    forProduct: prod_wg_새우살대
     uses:
     - ingredient: ing_흰다리새우살_L_페루
       amount: 300.0
       unit: g
       pspec: pspec_080
-- id: recipe_wg_흰다리새우살
+- id: recipe_wg_새우살
   class: Recipe
   data:
     name: 흰다리새우살 (월계)
@@ -455,7 +455,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '236143'
   relations:
-    forProduct: prod_wg_흰다리새우살
+    forProduct: prod_wg_새우살
     uses:
     - ingredient: ing_흰다리새우살_S_베트남
       amount: 200.0
@@ -523,7 +523,7 @@ instances:
       amount: 300.0
       unit: g
       pspec: pspec_078
-- id: recipe_wg_문어소라슬라이스
+- id: recipe_wg_문어소라
   class: Recipe
   data:
     name: 문어소라슬라이스 (월계)
@@ -531,7 +531,7 @@ instances:
     effectiveFrom: '2026-01-01'
     martCode: '117725'
   relations:
-    forProduct: prod_wg_문어소라슬라이스
+    forProduct: prod_wg_문어소라
     uses:
     - ingredient: ing_자숙문어_절단
       amount: 90.0
