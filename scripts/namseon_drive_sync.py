@@ -302,7 +302,7 @@ def ensure_month_folder(
             "--no-input",
         ]
     )
-    folder = data.get("file") or data
+    folder = data.get("file") or data.get("folder") or data
     folder_id = folder.get("id")
     if not folder_id:
         raise RuntimeError(f"created folder id not found for {folder_name}")
