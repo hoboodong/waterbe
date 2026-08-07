@@ -11,6 +11,7 @@ classes:
     description: 앱에서 매장별로 생성한 판매상품
     fields: [storeId, appProductId, martCode, name, price, active]
     unique: [storeId, appProductId]
+    note: martCode is a sales aggregation code and may be shared by multiple products.
 
   AppIngredient:
     description: 앱에서 매장별로 생성한 원재료
@@ -22,16 +23,21 @@ classes:
     fields: [storeId, appRecipeId, appProductId, effectiveFrom, effectiveTo, materials]
 
   ProductionDaily:
-    description: 앱의 일자별 생산계획·실제생산 기록
-    fields: [date, storeId, appProductId, plannedQty, actualQty, wasteQty, memo]
+    description: 앱의 일자별 생산계획·실제생산 기록. productionTime은 선택값이다.
+    fields: [date, storeId, appProductId, plannedQty, actualQty, wasteQty, productionTime?, memo?]
 
   DiscountLabel:
     description: 앱 할인라벨 출력 기록. 판매 확정값이 아닌 운영 참고값
-    fields: [date, storeId, appProductId, discountRate, quantity]
+    fields: [printedAt, storeId, appProductId, originalPrice, finalPrice, quantity, isVoid]
+
+  SalesCodeMapping:
+    description: 워터비 매출 원본의 코드명을 앱 martCode에 연결하는 매장별 매핑
+    fields: [storeId, salesCodeName, martCode, effectiveFrom, effectiveTo]
+    unique: [storeId, salesCodeName, effectiveFrom]
 
   SalesDaily:
-    description: 매출 원본의 코드별 일일 판매 기록
-    fields: [date, storeId, martCode, quantity, amount]
+    description: 워터비 매출 데이터의 코드명별 일일 판매 기록. SalesCodeMapping을 통해 martCode 그룹과 연결한다.
+    fields: [date, storeId, salesCodeName, quantity, amount]
 
   Purchase:
     description: 남선푸드 메인발주와 기타 업체 발주·입고

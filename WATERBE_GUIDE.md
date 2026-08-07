@@ -10,17 +10,22 @@
 
 ## 연결 기준
 
-- 상품: `storeId + appProductId + martCode`
+- 상품: `storeId + appProductId`
 - 원재료: `storeId + appIngredientId`
 - 레시피: `appRecipeId`
+
+매출 원본의 `salesCodeName`은 판매 집계 코드명이며 여러 상품이 공유할 수 있다. 공유 코드명은 상품별로 나누지 않고 코드명 단위로 분석한다.
+
+`SalesCodeMapping`으로 매출 코드명을 앱의 `martCode`에 연결한다.
 
 ## 수집 데이터
 
 | 영역 | 입력·수집 위치 |
 | --- | --- |
 | 상품·원재료·레시피 | 앱 → Supabase |
-| 생산계획·생산기록·할인라벨 | 앱 → Supabase |
-| 코드별 판매수량·매출 | 매출 원본 → Supabase |
+| 생산계획·생산기록 | 앱 → Supabase |
+| 할인라벨 출력수량·시간·가격 | 앱 → Supabase 자동 기록 |
+| 코드명별 판매수량·매출 | 워터비 일일 매출 데이터 |
 | 남선푸드 발주·기타발주·입고 | Supabase |
 | 비품·카드 지출 | Supabase |
 | 원재료 재고실사 | Supabase |
