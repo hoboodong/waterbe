@@ -24,7 +24,7 @@ classes:
 
   ProductionDaily:
     description: 앱의 일자별 생산계획·실제생산 기록. productionTime은 선택값이다.
-    fields: [date, storeId, appProductId, plannedQty, actualQty, wasteQty, productionTime?, memo?]
+    fields: [date, storeId, appProductId, plannedQty, actualQty, wasteQty, "productionTime?", "memo?"]
 
   DiscountLabel:
     description: 앱 할인라벨 출력 기록. 판매 확정값이 아닌 운영 참고값
