@@ -12,12 +12,14 @@
 
 ---
 
-## 관리 파일
+## 관리 위치
 
-| 파일 | 내용 |
+| 위치 | 내용 |
 |------|------|
-| `instances/staff.yaml` | 직원 정보 (이름·텔레그램ID·역할·소속매장) |
-| `instances/schedules.yaml` | 근무·기타 일정 |
+| Supabase `Staff` | 직원 정보 (이름·역할·소속매장) |
+| Supabase `Schedule` | 근무·기타 일정 |
+
+`instances/staff.yaml`과 `instances/schedules.yaml`은 이전 기록으로 보존한다.
 
 ---
 
@@ -43,8 +45,7 @@
 | createdBy | 등록한 팀장 이름 |
 | atStore | 해당 매장 ID |
 
-> **발주·생산 일정은 이 가이드 범위 밖.**
-> 발주 → `InboundRecord`, 생산 → `ProductionPlan` (WATERBE_GUIDE.md 참조)
+> 발주 일정은 이 가이드 범위 밖이며 `InboundRecord`로 관리한다. 생산계획은 앱에서 관리한다.
 
 ---
 
