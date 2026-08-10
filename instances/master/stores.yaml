@@ -19,3 +19,10 @@ instances:
       name: 월계점
       location: 이마트 월계점 수산코너
       branch: 월계
+
+  - id: store_mia
+    class: Store
+    data:
+      name: 미아점
+      location: 이마트 미아점 수산코너
+      branch: 미아

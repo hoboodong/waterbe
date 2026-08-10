@@ -2,13 +2,14 @@
 
 ## Project Overview
 
-Waterbe is an operations-analysis system for a seafood meal-kit and retail business operating in three E-mart stores.
+Waterbe is an operations-analysis system for a seafood meal-kit and retail business operating in four E-mart stores.
 
 | Store ID | Store |
 | --- | --- |
 | `store_wangsimni` | 왕십리점 |
 | `store_mapo` | 마포점 |
 | `store_wolgye` | 월계점 |
+| `store_mia` | 미아점 |
 
 Supabase is the source of truth. Apps and sales sources collect data into Supabase; Waterbe connects and analyzes it. YAML sales files remain a legacy sales workspace.
 
@@ -78,6 +79,7 @@ For new Supabase records, use app-generated IDs for products, ingredients, and r
 | Abbreviation | Store |
 | --- | --- |
 | `wg` | 월계점 |
+| `mia` | 미아점 |
 
 Use the established abbreviation already present in the target file for other stores.
 

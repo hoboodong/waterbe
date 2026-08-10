@@ -28,6 +28,7 @@
 
 ```bash
 python3 scripts/namseon_sales.py month-total --store mapo --month 2026-05
+python3 scripts/namseon_sales.py month-total --store mia --month 2026-05
 python3 scripts/namseon_sales.py month-total --store wangsimni --month 2026-05
 python3 scripts/namseon_sales.py month-total --store wangsimni --month 2026-05 --exclude 추가행사팀품목
 scripts/namseon_sync_now.sh
