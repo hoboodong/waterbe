@@ -29,7 +29,7 @@ for a in args:
     elif re.match(r'\d+$', a):             days  = int(a)
     else:                                  store_key = a
 
-STORE = f'store_{store_key}'
+STORE = store_key
 end   = start + timedelta(days=days - 1)
 date_range = [start + timedelta(days=i) for i in range(days)]
 DOW = {0:'mon', 1:'tue', 2:'wed', 3:'thu', 4:'fri', 5:'sat', 6:'sun'}

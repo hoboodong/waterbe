@@ -19,9 +19,10 @@ if not SUPABASE_URL or not SUPABASE_KEY:
 
 # 매장별 store_id 매핑
 STORE_MAP = {
-    "store_wangsimni": "wangsimni",
-    "store_mapo": "mapo",
-    "store_wolgye": "wolgye"
+    "wangsimni": "wangsimni",
+    "mapo": "mapo",
+    "wolgye": "wolgye",
+    "mia": "mia",
 }
 
 def get_waterbe_path():

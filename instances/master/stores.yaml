@@ -1,21 +1,28 @@
 instances:
-  - id: store_wangsimni
+  - id: wangsimni
     class: Store
     data:
       name: 왕십리점
       location: 이마트 왕십리점 수산코너
       branch: 왕십리
 
-  - id: store_mapo
+  - id: mapo
     class: Store
     data:
       name: 마포점
       location: 이마트 마포점 수산코너
       branch: 마포
 
-  - id: store_wolgye
+  - id: wolgye
     class: Store
     data:
       name: 월계점
       location: 이마트 월계점 수산코너
       branch: 월계
+
+  - id: mia
+    class: Store
+    data:
+      name: 미아점
+      location: 이마트 미아점 수산코너
+      branch: 미아

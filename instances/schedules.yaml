@@ -10,7 +10,7 @@ instances:
     assignee: 신띵
     createdBy: 팀장
   relations:
-    atStore: store_wolgye
+    atStore: wolgye
 - id: sched_002
   class: Schedule
   data:
@@ -22,7 +22,7 @@ instances:
     assignee: 신띵
     createdBy: 팀장
   relations:
-    atStore: store_wolgye
+    atStore: wolgye
 
 # ── 발주 주기 설정 ──────────────────────────────────────────────
 - id: sched_order_wolgye
@@ -40,4 +40,4 @@ instances:
     assignee: 신띵
     createdBy: 팀장
   relations:
-    atStore: store_wolgye
+    atStore: wolgye

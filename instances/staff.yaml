@@ -6,7 +6,7 @@ instances:
       telegramId: "7621683460"
       role: 직원
     relations:
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: staff_002
     class: Staff
@@ -26,7 +26,7 @@ instances:
 #     telegramId: "123456789"
 #     role: 직원
 #   relations:
-#     atStore: store_mapo
+#     atStore: mapo
 #
 # - id: staff_000
 #   class: Staff

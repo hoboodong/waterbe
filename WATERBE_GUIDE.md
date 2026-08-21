@@ -6,13 +6,14 @@
 
 ## 워터비란?
 
-이마트 수산물 코너에 입점한 밀키트·단품 판매 사업. 현재 3개 매장 운영.
+이마트 수산물 코너에서 상품을 당일 생산·판매하는 4개 매장을 통합 운영하는 사업.
 
 | 매장 | ID | 기본 납품업체 |
 |------|----|--------------|
-| 왕십리점 | store_wangsimni | 남선푸드 |
-| 마포점 | store_mapo | 남선푸드 |
-| 월계점 | store_wolgye | 대영상사 |
+| 왕십리점 | wangsimni | 남선푸드 |
+| 마포점 | mapo | 남선푸드 |
+| 월계점 | wolgye | 대영상사 |
+| 미아점 | mia | 미정 |
 
 ---
 
@@ -272,7 +273,7 @@ Store (매장)
 
 | 클래스 | 접두사 | 예시 |
 |--------|--------|------|
-| Store | `store_` | `store_wangsimni` |
+| Store | 시코드 앱 매장 ID | `wangsimni`, `mapo`, `wolgye`, `mia` |
 | Category | `cat_` | `cat_mealkit` |
 | Product (밀키트) | `prod_mk_` + 순번 | `prod_mk_001` |
 | Product (단품) | `prod_sp_` + 순번 | `prod_sp_001` |

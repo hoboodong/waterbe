@@ -13,7 +13,7 @@ instances:
   #     memo: null
   #   relations:
   #     forProduct: prod_mk_001  # 문어전복해물탕
-  #     atStore: store_wangsimni
+  #     atStore: wangsimni
 
   - id: tmpl_ws_mk001
     class: ProductionTemplate
@@ -24,7 +24,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_mk_001
-      atStore: store_wangsimni
+      atStore: wangsimni
 
   - id: tmpl_ws_mk002
     class: ProductionTemplate
@@ -35,4 +35,4 @@ instances:
       memo: null
     relations:
       forProduct: prod_mk_002
-      atStore: store_wangsimni
+      atStore: wangsimni

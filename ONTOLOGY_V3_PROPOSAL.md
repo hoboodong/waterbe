@@ -66,7 +66,7 @@ PurchasePrice
 매장이다.
 
 ```yaml
-- id: store_wolgye
+- id: wolgye
   class: Store
   data:
     name: 월계점
@@ -108,7 +108,7 @@ v3의 중심 클래스다.
 - id: storeitem_wolgye_mk014
   class: StoreItem
   data:
-    storeId: store_wolgye
+    storeId: wolgye
     itemId: item_mk_014
     displayName: 낙지전복해물탕 (월계)
     martCode: "235905"
@@ -278,7 +278,7 @@ v3의 중심 클래스다.
 - id: stock_wolgye_20260708_mat_전복
   class: StockCount
   data:
-    storeId: store_wolgye
+    storeId: wolgye
     materialId: mat_전복
     purchaseItemId: pitem_022
     date: "2026-07-08"
@@ -297,7 +297,7 @@ v3의 중심 클래스다.
 - id: receipt_wolgye_20260708_001
   class: PurchaseReceipt
   data:
-    storeId: store_wolgye
+    storeId: wolgye
     purchaseItemId: pitem_022
     date: "2026-07-08"
     quantity: 2

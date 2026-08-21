@@ -6,9 +6,10 @@ Waterbe is a YAML-first operations data repository for a seafood meal-kit and re
 
 | Store ID | Store |
 | --- | --- |
-| `store_wangsimni` | 왕십리점 |
-| `store_mapo` | 마포점 |
-| `store_wolgye` | 월계점 |
+| `wangsimni` | 왕십리점 |
+| `mapo` | 마포점 |
+| `wolgye` | 월계점 |
+| `mia` | 미아점 |
 
 The source of truth is the YAML data under `instances/`, with the ontology and field definitions in `schema.yaml`.
 

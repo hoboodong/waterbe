@@ -78,14 +78,14 @@
 ```yaml
 relations:
   forProduct: prod_mk_014
-  atStore: store_wolgye
+  atStore: wolgye
 ```
 
 v3:
 
 ```yaml
 data:
-  storeId: store_wolgye
+  storeId: wolgye
   itemId: item_mk_014
 ```
 

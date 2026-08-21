@@ -16,7 +16,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_mk_013  # 문어전복해물탕
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_mk013_2
     class: ProductionTemplate
@@ -28,7 +28,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_mk_013  # 문어전복해물탕
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_mk014
     class: ProductionTemplate
@@ -40,7 +40,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_mk_014  # 낙지전복해물탕
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_mk014_2
     class: ProductionTemplate
@@ -52,7 +52,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_mk_014  # 낙지전복해물탕
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_mk015
     class: ProductionTemplate
@@ -64,7 +64,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_mk_015  # 동태알탕
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_mk015_2
     class: ProductionTemplate
@@ -76,7 +76,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_mk_015  # 동태알탕
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_mk016
     class: ProductionTemplate
@@ -88,7 +88,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_mk_016  # 볼락 매운탕
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_mk016_2
     class: ProductionTemplate
@@ -100,7 +100,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_mk_016  # 볼락 매운탕
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_mk018
     class: ProductionTemplate
@@ -112,7 +112,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_mk_018  # 낙곱새
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_mk019
     class: ProductionTemplate
@@ -124,7 +124,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_mk_019  # 주꾸미볶음
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_mk020
     class: ProductionTemplate
@@ -136,7 +136,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_mk_020  # 낙지볶음
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_mk030
     class: ProductionTemplate
@@ -148,7 +148,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_mk_030  # 대구매운탕
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_mk030_2
     class: ProductionTemplate
@@ -160,7 +160,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_mk_030  # 대구매운탕
-      atStore: store_wolgye
+      atStore: wolgye
 
   # ── 단품 (팩) ────────────────────────────────────────────────
 
@@ -174,7 +174,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_sp_015  # 가리비관자
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_sp027
     class: ProductionTemplate
@@ -186,7 +186,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_sp_027  # 문어소라슬라이스
-      atStore: store_wolgye
+      atStore: wolgye
 
   # ── 단품 (중량) — 단위: kg ────────────────────────────────────
 
@@ -200,7 +200,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_sp_012  # 흰다리새우
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_sp012_2
     class: ProductionTemplate
@@ -212,7 +212,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_sp_012  # 흰다리새우
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_sp013
     class: ProductionTemplate
@@ -224,7 +224,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_sp_013  # 흰다리새우살(대)
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_sp013_2
     class: ProductionTemplate
@@ -236,7 +236,7 @@ instances:
       memo: "토 10팩 = 1박스"
     relations:
       forProduct: prod_sp_013  # 흰다리새우살(대)
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_sp014
     class: ProductionTemplate
@@ -248,7 +248,7 @@ instances:
       memo: null
     relations:
       forProduct: prod_sp_014  # 흰다리새우살(소)
-      atStore: store_wolgye
+      atStore: wolgye
 
   - id: tmpl_wg_sp014_2
     class: ProductionTemplate
@@ -260,4 +260,4 @@ instances:
       memo: "월~목 1/3팩, 금/일 반팩, 토 1팩"
     relations:
       forProduct: prod_sp_014  # 흰다리새우살(소)
-      atStore: store_wolgye
+      atStore: wolgye
