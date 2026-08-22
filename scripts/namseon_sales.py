@@ -6,6 +6,7 @@
   python3 scripts/namseon_sales.py init-db
   python3 scripts/namseon_sales.py import-csv /path/to/export.csv --date 2026-05-31 --source-file-id <drive-id>
   python3 scripts/namseon_sales.py month-total --store mapo --month 2026-05
+  python3 scripts/namseon_sales.py month-total --store mia --month 2026-05
   python3 scripts/namseon_sales.py month-total --store wangsimni --month 2026-05
   python3 scripts/namseon_sales.py month-total --store wangsimni --month 2026-05 --exclude 추가행사팀품목
 """
@@ -28,12 +29,15 @@ STORE_ALIASES = {
     "mapo": "EM마포점",
     "wangsimni": "EM왕십리점",
     "wolgye": "EM월계점",
+    "mia": "EM미아점",
     "마포": "EM마포점",
     "마포점": "EM마포점",
     "왕십리": "EM왕십리점",
     "왕십리점": "EM왕십리점",
     "월계": "EM월계점",
     "월계점": "EM월계점",
+    "미아": "EM미아점",
+    "미아점": "EM미아점",
 }
 
 EVENT_TEAM_PRODUCT_KEYWORDS = [
