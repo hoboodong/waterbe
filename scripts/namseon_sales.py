@@ -137,6 +137,9 @@ def parse_csv(path: Path, sale_date: str) -> list[SalesRow]:
             if len(row) < 4:
                 continue
             first = row[0].strip()
+            if {"업체명", "점포명", "상품명"}.issubset(row):
+                layout = "vendor"
+                continue
             if first == "점포코드":
                 layout = "code"
                 continue
@@ -190,6 +193,37 @@ def parse_csv(path: Path, sale_date: str) -> list[SalesRow]:
                         month_qty=parse_int(row[5]),
                         month_sales=parse_int(row[6]),
                         is_store_total=0,
+                    )
+                )
+                continue
+
+            if layout == "vendor":
+                if len(row) < 7:
+                    continue
+                store_value = row[1].strip()
+                product = row[2].strip()
+
+                is_total = False
+                if store_value:
+                    store, is_total = normalize_store(store_value)
+                    current_store = store
+                else:
+                    store = current_store
+
+                if not store or (not product and not is_total):
+                    continue
+
+                rows.append(
+                    SalesRow(
+                        row_number=row_number,
+                        sale_date=sale_date,
+                        store=store,
+                        product=None if is_total else product,
+                        daily_qty=parse_int(row[3]),
+                        daily_sales=parse_int(row[4]),
+                        month_qty=parse_int(row[5]),
+                        month_sales=parse_int(row[6]),
+                        is_store_total=1 if is_total else 0,
                     )
                 )
                 continue
