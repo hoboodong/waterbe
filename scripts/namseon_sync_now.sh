@@ -16,4 +16,5 @@ python3 scripts/namseon_drive_sync.py \
   --include-drive-root \
   --organize-root-files \
   --trash-duplicates \
+  --sync-supabase \
   --upload-db

@@ -1,6 +1,6 @@
 # 남선매출 통합 DB
 
-남선매출 Google Drive 일별 스프레드시트를 SQLite로 누적해서 빠르게 조회하기 위한 작업 공간이다.
+남선매출 Google Drive 일별 스프레드시트를 SQLite로 먼저 검증한 뒤 Supabase 공용 DB로 동기화하기 위한 작업 공간이다.
 
 매출 질문을 처리할 때는 먼저 상위 문서 `instances/sales/README.md`의 공통 규칙을 따른다.
 
@@ -9,6 +9,7 @@
 - `namseon_sales.db`: 생성되는 SQLite DB. git에는 포함하지 않는다.
 - `scripts/namseon_sales.py`: DB 초기화, CSV import, 월 매출 조회 CLI.
 - `scripts/namseon_drive_sync.py`: Google Drive `남선매출` 폴더 전체 동기화 CLI.
+- `scripts/namseon_supabase_sync.py`: 검증된 SQLite 날짜별 데이터를 Supabase로 교체 저장하고 검증하는 CLI.
 
 ## 기본 사용
 
@@ -53,7 +54,7 @@ python3 scripts/namseon_drive_sync.py --trash-duplicates
 scripts/namseon_sync_now.sh
 ```
 
-요청용 스크립트는 로컬 DB에 들어있는 마지막 `sale_date`의 다음날부터만 가져온다. Google Drive 최상위 루트와 남선매출 폴더를 함께 확인하고, 루트에 올라온 매출 원본 파일은 import 후 해당 월 폴더로 옮긴다. 동기화가 끝나면 Google Drive에 올려둔 `namseon_sales.db` 파일을 새 DB로 교체한다.
+요청용 스크립트는 Drive 파일 ID와 수정 시각을 로컬 DB 기록과 비교해 새 파일과 수정본을 가져온다. Google Drive 최상위 루트와 남선매출 폴더를 함께 확인하고, 루트 원본은 import 후 해당 월 폴더로 옮긴다. 검증된 날짜는 Supabase에 교체 저장하고 행 수를 다시 확인한다. 전환 기간에는 Google Drive의 `namseon_sales.db` 백업도 유지한다.
 
 수동으로 시작 날짜를 지정하려면:
 

@@ -22,12 +22,13 @@ import sys
 import tempfile
 import unicodedata
 from dataclasses import dataclass
-from datetime import date, timedelta
+from datetime import date
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 SALES_SCRIPT = ROOT / "scripts" / "namseon_sales.py"
+SUPABASE_SCRIPT = ROOT / "scripts" / "namseon_supabase_sync.py"
 DEFAULT_FOLDER_ID = "1MQkVkt795mKLqCi8zFbJS3mqJ3k9FO2i"
 DEFAULT_DB_DRIVE_FILE_ID = "10lBIcYzcqktWEdF9xYfnM82S-mFGzG-m"
 GOOGLE_SHEET_MIME = "application/vnd.google-apps.spreadsheet"
@@ -251,19 +252,26 @@ def trash_file(file: DriveFile) -> None:
     run(["gog", "drive", "delete", file.id, "--force", "--no-input"])
 
 
-def next_date(value: str) -> str:
-    parsed = date.fromisoformat(value)
-    return (parsed + timedelta(days=1)).isoformat()
-
-
-def next_unimported_date(db: Path) -> str | None:
+def imported_sources(db: Path) -> dict[str, tuple[str, str]]:
     if not db.exists():
-        return None
+        return {}
     with sqlite3.connect(db) as conn:
-        row = conn.execute("SELECT MAX(sale_date) FROM source_files").fetchone()
-    if not row or not row[0]:
-        return None
-    return next_date(row[0])
+        try:
+            rows = conn.execute(
+                "SELECT sale_date, file_id, coalesce(modified_time, '') FROM source_files"
+            ).fetchall()
+        except sqlite3.OperationalError:
+            return {}
+    return {sale_date: (file_id, modified_time) for sale_date, file_id, modified_time in rows}
+
+
+def incremental_files(db: Path, files: list[DriveFile]) -> list[DriveFile]:
+    imported = imported_sources(db)
+    return [
+        file
+        for file in files
+        if imported.get(file.sale_date) != (file.id, file.modified_time)
+    ]
 
 
 def upload_db(db: Path, drive_file_id: str) -> None:
@@ -279,6 +287,16 @@ def upload_db(db: Path, drive_file_id: str) -> None:
             "--no-input",
         ]
     )
+
+
+def sync_supabase(db: Path, sale_dates: list[str]) -> None:
+    args = [sys.executable, str(SUPABASE_SCRIPT), "--db", str(db)]
+    if sale_dates:
+        for sale_date in sorted(set(sale_dates)):
+            args.extend(["--date", sale_date])
+    else:
+        print("supabase-sync reconcile-all; no new or modified Drive files")
+    run(args)
 
 
 def ensure_month_folder(
@@ -353,23 +371,23 @@ def main() -> None:
         action="store_true",
         help="Move imported Drive root sales sheets into the matching monthly folder",
     )
+    parser.add_argument(
+        "--sync-supabase",
+        action="store_true",
+        help="Upload selected dates from SQLite to Supabase and verify them",
+    )
     args = parser.parse_args()
 
     if args.incremental and args.from_date:
         raise SystemExit("--incremental and --from-date cannot be used together")
 
-    from_date = args.from_date
-    if args.incremental:
-        from_date = next_unimported_date(args.db)
-        if not from_date:
-            print("incremental_from=<none>; DB is empty or missing, syncing all files")
-        else:
-            print(f"incremental_from={from_date}")
-
     files, skipped, month_folders = discover(args.folder_id, args.include_drive_root)
     chosen, duplicates = choose_latest(files)
-    if from_date:
-        chosen = [file for file in chosen if file.sale_date >= from_date]
+    if args.incremental:
+        chosen = incremental_files(args.db, chosen)
+        print("incremental=unseen-or-modified")
+    elif args.from_date:
+        chosen = [file for file in chosen if file.sale_date >= args.from_date]
 
     print(f"discovered={len(files)}")
     print(f"selected={len(chosen)}")
@@ -408,6 +426,9 @@ def main() -> None:
                 trash_file(file)
     finally:
         shutil.rmtree(tmp_dir, ignore_errors=True)
+
+    if args.sync_supabase:
+        sync_supabase(args.db, [file.sale_date for file in chosen])
 
     if args.upload_db:
         print(f"upload-db replace {args.db_drive_file_id}")
