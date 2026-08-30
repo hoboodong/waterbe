@@ -514,6 +514,46 @@ classes:
         cardinality: many-to-one
         label: 해당 매장
 
+  DailyStoreOperation:
+    label: 매장 일일 생산·할인 운영기록
+    description: 생산 투입량부터 할인 라벨, 다음 날 미사용 라벨과 폐기까지 연결하는 일일 운영 장부
+    properties:
+      date:
+        type: string
+        required: true
+        label: 영업일 (YYYY-MM-DD)
+      status:
+        type: string
+        required: true
+        label: 진행 상태 (in_progress / awaiting_morning_close / finalized)
+      production:
+        type: array
+        required: true
+        label: 품목별 원물 투입량·완성수량·당일 기준가격
+      discountHandling:
+        type: array
+        required: false
+        label: 즉시 부착 또는 마트 직원 부착용 사전 출력에 대한 현장 확인
+      nextMorning:
+        type: object
+        required: false
+        nullable: true
+        label: 다음 날 미사용 라벨과 폐기 확인
+      provisionalSummary:
+        type: object
+        required: false
+        nullable: true
+        label: 확정 전 생산금액·정가 및 특가 판매 추정치
+      notes:
+        type: array
+        required: false
+        label: 해석에 필요한 운영 메모
+    relations:
+      atStore:
+        target: Store
+        cardinality: many-to-one
+        label: 해당 매장
+
 constraints:
   - "Product.price는 양의 정수이거나 null이어야 한다"
   - "Product.relations.soldAt은 반드시 하나 이상의 Store를 참조해야 한다"
@@ -550,3 +590,6 @@ constraints:
   - "Schedule.type은 근무 / 발주 / 생산 / 기타 중 하나여야 한다"
   - "Schedule.date는 YYYY-MM-DD 형식이어야 한다"
   - "Schedule.endDate는 YYYY-MM-DD 형식이며 date 이후여야 한다"
+  - "DailyStoreOperation은 (date, atStore) 조합이 유일해야 한다"
+  - "DailyStoreOperation.status는 in_progress / awaiting_morning_close / finalized 중 하나여야 한다"
+  - "DailyStoreOperation의 인쇄기록은 판매량으로 간주하지 않고 다음 날 미사용 라벨과 폐기 확인 후 정산한다"

@@ -1,0 +1,120 @@
+# 월계점 일일 생산·마감할인 운영기록
+# 운영 기준: WOLGYE_DAILY_OPERATIONS_GUIDE.md
+# 다음 날 미사용 라벨과 폐기 확인 전까지 status는 awaiting_morning_close로 유지한다.
+
+instances:
+  - id: ops_wg_20260829
+    class: DailyStoreOperation
+    data:
+      date: '2026-08-29'
+      status: finalized
+      production:
+        - productName: 흰다리새우
+          productId: prod_sp_012
+          inputQty: 8
+          inputUnit: 2kg팩
+          inputWeightKg: 16
+          actualOutputQty: null
+          estimatedOutputQty: 51
+          estimatedOutputRange: {min: 44, max: 58}
+          dayPrice: 3480
+          priceUnit: 100g
+        - productName: 가리비관자
+          productId: prod_sp_015
+          inputQty: 10
+          inputUnit: 1kg팩
+          inputWeightKg: 10
+          actualOutputQty: null
+          estimatedOutputQty: 45
+          estimatedOutputRange: {min: 40, max: 50}
+          dayPrice: 9980
+          priceUnit: 개
+        - productName: 자숙참소라
+          productId: null
+          inputQty: 10.2
+          inputUnit: kg_추정
+          actualOutputQty: 60
+          outputQtyApproximate: true
+          dayPrice: 9800
+          listPrice: 11800
+          priceType: weekend_special_as_day_regular
+          priceUnit: 개
+        - productName: 문어해물탕
+          productId: null
+          actualOutputQty: 26
+          dayPrice: 23800
+          priceUnit: 개
+        - productName: 동태알탕
+          productId: prod_mk_015
+          actualOutputQty: 10
+          dayPrice: 19800
+          priceUnit: 개
+        - productName: 알탕
+          productId: null
+          actualOutputQty: 4
+          dayPrice: 19800
+          priceUnit: 개
+        - productName: 낙곱새
+          productId: prod_mk_018
+          actualOutputQty: 3
+          dayPrice: 23800
+          priceUnit: 개
+        - productName: 낙지볶음
+          productId: prod_mk_020
+          actualOutputQty: 9
+          dayPrice: 12800
+          priceUnit: 개
+        - productName: 주꾸미볶음
+          productId: prod_mk_019
+          actualOutputQty: 11
+          dayPrice: 12800
+          priceUnit: 개
+      discountHandling:
+        - productName: 가리비관자 버터구이
+          discountRate: 30
+          printedQty: 20
+          handling: attached_now
+          confirmedBy: user
+        - productName: 전체 기타 마감할인 출력
+          handling: preprinted_for_mart_staff
+          confirmedBy: user
+          memo: 품목별 원본 수량과 금액은 Supabase print_records_wolgye에서 조회
+        - productName: 가리비관자 버터구이
+          discountRate: 40
+          printedQty: 20
+          handling: preprinted_for_mart_staff
+          confirmedBy: user
+          memo: 오출력이 아니라 다음 할인 단계용 사전 출력
+      nextMorning:
+        checkedDate: '2026-08-30'
+        unusedLabels:
+          status: unknown
+          reason: 마트 직영 직원이 남은 미사용 라벨을 폐기한 것으로 보여 수량 확인 불가
+        waste:
+          - productName: 자숙참소라살
+            quantity: 2
+            unit: 개
+          - productName: 가리비관자
+            quantity: 3
+            unit: 개
+          - productName: 낙지볶음
+            quantity: 1
+            unit: 개
+        totalWasteQty: 6
+        reconciliationStatus: incomplete_missing_unused_label_count
+      provisionalSummary:
+        productionValueEstimate: 2817300
+        productionValueRange: {min: 2767400, max: 2867200}
+        regularAndSpecialSalesEstimate: 1687280
+        regularAndSpecialSalesRange: {min: 1637380, max: 1737180}
+        currency: KRW
+        finalized: false
+        finalizationNote: 폐기수량은 확정했으나 미사용 라벨 수가 없어 할인 단계별 판매량은 확정하지 못함
+      notes:
+        - 인쇄기록은 판매가 아니라 할인 라벨 출력이다.
+        - 다음 날 품목별 미사용 라벨과 폐기 수량을 확인한 뒤 최종 정산한다.
+        - 새우와 관자의 실제 완성 개수가 없어 현재 생산량과 금액에 추정치가 포함되어 있다.
+        - 2026-08-30 아침 직영 직원이 남은 라벨을 폐기한 것으로 보여 미사용 라벨 수를 확인하지 못했다.
+        - 폐기는 자숙참소라살 2개, 가리비관자 3개, 낙지볶음 1개로 총 6개다.
+    relations:
+      atStore: wolgye
