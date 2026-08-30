@@ -121,3 +121,97 @@ instances:
         - 폐기는 자숙참소라살 2개, 가리비관자 3개, 낙지볶음 1개로 총 6개다.
     relations:
       atStore: wolgye
+
+  - id: ops_wg_20260830
+    class: DailyStoreOperation
+    data:
+      date: '2026-08-30'
+      status: in_progress
+      production:
+        - productName: 흰다리새우
+          productId: prod_sp_012
+          inputQty: 6
+          inputUnit: 2kg팩
+          inputWeightKg: 12
+          actualOutputQty: null
+          estimatedOutputQty: 38
+          estimatedOutputRange: {min: 33, max: 44}
+          dayPrice: 3480
+          priceUnit: 100g
+        - productName: 가리비관자
+          productId: prod_sp_015
+          inputQty: 8
+          inputUnit: 1kg팩
+          inputWeightKg: 8
+          actualOutputQty: null
+          estimatedOutputQty: 36
+          estimatedOutputRange: {min: 32, max: 40}
+          dayPrice: 9980
+          priceUnit: 개
+        - productName: 자숙참소라
+          productId: null
+          actualOutputQty: 19
+          dayPrice: null
+          listPrice: 11800
+          priceType: mixed_regular_and_weekend_special
+          priceBreakdown:
+            - quantity: 17
+              unitPrice: 9800
+              type: weekend_special_as_day_regular
+            - quantity: 2
+              unitPrice: 11800
+              type: regular
+          priceUnit: 개
+        - productName: 문어해물탕
+          productId: null
+          actualOutputQty: 23
+          dayPrice: 19800
+          listPrice: 23800
+          priceType: weekend_special_as_day_regular
+          priceUnit: 개
+        - productName: 동태알탕
+          productId: prod_mk_015
+          actualOutputQty: 4
+          dayPrice: 19800
+          priceUnit: 개
+        - productName: 알탕
+          productId: null
+          actualOutputQty: 4
+          dayPrice: 19800
+          priceUnit: 개
+        - productName: 주꾸미볶음
+          productId: prod_mk_019
+          actualOutputQty: 4
+          dayPrice: 12800
+          priceUnit: 개
+        - productName: 낙지볶음
+          productId: prod_mk_020
+          actualOutputQty: 16
+          dayPrice: 12800
+          priceUnit: 개
+      discountHandling:
+        - productName: 낙지볶음
+          discountRate: 20
+          printedQty: 13
+          originalUnitPrice: 12800
+          discountUnitAmount: 2560
+          finalUnitPrice: 10240
+          finalTotal: 133120
+          handling: attached_now
+          confirmedBy: user
+          memo: 생산 추가가 아니라 20% 특가 적용 수량. 즉시 부착 완료
+      nextMorning: null
+      provisionalSummary:
+        productionQtyEstimate: 144
+        productionQtyRange: {min: 135, max: 153}
+        productionValueEstimate: 1836880
+        productionValueRange: {min: 1796960, max: 1876800}
+        currency: KRW
+        finalized: false
+      notes:
+        - 새우와 관자의 실제 완성 개수가 없어 생산수량과 금액에 추정치가 포함되어 있다.
+        - 자숙참소라 19개 중 17개는 주말특가 9,800원, 2개는 정상가 11,800원으로 집계한다.
+        - 문어해물탕 23개 전량은 주말특가 19,800원을 오늘의 정상 판매가격으로 집계한다.
+        - 할인 라벨 인쇄기록은 퇴근 전 Supabase에서 확인해 추가한다.
+    relations:
+      atStore: wolgye
