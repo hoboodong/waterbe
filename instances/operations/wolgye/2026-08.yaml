@@ -107,6 +107,9 @@ instances:
         productionValueRange: {min: 2767400, max: 2867200}
         regularAndSpecialSalesEstimate: 1687280
         regularAndSpecialSalesRange: {min: 1637380, max: 1737180}
+        salesEstimateWithDiscountPrints: 2372970
+        salesEstimateWithDiscountPrintsRange: {min: 2323070, max: 2422870}
+        discountPrintAssumption: 미사용 라벨 수를 확인할 수 없어 사전 출력 라벨이 모두 부착됐다고 가정하고 폐기 6개를 제외함
         currency: KRW
         finalized: false
         finalizationNote: 폐기수량은 확정했으나 미사용 라벨 수가 없어 할인 단계별 판매량은 확정하지 못함
