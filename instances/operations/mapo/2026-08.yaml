@@ -1,0 +1,263 @@
+# 마포점 일일 생산·마감할인 운영기록
+# 월계점 일일 운영기록 구조를 기준으로 영업일별 현장 생산량과 마감 정보를 기록한다.
+
+instances:
+  - id: ops_mp_20260831
+    class: DailyStoreOperation
+    data:
+      date: '2026-08-31'
+      status: awaiting_morning_close
+      production:
+        - productName: 주꾸미볶음
+          productId: prod_mk_026
+          actualOutputQty: 4
+          dayPrice: 12800
+          priceUnit: 개
+        - productName: 낙지볶음
+          productId: prod_mk_027
+          actualOutputQty: 4
+          dayPrice: 12800
+          priceUnit: 개
+        - productName: 국산갑오징어볶음
+          productId: prod_mk_028
+          actualOutputQty: 10
+          dayPrice: 12800
+          priceUnit: 개
+        - productName: 흰다리새우
+          productId: prod_sp_019
+          inputQty: 1
+          inputUnit: 2kg팩
+          inputWeightKg: 2
+          actualOutputQty: null
+          dayPrice: 3480
+          priceUnit: 100g
+        - productName: 가리비관자
+          productId: prod_sp_022
+          outputUnitWeightG: 400
+          actualOutputQty: 6
+          dayPrice: 9980
+          priceUnit: 개
+        - productName: 흰다리새우살(꼬리있음)
+          productId: prod_sp_020
+          inputQty: 4
+          inputUnit: 900g팩
+          inputWeightKg: 3.6
+          outputUnitWeightG: 300
+          actualOutputQty: null
+          estimatedOutputQty: 12
+          outputQtyApproximate: true
+          dayPrice: 3980
+          priceUnit: 100g
+        - productName: 작은 흰다리새우살
+          productId: prod_sp_021
+          outputUnitWeightG: 230
+          outputWeightApproximate: true
+          actualOutputQty: 6
+          dayPrice: 3580
+          priceUnit: 100g
+        - productName: 손질낙지
+          productId: prod_sp_024
+          inputQty: 1
+          inputUnit: 6kg박스
+          inputPackCount: 6
+          inputWeightKg: 6
+          outputUnitWeightG: 300
+          outputWeightApproximate: true
+          actualOutputQty: null
+          estimatedOutputQty: 20
+          dayPrice: 3580
+          priceUnit: 100g
+        - productName: 푸짐한 알탕
+          productId: prod_mk_024
+          actualOutputQty: 2
+          dayPrice: 19800
+          priceUnit: 개
+        - productName: 문어해물탕
+          productId: prod_mk_021
+          actualOutputQty: 2
+          dayPrice: 23800
+          priceUnit: 개
+        - productName: 볼락매운탕
+          productId: null
+          actualOutputQty: 2
+          dayPrice: 21800
+          priceUnit: 개
+        - productName: 동태알탕
+          productId: prod_mk_023
+          actualOutputQty: 2
+          dayPrice: 19800
+          priceUnit: 개
+        - productName: 전복
+          productId: null
+          outputUnitWeightG: 200
+          outputWeightApproximate: true
+          actualOutputQty: 6
+          dayPrice: 5580
+          priceUnit: 100g
+        - productName: 낙곱새
+          productId: prod_mk_025
+          actualOutputQty: 2
+          dayPrice: 21800
+          priceUnit: 개
+      discountHandling:
+        - productName: 푸짐한 알탕
+          discountRate: 35
+          printedQty: 2
+          finalCurrentLabelQty: 2
+          originalTotal: 39600
+          discountTotal: 13860
+          finalTotal: 25740
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_mapo
+        - productName: 문어해물탕
+          discountRate: 35
+          printedQty: 1
+          finalCurrentLabelQty: 1
+          originalTotal: 23800
+          discountTotal: 8330
+          finalTotal: 15470
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_mapo
+        - productName: 동태 알탕
+          discountRate: 35
+          printedQty: 1
+          finalCurrentLabelQty: 1
+          originalTotal: 19800
+          discountTotal: 6930
+          finalTotal: 12870
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_mapo
+        - productName: 낙곱새
+          discountRate: 38
+          printedQty: 2
+          supersededQty: 1
+          finalCurrentLabelQty: 1
+          originalTotal: 21800
+          discountTotal: 8290
+          finalTotal: 13510
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_mapo
+          memo: 같은 상품의 36% 출력 1장은 38% 라벨로 교체되어 최종 집계에서 제외
+        - productName: 낙지볶음
+          discountRate: 38
+          printedQty: 5
+          misprintQty: 1
+          finalCurrentLabelQty: 4
+          originalTotal: 51200
+          discountTotal: 19480
+          finalTotal: 31720
+          handling: mixed_attached_and_misprint
+          confirmedBy: user
+          source: Supabase print_records_mapo
+          memo: 5장 중 1장은 현장 확인에 따른 오출력
+        - productName: 주꾸미볶음
+          discountRate: 38
+          printedQty: 2
+          finalCurrentLabelQty: 2
+          originalTotal: 25600
+          discountTotal: 9740
+          finalTotal: 15860
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_mapo
+        - productName: 국산 갑오징어볶음
+          discountRate: 36
+          printedQty: 6
+          finalCurrentLabelQty: 6
+          originalTotal: 82800
+          discountTotal: 29820
+          finalTotal: 52980
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_mapo
+        - productName: 흰다리새우
+          discountRate: 30
+          printedQty: 16
+          supersededQty: 7
+          finalCurrentLabelQty: 9
+          originalTotal: 84920
+          discountTotal: 25500
+          finalTotal: 59420
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_mapo
+          memo: 30% 출력 16장 중 7장은 40% 라벨로 교체
+        - productName: 흰다리새우
+          discountRate: 40
+          printedQty: 7
+          finalCurrentLabelQty: 7
+          originalTotal: 89760
+          discountTotal: 35930
+          finalTotal: 53830
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_mapo
+          memo: 앞서 출력한 30% 라벨 7개의 최종 할인 단계
+        - productName: 낙지
+          discountRate: 35
+          printedQty: 2
+          finalCurrentLabelQty: 2
+          originalTotal: 21298
+          discountTotal: 7468
+          finalTotal: 13830
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_mapo
+        - productName: 전복(소)
+          discountRate: 35
+          printedQty: 4
+          finalCurrentLabelQty: 4
+          originalTotal: 44417
+          discountTotal: 15567
+          finalTotal: 28850
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_mapo
+        - productName: 가리비관자살
+          discountRate: 30
+          printedQty: 6
+          finalCurrentLabelQty: 6
+          originalTotal: 59880
+          discountTotal: 18000
+          finalTotal: 41880
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_mapo
+      nextMorning: null
+      provisionalSummary:
+        productionQtyEstimate: 78
+        productionValueEstimate: 1048324
+        closingDiscountPrintedQty: 54
+        closingDiscountSupersededQty: 8
+        closingDiscountMisprintQty: 1
+        closingDiscountCurrentLabelQty: 45
+        closingDiscountCurrentOriginalTotal: 564875
+        closingDiscountCurrentAmountTotal: 198915
+        closingDiscountCurrentFinalTotal: 365960
+        closingDiscountHandling: all_attached_before_departure
+        currency: KRW
+        finalized: false
+      notes:
+        - 실제 완성수량은 주꾸미볶음 4개, 낙지볶음 4개, 국산갑오징어볶음 10개다.
+        - 세 품목의 당일 판매가격은 개당 12,800원이다.
+        - 흰다리새우 원물 1팩은 월계점과 동일한 2kg로 기록했으며 실제 완성수량은 미확인 상태다.
+        - 가리비관자는 완성품 1팩당 400g으로 6팩 생산했다.
+        - 흰다리새우살은 900g 원물 4팩을 투입해 300g 기준 약 12개로 계산했다.
+        - 작은 흰다리새우살은 완성품 1개당 약 230g으로 6개 생산했다.
+        - 손질낙지는 6kg 1박스(1kg팩 6개)를 투입해 300g 기준 약 20개로 계산했다.
+        - 푸짐한 알탕은 2개 생산했으며 개당 가격은 19,800원이다.
+        - 문어해물탕 2개, 볼락매운탕 2개, 동태알탕 2개를 생산했다.
+        - 전복은 완성품 1개당 약 200g으로 6개 포장했다.
+        - 낙곱새는 2개 생산했으며 개당 가격은 21,800원이다.
+        - 마포점은 퇴근 전에 마감 라벨을 모두 직접 부착하며 직영 직원용 사전 출력은 없다.
+        - 마감세일 출력 54장 중 재할인으로 교체된 이전 라벨 8장과 오출력 1장을 제외한 최종 부착 상품은 45개다.
+        - 흰다리새우 30% 라벨 7장은 40%로, 낙곱새 36% 라벨 1장은 38%로 교체했다.
+        - 낙지볶음 38% 출력 5장 중 1장은 오출력으로 확인되어 실제 부착은 4개다.
+        - 할인기록의 흰다리새우 16개는 생새우와 흰다리새우살 2종을 합친 통합 분류로 해석하며 이전 재고로 보지 않는다.
+        - 다음 날 폐기 수량을 확인하기 전까지 할인 부착 상품을 판매량으로 확정하지 않는다.
+    relations:
+      atStore: mapo
