@@ -1,155 +1,25 @@
 # AGENTS.md
 
-## Project Overview
+Waterbe 업무를 시작할 때 [WATERBE_GUIDE.md](WATERBE_GUIDE.md)에서 해당 업무 지침을 찾아 읽는다.
 
-Waterbe is a YAML-first operations data repository for a seafood meal-kit and retail business operating in three E-mart stores.
+## 지침 연결
 
-| Store ID | Store |
+| 작업 | 먼저 읽을 문서 |
 | --- | --- |
-| `wangsimni` | 왕십리점 |
-| `mapo` | 마포점 |
-| `wolgye` | 월계점 |
-| `mia` | 미아점 |
+| 전체 업무 지침 찾기 | [WATERBE_GUIDE.md](WATERBE_GUIDE.md) |
+| 매장과 시코드 운영상품 | [매장·상품 지침](docs/guides/STORE_PRODUCTS_GUIDE.md) |
+| 재료, 레시피와 원가 | [레시피·원가 지침](docs/guides/RECIPES_COST_GUIDE.md) |
+| 시코드 앱과 CL-5200 저울 | [시코드·저울 연결 지침](docs/guides/SEACODE_SCALE_GUIDE.md) |
+| 생산량과 생산실적 | [생산량 지침](docs/guides/PRODUCTION_GUIDE.md) |
+| 재고와 입고 | [재고·입고 지침](docs/guides/INVENTORY_INBOUND_GUIDE.md) |
+| YAML 작성과 검증 | [공통 데이터 작성·검증 지침](docs/guides/DATA_RULES_GUIDE.md) |
+| 직원과 일정 | [PERSONNEL_GUIDE.md](PERSONNEL_GUIDE.md) |
+| 매출 조회와 동기화 | [instances/sales/README.md](instances/sales/README.md) |
+| 월계점 일일 운영기록 | [WOLGYE_DAILY_OPERATIONS_GUIDE.md](WOLGYE_DAILY_OPERATIONS_GUIDE.md) |
+| 클래스, 필드와 제약조건 | [schema.yaml](schema.yaml) |
 
-The source of truth is the YAML data under `instances/`, with the ontology and field definitions in `schema.yaml`.
+## 공통 원칙
 
-Before changing data:
-
-- Read `WATERBE_GUIDE.md` before changing business data.
-- Read `PERSONNEL_GUIDE.md` before changing staff or schedule data.
-- Read `instances/sales/README.md` before answering sales questions.
-
-## Repository Layout
-
-### Core Files
-
-| Path | Purpose |
-| --- | --- |
-| `schema.yaml` | Ontology schema, classes, relations, and constraints. |
-| `WATERBE_GUIDE.md` | Business data guide for products, ingredients, recipes, inventory, production, and sales. |
-| `PERSONNEL_GUIDE.md` | Staff, schedule, and Telegram permission rules. |
-
-### Data Directories
-
-| Path | Purpose |
-| --- | --- |
-| `instances/master/` | Baseline master data: stores, categories, products, ingredients, purchase specs, price history, and recipes. |
-| `instances/staff.yaml` | Staff and Telegram role data. |
-| `instances/schedules.yaml` | Work and operational schedules. |
-| `instances/inventory/` | Store inventory snapshots and inbound records. |
-| `instances/production/` | Production plans and production templates. |
-| `instances/sales/` | Sales-only workspace. |
-| `scripts/` | Operational import, export, sync, and calculation scripts. |
-
-## Data Editing Rules
-
-### General YAML Rules
-
-- Preserve the existing YAML shape: top-level `instances:` containing records with `id`, `class`, `data`, and optional `relations`.
-- Use existing IDs and names exactly when creating references. Check the target file before adding a relation.
-- Dates must use `YYYY-MM-DD`. Quote date strings when nearby files do so.
-- Do not overwrite historical business records unless the user explicitly asks for correction of erroneous data.
-- Preserve Korean business labels and comments.
-- Do not reformat large YAML files just to make a small data change.
-
-### Historical Records
-
-| Class | Rule |
-| --- | --- |
-| `PriceHistory` | Add a new record for a price change. Do not edit older price history records to represent a new price. |
-| `Recipe` | Preserve history with `effectiveFrom` and `effectiveTo` when recipe, price, or ingredient amounts change. |
-| `ProductionTemplate` | Close the current active record by setting `effectiveTo` to the day before the new `effectiveFrom`, then add a new record with `effectiveTo: null`. |
-| `ProductionPlan` | Do not change `dailyPlan` after creation. Put changes in `dailyAdjusted`, and actuals in `dailyActual`. |
-| `InventorySnapshot` / `InboundRecord` | Append a new record for each new count or receipt. |
-
-### Staff Rules
-
-- `Staff.telegramId` must remain unique.
-- `role: 팀장` uses `relations.atStore: null`.
-- `role: 직원` requires a store.
-
-## ID Conventions
-
-| Record Type | Pattern |
-| --- | --- |
-| Staff | `staff_001`, `staff_002`, ... |
-| Schedule | `sched_001`, `sched_002`, ... |
-| Production plan | `plan_{store-abbrev}_YYYYMMDD_{product-abbrev}` |
-| Inventory snapshot | `snap_{store-abbrev}_YYYYMMDD_{ingredient-abbrev}` |
-| Inbound record | `inbound_{store-abbrev}_YYYYMMDD_{sequence}` |
-
-For product, ingredient, purchase spec, recipe, template, and price history IDs, follow the existing per-file conventions.
-
-### Store Abbreviations
-
-| Abbreviation | Store |
-| --- | --- |
-| `wg` | 월계점 |
-
-Use the established abbreviation already present in the target file for other stores.
-
-## Script Notes
-
-- Scripts are Python 3 CLIs and use PyYAML where YAML parsing is needed.
-- `scripts/namseon_sales.py` stores generated SQLite files under `instances/sales/namseon/`; `*.db`, `*.db-shm`, and `*.db-wal` are ignored by git.
-- `scripts/namseon_drive_sync.py` depends on the external `gog` CLI for Google Drive and Sheets operations.
-- `scripts/sync_to_supabase.py` requires `SUPABASE_URL` and `SUPABASE_KEY`.
-- `scripts/export_github_data.py` can update GitHub when `GITHUB_TOKEN` is set.
-- Some scripts default to `~/.openclaw/shared/waterbe` for local operational data. When working in this repository, verify whether the user intends repo-local files or that shared path.
-
-## Sales Query Rules
-
-- For sales questions, start from `instances/sales/README.md`.
-- For Namseon, Google Drive, or monthly store sales questions, query `instances/sales/namseon/namseon_sales.db` through `scripts/namseon_sales.py` instead of scanning Drive repeatedly.
-- If the user says new Drive files were added or asks to sync sales, run the sync wrapper first. It scans both Google Drive root and the Namseon sales folder, imports new files, moves root-level source sales files into the matching monthly folder, and uploads the DB:
-
-```bash
-scripts/namseon_sync_now.sh
-```
-
-- For duplicate dates, keep only the selected latest Google Sheets source chosen by `scripts/namseon_drive_sync.py`.
-- When the user asks to exclude products, pass each keyword with `--exclude`.
-- If a value is net of a 20% commission and the user asks for the gross amount, calculate `net / 0.8`.
-- When answering sales summaries that may be pasted into Telegram, avoid wide Markdown tables. Use compact text blocks that stay readable on mobile:
-
-```text
-2025 추석 전후 매출 비교
-행사매출 제외 / 10월 9일 데이터 없음
-
-[합계 순위]
-1위 왕십리점 16,644,428원
-2위 미아점 9,977,145원
-
-[구간별 매출]
-왕십리점
-전 3일 11,762,690원 / 당일 2,005,848원 / 후 2일 2,875,890원
-```
-
-## Validation
-
-Run lightweight validation after edits:
-
-```bash
-python3 - <<'PY'
-from pathlib import Path
-import yaml
-
-for path in sorted(Path('.').glob('**/*.yaml')):
-    if '.git' in path.parts:
-        continue
-    with path.open(encoding='utf-8') as f:
-        yaml.safe_load(f)
-    print(path)
-PY
-```
-
-For Namseon sales changes, also run the relevant CLI command, for example:
-
-```bash
-python3 scripts/namseon_sales.py --help
-```
-
-## Collaboration Notes
-
-- Keep changes narrowly scoped to the user request.
-- Before deleting, renaming, or rewriting records, confirm the intent unless the request is explicit.
+- 사용자의 요청 범위만 변경한다.
+- 삭제, 이름 변경 또는 기록 재작성은 사용자가 명시적으로 요청하지 않았다면 먼저 확인한다.
+- 여러 업무영역이 연결된 작업은 관련 지침을 모두 읽고 처리한다.
