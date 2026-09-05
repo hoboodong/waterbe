@@ -1,0 +1,252 @@
+# 월계점 일일 생산·마감할인 운영기록
+# 운영 기준: WOLGYE_DAILY_OPERATIONS_GUIDE.md
+
+instances:
+  - id: ops_wg_20260905
+    class: DailyStoreOperation
+    data:
+      date: '2026-09-05'
+      status: awaiting_morning_close
+      production:
+        - productName: 흰다리새우
+          productId: prod_sp_012
+          inputQty: 12
+          inputUnit: 2kg팩
+          inputWeightKg: 24
+          actualOutputQty: null
+          estimatedOutputQty: 76
+          estimatedOutputRange: {min: 66, max: 88}
+          outputQtyApproximate: true
+          memo: 1박스 6팩과 추가 6팩 투입
+        - productName: 가리비관자
+          productId: prod_sp_015
+          inputQty: 1
+          inputUnit: 10kg박스
+          inputPackCount: 10
+          inputWeightKg: 10
+          piecesPerOutputPack: 8
+          actualOutputQty: null
+          estimatedOutputQty: 45
+          estimatedOutputRange: {min: 40, max: 50}
+          outputQtyApproximate: true
+          memo: 이번 생산분은 작은 알로 1팩당 8알 구성
+        - productName: 자숙참소라
+          productId: null
+          actualOutputQty: 28
+        - productName: 주꾸미볶음
+          productId: prod_mk_019
+          actualOutputQty: 3
+        - productName: 낙지볶음
+          productId: prod_mk_020
+          actualOutputQty: 9
+        - productName: 낙곱새
+          productId: prod_mk_018
+          actualOutputQty: 6
+        - productName: 문어해물탕
+          productId: null
+          actualOutputQty: 20
+        - productName: 동태알탕
+          productId: prod_mk_015
+          actualOutputQty: 8
+        - productName: 알탕
+          productId: null
+          actualOutputQty: 4
+      discountHandling:
+        - productName: 흰다리새우
+          discountRate: 20
+          printedQty: 39
+          attachedQty: 39
+          originalTotal: 402750
+          discountTotal: 80690
+          finalTotal: 322060
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 자숙 참소라살
+          discountRate: 20
+          printedQty: 10
+          attachedQty: 10
+          originalTotal: 118000
+          discountTotal: 23600
+          finalTotal: 94400
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 가리비관자 버터구이
+          discountRate: 20
+          printedQty: 14
+          attachedQty: 14
+          originalTotal: 139720
+          discountTotal: 28000
+          finalTotal: 111720
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 문어해물탕
+          discountRate: 20
+          printedQty: 14
+          attachedQty: 14
+          originalTotal: 333200
+          discountTotal: 66640
+          finalTotal: 266560
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 낙곱새
+          discountRate: 20
+          printedQty: 6
+          attachedQty: 6
+          originalTotal: 142800
+          discountTotal: 28560
+          finalTotal: 114240
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 동태 알탕
+          discountRate: 20
+          printedQty: 6
+          attachedQty: 6
+          originalTotal: 118800
+          discountTotal: 23760
+          finalTotal: 95040
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 낙지볶음
+          discountRate: 20
+          printedQty: 6
+          attachedQty: 6
+          originalTotal: 76800
+          discountTotal: 15360
+          finalTotal: 61440
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 주꾸미볶음
+          discountRate: 20
+          printedQty: 2
+          attachedQty: 2
+          originalTotal: 25600
+          discountTotal: 5120
+          finalTotal: 20480
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 낙지
+          discountRate: 20
+          printedQty: 3
+          attachedQty: 3
+          originalTotal: 29510
+          discountTotal: 5910
+          finalTotal: 23600
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 흰다리새우
+          discountRate: 35
+          printedQty: 25
+          attachedQty: 25
+          originalTotal: 253970
+          discountTotal: 88960
+          finalTotal: 165010
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+          memo: 첫 20% 할인 후 다음 할인 단계
+        - productName: 문어해물탕
+          discountRate: 30
+          printedQty: 9
+          attachedQty: 9
+          originalTotal: 214200
+          discountTotal: 64260
+          finalTotal: 149940
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 가리비관자 버터구이
+          discountRate: 30
+          printedQty: 11
+          attachedQty: 11
+          originalTotal: 109780
+          discountTotal: 33000
+          finalTotal: 76780
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 자숙 참소라살
+          discountRate: 30
+          printedQty: 6
+          attachedQty: 6
+          originalTotal: 70800
+          discountTotal: 21240
+          finalTotal: 49560
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 주꾸미볶음
+          discountRate: 30
+          printedQty: 2
+          attachedQty: 2
+          originalTotal: 25600
+          discountTotal: 7680
+          finalTotal: 17920
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 낙지볶음
+          discountRate: 30
+          printedQty: 6
+          attachedQty: 6
+          originalTotal: 76800
+          discountTotal: 23040
+          finalTotal: 53760
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 동태 알탕
+          discountRate: 30
+          printedQty: 5
+          attachedQty: 5
+          originalTotal: 99000
+          discountTotal: 29700
+          finalTotal: 69300
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 낙곱새
+          discountRate: 30
+          printedQty: 5
+          attachedQty: 5
+          originalTotal: 119000
+          discountTotal: 35700
+          finalTotal: 83300
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 낙지
+          discountRate: 30
+          printedQty: 3
+          attachedQty: 3
+          originalTotal: 29500
+          discountTotal: 8860
+          finalTotal: 20640
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+          memo: 첫 20% 할인 후 다음 할인 단계
+      provisionalSummary:
+        productionValueEstimate: 2622612
+        finalAppliedDiscountEstimate: 381430
+        postDiscountProductionValueEstimate: 2241182
+        currency: KRW
+        finalized: false
+        calculationBasis:
+          - 생산금액은 오늘 생산수량에 정상가를 적용한 추정액이다.
+          - 같은 상품에 여러 할인단계를 부착한 경우 마지막 할인율만 반영했다.
+          - 오늘 생산목록에 없는 낙지 할인은 할인후생산금액에서 제외했다.
+          - 할인후생산금액은 할인 라벨 부착 기준이며 실제 매출이 아니다.
+      notes:
+        - 새우와 관자는 실제 완제품 수량이 없어 기존 운영 환산기준으로 추정했다.
+        - 낙곱새는 오늘 실제 생산한 추가 생산상품으로 포함했다.
+    relations:
+      atStore: wolgye
