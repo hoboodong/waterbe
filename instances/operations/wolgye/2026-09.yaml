@@ -711,6 +711,98 @@ instances:
           handling: attached_now
           confirmedBy: user
           source: Supabase print_records_wolgye
+        - productName: 낙지볶음
+          discountRate: 20
+          printedQty: 13
+          handling: unknown
+          source: Supabase print_records_wolgye
+        - productName: 흰다리새우
+          discountRate: 35
+          printedQty: 20
+          handling: unknown
+          source: Supabase print_records_wolgye
+        - productName: 주꾸미볶음
+          discountRate: 20
+          printedQty: 5
+          handling: unknown
+          source: Supabase print_records_wolgye
+        - productName: 낙곱새
+          discountRate: 30
+          printedQty: 4
+          handling: unknown
+          source: Supabase print_records_wolgye
+        - productName: 낙지전복해물탕
+          discountRate: 20
+          printedQty: 5
+          handling: unknown
+          source: Supabase print_records_wolgye
+        - productName: 문어해물탕
+          discountRate: 20
+          printedQty: 5
+          handling: unknown
+          source: Supabase print_records_wolgye
+        - productName: 자숙참소라
+          discountRate: 30
+          printedQty: 14
+          handling: unknown
+          source: Supabase print_records_wolgye
+        - productName: 동태알탕
+          discountRate: 20
+          printedQty: 1
+          handling: unknown
+          source: Supabase print_records_wolgye
+        - productName: 알탕
+          discountRate: 20
+          printedQty: 1
+          handling: unknown
+          source: Supabase print_records_wolgye
+        - productName: 낙지볶음
+          discountRate: 30
+          printedQty: 11
+          handling: unknown
+          source: Supabase print_records_wolgye
+        - productName: 문어해물탕
+          discountRate: 40
+          printedQty: 5
+          handling: preprinted_for_mart_staff
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 낙지전복해물탕
+          discountRate: 40
+          printedQty: 5
+          handling: preprinted_for_mart_staff
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 낙곱새
+          discountRate: 40
+          printedQty: 4
+          handling: preprinted_for_mart_staff
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 낙지볶음
+          discountRate: 40
+          printedQty: 11
+          handling: preprinted_for_mart_staff
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 주꾸미볶음
+          discountRate: 40
+          printedQty: 5
+          handling: preprinted_for_mart_staff
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 자숙참소라
+          discountRate: 40
+          printedQty: 14
+          handling: preprinted_for_mart_staff
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 가리비관자
+          discountRate: 40
+          printedQty: 4
+          handling: preprinted_for_mart_staff
+          confirmedBy: user
+          source: Supabase print_records_wolgye
       provisionalSummary:
         productionValueEstimate: 2320860
         finalAppliedDiscountEstimate: 136000
@@ -724,5 +816,7 @@ instances:
           - 새우와 관자의 완제품 수량은 추정이다.
           - 전날 새우 주말특가는 오늘 생산에 자동 적용하지 않았다.
           - 9월 19일 시코드 출력기록에서 새우 10% 45개, 관자 20% 12개, 소라 20% 27개의 할인금액을 확인해 반영했다.
+          - 40% 라벨 48장은 직영직원이 21시경 부착하도록 미리 출력한 것으로, 실제 부착 확인 전까지 할인후생산금액에서 제외했다.
+          - 이후 조회된 20%, 30%, 35% 라벨은 출력수량만 기록하고 실제 부착 여부가 미확인되어 할인후생산금액에서 제외했다.
     relations:
       atStore: wolgye
