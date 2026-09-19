@@ -630,3 +630,99 @@ instances:
         - 이 운영기록에서 사용자가 말한 동태탕은 동태알탕과 같은 상품으로 확인했다.
     relations:
       atStore: wolgye
+  - id: ops_wg_20260919
+    class: DailyStoreOperation
+    data:
+      date: '2026-09-19'
+      status: in_progress
+      production:
+        - productName: 흰다리새우
+          productId: prod_sp_012
+          inputQty: 10
+          inputUnit: 2kg팩
+          inputWeightKg: 20
+          actualOutputQty: null
+          estimatedOutputQty: 63
+          estimatedOutputRange: {min: 55, max: 73}
+          outputQtyApproximate: true
+        - productName: 문어해물탕
+          productId: null
+          actualOutputQty: 13
+        - productName: 낙지전복해물탕
+          productId: prod_mk_014
+          actualOutputQty: 6
+          dayPrice: 23800
+          priceUnit: 개
+        - productName: 동태알탕
+          productId: prod_mk_015
+          actualOutputQty: 6
+        - productName: 알탕
+          productId: null
+          actualOutputQty: 4
+        - productName: 낙곱새
+          productId: prod_mk_018
+          actualOutputQty: 4
+        - productName: 낙지볶음
+          productId: prod_mk_020
+          actualOutputQty: 13
+        - productName: 주꾸미볶음
+          productId: prod_mk_019
+          actualOutputQty: 7
+        - productName: 가리비관자
+          productId: prod_sp_015
+          inputQty: 6
+          inputUnit: 1kg팩
+          inputWeightKg: 6
+          actualOutputQty: null
+          estimatedOutputQty: 27
+          estimatedOutputRange: {min: 24, max: 30}
+          outputQtyApproximate: true
+        - productName: 자숙참소라
+          productId: null
+          actualOutputQty: 30
+      discountHandling:
+        - productName: 흰다리새우
+          discountRate: 10
+          printedQty: 45
+          attachedQty: 45
+          originalTotal: 480900
+          discountTotal: 48280
+          finalTotal: 432620
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 가리비관자
+          discountRate: 20
+          printedQty: 12
+          attachedQty: 12
+          originalTotal: 119760
+          discountTotal: 24000
+          finalTotal: 95760
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+        - productName: 자숙참소라
+          discountRate: 20
+          printedQty: 27
+          attachedQty: 27
+          originalTotal: 318600
+          discountTotal: 63720
+          finalTotal: 254880
+          handling: attached_now
+          confirmedBy: user
+          source: Supabase print_records_wolgye
+      provisionalSummary:
+        productionValueEstimate: 2320860
+        finalAppliedDiscountEstimate: 136000
+        postDiscountProductionValueEstimate: 2184860
+        currency: KRW
+        finalized: false
+        calculationBasis:
+          - 팩은 원물 투입, 개는 완제품 생산으로 기록했다.
+          - 새우 10팩은 20kg에 100g당 3480원을 적용했다.
+          - 관자 6팩은 약 27개에 개당 9980원을 적용했다.
+          - 새우와 관자의 완제품 수량은 추정이다.
+          - 전날 새우 주말특가는 오늘 생산에 자동 적용하지 않았다.
+          - 9월 19일 시코드 출력기록에서 새우 10% 45개, 관자 20% 12개, 소라 20% 27개의 할인금액을 확인해 반영했다.
+    relations:
+      atStore: wolgye
