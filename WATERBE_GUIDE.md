@@ -16,6 +16,13 @@
 | 매출 조회·동기화 | [매출 지침](instances/sales/README.md) |
 | 월계점 일일 생산·할인·폐기 연결 | [월계점 일일 운영 지침](WOLGYE_DAILY_OPERATIONS_GUIDE.md) |
 
+## 사업 기준·아카이브
+
+| 구분 | 문서 |
+| --- | --- |
+| 합의된 사업 기준(진행 중) | [BUSINESS_CANON](docs/guides/BUSINESS_CANON.md) |
+| 재작성 전 구 가이드·온톨로지 초안 | [archive: 2026-09-pre-rewrite](docs/archive/2026-09-pre-rewrite/) |
+
 ## 기준 정의
 
 클래스, 필드, 관계와 제약조건의 기술적 기준은 [schema.yaml](schema.yaml)을 따른다.
