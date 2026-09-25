@@ -6,6 +6,7 @@
 
 | 업무 | 지침 |
 | --- | --- |
+| 매장 생산량·저울누계·할인·폐기·매출 종합 조회 | [통합 운영 조회 지침](docs/guides/DAILY_STORE_REPORT_GUIDE.md) |
 | 매장, 시코드 운영상품, 상품 ID와 상태 | [매장·상품 지침](docs/guides/STORE_PRODUCTS_GUIDE.md) |
 | 재료, 발주규격, 레시피, 가격과 원가 | [레시피·원가 지침](docs/guides/RECIPES_COST_GUIDE.md) |
 | 시코드 앱과 CL-5200 저울 연결·상태 검증 | [시코드·저울 연결 지침](docs/guides/SEACODE_SCALE_GUIDE.md) |
