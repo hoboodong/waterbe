@@ -10,7 +10,7 @@
 | 매장, 시코드 운영상품, 상품 ID와 상태 | [매장·상품 지침](docs/guides/STORE_PRODUCTS_GUIDE.md) |
 | 재료, 발주규격, 레시피, 가격과 원가 | [레시피·원가 지침](docs/guides/RECIPES_COST_GUIDE.md) |
 | 시코드 앱과 CL-5200 저울 연결·상태 검증 | [시코드·저울 연결 지침](docs/guides/SEACODE_SCALE_GUIDE.md) |
-| 기본생산량, 주간계획, 조정과 생산실적 | [생산량 지침](docs/guides/PRODUCTION_GUIDE.md) |
+| 실제 생산량, 현장 신고와 날짜별 운영기록 | [생산량 지침](docs/guides/PRODUCTION_GUIDE.md) |
 | 재고실사와 입고기록 | [재고·입고 지침](docs/guides/INVENTORY_INBOUND_GUIDE.md) |
 | YAML 작성, 이력 보존과 검증 | [공통 데이터 작성·검증 지침](docs/guides/DATA_RULES_GUIDE.md) |
 | 직원, 근무일정과 텔레그램 권한 | [인사관리 지침](PERSONNEL_GUIDE.md) |

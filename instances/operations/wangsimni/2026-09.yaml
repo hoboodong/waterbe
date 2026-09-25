@@ -1,0 +1,78 @@
+instances:
+  - id: ops_ws_20260901
+    class: DailyStoreOperation
+    data:
+      date: '2026-09-01'
+      status: in_progress
+      production:
+        - productId: prod_mk_008
+          reportedQty: 6
+          reportedUnit: null
+          source: legacy_production_report
+          legacySourceId: plan_ws_20260831_mk008
+          memo: "2026-09-01 생산 실적 입력 (사전 계획 없음)"
+        - productId: prod_mk_016
+          reportedQty: 2
+          reportedUnit: null
+          source: legacy_production_report
+          legacySourceId: plan_ws_20260831_mk016
+          memo: "2026-09-01 생산 실적 입력 (사전 계획 없음)"
+        - productId: prod_mk_015
+          reportedQty: 2
+          reportedUnit: null
+          source: legacy_production_report
+          legacySourceId: plan_ws_20260831_mk015
+          memo: "2026-09-01 생산 실적 입력 (사전 계획 없음)"
+        - productId: prod_mk_003
+          reportedQty: 6
+          reportedUnit: null
+          source: legacy_production_report
+          legacySourceId: plan_ws_20260831_mk003
+          memo: "2026-09-01 생산 실적 입력 (사전 계획 없음)"
+        - productId: prod_mk_011
+          reportedQty: 6
+          reportedUnit: null
+          source: legacy_production_report
+          legacySourceId: plan_ws_20260831_mk011
+          memo: "2026-09-01 생산 실적 입력 (사전 계획 없음)"
+        - productId: prod_mk_012
+          reportedQty: 4
+          reportedUnit: null
+          source: legacy_production_report
+          legacySourceId: plan_ws_20260831_mk012
+          memo: "2026-09-01 생산 실적 입력 (사전 계획 없음)"
+        - productId: prod_sp_001
+          reportedQty: 20
+          reportedUnit: null
+          source: legacy_production_report
+          legacySourceId: plan_ws_20260831_sp001
+          memo: "2026-09-01 생산 실적 입력 (사전 계획 없음)"
+        - productId: prod_sp_005
+          reportedQty: 8
+          reportedUnit: null
+          source: legacy_production_report
+          legacySourceId: plan_ws_20260831_sp005
+          memo: "2026-09-01 생산 실적 입력 (사전 계획 없음); 1팩 약 230g, 100g당 5,580원"
+        - productId: prod_sp_010
+          reportedQty: 1
+          reportedUnit: 박스
+          source: legacy_production_report
+          legacySourceId: plan_ws_20260831_sp010
+          memo: "2026-09-01 생산 실적 입력 (사전 계획 없음); 단위: 박스"
+        - productId: prod_sp_004
+          reportedQty: 5
+          reportedUnit: 팩
+          source: legacy_production_report
+          legacySourceId: plan_ws_20260831_sp004
+          memo: "2026-09-01 생산 실적 입력 (사전 계획 없음); 단위: 팩"
+        - productId: prod_sp_002
+          reportedQty: 4
+          reportedUnit: 팩
+          source: legacy_production_report
+          legacySourceId: plan_ws_20260831_sp002
+          memo: "2026-09-01 생산 실적 입력 (사전 계획 없음); 단위: 팩"
+      notes:
+        - 2026-09-25 구 계획 시스템 폐기 시 실제 신고 11건을 이관함. 당시 수량과 원문 메모를 보존함.
+        - 미기재 단위는 임의로 확정하지 않음. 원물 투입량과 완제품 수량의 추가 구분이 필요한 과거 신고이며 저울 검증값이 아님.
+    relations:
+      atStore: wangsimni
