@@ -7,6 +7,7 @@ Waterbe 업무를 시작할 때 [WATERBE_GUIDE.md](WATERBE_GUIDE.md)에서 해�
 | 작업 | 먼저 읽을 문서 |
 | --- | --- |
 | 전체 업무 지침 찾기 | [WATERBE_GUIDE.md](WATERBE_GUIDE.md) |
+| 매장 생산·저울누계·할인·매출 종합 조회 | [통합 운영 조회 지침](docs/guides/DAILY_STORE_REPORT_GUIDE.md) |
 | 매장과 시코드 운영상품 | [매장·상품 지침](docs/guides/STORE_PRODUCTS_GUIDE.md) |
 | 재료, 레시피와 원가 | [레시피·원가 지침](docs/guides/RECIPES_COST_GUIDE.md) |
 | 시코드 앱과 CL-5200 저울 | [시코드·저울 연결 지침](docs/guides/SEACODE_SCALE_GUIDE.md) |
