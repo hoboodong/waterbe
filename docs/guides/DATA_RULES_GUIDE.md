@@ -13,16 +13,16 @@
 
 ## 이력 보존
 
-- PriceHistory, Recipe, ProductionTemplate은 변경 시 새 레코드를 추가한다.
-- ProductionPlan의 `dailyPlan`은 유지하고 조정은 `dailyAdjusted`에 기록한다.
+- PriceHistory, Recipe은 변경 시 새 레코드를 추가한다.
+- 생산 현장정보는 날짜별 DailyStoreOperation에 저장하고 출처·기존 신고·수정 근거를 보존한다.
 - InventorySnapshot과 InboundRecord는 발생할 때마다 새 레코드를 추가한다.
 - 명시적인 오류 정정 요청이 아니면 과거 업무기록을 덮어쓰지 않는다.
 
 ## 주요 무결성 조건
 
 - SalesRecord의 `totalAmount`는 `qty × unitPrice`와 일치해야 한다.
-- 같은 매장·상품에 현재 유효한 Recipe와 ProductionTemplate은 각각 최대 하나다.
-- ProductionPlan의 상품·매장·주 시작일 조합은 유일하다.
+- 같은 매장·상품에 현재 유효한 Recipe는 최대 하나다.
+- DailyStoreOperation의 매장·영업일 조합은 유일하다.
 - Staff의 `telegramId`는 유일하다.
 
 ## 변경 후 검증

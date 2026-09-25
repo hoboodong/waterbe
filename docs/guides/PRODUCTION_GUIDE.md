@@ -6,6 +6,9 @@
 
 ## 처리 원칙
 
+- 기존 요일별 템플릿·주간 생산계획 시스템은 폐기했다. 새 계획 요청이 있어도 폐기된 시스템을 자동 복구하거나 과거 계획을 현재 실적으로 사용하지 않는다.
+- 운영기록 파일에 실적이 없더라도 CASPi 원본 조회 전에 `실제 생산 기록 없음`으로 단정하지 않는다. 필수 조회와 실패 처리는 [통합 운영 조회 지침](DAILY_STORE_REPORT_GUIDE.md#조회-완료-조건--답변-전-필수)을 따른다.
+
 - 시코드 앱의 운영 중 상품을 기본으로 확인한다.
 - 시코드 기본상품 외에 사용자가 말한 예외적이거나 추가적인 생산상품도 포함한다.
 - 완제품은 실제 생산 개수로 기록한다.
@@ -14,28 +17,13 @@
 - 사용자가 매장과 생산내용을 말하면 상품 확인 후 매장·날짜별 생산기록으로 저장한다.
 - 별도의 제외상품 규칙은 두지 않는다.
 
-## ProductionTemplate
+## 실제 자료 기반 운영
 
-`instances/production/templates/{store}.yaml`에 매장·상품·요일별 기본 생산량을 보관한다.
-
-- `dailyQty`: `mon`부터 `sun`까지 요일별 기본량
-- `unit`: 개, 팩, kg 등 생산단위
-- `effectiveFrom`, `effectiveTo`: 적용기간
-- `memo`: 변경 근거
-
-변경 시 기존 활성 레코드의 `effectiveTo`를 새 적용일 전날로 닫고 새 레코드를 추가한다.
-
-## ProductionPlan
-
-`instances/production/{store}.yaml`에 상품별 주간 생산계획을 기록한다.
-
-- `weekStart`: 월요일 날짜
-- `dailyPlan`: 생성 시점의 기본량 복사본이며 수정 금지
-- `dailyAdjusted`: 이후 조정된 요일만 기록
-- `dailyActual`: 실제 생산량
-- `status`: `planned`, `in_progress`, `completed`
-
-유효 계획량은 조정값이 있으면 `dailyAdjusted[day]`, 없으면 `dailyPlan[day]`다.
+- 상품·가격은 시코드, 생산 관측값은 CASPi, 할인은 시코드 할인 원본, 실제 매출은 검증된 매출 원본을 사용한다.
+- 현장 신고·정정·추가생산·전환·폐기는 날짜별 `instances/operations/{store}/YYYY-MM.yaml`의 `DailyStoreOperation`에 기록한다.
+- 저장된 요약은 조회 근거와 현장정보 보존용이다. 최신 원본 조회를 대신하지 않는다.
+- 원본 조회시각·수집시각·식별자·미확정 이유를 보존하고, 신고 수량과 저울 관측값을 구분한다.
+- 구 시스템에서 이관한 `reportedQty`·`reportedUnit`은 당시 신고값이다. 단위가 불명확하면 null로 남기며 포장 완료 수량으로 임의 환산하지 않는다. `legacySourceId`와 원문 메모로 출처를 보존한다.
 
 ## 원물과 완제품
 

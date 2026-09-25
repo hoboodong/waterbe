@@ -45,7 +45,7 @@
 | atStore | 해당 매장 ID |
 
 > **발주·생산 일정은 이 가이드 범위 밖.**
-> 발주 → `InboundRecord`, 생산 → `ProductionPlan` (WATERBE_GUIDE.md 참조)
+> 발주 → `InboundRecord`, 생산 → 날짜별 `DailyStoreOperation` ([생산량 지침](docs/guides/PRODUCTION_GUIDE.md) 참조)
 
 ---
 
