@@ -119,6 +119,39 @@ def parse_int(value: str | None) -> int:
     return int(float(cleaned))
 
 
+def sales_column_indexes(header: list[str]) -> dict[str, int]:
+    """Return value-column positions from a Korean sales-sheet header.
+
+    Some source sheets place the monthly quantity before the daily sales amount,
+    while others use the reverse order.  Match the labels rather than relying
+    on a fixed column order.
+    """
+    indexes = {
+        "daily_qty": 2,
+        "daily_sales": 3,
+        "month_qty": 4,
+        "month_sales": 5,
+    }
+    labels = {
+        "일매출수량": "daily_qty",
+        "일매출금액": "daily_sales",
+        "월누계수량": "month_qty",
+        "월누계금액": "month_sales",
+    }
+    for index, value in enumerate(header):
+        normalized = value.replace("합계 :", "").replace(" ", "").strip()
+        for label, key in labels.items():
+            if label in normalized:
+                indexes[key] = index
+                break
+    return indexes
+
+
+def row_value(row: list[str], indexes: dict[str, int], key: str) -> int:
+    index = indexes[key]
+    return parse_int(row[index]) if index < len(row) else 0
+
+
 def normalize_store(raw: str) -> tuple[str, bool]:
     text = raw.strip()
     if text.endswith(" 총계"):
@@ -130,6 +163,12 @@ def parse_csv(path: Path, sale_date: str) -> list[SalesRow]:
     rows: list[SalesRow] = []
     current_store = ""
     layout = "name"
+    column_indexes = {
+        "daily_qty": 2,
+        "daily_sales": 3,
+        "month_qty": 4,
+        "month_sales": 5,
+    }
 
     with path.open(newline="", encoding="utf-8-sig") as f:
         reader = csv.reader(f)
@@ -145,6 +184,7 @@ def parse_csv(path: Path, sale_date: str) -> list[SalesRow]:
                 continue
 
             if first == "점포명" or "상품명" in row:
+                column_indexes = sales_column_indexes(row)
                 continue
             if not first and not current_store:
                 continue
@@ -246,10 +286,10 @@ def parse_csv(path: Path, sale_date: str) -> list[SalesRow]:
                     sale_date=sale_date,
                     store=store,
                     product=None if is_total else product,
-                    daily_qty=parse_int(row[2]),
-                    daily_sales=parse_int(row[3]),
-                    month_qty=parse_int(row[4]) if len(row) > 4 else 0,
-                    month_sales=parse_int(row[5]) if len(row) > 5 else 0,
+                    daily_qty=row_value(row, column_indexes, "daily_qty"),
+                    daily_sales=row_value(row, column_indexes, "daily_sales"),
+                    month_qty=row_value(row, column_indexes, "month_qty"),
+                    month_sales=row_value(row, column_indexes, "month_sales"),
                     is_store_total=1 if is_total else 0,
                 )
             )

@@ -23,6 +23,13 @@
 
 - [통합 운영 조회 기획안](docs/plans/INTEGRATED_OPERATIONS_QUERY_PLAN.md): 워터비·시코드·카스씨엘 역할과 단계별 구현안. 아직 구현·배포된 기능이 아니며 운영 조회 지침을 대체하지 않는다.
 
+## 사업 기준·아카이브
+
+| 구분 | 문서 |
+| --- | --- |
+| 합의된 사업 기준(진행 중) | [BUSINESS_CANON](docs/guides/BUSINESS_CANON.md) |
+| 재작성 전 구 가이드·온톨로지 초안 | [archive: 2026-09-pre-rewrite](docs/archive/2026-09-pre-rewrite/) |
+
 ## 기준 정의
 
 클래스, 필드, 관계와 제약조건의 기술적 기준은 [schema.yaml](schema.yaml)을 따른다.
