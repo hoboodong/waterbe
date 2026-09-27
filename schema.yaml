@@ -1,10 +1,10 @@
-version: "2.2"
+version: "2.3"
 description: 워터비 온톨로지 스키마
 
 classes:
   Store:
     label: 매장
-    description: 이마트 수수료 매장
+    description: 고정 매장 또는 독립적으로 실적을 관리하는 순회 행사팀
     properties:
       name:
         type: string
@@ -18,11 +18,59 @@ classes:
         type: string
         required: false
         label: 지점명 (이마트 지점)
+      operationType:
+        type: string
+        required: false
+        label: 운영 형태 (fixed_store / mobile_team). 기존 레코드는 fixed_store로 해석
+      setupStatus:
+        type: string
+        required: false
+        label: 신규 등록 상태 (setup_pending / ready). 기존 매장의 연결 정상 여부를 대신하지 않음
+      seacodeStoreId:
+        type: string
+        required: false
+        label: 시코드 앱 매장 식별자. 등록 계획과 실제 연결 검증은 setupStatus로 구분
+      casStoreId:
+        type: string
+        required: false
+        label: 카스씨엘 controller 매장 식별자
     relations:
       carries:
         target: Product
         cardinality: one-to-many
         label: 판매 상품
+
+  StoreVisit:
+    label: 순회팀 행사 장소 이력
+    description: 팀 식별자를 유지하면서 행사 장소와 기간을 별도 기록. 이전 장소를 덮어쓰지 않음
+    properties:
+      location:
+        type: string
+        required: true
+        label: 실제 행사 장소
+      startDate:
+        type: string
+        required: true
+        label: 행사 시작일 (YYYY-MM-DD, KST)
+      endDate:
+        type: string
+        required: false
+        nullable: true
+        label: 행사 종료일 (YYYY-MM-DD, 포함). null 또는 생략은 종료일 미확정
+      notes:
+        type: string
+        required: false
+        label: 장소·기간의 확인 근거 또는 운영 메모
+    relations:
+      atStore:
+        target: Store
+        cardinality: many-to-one
+        label: 실적 귀속 순회팀
+      hostStore:
+        target: Store
+        cardinality: many-to-one
+        nullable: true
+        label: 방문 장소가 등록된 기존 매장일 때만 참조. 실적 귀속 매장이 아님
 
   Product:
     label: 상품
@@ -472,6 +520,11 @@ classes:
         label: 해당 매장
 
 constraints:
+  - "Store.operationType은 생략하거나 fixed_store / mobile_team 중 하나여야 한다"
+  - "Store.setupStatus는 생략하거나 setup_pending / ready 중 하나여야 하며 ready는 실연결 검증 근거가 있을 때만 설정한다"
+  - "StoreVisit.atStore는 mobile_team Store를 참조하고 hostStore는 존재하는 다른 Store 또는 null이어야 한다"
+  - "StoreVisit 시작일·종료일은 YYYY-MM-DD이며 종료일은 시작일 이상이다. 동일 팀의 날짜 구간은 겹치지 않는다"
+  - "StoreVisit의 장소와 원본 매출 귀속이 같다는 이유만으로 방문 매장과 행사팀 실적을 이중 합산하지 않는다"
   - "Product.price는 양의 정수이거나 null이어야 한다"
   - "Product.relations.soldAt은 반드시 하나 이상의 Store를 참조해야 한다"
   - "Category.relations.subClassOf는 순환 참조를 허용하지 않는다"

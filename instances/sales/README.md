@@ -12,8 +12,11 @@
 | 마포점 | 남선매출 | [남선매출 지침](../../docs/guides/NAMSEON_SALES_GUIDE.md) |
 | 미아점 | 남선매출 | [남선매출 지침](../../docs/guides/NAMSEON_SALES_GUIDE.md) |
 | 월계점 | 대영매출 | [대영매출 지침](../../docs/guides/DAEYOUNG_SALES_GUIDE.md) |
+| 문어행사팀 | 원본·점포코드·정산 기준 확인 대기 | [문어행사팀 추가 작업](../../docs/plans/OCTOPUS_TEAM_ONBOARDING.md) |
 
 모든 매출 작업에는 [공통 매출 지침](../../docs/guides/SALES_COMMON_GUIDE.md)도 함께 적용한다.
+
+문어행사팀을 기존 남선의 상품명 기반 `행사팀 매출`과 자동으로 동일시하지 않는다. 원본 점포·팀 귀속·행사기간과 방문 매장 합계에 포함되는지 확인하기 전에는 별도 매출을 생성하거나 기존 매출을 재분류하지 않는다.
 
 ## 데이터 위치
 

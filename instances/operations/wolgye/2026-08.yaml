@@ -126,7 +126,7 @@ instances:
     class: DailyStoreOperation
     data:
       date: '2026-08-30'
-      status: awaiting_morning_close
+      status: finalized
       production:
         - productName: 흰다리새우
           productId: prod_sp_012
@@ -338,7 +338,23 @@ instances:
           handling: attached_now
           confirmedBy: user
           source: Supabase print_records_wolgye
-      nextMorning: null
+      nextMorning:
+        checkedDate: '2026-08-31'
+        unusedLabels:
+          status: not_applicable
+          reason: 2026-08-30 퇴근 전 할인 라벨을 사용자가 모두 직접 부착함
+        waste:
+          - productName: 흰다리새우
+            quantity: 11
+            unit: 개
+          - productName: 가리비관자
+            quantity: 9
+            unit: 개
+          - productName: 자숙참소라살
+            quantity: 5
+            unit: 개
+        totalWasteQty: 25
+        reconciliationStatus: waste_confirmed_sales_value_provisional
       provisionalSummary:
         productionQtyEstimate: 167
         productionQtyRange: {min: 157, max: 177}
@@ -355,10 +371,12 @@ instances:
         currentDiscountLabelNote: 같은 상품의 할인 단계 재부착은 중복 상품으로 세지 않음. 오늘은 직영 직원용 사전 출력 없이 사용자가 모두 직접 부착함
         currency: KRW
         finalized: false
+        finalizationNote: 폐기수량은 확정했으나 새우·관자의 실제 완성수량과 폐기 상품별 라벨가격이 없어 판매금액은 추정 상태
       notes:
         - 새우와 관자의 실제 완성 개수가 없어 생산수량과 금액에 추정치가 포함되어 있다.
         - 자숙참소라 29개 중 17개는 주말특가 9,800원, 12개는 정상가 11,800원으로 집계한다.
         - 문어해물탕 23개 전량은 주말특가 19,800원을 오늘의 정상 판매가격으로 집계한다.
         - 할인 라벨 인쇄기록은 퇴근 전 Supabase에서 확인해 추가한다.
+        - 2026-08-31 아침 폐기는 흰다리새우 11개, 가리비관자 9개, 자숙참소라살 5개로 총 25개다.
     relations:
       atStore: wolgye

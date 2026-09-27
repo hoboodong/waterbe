@@ -44,7 +44,7 @@ def parse_table(texts: list[str], year: int) -> tuple[str | None, list[dict], in
         store, tax_type, amount_text = texts[index : index + 3]
         store = STORE_CORRECTIONS.get(store, store)
         if (
-            store.startswith("EM")
+            store.startswith(("EM", "SFM"))
             and tax_type in {"면세", "과세"}
             and AMOUNT_RE.fullmatch(amount_text)
         ):

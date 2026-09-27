@@ -1,0 +1,3 @@
+# 실제 행사 장소·시작일 확인 전에는 가상 행사 이력을 만들지 않는다.
+# atStore=octopusteam은 실적 귀속, hostStore는 방문 장소 참조일 뿐이다.
+instances: []

@@ -38,6 +38,7 @@ CASPi는 우리 `cascl5200` 프로젝트의 매장 라즈베리파이 저울 프
 - 중앙 원본 DB: `%LOCALAPPDATA%\CAS-CL5200\aggregate-central\aggregate-central.sqlite3`
 - 수집 회차: `imported_collection`, 원시 누계: `imported_plu_snapshot`, 증가분: `plu_delta`
 - 매장 대응: `wolgye → wolgye2`, `mapo → mapo2`, `mia → mia2`, `wangsimni → wangsim2`
+- 신규 문어행사팀 대응은 `octopusteam → octopusteam2`다. 현재 `setup_pending`이므로 이 대응만으로 접속·수집 완료라고 가정하지 않는다. 실제 연결 상태는 [추가 작업 기록](../plans/OCTOPUS_TEAM_ONBOARDING.md)을 확인한다.
 - 중앙 DB는 SQLite 읽기 전용 연결로 조회한다. 자격증명은 설정된 환경변수만 사용하고 출력하지 않는다.
 - 씽크패드에 위 Windows 중앙 DB가 있다고 가정하지 않는다. `/home/sdg/cascl5200/scale-data/tools/central_aggregate_sync.py`와 프로젝트 문서에서 현재 중앙 DB·SSH 설정 및 기존 Pi 내보내기 경로를 확인한다. 로컬 DB가 없으면 기존 접근권한으로 원격 원본의 읽기 전용 조회를 시도한다. DB 생성이나 수집 서비스 설치·재시작으로 대체하지 않는다. 접근 경로까지 검증하지 못하면 `누계 조회 미완료`로 답한다.
 
