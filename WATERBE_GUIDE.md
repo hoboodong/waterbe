@@ -22,6 +22,7 @@
 ## 개발 기획안
 
 - [통합 운영 조회 기획안](docs/plans/INTEGRATED_OPERATIONS_QUERY_PLAN.md): 워터비·시코드·카스씨엘 역할과 단계별 구현안. 아직 구현·배포된 기능이 아니며 운영 조회 지침을 대체하지 않는다.
+- [CASPi·시코드 사건 증명 및 무중단 복구 기획안](docs/plans/CASPI_SEACODE_EVENT_PROOF_PLAN.md): 현장 Bluetooth 실행, 휴대폰/Pi 이중 인터넷 경로, 동일 영수증 병합, PLU별 격리와 재조회 해제 기준.
 
 ## 사업 기준·아카이브
 
