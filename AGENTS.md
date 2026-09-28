@@ -10,7 +10,7 @@ Waterbe 업무를 시작할 때 [WATERBE_GUIDE.md](WATERBE_GUIDE.md)에서 해�
 | 프로그램 구성·프로젝트별 책임 | [프로그램 역할 지침](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md) |
 | 매장 생산·저울누계·할인·매출 종합 조회 | [통합 운영 조회 지침](docs/guides/DAILY_STORE_REPORT_GUIDE.md) |
 | 매장과 시코드 운영상품 | [매장·상품 지침](docs/guides/STORE_PRODUCTS_GUIDE.md) |
-| 문어행사팀 신규 등록·연결 | [문어행사팀 추가 작업](docs/plans/OCTOPUS_TEAM_ONBOARDING.md) |
+| 문어행사팀 신규 등록·연결 | [문어행사팀 추가 작업](docs/plans/MOONER_ONBOARDING.md) |
 | 재료, 레시피와 원가 | [레시피·원가 지침](docs/guides/RECIPES_COST_GUIDE.md) |
 | 시코드 앱과 CL-5200 저울 | [시코드·저울 연결 지침](docs/guides/SEACODE_SCALE_GUIDE.md) |
 | 생산량과 생산실적 | [생산량 지침](docs/guides/PRODUCTION_GUIDE.md) |
@@ -28,3 +28,12 @@ Waterbe 업무를 시작할 때 [WATERBE_GUIDE.md](WATERBE_GUIDE.md)에서 해�
 - 사용자의 요청 범위만 변경한다.
 - 삭제, 이름 변경 또는 기록 재작성은 사용자가 명시적으로 요청하지 않았다면 먼저 확인한다.
 - 여러 업무영역이 연결된 작업은 관련 지침을 모두 읽고 처리한다.
+
+## 하위 에이전트 모델 사용
+
+- 사용자가 하위 에이전트 위임을 요청한 경우에만 위임한다.
+- 단순 조회·파일 탐색·요약은 `gpt-6-luna`의 `low`를 사용한다.
+- 일반적인 코드 수정·테스트·Git 작업은 `gpt-5.6-terra`의 `low`를 사용한다.
+- 조금 복잡한 분석·수정은 `gpt-5.6-terra`의 `high`를 사용한다.
+- 하위 에이전트에는 Sol 또는 Astra 모델을 사용하지 않는다.
+- 불필요한 다중 에이전트 실행과 같은 내용의 중복 조사를 피한다.

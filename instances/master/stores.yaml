@@ -27,12 +27,12 @@ instances:
       location: 이마트 미아점 수산코너
       branch: 미아
 
-  - id: octopusteam
+  - id: mooner
     class: Store
     data:
       name: 문어행사팀
       location: 순회 행사장 (실제 장소·기간은 StoreVisit 이력으로 관리)
       operationType: mobile_team
       setupStatus: setup_pending
-      seacodeStoreId: octopusteam
-      casStoreId: octopusteam2
+      seacodeStoreId: mooner
+      casStoreId: mooner2

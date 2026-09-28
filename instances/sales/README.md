@@ -12,7 +12,7 @@
 | 마포점 | 남선매출 | [남선매출 지침](../../docs/guides/NAMSEON_SALES_GUIDE.md) |
 | 미아점 | 남선매출 | [남선매출 지침](../../docs/guides/NAMSEON_SALES_GUIDE.md) |
 | 월계점 | 대영매출 | [대영매출 지침](../../docs/guides/DAEYOUNG_SALES_GUIDE.md) |
-| 문어행사팀 | 원본·점포코드·정산 기준 확인 대기 | [문어행사팀 추가 작업](../../docs/plans/OCTOPUS_TEAM_ONBOARDING.md) |
+| 문어행사팀 | 원본·점포코드·정산 기준 확인 대기 | [문어행사팀 추가 작업](../../docs/plans/MOONER_ONBOARDING.md) |
 
 모든 매출 작업에는 [공통 매출 지침](../../docs/guides/SALES_COMMON_GUIDE.md)도 함께 적용한다.
 

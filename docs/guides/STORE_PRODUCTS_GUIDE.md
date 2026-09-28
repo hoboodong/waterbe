@@ -10,19 +10,19 @@
 | `mapo` | 마포점 | `mp` | 남선푸드 |
 | `wolgye` | 월계점 | `wg` | 대영상사 |
 | `mia` | 미아점 | `mi` | 미정 |
-| `octopusteam` | 문어행사팀 (순회, 연결 준비 중) | 미정 | 미정 |
+| `mooner` | 문어행사팀 (순회, 연결 준비 중) | 미정 | 미정 |
 
 다른 파일을 참조할 때는 `instances/master/stores.yaml`에 존재하는 ID를 그대로 사용한다.
 
 ## 순회 행사팀
 
 - `문어행사팀`은 시코드와 카스씨엘에 별도로 등록하는 독립 운영 매장이다. 전용 저울을 가지고 이동한다.
-- 워터비·시코드 ID는 `octopusteam`, 카스씨엘 controller ID는 기존 규칙에 맞춘 `octopusteam2`다. 식별자 대응은 연결 완료의 증거가 아니다.
+- 워터비·시코드 ID는 `mooner`, 카스씨엘 controller ID는 기존 규칙에 맞춘 `mooner2`다. 식별자 대응은 연결 완료의 증거가 아니다.
 - `setupStatus: setup_pending`은 신규 연결 준비 중이라는 뜻이다. 수집기·저울·앱의 실제 연결 검증 전에는 운영 완료로 표시하지 않는다.
-- 행사 장소·기간은 `instances/store_visits/octopusteam.yaml`의 `StoreVisit`에 추가한다. 장소를 옮겨도 팀 ID와 이전 운영기록의 귀속을 바꾸지 않는다.
+- 행사 장소·기간은 `instances/store_visits/mooner.yaml`의 `StoreVisit`에 추가한다. 장소를 옮겨도 팀 ID와 이전 운영기록의 귀속을 바꾸지 않는다.
 - 행사 장소가 왕십리 등 기존 매장이더라도 행사팀 실적을 기존 매장의 실적으로 자동 합치지 않는다.
 - 신규 상품·가격·마트코드는 확인 전까지 다른 매장에서 복제하지 않는다. 기존 남선 `행사팀` 품목 분류를 이 팀과 자동으로 동일시하지 않는다.
-- 등록·연결의 현재 상태와 인수 순서는 [문어행사팀 추가 작업](../plans/OCTOPUS_TEAM_ONBOARDING.md)을 따른다.
+- 등록·연결의 현재 상태와 인수 순서는 [문어행사팀 추가 작업](../plans/MOONER_ONBOARDING.md)을 따른다.
 
 ## 상품 기준 원본
 

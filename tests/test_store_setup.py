@@ -82,11 +82,11 @@ class StoreSetupTests(unittest.TestCase):
     def test_actual_registry_has_pending_dedicated_team_without_fake_visits(self):
         root = Path(__file__).resolve().parents[1]
         stores = yaml.safe_load((root / "instances/master/stores.yaml").read_text(encoding="utf-8"))["instances"]
-        visits = yaml.safe_load((root / "instances/store_visits/octopusteam.yaml").read_text(encoding="utf-8"))["instances"]
+        visits = yaml.safe_load((root / "instances/store_visits/mooner.yaml").read_text(encoding="utf-8"))["instances"]
         validate_records(stores, visits)
-        team = next(record for record in stores if record["id"] == "octopusteam")
-        self.assertEqual(team["data"]["casStoreId"], "octopusteam2")
-        self.assertEqual(team["data"]["seacodeStoreId"], "octopusteam")
+        team = next(record for record in stores if record["id"] == "mooner")
+        self.assertEqual(team["data"]["casStoreId"], "mooner2")
+        self.assertEqual(team["data"]["seacodeStoreId"], "mooner")
         self.assertEqual(team["data"]["operationType"], "mobile_team")
         # Connectivity remains a separate acceptance gate, not a fabricated visit.
         self.assertIn(team["data"]["setupStatus"], ("setup_pending", "ready"))
