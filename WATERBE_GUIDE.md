@@ -12,6 +12,7 @@
 | 문어행사팀 신규 등록·연결·진행 상태 | [문어행사팀 추가 작업](docs/plans/MOONER_ONBOARDING.md) |
 | 재료, 발주규격, 레시피, 가격과 원가 | [레시피·원가 지침](docs/guides/RECIPES_COST_GUIDE.md) |
 | 시코드 앱과 CL-5200 저울 연결·상태 검증 | [시코드·저울 연결 지침](docs/guides/SEACODE_SCALE_GUIDE.md) |
+| 품질검사·다이버시점검·대표품질·상품라벨·원라벨 대조 | [품질관리솔루션 운영 지침](docs/guides/QUALITY_COMPLIANCE_GUIDE.md) |
 | 실제 생산량, 현장 신고와 날짜별 운영기록 | [생산량 지침](docs/guides/PRODUCTION_GUIDE.md) |
 | 재고실사와 입고기록 | [재고·입고 지침](docs/guides/INVENTORY_INBOUND_GUIDE.md) |
 | YAML 작성, 이력 보존과 검증 | [공통 데이터 작성·검증 지침](docs/guides/DATA_RULES_GUIDE.md) |
