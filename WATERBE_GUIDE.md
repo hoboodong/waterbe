@@ -7,6 +7,8 @@
 | 업무 | 지침 |
 | --- | --- |
 | 프로그램 구성·프로젝트별 책임·구현 상태 | [프로그램 역할 지침](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md) |
+| 에이전트 공통 API 목록·호출·권한·미구현 구분 | [API 사용 입구](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md#에이전트-공통-api-진입점) |
+| 라즈·할인·남선·대영 출처별 데이터 워커 구성 | [데이터 워커 구성](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md#데이터-워커-구성--출처별-관리) |
 | 매장 생산량·저울누계·할인·폐기·매출 종합 조회 | [통합 운영 조회 지침](docs/guides/DAILY_STORE_REPORT_GUIDE.md) |
 | 매장, 시코드 운영상품, 상품 ID와 상태 | [매장·상품 지침](docs/guides/STORE_PRODUCTS_GUIDE.md) |
 | 문어행사팀 신규 등록·연결·진행 상태 | [문어행사팀 추가 작업](docs/plans/MOONER_ONBOARDING.md) |

@@ -7,6 +7,8 @@ Waterbe 업무를 시작할 때 [WATERBE_GUIDE.md](WATERBE_GUIDE.md)에서 해�
 | 작업 | 먼저 읽을 문서 |
 | --- | --- |
 | 전체 업무 지침 찾기 | [WATERBE_GUIDE.md](WATERBE_GUIDE.md) |
+| 출처별 데이터 워커 책임·저장 계약 | [데이터 워커 구성](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md#데이터-워커-구성--출처별-관리) |
+| 에이전트 공통 API 발견·사용 | [API 사용 입구](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md#에이전트-공통-api-진입점) |
 | 프로그램 구성·프로젝트별 책임 | [프로그램 역할 지침](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md) |
 | 매장 생산·저울누계·할인·매출 종합 조회 | [통합 운영 조회 지침](docs/guides/DAILY_STORE_REPORT_GUIDE.md) |
 | 매장과 시코드 운영상품 | [매장·상품 지침](docs/guides/STORE_PRODUCTS_GUIDE.md) |

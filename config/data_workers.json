@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "partition_by": "source_kind",
+  "deployment_status": "design_only",
+  "workers": [
+    {"id":"raspi_data","owner":"cascl5200","scope":"all_registered_devices","existing_capabilities":"Scale collection, evidence and central publication","new_processing_status":"planned","inputs":["aggregate observations","operation receipts","collection status"],"outputs":["source-linked scale deltas","reset/gap flags","device-to-store assignment evidence"],"operations":["scale.collect","scale.day.read"],"rules":["Never sum cumulative snapshots as production","Retain device identity and time-bounded store assignment","Do not infer sales from scale output"]},
+    {"id":"seacode_discounts","owner":"seacode","scope":"all_registered_stores","existing_capabilities":"App print and discount originals","new_processing_status":"planned","inputs":["discount print records","cancellations","attachment confirmations"],"outputs":["normalized discount events","print/attachment confidence"],"operations":["discounts.read"],"rules":["Print is not attachment or sale","Preserve multiple discount stages; do not stack them blindly"]},
+    {"id":"namseon_sales","owner":"waterbe","scope":"all_source_stores","existing_capabilities":"Sales import, validation and Supabase ingest","new_processing_status":"planned","inputs":["Namseon source files and rows"],"outputs":["versioned daily sales","monthly cumulative snapshots"],"operations":["sales.namseon.read","sales.namseon.sync"],"rules":["Monthly cumulative snapshots are not additive","Separate ingest from Drive organization/deletion"]},
+    {"id":"daeyoung_sales","owner":"waterbe","scope":"all_source_stores","existing_capabilities":"OCR, total validation and Supabase ingest","new_processing_status":"planned","inputs":["Daeyoung source images and OCR rows"],"outputs":["versioned sales with OCR validation","explicit net/gross basis"],"operations":["sales.daeyoung.read","sales.daeyoung.sync"],"rules":["Preserve original image and stated/calculated totals","Gross = net / 0.785 only for confirmed 21.5 percent fee basis"]},
+    {"id":"integrated_data","owner":"waterbe","scope":"all_sources","existing_capabilities":"Domain guides and manual reporting workflow","new_processing_status":"planned","inputs":["normalized source events","product mappings","field corrections"],"outputs":["versioned business aggregates","confidence and lineage","analysis-ready history"],"operations":["operations.report"],"rules":["Stores are dimensions, not separate worker implementations","Isolate uncertain records and process remaining data","Corrections never overwrite raw evidence"]}
+  ],
+  "record_contract": {
+    "required":["source_kind","source_record_id","source_revision","payload_hash","collected_at","raw_payload_or_reference"],
+    "nullable_with_reason":["store_id","device_id","occurred_at","business_date","product_id"],
+    "normalized":["raw_record_ids","normalizer_version","mapping_version","quality_flags"],
+    "correction":["target_record_ids","reason","evidence","actor","recorded_at","supersedes_id"],
+    "aggregate":["input_record_ids","correction_ids","calculation_version","computed_at","confidence"]
+  },
+  "processing_rules":[
+    "Persist raw input before advancing checkpoints",
+    "Deduplicate by source identity and revision; preserve changed content as a new version",
+    "Commit outputs and checkpoints atomically or through a replay-safe transactional outbox",
+    "Late data and corrections recompute only affected store/date/product ranges",
+    "Retry transient collection failures; quarantine malformed records without dropping them",
+    "Never reuse these retry rules to resend uncertain physical scale writes",
+    "Event-driven processing with periodic catch-up; frequency and host selected at deployment",
+    "Track checkpoint, data time, last success, errors, pending and quarantined counts separately"
+  ]
+}
