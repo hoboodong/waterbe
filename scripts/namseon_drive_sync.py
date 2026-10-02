@@ -13,6 +13,7 @@ Google Drive 남선매출 폴더 전체를 SQLite DB와 동기화한다.
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import re
 import shutil
@@ -21,9 +22,11 @@ import subprocess
 import sys
 import tempfile
 import unicodedata
+import zipfile
 from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
+from xml.etree import ElementTree
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -211,20 +214,67 @@ def choose_latest(files: list[DriveFile]) -> tuple[list[DriveFile], list[DriveFi
 def export_csv(file: DriveFile, out_dir: Path) -> Path:
     safe_name = re.sub(r"[^A-Za-z0-9_.-]+", "_", f"{file.sale_date}_{file.id}.csv")
     out_path = out_dir / safe_name
-    run(
-        [
-            "gog",
-            "sheets",
-            "export",
-            file.id,
-            "--format",
-            "csv",
-            "--out",
-            str(out_path),
-            "--no-input",
-        ]
-    )
+    if file.mime_type == GOOGLE_SHEET_MIME:
+        run(
+            [
+                "gog",
+                "sheets",
+                "export",
+                file.id,
+                "--format",
+                "csv",
+                "--out",
+                str(out_path),
+                "--no-input",
+            ]
+        )
+        return out_path
+
+    download_path = out_dir / f"{file.id}{Path(file.name).suffix.lower()}"
+    run(["gog", "drive", "download", file.id, "--out", str(download_path), "--no-input"])
+    if download_path.suffix.lower() == ".csv":
+        shutil.copyfile(download_path, out_path)
+        return out_path
+    if download_path.suffix.lower() != ".xlsx":
+        raise RuntimeError(f"unsupported sales source format: {file.name}")
+    xlsx_to_csv(download_path, out_path)
     return out_path
+
+
+def xlsx_to_csv(source: Path, destination: Path) -> None:
+    """Write the first worksheet of an Excel sales source as UTF-8 CSV."""
+    with zipfile.ZipFile(source) as workbook:
+        shared_strings: list[str] = []
+        if "xl/sharedStrings.xml" in workbook.namelist():
+            root = ElementTree.fromstring(workbook.read("xl/sharedStrings.xml"))
+            namespace = root.tag[: root.tag.index("}") + 1]
+            shared_strings = [
+                "".join(item.itertext()) for item in root.findall(f"{namespace}si")
+            ]
+
+        sheet_root = ElementTree.fromstring(
+            workbook.read("xl/worksheets/sheet1.xml")
+        )
+        namespace = sheet_root.tag[: sheet_root.tag.index("}") + 1]
+        with destination.open("w", newline="", encoding="utf-8") as handle:
+            writer = csv.writer(handle)
+            for row in sheet_root.findall(f".//{namespace}row"):
+                values: list[str] = []
+                for cell in row.findall(f"{namespace}c"):
+                    ref = cell.get("r", "")
+                    match = re.match(r"([A-Z]+)", ref)
+                    if match:
+                        column = 0
+                        for letter in match.group(1):
+                            column = column * 26 + ord(letter) - ord("A") + 1
+                        values.extend([""] * (column - len(values) - 1))
+                    value = cell.findtext(f"{namespace}v", default="")
+                    if cell.get("t") == "s" and value:
+                        value = shared_strings[int(value)]
+                    elif cell.get("t") == "inlineStr":
+                        value = "".join(cell.find(f"{namespace}is").itertext())
+                    values.append(value)
+                writer.writerow(values)
 
 
 def import_file(db: Path, file: DriveFile, csv_path: Path) -> None:

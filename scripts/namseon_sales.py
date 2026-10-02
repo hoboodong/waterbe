@@ -182,6 +182,10 @@ def parse_csv(path: Path, sale_date: str) -> list[SalesRow]:
             if first == "점포코드":
                 layout = "code"
                 continue
+            if first == "행 레이블":
+                layout = "pivot"
+                column_indexes = sales_column_indexes(row)
+                continue
 
             if first == "점포명" or "상품명" in row:
                 column_indexes = sales_column_indexes(row)
@@ -264,6 +268,47 @@ def parse_csv(path: Path, sale_date: str) -> list[SalesRow]:
                         month_qty=parse_int(row[5]),
                         month_sales=parse_int(row[6]),
                         is_store_total=1 if is_total else 0,
+                    )
+                )
+                continue
+
+            if layout == "pivot":
+                if first.startswith("EM"):
+                    current_store = first
+                    rows.append(
+                        SalesRow(
+                            row_number=row_number,
+                            sale_date=sale_date,
+                            store=current_store,
+                            product=None,
+                            daily_qty=row_value(row, column_indexes, "daily_qty"),
+                            daily_sales=row_value(row, column_indexes, "daily_sales"),
+                            month_qty=row_value(row, column_indexes, "month_qty"),
+                            month_sales=row_value(row, column_indexes, "month_sales"),
+                            is_store_total=1,
+                        )
+                    )
+                    continue
+                if not current_store:
+                    continue
+                try:
+                    daily_qty = row_value(row, column_indexes, "daily_qty")
+                    daily_sales = row_value(row, column_indexes, "daily_sales")
+                    month_qty = row_value(row, column_indexes, "month_qty")
+                    month_sales = row_value(row, column_indexes, "month_sales")
+                except ValueError:
+                    continue
+                rows.append(
+                    SalesRow(
+                        row_number=row_number,
+                        sale_date=sale_date,
+                        store=current_store,
+                        product=first,
+                        daily_qty=daily_qty,
+                        daily_sales=daily_sales,
+                        month_qty=month_qty,
+                        month_sales=month_sales,
+                        is_store_total=0,
                     )
                 )
                 continue
