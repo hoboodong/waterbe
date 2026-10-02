@@ -1,6 +1,7 @@
 {
   "version": 1,
   "operations": [
+    {"id":"diagnostics.read","owner":"seacode","effect":"read","state":"native","source":"public.operation_diagnostics","guide":"docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md","entry":"Authenticated Supabase REST GET operation_diagnostics; SeaCode queryCloudDiagnostics","caution":"Filter store/feature/result/time/target/operation ID. Database deployed; phone logs require +2262 installation. No automatic write/replay. No Waterbe call adapter yet."},
     {"id":"recipes.audit","owner":"waterbe","effect":"read","state":"native","source":"instances/master recipes, ingredients, purchase_specs, price_history","guide":"docs/guides/RECIPES_COST_GUIDE.md","entry":"python scripts/inspect_recipe_data.py","caution":"Saved-data inventory and reference checks only; no complete costing or current price assertion. Requires PyYAML."},
     {"id":"products.read","owner":"seacode","effect":"read","state":"native","source":"products_{store}","guide":"docs/guides/STORE_PRODUCTS_GUIDE.md","entry":"SeaCode product repository; is_active=true and is_operating=true","caution":"App prices are not scale prices. Gateway adapter pending."},
     {"id":"discounts.read","owner":"seacode","effect":"read","state":"native","source":"print_records_{store}; v_discount_records","guide":"docs/guides/DAILY_STORE_REPORT_GUIDE.md","entry":"SeaCode discount records","caution":"Printed is not attached or sold. Gateway adapter pending."},
