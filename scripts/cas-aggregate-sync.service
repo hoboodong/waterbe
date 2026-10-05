@@ -1,0 +1,9 @@
+[Unit]
+Description=CAS central aggregate import
+After=network-online.target
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 %h/.local/lib/cas-central-20261005/central_aggregate_runner.py --config %h/.local/state/cas-central/aggregate-config.json --history-root %h/.local/lib/waterbe-history --history-db %h/.local/state/waterbe-history/operations.db --logs %h/.local/state/waterbe-central/logs
+TimeoutStartSec=360
+UMask=0077
+NoNewPrivileges=yes

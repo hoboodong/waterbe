@@ -1,0 +1,13 @@
+{
+ "database_path":"/home/sdg/.local/state/cas-central/aggregate-central.sqlite3",
+ "log_path":"/home/sdg/.local/state/cas-central/aggregate-sync.jsonl",
+ "ssh_path":"/usr/bin/ssh",
+ "overlap_minutes":60,
+ "stores":[
+  {"id":"mooner2","ssh_host":"mooner2"},
+  {"id":"mapo2","ssh_host":"mapo2"},
+  {"id":"mia2","ssh_host":"mia2"},
+  {"id":"wangsim2","ssh_host":"wangsim2"},
+  {"id":"wolgye2","ssh_host":"wolgye2"}
+ ]
+}

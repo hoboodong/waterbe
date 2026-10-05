@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "state_path": "/home/sdg/.local/state/cas-central/receipt-state.sqlite3",
+  "poll_limit": 100,
+  "ssh_timeout_seconds": 40,
+  "http_timeout_seconds": 30,
+  "supabase_url_env": "SUPABASE_URL",
+  "supabase_key_env": "SUPABASE_SERVICE_ROLE_KEY",
+  "stores": [{"controller_store_id":"mooner2","app_store_id":"mooner","ssh_alias":"mooner2","enabled":true}]
+}

@@ -1,0 +1,8 @@
+[Unit]
+Description=CAS aggregate import every minute
+[Timer]
+OnBootSec=45
+OnUnitInactiveSec=60
+Unit=cas-aggregate-sync.service
+[Install]
+WantedBy=timers.target

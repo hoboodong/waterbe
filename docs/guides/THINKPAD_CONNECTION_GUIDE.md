@@ -1,0 +1,45 @@
+# 씽크패드 공통 접속
+
+2026-10-05: Windows 중앙 PC에서 `ssh thinkpad` 키 인증 및 재접속 검증.
+호스트는 Tailscale `100.123.147.103`, 사용자 `sdg`다. 전용 키는
+Windows 사용자 SSH 설정에 있으며 키 내용이나 비밀번호를 Git에 저장하지 않는다.
+다른 컴퓨터는 별도 인증 설정이 필요하다.
+
+## 공통 입구
+
+```powershell
+./scripts/thinkpad.ps1 status
+./scripts/thinkpad.ps1 run -Command 'git status --short'
+./scripts/thinkpad.ps1 run -Project cascl5200 -Command 'git status --short'
+./scripts/thinkpad.ps1 shell
+./scripts/thinkpad.ps1 upload -LocalPath ./example.txt -RemotePath /home/sdg/example.txt
+./scripts/thinkpad.ps1 download -RemotePath /home/sdg/example.txt -LocalPath ./received.txt
+```
+
+run은 명시된 명령을 원격 프로젝트에서 실행하며 변경 명령도 가능하므로 사용자
+요청 범위를 지킨다. 파일 전송은 단일 파일만, 기존 대상이 있으면 중단한다.
+업로드의 존재 확인과 전송은 원자적이지 않으므로 동시에 다른 프로그램이 생성하는
+경로에는 사용하지 않는다. DB 이전은 이 도구로 실행 중 파일을 복사하지 말고
+각 담당 프로그램의 온라인 백업/중단/검증 절차를 따른다.
+
+두 컴퓨터는 별도 파일 시스템이다. 자동 양방향 동기화, 서비스 이중 실행,
+자동 Git pull/push, 자격증명 복제는 하지 않는다. 명령 실패 시 쓰기를 자동 재시도하지
+않는다. 접속 설정은 연결 준비이며 중앙 워커 이전 완료를 뜻하지 않는다.
+SSH 서버 부팅 자동 활성화 및 SSH/Tailscale 현재 활성 상태는 확인했다.
+전원 종료/절전/인터넷 장애까지 해결됐다는 뜻은 아니다.
+
+Codex CLI는 로그인 쉘의 설치 경로를 별도 확인한다. 비로그인 SSH에서
+`command -v codex`가 나오지 않았으므로 설치 없음으로 단정하지 않는다.
+
+실측 실행 경로: `/home/sdg/.npm-global/bin/codex`; `--version` 실행 성공
+(`codex-cli 0.157.1`). 기본 SSH PATH에는 없으므로 자동화에서는 절대 경로를 쓴다.
+버전 확인은 Telegram 연동/인증/자동 관리 정상 검증이 아니다.
+
+## 모든 프로젝트/세션에서 발견
+
+Windows의 워터비·시코드·카스씨엘 AGENTS에서 이 문서를 연결한다.
+씽크패드에서도 세 프로젝트 AGENTS가 `/home/sdg/waterbe/docs/guides/THINKPAD_CONNECTION_GUIDE.md`를
+읽도록 연결한다. 씽크패드 자체에서는 SSH로 자신에게 접속하지 않고 Linux 명령을
+직접 실행한다. Windows 전용 `thinkpad.ps1`을 Linux에서 실행하지 않는다.
+세션이 이전 지침을 이미 읽었다면 변경된 AGENTS와 이 문서를 다시 읽는다.
+공통 계약을 쓰되 모든 컴퓨터에 동일한 파일/권한이 있다고 가정하지 않는다.

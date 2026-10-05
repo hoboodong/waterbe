@@ -20,6 +20,18 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(api.call("scale.text.change", "2026-10-01")["status"], "unsupported")
 
     @patch.dict("os.environ", {}, clear=True)
+    def test_history_missing_config_is_unavailable(self):
+        self.assertEqual(api.call('history.read')['status'],'unavailable')
+        self.assertEqual(api.call('history.append')['status'],'unsupported')
+
+    @patch.dict("os.environ", {"SUPABASE_URL":"https://example.test","SUPABASE_SERVICE_ROLE_KEY":"test"}, clear=True)
+    def test_history_error_is_not_empty_success(self):
+        with patch.object(api,'urlopen',side_effect=OSError('network')):
+            result=api.call('history.read','2026-10-05',store='wangsimni')
+        self.assertEqual(result['status'],'unavailable')
+        self.assertIsNone(result['data'])
+
+    @patch.dict("os.environ", {}, clear=True)
     def test_missing_config_not_zero(self):
         result = api.call("sales.daeyoung.read", "2026-10-01")
         self.assertEqual(result["status"], "unavailable")

@@ -1,0 +1,13 @@
+[Unit]
+Description=CASPi central remote read worker
+After=network-online.target
+[Service]
+EnvironmentFile=%h/.config/waterbe/central.env
+ExecStart=/usr/bin/python3 %h/.local/lib/cas-central-20261005/caspi_remote_read_worker.py --config %h/.local/state/cas-central/read-config.json
+Restart=on-failure
+RestartSec=15
+TimeoutStopSec=90
+UMask=0077
+NoNewPrivileges=yes
+[Install]
+WantedBy=default.target

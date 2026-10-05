@@ -38,7 +38,9 @@ def read_table(base, key, table, business_date):
     raise ValueError("Pagination incomplete")
 
 
-def call(operation, business_date):
+def call(operation, business_date=None, **filters):
+    if operation.startswith('history.'):
+        return read_history(operation,business_date,**filters)
     result = {"operation": operation, "status": "unavailable", "business_date": business_date,
               "fetched_at": datetime.now(timezone.utc).isoformat(), "data": None}
     if operation not in TABLES:
@@ -72,6 +74,48 @@ def call(operation, business_date):
     return result
 
 
+def read_history(operation,business_date=None,**filters):
+    result={'operation':operation,'status':'unavailable','data':None,
+            'fetched_at':datetime.now(timezone.utc).isoformat()}
+    if operation not in {'history.read','history.status'}:
+        return {**result,'status':'unsupported'}
+    base=os.environ.get('SUPABASE_URL','').rstrip('/')
+    key=os.environ.get('SUPABASE_SERVICE_ROLE_KEY','')
+    if urlparse(base).scheme!='https' or not key:
+        return {**result,'reason':'Configured service environment required'}
+    parameters={'order':'sequence','limit':500,'select':'sequence,received_at,body'}
+    table='waterbe_operation_history'
+    if operation=='history.status':
+        table='waterbe_history_worker_status'
+        parameters={'select':'id,checked_at,body'}
+    else:
+        for field in ('source','store','feature','target','operation_id','result'):
+            if filters.get(field):
+                parameters[field]='eq.'+filters[field]
+        if business_date:
+            from datetime import timedelta
+            day=date.fromisoformat(business_date)
+            parameters['and']='(observed_at.gte.'+day.isoformat()+'T00:00:00+09:00,observed_at.lt.'+(day+timedelta(days=1)).isoformat()+'T00:00:00+09:00)'
+    rows=[]
+    try:
+        for _ in range(2000):
+            request=Request(base+'/rest/v1/'+table+'?'+urlencode(parameters),
+                            headers={'apikey':key,'Authorization':'Bearer '+key},method='GET')
+            with urlopen(request,timeout=20) as response:
+                page=json.load(response)
+            if not isinstance(page,list):
+                raise ValueError('Invalid history response')
+            rows.extend(page)
+            if operation=='history.status' or len(page)<500:
+                return {**result,'status':'available','data':rows,
+                        'warnings':['Only connected sources are covered; absence does not prove no changes.',
+                                    'Observation time is not action time. Check history.status freshness.']}
+            parameters['sequence']='gt.'+str(page[-1]['sequence'])
+        raise ValueError('Pagination incomplete')
+    except Exception:
+        return {**result,'reason':'History read failed; no empty result substituted'}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -80,7 +124,9 @@ def main():
     describe.add_argument("operation")
     invoke = sub.add_parser("call")
     invoke.add_argument("operation")
-    invoke.add_argument("--date", required=True)
+    invoke.add_argument("--date")
+    for field in ('source','store','feature','target','operation_id','result'):
+        invoke.add_argument('--'+field.replace('_','-'))
     args = parser.parse_args()
     if args.command == "list":
         output = catalog()
@@ -88,8 +134,9 @@ def main():
         output = next((x for x in catalog()["operations"] if x["id"] == args.operation), {"status": "unknown_operation"})
     else:
         try:
-            output = call(args.operation, args.date)
-        except ValueError:
+            output = call(args.operation, args.date, **{field:getattr(args,field) for field in
+                          ('source','store','feature','target','operation_id','result')})
+        except (ValueError,TypeError):
             output = {"status": "invalid_request", "reason": "Use ISO business date YYYY-MM-DD."}
     print(json.dumps(output, ensure_ascii=False, indent=2))
     return 0 if output.get("status", "available") == "available" else 1

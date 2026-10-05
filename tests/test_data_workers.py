@@ -12,12 +12,13 @@ class WorkerCatalogTests(unittest.TestCase):
         operations = {item["id"] for item in api["operations"]}
         workers = registry["workers"]
         self.assertEqual(registry["partition_by"], "source_kind")
-        self.assertEqual(registry["deployment_status"], "design_only")
+        self.assertEqual(registry["deployment_status"], "partial_deployment_history_only")
         self.assertEqual(len(workers), len({w["id"] for w in workers}))
         for worker in workers:
             self.assertTrue(worker["inputs"] and worker["outputs"])
             self.assertTrue(set(worker["operations"]) <= operations)
-            self.assertEqual(worker["new_processing_status"], "planned")
+            self.assertEqual(worker["new_processing_status"],
+                             "deployed_central_windows" if worker['id']=='operation_history' else "planned")
 
 
 if __name__ == "__main__":
