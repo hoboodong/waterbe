@@ -28,6 +28,9 @@
 
 ## 개발 기획안
 
+- [중앙 저울 통신·공유 저장 분리](docs/plans/CENTRAL_SCALE_TRANSPORT.md):
+  CASPi→씽크패드 직접 누계 수집, 시코드↔수파 요청 교환 및 실제 적용 범위.
+
 - [중앙 컴퓨터 교체·재해 복구](docs/plans/CENTRAL_DISASTER_RECOVERY.md):
   Windows 소실에 대비한 복원 묶음·단독 실행·검증 및 완료 조건.
 

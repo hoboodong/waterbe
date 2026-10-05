@@ -62,6 +62,15 @@ def main():
             shutil.copy2(supervisor_config / name, config_target / name)
         shutil.copytree(home / '.config/systemd/user', target / 'units',
                         ignore=lambda path, names: [name for name in names if not name.startswith(('waterbe-', 'cas-', 'caspi-')) or not name.endswith(('.service', '.timer'))])
+        # Preserve the explicitly installed Python releases, not env files or keys.
+        for name in ('waterbe-history', 'waterbe-history-low-io-v1',
+                     'cas-central-20261005', 'cas-central-adaptive-20261006'):
+            release = home / '.local/lib' / name
+            if release.is_dir():
+                bundle = target / 'runtime' / name
+                bundle.mkdir(parents=True)
+                for source in release.glob('*.py'):
+                    shutil.copy2(source,bundle/source.name)
         hashes = {}
         for path in target.rglob('*'):
             if path.is_file():

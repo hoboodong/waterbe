@@ -4,7 +4,7 @@ After=network-online.target
 [Service]
 Type=oneshot
 EnvironmentFile=%h/.config/waterbe/central.env
-ExecStart=/usr/bin/python3 %h/.local/lib/cas-central-20261005/caspi_receipt_sync.py --config %h/.local/state/cas-central/receipt-config.json
+ExecStart=/usr/bin/python3 %h/.local/lib/cas-central-adaptive-20261006/caspi_receipt_sync.py --config %h/.local/state/cas-central/receipt-config.json
 TimeoutStartSec=180
 UMask=0077
 NoNewPrivileges=yes

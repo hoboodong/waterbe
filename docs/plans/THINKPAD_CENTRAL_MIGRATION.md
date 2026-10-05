@@ -1,5 +1,10 @@
 # 중앙 Windows → 씽크패드 전환
 
+2026-10-06 누계 수집/중앙 릴리스 후속은
+[중앙 저울 통신 계약](CENTRAL_SCALE_TRANSPORT.md)을 따른다. 현재 aggregate/receipt
+실행 릴리스는 ~/.local/lib/cas-central-adaptive-20261006,
+이력 관측은 ~/.local/lib/waterbe-history-low-io-v1이다. 이전 릴리스를 보존했다.
+
 최종 완료 조건은 [중앙 컴퓨터 교체·재해 복구 계약](CENTRAL_DISASTER_RECOVERY.md)을
 포함한다. Windows 고장 시 원본 PC 접근 없이 코드·인증·데이터·미확정 작업을
 복원할 수 있어야 하며, 단순 호스트 이동을 전체 완료로 표시하지 않는다.

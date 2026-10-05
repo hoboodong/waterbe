@@ -1,16 +1,14 @@
 [Unit]
 Description=Waterbe central operational history
 After=network-online.target
-
 [Service]
 Type=simple
 EnvironmentFile=%h/.config/waterbe/central.env
-ExecStart=/usr/bin/python3 %h/.local/lib/waterbe-history/history_worker.py --database %h/.local/state/waterbe-history/operations.db --source-root %h/waterbe --notification-root %h/.local/state/waterbe-central/logs watch
+ExecStart=/usr/bin/python3 %h/.local/lib/waterbe-history-low-io-v1/history_worker.py --database %h/.local/state/waterbe-history/operations.db --source-root %h/waterbe --notification-root %h/.local/state/waterbe-central/logs watch
 Restart=on-failure
 RestartSec=15
 TimeoutStopSec=90
 UMask=0077
 NoNewPrivileges=yes
-
 [Install]
 WantedBy=default.target

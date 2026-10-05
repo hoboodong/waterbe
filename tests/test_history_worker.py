@@ -29,6 +29,27 @@ class WorkerTests(unittest.TestCase):
         self.assertEqual(events[1]['changes'],[dict(field='price',before=100,after=200)])
         self.assertNotIn('occurred_at',events[1])
 
+    def test_polling_skips_recent_products_without_refreshing_coverage(self):
+        previous = {'success_at': self.now, 'status': 'available'}
+        self.assertEqual(worker.polling_plan(self.source,previous,self.now,
+                         '2026-10-05T01:01:00+00:00'), (False,None))
+
+    def test_incremental_crosses_midnight(self):
+        entry = next(e for e in worker.sources() if e['table'].startswith('print_records_'))
+        previous = {'success_at':'2026-10-05T23:59:00+00:00','status':'available'}
+        due, since = worker.polling_plan(entry,previous,previous['success_at'],
+                                        '2026-10-06T00:01:00+00:00')
+        self.assertTrue(due)
+        self.assertEqual(since,'2026-10-05T23:49:00+00:00')
+
+    def test_failed_source_is_retried_and_full_scan_is_bounded(self):
+        previous = {'success_at':self.now,'status':'unavailable'}
+        due, since = worker.polling_plan(self.source,previous,self.now,'2026-10-05T01:01:00+00:00')
+        self.assertTrue(due)
+        self.assertIsNotNone(since)
+        self.assertEqual(worker.polling_plan(self.source,previous,self.now,
+                         '2026-10-06T01:01:00+00:00'), (True,None))
+
     def test_bad_record_does_not_stop_next(self):
         self.assertEqual(worker.ingest(self.db,self.source,[dict(id=None)]+self.rows,self.now),1)
         self.assertEqual(worker.status(self.db)['quarantined'],1)

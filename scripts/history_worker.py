@@ -4,7 +4,7 @@ Never executes scale commands or changes a source business table.
 """
 import argparse
 from contextlib import closing
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 import hashlib
 import json
 import os
@@ -106,6 +106,7 @@ def initialize(path):
         CREATE TABLE IF NOT EXISTS quarantine (identity TEXT PRIMARY KEY, detected_at TEXT NOT NULL, code TEXT NOT NULL);
         CREATE TABLE IF NOT EXISTS notices (id TEXT PRIMARY KEY, body TEXT NOT NULL, logged INTEGER NOT NULL DEFAULT 0);
         CREATE TABLE IF NOT EXISTS health (source TEXT PRIMARY KEY, failures INTEGER NOT NULL, opened INTEGER NOT NULL);
+        CREATE TABLE IF NOT EXISTS polling (source TEXT PRIMARY KEY, full_success_at TEXT NOT NULL);
         ''')
 
 
@@ -273,21 +274,52 @@ def publish_notices(path,root):
             db.execute('UPDATE notices SET logged=1 WHERE id=?',(row['id'],))
 
 
+def polling_interval(entry):
+    if entry['table'].startswith('products_'):
+        return 300
+    if entry['table'].startswith('scale_') or entry['table'].endswith('_sales_sources'):
+        return 900
+    return 60
+
+
+def polling_plan(entry, previous, last_full, now):
+    """Due/fallback policy; never advance a cursor on failed reads or skipped work."""
+    if not previous or not previous['success_at']:
+        return True, None
+    moment = datetime.fromisoformat(now)
+    success = datetime.fromisoformat(previous['success_at'])
+    if previous['status'] == 'available' and (moment - success).total_seconds() < polling_interval(entry):
+        return False, None
+    full = datetime.fromisoformat(last_full or previous['success_at'])
+    if (moment - full).total_seconds() >= 86400:
+        return True, None
+    return True, (success - timedelta(minutes=10)).isoformat()
+
+
 def once(path,source_root=None,notification_root=None):
     initialize(path)
     total = 0
+    polling = dict(queried=0, skipped=0, incremental=0, full=0, policy='low-io-v1')
     for entry in sources():
         now = datetime.now(timezone.utc).isoformat(timespec='microseconds')
         ok = False
         try:
             with closing(history.connect(path)) as db:
-                previous=db.execute('SELECT success_at FROM coverage WHERE source=?',(entry['table'],)).fetchone()
-            since=None
-            if previous and previous['success_at'] and previous['success_at'][:10]==now[:10] and entry['table'].startswith(('print_records_','operation_diagnostics','caspi_operation_receipts')):
-                from datetime import timedelta
-                since=(datetime.fromisoformat(previous['success_at'])-timedelta(minutes=10)).isoformat()
+                previous=db.execute('SELECT success_at,status FROM coverage WHERE source=?',(entry['table'],)).fetchone()
+                last_full=db.execute('SELECT full_success_at FROM polling WHERE source=?',(entry['table'],)).fetchone()
+            due, since = polling_plan(entry, previous, last_full['full_success_at'] if last_full else None, now)
+            if not due:
+                polling['skipped'] += 1
+                continue  # Keep actual observation timestamps; do not manufacture freshness.
+            polling['queried'] += 1
+            polling['full' if since is None else 'incremental'] += 1
             total += ingest(path, entry, read_source(entry,since), now)
             ok = True
+            with closing(history.connect(path,write=True)) as db, db:
+                if since is None:
+                    db.execute('INSERT OR REPLACE INTO polling VALUES(?,?)',(entry['table'],now))
+                elif not last_full:
+                    db.execute('INSERT OR IGNORE INTO polling VALUES(?,?)',(entry['table'],previous['success_at']))
         except Exception:
             pass  # Never emit source response bodies or secrets.
         with closing(history.connect(path, write=True)) as db, db:
@@ -319,6 +351,7 @@ def once(path,source_root=None,notification_root=None):
             db.execute('INSERT OR REPLACE INTO coverage VALUES(?,?,?,?)',
                        ('waterbe_master_files',now,now if good else None,'available' if good else 'unavailable'))
     state=status(path)
+    state['polling'] = polling
     try:
         publish_notices(path,notification_root)
     except Exception:
@@ -354,7 +387,9 @@ def main():
     else:
         while True:
             try:
-                once(args.database,args.source_root,args.notification_root)
+                cycle = once(args.database,args.source_root,args.notification_root)
+                print(json.dumps({'event':'history_poll_cycle','polling':cycle['polling'],
+                                  'stored':cycle['stored'],'delivered':cycle['delivered']}),flush=True)
                 health_notice(args.database,'history_worker',True,
                               datetime.now(timezone.utc).isoformat(timespec='microseconds'))
                 publish_notices(args.database,args.notification_root)
