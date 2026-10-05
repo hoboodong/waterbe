@@ -5,9 +5,10 @@
 2026-10-05 부분 이전: 공통 기록 수집의 현재 실행 주체는 씽크패드
 `waterbe-history.service`, DB `/home/sdg/.local/state/waterbe-history/operations.db`다.
 Windows `WaterbeOperationHistory`는 중지/비활성화하고 원복용 DB를 보존했다.
-다른 중앙 워커와 Telegram reporter는 아직 Windows다. 임시 분당 로그 bridge가
-씽크패드 건강 로그를 기존 reporter에 연결한다. Windows도 꺼지면 이 임시 알림 경로는
-멈춘다. 상세 전환 증거/남은 항목은 [중앙 이전 기록](../plans/THINKPAD_CENTRAL_MIGRATION.md)을 따른다.
+다른 중앙 워커와 Telegram reporter도 씽크패드로 이전했다. Windows 임시 bridge는
+중지했으며 native 건강 로그를 씽크패드 reporter가 직접 소비한다. 중앙 실행 상태
+관측도 기존 내구성 사건/notice에 연결한다. 기존 Telegram 전달 미확정1건은 보존한다.
+상세 전환 증거/남은 항목은 [중앙 이전 기록](../plans/THINKPAD_CENTRAL_MIGRATION.md)을 따른다.
 아래 최초 설치 설명과 구 Windows 명령은 이전 이력이며 현재 가동 주체와 구별한다.
 
 워터비가 공통 계약·조회·교차 출처 분석을 총괄한다. 각 프로그램이 자기 원본과

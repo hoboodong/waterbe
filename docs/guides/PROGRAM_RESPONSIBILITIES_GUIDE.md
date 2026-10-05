@@ -201,6 +201,11 @@
 
 ## 6. 텔레그램·코덱스 연결 — 질문·답변 창구
 
+- 씽크패드 중앙 프로그램 관리도 기존 워터비 Codex/Telegram 창구가 맡는다.
+  점검·요청형 복구·기록 계약은 [중앙 관리 지침](THINKPAD_CENTRAL_MANAGEMENT_GUIDE.md)을
+  따른다. `waterbe-central manage`를 설치했다. 상시 감시는 기존 워커이며,
+  알림을 Codex에 자동 입력하는 무인 진단/수리 연결은 아직 미설치다.
+
 - 담당: 기존 텔레그램 연결 프로그램은 메시지 전송, 워터비는 업무 요청 해석·조회 호출·업무 결과 형식을 담당한다.
 - 상태: 현재 대화 창구로 사용 중. 새 통합 조회 프로그램 연결과 터미널 출력 분리는 보완 필요.
 - 책임: 인증된 사용자의 질문에서 매장·날짜·요청 항목을 전달하고, 조회 결과를 휴대폰용으로 제공한다. 불명확한 현장정보는 확인한다.
@@ -209,9 +214,10 @@
 
 ## 공통 인프라와 실행 장소
 
-- 2026-10-05: 공통 이력/앱 중앙 읽기/문어 영수증 게시/중앙 누계 가져오기는
-  씽크패드 단독 실행으로 전환. 상품·문구 변경 통합 워커 및 Telegram reporter는
-  Windows 유지. 누계 현재 DB는 `/home/sdg/.local/state/cas-central/aggregate-central.sqlite3`.
+- 2026-10-05: 공통 이력/앱 중앙 읽기/문어 영수증 게시/누계 가져오기/상품·문구
+  변경/Telegram 보고는 씽크패드 단독 실행. Windows의 해당 작업 및 임시 bridge는
+  비활성이다. `waterbe-central`은 상태/API/요청형 매출 실행의 공통 운영 입구다.
+  누계 현재 DB는 `/home/sdg/.local/state/cas-central/aggregate-central.sqlite3`.
   [전환 실적과 미완료 범위](../plans/THINKPAD_CENTRAL_MIGRATION.md)를 확인한다.
 
 - Supabase: 원본/검증자료의 저장·교환 장소. 저장 위치와 데이터의 업무 소유권은 다르다.

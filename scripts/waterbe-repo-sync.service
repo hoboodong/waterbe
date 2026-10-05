@@ -1,0 +1,6 @@
+[Unit]
+Description=Waterbe published repository fast-forward
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/flock -n /home/sdg/.local/state/waterbe-central/repo-sync.lock /usr/bin/python3 /home/sdg/waterbe/scripts/repo_sync.py
+TimeoutStartSec=180

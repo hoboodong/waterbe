@@ -27,6 +27,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--year", type=int, required=True)
     parser.add_argument("--csv", type=Path, required=True)
     parser.add_argument("--report", type=Path, required=True)
+    parser.add_argument("--det-model", help="Explicit detection model for constrained central hosts")
+    parser.add_argument("--cpu-threads", type=int, default=1)
     return parser.parse_args()
 
 
@@ -87,12 +89,15 @@ def main() -> int:
         for item in manifest
     }
     images = sorted(path for path in args.input_dir.iterdir() if path.is_file())
+    extra = {"text_detection_model_name": args.det_model} if args.det_model else {}
     ocr = PaddleOCR(
         lang="korean",
         use_doc_orientation_classify=False,
         use_doc_unwarping=False,
         use_textline_orientation=False,
         enable_mkldnn=False,
+        cpu_threads=args.cpu_threads,
+        **extra,
     )
 
     extracted: list[dict] = []

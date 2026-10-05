@@ -1,0 +1,19 @@
+[Unit]
+Description=CAS product and text queue supervisor
+After=network-online.target
+[Service]
+EnvironmentFile=%h/.config/waterbe/central.env
+Environment=CAS_CL5200_BACKUP_ROOT=%h/.local/state/cas-supervisor/snapshots
+Environment=CAS_CL5200_LOG_ROOT=%h/.local/state/waterbe-central/logs
+Environment=PATH=%h/.local/bin:/usr/bin:/bin
+WorkingDirectory=%h/.local/lib/cas-supervisor-20261005
+ExecStart=%h/.local/opt/waterbe-central-venv/bin/python %h/.local/lib/cas-supervisor-20261005/scale-data/tools/v0_task_bootstrap.py
+Restart=on-failure
+RestartPreventExitStatus=2
+RestartSec=15
+KillSignal=SIGINT
+TimeoutStopSec=300
+UMask=0077
+NoNewPrivileges=yes
+[Install]
+WantedBy=default.target

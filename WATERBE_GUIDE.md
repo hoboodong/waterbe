@@ -9,6 +9,7 @@
 | 업무 | 지침 |
 | --- | --- |
 | 프로그램 구성·프로젝트별 책임·구현 상태 | [프로그램 역할 지침](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md) |
+| 씽크패드 코덱스 중앙 프로그램 관리 | [중앙 관리 지침](docs/guides/THINKPAD_CENTRAL_MANAGEMENT_GUIDE.md) |
 | 전체 변경·오류·배포 이력 및 채팅 없는 원인 추적 | [운영 기록·추적 지침](docs/guides/OPERATION_HISTORY_GUIDE.md) |
 | 에이전트 공통 API 목록·호출·권한·미구현 구분 | [API 사용 입구](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md#에이전트-공통-api-진입점) |
 | 라즈·할인·남선·대영 출처별 데이터 워커 구성 | [데이터 워커 구성](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md#데이터-워커-구성--출처별-관리) |
@@ -26,6 +27,9 @@
 | 월계점 일일 생산·할인·폐기 연결 | [월계점 일일 운영 지침](WOLGYE_DAILY_OPERATIONS_GUIDE.md) |
 
 ## 개발 기획안
+
+- [중앙 컴퓨터 교체·재해 복구](docs/plans/CENTRAL_DISASTER_RECOVERY.md):
+  Windows 소실에 대비한 복원 묶음·단독 실행·검증 및 완료 조건.
 
 - [통합 운영 조회 기획안](docs/plans/INTEGRATED_OPERATIONS_QUERY_PLAN.md): 워터비·시코드·카스씨엘 역할과 단계별 구현안. 아직 구현·배포된 기능이 아니며 운영 조회 지침을 대체하지 않는다.
 - [CASPi·시코드 사건 증명 및 무중단 복구 기획안](docs/plans/CASPI_SEACODE_EVENT_PROOF_PLAN.md): 현장 Bluetooth 실행, 휴대폰/Pi 이중 인터넷 경로, 동일 영수증 병합, PLU별 격리와 재조회 해제 기준.

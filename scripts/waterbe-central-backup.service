@@ -1,0 +1,8 @@
+[Unit]
+Description=Waterbe central online state backup
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 %h/waterbe/scripts/central_backup.py
+TimeoutStartSec=600
+UMask=0077
+NoNewPrivileges=yes

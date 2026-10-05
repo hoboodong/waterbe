@@ -1,0 +1,8 @@
+[Unit]
+Description=Central worker health observation
+[Timer]
+OnBootSec=60
+OnUnitInactiveSec=60
+Unit=waterbe-central-health.service
+[Install]
+WantedBy=timers.target

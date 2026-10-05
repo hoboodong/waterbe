@@ -1,0 +1,10 @@
+[Unit]
+Description=CAS durable Telegram operation reporting
+After=network-online.target
+[Service]
+Type=oneshot
+EnvironmentFile=%h/.config/waterbe/telegram.env
+ExecStart=/usr/bin/flock -n %h/.local/state/waterbe-central/telegram-failure-reporter/reporter.lock /usr/bin/python3 %h/.local/lib/cas-supervisor-20261005/scale-data/tools/telegram_failure_reporter.py --config %h/.local/state/waterbe-central/telegram-failure-reporter/config.json --runtime-root %h/.local/state/waterbe-central/telegram-failure-reporter once
+TimeoutStartSec=180
+UMask=0077
+NoNewPrivileges=yes

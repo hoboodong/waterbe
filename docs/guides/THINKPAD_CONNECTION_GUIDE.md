@@ -1,5 +1,26 @@
 # 씽크패드 공통 접속
 
+## 현재 중앙 운영 입구
+
+중앙 점검·복구 담당 Codex는 [중앙 관리 지침](THINKPAD_CENTRAL_MANAGEMENT_GUIDE.md)을
+읽는다. `~/.local/bin/waterbe-central manage check`가 공통 관리 입구다.
+
+모든 활성 중앙 워커의 실행 주체는 씽크패드다. Windows 예약 작업을 다시 켜지 않는다.
+Linux에서 `~/.local/bin/waterbe-central status` 또는
+`~/.local/bin/waterbe-central api call history.status`로 확인한다.
+Windows에서는 `ssh thinkpad '~/.local/bin/waterbe-central status'`를 사용한다.
+이 입구가 중앙 전용 인증과 venv를 명시 로드하며 비밀을 출력하지 않는다.
+
+`namseon-check`는 Drive dry-run, `namseon-sync`는 승인된 동기화 때만 사용한다.
+후자는 기존 원본 정리/중복 휴지통/클라우드 적재/DB 업로드를 포함한다.
+`daeyoung-ocr <기존 인자>`는 명시적 mobile det/CPU1thread,
+`daeyoung-publish <기존 인자>`는 승인된 적재다. 상태 조회로 실행하지 않는다.
+`backup`은 인증 제외 운영 상태 온라인 백업이며 자동 스케줄도 설치했다.
+정전의 외부 감시/다른 컴퓨터 자동 복원은 이 운영 이전과 별도 과제다.
+
+설치 코드·상태·실제 성공·보류 범위는
+[중앙 이전 기록](../plans/THINKPAD_CENTRAL_MIGRATION.md)의 현재 실행 주체 항목을 따른다.
+
 2026-10-05: Windows 중앙 PC에서 `ssh thinkpad` 키 인증 및 재접속 검증.
 호스트는 Tailscale `100.123.147.103`, 사용자 `sdg`다. 전용 키는
 Windows 사용자 SSH 설정에 있으며 키 내용이나 비밀번호를 Git에 저장하지 않는다.
@@ -22,8 +43,8 @@ run은 명시된 명령을 원격 프로젝트에서 실행하며 변경 명령�
 경로에는 사용하지 않는다. DB 이전은 이 도구로 실행 중 파일을 복사하지 말고
 각 담당 프로그램의 온라인 백업/중단/검증 절차를 따른다.
 
-두 컴퓨터는 별도 파일 시스템이다. 자동 양방향 동기화, 서비스 이중 실행,
-자동 Git pull/push, 자격증명 복제는 하지 않는다. 명령 실패 시 쓰기를 자동 재시도하지
+두 컴퓨터는 별도 파일 시스템이다. 파일 양방향 복제, 서비스 이중 실행,
+자동 커밋/push, 자격증명 복제는 하지 않는다. 명령 실패 시 쓰기를 자동 재시도하지
 않는다. 접속 설정은 연결 준비이며 중앙 워커 이전 완료를 뜻하지 않는다.
 SSH 서버 부팅 자동 활성화 및 SSH/Tailscale 현재 활성 상태는 확인했다.
 전원 종료/절전/인터넷 장애까지 해결됐다는 뜻은 아니다.
@@ -43,3 +64,22 @@ Windows의 워터비·시코드·카스씨엘 AGENTS에서 이 문서를 연결�
 직접 실행한다. Windows 전용 `thinkpad.ps1`을 Linux에서 실행하지 않는다.
 세션이 이전 지침을 이미 읽었다면 변경된 AGENTS와 이 문서를 다시 읽는다.
 공통 계약을 쓰되 모든 컴퓨터에 동일한 파일/권한이 있다고 가정하지 않는다.
+
+## 코드 최신 유지 — 사용자 승인 2026-10-05
+
+GitHub origin/main을 공통 기준으로 삼는다. Windows의 Waterbe Repository Sync
+예약 작업과 씽크패드 waterbe-repo-sync.timer가 분당 확인하며, main이 뒤처지고
+tracked 작업본이 깨끗할 때만 fast-forward한다. 미커밋 작업, 앞선 로컬 커밋,
+분기 충돌, 파일 충돌을 덮거나 stash/reset하지 않고 상태를 남겨 Telegram에 알린다.
+같은 HEAD의 개발 중 작업본은 정상 보존한다. 커밋·푸시는 작업 에이전트가 요청에
+따라 수행한다. 미커밋 파일을 실시간 복제하는 시스템이 아니다.
+
+상태는 Windows LOCALAPPDATA/Waterbe/repo-sync.json, 씽크패드
+~/.local/state/waterbe-central/{repo-sync,windows-repo-sync}.json에 보존한다.
+연속 실패2회/회복은 기존 공통 이력·Telegram 경로를 쓴다. source는
+central_repo_sync/central_windows_sync다. Windows 전원 종료/SSH 자체 불통의
+외부 감시는 별도이며 상태 파일의 checked_at이 오래되면 현재 정상으로 보지 않는다.
+
+소스 갱신은 앱 배포나 불변 워커 릴리스 교체/서비스 재시작이 아니다. canonical 소스를
+직접 사용하는 요청형/oneshot 도구는 다음 실행에 갱신된 코드를 사용할 수 있다.
+실행 코드의 변경은 각 담당 적용·검증 절차와 실행 릴리스를 확인한다.

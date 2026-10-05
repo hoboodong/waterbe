@@ -1,8 +1,79 @@
 # 중앙 Windows → 씽크패드 전환
 
+최종 완료 조건은 [중앙 컴퓨터 교체·재해 복구 계약](CENTRAL_DISASTER_RECOVERY.md)을
+포함한다. Windows 고장 시 원본 PC 접근 없이 코드·인증·데이터·미확정 작업을
+복원할 수 있어야 하며, 단순 호스트 이동을 전체 완료로 표시하지 않는다.
+
 ## 2026-10-05 부분 전환 실적
 
+### 현재 실행 주체 — 19:30 KST 전후 전환 확인
+
+- 운영 이력, 중앙 읽기, 문어팀 영수증 게시, 누계 가져오기, 상품·문구 변경,
+  Telegram 보고는 모두 씽크패드 단독 실행이다. 해당 Windows 예약 작업과
+  임시 `WaterbeThinkpadHistoryBridge`는 Disabled. 과거 실패 감지/triage 작업은
+  이미 비활성인 구 시스템이므로 다시 활성화하지 않았다.
+- 변경 서비스: `cas-supervisor.service`, 코드
+  `~/.local/lib/cas-supervisor-20261005`, 상태 `~/.local/state/cas-supervisor`.
+  실제 Windows 원본 백업 루트는 `D:/CAS-CL5200/snapshots`였다. 기본 AppData
+  준비본과 구별하여 이 실제 루트의 모든 백업·assistance state·검토된 circuit
+  증거를 최종 전송했다. 네 변경 대상의 최신 PLU 인덱스 전건 검증 통과
+  (마포81/미아76/왕십리76/월계76). 문어팀의 기존 쓰기 비활성은 유지한다.
+- 네 처리 큐의 processing=0 확인 후 Windows 워커 중지. 상품/문구 dispatch DB
+  온라인 백업 integrity/전송 해시 검증, 기존 ID·동일 요청 해시 보존. 운영 JSON
+  증거도 별도 이전했다. 임의 쓰기·재전송·원본 성공 처리 없음.
+- Linux 사용자 영역 PowerShell 7.6.6 및 `powershell.exe`/`python.exe` 호환 경로.
+  venv `~/.local/opt/waterbe-central-venv`에 Windows와 같은 realtime2.31.0 설치.
+  실제 Realtime subscribed 및 마포 자동 검증 81records/verified/changed=false 확인.
+  검증된 최신값은 앱 스냅샷 게시 기준이며 물리 쓰기 시험은 하지 않았다.
+- 왕십리 Windows 접속이 재개되어 씽크패드의 기존 공개키를 추가했다. 기존 키는
+  삭제하지 않았다. 다섯 매장 SSH/CASPi status ready 확인. 이후 실제 중앙 누계
+  import succeeded/새6회차/매장 오류 없음. 이는 물리 저울 전부 정상의 증거는 아니다.
+- `cas-telegram-reporter.timer` 30초 간격 실행. 같은 봇/수신처/전송함/known IDs
+  유지. Windows DPAPI 인증을 Linux 제한 파일 `~/.config/waterbe/telegram.env`
+  (600)로 전송. 실제 Telegram canary accepted 증거는 reporter 상태 폴더의
+  `thinkpad-migration-test.json`. 기존 delivery_uncertain1건은 그대로 보존하고
+  재전송하거나 성공 처리하지 않았다. 임시 Windows 로그 bridge는 중지했다.
+- 남선 원본 접근/449파일 탐색 dry-run 성공. Windows 장부9048행(8/28~9/29)은
+  보존본으로 이전. 기존 씽크패드 장부127515행(2025/7/5~2026/10/2)을 유지했다.
+  같은 source ID는 모두 존재하지만 2829행의 내용 차이는 미조정이며 두 장부를
+  임의 합치거나 덮지 않았다. 공용 매출 기준은 기존 Supabase다. 매출 요청형
+  실행은 `waterbe-central namseon-sync`; 신규 상시 매출 스케줄을 만들지 않았다.
+- 대영 PaddleOCR3.7.0/Paddle3.3.1 및 기존 모델 캐시 이전. server det 시험이
+  종료137로 실패하여 중앙 실행은 명시적 mobile det/CPU1thread 사용. 샘플 실제
+  predict 30텍스트 통과. 원본 OCR 기본 모델은 보존하고 `--det-model` 옵션만 추가.
+  매출 판독 정확성/합계 검토는 기존 지침을 따르며 신규 매출 적재는 하지 않았다.
+- 기존 ThinkPad `terminal-bot-waterbe`/session watchdog 및 실행 중 Codex 유지.
+  CLI ChatGPT 로그인 상태 확인. 운영 창구는 기존 Telegram 대화이며 새 자동
+  AI 진단/수리 에이전트를 추가한 것은 아니다. 일반 알림은 AI 없이 동작한다.
+- `waterbe-central-health.timer`가 중앙7종 실행/타이머 상태를 관측하고 기존
+  공통 사건/내구성 notice/Telegram 경로로 연속 실패2회 및 재개를 연결한다.
+  프로세스 회복을 저울 적용 성공으로 보고하지 않는다. 호스트 자체 정전의 외부
+  감시는 별도이며 이 동일 호스트 관측기가 정전을 알린다고 주장하지 않는다.
+- `waterbe-central-backup.timer`: 매일00/06/12/18:30, 온라인 SQLite6종 integrity
+  확인 후 완료 폴더 공개. 최초199파일 백업 성공. 실제 D루트 최종 백업과 추가
+  운영 JSON 반영 후19:34 KST 백업 `20261005T103446.073259Z`의729파일/SQLite6종을
+  독립 해시·DB 검사로 재검증했다. 이전 준비 백업은 임시 WAL/SHM 파일 문제로
+  복원 검증 합격본으로 사용하지 않는다. SQLite 연결을 닫은 뒤 manifest를 만드는
+  수정과 회귀 테스트를 적용했다. 독립 검사는 `central_backup_verify.py`로 워커를
+  시작하지 않고 실행한다. 이 백업은 인증을 포함하지 않으며 별도
+  컴퓨터 복원 시험/외부 암호화 비밀 보관까지 완료됐다는 뜻은 아니다.
+- 프로젝트 소스는 fast-forward로 Waterbe906ec90/CAS55ab424/SeaCode2896db5 반영.
+  이전 씽크패드의 지침 추가만 `thinkpad-pre-migration-20261005` stash에 보존했다.
+  이번 추가 스크립트/설치 문서는 작업본을 명시 전송하며 코드 푸시/APK 배포와
+  구별한다. 다른 세션의 미커밋 작업은 건드리지 않았다.
+
+- 테스트: reporter27/bootstrap3/supervisor25/remote adapter6 통과. Linux에서도
+  reporter27/bootstrap3 재실행 통과. 샘플 OCR30텍스트/Drive read+dry-run/
+  cloud history gateway available 확인. 신규 실제 저울 쓰기 시험은 하지 않았다.
+
+아래 부분 전환 항목은 이전 단계의 이력이다. 현재 실행 주체는 이 항목을 따른다.
+
 ### 추가 전환 (18:49 KST 전후)
+
+- 푸시 기준: Waterbe `906ec90`, CAS `55ab424`, SeaCode `2896db5`.
+  이후 다음 작업으로 bootstrap의 Linux 명시 환경 지원 준비/3 tests 통과.
+  통합 워커 전체 상품 새로고침/백업은 `powershell.exe` 기반 controller 경로여서
+  Linux 실행 및 CASPi 경로 계약 검증이 남는다. Windows 통합 워커를 중지하지 않는다.
 
 - 씽크패드 SSH 매장 별칭 등록. 월계도 공개키 인증을 보완해 접속 확인.
   왕십리만 현재 Tailscale offline/SSH timeout; 이 상태를 정상으로 바꾸지 않는다.

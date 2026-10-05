@@ -1,0 +1,8 @@
+[Unit]
+Description=Periodic CAS Telegram operation reporting
+[Timer]
+OnBootSec=20
+OnUnitInactiveSec=30
+Unit=cas-telegram-reporter.service
+[Install]
+WantedBy=timers.target

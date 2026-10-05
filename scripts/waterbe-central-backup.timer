@@ -1,0 +1,8 @@
+[Unit]
+Description=Regular Waterbe central state backup
+[Timer]
+OnCalendar=*-*-* 00,06,12,18:30:00
+Persistent=true
+Unit=waterbe-central-backup.service
+[Install]
+WantedBy=timers.target
