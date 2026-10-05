@@ -83,3 +83,9 @@ central_repo_sync/central_windows_sync다. Windows 전원 종료/SSH 자체 불�
 소스 갱신은 앱 배포나 불변 워커 릴리스 교체/서비스 재시작이 아니다. canonical 소스를
 직접 사용하는 요청형/oneshot 도구는 다음 실행에 갱신된 코드를 사용할 수 있다.
 실행 코드의 변경은 각 담당 적용·검증 절차와 실행 릴리스를 확인한다.
+
+20:11 KST 양쪽 main을 f398aca로 일치시킨 뒤 자동 최신 확인 설치/실행 통과.
+Windows 작업은 현재 사용자 Interactive이므로 로그아웃/PC 종료 때 실행하지 않는다.
+씽크패드 사용자 timer는 Linger로 독립 실행한다. 이전 미커밋 이전 작업본은
+씽크패드 `migration-working-copies-before-published-sync-20261005` stash에 보존했다.
+DB/인증은 Git 동기화 대상이 아니며 코드 상태는 실행 릴리스 상태와 구별한다.

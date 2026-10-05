@@ -16,6 +16,7 @@ TIMED = {'central_aggregate': ('cas-aggregate-sync', {0, 1}),
          'central_receipts': ('caspi-receipt-sync', {0}),
          'central_reporter': ('cas-telegram-reporter', {0}),
          'central_backup': ('waterbe-central-backup', {0})}
+TIMED['central_source_sync'] = ('waterbe-repo-sync', {0})
 
 def properties(unit):
     result = subprocess.run(['systemctl', '--user', 'show', unit, '-p', 'LoadState',

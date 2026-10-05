@@ -21,6 +21,7 @@ COMPONENTS = {
     'reporter': 'cas-telegram-reporter.timer',
     'health': 'waterbe-central-health.timer',
     'backup': 'waterbe-central-backup.timer',
+    'sync': 'waterbe-repo-sync.timer',
 }
 
 

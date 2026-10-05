@@ -10,7 +10,7 @@ AGENTS/WATERBE_GUIDE를 읽고 현재 원본으로 판단한다. Windows는 원�
 
 ## 요청을 받으면
 
-1. `~/.local/bin/waterbe-central manage check`로 중앙8종 상태와 타이머의 최근
+1. `~/.local/bin/waterbe-central manage check`로 중앙 구성 상태와 타이머의 최근
    실행 결과/시각을 확인한다. oneshot 서비스의 inactive만 보고 고장이라 하지 않는다.
 2. `~/.local/bin/waterbe-central api call history.status`로 원본별 마지막 수집시각과
    대기/격리를 확인한다. 단순 프로세스 active를 데이터 정상/물리 저울 정상으로
@@ -24,7 +24,7 @@ AGENTS/WATERBE_GUIDE를 읽고 현재 원본으로 판단한다. Windows는 원�
    처리 지연이면 확인 시각을 남기고 미확정으로 보고한다. 성공 증거가 없으면 완료라 하지 않는다.
 
 구성 ID: `history`, `read`, `supervisor`, `aggregate`, `receipts`, `reporter`, `health`,
-`backup`. timer 재시작은 스케줄 복구이며 즉시 수집/전송/백업 완료를 보장하지 않는다.
+`backup`, `sync`. timer 재시작은 스케줄 복구이며 즉시 수집/전송/백업 완료를 보장하지 않는다.
 재시작은 공통 `central.manage` 사건과 동일 operation_id의 요청/결과, delivery 큐에
 기록된다. 증거는 history DB 옆 `manager-evidence/<operation_id>.json`에 보존한다.
 success는 프로세스/타이머가 active라는 뜻이며 업무 성공은 별도로 검증한다.
