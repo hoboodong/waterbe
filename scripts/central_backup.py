@@ -64,7 +64,8 @@ def main():
                         ignore=lambda path, names: [name for name in names if not name.startswith(('waterbe-', 'cas-', 'caspi-')) or not name.endswith(('.service', '.timer'))])
         # Preserve the explicitly installed Python releases, not env files or keys.
         for name in ('waterbe-history', 'waterbe-history-low-io-v1',
-                     'cas-central-20261005', 'cas-central-adaptive-20261006'):
+                     'cas-central-20261005', 'cas-central-adaptive-20261006',
+                     'waterbe-health-alert-v2-20261006'):
             release = home / '.local/lib' / name
             if release.is_dir():
                 bundle = target / 'runtime' / name

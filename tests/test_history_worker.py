@@ -1,4 +1,5 @@
 import sys
+from contextlib import closing
 from pathlib import Path
 import tempfile
 import unittest
@@ -88,15 +89,77 @@ class WorkerTests(unittest.TestCase):
         worker.health_notice(self.db,'products_wangsimni',False,self.now)
         worker.health_notice(self.db,'products_wangsimni',False,self.now)
         worker.health_notice(self.db,'products_wangsimni',False,self.now)
+        worker.health_notice(self.db,'products_wangsimni',False,'2026-10-05T01:05:00.000000+00:00')
         root=Path(self.temp.name)/'logs'
         worker.publish_notices(self.db,root)
         worker.publish_notices(self.db,root)
         file=list(root.glob('*.jsonl'))[0]
         self.assertEqual(len(file.read_text(encoding='utf-8').splitlines()),1)
         worker.health_notice(self.db,'products_wangsimni',True,'2026-10-05T02:00:00.000000+00:00')
+        worker.health_notice(self.db,'products_wangsimni',True,'2026-10-05T02:05:00.000000+00:00')
         worker.publish_notices(self.db,root)
         self.assertEqual(len(file.read_text(encoding='utf-8').splitlines()),2)
         self.assertEqual([e['kind'] for e in history.query(self.db)['events']],['incident','recovery'])
+
+    def notice_count(self):
+        with closing(history.connect(self.db)) as db:
+            return db.execute('SELECT COUNT(*) FROM notices').fetchone()[0]
+
+    def sample(self, seconds, good, source='central_receipts'):
+        stamp = worker.datetime.fromisoformat(self.now) + worker.timedelta(seconds=seconds)
+        worker.health_notice(self.db,source,good,stamp.isoformat())
+
+    def test_transient_is_recorded_without_notification(self):
+        self.sample(0, False)
+        self.sample(60, False)
+        self.sample(120, True)
+        self.sample(420, True)
+        self.assertEqual(self.notice_count(),0)
+        self.assertEqual(len(history.query(self.db)['events']),2)
+        with closing(history.connect(self.db)) as db:
+            self.assertEqual(db.execute('SELECT COUNT(*) FROM health_samples').fetchone()[0],4)
+
+    def test_failure_delay_reminder_and_stable_recovery(self):
+        self.sample(0,False)
+        self.sample(299,False)
+        self.assertEqual(self.notice_count(),0)
+        self.sample(300,False)
+        self.sample(2099,False)
+        self.assertEqual(self.notice_count(),1)
+        self.sample(2100,False)
+        self.assertEqual(self.notice_count(),2)
+        self.sample(2160,True)
+        self.sample(2400,False)  # Brief recovery does not close the incident.
+        self.sample(2460,True)
+        self.sample(2759,True)
+        self.assertEqual(self.notice_count(),2)
+        self.sample(2760,True)
+        self.assertEqual(self.notice_count(),3)
+        self.sample(2820,True)
+        self.assertEqual(self.notice_count(),3)
+
+    def test_policy_survives_restart_and_isolates_sources(self):
+        self.sample(0,False)
+        worker.initialize(self.db)
+        self.sample(300,False)
+        self.sample(300,False,source='central_aggregate')
+        self.sample(600,False,source='central_aggregate')
+        self.assertEqual(self.notice_count(),2)
+
+    def test_legacy_open_alert_has_delayed_recovery(self):
+        with closing(history.connect(self.db,write=True)) as db,db:
+            db.execute('INSERT INTO health VALUES(?,?,?)',('central_receipts',2,1))
+        self.sample(0,True)
+        self.assertEqual(self.notice_count(),0)
+        self.sample(300,True)
+        self.assertEqual(self.notice_count(),1)
+
+    def test_old_sample_never_advances_notification_state(self):
+        self.sample(0,False)
+        self.sample(300,False)
+        self.sample(120,True)
+        self.sample(360,False)
+        self.assertEqual(self.notice_count(),1)
 
 
 if __name__ == '__main__':

@@ -6,7 +6,6 @@ import subprocess
 import sys
 
 root = Path.home()
-sys.path.insert(0, str(root / '.local/lib/waterbe-history'))
 import history_worker
 
 CONTINUOUS = {'central_history': 'waterbe-history.service',
@@ -24,6 +23,16 @@ def properties(unit):
                             capture_output=True, text=True, timeout=10, check=True)
     return dict(line.split('=', 1) for line in result.stdout.splitlines() if '=' in line)
 
+
+def timed_health(timer, service, allowed_codes):
+    if timer.get('LoadState') != 'loaded' or timer.get('ActiveState') != 'active':
+        return False
+    if service.get('ActiveState') in {'activating', 'active', 'deactivating'}:
+        # ExecMainStatus belongs to the previous run while a oneshot is running.
+        return None
+    return (service.get('LoadState') == 'loaded'
+            and int(service.get('ExecMainStatus', '-1')) in allowed_codes)
+
 def main():
     now = datetime.now(timezone.utc).isoformat(timespec='microseconds')
     states = {}
@@ -33,13 +42,14 @@ def main():
     for source, (name, allowed_codes) in TIMED.items():
         timer = properties(name + '.timer')
         service = properties(name + '.service')
-        states[source] = timer.get('ActiveState') == 'active' and int(service.get('ExecMainStatus', '-1')) in allowed_codes
+        states[source] = timed_health(timer, service, allowed_codes)
     database = root / '.local/state/waterbe-history/operations.db'
     for source, good in states.items():
-        history_worker.health_notice(database, source, good, now)
+        if good is not None:
+            history_worker.health_notice(database, source, good, now)
     history_worker.publish_notices(database, root / '.local/state/waterbe-central/logs')
     print(json.dumps({'checked_at': now, 'process_health': states, 'physical_scale_verified': False}))
-    return 0 if all(states.values()) else 1
+    return 1 if any(value is False for value in states.values()) else 0
 
 if __name__ == '__main__':
     raise SystemExit(main())

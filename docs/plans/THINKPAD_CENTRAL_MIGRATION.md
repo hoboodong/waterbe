@@ -162,3 +162,21 @@
 인증 파일은 `~/.config/waterbe/central.env`, 코드 릴리스는
 `~/.local/lib/waterbe-history`, 상태는 `~/.local/state/waterbe-history`다.
 실제 전환 때 고정 릴리스/온라인 백업/인증 권한/단독 실행 및 알림을 검증한다.
+# 2026-10-06 중앙 건강 알림 빈도 조정
+
+- 작업 `health-policy-8241bb0c-1421-421c-ad91-af6de0a2b6d2`, 11:39 KST.
+- 실행 릴리스 `~/.local/lib/waterbe-health-alert-v2-20261006`:
+  history worker·건강 점검·reporter·누계 import의 history-root를 systemd drop-in으로
+  연결했다. 상품/문구 supervisor·현장 CASPi·앱 APK는 변경하지 않았다.
+- 기존 `health` 사건은 유지하고 모든 건강 관측을 로컬 `health_samples`에 보존한다.
+  `health_alerts`가 출처별 5분 장애 확인·30분 지속 재알림·5분 후 새 성공 관측의
+  회복 확인을 담당한다. 짧은 회복 뒤 재실패는 같은 미해결 알림 상태를 유지한다.
+- oneshot 실행 중은 미확정으로 표시하고 이전 실행 종료코드로 장애/회복을 만들지 않는다.
+- 기존 DB 온라인 integrity 백업·unit·reporter state/outbox는
+  `~/.local/state/waterbe-central/health-policy-8241bb0c-1421-421c-ad91-af6de0a2b6d2`에 보존.
+  전송 미확정1건은 유지했다. 새 source/outbox ID를 만들거나 이전 알림을 재전송하지 않았다.
+- Windows 55회귀(1skip), Linux 건강/이력17 및 reporter28 통과. 실제 새 reporter
+  종료0, history service active와 현재 실행경로 확인. 로컬 공통 사건/전달 큐 연결.
+  최초 cloud history.read는 unavailable이므로 클라우드 ACK는 별도 확인 대기다.
+- 남은 실제 장애: 11:39 KST 상품·문구 supervisor 종료2, 카스파이 결과 게시 최근
+  종료1 관측. 알림 빈도 조정은 이 업무 장애의 복구가 아니다. 원본 조사 필요.

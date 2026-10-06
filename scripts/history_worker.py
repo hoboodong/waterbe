@@ -225,6 +225,65 @@ def backup(path):
     temporary.replace(destination)
 
 
+HEALTH_ALERT_DELAY_SECONDS = 300
+HEALTH_REMINDER_SECONDS = 1800
+HEALTH_RECOVERY_SECONDS = 300
+
+
+def health_notification(db, source, good, now, legacy_opened=0):
+    """Persist observations separately from debounced operator notifications.
+
+    No timer manufactures health: transitions/reminders require a fresh sample.
+    Sparse sources therefore confirm recovery on their next successful poll.
+    """
+    db.execute('''CREATE TABLE IF NOT EXISTS health_alerts (
+        source TEXT PRIMARY KEY, bad_since TEXT, good_since TEXT,
+        last_checked TEXT NOT NULL, last_notified TEXT, opened INTEGER NOT NULL)''')
+    db.execute('''CREATE TABLE IF NOT EXISTS health_samples (
+        source TEXT NOT NULL, checked_at TEXT NOT NULL, good INTEGER NOT NULL,
+        PRIMARY KEY(source,checked_at))''')
+    db.execute('INSERT OR IGNORE INTO health_samples VALUES(?,?,?)', (source, now, int(good)))
+    old = db.execute('SELECT * FROM health_alerts WHERE source=?', (source,)).fetchone()
+    moment = datetime.fromisoformat(now.replace('Z', '+00:00'))
+    if moment.tzinfo is None:
+        raise ValueError('Health timestamp requires timezone')
+    if old and moment <= datetime.fromisoformat(old['last_checked']):
+        return
+    bad_since = old['bad_since'] if old else None
+    good_since = old['good_since'] if old else None
+    opened = old['opened'] if old else int(bool(legacy_opened))
+    last_notified = old['last_notified'] if old else (now if opened else None)
+    notification = None
+    reminder = False
+    if good:
+        good_since = good_since or now
+        if (moment - datetime.fromisoformat(good_since)).total_seconds() >= HEALTH_RECOVERY_SECONDS:
+            if opened:
+                notification = 'recovered'
+            opened = 0
+            bad_since = None
+    else:
+        good_since = None
+        bad_since = bad_since or now
+        elapsed = (moment - datetime.fromisoformat(bad_since)).total_seconds()
+        since_notice = ((moment - datetime.fromisoformat(last_notified)).total_seconds()
+                        if last_notified else HEALTH_REMINDER_SECONDS)
+        if elapsed >= HEALTH_ALERT_DELAY_SECONDS and (not opened or since_notice >= HEALTH_REMINDER_SECONDS):
+            notification = 'failed'
+            reminder = bool(opened)
+            opened = 1
+    if notification:
+        last_notified = now
+        body = dict(event='waterbe_history_health', status=notification, source=source,
+                    timestamp=now.replace('+00:00','Z'), reminder=reminder,
+                    notification_policy='health-debounce-v2')
+        identity = hashlib.sha256(history.canonical(body).encode()).hexdigest()
+        db.execute('INSERT OR IGNORE INTO notices(id,body) VALUES(?,?)',
+                   (identity, history.canonical(body)))
+    db.execute('''INSERT OR REPLACE INTO health_alerts VALUES(?,?,?,?,?,?)''',
+               (source, bad_since, good_since, now, last_notified, opened))
+
+
 def health_notice(path,source,good,now):
     with closing(history.connect(path,write=True)) as db,db:
         old=db.execute('SELECT failures,opened FROM health WHERE source=?',(source,)).fetchone()
@@ -237,12 +296,13 @@ def health_notice(path,source,good,now):
         elif good and opened:
             opened=0
             status='recovered'
+        # Keep original incident/recovery evidence regardless of notification policy.
+        health_notification(db,source,good,now,old['opened'] if old else 0)
         db.execute('INSERT OR REPLACE INTO health VALUES(?,?,?)',(source,failures,opened))
         if status:
             body=dict(event='waterbe_history_health',status=status,source=source,
                       timestamp=now.replace('+00:00','Z'))
             identity=hashlib.sha256(history.canonical(body).encode()).hexdigest()
-            db.execute('INSERT OR IGNORE INTO notices(id,body) VALUES(?,?)',(identity,history.canonical(body)))
             event=history.validate(dict(event_id=identity,source='waterbe',
                 kind='incident' if status=='failed' else 'recovery',
                 result='failed' if status=='failed' else 'observed',feature='history.health',
