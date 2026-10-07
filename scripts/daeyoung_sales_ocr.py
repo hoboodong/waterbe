@@ -8,6 +8,7 @@ import csv
 import json
 import os
 import re
+import statistics
 from datetime import date
 from pathlib import Path
 
@@ -77,6 +78,46 @@ def is_wolgye_regular_closed_day(sales_date: str | None) -> bool:
     return value.weekday() == 6 and sunday_number in {2, 4}
 
 
+def row_ordered_tokens(
+    texts: list[str], scores: list[float], boxes: list[list[float]]
+) -> tuple[list[str], list[float]]:
+    """Return OCR tokens in visual row order.
+
+    Paddle may return narrow table screenshots in column order.  Grouping by
+    vertical center restores the store / tax type / amount sequence expected
+    by the sales-table parser.
+    """
+    if len(boxes) != len(texts) or not boxes:
+        return texts, scores
+    heights = [max(1.0, float(box[3]) - float(box[1])) for box in boxes]
+    tolerance = max(3.0, statistics.median(heights) * 0.65)
+    tokens = [
+        {
+            "text": text,
+            "score": score,
+            "x": (float(box[0]) + float(box[2])) / 2,
+            "y": (float(box[1]) + float(box[3])) / 2,
+        }
+        for text, score, box in zip(texts, scores, boxes)
+    ]
+    rows: list[dict] = []
+    for token in sorted(tokens, key=lambda item: (item["y"], item["x"])):
+        target = min(rows, key=lambda row: abs(row["y"] - token["y"]), default=None)
+        if target is None or abs(target["y"] - token["y"]) > tolerance:
+            rows.append({"y": token["y"], "tokens": [token]})
+        else:
+            target["tokens"].append(token)
+            target["y"] = sum(item["y"] for item in target["tokens"]) / len(
+                target["tokens"]
+            )
+    ordered = [
+        token
+        for row in sorted(rows, key=lambda item: item["y"])
+        for token in sorted(row["tokens"], key=lambda item: item["x"])
+    ]
+    return [item["text"] for item in ordered], [item["score"] for item in ordered]
+
+
 def main() -> int:
     args = parse_args()
     os.environ.setdefault("PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK", "True")
@@ -106,6 +147,8 @@ def main() -> int:
         result = list(ocr.predict(str(image_path)))[0]
         texts = list(result["rec_texts"])
         scores = [float(value) for value in result["rec_scores"]]
+        boxes = [list(value) for value in result.get("rec_boxes", [])]
+        texts, scores = row_ordered_tokens(texts, scores, boxes)
         sales_date, rows, stated_total = parse_table(texts, args.year)
         calculated_total = sum(row["amount"] for row in rows)
         wolgye_rows = [row for row in rows if "월계" in row["store"]]
