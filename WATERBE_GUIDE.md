@@ -8,6 +8,7 @@
 
 | 업무 | 지침 |
 | --- | --- |
+| 상시 워커와 요청형 작업의 실행 장소 | [운영 실행 기준](docs/guides/OPERATING_EXECUTION_GUIDE.md) |
 | 프로그램 구성·프로젝트별 책임·구현 상태 | [프로그램 역할 지침](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md) |
 | 씽크패드 코덱스 중앙 프로그램 관리 | [중앙 관리 지침](docs/guides/THINKPAD_CENTRAL_MANAGEMENT_GUIDE.md) |
 | 전체 변경·오류·배포 이력 및 채팅 없는 원인 추적 | [운영 기록·추적 지침](docs/guides/OPERATION_HISTORY_GUIDE.md) |

@@ -7,6 +7,7 @@ Waterbe 업무를 시작할 때 [WATERBE_GUIDE.md](WATERBE_GUIDE.md)에서 해�
 | 작업 | 먼저 읽을 문서 |
 | --- | --- |
 | 전체 업무 지침 찾기 | [WATERBE_GUIDE.md](WATERBE_GUIDE.md) |
+| 상시 워커와 요청형 작업의 실행 장소 | [운영 실행 기준](docs/guides/OPERATING_EXECUTION_GUIDE.md) |
 | 씽크패드 중앙 점검·복구·코덱스 관리 | [중앙 관리 지침](docs/guides/THINKPAD_CENTRAL_MANAGEMENT_GUIDE.md) |
 | 출처별 데이터 워커 책임·저장 계약 | [데이터 워커 구성](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md#데이터-워커-구성--출처별-관리) |
 | 에이전트 공통 API 발견·사용 | [API 사용 입구](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md#에이전트-공통-api-진입점) |
@@ -30,6 +31,9 @@ Waterbe 업무를 시작할 때 [WATERBE_GUIDE.md](WATERBE_GUIDE.md)에서 해�
 - 활성 중앙 워커는 모두 씽크패드에서 실행한다. Windows 예약 작업을 다시 켜거나
   Windows 정지본 DB를 최신 원본으로 쓰지 않는다. 현재 상태/경로/보류 범위는
   [중앙 이전 기록](docs/plans/THINKPAD_CENTRAL_MIGRATION.md)과 공통 접속 지침을 따른다.
+  이는 현재 상시 통신·수집 워커의 실행 기준일 뿐 업무별 호스트 제한이 아니다.
+  개발·점검·매출 동기화·OCR·검산은 양쪽 모두 가능하며 환경·성능·접속에 따라
+  선택한다. [운영 실행 기준](docs/guides/OPERATING_EXECUTION_GUIDE.md)을 따른다.
 
 - 씽크패드 원격 실행·파일 전송은 [씽크패드 공통 접속](docs/guides/THINKPAD_CONNECTION_GUIDE.md)을 따른다. 두 호스트의 파일과 실행 주체를 구별한다.
 

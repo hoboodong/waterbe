@@ -6,6 +6,8 @@
 읽는다. `~/.local/bin/waterbe-central manage check`가 공통 관리 입구다.
 
 모든 활성 중앙 워커의 실행 주체는 씽크패드다. Windows 예약 작업을 다시 켜지 않는다.
+이는 상시 통신·자동 수집의 기준이며 요청형 매출 동기화·OCR·검산까지
+씽크패드 전용으로 제한하지 않는다. [운영 실행 기준](OPERATING_EXECUTION_GUIDE.md)을 따른다.
 Linux에서 `~/.local/bin/waterbe-central status` 또는
 `~/.local/bin/waterbe-central api call history.status`로 확인한다.
 Windows에서는 `ssh thinkpad '~/.local/bin/waterbe-central status'`를 사용한다.

@@ -4,8 +4,9 @@
 
 중앙 프로그램의 운영 담당은 씽크패드의 워터비 Codex CLI다. 사용자 창구는 기존
 Telegram–Waterbe 대화이며 작업 경로는 `/home/sdg/waterbe`다. 새 세션도 이 문서와
-AGENTS/WATERBE_GUIDE를 읽고 현재 원본으로 판단한다. Windows는 원격 개발/접속
-호스트일 뿐 중앙 워커를 다시 켜지 않는다. 시코드 UI/앱 구현과 카스씨엘 저울 통신의
+AGENTS/WATERBE_GUIDE를 읽고 현재 원본으로 판단한다. Windows에서도 개발·점검·요청형
+매출 동기화·OCR·검산을 수행할 수 있지만 중앙 상시 워커는 다시 켜지 않는다.
+[운영 실행 기준](OPERATING_EXECUTION_GUIDE.md)을 따른다. 시코드 UI/앱 구현과 카스씨엘 저울 통신의
 소유권은 바뀌지 않는다. 각 프로젝트 변경 전 해당 AGENTS와 담당 지침을 읽는다.
 
 ## 요청을 받으면
