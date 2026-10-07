@@ -22,7 +22,7 @@ case "$command" in
   namseon-sync)
     exec flock -n "$HOME/.local/state/waterbe-central/namseon-sync.lock" "$python_bin" "$root/scripts/namseon_drive_sync.py" --incremental --include-drive-root --organize-root-files --trash-duplicates --sync-supabase --upload-db "$@"
     ;;
-  daeyoung-ocr) exec "$python_bin" "$root/scripts/daeyoung_sales_ocr.py" --det-model PP-OCRv5_mobile_det --cpu-threads 1 "$@" ;;
+  daeyoung-ocr) exec "$python_bin" "$root/scripts/daeyoung_sales_ocr.py" --det-model PP-OCRv5_mobile_det --rec-model korean_PP-OCRv5_mobile_rec --cpu-threads 1 "$@" ;;
   daeyoung-publish) exec "$python_bin" "$root/scripts/daeyoung_supabase_sync.py" "$@" ;;
   backup) exec "$python_bin" "$root/scripts/central_backup.py" "$@" ;;
   *) printf 'Unknown central command: %s\n' "$command" >&2; exit 2 ;;

@@ -29,6 +29,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--csv", type=Path, required=True)
     parser.add_argument("--report", type=Path, required=True)
     parser.add_argument("--det-model", help="Explicit detection model for constrained central hosts")
+    parser.add_argument("--rec-model", help="Explicit recognition model for the source language")
     parser.add_argument("--cpu-threads", type=int, default=1)
     return parser.parse_args()
 
@@ -131,6 +132,8 @@ def main() -> int:
     }
     images = sorted(path for path in args.input_dir.iterdir() if path.is_file())
     extra = {"text_detection_model_name": args.det_model} if args.det_model else {}
+    if args.rec_model:
+        extra["text_recognition_model_name"] = args.rec_model
     ocr = PaddleOCR(
         lang="korean",
         use_doc_orientation_classify=False,
