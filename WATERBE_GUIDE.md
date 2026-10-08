@@ -54,6 +54,9 @@
 
 ## 4. 기획·이전·복구 문서
 
+- [중앙 요청 처리 복구 및 일시 장애 정책](docs/plans/CENTRAL_QUEUE_RECOVERY_2026-10-08.md):
+  미아점 실제 수정 완료, 수파 일시 오류의 영구 정지 제거와 남은 대상별 격리 범위.
+
 - [중앙 저울 통신·공유 저장 분리](docs/plans/CENTRAL_SCALE_TRANSPORT.md):
   CASPi→씽크패드 직접 누계 수집, 시코드↔수파 요청 교환 및 실제 적용 범위.
 
