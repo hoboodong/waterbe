@@ -18,6 +18,7 @@ Waterbe 업무를 시작할 때 [WATERBE_GUIDE.md](WATERBE_GUIDE.md)에서 해�
 | 재료, 레시피와 원가 | [레시피·원가 지침](docs/guides/RECIPES_COST_GUIDE.md) |
 | 시코드 앱과 CL-5200 저울 | [시코드·저울 연결 지침](docs/guides/SEACODE_SCALE_GUIDE.md) |
 | 품질검사·다이버시점검과 원라벨 확인 | [품질관리솔루션 운영 지침](docs/guides/QUALITY_COMPLIANCE_GUIDE.md) |
+| 품질점검 워커 구성(기획·미구현) | [품질점검 워커 지침](docs/guides/QUALITY_CHECK_WORKER_GUIDE.md) |
 | 생산량과 생산실적 | [생산량 지침](docs/guides/PRODUCTION_GUIDE.md) |
 | 재고와 입고 | [재고·입고 지침](docs/guides/INVENTORY_INBOUND_GUIDE.md) |
 | YAML 작성과 검증 | [공통 데이터 작성·검증 지침](docs/guides/DATA_RULES_GUIDE.md) |
@@ -27,6 +28,10 @@ Waterbe 업무를 시작할 때 [WATERBE_GUIDE.md](WATERBE_GUIDE.md)에서 해�
 | 클래스, 필드와 제약조건 | [schema.yaml](schema.yaml) |
 
 ## 공통 원칙
+
+- 업무를 시작할 때 해당 기준이 지침에 있는지 먼저 확인한다. 지침에 없는 기준을
+  채팅 기억이나 추정으로 기존 합의처럼 적용하지 않는다. 지침 부재·충돌 시
+  [지침 관리 기준](docs/guides/GUIDE_MAINTENANCE_GUIDE.md#지침-유무와-판단-기준)을 따른다.
 
 - 활성 중앙 워커는 모두 씽크패드에서 실행한다. Windows 예약 작업을 다시 켜거나
   Windows 정지본 DB를 최신 원본으로 쓰지 않는다. 현재 상태/경로/보류 범위는

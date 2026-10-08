@@ -2,7 +2,13 @@
 
 이 문서는 워터비 업무 지침의 메인 목차다. 실제 규칙은 아래 주제별 문서를 따른다.
 
-## 업무별 지침
+## 지침 사용 순서
+
+`AGENTS.md → 이 목차 → 해당 업무 지침 → 필요한 원본과 실행 절차` 순서로 읽는다.
+여러 업무가 연결되면 관련 지침을 함께 읽되, 전체 문서를 매번 읽지는 않는다.
+문서 작성·분리·연결 기준은 [지침 관리 기준](docs/guides/GUIDE_MAINTENANCE_GUIDE.md)을 따른다.
+
+## 1. 시스템 운영·담당·기록
 
 - 씽크패드 원격 실행·파일 전송: [씽크패드 공통 접속](docs/guides/THINKPAD_CONNECTION_GUIDE.md).
 
@@ -14,12 +20,15 @@
 | 전체 변경·오류·배포 이력 및 채팅 없는 원인 추적 | [운영 기록·추적 지침](docs/guides/OPERATION_HISTORY_GUIDE.md) |
 | 에이전트 공통 API 목록·호출·권한·미구현 구분 | [API 사용 입구](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md#에이전트-공통-api-진입점) |
 | 라즈·할인·남선·대영 출처별 데이터 워커 구성 | [데이터 워커 구성](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md#데이터-워커-구성--출처별-관리) |
+
+## 2. 매장·상품·생산·매출
+
+| 업무 | 지침 |
+| --- | --- |
 | 매장 생산량·저울누계·할인·폐기·매출 종합 조회 | [통합 운영 조회 지침](docs/guides/DAILY_STORE_REPORT_GUIDE.md) |
 | 매장, 시코드 운영상품, 상품 ID와 상태 | [매장·상품 지침](docs/guides/STORE_PRODUCTS_GUIDE.md) |
 | 문어행사팀 신규 등록·연결·진행 상태 | [문어행사팀 추가 작업](docs/plans/MOONER_ONBOARDING.md) |
 | 재료, 발주규격, 레시피, 가격과 원가 | [레시피·원가 지침](docs/guides/RECIPES_COST_GUIDE.md) |
-| 시코드 앱과 CL-5200 저울 연결·상태 검증 | [시코드·저울 연결 지침](docs/guides/SEACODE_SCALE_GUIDE.md) |
-| 품질검사·다이버시점검·대표품질·상품라벨·원라벨 대조 | [품질관리솔루션 운영 지침](docs/guides/QUALITY_COMPLIANCE_GUIDE.md) |
 | 실제 생산량, 현장 신고와 날짜별 운영기록 | [생산량 지침](docs/guides/PRODUCTION_GUIDE.md) |
 | 재고실사와 입고기록 | [재고·입고 지침](docs/guides/INVENTORY_INBOUND_GUIDE.md) |
 | YAML 작성, 이력 보존과 검증 | [공통 데이터 작성·검증 지침](docs/guides/DATA_RULES_GUIDE.md) |
@@ -27,7 +36,23 @@
 | 매출 조회·동기화 | [매출 지침](instances/sales/README.md) |
 | 월계점 일일 생산·할인·폐기 연결 | [월계점 일일 운영 지침](WOLGYE_DAILY_OPERATIONS_GUIDE.md) |
 
-## 개발 기획안
+매출 세부 기준은 출처별로 나눈다:
+[공통](docs/guides/SALES_COMMON_GUIDE.md) ·
+[남선](docs/guides/NAMSEON_SALES_GUIDE.md) ·
+[대영](docs/guides/DAEYOUNG_SALES_GUIDE.md).
+실제 작업은 위 매출 진입점에서 매장과 출처를 확인한다.
+
+## 3. 저울 연동·품질점검
+
+| 업무 | 지침 |
+| --- | --- |
+| 시코드 앱과 CL-5200 저울 연결·상태 검증 | [시코드·저울 연결 지침](docs/guides/SEACODE_SCALE_GUIDE.md) |
+| 품질검사·다이버시점검·대표품질·상품라벨·원라벨 대조 | [품질관리솔루션 운영 지침](docs/guides/QUALITY_COMPLIANCE_GUIDE.md) |
+| 품질점검 워커 구성·저장·재점검(자동화 미구현) | [품질점검 워커 지침](docs/guides/QUALITY_CHECK_WORKER_GUIDE.md) |
+
+품질점검 자체는 운영 지침으로 지금 수행한다. 자동 워커의 기획 상태와 구별한다.
+
+## 4. 기획·이전·복구 문서
 
 - [중앙 저울 통신·공유 저장 분리](docs/plans/CENTRAL_SCALE_TRANSPORT.md):
   CASPi→씽크패드 직접 누계 수집, 시코드↔수파 요청 교환 및 실제 적용 범위.
