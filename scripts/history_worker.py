@@ -69,7 +69,8 @@ def read_source(entry, since=None):
         columns += ['store_id','text_type']
     rows = []
     for offset in range(0, 200000, 500):
-        options=dict(select=','.join(columns),order=','.join(entry['identity']),offset=offset,limit=500)
+        ordering = ([entry['clock']] + entry['identity']) if since else entry['identity']
+        options=dict(select=','.join(columns),order=','.join(ordering),offset=offset,limit=500)
         if since:
             options[entry['clock']]='gte.'+since
         page = rest('GET', entry['table'] + '?' + urlencode(options))
@@ -335,6 +336,8 @@ def publish_notices(path,root):
 
 
 def polling_interval(entry):
+    if entry['table'].startswith('print_records_') or entry['table'] == 'caspi_operation_receipts':
+        return 300
     if entry['table'].startswith('products_'):
         return 300
     if entry['table'].startswith('scale_') or entry['table'].endswith('_sales_sources'):
