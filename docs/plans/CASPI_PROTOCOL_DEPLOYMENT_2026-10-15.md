@@ -49,5 +49,10 @@ central-restart-7b3f735e-080b-4582-aa80-7fcc674aca04 성공. 다른 워커 재�
 
 ## APK 공개 배포
 
-+2277 표준 배포 진행 중. 완료 시 공개 versionCode/sourceCommit/APK bytes·hash/잠금
-해제 결과를 여기에 추가한다. 빌드 중 상태는 배포 완료가 아니다.
++2277 표준 배포 완료. 공개 versionCode4277, sourceCommit
+acd6c4eafc0a3df57c2e26e13653394ebce84d21, APK24,001,115bytes,
+SHA25689a553907332690d51c5e6df8fc7823dacd3bfb67f9b524099050e8c25b34cd6.
+별도 공개 다운로드 크기/해시 일치, deploy.lock NoSuchKey로 해제 확인.
+lib 분석/배포도구12건/필수 회귀69건 통과, Gradle202.3초.
+표준 보관정책으로 +2275 APK1개 삭제, +2276/+2277 유지. 구 소스는 Git 보존;
+삭제 APK는 재빌드 필요하다. 실제 폰 설치·현장 쓰기 성공은 이 검증에 포함되지 않는다.
