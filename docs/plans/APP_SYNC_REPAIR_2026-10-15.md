@@ -1,5 +1,28 @@
 # 앱·중앙 동기화 후속 보완 — 2026-10-15
 
+## 최종 적용 결과
+
+사용자의 후속 `전부 진행해` 승인으로 아래 보류를 해제했다. 문어팀은 변경하지 않았다.
+
+- DB: concurrent 수신 인덱스 valid/ready, identity guard와 realtime publication 설치.
+  migration20261015000001 등록. 롤백 probe로 최초1건/동일 재전송0건/
+  같은ID 다른내용23505 거절 검증. probe 기록은 남기지 않았다.
+- 중앙: 기존2커밋과 변경8파일을 c153621로 보존, 정상 merge/push 후 양쪽
+  e1c730f 일치 및 repo-sync up_to_date/씽크패드 tracked_changes=false 확인.
+  최종 문서 추가 커밋은 별도로 fast-forward한다. 다른 Windows 미커밋은 보존.
+- 앱: +2279, 소스1bb1960680c37318295485a0a016f82cceee2409, 실제versionCode4279.
+  표준 배포의 도구12건/필수95건/lib 분석 통과. 공개 manifest/sourceCommit 일치.
+  APK24,032,507bytes 및 독립 다운로드 SHA256 일치:
+  7ffd0b742a49fbc6f45163df24c4bc1796d3602db919482b6b82e3081c5ea9e6.
+  deploy.lock 부재 확인. +2277 APK 정리/+2278·+2279 유지, Git 소스 보존.
+- 오류 로그의 재귀 요청 방지 경계를 추가했다. Talker.error(onLog)와
+  handle(onError/onException) 차이가 있어 사용자 대기 현상의 원인으로 단정하지 않는다.
+- ADB 연결 폰0개. 실제 두 폰 설치·현장 수신/저울 쓰기는 미검증이다.
+  같은 매장의 두 폰을 +2279로 업데이트 후 포함/제외 및 작동 진단의 공용 반영을 확인한다.
+  모든 UI 계측·기기/사용자 식별·모든 CRUD 편집 충돌은 여전히 별도 과제다.
+
+아래 내용은 적용 전 조사·대기 이력이다.
+
 사용자 요청: 문어팀 접속 복구는 제외하고 확인된 문제 해결. 앱 배포는 별도 요청 전 보류.
 
 ## 확인된 운영 사실
