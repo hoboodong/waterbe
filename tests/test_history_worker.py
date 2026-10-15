@@ -39,9 +39,14 @@ class WorkerTests(unittest.TestCase):
         entry = next(e for e in worker.sources() if e['table'].startswith('print_records_'))
         previous = {'success_at':'2026-10-05T23:59:00+00:00','status':'available'}
         due, since = worker.polling_plan(entry,previous,previous['success_at'],
-                                        '2026-10-06T00:01:00+00:00')
+                                        '2026-10-06T00:05:00+00:00')
         self.assertTrue(due)
         self.assertEqual(since,'2026-10-05T23:49:00+00:00')
+
+    def test_print_and_receipt_observation_poll_every_five_minutes(self):
+        for entry in worker.sources():
+            if entry['table'].startswith('print_records_') or entry['table'] == 'caspi_operation_receipts':
+                self.assertEqual(worker.polling_interval(entry), 300)
 
     def test_failed_source_is_retried_and_full_scan_is_bounded(self):
         previous = {'success_at':self.now,'status':'unavailable'}
