@@ -18,6 +18,7 @@
 | 프로그램 구성·프로젝트별 책임·구현 상태 | [프로그램 역할 지침](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md) |
 | 씽크패드 코덱스 중앙 프로그램 관리 | [중앙 관리 지침](docs/guides/THINKPAD_CENTRAL_MANAGEMENT_GUIDE.md) |
 | 전체 변경·오류·배포 이력 및 채팅 없는 원인 추적 | [운영 기록·추적 지침](docs/guides/OPERATION_HISTORY_GUIDE.md) |
+| 앱 전체 자료·작업 상태 공유와 성공/실패 추적 | [앱 동기화·작업 추적 기준](docs/guides/APP_SYNC_OBSERVABILITY_GUIDE.md) |
 | 에이전트 공통 API 목록·호출·권한·미구현 구분 | [API 사용 입구](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md#에이전트-공통-api-진입점) |
 | 라즈·할인·남선·대영 출처별 데이터 워커 구성 | [데이터 워커 구성](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md#데이터-워커-구성--출처별-관리) |
 
