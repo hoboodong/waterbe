@@ -2,12 +2,15 @@
 
 Waterbe 업무를 시작할 때 [WATERBE_GUIDE.md](WATERBE_GUIDE.md)에서 해당 업무 지침을 찾아 읽는다.
 
+새 세션 시작·기존 세션 재개 시 먼저 [세션 시작 최신 커밋 확인](docs/guides/GUIDE_MAINTENANCE_GUIDE.md#세션-시작-최신-커밋-확인)을 실행한다. 확인 실패를 최신 상태로 간주하지 않는다.
+
 ## 지침 연결
 
 | 작업 | 먼저 읽을 문서 |
 | --- | --- |
 | 전체 업무 지침 찾기 | [WATERBE_GUIDE.md](WATERBE_GUIDE.md) |
 | 상시 워커와 요청형 작업의 실행 장소 | [운영 실행 기준](docs/guides/OPERATING_EXECUTION_GUIDE.md) |
+| 수파·중앙·CASPi 통합 점검 | [통합 시스템 점검](docs/guides/SYSTEM_CHECK_GUIDE.md) |
 | 씽크패드 중앙 점검·복구·코덱스 관리 | [중앙 관리 지침](docs/guides/THINKPAD_CENTRAL_MANAGEMENT_GUIDE.md) |
 | 출처별 데이터 워커 책임·저장 계약 | [데이터 워커 구성](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md#데이터-워커-구성--출처별-관리) |
 | 에이전트 공통 API 발견·사용 | [API 사용 입구](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md#에이전트-공통-api-진입점) |

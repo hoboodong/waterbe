@@ -39,6 +39,9 @@ def read_table(base, key, table, business_date):
 
 
 def call(operation, business_date=None, **filters):
+    if operation == 'system.check':
+        from system_check import check
+        return check()
     if operation.startswith('history.'):
         return read_history(operation,business_date,**filters)
     result = {"operation": operation, "status": "unavailable", "business_date": business_date,

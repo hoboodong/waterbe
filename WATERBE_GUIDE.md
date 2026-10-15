@@ -4,6 +4,8 @@
 
 ## 지침 사용 순서
 
+세션 시작·재개 때 [최신 커밋 확인](docs/guides/GUIDE_MAINTENANCE_GUIDE.md#세션-시작-최신-커밋-확인)을 먼저 수행한다.
+
 `AGENTS.md → 이 목차 → 해당 업무 지침 → 필요한 원본과 실행 절차` 순서로 읽는다.
 여러 업무가 연결되면 관련 지침을 함께 읽되, 전체 문서를 매번 읽지는 않는다.
 문서 작성·분리·연결 기준은 [지침 관리 기준](docs/guides/GUIDE_MAINTENANCE_GUIDE.md)을 따른다.
@@ -15,6 +17,7 @@
 | 업무 | 지침 |
 | --- | --- |
 | 상시 워커와 요청형 작업의 실행 장소 | [운영 실행 기준](docs/guides/OPERATING_EXECUTION_GUIDE.md) |
+| 현재 채팅에서 수파·중앙·CASPi 전체 점검 | [통합 시스템 점검](docs/guides/SYSTEM_CHECK_GUIDE.md) |
 | 프로그램 구성·프로젝트별 책임·구현 상태 | [프로그램 역할 지침](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md) |
 | 씽크패드 코덱스 중앙 프로그램 관리 | [중앙 관리 지침](docs/guides/THINKPAD_CENTRAL_MANAGEMENT_GUIDE.md) |
 | 전체 변경·오류·배포 이력 및 채팅 없는 원인 추적 | [운영 기록·추적 지침](docs/guides/OPERATION_HISTORY_GUIDE.md) |

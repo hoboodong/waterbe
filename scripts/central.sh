@@ -18,6 +18,7 @@ case "$command" in
     "$python_bin" "$root/scripts/history_worker.py" --database "$HOME/.local/state/waterbe-history/operations.db" status
     ;;
   api) exec "$python_bin" "$root/scripts/waterbe_api.py" "$@" ;;
+  daeyoung-month) exec "$python_bin" "$root/scripts/daeyoung_monthly_read.py" "$@" ;;
   namseon-check) exec "$python_bin" "$root/scripts/namseon_drive_sync.py" --incremental --include-drive-root --dry-run "$@" ;;
   namseon-sync)
     exec flock -n "$HOME/.local/state/waterbe-central/namseon-sync.lock" "$python_bin" "$root/scripts/namseon_drive_sync.py" --incremental --include-drive-root --organize-root-files --trash-duplicates --sync-supabase --upload-db "$@"
