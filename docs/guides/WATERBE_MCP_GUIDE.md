@@ -109,6 +109,10 @@ MCP 연결 완료는 해당 기능을 사용할 수 있다는 뜻이며 임의 �
 
 ## 검증과 운영 기록
 
+- 2026-10-21 기존 Telegram `waterbe` 대화의 CLI→동일 MCP 연결 및 시스템 점검:
+  [운영 검증 기록](../plans/SYSTEM_AUDIT_2026-10-21_MCP_TELEGRAM.md).
+  연결 성공과 마포/월계 변경 피드 오류·문어팀 미접속은 별도로 구별한다.
+
 로컬 단위 검사와 공식 SDK STDIO 검증으로 initialize, tools/list, resources/list,
 prompts/list, 지침 읽기와 실행 기능 검증을 수행한다. 원격은 Windows→SSH→중앙과
 씽크패드 현지 연결을 각각 확인한다. 실제 history.status/read 또는 날짜를 지정한
