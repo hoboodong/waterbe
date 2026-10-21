@@ -7,7 +7,7 @@
 ## 구현·설치
 
 - Waterbe 구현3712a29, 보완078cdcc/1466cc4/e49a24e.
-- 중앙 불변 실행본 `/home/sdg/.local/lib/waterbe-mcp-3f7aadeae7619958`.
+- 중앙 최종 불변 실행본 `/home/sdg/.local/lib/waterbe-mcp-c4b7981f9f294344`.
 - 양쪽 Codex 기존 waterbe 연결을 유지. 사용자 서비스 bus를 준비해 현지 MCP의
   central.check도 실행 가능하게 했다. 자격증명을 Windows로 복제하지 않았다.
 - 요청형 action을 중앙 SQLite에 먼저 저장하고 동일 UUID 재호출은 조회로 처리한다.
