@@ -1,0 +1,2 @@
+# Dedicated MCP environment; do not alter the operational workers' environment.
+mcp==2.3.0

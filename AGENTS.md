@@ -9,6 +9,7 @@ Waterbe 업무를 시작할 때 [WATERBE_GUIDE.md](WATERBE_GUIDE.md)에서 해�
 | 작업 | 먼저 읽을 문서 |
 | --- | --- |
 | 전체 업무 지침 찾기 | [WATERBE_GUIDE.md](WATERBE_GUIDE.md) |
+| MCP로 업무 지침·기능 찾기 | [워터비 MCP 지침](docs/guides/WATERBE_MCP_GUIDE.md) |
 | 상시 워커와 요청형 작업의 실행 장소 | [운영 실행 기준](docs/guides/OPERATING_EXECUTION_GUIDE.md) |
 | 수파·중앙·CASPi 통합 점검 | [통합 시스템 점검](docs/guides/SYSTEM_CHECK_GUIDE.md) |
 | 씽크패드 중앙 점검·복구·코덱스 관리 | [중앙 관리 지침](docs/guides/THINKPAD_CENTRAL_MANAGEMENT_GUIDE.md) |

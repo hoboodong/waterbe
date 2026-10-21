@@ -11,7 +11,7 @@ from pathlib import Path
 from urllib.parse import urlencode, urlparse
 from urllib.request import Request, urlopen
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(os.environ.get('WATERBE_ROOT', Path(__file__).resolve().parents[1])).resolve()
 CATALOG = ROOT / "config/api_catalog.json"
 TABLES = {"sales.namseon.read": "namseon", "sales.daeyoung.read": "daeyoung"}
 
@@ -87,6 +87,13 @@ def read_history(operation,business_date=None,**filters):
     if urlparse(base).scheme!='https' or not key:
         return {**result,'reason':'Configured service environment required'}
     parameters={'order':'sequence','limit':500,'select':'sequence,received_at,body'}
+    # Opt-in cursor pages for interactive clients. Existing full-read callers
+    # retain their original semantics when limit is not provided.
+    limit = filters.get('limit')
+    after = filters.get('after') or 0
+    if limit is not None and (type(limit) is not int or not 1 <= limit <= 500
+                              or type(after) is not int or after < 0):
+        return {**result, 'status':'invalid_request', 'reason':'Invalid cursor page bounds'}
     table='waterbe_operation_history'
     if operation=='history.status':
         table='waterbe_history_worker_status'
@@ -99,6 +106,8 @@ def read_history(operation,business_date=None,**filters):
             from datetime import timedelta
             day=date.fromisoformat(business_date)
             parameters['and']='(observed_at.gte.'+day.isoformat()+'T00:00:00+09:00,observed_at.lt.'+(day+timedelta(days=1)).isoformat()+'T00:00:00+09:00)'
+        if limit is not None:
+            parameters.update(limit=limit+1, sequence='gt.'+str(after))
     rows=[]
     try:
         for _ in range(2000):
@@ -108,6 +117,13 @@ def read_history(operation,business_date=None,**filters):
                 page=json.load(response)
             if not isinstance(page,list):
                 raise ValueError('Invalid history response')
+            if operation == 'history.read' and limit is not None:
+                visible = page[:limit]
+                return {**result, 'status':'available', 'data':visible,
+                        'has_more':len(page)>limit,
+                        'next_after':visible[-1]['sequence'] if visible else after,
+                        'warnings':['Only connected sources are covered; absence does not prove no changes.',
+                                    'Observation time is not action time. Check history.status freshness.']}
             rows.extend(page)
             if operation=='history.status' or len(page)<500:
                 return {**result,'status':'available','data':rows,
@@ -128,6 +144,8 @@ def main():
     invoke = sub.add_parser("call")
     invoke.add_argument("operation")
     invoke.add_argument("--date")
+    invoke.add_argument('--limit', type=int)
+    invoke.add_argument('--after', type=int)
     for field in ('source','store','feature','target','operation_id','result'):
         invoke.add_argument('--'+field.replace('_','-'))
     args = parser.parse_args()
@@ -138,7 +156,7 @@ def main():
     else:
         try:
             output = call(args.operation, args.date, **{field:getattr(args,field) for field in
-                          ('source','store','feature','target','operation_id','result')})
+                          ('source','store','feature','target','operation_id','result','limit','after')})
         except (ValueError,TypeError):
             output = {"status": "invalid_request", "reason": "Use ISO business date YYYY-MM-DD."}
     print(json.dumps(output, ensure_ascii=False, indent=2))

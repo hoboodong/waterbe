@@ -160,6 +160,10 @@ def local_central():
 
 
 def remote_central():
+    if os.environ.get('WATERBE_CENTRAL_LOCAL') == '1':
+        return {'route':'local_central',
+                'connection':{'status':'available','checked_at':stamp()},
+                'data':local_central()}
     # Execute exact version over stdin; no upload or persistent remote installation.
     meta, data=execute(['ssh','-o','BatchMode=yes','-o','ConnectTimeout=8','thinkpad',
                         'python3','-','--remote-central'],60,Path(__file__).read_text(encoding='utf-8'))
