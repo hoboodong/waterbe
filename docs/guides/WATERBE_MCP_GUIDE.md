@@ -101,6 +101,11 @@ MCP 연결 완료는 해당 기능을 사용할 수 있다는 뜻이며 임의 �
   한정 블록에 설치한다. 기존 전역 지침/모델/권한/로그인은 보존·백업한다.
   ~/.local/bin/waterbe-codex는 워터비 폴더에서 기존 Codex를 실행하는 편의 명령이다.
   설치가 기존 실행 세션의 도구 목록까지 자동 갱신했다는 뜻은 아니다.
+- 기존 Telegram/Codex 대화에서 새 도구가 직접 안 보이면 대화를 바꾸지 않고
+  `~/.local/bin/waterbe-mcp-call waterbe_start`를 실행한다. 다른 도구는
+  `waterbe-mcp-call waterbe_call --arguments '{"operation":"history.status"}'`처럼
+  호출한다. 복잡한 입력은 `--arguments -`로 stdin JSON을 넘긴다.
+  기존 명령 실행 도구로 동일 MCP를 사용하는 방식이며 새 AI나 별도 업무 로직이 아니다.
 
 ## 검증과 운영 기록
 

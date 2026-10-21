@@ -47,7 +47,13 @@ def install(home,root):
     temporary.write_text(f'#!/usr/bin/env bash\nset -euo pipefail\nexec "{binary}" -C "{root}" "$@"\n',encoding='utf-8')
     temporary.chmod(0o700)
     os.replace(temporary,launcher)
-    result=dict(global_instructions=str(target),launcher=str(launcher),backup=str(evidence),
+    bridge=home/'.local/bin/waterbe-mcp-call'
+    if bridge.exists():
+        shutil.copy2(bridge,evidence/'previous-waterbe-mcp-call')
+    client=home/'.local/opt/waterbe-mcp-venv/bin/python'
+    bridge.write_text(f'#!/usr/bin/env bash\nset -euo pipefail\nexec "{client}" "{root}/scripts/waterbe_mcp_call.py" "$@"\n',encoding='utf-8')
+    bridge.chmod(0o700)
+    result=dict(global_instructions=str(target),launcher=str(launcher),mcp_cli=str(bridge),backup=str(evidence),
                 model_changed=False,existing_sessions_interrupted=False)
     (evidence/'installation.json').write_text(json.dumps(result)+'\n',encoding='utf-8')
     return result

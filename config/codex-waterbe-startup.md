@@ -16,6 +16,10 @@
 - 기존 기능을 MCP가 금지하는 것은 아니다. 미구현 공통 API는 해당 업무 지침의 기존
   수동·CLI 절차를 따른다. MCP 장애는 실제 기록 없음·매출0·저울 미실행의 증거가 아니다.
 - 도구가 안 보이면 설정과 현재 세션의 도구 노출을 구별한다.
+  기존 대화를 교체하지 않고 `~/.local/bin/waterbe-mcp-call waterbe_start`로 같은
+  MCP를 호출할 수 있다. 예: `waterbe-mcp-call waterbe_call --arguments
+  '{"operation":"history.status"}'`. 복잡한 인자는 `--arguments -`의 stdin JSON을 쓴다.
+  이 입구는 동일 MCP를 호출하는 클라이언트이며 별도 저울 실행기/새 AI가 아니다.
   `/home/sdg/.npm-global/bin/codex mcp get waterbe`로 등록을 확인할 수 있다.
   필요하면 사용자에게 기존 대화의 연결 갱신/재개를 안내한다. 다른 세션/Telegram bridge를
   임의 종료·재시작하거나 새 AI 세션을 띄워 대신 작업시키지 않는다.
