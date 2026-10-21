@@ -45,6 +45,12 @@ def main():
     text = f'''#!/usr/bin/env bash
 set -euo pipefail
 export PATH="$HOME/.local/bin:$HOME/.local/gog-bin:/usr/bin:/bin:${{PATH:-}}"
+if [[ -d "/run/user/$UID" ]]; then
+  export XDG_RUNTIME_DIR="${{XDG_RUNTIME_DIR:-/run/user/$UID}}"
+  if [[ -S "$XDG_RUNTIME_DIR/bus" ]]; then
+    export DBUS_SESSION_BUS_ADDRESS="${{DBUS_SESSION_BUS_ADDRESS:-unix:path=$XDG_RUNTIME_DIR/bus}}"
+  fi
+fi
 set -a
 source <(tr -d '\\r' < "$HOME/.config/waterbe/central.env")
 set +a
