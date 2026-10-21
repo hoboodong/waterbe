@@ -12,7 +12,7 @@ import shutil
 import subprocess
 import sys
 
-FILES = ('waterbe_mcp.py','waterbe_api.py','system_check.py')
+FILES = ('waterbe_mcp.py','waterbe_mcp_actions.py','waterbe_api.py','system_check.py')
 
 
 def main():

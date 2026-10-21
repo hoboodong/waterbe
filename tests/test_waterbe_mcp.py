@@ -33,7 +33,7 @@ class McpTests(unittest.TestCase):
 
     def test_catalog_native_and_planned_are_discoverable_not_executable(self):
         entries = server.operations()
-        self.assertEqual({e['id'] for e in entries if e['mcp_callable']}, server.READS)
+        self.assertEqual({e['id'] for e in entries if e['mcp_callable']}, server.READS | server.actions.SPECS.keys())
         with patch.object(api,'call') as call:
             for name in ['scale.product.change','scale.collect','history.append',
                          'sales.namseon.sync','recipes.manage','anything; shell']:
@@ -88,8 +88,8 @@ class McpTests(unittest.TestCase):
         async def verify():
             async with Client(server.mcp) as client:
                 tools=await client.list_tools()
-                self.assertEqual(len(tools.tools),6)
-                self.assertTrue(all(t.annotations.read_only_hint for t in tools.tools))
+                self.assertEqual(len(tools.tools),10)
+                self.assertEqual([t.name for t in tools.tools if not t.annotations.read_only_hint],['waterbe_submit_action'])
                 resources=await client.list_resources()
                 self.assertEqual(len(resources.resources),3)
                 prompts=await client.list_prompts()

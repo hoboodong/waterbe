@@ -17,15 +17,58 @@ config/api_catalog.json, 실행 원본은 scripts/waterbe_api.py다. MCP는 이�
 2. `waterbe_find_guides(query)`와 `waterbe_list_operations(query)`로 업무를 찾는다.
 3. `waterbe_describe_operation(operation)`의 담당 지침을 `waterbe_read_guide(path)`로
    읽는다. has_more면 next_line부터 끝까지 읽고 서로 다른 hash의 조각은 섞지 않는다.
-4. mcp_callable=true인 기능은 `waterbe_call`로 실행한다. native는 담당 프로그램의
-   기존 입구는 있지만 MCP 실행은 미연결이고, planned는 미구현이다.
+4. mcp_callable=true 기능의 `mcp_tool`을 확인한다. 기본 조회는 `waterbe_call`,
+   확장 기존 기능은 `waterbe_prepare_action` 후 `waterbe_submit_action`으로 실행한다.
+   `waterbe_action_status`로 같은 ID의 결과를 확인한다. planned는 구현을 꾸며 호출하지
+   않고 담당 지침의 기존 수동 업무 절차를 사용한다.
 5. 결과의 출처·자료 확인 시각·경고·누락을 확인한다. 접속 성공/조회 성공은 현재
    업무 정상이나 물리 저울 확인을 의미하지 않는다. unavailable을 0으로 대신하지 않는다.
 
-현재 MCP 실행 기능: system.check, history.read, history.status,
-sales.namseon.read, sales.daeyoung.read. 저울 변경·동기화·재고·레시피 등은
-목록과 담당 지침에서 발견할 수 있지만 새 MCP 실행 어댑터가 연결된 것은 아니다.
-이 목록을 기능 구현 완료로 해석하지 않는다.
+기본 조회5개 외 기존 native 기능을 연결했다. 원본 기능을 다시 구현하지 않고 기존
+저울 요청 RPC/작업함/실행기, CASPi 프로토콜·게시 검증, 매출 적재기와 중앙 관리기를
+호출한다. 재고·레시피 변경·인사·통합 계산의 새 공통 API는 여전히 기획 상태다.
+MCP 연결 완료는 해당 기능을 사용할 수 있다는 뜻이며 임의 업무 변경의 승인이 아니다.
+
+## 기존 기능 실행 (2026-10-21 확장)
+
+| 업무 | 실행 ID |
+| --- | --- |
+| 앱 상품·할인 출력·작동 진단 | products.read / discounts.read / diagnostics.read |
+| 저울 저장 상품·문구·공용 작업 상태 | scale.products.read / scale.texts.read / scale.work.read |
+| CASPi 실제 상품·문구·일누계 | scale.product.read / scale.text.read / scale.day.read |
+| 누계 새 수집 | scale.collect |
+| 상품/문구 변경 및 원 작업 읽기 재확인 | scale.product.change / scale.text.change / scale.reconcile |
+| 저장 레시피 점검·사건 추가 | recipes.audit / history.append |
+| 남선/대영 월조회·동기화·대영 OCR | sales.namseon.month / sales.daeyoung.month / sales.namseon.sync / sales.daeyoung.sync / sales.daeyoung.ocr |
+| 중앙 점검·승인 재시작·기존 백업 | central.check / central.restart / central.backup |
+
+1. describe_operation의 required_parameters/optional_parameters/parameter_rules와 담당
+   지침을 읽는다. 미리보기는 prepare_action(operation,parameters)이며 실행하지 않는다.
+2. 실제 사용자 요청 범위에서 submit_action(operation,parameters,operation_id,user_request).
+   operation_id는 새 작업에 한 번 정한 UUID, user_request는 비밀 없는 짧은 요청 요약이다.
+   요약/플래그는 사용자 승인이나 OS 인증을 대신하지 않는다. 이미 받은 명확한 요청을
+   불필요하게 다시 승인받을 필요는 없지만, 요청에 없는 변경을 실행하면 안 된다.
+3. 작업은 중앙 보호 DB ~/.local/state/waterbe-mcp/actions.db에 먼저 보존한다.
+   별도 요청형 프로세스가 실행하므로 MCP 재접속 후에도 같은 ID로 결과를 읽는다.
+   같은 ID·같은 내용은 재실행하지 않고, 다른 내용은 충돌로 보존한다.
+4. pending/running/finished는 MCP 작업 단계다. 내부 result.status와 실행 원본의
+   실제 ACK/재읽기/게시 증거를 보고한다. accepted는 저울 적용이 아니다.
+   프로세스 종료나 native exit0도 업무 완료 증거를 대신하지 않는다.
+5. 실행 도중 프로세스 소실/응답 유실은 execution_unknown으로 남긴다. 임의 새 ID
+   쓰기·자동 재실행은 하지 않는다. 기존 저울 작업 ID/영수증/재확인 기능으로 조사한다.
+   다른 대상의 작업은 계속 가능하다. 매출 동기화가 이미 실행 중이면 중복 시작하지 않는다.
+6. 저울 쓰기는 기존 상품/문구 요청 RPC만 호출한다. 상품 expected_fields와 snapshot
+   SHA256, 문구 expected_presence/content를 필수로 지키며 기존 워커가 CASPi에 전달한다.
+   status 조회가 해당 큐 결과를 다시 읽는다. direct scale write/V1 우회/기대값 생략 없음.
+7. CASPi 읽기·누계·재확인은 설치된 중앙 전송/영수증 검증·게시 입구를 재사용한다.
+   앱의 Bluetooth 우선 연결 규칙이나 기존 앱 버전은 바꾸지 않는다.
+8. 남선 날짜 지정 sync는 기존 SQLite→수파 날짜 적재다. 날짜 없는 sync는 기존 전체
+   Drive 정리/중복 휴지통/적재/업로드를 포함하므로 전체 동기화 요청 때만 사용한다.
+   대영 sync는 기존 검증 결과 디렉터리를 받는다. OCR은 별도이며 검증·적재와 다르다.
+9. 실행 증거는 로컬 작업 DB에 보존하고 기존 공통 이력/전달 큐에 같은 operation_id로
+   연결한다. 이력 실패는 원 작업을 다시 실행하지 않는다. 원시 오류·비밀을 응답하지 않는다.
+10. check_connections는 기존 실행기/설정 존재와 REST RPC 발견만 점검한다.
+    실제 저울 쓰기나 매출 적재 시험으로 해석하지 않는다.
 
 ## 입력·결과
 
