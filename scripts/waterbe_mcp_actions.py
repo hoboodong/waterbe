@@ -43,7 +43,7 @@ SPECS={
  'history.append':('event','','write'),
  'sales.namseon.sync':('','business_date','sync'),
  'sales.daeyoung.sync':('results_root','','sync'),
- 'sales.daeyoung.ocr':('input_dir manifest year','','collect'),
+ 'sales.daeyoung.ocr':('input_dir manifest month','','collect'),
  'sales.namseon.month':('store month','','read'),
  'sales.daeyoung.month':('month','','read'),
  'central.check':('','','read'),
@@ -82,7 +82,6 @@ def description(operation):
                     'event':'Existing operation_history event contract; secrets and raw errors forbidden',
                     'input_dir':'Existing OCR source directory below ~/.local/state/waterbe-central',
                     'manifest':'Existing source manifest file below ~/.local/state/waterbe-central',
-                    'year':'integer 2000..2100',
                 }.items() if key in (required+' '+optional).split()})
 
 
@@ -152,8 +151,8 @@ def validate(operation,p):
             if not path.is_relative_to(allowed) or not path.exists():
                 raise ValueError('existing_central_input_required')
             p[key]=str(path)
-        if type(p['year']) is not int or not 2000<=p['year']<=2100:
-            raise ValueError('invalid_year')
+        if not Path(p['input_dir']).is_dir() or not Path(p['manifest']).is_file():
+            raise ValueError('invalid_ocr_input_types')
     for name in ('feature','result'):
         if name in p and (not isinstance(p[name],str) or not re.fullmatch('[A-Za-z0-9_.-]{1,80}',p[name])):
             raise ValueError('invalid_filter')
@@ -302,11 +301,11 @@ def run_action(operation,p,operation_id):
     if operation=='sales.daeyoung.sync':
         return cli([central,'daeyoung-publish','--results-root',p['results_root']],False)
     if operation=='sales.daeyoung.ocr':
-        output=STATE/'ocr'/operation_id
+        output=Path.home()/'.local/state/waterbe-central/mcp-ocr'/operation_id
         output.mkdir(parents=True,exist_ok=False,mode=0o700)
         result=cli([central,'daeyoung-ocr',p['input_dir'],'--manifest',p['manifest'],
-                    '--year',str(p['year']),'--csv',str(output/'sales.csv'),
-                    '--report',str(output/'report.json')],False)
+                    '--year',p['month'][:4],'--csv',str(output/(p['month']+'_sales.csv')),
+                    '--report',str(output/(p['month']+'_report.json'))],False)
         return {**result,'output':str(output),'warning':'OCR result requires validation before publication.'}
     if operation=='sales.namseon.month':
         # Existing CLI prints a human-readable statement, not JSON. Keep a bounded business report.
@@ -406,9 +405,13 @@ def submit(operation,parameters,operation_id,user_request):
                 return {'status':'conflict','reason':'Original operation ID has different content; no execution.'}
             return status(operation_id,False)
         # Preserve existing source-level locking too; never overlap two MCP sales ingestions.
-        if SPECS[operation][2]=='sync' and db.execute(
-            "SELECT 1 FROM jobs WHERE operation LIKE 'sales.%sync' AND status IN ('pending','running')").fetchone():
-            return {'status':'busy','reason':'Existing sales sync remains active; inspect it, do not duplicate.'}
+        if SPECS[operation][2]=='sync':
+            active=db.execute("SELECT id FROM jobs WHERE operation=? AND status IN ('pending','running')",(operation,)).fetchall()
+            for job in active:
+                phase=status(job['id'],False)['status']
+                if phase in ('pending','running'):
+                    return {'status':'busy','operation_id':job['id'],
+                            'reason':'Same-source sync is active; other sources remain available.'}
         stamp=now()
         db.execute('INSERT INTO jobs VALUES(?,?,?,?,?,?,?,?,?,?)',
                    (operation_id,digest,operation,json.dumps(p,ensure_ascii=False),'pending',stamp,stamp,None,None,user_request))
@@ -474,6 +477,11 @@ def worker(operation_id):
         result={'status':'execution_unknown' if SPECS[row['operation']][2]!='read' else 'unavailable',
                 'error_category':type(error).__name__,
                 'reason':'Owning executor failed or response is unconfirmed. Inspect original operation; never retry under a new ID.'}
+        allowed={'native_command_failed','native_month_read_failed','invalid_source_response',
+                 'receipt_identity_invalid','configured_service_environment_required',
+                 'caspi_remote_no_receipt','caspi_remote_receipt_invalid','caspi_text_result_not_verified'}
+        if str(error) in allowed:
+            result['error_code']=str(error)
     finish(operation_id,result)
     record_job(row,operation_id,result)
 
