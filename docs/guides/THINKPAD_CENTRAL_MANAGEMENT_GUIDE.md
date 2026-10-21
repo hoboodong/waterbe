@@ -9,6 +9,16 @@ AGENTS/WATERBE_GUIDE를 읽고 현재 원본으로 판단한다. Windows에서�
 [운영 실행 기준](OPERATING_EXECUTION_GUIDE.md)을 따른다. 시코드 UI/앱 구현과 카스씨엘 저울 통신의
 소유권은 바뀌지 않는다. 각 프로젝트 변경 전 해당 AGENTS와 담당 지침을 읽는다.
 
+## Codex 시작과 MCP 발견 — 2026-10-21
+
+워터비 관련 요청은 작업 폴더가 홈이어도 전역 Codex 지침의 워터비 한정 안내에서
+이 저장소와 [MCP 지침](WATERBE_MCP_GUIDE.md)을 찾는다. 원본은
+`config/codex-waterbe-startup.md`, 설치기는 `scripts/install_thinkpad_codex_startup.py`다.
+MCP 설정은 기존 ~/.codex/config.toml의 waterbe 등록을 사용한다.
+새 CLI는 `~/.local/bin/waterbe-codex`로 시작할 수 있으며 기존 모델/로그인/승인 정책은 유지한다.
+기존 Telegram 대화/다른 Codex 세션을 자동 중단하거나 새 에이전트를 띄우지 않는다.
+전역 지침 설치, 실제 MCP 접속, 기존 대화에서의 도구 노출은 따로 확인한다.
+
 ## 요청을 받으면
 
 ## 장애 대응 담당 — 2026-10-09 사용자 지정

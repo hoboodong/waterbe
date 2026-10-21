@@ -96,6 +96,11 @@ MCP 연결 완료는 해당 기능을 사용할 수 있다는 뜻이며 임의 �
   변경하지 않는다. 시작 제한30초, 도구 제한180초. 해당 PC의 기존 SSH 권한을 사용한다.
 - 이미 열린 AI 대화는 도구 목록 새로고침/클라이언트 재시작이 필요할 수 있다.
   설정 등록·SDK handshake·현재 대화 도구 노출을 각각 구별해 기록한다.
+- 씽크패드 Codex 공통 발견 지침은 `config/codex-waterbe-startup.md`를 원본으로
+  `python scripts/install_thinkpad_codex_startup.py`가 ~/.codex/AGENTS.md의 워터비
+  한정 블록에 설치한다. 기존 전역 지침/모델/권한/로그인은 보존·백업한다.
+  ~/.local/bin/waterbe-codex는 워터비 폴더에서 기존 Codex를 실행하는 편의 명령이다.
+  설치가 기존 실행 세션의 도구 목록까지 자동 갱신했다는 뜻은 아니다.
 
 ## 검증과 운영 기록
 
