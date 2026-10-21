@@ -21,8 +21,8 @@
 ### 워터비 MCP (2026-10-21)
 
 AI가 같은 지침과 기능을 발견하는 공통 창구는 [MCP 지침](WATERBE_MCP_GUIDE.md)을 따른다.
-기존 API 카탈로그와 Markdown을 재사용한다. gateway/read만 MCP에서 실행하고,
-native/planned는 현재 연결 상태를 그대로 표시한다. 무인 AI 운영을 추가하는 것이 아니다.
+기존 API 카탈로그와 Markdown을 재사용한다. 기본 조회와 기존 native 실행 입구를
+MCP에 연결하며, planned는 미구현으로 구별한다. 무인 AI 운영을 추가하는 것이 아니다.
 
 ### 전체 운영 기록·추적 (2026-10-05)
 

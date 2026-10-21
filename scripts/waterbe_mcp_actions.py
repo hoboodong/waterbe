@@ -35,6 +35,7 @@ SPECS={
  'scale.day.read':('store business_date','offset limit','read'),
  'scale.product.read':('store department record_sequence','','read'),
  'scale.text.read':('store text_type text_number','','read'),
+ 'scale.operation.read':('store target_operation_id','','read'),
  'scale.collect':('store','','collect'),
  'scale.product.change':('store department plu expected_fields requested_fields base_content_sha256','','write'),
  'scale.text.change':('store text_type text_number operation expected_presence','expected_content requested_content','write'),
@@ -112,6 +113,8 @@ def validate(operation,p):
             raise ValueError('invalid_'+name)
     if 'text_type' in p and p['text_type'] not in ('ingredient','advertising'):
         raise ValueError('invalid_text_type')
+    if 'text_number' in p and p['text_number']>(99 if p['text_type']=='advertising' else 1000):
+        raise ValueError('text_number_outside_existing_table')
     if operation=='diagnostics.read' and not (p.get('business_date') or p.get('operation_id')):
         raise ValueError('date_or_operation_required')
     if operation=='scale.product.change':
@@ -221,6 +224,13 @@ def day_filter(field,business_date):
 def cli(args,json_output=True):
     # Fixed command construction only; output with arbitrary exception bodies is never returned.
     run=subprocess.run(args,capture_output=True,text=True,encoding='utf-8',cwd=ROOT)
+    job=globals().get('CURRENT_JOB')
+    if job:
+        evidence=STATE/'native-evidence'/job
+        evidence.mkdir(parents=True,exist_ok=True,mode=0o700)
+        # Protected operator evidence only, never returned as shared history/raw errors.
+        (evidence/'stdout.txt').write_text(run.stdout,encoding='utf-8')
+        (evidence/'stderr.txt').write_text(run.stderr,encoding='utf-8')
     if run.returncode:
         raise RuntimeError('native_command_failed')
     if json_output:
@@ -239,21 +249,29 @@ def caspi(operation,p,operation_id):
     store=next(s for s in config['stores'] if s['enabled'] and s['app_store_id']==p['store'])
     commands={'scale.day.read':'aggregate_day','scale.collect':'collect_aggregate',
               'scale.product.read':'read_plu','scale.text.read':'read_text',
+              'scale.operation.read':'operation_status',
               'scale.reconcile':'reconcile_text' if p.get('kind')=='text' else 'reconcile_write'}
-    request=dict(type='request',protocol_version=1,operation_id=operation_id,
+    request=dict(type='request',protocol_version=1,operation_id=p['target_operation_id'] if operation=='scale.operation.read' else operation_id,
                  store_id=store['controller_store_id'],origin='central_remote',command=commands[operation])
     for key in ('business_date','department','record_sequence','text_type','text_number','target_operation_id'):
-        if key in p:
+        if key in p and operation!='scale.operation.read':
             request[key]=p[key]
     if operation=='scale.day.read':
         request.update(offset=p.get('offset',0),limit=p.get('limit',100))
     receipt=execute(store['ssh_alias'],request,float(config['ssh_timeout_seconds']))
-    if (receipt.get('operation_id')!=operation_id or receipt.get('store_id')!=request['store_id']
-        or receipt.get('command')!=request['command']):
+    if (receipt.get('operation_id')!=request['operation_id'] or receipt.get('store_id')!=request['store_id']
+        or (operation!='scale.operation.read' and receipt.get('command')!=request['command'])):
         raise RuntimeError('receipt_identity_invalid')
+    if operation=='scale.operation.read':
+        return {'status':receipt.get('status','execution_unknown'),'receipt':receipt,
+                'warning':'Original immutable receipt only; no write replay or new publication.'}
     envelope=_envelope(store['controller_store_id'],request,receipt)
     # Same publisher as the existing central worker. Publication is separate evidence.
-    ack=rest('rpc/publish_caspi_receipt_from_central',payload={'p_store_id':p['store'],'p_operation':envelope})
+    try:
+        ack=rest('rpc/publish_caspi_receipt_from_central',payload={'p_store_id':p['store'],'p_operation':envelope})
+    except Exception:
+        return {'status':'publication_unconfirmed','receipt':receipt,'operation_id':operation_id,
+                'warning':'Device receipt retained; check original ID, never replay the device operation.'}
     if not isinstance(ack,dict) or ack.get('stored') is not True or ack.get('operation_id')!=operation_id:
         return {'status':'publication_unconfirmed','receipt':receipt,'operation_id':operation_id}
     return {'status':receipt.get('status','execution_unknown'),'receipt':receipt,'published':True}
@@ -265,7 +283,7 @@ def run_action(operation,p,operation_id):
     if operation=='scale.work.read':
         from phone_work_status import read
         return read(p['store'])
-    if operation in ('scale.day.read','scale.product.read','scale.text.read','scale.collect','scale.reconcile'):
+    if operation in ('scale.day.read','scale.product.read','scale.text.read','scale.operation.read','scale.collect','scale.reconcile'):
         return caspi(operation,p,operation_id)
     if operation=='scale.product.change':
         body={'p_store_id':p['store'],'p_department_number':p['department'],'p_plu_number':p['plu'],
@@ -354,6 +372,8 @@ def safe_request(row):
              'actual_fields','base_content_sha256','text_type','text_number','operation',
              'expected_presence','expected_content','requested_content','actual_presence',
              'actual_content','read_back_verified','operation_id'}
+    allowed.update({'requested_at','claimed_at','verified_at','result_fields','failure_code',
+                    'retryable','write_started','rollback_status'})
     return {k:v for k,v in row.items() if k in allowed}
 
 
@@ -465,6 +485,8 @@ def status(operation_id,refresh=True):
 
 
 def worker(operation_id):
+    global CURRENT_JOB
+    CURRENT_JOB=operation_id
     os.umask(0o077)
     with closing(database()) as db,db:
         changed=db.execute("UPDATE jobs SET status='running',updated_at=? WHERE id=? AND status='pending'",(now(),operation_id)).rowcount

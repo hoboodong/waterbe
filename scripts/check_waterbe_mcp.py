@@ -39,7 +39,7 @@ async def check(args):
         evidence['guide_sha256']=guide.structured_content['sha256']
         refused=await client.call_tool('waterbe_call',{'operation':'scale.product.change'})
         assert refused.structured_content['status']=='unsupported'
-        evidence['unconnected_write_not_executed']=True
+        evidence['read_tool_does_not_execute_writes']=True
         if args.live:
             status=await client.call_tool('waterbe_call',{'operation':'history.status'})
             assert not status.is_error

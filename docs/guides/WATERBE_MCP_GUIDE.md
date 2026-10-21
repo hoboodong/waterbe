@@ -36,6 +36,7 @@ MCP 연결 완료는 해당 기능을 사용할 수 있다는 뜻이며 임의 �
 | 앱 상품·할인 출력·작동 진단 | products.read / discounts.read / diagnostics.read |
 | 저울 저장 상품·문구·공용 작업 상태 | scale.products.read / scale.texts.read / scale.work.read |
 | CASPi 실제 상품·문구·일누계 | scale.product.read / scale.text.read / scale.day.read |
+| 원래 작업 영수증 읽기 (쓰기를 재실행하지 않음) | scale.operation.read |
 | 누계 새 수집 | scale.collect |
 | 상품/문구 변경 및 원 작업 읽기 재확인 | scale.product.change / scale.text.change / scale.reconcile |
 | 저장 레시피 점검·사건 추가 | recipes.audit / history.append |

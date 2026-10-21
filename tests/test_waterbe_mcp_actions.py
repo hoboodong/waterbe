@@ -4,6 +4,7 @@ import sys
 import tempfile
 import unittest
 import uuid
+from types import SimpleNamespace
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import waterbe_mcp_actions as actions
@@ -83,6 +84,35 @@ class ActionTests(unittest.TestCase):
         self.assertTrue(result['has_more'])
         self.assertEqual(result['next_offset'],2)
         self.assertEqual(rest.call_args.args[0],'products_mia')
+
+    def test_publication_failure_keeps_original_receipt(self):
+        key=str(uuid.uuid4())
+        receipt=dict(operation_id=key,store_id='mia2',command='aggregate_day',status='succeeded')
+        native=SimpleNamespace(load_config=lambda _:dict(stores=[dict(enabled=True,app_store_id='mia',
+            controller_store_id='mia2',ssh_alias='mia2')],ssh_timeout_seconds=40),
+            execute=lambda *args:receipt)
+        with patch.dict(sys.modules,{'caspi_remote_read_worker':native,
+                   'caspi_receipt_sync':SimpleNamespace(_envelope=lambda *args:{'receipt':receipt})}), \
+             patch.object(actions,'rest',side_effect=OSError('private-error')):
+            result=actions.caspi('scale.day.read',dict(store='mia',business_date='2026-10-20'),key)
+        self.assertEqual(result['status'],'publication_unconfirmed')
+        self.assertEqual(result['receipt'],receipt)
+
+    def test_operation_status_uses_original_id_without_replaying_or_publishing(self):
+        key,target=str(uuid.uuid4()),str(uuid.uuid4())
+        requests=[]
+        def execute(alias,request,timeout):
+            requests.append(request)
+            return dict(operation_id=target,store_id='mia2',command='write_plu',status='succeeded')
+        native=SimpleNamespace(load_config=lambda _:dict(stores=[dict(enabled=True,app_store_id='mia',
+            controller_store_id='mia2',ssh_alias='mia2')],ssh_timeout_seconds=40),execute=execute)
+        with patch.dict(sys.modules,{'caspi_remote_read_worker':native,
+                'caspi_receipt_sync':SimpleNamespace(_envelope=lambda *args:None)}),patch.object(actions,'rest') as publish:
+            result=actions.caspi('scale.operation.read',dict(store='mia',target_operation_id=target),key)
+        self.assertEqual(requests[0]['command'],'operation_status')
+        self.assertEqual(requests[0]['operation_id'],target)
+        self.assertEqual(result['status'],'succeeded')
+        publish.assert_not_called()
 
 
 if __name__=='__main__':
