@@ -1,7 +1,8 @@
-"""Waterbe's requested-work MCP entry: shared guides, discovery and existing reads.
+"""Waterbe's requested-work MCP entry: shared guides and existing operations.
 
 STDIO is transported through the existing authenticated SSH connection. No HTTP
-listener, scheduler, AI model, raw shell tool or business-write adapter is started.
+listener, scheduler, AI model, raw shell tool or duplicate scale writer is started.
+Native mutations use the existing owning queues/executors and durable action IDs.
 """
 from __future__ import annotations
 
