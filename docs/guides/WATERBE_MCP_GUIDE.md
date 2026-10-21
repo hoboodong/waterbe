@@ -45,7 +45,9 @@ sales.namseon.read, sales.daeyoung.read. 저울 변경·동기화·재고·레�
 - 중앙 소스/launcher: `scripts/waterbe_mcp.py`, `scripts/install_waterbe_mcp.py`.
   버전별 소스 hash와 설치 증거를 보존하고 ~/.local/bin/waterbe-mcp로 실행한다.
 - 씽크패드 Codex: `codex mcp add waterbe -- /home/sdg/.local/bin/waterbe-mcp`.
-- Windows Codex: `codex mcp add waterbe -- ssh -T -o BatchMode=yes -o ConnectTimeout=8 thinkpad /home/sdg/.local/bin/waterbe-mcp`.
+- Windows Codex: `codex mcp add waterbe -- "C:/Program Files/Git/usr/bin/ssh.exe" -T -o BatchMode=yes -o ConnectTimeout=8 thinkpad /home/sdg/.local/bin/waterbe-mcp`.
+  Windows OpenSSH는 SDK 비동기 파이프 연결에서 종료되는 현상이 확인되어 Git SSH를 사용한다.
+- 등록 후 `python scripts/configure_waterbe_mcp_timeouts.py`로 waterbe 항목만 제한 시간을 맞춘다.
 - 기존 Codex 설정을 백업하고 waterbe 항목만 추가한다. 모델·로그인·다른 MCP·tmux 대화를
   변경하지 않는다. 시작 제한30초, 도구 제한180초. 해당 PC의 기존 SSH 권한을 사용한다.
 - 이미 열린 AI 대화는 도구 목록 새로고침/클라이언트 재시작이 필요할 수 있다.

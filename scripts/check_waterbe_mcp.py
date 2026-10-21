@@ -15,13 +15,13 @@ from mcp import Client, StdioServerParameters
 
 async def check(args):
     if args.ssh:
-        parameters=StdioServerParameters(command='ssh',args=['-T','-o','BatchMode=yes',
+        parameters=StdioServerParameters(command=args.ssh_command,args=['-T','-o','BatchMode=yes',
             '-o','ConnectTimeout=8',args.ssh,'/home/sdg/.local/bin/waterbe-mcp'])
     else:
         parameters=StdioServerParameters(command=str(Path.home()/'.local/bin/waterbe-mcp'))
     evidence={'checked_at':datetime.now(timezone.utc).isoformat(),
               'route':'ssh:'+args.ssh if args.ssh else 'central-local','business_mutations':0}
-    async with Client(parameters,read_timeout_seconds=180) as client:
+    async with Client(parameters,read_timeout_seconds=180,mode='legacy') as client:
         tools=await client.list_tools()
         evidence['tools']=[t.name for t in tools.tools]
         resources=await client.list_resources()
@@ -52,6 +52,10 @@ async def check(args):
             assert not page.is_error and page.structured_content['status']=='available'
             evidence['history_page_rows']=len(page.structured_content['data'])
             evidence['history_page_has_more']=page.structured_content['has_more']
+    if args.evidence:
+        target=Path(args.evidence)
+        target.parent.mkdir(parents=True,exist_ok=True)
+        target.write_text(json.dumps(evidence,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps(evidence,ensure_ascii=False))
 
 
@@ -61,6 +65,8 @@ def main():
     mode.add_argument('--ssh')
     mode.add_argument('--local',action='store_true')
     parser.add_argument('--live',action='store_true')
+    parser.add_argument('--ssh-command',default='ssh')
+    parser.add_argument('--evidence',help='Save bounded verification metadata, no business records')
     args=parser.parse_args()
     asyncio.run(check(args))
 
