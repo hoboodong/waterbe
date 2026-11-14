@@ -19,6 +19,7 @@
 | AI 공통 지침·기능 발견·MCP 연결 | [워터비 MCP 지침](docs/guides/WATERBE_MCP_GUIDE.md) |
 | 상시 워커와 요청형 작업의 실행 장소 | [운영 실행 기준](docs/guides/OPERATING_EXECUTION_GUIDE.md) |
 | 현재 채팅에서 수파·중앙·CASPi 전체 점검 | [통합 시스템 점검](docs/guides/SYSTEM_CHECK_GUIDE.md) |
+| 2026-11-14 월계 단일 저울 연결·중앙 전체조회 적용 | [월계 연결 소유자 적용](docs/operations/2026-11-14-wolgye-connection-owner.md) |
 | 프로그램 구성·프로젝트별 책임·구현 상태 | [프로그램 역할 지침](docs/guides/PROGRAM_RESPONSIBILITIES_GUIDE.md) |
 | 씽크패드 코덱스 중앙 프로그램 관리 | [중앙 관리 지침](docs/guides/THINKPAD_CENTRAL_MANAGEMENT_GUIDE.md) |
 | 전체 변경·오류·배포 이력 및 채팅 없는 원인 추적 | [운영 기록·추적 지침](docs/guides/OPERATION_HISTORY_GUIDE.md) |
